@@ -571,6 +571,14 @@
     ">"       => ")|",
   );
 
+  // Register MediaWiki extension
+  $wgExtensionFunctions[] = 'WH_Register';
+  function WH_Register() 
+  {
+    Parser::setHook( 'hiero', 'WikiHieroHook' );
+  }
+
+
   //========================================================================
   // F U N C T I O N S 
 
@@ -697,6 +705,16 @@
       case WH_MODE_IMAGE: die("ERROR: Image version not yet implemented");
     }
     die("ERROR: Unknow mode!");
+  }
+
+  //------------------------------------------------------------------------
+  // WikiHieroHook - Parser callback
+  //------------------------------------------------------------------------
+  // hiero  << text to convert
+  // return >> string with converted code
+  //------------------------------------------------------------------------
+  function WikiHieroHook($hiero) {
+    return WikiHiero($hiero, WH_MODE_HTML);
   }
 
   //------------------------------------------------------------------------
@@ -1003,4 +1021,6 @@
 		$html .= "Hieroglyph credit: S. Rosmorduc, G. Watson, J. Hirst (under GFDL).\n";
     return $html;
   }
+
+  # vim: set sts=2 sw=2 ts=2 et :
 ?>
