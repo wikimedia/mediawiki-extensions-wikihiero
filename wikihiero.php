@@ -55,7 +55,7 @@
 
   define("WH_VER_MAJ",       0);
   define("WH_VER_MED",       2);
-  define("WH_VER_MIN",       13);
+  define("WH_VER_MIN",       14);
 
   define("WH_IMG_DIR",       "$wgScriptPath/extensions/wikihiero/img/" ); //"img/"); //
   define("WH_IMG_PRE",       "hiero_");
@@ -571,12 +571,28 @@
     ">"       => ")|",
   );
 
-  // Register MediaWiki extension
+  //========================================================================
+  // W I K I P E D I A   S P E C I F I C
+
+  //------------------------------------------------------------------------
+  // WH_Register - Register MediaWiki extension
+  //------------------------------------------------------------------------
   $wgExtensionFunctions[] = 'WH_Register';
   function WH_Register() 
   {
     global $wgParser;
     $wgParser->setHook( 'hiero', 'WikiHieroHook' );
+  }
+
+  //------------------------------------------------------------------------
+  // WikiHieroHook - Parser callback
+  //------------------------------------------------------------------------
+  // hiero  << text to convert
+  // return >> string with converted code
+  //------------------------------------------------------------------------
+  function WikiHieroHook($hiero)
+  {
+    return WikiHiero($hiero, WH_MODE_HTML);
   }
 
 
@@ -706,16 +722,6 @@
       case WH_MODE_IMAGE: die("ERROR: Image version not yet implemented");
     }
     die("ERROR: Unknow mode!");
-  }
-
-  //------------------------------------------------------------------------
-  // WikiHieroHook - Parser callback
-  //------------------------------------------------------------------------
-  // hiero  << text to convert
-  // return >> string with converted code
-  //------------------------------------------------------------------------
-  function WikiHieroHook($hiero) {
-    return WikiHiero($hiero, WH_MODE_HTML);
   }
 
   //------------------------------------------------------------------------
@@ -995,7 +1001,7 @@
         $html .= WH_TABLE_S."<tr>\n".$tableContentHtml."</tr>".WH_TABLE_E;
     }
 
-    return $html;        
+    return "<table border='0' cellspacing='0' cellpadding='0' style='render:inline;' ><tr><td>\n$html\n</td></tr></table>";
   }
 
   //------------------------------------------------------------------------
