@@ -54,9 +54,9 @@ or add/remove pictures, you need to run "wh_generate.php" to build an updated
 You need a server running Apache and PHP. WikiHiero was tested with 
 Apache 1.3.27 and PHP 4.3.3, but must work with oldest version.
 
-1) Copy "hikihiero.php", "wh_list.php" and "img" directory to your server.
-2) Include "hikihiero.php" at the top of the file where you want to use it:
-   <?php include "hikihiero.php"; ?>
+1) Copy "wikihiero.php", "wh_list.php" and "img" directory to your server.
+2) Include "wikihiero.php" at the top of the file where you want to use it:
+   <?php include "wikihiero.php"; ?>
    In both file are not in the same folder, don't forget to specify the path.
 3) Where you want show hieroglyphs, add the line
    <?php echo WikiHiero("my_text"); ?>
