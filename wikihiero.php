@@ -575,7 +575,8 @@
   $wgExtensionFunctions[] = 'WH_Register';
   function WH_Register() 
   {
-    Parser::setHook( 'hiero', 'WikiHieroHook' );
+    global $wgParser;
+    $wgParser->setHook( 'hiero', 'WikiHieroHook' );
   }
 
 
