@@ -1001,7 +1001,7 @@
         $html .= WH_TABLE_S."<tr>\n".$tableContentHtml."</tr>".WH_TABLE_E;
     }
 
-    return "<table border='0' cellspacing='0' cellpadding='0' style='render:inline;' ><tr><td>\n$html\n</td></tr></table>";
+    return "<table border='0' cellspacing='0' cellpadding='0' style='display:inline;' ><tr><td>\n$html\n</td></tr></table>";
   }
 
   //------------------------------------------------------------------------
