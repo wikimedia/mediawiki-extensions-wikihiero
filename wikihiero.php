@@ -40,6 +40,7 @@
   define("WH_MODE_HTML",     1);    // HTML without CSS
   define("WH_MODE_STYLE",    2);    // HTML and CSS // not supporter
   define("WH_MODE_IMAGE",    3);    // picture (PNG) // not supporter
+  define("WH_MODE_RAW",      4);    // MdC test as it
 
   define("WH_TYPE_NONE",     0);
   define("WH_TYPE_GLYPH",    1);    // rendered items
@@ -54,7 +55,7 @@
 
   define("WH_VER_MAJ",       0);
   define("WH_VER_MED",       2);
-  define("WH_VER_MIN",       12);
+  define("WH_VER_MIN",       13);
 
   define("WH_IMG_DIR",       "$wgScriptPath/extensions/wikihiero/img/" ); //"img/"); //
   define("WH_IMG_PRE",       "hiero_");
@@ -587,23 +588,23 @@
     global $wh_files;
     global $wh_scale;
 
-    if($glyph == "..")
+    if($glyph == "..") // Render void block
     {
       $width = WH_HEIGHT;
       return "<table width='{$width}px' border='0' cellspacing='0' cellpadding='0'><tr><td>&nbsp;</td></tr></table>";
     }
-    else if($glyph == ".")
+    else if($glyph == ".") // Render half-width void block
     {
       $width = WH_HEIGHT/2;
       return "<table width='{$width}px' border='0' cellspacing='0' cellpadding='0'><tr><td>&nbsp;</td></tr></table>";
     }
-    else if($glyph == '<')
+    else if($glyph == '<') // Render open cartouche
     {
       $height = intval(WH_HEIGHT * $wh_scale / 100);
       $code = $wh_phonemes[$glyph];
       return "<img src='".htmlspecialchars(WH_IMG_DIR.WH_IMG_PRE."{$code}.".WH_IMG_EXT)."' height='{$height}px' title='".htmlspecialchars($glyph)."' alt='".htmlspecialchars($glyph)."' />";
     }
-    else if($glyph == '>')
+    else if($glyph == '>') // Render close cartouche
     {
       $height = intval(WH_HEIGHT * $wh_scale / 100);
       $code = $wh_phonemes[$glyph];
@@ -614,7 +615,7 @@
     {
       $code = $wh_phonemes[$glyph];
       if(array_key_exists($code, $wh_files))
-        return "<img style='margin:".WH_IMG_MARGIN."px;' $option src='".htmlspecialchars(WH_IMG_DIR.WH_IMG_PRE."{$code}.".WH_IMG_EXT)."' title='".htmlspecialchars($code[$glyph])."' alt='".htmlspecialchars($glyph)."' />";
+        return "<img style='margin:".WH_IMG_MARGIN."px;' $option src='".htmlspecialchars(WH_IMG_DIR.WH_IMG_PRE."{$code}.".WH_IMG_EXT)."' title='".htmlspecialchars("{$code} [{$glyph}]")."' alt='".htmlspecialchars($glyph)."' />";
       else
         return "<font title='".htmlspecialchars($code)."'>".htmlspecialchars($glyph)."</font>";
     }
