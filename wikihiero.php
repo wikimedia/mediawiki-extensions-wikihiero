@@ -578,6 +578,11 @@
   // WH_Register - Register MediaWiki extension
   //------------------------------------------------------------------------
   $wgExtensionFunctions[] = 'WH_Register';
+  $wgExtensionCredits['parserhook'][] = array(
+    'name' => 'WikiHiero',
+    'author' => 'Guillaume Blanchard',
+    'url' => 'http://meta.wikimedia.org/wiki/WikiHiero'
+  );
   function WH_Register() 
   {
     global $wgParser;
