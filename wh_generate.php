@@ -24,7 +24,7 @@
 //
 //////////////////////////////////////////////////////////////////////////
 
-  include "wikihiero.php";
+  include "wh_main.php";
 
   if(array_key_exists("lang", $_GET))
     $lang = $_GET["lang"];
@@ -50,15 +50,17 @@
     $wh_prefabs = "\$wh_prefabs = array(\n";
     $wh_files   = "\$wh_files   = array(\n";
 
-    if(is_dir(WH_IMG_DIR))
+    $img_dir = dirname(__FILE__) . '/img/';
+    
+    if(is_dir($img_dir))
     {
-      if ($dh = opendir(WH_IMG_DIR))
+      if ($dh = opendir($img_dir))
       {
         while (($file = readdir($dh)) !== false) 
         {
           if(stristr($file, WH_IMG_EXT))
           {
-            list($width, $height, $type, $attr) = getimagesize(WH_IMG_DIR.$file);
+            list($width, $height, $type, $attr) = getimagesize($img_dir.$file);
             $wh_files .= "  \"".WH_GetCode($file)."\" => array( $width, $height ),\n";
             if(strchr($file,'&'))
               $wh_prefabs .= "  \"".WH_GetCode($file)."\",\n";
@@ -78,6 +80,7 @@
     fwrite($file, "<?php\n\n");
     fwrite($file, "// File created by wh_generate.php version ".WH_VER_MAJ.".".WH_VER_MED.".".WH_VER_MIN."\n");
     fwrite($file, "// ".date("Y/m/d at H:i")."\n\n");
+    fwrite($file, "global \$wh_prefabs, \$wh_files;\n\n");
     fwrite($file, "$wh_prefabs\n\n");
     fwrite($file, "$wh_files\n\n");
     fwrite($file, "?>");

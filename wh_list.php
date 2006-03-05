@@ -1,7 +1,9 @@
 <?php
 
-//  File created by wh_generate.php version 0.2.6
-//  2004/03/26 pm31 18:50
+// File created by wh_generate.php version 0.2.14
+// 2006/03/05 pm31 13:04
+
+global $wh_prefabs, $wh_files;
 
 $wh_prefabs = array(
   "a&A1",
@@ -298,8 +300,8 @@ $wh_files   = array(
   "C9" => array( 20, 38 ),
   "Ca0" => array( 5, 50 ),
   "Ca1" => array( 14, 48 ),
-  "Ca1a" => array( 14, 50 ),
-  "Ca2" => array( 16, 50 ),
+  "Ca1a" => array( 14, 49 ),
+  "Ca2" => array( 16, 49 ),
   "Ca2a" => array( 16, 48 ),
   "Cah1" => array( 5, 48 ),
   "Cah1a" => array( 5, 50 ),
