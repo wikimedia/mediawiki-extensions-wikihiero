@@ -43,6 +43,7 @@
     static $loaded = false;
     if ( !$loaded ) {
       require( dirname( __FILE__ ) . '/wh_main.php' );
+      $loaded = true;
     }
   }
   
