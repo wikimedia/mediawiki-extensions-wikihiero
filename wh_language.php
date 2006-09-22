@@ -10,7 +10,8 @@
       "zh" => "中文",
       "eo" => "Esperanto", 	                            
       "ia" => "Interlingua",
-      "pt" => "Português", ),
+      "pt" => "Português", 
+      "ru" => "Русский",),
     "Syntax"  => array(
       "en" => "Syntax",                              
       "eo" => "Sintakso",                              
@@ -20,6 +21,7 @@
       "ja" => "文法",
       "zh" => "语法",
       "nl" => "Syntax",
+      "ru" => "Синтаксис",
       "sv" => "Syntax" ),                             
     "!"       => array(
       "en" => "end of line",                         
@@ -30,6 +32,7 @@
       "ja" => "行の終わり",
       "zh" => "一行中止",
       "nl" => "einde van regel",
+      "ru" => "конец строки",  
       "sv" => "radbrytning" ),                             
     "-"       => array(
       "en" => "separator",                           
@@ -40,6 +43,7 @@
       "ja" => "セパレータ",
       "zh" => "分隔符",
       "nl" => "scheidingsteken",
+      "ru" => "разделитель",    
       "sv" => "separator" ),                             
     ":"       => array(
       "en" => "subdivision",                         
@@ -50,6 +54,7 @@
       "ja" => "小区間",
       "zh" => "分割",
       "nl" => "onderverdeling",
+      "ru" => "подраздел",
       "sv" => "underavdelning" ),                             
     "*"       => array(
       "en" => "juxtaposition",                       
@@ -60,6 +65,7 @@
       "ja" => "対置",
       "zh" => "并列",
       "nl" => "nevenschikking",
+      "ru" => "рядом",    
       "sv" => "juxaposition (stående förbindelse)" ),                             
     "Tables"  => array(
       "en" => "Hieroglyph tables",                   
@@ -70,6 +76,7 @@
       "ja" => "ヒエログラフの表",
       "zh" => "象形文字表",
       "nl" => "Tabellen met hiërogliefen",
+      "ru" => "Таблицы иероглифов",    
       "sv" => "Hieroglyftabeller" ),                             
     "Convert" => array(
       "en" => "Convert",                             
@@ -80,6 +87,7 @@
       "ja" => "変換",
       "zh" => "转换",
       "nl" => "Converteer",
+      "ru" => "Преобразовать",      
       "sv" => "Konvertera" ),                             
     "Text"    => array(
       "en" => "Type your text here",                 
@@ -90,6 +98,7 @@
       "ja" => "テクスト",
       "zh" => "在这里输入文本",
       "nl" => "Type hier een tekst",
+      "ru" => "Введите текст здесь",      
       "sv" => "Skriv din text här" ),                             
     "TEXT"    => array(
       "en" => "Use text only",                       
@@ -100,6 +109,7 @@
       "ja" => "テクストのみ",
       "zh" => "只能使用文本格式",
       "nl" => "Gebruik alleen tekst",
+      "ru" => "Использовать только текст",    
       "sv" => "Använd enbart text" ),                             
     "HTML"    => array(
       "en" => "Use standard HTML only",              
@@ -109,7 +119,8 @@
       "pt" => "Usar somente HTML padrão",
       "ja" => "標準的HTMLのみ",
       "zh" => "只能使用标准HTML",
-      "nl" => "Gebruik alleen standaard HTML",              
+      "nl" => "Gebruik alleen standaard HTML",    
+      "ru" => "Использовать только стандартный HTML",                  
       "sv" => "Använd endast standard-HTML" ),                             
     "CSS"     => array(
       "en" => "Use HTML and Cascading Style Sheets", 
@@ -120,7 +131,8 @@
       "ja" => "HTMLとCSS",
       "zh" => "使用HTML和CCS",
       "nl" => "Gebruik HMTL and Cascading Style Sheets",
-      "sv" => "Använd HTML och Cascading Style Shhets" ),                             
+      "ru" => "Использовать HTML и каскадные таблицы стилей", 
+      "sv" => "Använd HTML och Cascading Style Shhets"),                             
     "Image"   => array(
       "en" => "Create an image (PNG)",               
       "eo" => "Kreu PNG-bildon",               
@@ -130,6 +142,7 @@
       "ja" => "画像を生成(PNG)",
       "zh" => "创建一幅图像(PNG)",
       "nl" => "Genereer een afbeelding (PNG)",
+      "ru" => "Создать изображение (PNG)",         
       "sv" => "Skapa en PNG-bild" ),                             
     "Mode"    => array(
       "en" => "Select the convert mode",             
@@ -140,6 +153,7 @@
       "ja" => "変換のタイプを選んで下さい",
       "zh" => "请选择转换模式",
       "nl" => "Kies de wijze van omzetten",
+      "ru" => "Выберите режим преобразования",    
       "sv" => "Välj konverteringsmetod" ),                             
     "Size"    => array(
       "en" => "Select the lines height",             
@@ -149,7 +163,8 @@
       "pt" => "Selecione a altura das linhas",
       "ja" => "行幅を指定して下さい",
       "zh" => "请选择行高",
-      "nl" => "Selecteer de regelhoogte",                             
+      "nl" => "Selecteer de regelhoogte",   
+      "ru" => "Выберите высоту линий",                         
       "sv" => "Välj radhöjd" ),                             
 
 /* ADD 2004/03/25 - START */
@@ -160,7 +175,8 @@
       "fr" => "Échelle",
       "ia" => "Scala",
       "pt" => "Escala",
-      "ja" => "スケール", ),
+      "ja" => "スケール",
+      "ru" => "Масштаб",   ),
 
     "Line"    => array(
       "en" => "Line",             
@@ -168,7 +184,8 @@
       "fr" => "Ligne",
       "ia" => "Linea",
       "pt" => "Linha",
-      "ja" => "線", ),
+      "ja" => "線", 
+      "ru" => "Линия", ),
 
 /* ADD 2004/03/25 - END */
 
@@ -181,6 +198,7 @@
       "ja" => "音素",
       "zh" => "音素",
       "nl" => "Fonemen",
+      "ru" => "Фонемы",   
       "sv" => "Fonem" ),                             
     "A"       => array(
       "en" => "Man and his occupations",             
@@ -191,6 +209,7 @@
       "ja" => "男性と職業",
       "zh" => "男人和他的职业",
       "nl" => "De man en zijn bezigheden",
+      "ru" => "Мужчина и его занятия",    
       "sv" => "Mannen och hans sysslor" ),                             
     "B"       => array(
       "en" => "Woman and her occupations",           
@@ -201,6 +220,7 @@
       "ja" => "女性と職業",
       "zh" => "女人和她的职业",
       "nl" => "De vrouw en haar bezigheden",
+      "ru" => "Женщина и её занятия",    
       "sv" => "Kvinnan och hennes sysslor" ),                             
     "C"       => array(
       "en" => "Anthropomorphic Deities",             
@@ -211,6 +231,7 @@
       "ja" => "擬人化された神",
       "zh" => "神",
       "nl" => "Anthropomorfe Goden",             
+      "ru" => "Антропоморфные боги",    
       "sv" => "Gudomligheter" ),                             
     "D"       => array(
       "en" => "Parts of the Human Body",             
@@ -221,6 +242,7 @@
       "ja" => "人の身体の一部",
       "zh" => "人体的部分",
       "nl" => "Delen van het menselijk lichaam",
+      "ru" => "Части тела",    
       "sv" => "Kroppens delar" ),                             
     "E"       => array(
       "en" => "Mammals",                             
@@ -231,6 +253,7 @@
       "ja" => "哺乳類",
       "zh" => "哺乳动物",
       "nl" => "Zoogdieren",
+      "ru" => "Млекопитающие",    
       "sv" => "Däggdjur" ),                             
     "F"       => array(
       "en" => "Parts of Mammals",                    
@@ -241,6 +264,7 @@
       "ja" => "哺乳類の一部",
       "zh" => "哺乳动物的部分",
       "nl" => "Delen van zoogdieren",
+      "ru" => "Части млекопитающих",    
       "sv" => "Däggdjurens kroppsdelar" ),                             
     "G"       => array(
       "en" => "Birds",                               
@@ -251,6 +275,7 @@
       "ja" => "鳥類",
       "zh" => "鸟",
       "nl" => "Vogels",
+      "ru" => "Птицы",    
       "sv" => "Fåglar" ),                             
     "H"       => array(
       "en" => "Parts of Birds",                      
@@ -261,6 +286,7 @@
       "ja" => "鳥の一部",
       "zh" => "鸟的部分",
       "nl" => "Delen van vogels",
+      "ru" => "Части птиц",    
       "sv" => "Fåglarnas kroppsdelar" ),                             
     "I"       => array(
       "en" => "Amphibious Animals, Reptiles, etc.",  
@@ -271,6 +297,7 @@
       "ja" => "両棲類、爬虫類、など",
       "zh" => "两栖动物、爬行动物等等",
       "nl" => "Ampfibieën, Reptielen, etc",
+      "ru" => "Амфибии, рептилии и т. п.",    
       "sv" => "Insekter" ),                             
     "J"       => array(
       "en" => "?", 
@@ -284,6 +311,7 @@
       "ja" => "魚類、または魚の一部",
       "zh" => "鱼类或鱼类的部分",
       "nl" => "Vissen en delen daarvan",
+      "ru" => "Рыбы и их части",    
       "sv" => "Fiskar och fiskarnas kroppsdelar", ),
     "L"       => array(
       "en" => "Invertebrata and Lesser Animals",     
@@ -294,6 +322,7 @@
       "ja" => "Invertebrata",
       "zh" => "无脊椎动物",
       "nl" => "Invertebraten en lagere dieren",
+      "ru" => "Беспозвоночные и маленьки звери",    
       "sv" => "Ryggradslösa djur och mindre djur", ),
     "M"       => array(
       "en" => "Trees and Plants",                    
@@ -304,6 +333,7 @@
       "ja" => "植物",
       "zh" => "植物",
       "nl" => "Bomen en Planten",
+      "ru" => "Растения",    
       "sv" => "Träd och växter", ),
     "N"       => array(
       "en" => "Sky, Earth, Water",                   
@@ -314,6 +344,7 @@
       "ja" => "空、大地、水",
       "zh" => "天空、大地、水",
       "nl" => "Hemel, Aarde, Water",
+      "ru" => "Небо, земля, вода",    
       "sv" => "Himmel, jord, vatten", ),
     "O"       => array(
       "en" => "Buildings and Parts of Buildings",    
@@ -324,6 +355,7 @@
       "ja" => "建物とその一部",
       "zh" => "建筑和建筑的部分",
       "nl" => "Gebouwen en delen daarvan",
+      "ru" => "Строения и их части",    
       "sv" => "Byggnader och byggnadsdelar", ),
     "P"       => array(
       "en" => "Ships and Parts of Ships",            
@@ -334,6 +366,7 @@
       "ja" => "船舶類とその一部",
       "zh" => "船舶和船舶的部分",
       "nl" => "Schepen en delen daarvan",
+      "ru" => "Корабли и их части",    
       "sv" => "Fartyg och delar av fartyg", ),
     "Q"       => array(
       "en" => "Domestic and Funerary Furniture",     
@@ -344,6 +377,7 @@
       "ja" => "家具と葬具",
       "zh" => "陪葬的家具和仆人",
       "nl" => "Meubels (ook voor begrafenissen)",
+      "ru" => "Утварь и траурные вещи",    
       "sv" => "Möbler och begravningsföremål", ),
     "R"       => array(
       "en" => "Temple Furniture and Sacret Emblems", 
@@ -354,6 +388,7 @@
       "ja" => "寺院の祭具と聖なる紋章",
       "zh" => "寺院祭具和祭祀徽章",
       "nl" => "Tempelinrichting en heilige emblemen",
+      "ru" => "Храмовые объекты и священные эмблемы",    
       "sv" => "Tempelinredning och heliga emblem", ),
     "S"       => array(
       "en" => "Crowns, Dress, Staves, etc.",         
@@ -364,6 +399,7 @@
       "ja" => "王冠、ドレス、杖",
       "zh" => "王冠、服饰、棍仗等等",
       "nl" => "Kronen, Kledij, Hulpmiddelen als een staf e.d.",
+      "ru" => "Короны, одежда, инструменты и т. п.",    
       "sv" => "Kronor, kläder, utensilier", ),
     "T"       => array(
       "en" => "Warfare, Hunting, Butchery",          
@@ -374,6 +410,7 @@
       "ja" => "戦、狩、肉捌き",
       "zh" => "战争、狩猎、屠场",
       "nl" => "Oorlog, Jacht, Slagerij",
+      "ru" => "Война, охота, бойня",    
       "sv" => "Krig, jakt, slakt", ),
     "U"       => array(
       "en" => "Agriculture, Crafts and Professions", 
@@ -384,6 +421,7 @@
       "ja" => "農耕具と職業",
       "zh" => "农业、手工业",
       "nl" => "Landbouw, Nijverheid, Werktuigen",
+      "ru" => "Сельское хозяйство, ремёсла, профессии",    
       "sv" => "Jordbruksredskap", ),
     "V"       => array(
       "en" => "Rope, Fibre, Baskets, Bags, etc.",    
@@ -394,6 +432,7 @@
       "ja" => "ロープ、繊維、バスケット、バッグなど",
       "zh" => "绳、纤维、篮子、袋子等等",
       "nl" => "Touw, Manden, Zakken, e.d.",
+      "ru" => "Верёвки, коробы, сумки и т. п.",    
       "sv" => "Rep, korgar o.dyl.", ),
     "W"       => array(
       "en" => "Vessels of Stone and Earthenware",    
@@ -404,6 +443,7 @@
       "ja" => "壺などの土器類",
       "zh" => "石陶容器",
       "nl" => "Vazen",
+      "ru" => "Каменные и керамические вазы",    
       "sv" => "Skålar och kärl", ),
     "X"       => array(
       "en" => "Loaves and Cakes",                    
@@ -414,6 +454,7 @@
       "ja" => "パン",
       "zh" => "面包和蛋糕",
       "nl" => "Brood, Deegwaren",
+      "ru" => "Хлеб и выпечка",    
       "sv" => "Bröd", ),
     "Y"       => array(
       "en" => "Writing, Games, Music",               
@@ -424,6 +465,7 @@
       "ja" => "文書、ゲーム、音楽",
       "zh" => "写作、游戏、音乐",
       "nl" => "Schrijven, Spel, Muziek",
+      "ru" => "Письмо, игры, музыка",    
       "sv" => "Skrift, spel, musik", ),
     "Z"       => array(
       "en" => "Strokes, Geometrical Figures, etc.",  
@@ -434,6 +476,7 @@
       "ja" => "線、幾何学図形など",
       "zh" => "线、几何图形等等",
       "nl" => "Lijnen, Geometrische figuren",
+      "ru" => "Штрихи, геометрические фигуры и т. п.",    
       "sv" => "Linjer, geometriska figurer o.dyl.", ),
     "Aa"      => array(
       "en" => "Unclassified",                        
@@ -444,6 +487,7 @@
       "ja" => "その他",
       "zh" => "未分类",
       "nl" => "Niet geclassificeerd",
+      "ru" => "Неклассифицированное",    
       "sv" => "Övrigt", ),
     "All"     => array(
       "en" => "All hierogplyph",                     
@@ -454,6 +498,7 @@
       "ja" => "全ヒエログリフ",
       "zh" => "所有象形文字",
       "nl" => "Alle hiërogliefen",
+      "ru" => "Все иероглифы",    
       "sv" => "Alla hieroglyfer", ),
   );
 
