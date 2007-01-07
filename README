@@ -10,12 +10,12 @@
  modify it under the terms of the GNU General Public License
  as published by the Free Software Foundation; either version 2
  of the License, or any later version.
- 
+
  This program is distributed in the hope that it will be useful,
  but WITHOUT ANY WARRANTY; without even the implied warranty of
  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  GNU General Public License for more details.
- 
+
  You should have received a copy of the GNU General Public License
  along with this program; if not, write to the Free Software
  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
@@ -61,7 +61,7 @@ Apache 1.3.27 and PHP 4.3.3, but must work with oldest version.
 3) Where you want show hieroglyphs, add the line
    <?php echo WikiHiero("my_text"); ?>
 4) Enjoy!
- 
+
 If you rename the pictures directory, pictures prefix or extension, please 
 modify "wikihiero.php" to fit your changes. If you modify any picture size, 
 or add/remove pictures, you need to run "wh_generate.php" to build an updated

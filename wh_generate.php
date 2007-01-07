@@ -24,15 +24,14 @@
 //
 //////////////////////////////////////////////////////////////////////////
 
-  include "wh_main.php";
+include "wh_main.php";
 
-  if(array_key_exists("lang", $_GET))
-    $lang = $_GET["lang"];
-  else
-    $lang = "fr"; 
-
+if(array_key_exists("lang", $_GET)) {
+	$lang = $_GET["lang"];
+} else {
+	$lang = "fr";
+}
 ?>
-
 <html lang=<?php echo $lang; ?>>
   <head>
     <title>WikiHiero - Table generator</title>
@@ -41,17 +40,17 @@
   </head>
   <body bgcolor="#DDDDDD">
 
-    <big><?php echo "WikiHiero v".WH_VER_MAJ.".".WH_VER_MED.".".WH_VER_MIN; ?></big> 
+    <big><?php echo "WikiHiero v".WH_VER_MAJ.".".WH_VER_MED.".".WH_VER_MIN; ?></big>
 
     <br><br>Parsing hieroglyph files and creating tables...<br><br>
 
     <?php
-    
+
     $wh_prefabs = "\$wh_prefabs = array(\n";
     $wh_files   = "\$wh_files   = array(\n";
 
     $img_dir = dirname(__FILE__) . '/img/';
-    
+
     if(is_dir($img_dir))
     {
       if ($dh = opendir($img_dir))
@@ -69,7 +68,7 @@
         closedir($dh);
       }
     }
-    
+
     $wh_prefabs .= ");";
     $wh_files .= ");";
 
@@ -87,7 +86,7 @@
     fclose($file);
 
     //if(file_exists("wh_list(0).php"))
-    
+
     ?>
 
     <small><?php echo WH_Credit(); ?></small>

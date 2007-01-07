@@ -24,33 +24,41 @@
 //
 //////////////////////////////////////////////////////////////////////////
 
-  include "wh_language.php";
-  include "wikihiero.php";
+require "wh_language.php";
+require "wikihiero.php";
 
-  if(array_key_exists("table", $_GET))
-    $table = $_GET["table"];
-  else
-    $table = "All"; 
+#
+# Initialization
+#
 
-  if(array_key_exists("lang", $_GET))
-    $lang = $_GET["lang"];
-  else
-    $lang = "fr"; 
+# Fixme ! webRequest :)
+if(array_key_exists("table", $_GET)) {
+	$table = $_GET["table"];
+} else {
+	$table = "All";
+}
 
-  function WH_Text( $index )
-  {
-    global $wh_language;
-    global $lang;
+if(array_key_exists("lang", $_GET)) {
+	$lang = $_GET["lang"];
+} else {
+	$lang = "fr";
+}
 
-    if(isset($wh_language[$index]))
-    {
-      if(isset($wh_language[$index][$lang]))
-        return $wh_language[$index][$lang];
-      else
-        return $wh_language[$index]["en"];
-    }
-    return "";
-  }
+
+function WH_Text( $index ) {
+	global $wh_language;
+	global $lang;
+
+	if(isset($wh_language[$index])) {
+		if(isset($wh_language[$index][$lang])) {
+			return $wh_language[$index][$lang];
+		} else {
+			return $wh_language[$index]["en"];
+		}
+	}
+
+	return '';
+}
 
 ?>
 <html lang=<?php echo $lang; ?>>
@@ -65,10 +73,8 @@
 
     echo "<b>$table</b> - ".WH_Text($table)."<br><br>";
 
-    if($dh = opendir(WH_IMG_DIR)) 
-    {
-      while(($file = readdir($dh)) !== false) 
-      {
+    if($dh = opendir(WH_IMG_DIR)) {
+      while(($file = readdir($dh)) !== false) {
         if($table == "All")
         {
           $code = WH_GetCode($file);
