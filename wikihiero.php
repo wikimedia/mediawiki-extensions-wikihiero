@@ -61,4 +61,4 @@ function WikiHiero($hiero, $mode=WH_MODE_DEFAULT, $scale=WH_SCALE_DEFAULT, $line
 
 // If anyone needs WikiHieroHTML() etc., loader functions should be put here.
 // Hopefully everyone's using the general-purpose entry point above.
-?>
+

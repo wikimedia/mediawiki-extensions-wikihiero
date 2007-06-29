@@ -1119,4 +1119,3 @@ $wh_files   = array(
   "Z98A" => array( 5, 15 ),
 );
 
-?>

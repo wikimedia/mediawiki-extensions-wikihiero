@@ -1051,4 +1051,3 @@
       "wa" => "Tos les hiroglifes",
       "zh" => "所有象形文字" ),
   );
-?>
