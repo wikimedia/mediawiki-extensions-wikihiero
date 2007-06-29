@@ -60,7 +60,7 @@ function WH_Text( $index ) {
 	return '';
 }
 
-
+?>
 <html lang=<?php echo $lang; ?>>
   <head>
     <title><?php echo "$table - ".WH_Text($table); ?> - WikiHiero</title>
