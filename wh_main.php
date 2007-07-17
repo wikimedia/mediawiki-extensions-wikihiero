@@ -581,7 +581,10 @@ $wh_text_conv = array(
 // return >> string with converted code
 //------------------------------------------------------------------------
 function WikiHieroHook($hiero) {
-  return _WikiHiero($hiero, WH_MODE_HTML);
+	$ret = _WikiHiero($hiero, WH_MODE_HTML);
+	
+	// Strip newlines to avoid breakage in the wiki parser block pass
+	return str_replace( "\n", " ", $ret );
 }
 
 //========================================================================
