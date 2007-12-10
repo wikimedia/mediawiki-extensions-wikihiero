@@ -27,9 +27,10 @@
 // Register MediaWiki extension
 $wgExtensionFunctions[] = 'WH_Register';
 $wgExtensionCredits['parserhook'][] = array(
-	'name' => 'WikiHiero',
-	'author' => 'Guillaume Blanchard',
-	'url' => 'http://meta.wikimedia.org/wiki/WikiHiero',
+	'name'        => 'WikiHiero',
+	'version'     => '1.1',
+	'author'      => 'Guillaume Blanchard',
+	'url'         => 'http://meta.wikimedia.org/wiki/WikiHiero',
 	'description' => 'Syntax to display hieroglyph',
 );
 
@@ -61,4 +62,3 @@ function WikiHiero($hiero, $mode=WH_MODE_DEFAULT, $scale=WH_SCALE_DEFAULT, $line
 
 // If anyone needs WikiHieroHTML() etc., loader functions should be put here.
 // Hopefully everyone's using the general-purpose entry point above.
-
