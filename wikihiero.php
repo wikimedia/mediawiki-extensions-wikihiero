@@ -41,8 +41,8 @@ function WH_Register() {
 function WikiHieroLoad() {
 	static $loaded = false;
 	if ( !$loaded ) {
-	require( dirname( __FILE__ ) . '/wh_main.php' );
-	$loaded = true;
+		require( dirname( __FILE__ ) . '/wh_main.php' );
+		$loaded = true;
 	}
 }
 
