@@ -29,7 +29,7 @@ $wgExtensionFunctions[] = 'WH_Register';
 $wgExtensionCredits['parserhook'][] = array(
 	'name' => 'WikiHiero',
 	'author' => 'Guillaume Blanchard',
-	'url' => 'http://meta.wikimedia.org/wiki/WikiHiero',
+	'url' => 'http://www.mediawiki.org/wiki/Extension:WikiHiero',
 	'description' => 'Syntax to display hieroglyph',
 );
 
