@@ -27,11 +27,14 @@
 // Register MediaWiki extension
 $wgExtensionFunctions[] = 'WH_Register';
 $wgExtensionCredits['parserhook'][] = array(
-	'name' => 'WikiHiero',
-	'author' => 'Guillaume Blanchard',
-	'url' => 'http://www.mediawiki.org/wiki/Extension:WikiHiero',
-	'description' => 'Syntax to display hieroglyph',
+	'name'           => 'WikiHiero',
+	'author'         => 'Guillaume Blanchard',
+	'url'            => 'http://www.mediawiki.org/wiki/Extension:WikiHiero',
+	'version'        => '2008-02-18',
+	'description'    => 'Syntax to display hieroglyph',
+	'descriptionmsg' => 'wikihiero-desc',
 );
+$wgExtensionMessagesFiles['Wikihiero'] =  dirname(__FILE__) . '/wikihiero.i18n.php';
 
 function WH_Register() {
 	global $wgParser;
