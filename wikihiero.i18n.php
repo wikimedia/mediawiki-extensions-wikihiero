@@ -46,6 +46,13 @@ $messages['hsb'] = array(
 	'wikihiero-desc' => 'Přidawa tafličku <tt>&lt;hiero&gt;</tt> za zwobraznjenje hieroglyfow',
 );
 
+/** Japanese (日本語)
+ * @author JtFuruhata
+ */
+$messages['ja'] = array(
+	'wikihiero-desc' => '象形文字を表示する <tt>&lt;hiero&gt;</tt> タグを追加',
+);
+
 /** Lithuanian (Lietuvių)
  * @author Hugo.arg
  */
