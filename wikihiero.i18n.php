@@ -32,6 +32,13 @@ $messages['de'] = array(
 	'wikihiero-desc' => 'Fügt das <tt>&lt;hiero&gt;</tt>-Tag zur Formatierung von Hieroglyphen hinzu',
 );
 
+/** فارسی (فارسی)
+ * @author Huji
+ */
+$messages['fa'] = array(
+	'wikihiero-desc' => 'برچسب <tt>&lt;hiero&gt;</tt> را برای نمایش هیروگلیف می‌افزاید',
+);
+
 /** French (Français)
  * @author Grondin
  */
