@@ -18,6 +18,13 @@ $messages['ar'] = array(
 	'wikihiero-desc' => 'يضيف الوسم <tt>&lt;hiero&gt;</tt> لعرض الهيروغليفية',
 );
 
+/** Bulgarian (Български)
+ * @author DCLXVI
+ */
+$messages['bg'] = array(
+	'wikihiero-desc' => 'Добавя етикет <tt>&lt;hiero&gt;</tt> за показване на йероглифи',
+);
+
 /** Czech (Česky)
  * @author Matěj Grabovský
  */
@@ -46,6 +53,13 @@ $messages['fr'] = array(
 	'wikihiero-desc' => 'Ajoute la balise <tt>&lt;hiero&gt;</tt> pour afficher les hiéroglyphes',
 );
 
+/** Franco-Provençal (Arpetan)
+ * @author ChrisPtDe
+ */
+$messages['frp'] = array(
+	'wikihiero-desc' => 'Apond la balisa <tt>&lt;hiero&gt;</tt> por afichiér los hièroglifos.',
+);
+
 /** Upper Sorbian (Hornjoserbsce)
  * @author Michawiki
  */
@@ -72,6 +86,20 @@ $messages['lt'] = array(
  */
 $messages['nl'] = array(
 	'wikihiero-desc' => 'Voegt de tag <tt>&lt;hiero&gt;</tt> toe voor de weergave van hiërogliefen',
+);
+
+/** Norwegian (‪Norsk (bokmål)‬)
+ * @author Jon Harald Søby
+ */
+$messages['no'] = array(
+	'wikihiero-desc' => 'Legger til taggen <tt>&lt;hiero&gt;</tt> for å vise hieroglyfer',
+);
+
+/** Polish (Polski)
+ * @author Sp5uhe
+ */
+$messages['pl'] = array(
+	'wikihiero-desc' => 'Dodaje znacznik <tt>&lt;hiero&gt;</tt> służący do wyświetlania hieroglifów',
 );
 
 /** Portuguese (Português)
