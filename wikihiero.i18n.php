@@ -11,11 +11,25 @@ $messages['en'] = array(
 	'wikihiero-desc' => 'Adds <tt>&lt;hiero&gt;</tt> tag to display hieroglyph',
 );
 
+/** Aragonese (Aragonés)
+ * @author Juanpabl
+ */
+$messages['an'] = array(
+	'wikihiero-desc' => 'Adibe a etiqueta <tt>&lt;hiero&gt;</tt> ta mostrar cheroglifos',
+);
+
 /** Arabic (العربية)
  * @author Meno25
  */
 $messages['ar'] = array(
 	'wikihiero-desc' => 'يضيف الوسم <tt>&lt;hiero&gt;</tt> لعرض الهيروغليفية',
+);
+
+/** Asturian (Asturianu)
+ * @author Esbardu
+ */
+$messages['ast'] = array(
+	'wikihiero-desc' => "Añade la etiqueta <tt>&lt;hiero&gt;</tt> p'amosar xeroglíficos",
 );
 
 /** Bulgarian (Български)
