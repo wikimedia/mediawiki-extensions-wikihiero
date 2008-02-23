@@ -60,6 +60,13 @@ $messages['fa'] = array(
 	'wikihiero-desc' => 'برچسب <tt>&lt;hiero&gt;</tt> را برای نمایش هیروگلیف می‌افزاید',
 );
 
+/** Finnish (Suomi)
+ * @author Crt
+ */
+$messages['fi'] = array(
+	'wikihiero-desc' => 'Lisää <tt>&lt;hiero&gt;</tt>-tagin hieroglyfien esittämiseksi.',
+);
+
 /** French (Français)
  * @author Grondin
  */
@@ -74,6 +81,13 @@ $messages['frp'] = array(
 	'wikihiero-desc' => 'Apond la balisa <tt>&lt;hiero&gt;</tt> por afichiér los hièroglifos.',
 );
 
+/** Croatian (Hrvatski)
+ * @author Dnik
+ */
+$messages['hr'] = array(
+	'wikihiero-desc' => 'Dodaje oznaku <tt>&lt;hiero&gt;</tt> za prikaz hijeroglifa',
+);
+
 /** Upper Sorbian (Hornjoserbsce)
  * @author Michawiki
  */
@@ -81,11 +95,25 @@ $messages['hsb'] = array(
 	'wikihiero-desc' => 'Přidawa tafličku <tt>&lt;hiero&gt;</tt> za zwobraznjenje hieroglyfow',
 );
 
+/** Hungarian (Magyar)
+ * @author Bdanee
+ */
+$messages['hu'] = array(
+	'wikihiero-desc' => '<tt>&lt;hiero&gt;</tt> tag hieroglifák megjelenítéséhez',
+);
+
 /** Japanese (日本語)
  * @author JtFuruhata
  */
 $messages['ja'] = array(
 	'wikihiero-desc' => '象形文字を表示する <tt>&lt;hiero&gt;</tt> タグを追加',
+);
+
+/** Limburgish (Limburgs)
+ * @author Matthias
+ */
+$messages['li'] = array(
+	'wikihiero-desc' => 'Voegt de tag <tt>&lt;hiero&gt;</tt> toe veur de weergave van hiërogliefe',
 );
 
 /** Lithuanian (Lietuvių)
