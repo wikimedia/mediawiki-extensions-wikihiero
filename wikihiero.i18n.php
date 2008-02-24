@@ -102,6 +102,13 @@ $messages['hu'] = array(
 	'wikihiero-desc' => '<tt>&lt;hiero&gt;</tt> tag hieroglifák megjelenítéséhez',
 );
 
+/** Italian (Italiano)
+ * @author BrokenArrow
+ */
+$messages['it'] = array(
+	'wikihiero-desc' => 'Aggiunge il tag <tt>&lt;hiero&gt;</tt> per la visualizzazione dei geroglifici',
+);
+
 /** Japanese (日本語)
  * @author JtFuruhata
  */
