@@ -130,6 +130,13 @@ $messages['lt'] = array(
 	'wikihiero-desc' => 'Prideda <tt>&lt;hieroglifas&gt;</tt> tagus, kad rodyti hieroglifą',
 );
 
+/** Marathi (मराठी)
+ * @author Mahitgar
+ */
+$messages['mr'] = array(
+	'wikihiero-desc' => 'hieroग्लिफ दाखवण्याकरिता  <tt>&lt;hiero&gt;</tt> खूण जोडते',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
