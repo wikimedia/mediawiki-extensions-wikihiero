@@ -30,7 +30,7 @@ $wgExtensionCredits['parserhook'][] = array(
 	'name'           => 'WikiHiero',
 	'author'         => 'Guillaume Blanchard',
 	'url'            => 'http://www.mediawiki.org/wiki/Extension:WikiHiero',
-	'version'        => '2008-02-18',
+	'version' => preg_replace('/^.* (\d\d\d\d-\d\d-\d\d) .*$/', '\1', '$LastChangedDate$'), #just the date of the last change
 	'description'    => 'Syntax to display hieroglyph',
 	'descriptionmsg' => 'wikihiero-desc',
 );
