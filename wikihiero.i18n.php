@@ -158,6 +158,13 @@ $messages['no'] = array(
 	'wikihiero-desc' => 'Legger til taggen <tt>&lt;hiero&gt;</tt> for å vise hieroglyfer',
 );
 
+/** Occitan (Occitan)
+ * @author Cedric31
+ */
+$messages['oc'] = array(
+	'wikihiero-desc' => 'Ajusta la balisa <tt>&lt;hiero&gt;</tt> per afichar los ieroglifes',
+);
+
 /** Polish (Polski)
  * @author Sp5uhe
  */
