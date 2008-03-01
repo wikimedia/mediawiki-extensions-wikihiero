@@ -71,7 +71,7 @@ function WH_Text( $index ) {
 
     <?php
 
-    echo "<b>$table</b> - ".WH_Text($table)."<br><br>";
+    echo "<b>$table</b> - ".WH_Text($table)."<br /><br />";
 
     if($dh = opendir(WH_IMG_DIR)) {
       while(($file = readdir($dh)) !== false) {

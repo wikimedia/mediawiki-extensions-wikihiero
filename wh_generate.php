@@ -42,7 +42,7 @@ if(array_key_exists("lang", $_GET)) {
 
     <big><?php echo "WikiHiero v".WH_VER_MAJ.".".WH_VER_MED.".".WH_VER_MIN; ?></big>
 
-    <br><br>Parsing hieroglyph files and creating tables...<br><br>
+    <br /><br />Parsing hieroglyph files and creating tables...<br /><br />
 
     <?php
 
@@ -72,8 +72,8 @@ if(array_key_exists("lang", $_GET)) {
     $wh_prefabs .= ");";
     $wh_files .= ");";
 
-    echo "<pre>$wh_prefabs<br><br>";
-    echo "$wh_files<br><br></pre>";
+    echo "<pre>$wh_prefabs<br /><br />";
+    echo "$wh_files<br /><br /></pre>";
 
     $file = fopen("wh_list.php", "w+");
     fwrite($file, "<?php\n\n");

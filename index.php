@@ -133,7 +133,7 @@ $process_time = sprintf("%0.3f sec", $b_sec - $a_sec + $b_dec - $a_dec);
   <TABLE border="0">
   <TR valign="top"><TD>
  
-    <BIG><?php echo "WikiHiero v".WH_VER_MAJ.".".WH_VER_MED.".".WH_VER_MIN; ?></BIG><BR>
+    <BIG><?php echo "WikiHiero v".WH_VER_MAJ.".".WH_VER_MED.".".WH_VER_MIN; ?></BIG><br />
     <SMALL>[<?php 
 
       reset($wh_language['Lang']);
@@ -148,11 +148,11 @@ $process_time = sprintf("%0.3f sec", $b_sec - $a_sec + $b_dec - $a_dec);
           echo " | ";
       }
     ?>]</SMALL>
-    <BR><BR>
+    <br /><br />
 
     <form name="wh_form" action="index.php?lang=<?php echo $lang; ?>" method="post">
       <textarea name="text" cols="60" rows="10" title="<?php echo WH_Text("Text"); ?>"><?php echo $text; ?></textarea>
-      <br><br>
+      <br /><br />
       <input type="submit" title="<?php echo WH_Text("Convert"); ?>" value="<?php echo WH_Text("Convert"); ?>">
       <select title="<?php echo WH_Text("Mode"); ?>" name="mode">
         <option value="0" <?php if($mode==0) echo "selected"; ?> title="<?php echo WH_Text("TEXT");  ?>" onclick="javascript:DisableScale(true);">Text only
@@ -167,14 +167,14 @@ $process_time = sprintf("%0.3f sec", $b_sec - $a_sec + $b_dec - $a_dec);
 
   </td><td valign="top">
 
-  <b><?php echo WH_Text("Syntax"); ?></b><br>
-    <tt>-</tt> <?php echo WH_Text("-"); ?><br>
-    <tt>:</tt> <?php echo WH_Text(":"); ?><br>
-    <tt>*</tt> <?php echo WH_Text("*"); ?><br>
-    <tt>!</tt> <?php echo WH_Text("!"); ?><br>
+  <b><?php echo WH_Text("Syntax"); ?></b><br />
+    <tt>-</tt> <?php echo WH_Text("-"); ?><br />
+    <tt>:</tt> <?php echo WH_Text(":"); ?><br />
+    <tt>*</tt> <?php echo WH_Text("*"); ?><br />
+    <tt>!</tt> <?php echo WH_Text("!"); ?><br />
 
-    <br>
-    <b><?php echo WH_Text("Tables"); ?></b><br>
+    <br />
+    <b><?php echo WH_Text("Tables"); ?></b><br />
     <?php WH_Table("Phoneme"); ?>
     | <?php WH_Table("A"); ?>
     | <?php WH_Table("B"); ?>
@@ -204,9 +204,9 @@ $process_time = sprintf("%0.3f sec", $b_sec - $a_sec + $b_dec - $a_dec);
     | <?php WH_Table("Z"); ?>
     | <?php WH_Table("Aa"); ?>
     | <?php WH_Table("All"); ?>
-    <br><br>
+    <br /><br />
 
-    <b><?php echo WH_Text("Download"); ?></b><br>
+    <b><?php echo WH_Text("Download"); ?></b><br />
     [<?php echo WH_Packet("rar"); ?>] - 
     [<?php echo WH_Packet("zip"); ?>] -
     <a href="README">ReadMe</a>
@@ -214,8 +214,8 @@ $process_time = sprintf("%0.3f sec", $b_sec - $a_sec + $b_dec - $a_dec);
   </td></tr>
   </table>
 
-  <br>
-  <b>Images</b><br>
+  <br />
+  <b>Images</b><br />
   <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-style:solid; border-width:1px; padding:1em; border-color:gray; background:#ffffff;">
   <tr valign="middle"><td>
 
@@ -224,8 +224,8 @@ $process_time = sprintf("%0.3f sec", $b_sec - $a_sec + $b_dec - $a_dec);
   </td></tr>
   </table>
 
-  <br>
-  <b>Source</b><br>
+  <br />
+  <b>Source</b><br />
   <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-style:solid; border-width:1px; padding:1em; border-color:gray; background:#ffffff;">
   <tr valign="middle"><td>
 
@@ -234,7 +234,7 @@ $process_time = sprintf("%0.3f sec", $b_sec - $a_sec + $b_dec - $a_dec);
   </td></tr>
   </table>
 
-  <br>
+  <br />
   <table align="right"><tr><td>
   <a href="http://www.mozilla.org/products/firefox/" title="Get Firefox - The free browser">
   <img src="http://www.mozilla.org/products/firefox/buttons/getfirefox_88x31.png"
@@ -242,7 +242,7 @@ $process_time = sprintf("%0.3f sec", $b_sec - $a_sec + $b_dec - $a_dec);
   </td></tr></table>
   <small><?php echo "Parsing duration: $process_time"; ?></small>
 
-  <br><br>
+  <br /><br />
   <small><?php echo WH_Credit(); ?></small>
 </body>
 </html>
