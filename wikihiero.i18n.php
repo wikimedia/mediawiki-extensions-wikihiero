@@ -200,6 +200,13 @@ $messages['sv'] = array(
 	'wikihiero-desc' => 'Lägger till taggen <tt>&lt;hiero&gt;</tt> för att visa hieroglyfer',
 );
 
+/** Tajik (Тоҷикӣ)
+ * @author Ibrahim
+ */
+$messages['tg'] = array(
+	'wikihiero-desc' => 'Бачасби <tt>&lt;hiero&gt;</tt>-ро барои намоиши ҳироглиф илова мекунад',
+);
+
 /** Vietnamese (Tiếng Việt)
  * @author Vinhtantran
  */
