@@ -200,6 +200,13 @@ $messages['sv'] = array(
 	'wikihiero-desc' => 'Lägger till taggen <tt>&lt;hiero&gt;</tt> för att visa hieroglyfer',
 );
 
+/** Telugu (తెలుగు)
+ * @author Veeven
+ */
+$messages['te'] = array(
+	'wikihiero-desc' => 'హీయెరోగ్లిఫ్&zwnj;ని చూపించడానికై <tt>&lt;hiero&gt;</tt> అనే టాగుని చేరుస్తుంది',
+);
+
 /** Tajik (Тоҷикӣ)
  * @author Ibrahim
  */
