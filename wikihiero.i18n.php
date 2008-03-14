@@ -123,6 +123,13 @@ $messages['ja'] = array(
 	'wikihiero-desc' => '象形文字を表示する <tt>&lt;hiero&gt;</tt> タグを追加',
 );
 
+/** Luxembourgish (Lëtzebuergesch)
+ * @author Robby
+ */
+$messages['lb'] = array(
+	'wikihiero-desc' => 'Setzt den Tag <tt>&lt;hiero&gt;</tt> derbäi fir Hieroglyphen unzeweisen',
+);
+
 /** Limburgish (Limburgs)
  * @author Matthias
  */
@@ -142,6 +149,13 @@ $messages['lt'] = array(
  */
 $messages['mr'] = array(
 	'wikihiero-desc' => 'hieroग्लिफ दाखवण्याकरिता  <tt>&lt;hiero&gt;</tt> खूण जोडते',
+);
+
+/** Low German (Plattdüütsch)
+ * @author Slomox
+ */
+$messages['nds'] = array(
+	'wikihiero-desc' => 'Föögt dat <tt>&lt;hiero&gt;</tt>-Tag för dat Formateren vun Hieroglyphen to',
 );
 
 /** Dutch (Nederlands)
