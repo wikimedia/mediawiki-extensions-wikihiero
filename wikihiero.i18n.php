@@ -53,6 +53,13 @@ $messages['de'] = array(
 	'wikihiero-desc' => 'Fügt das <tt>&lt;hiero&gt;</tt>-Tag zur Formatierung von Hieroglyphen hinzu',
 );
 
+/** Esperanto (Esperanto)
+ * @author Yekrats
+ */
+$messages['eo'] = array(
+	'wikihiero-desc' => 'Aldonas etikedon <tt>&lt;hiero&gt;</tt> por montri hieroglifon',
+);
+
 /** فارسی (فارسی)
  * @author Huji
  */
@@ -121,6 +128,13 @@ $messages['it'] = array(
  */
 $messages['ja'] = array(
 	'wikihiero-desc' => '象形文字を表示する <tt>&lt;hiero&gt;</tt> タグを追加',
+);
+
+/** Jutish (Jysk)
+ * @author Huslåke
+ */
+$messages['jut'] = array(
+	'wikihiero-desc' => 'Gæv <tt>&lt;hiero&gt;</tt> tag til displæ hiærågliifer',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
