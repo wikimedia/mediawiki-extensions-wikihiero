@@ -103,7 +103,7 @@ $messages['hsb'] = array(
 );
 
 /** Hungarian (Magyar)
- * @author Bdanee
+ * @author Dani
  */
 $messages['hu'] = array(
 	'wikihiero-desc' => '<tt>&lt;hiero&gt;</tt> tag hieroglifák megjelenítéséhez',
