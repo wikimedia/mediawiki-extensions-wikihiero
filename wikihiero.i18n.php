@@ -221,6 +221,13 @@ $messages['sk'] = array(
 	'wikihiero-desc' => 'Pridáva značku <tt>&lt;hiero&gt;</tt> na zobrazovanie hieroglyfov',
 );
 
+/** Sundanese (Basa Sunda)
+ * @author Kandar
+ */
+$messages['su'] = array(
+	'wikihiero-desc' => 'Nambahkeun tag <tt>&lt;hiero&gt;</tt> pikeun némbongkeun hiroglip',
+);
+
 /** Swedish (Svenska)
  * @author Lejonel
  */
