@@ -39,6 +39,13 @@ $messages['bg'] = array(
 	'wikihiero-desc' => 'Добавя етикет <tt>&lt;hiero&gt;</tt> за показване на йероглифи',
 );
 
+/** Breton (Brezhoneg)
+ * @author Fulup
+ */
+$messages['br'] = array(
+	'wikihiero-desc' => 'Ouzhpennañ a ra ar valizenn <tt>&lt;hiero&gt;</tt> evit embann ar hieroglifoù.',
+);
+
 /** Czech (Česky)
  * @author Matěj Grabovský
  */
