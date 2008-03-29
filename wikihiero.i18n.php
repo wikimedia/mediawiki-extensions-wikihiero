@@ -263,3 +263,23 @@ $messages['vi'] = array(
 	'wikihiero-desc' => 'Thêm thẻ <tt>&lt;hiero&gt;</tt> để hiển thị chữ tượng hình',
 );
 
+/** Cantonese
+ * @author Shinjiman
+ */
+$messages['yue'] = array(
+	'wikihiero-desc' => '加 <tt>&lt;hiero&gt;</tt> 標籤去顯示象形文字',
+);
+
+/** Chinese Simplified
+ * @author Shinjiman
+ */
+$messages['zh-hans'] = array(
+	'wikihiero-desc' => '加入 <tt>&lt;hiero&gt;</tt> 标签去显示象形文字',
+);
+
+/** Chinese Traditional
+ * @author Shinjiman
+ */
+$messages['zh-hant'] = array(
+	'wikihiero-desc' => '加入 <tt>&lt;hiero&gt;</tt> 標籤去顯示象形文字',
+);
