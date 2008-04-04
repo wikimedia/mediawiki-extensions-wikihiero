@@ -95,6 +95,13 @@ $messages['frp'] = array(
 	'wikihiero-desc' => 'Apond la balisa <tt>&lt;hiero&gt;</tt> por afichiér los hièroglifos.',
 );
 
+/** Hindi (हिन्दी)
+ * @author Kaustubh
+ */
+$messages['hi'] = array(
+	'wikihiero-desc' => 'हाइरोग्लिफ दर्शाने के लिये <tt>&lt;hiero&gt;</tt> टैग देता हैं',
+);
+
 /** Croatian (Hrvatski)
  * @author Dnik
  */
@@ -283,3 +290,4 @@ $messages['zh-hans'] = array(
 $messages['zh-hant'] = array(
 	'wikihiero-desc' => '加入 <tt>&lt;hiero&gt;</tt> 標籤去顯示象形文字',
 );
+
