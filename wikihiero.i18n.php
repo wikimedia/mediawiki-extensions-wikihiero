@@ -263,6 +263,13 @@ $messages['tg-cyrl'] = array(
 	'wikihiero-desc' => 'Бачасби <tt>&lt;hiero&gt;</tt>-ро барои намоиши ҳироглиф илова мекунад',
 );
 
+/** Vèneto (Vèneto)
+ * @author Candalua
+ */
+$messages['vec'] = array(
+	'wikihiero-desc' => 'Zonta el tag <tt>&lt;hiero&gt;</tt> par la visualizazion dei geroglifici',
+);
+
 /** Vietnamese (Tiếng Việt)
  * @author Vinhtantran
  */
