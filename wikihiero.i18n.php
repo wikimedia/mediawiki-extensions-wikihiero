@@ -151,6 +151,13 @@ $messages['jut'] = array(
 	'wikihiero-desc' => 'Gæv <tt>&lt;hiero&gt;</tt> tag til displæ hiærågliifer',
 );
 
+/** Korean (한국어)
+ * @author ToePeu
+ */
+$messages['ko'] = array(
+	'wikihiero-desc' => '히에로글리프 표현을 위해 <tt>&lt;hiero&gt;</tt>태그를 추가',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
