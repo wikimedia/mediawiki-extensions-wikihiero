@@ -151,6 +151,13 @@ $messages['jut'] = array(
 	'wikihiero-desc' => 'Gæv <tt>&lt;hiero&gt;</tt> tag til displæ hiærågliifer',
 );
 
+/** Javanese (Basa Jawa)
+ * @author Meursault2004
+ */
+$messages['jv'] = array(
+	'wikihiero-desc' => 'Nambahaké tag <tt>&lt;hiero&gt;</tt> kanggo nuduhaké hieroglif',
+);
+
 /** Korean (한국어)
  * @author ToePeu
  */
