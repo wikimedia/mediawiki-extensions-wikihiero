@@ -277,6 +277,13 @@ $messages['tg-cyrl'] = array(
 	'wikihiero-desc' => 'Бачасби <tt>&lt;hiero&gt;</tt>-ро барои намоиши ҳироглиф илова мекунад',
 );
 
+/** Ukrainian (Українська)
+ * @author Ahonc
+ */
+$messages['uk'] = array(
+	'wikihiero-desc' => 'Додає тег <tt>&lt;hiero&gt;</tt> для відображення ієрогліфів',
+);
+
 /** Vèneto (Vèneto)
  * @author Candalua
  */
