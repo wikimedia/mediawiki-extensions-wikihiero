@@ -242,6 +242,13 @@ $messages['ru'] = array(
 	'wikihiero-desc' => 'Добавляет тег <tt>&lt;hiero&gt;</tt> для показа иероглифов',
 );
 
+/** Yakut (Саха тыла)
+ * @author HalanTul
+ */
+$messages['sah'] = array(
+	'wikihiero-desc' => 'Иероглифтары көрдөрөргө анаан <tt>&lt;hiero&gt;</tt> тиэги эбэр',
+);
+
 /** Slovak (Slovenčina)
  * @author Helix84
  */
