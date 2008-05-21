@@ -236,7 +236,7 @@ $messages['pt'] = array(
 );
 
 /** Russian (Русский)
- * @author .:Ajvol:.
+ * @author Александр Сигачёв
  */
 $messages['ru'] = array(
 	'wikihiero-desc' => 'Добавляет тег <tt>&lt;hiero&gt;</tt> для показа иероглифов',
