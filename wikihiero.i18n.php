@@ -165,6 +165,13 @@ $messages['ko'] = array(
 	'wikihiero-desc' => '히에로글리프 표현을 위해 <tt>&lt;hiero&gt;</tt>태그를 추가',
 );
 
+/** Ripoarisch (Ripoarisch)
+ * @author Purodha
+ */
+$messages['ksh'] = array(
+	'wikihiero-desc' => 'Deiht dat <tt>&lt;hiero&gt;</tt> zum Parser dobei, womet mer Hirojlüüfe em Wiki bruche kann.',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
