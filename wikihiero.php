@@ -25,7 +25,12 @@
 //////////////////////////////////////////////////////////////////////////
 
 // Register MediaWiki extension
-$wgExtensionFunctions[] = 'WH_Register';
+if ( defined( 'MW_SUPPORTS_PARSERFIRSTCALLINIT' ) ) {
+	$wgHooks['ParserFirstCallInit'][] = 'WH_Register';
+} else {
+	$wgExtensionFunctions[] = 'WH_Register';
+}
+
 $wgExtensionCredits['parserhook'][] = array(
 	'name'           => 'WikiHiero',
 	'author'         => 'Guillaume Blanchard',
@@ -40,6 +45,7 @@ $wgExtensionMessagesFiles['Wikihiero'] =  dirname(__FILE__) . '/wikihiero.i18n.p
 function WH_Register() {
 	global $wgParser;
 	$wgParser->setHook( 'hiero', 'WikiHieroLoader' );
+	return true;
 }
 
 function WikiHieroLoad() {
