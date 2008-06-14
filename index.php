@@ -24,9 +24,14 @@
 //
 //////////////////////////////////////////////////////////////////////////
 
+$IP = getenv( 'MW_INSTALL_PATH' );
+if ( $IP === false ) { 
+	$IP = dirname( __FILE__ ) .'/../..';
+}
+require( "$IP/includes/WebStart.php" );
+
 require('wh_language.php');
 require('wikihiero.php');
-
 #
 # Initialization from request
 #
@@ -91,7 +96,9 @@ function WH_Packet( $ext ) {
 
 function WH_Table( $table ) {
 	global $lang;
-	echo "<a href=\"#\" onClick=\"MyWindow=window.open('wh_table.php?table=$table&lang=$lang','$table','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=400,height=300,left=20,top=20'); return false;\" title =\"".WH_Text($table)."\">$table</a>";
+	$url = "wh_table.php?table=" . urlencode( $table ) . '&lang=' . urlencode( $lang );
+	$encUrl = htmlspecialchars( Xml::encodeJsVar( $url ) );
+	echo "<a href=\"#\" onClick=\"MyWindow=window.open($encUrl,'$table','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=400,height=300,left=20,top=20'); return false;\" title =\"".WH_Text($table)."\">$table</a>";
 }
 
 #
@@ -160,9 +167,9 @@ $process_time = sprintf("%0.3f sec", $b_sec - $a_sec + $b_dec - $a_dec);
         <option disabled value="2" <?php if($mode==2) echo "selected"; ?> title="<?php echo WH_Text("CSS");   ?>">HTML & CSS
         <option disabled value="3" <?php if($mode==3) echo "selected"; ?> title="<?php echo WH_Text("Image"); ?>">Image
       </select> 
-      <?php echo WH_Text("Scale"); ?><input type="range" name="scale" <?php if($mode==0) echo "disabled"; ?> title="<?php echo WH_Text("Size"); ?>" min="1" max="999" size="3" maxlength="3" value="<?php echo $scale; ?>">%
+      <?php echo WH_Text("Scale"); ?><input type="range" name="scale" <?php if($mode==0) echo "disabled"; ?> title="<?php echo WH_Text("Size"); ?>" min="1" max="999" size="3" maxlength="3" value="<?php echo htmlspecialchars( $scale ); ?>">%
       <?php echo WH_Text("Line"); ?><input type="checkbox" name="line" <?php if($line) echo "checked"; ?>>
-      <input type="hidden" name="lang" value="<?php echo $lang; ?>">
+      <input type="hidden" name="lang" value="<?php echo htmlspecialchars( $lang ); ?>">
     </form>
 
   </td><td valign="top">

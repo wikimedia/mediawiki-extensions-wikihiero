@@ -32,7 +32,7 @@ if(array_key_exists("lang", $_GET)) {
 	$lang = "fr";
 }
 ?>
-<html lang=<?php echo $lang; ?>>
+<html lang=<?php echo htmlspecialchars( $lang ); ?>>
   <head>
     <title>WikiHiero - Table generator</title>
     <meta http-equiv="Content-type" content="text/html; charset=UTF-8">

@@ -61,9 +61,9 @@ function WH_Text( $index ) {
 }
 
 ?>
-<html lang=<?php echo $lang; ?>>
+<html lang=<?php echo htmlspecialchars($lang); ?>>
   <head>
-    <title><?php echo "$table - ".WH_Text($table); ?> - WikiHiero</title>
+    <title><?php echo htmlspecialchars($table)." - ".WH_Text($table); ?> - WikiHiero</title>
     <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
     <link rel="shortcut icon" href="/favicon.ico">
   </head>
@@ -71,7 +71,7 @@ function WH_Text( $index ) {
 
     <?php
 
-    echo "<b>$table</b> - ".WH_Text($table)."<br /><br />";
+    echo "<b>" . htmlspecialchars( $table ) . "</b> - ".WH_Text($table)."<br /><br />";
 
     if($dh = opendir(WH_IMG_DIR)) {
       while(($file = readdir($dh)) !== false) {
@@ -79,15 +79,20 @@ function WH_Text( $index ) {
         {
           $code = WH_GetCode($file);
 					if(in_array($code, $wh_phonemes))
-            echo "<img src=\"".WH_IMG_DIR."$file\" title=\"$code [".array_search($code, $wh_phonemes)."]\">\n";
+						echo "<img src=\"".htmlspecialchars( WH_IMG_DIR.$file ) . "\" " .
+							"title=\"" . htmlspecialchars( $code ) . " [".
+							htmlspecialchars( array_search($code, $wh_phonemes) ) . "]\">\n";
 					else
-            echo "<img src=\"".WH_IMG_DIR."$file\" title=\"$code\">\n";
+						echo "<img src=\"".htmlspecialchars( WH_IMG_DIR.$file ) . "\" title=\"" . 
+							htmlspecialchars( $code ) . "\">\n";
         }
         else if($table == "Phoneme")
         {
           $code = WH_GetCode($file);
           if(in_array($code, $wh_phonemes))
-            echo "<img src=\"".WH_IMG_DIR."$file\" title=\"$code [".array_search($code, $wh_phonemes)."]\">\n";
+						echo "<img src=\"".htmlspecialchars( WH_IMG_DIR.$file ) . "\" " . 
+							"title=\"" . htmlspecialchars( $code ) . " [".
+							htmlspecialchars( array_search($code, $wh_phonemes) )."]\">\n";
         }
         else if($table == "Aa")
         {
@@ -95,9 +100,12 @@ function WH_Text( $index ) {
 					if((substr($code, 0, 2) == $table) && ctype_digit($code[2]))
 					{
 						if(in_array($code, $wh_phonemes))
-							echo "<img src=\"".WH_IMG_DIR."$file\" title=\"$code [".array_search($code, $wh_phonemes)."]\">\n";
+							echo "<img src=\"".htmlspecialchars( WH_IMG_DIR.$file) . "\" title=\"" . 
+								htmlspecialchars( $code ) . " [".
+								htmlspecialchars( array_search($code, $wh_phonemes) )."]\">\n";
 						else
-							echo "<img src=\"".WH_IMG_DIR."$file\" title=\"$code\">\n";
+							echo "<img src=\"".htmlspecialchars( WH_IMG_DIR.$file ) . "\" title=\"" . 
+								htmlspecialchars( $code ) . "\">\n";
 					}
         }
         else
@@ -106,9 +114,12 @@ function WH_Text( $index ) {
 					if(($code[0] == $table) && ctype_digit($code[1]))
 					{
 						if(in_array($code, $wh_phonemes))
-							echo "<img src=\"".WH_IMG_DIR."$file\" title=\"$code [".array_search($code, $wh_phonemes)."]\">\n";
+							echo "<img src=\"".htmlspecialchars( WH_IMG_DIR.$file ) . "\" title=\"" . 
+								htmlspecialchars( $code ) . "[".
+								htmlspecialchars( array_search($code, $wh_phonemes) )."]\">\n";
 						else
-							echo "<img src=\"".WH_IMG_DIR."$file\" title=\"$code\">\n";
+							echo "<img src=\"".htmlspecialchars( WH_IMG_DIR.$file ). "\" title=\"" . 
+								htmlspecialchars( $code ) . "\">\n";
 					}
         }
       }
