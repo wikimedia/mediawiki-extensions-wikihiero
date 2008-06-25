@@ -95,6 +95,13 @@ $messages['frp'] = array(
 	'wikihiero-desc' => 'Apond la balisa <tt>&lt;hiero&gt;</tt> por afichiér los hièroglifos.',
 );
 
+/** Galician (Galego)
+ * @author Toliño
+ */
+$messages['gl'] = array(
+	'wikihiero-desc' => 'Engade a etiqueta <tt>&lt;hiero&gt;</tt> para amosar hieroglifos (hieroglyph)',
+);
+
 /** Hebrew (עברית)
  * @author Rotem Liss
  */
@@ -205,6 +212,13 @@ $messages['lt'] = array(
  */
 $messages['mr'] = array(
 	'wikihiero-desc' => 'hieroग्लिफ दाखवण्याकरिता  <tt>&lt;hiero&gt;</tt> खूण जोडते',
+);
+
+/** Malay (Bahasa Melayu)
+ * @author Aviator
+ */
+$messages['ms'] = array(
+	'wikihiero-desc' => 'Menambah tag <tt>&lt;hiero&gt;</tt> untuk menghasilkan hieroglif',
 );
 
 /** Low German (Plattdüütsch)
