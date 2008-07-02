@@ -253,7 +253,7 @@ $messages['oc'] = array(
  * @author Sp5uhe
  */
 $messages['pl'] = array(
-	'wikihiero-desc' => 'Dodaje znacznik <tt>&lt;hiero&gt;</tt> służący do wyświetlania hieroglifów',
+	'wikihiero-desc' => 'Dodaje znacznik <tt>&lt;hiero&gt;</tt> umożliwiający wyświetlanie hieroglifów',
 );
 
 /** Portuguese (Português)
