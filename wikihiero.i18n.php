@@ -53,6 +53,13 @@ $messages['cs'] = array(
 	'wikihiero-desc' => 'Přidává značku <tt>&lt;hiero&gt;</tt> pro zobrazování hieroglyfů',
 );
 
+/** Danish (Dansk)
+ * @author Jan Friberg
+ */
+$messages['da'] = array(
+	'wikihiero-desc' => "Tilføjer tag'en <tt>&lt;hiero&gt;</tt> for at vise hieroglyffer",
+);
+
 /** German (Deutsch)
  * @author Raimond Spekking
  */
