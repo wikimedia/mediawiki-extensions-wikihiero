@@ -60,6 +60,13 @@ $messages['de'] = array(
 	'wikihiero-desc' => 'Fügt das <tt>&lt;hiero&gt;</tt>-Tag zur Formatierung von Hieroglyphen hinzu',
 );
 
+/** Lower Sorbian (Dolnoserbski)
+ * @author Michawiki
+ */
+$messages['dsb'] = array(
+	'wikihiero-desc' => 'Pśidawa toflicku <tt>&lt;hiero&gt;</tt> za zwobraznjenje hieroglyfow',
+);
+
 /** Esperanto (Esperanto)
  * @author Yekrats
  */
