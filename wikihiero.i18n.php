@@ -81,7 +81,7 @@ $messages['eo'] = array(
 	'wikihiero-desc' => 'Aldonas etikedon <tt>&lt;hiero&gt;</tt> por montri hieroglifon',
 );
 
-/** فارسی (فارسی)
+/** Persian (فارسی)
  * @author Huji
  */
 $messages['fa'] = array(
@@ -249,7 +249,7 @@ $messages['nl'] = array(
 	'wikihiero-desc' => 'Voegt de tag <tt>&lt;hiero&gt;</tt> toe voor de weergave van hiërogliefen',
 );
 
-/** Norwegian (‪Norsk (bokmål)‬)
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Jon Harald Søby
  */
 $messages['no'] = array(
@@ -319,7 +319,7 @@ $messages['te'] = array(
 	'wikihiero-desc' => 'హీయెరోగ్లిఫ్&zwnj;ని చూపించడానికై <tt>&lt;hiero&gt;</tt> అనే టాగుని చేరుస్తుంది',
 );
 
-/** Tajik (Тоҷикӣ)
+/** Tajik (Cyrillic) (Тоҷикӣ/tojikī (Cyrillic))
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
@@ -347,21 +347,21 @@ $messages['vi'] = array(
 	'wikihiero-desc' => 'Thêm thẻ <tt>&lt;hiero&gt;</tt> để hiển thị chữ tượng hình',
 );
 
-/** Cantonese
+/** Yue (粵語)
  * @author Shinjiman
  */
 $messages['yue'] = array(
 	'wikihiero-desc' => '加 <tt>&lt;hiero&gt;</tt> 標籤去顯示象形文字',
 );
 
-/** Chinese Simplified
+/** Simplified Chinese (‪中文(简体)‬)
  * @author Shinjiman
  */
 $messages['zh-hans'] = array(
 	'wikihiero-desc' => '加入 <tt>&lt;hiero&gt;</tt> 标签去显示象形文字',
 );
 
-/** Chinese Traditional
+/** Traditional Chinese (‪中文(繁體)‬)
  * @author Shinjiman
  */
 $messages['zh-hant'] = array(
