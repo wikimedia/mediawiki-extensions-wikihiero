@@ -11,6 +11,13 @@ $messages['en'] = array(
 	'wikihiero-desc' => 'Adds <tt>&lt;hiero&gt;</tt> tag to display hieroglyph',
 );
 
+/** Afrikaans (Afrikaans)
+ * @author Naudefj
+ */
+$messages['af'] = array(
+	'wikihiero-desc' => "Maak 'n <tt>&lt;hiero&gt;</tt> etiket beskikbaar vir die vertoon van hierogliewe",
+);
+
 /** Aragonese (Aragonés)
  * @author Juanpabl
  */
@@ -296,6 +303,13 @@ $messages['sah'] = array(
  */
 $messages['sk'] = array(
 	'wikihiero-desc' => 'Pridáva značku <tt>&lt;hiero&gt;</tt> na zobrazovanie hieroglyfov',
+);
+
+/** Serbian Cyrillic ekavian (ћирилица)
+ * @author Millosh
+ */
+$messages['sr-ec'] = array(
+	'wikihiero-desc' => 'Додаје <tt>&lt;hiero&gt;</tt> ознаку за приказ хијероглифа.',
 );
 
 /** Sundanese (Basa Sunda)
