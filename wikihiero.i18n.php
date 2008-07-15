@@ -39,6 +39,13 @@ $messages['ast'] = array(
 	'wikihiero-desc' => "Añade la etiqueta <tt>&lt;hiero&gt;</tt> p'amosar xeroglíficos",
 );
 
+/** Southern Balochi (بلوچی مکرانی)
+ * @author Mostafadaneshvar
+ */
+$messages['bcc'] = array(
+	'wikihiero-desc' => 'هور کنت <tt>&lt;hiero&gt;</tt> برچسپء په پیشدارگ هیروگلیف',
+);
+
 /** Bulgarian (Български)
  * @author DCLXVI
  */
