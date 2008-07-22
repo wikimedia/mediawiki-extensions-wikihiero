@@ -165,6 +165,13 @@ $messages['hu'] = array(
 	'wikihiero-desc' => '<tt>&lt;hiero&gt;</tt> tag hieroglifák megjelenítéséhez',
 );
 
+/** Interlingua (Interlingua)
+ * @author McDutchie
+ */
+$messages['ia'] = array(
+	'wikihiero-desc' => 'Adde le etiquetta <tt>&lt;hiero&gt;</tt> pro inserer hieroglyphos',
+);
+
 /** Indonesian (Bahasa Indonesia)
  * @author IvanLanin
  */
