@@ -60,6 +60,13 @@ $messages['br'] = array(
 	'wikihiero-desc' => 'Ouzhpennañ a ra ar valizenn <tt>&lt;hiero&gt;</tt> evit embann ar hieroglifoù.',
 );
 
+/** Catalan (Català)
+ * @author Paucabot
+ */
+$messages['ca'] = array(
+	'wikihiero-desc' => "Afegeix l'etiqueta <tt>&lt;hiero&gt;</tt> per a visualitzar jeroglífics",
+);
+
 /** Czech (Česky)
  * @author Matěj Grabovský
  */
