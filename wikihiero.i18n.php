@@ -11,6 +11,13 @@ $messages['en'] = array(
 	'wikihiero-desc' => 'Adds <tt>&lt;hiero&gt;</tt> tag to display hieroglyph',
 );
 
+/** Message documentation (Message documentation)
+ * @author Raymond
+ */
+$messages['qqq'] = array(
+	'wikihiero-desc' => 'Extension description displayed on [[Special:Version]]',
+);
+
 /** Afrikaans (Afrikaans)
  * @author Naudefj
  */
@@ -354,7 +361,7 @@ $messages['te'] = array(
 	'wikihiero-desc' => 'హీయెరోగ్లిఫ్&zwnj;ని చూపించడానికై <tt>&lt;hiero&gt;</tt> అనే టాగుని చేరుస్తుంది',
 );
 
-/** Tajik (Cyrillic) (Тоҷикӣ/tojikī (Cyrillic))
+/** Tajik (Cyrillic) (Тоҷикӣ (Cyrillic))
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
