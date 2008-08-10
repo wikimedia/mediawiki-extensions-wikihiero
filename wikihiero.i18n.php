@@ -12,7 +12,7 @@ $messages['en'] = array(
 );
 
 /** Message documentation (Message documentation)
- * @author Raymond
+ * @author Raimond Spekking
  */
 $messages['qqq'] = array(
 	'wikihiero-desc' => 'Extension description displayed on [[Special:Version]]',
