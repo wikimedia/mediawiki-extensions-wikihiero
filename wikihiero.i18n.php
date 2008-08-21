@@ -39,6 +39,13 @@ $messages['ar'] = array(
 	'wikihiero-desc' => 'يضيف الوسم <tt>&lt;hiero&gt;</tt> لعرض الهيروغليفية',
 );
 
+/** Egyptian Spoken Arabic (مصرى)
+ * @author Ramsis II
+ */
+$messages['arz'] = array(
+	'wikihiero-desc' => 'بيضيف تاج ال <tt>&lt;hiero&gt;</tt> علشان يعرض الهيروغليفي',
+);
+
 /** Asturian (Asturianu)
  * @author Esbardu
  */
