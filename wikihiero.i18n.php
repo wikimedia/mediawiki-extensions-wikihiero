@@ -228,6 +228,13 @@ $messages['jv'] = array(
 	'wikihiero-desc' => 'Nambahaké tag <tt>&lt;hiero&gt;</tt> kanggo nuduhaké hieroglif',
 );
 
+/** Khmer (ភាសាខ្មែរ)
+ * @author Lovekhmer
+ */
+$messages['km'] = array(
+	'wikihiero-desc' => 'ដាក់បន្ថែមប្លាក <tt>&lt;hiero&gt;</tt> ដើម្បីបង្ហាញអក្សររូបភាព',
+);
+
 /** Korean (한국어)
  * @author ToePeu
  */
