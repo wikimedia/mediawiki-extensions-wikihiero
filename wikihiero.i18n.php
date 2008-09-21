@@ -116,6 +116,13 @@ $messages['eo'] = array(
 	'wikihiero-desc' => 'Aldonas etikedon <tt>&lt;hiero&gt;</tt> por montri hieroglifon',
 );
 
+/** Spanish (Español)
+ * @author Remember the dot
+ */
+$messages['es'] = array(
+	'wikihiero-desc' => 'Añade elemento <tt>&lt;hiero&gt;</tt> para mostrar un jeroglífico',
+);
+
 /** Persian (فارسی)
  * @author Huji
  */
