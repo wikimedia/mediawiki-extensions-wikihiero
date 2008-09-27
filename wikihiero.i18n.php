@@ -316,7 +316,7 @@ $messages['no'] = array(
  * @author Cedric31
  */
 $messages['oc'] = array(
-	'wikihiero-desc' => 'Apondís la balisa <tt>&lt;hiero&gt;</tt> per afichar los ieroglifes',
+	'wikihiero-desc' => 'Apond la balisa <tt>&lt;hiero&gt;</tt> per afichar los ieroglifes',
 );
 
 /** Polish (Polski)
