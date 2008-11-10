@@ -13,6 +13,7 @@ $messages['en'] = array(
 
 /** Message documentation (Message documentation)
  * @author Raimond Spekking
+ * @author Raymond
  */
 $messages['qqq'] = array(
 	'wikihiero-desc' => 'Extension description displayed on [[Special:Version]]',
@@ -303,6 +304,13 @@ $messages['nds'] = array(
  */
 $messages['nl'] = array(
 	'wikihiero-desc' => 'Voegt de tag <tt>&lt;hiero&gt;</tt> toe voor de weergave van hiërogliefen',
+);
+
+/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+ * @author Frokor
+ */
+$messages['nn'] = array(
+	'wikihiero-desc' => 'Legg til taggen <tt>&lt;hiero&gt;</tt> for å vise hieroglyfar',
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
