@@ -341,6 +341,13 @@ $messages['pt'] = array(
 	'wikihiero-desc' => 'Adiciona a marca <tt>&lt;hiero&gt;</tt> para apresentar hieróglifos',
 );
 
+/** Tarandíne (Tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'wikihiero-desc' => "Ause 'u tag <tt>&lt;hiero&gt;</tt> pe visualizzà 'a hieroglife",
+);
+
 /** Russian (Русский)
  * @author Александр Сигачёв
  */
