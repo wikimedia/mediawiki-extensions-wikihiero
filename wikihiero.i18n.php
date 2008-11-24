@@ -8,7 +8,7 @@
 $messages = array();
 
 $messages['en'] = array(
-	'wikihiero-desc' => 'Adds <tt>&lt;hiero&gt;</tt> tag to display hieroglyph',
+	'wikihiero-desc' => 'Adds <tt>&lt;hiero&gt;</tt> tag to display hieroglyphs',
 );
 
 /** Message documentation (Message documentation)
