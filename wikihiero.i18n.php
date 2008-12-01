@@ -75,6 +75,13 @@ $messages['br'] = array(
 	'wikihiero-desc' => 'Ouzhpennañ a ra ar valizenn <tt>&lt;hiero&gt;</tt> evit embann ar hieroglifoù.',
 );
 
+/** Bosnian (Bosanski)
+ * @author CERminator
+ */
+$messages['bs'] = array(
+	'wikihiero-desc' => 'Dodaje <tt>&lt;hiero&gt;</tt> tag za prikazivanje hieroglifa',
+);
+
 /** Catalan (Català)
  * @author Paucabot
  */
@@ -216,10 +223,11 @@ $messages['it'] = array(
 );
 
 /** Japanese (日本語)
+ * @author Aotake
  * @author JtFuruhata
  */
 $messages['ja'] = array(
-	'wikihiero-desc' => '象形文字を表示する <tt>&lt;hiero&gt;</tt> タグを追加',
+	'wikihiero-desc' => '象形文字を表示する <tt>&lt;hiero&gt;</tt> タグを追加する',
 );
 
 /** Jutish (Jysk)
