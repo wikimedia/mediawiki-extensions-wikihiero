@@ -370,6 +370,13 @@ $messages['sah'] = array(
 	'wikihiero-desc' => 'Иероглифтары көрдөрөргө анаан <tt>&lt;hiero&gt;</tt> тиэги эбэр',
 );
 
+/** Sicilian (Sicilianu)
+ * @author Santu
+ */
+$messages['scn'] = array(
+	'wikihiero-desc' => 'Juncìricci lu tag <tt>&lt;hiero&gt;</tt> pi la visualizzazzioni di li giruglìfici',
+);
+
 /** Slovak (Slovenčina)
  * @author Helix84
  */
