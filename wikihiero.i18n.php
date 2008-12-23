@@ -349,6 +349,13 @@ $messages['pt'] = array(
 	'wikihiero-desc' => 'Adiciona a marca <tt>&lt;hiero&gt;</tt> para apresentar hieróglifos',
 );
 
+/** Romanian (Română)
+ * @author KlaudiuMihaila
+ */
+$messages['ro'] = array(
+	'wikihiero-desc' => 'Adaugă tagul <tt>&lt;hiero&gt;</tt> pentru a afişa hieroglife',
+);
+
 /** Tarandíne (Tarandíne)
  * @author Joetaras
  */
