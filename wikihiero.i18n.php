@@ -61,6 +61,13 @@ $messages['bcc'] = array(
 	'wikihiero-desc' => 'هور کنت <tt>&lt;hiero&gt;</tt> برچسپء په پیشدارگ هیروگلیف',
 );
 
+/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+ * @author Jim-by
+ */
+$messages['be-tarask'] = array(
+	'wikihiero-desc' => 'Дадае тэг <tt>&lt;hiero&gt;</tt> для адлюстраваньня іерогліфаў',
+);
+
 /** Bulgarian (Български)
  * @author DCLXVI
  */
@@ -424,6 +431,13 @@ $messages['te'] = array(
  */
 $messages['tg-cyrl'] = array(
 	'wikihiero-desc' => 'Бачасби <tt>&lt;hiero&gt;</tt>-ро барои намоиши ҳироглиф илова мекунад',
+);
+
+/** Tagalog (Tagalog)
+ * @author AnakngAraw
+ */
+$messages['tl'] = array(
+	'wikihiero-desc' => 'Nagdaragdag ng tatak na <tt>&lt;hiro&gt;</tt> upang mapalitaw ang mga hiroglipikong panitik (hiroglip)',
 );
 
 /** Ukrainian (Українська)
