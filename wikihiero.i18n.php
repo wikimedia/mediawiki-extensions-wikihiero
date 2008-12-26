@@ -62,10 +62,11 @@ $messages['bcc'] = array(
 );
 
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+ * @author EugeneZelenko
  * @author Jim-by
  */
 $messages['be-tarask'] = array(
-	'wikihiero-desc' => 'Дадае тэг <tt>&lt;hiero&gt;</tt> для адлюстраваньня іерогліфаў',
+	'wikihiero-desc' => 'Дадае тэг <tt>&lt;hiero&gt;</tt> для адлюстраваньня гіерогліфаў',
 );
 
 /** Bulgarian (Български)
@@ -417,6 +418,13 @@ $messages['su'] = array(
  */
 $messages['sv'] = array(
 	'wikihiero-desc' => 'Lägger till taggen <tt>&lt;hiero&gt;</tt> för att visa hieroglyfer',
+);
+
+/** Silesian (Ślůnski)
+ * @author Lajsikonik
+ */
+$messages['szl'] = array(
+	'wikihiero-desc' => 'Dodowo znaczńik <tt>&lt;hiero&gt;</tt> kery dozwalo wyśwjetlać hjeroglify',
 );
 
 /** Telugu (తెలుగు)
