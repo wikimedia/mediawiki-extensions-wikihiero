@@ -139,6 +139,13 @@ $messages['es'] = array(
 	'wikihiero-desc' => 'Añade elemento <tt>&lt;hiero&gt;</tt> para mostrar un jeroglífico',
 );
 
+/** Basque (Euskara)
+ * @author Theklan
+ */
+$messages['eu'] = array(
+	'wikihiero-desc' => 'Jeroglifikoak jarri ahal izateko <tt>&lt;hiero&gt;</tt> etiketa gehitzen du',
+);
+
 /** Persian (فارسی)
  * @author Huji
  */
