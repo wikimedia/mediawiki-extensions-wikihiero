@@ -181,6 +181,13 @@ $messages['gl'] = array(
 	'wikihiero-desc' => 'Engade a etiqueta <tt>&lt;hiero&gt;</tt> para amosar hieroglifos (hieroglyph)',
 );
 
+/** Swiss German (Alemannisch)
+ * @author Als-Holder
+ */
+$messages['gsw'] = array(
+	'wikihiero-desc' => 'Fiegt s <tt>&lt;hiero&gt;</tt>-Tag fir d Formatierig vu Hieroglyphe yy',
+);
+
 /** Hebrew (עברית)
  * @author Rotem Liss
  */
@@ -411,6 +418,13 @@ $messages['sk'] = array(
  */
 $messages['sr-ec'] = array(
 	'wikihiero-desc' => 'Додаје <tt>&lt;hiero&gt;</tt> ознаку за приказ хијероглифа.',
+);
+
+/** Seeltersk (Seeltersk)
+ * @author Pyt
+ */
+$messages['stq'] = array(
+	'wikihiero-desc' => 'Föiget dät <tt>&lt;hiero&gt;</tt>-Tag tou ju Formatierenge fon Hieroglyphen bietou',
 );
 
 /** Sundanese (Basa Sunda)
