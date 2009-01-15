@@ -246,10 +246,11 @@ $messages['it'] = array(
 
 /** Japanese (日本語)
  * @author Aotake
+ * @author Fryed-peach
  * @author JtFuruhata
  */
 $messages['ja'] = array(
-	'wikihiero-desc' => '象形文字を表示する <tt>&lt;hiero&gt;</tt> タグを追加する',
+	'wikihiero-desc' => 'ヒエログリフを表示する <tt>&lt;hiero&gt;</tt> タグを追加する',
 );
 
 /** Jutish (Jysk)
@@ -467,6 +468,13 @@ $messages['tg-cyrl'] = array(
  */
 $messages['tl'] = array(
 	'wikihiero-desc' => 'Nagdaragdag ng tatak na <tt>&lt;hiro&gt;</tt> upang mapalitaw ang mga hiroglipikong panitik (hiroglip)',
+);
+
+/** Turkish (Türkçe)
+ * @author Joseph
+ */
+$messages['tr'] = array(
+	'wikihiero-desc' => 'Hiyeroglifleri görüntülemek için <tt>&lt;hiero&gt;</tt> etiketini ekler',
 );
 
 /** Ukrainian (Українська)
