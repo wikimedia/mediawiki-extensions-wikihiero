@@ -414,6 +414,13 @@ $messages['sk'] = array(
 	'wikihiero-desc' => 'Pridáva značku <tt>&lt;hiero&gt;</tt> na zobrazovanie hieroglyfov',
 );
 
+/** Albanian (Shqip)
+ * @author Puntori
+ */
+$messages['sq'] = array(
+	'wikihiero-desc' => 'Vendosë kodin <tt>&lt;hiero&gt;</tt> për të shfaqur hieroglifë',
+);
+
 /** Serbian Cyrillic ekavian (ћирилица)
  * @author Millosh
  */
