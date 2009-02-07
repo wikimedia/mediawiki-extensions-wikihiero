@@ -372,6 +372,13 @@ $messages['pt'] = array(
 	'wikihiero-desc' => 'Adiciona a marca <tt>&lt;hiero&gt;</tt> para apresentar hieróglifos',
 );
 
+/** Brazilian Portuguese (Português do Brasil)
+ * @author Eduardo.mps
+ */
+$messages['pt-br'] = array(
+	'wikihiero-desc' => 'Adiciona a marca <tt>&lt;hiero&gt;</tt> para exibir hieróglifos',
+);
+
 /** Romanian (Română)
  * @author KlaudiuMihaila
  */
