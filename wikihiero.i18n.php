@@ -125,6 +125,13 @@ $messages['dsb'] = array(
 	'wikihiero-desc' => 'Pśidawa toflicku <tt>&lt;hiero&gt;</tt> za zwobraznjenje hieroglyfow',
 );
 
+/** Greek (Ελληνικά)
+ * @author Dead3y3
+ */
+$messages['el'] = array(
+	'wikihiero-desc' => 'Προσθέτει την ετικέτα <tt>&lt;hiero&gt;</tt> για την εμφάνιση ιερογλυφικών',
+);
+
 /** Esperanto (Esperanto)
  * @author Yekrats
  */
