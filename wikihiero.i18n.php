@@ -310,10 +310,11 @@ $messages['li'] = array(
 );
 
 /** Lithuanian (Lietuvių)
+ * @author Garas
  * @author Hugo.arg
  */
 $messages['lt'] = array(
-	'wikihiero-desc' => 'Prideda <tt>&lt;hieroglifas&gt;</tt> tagus, kad rodyti hieroglifą',
+	'wikihiero-desc' => 'Prideda <tt>&lt;hiero&gt;</tt> gaires rodyti hieroglifus',
 );
 
 /** Marathi (मराठी)
