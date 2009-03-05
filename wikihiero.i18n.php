@@ -169,9 +169,10 @@ $messages['fi'] = array(
 
 /** French (Français)
  * @author Grondin
+ * @author PieRRoMaN
  */
 $messages['fr'] = array(
-	'wikihiero-desc' => 'Ajoute la balise <tt>&lt;hiero&gt;</tt> pour afficher les hiéroglyphes',
+	'wikihiero-desc' => 'Ajoute la balise <tt>&lt;hiero&gt;</tt> pour afficher des hiéroglyphes',
 );
 
 /** Franco-Provençal (Arpetan)
