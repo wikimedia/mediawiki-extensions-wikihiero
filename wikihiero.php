@@ -32,6 +32,7 @@ if ( defined( 'MW_SUPPORTS_PARSERFIRSTCALLINIT' ) ) {
 }
 
 $wgExtensionCredits['parserhook'][] = array(
+	'path'           => __FILE__,
 	'name'           => 'WikiHiero',
 	'author'         => 'Guillaume Blanchard',
 	'url'            => 'http://www.mediawiki.org/wiki/Extension:WikiHiero',
