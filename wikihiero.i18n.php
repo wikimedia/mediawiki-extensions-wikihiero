@@ -186,7 +186,7 @@ $messages['fr'] = array(
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
-	'wikihiero-desc' => 'Apond la balisa <tt>&lt;hiero&gt;</tt> por afichiér los hièroglifos.',
+	'wikihiero-desc' => 'Apond la balisa <tt>&lt;hiero&gt;</tt> por fâre vêre los hièroglifos.',
 );
 
 /** Galician (Galego)
