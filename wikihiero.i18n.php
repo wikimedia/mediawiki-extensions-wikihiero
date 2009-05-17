@@ -61,6 +61,13 @@ $messages['ast'] = array(
 	'wikihiero-desc' => "Añade la etiqueta <tt>&lt;hiero&gt;</tt> p'amosar xeroglíficos",
 );
 
+/** Bavarian (Boarisch)
+ * @author Man77
+ */
+$messages['bar'] = array(
+	'wikihiero-desc' => "Fügt s'<tt>&lt;hiero&gt;</tt>-Tag zum Formatian vu Hieroglyphn dazua",
+);
+
 /** Southern Balochi (بلوچی مکرانی)
  * @author Mostafadaneshvar
  */
