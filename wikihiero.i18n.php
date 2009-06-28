@@ -19,13 +19,6 @@ $messages['qqq'] = array(
 	'wikihiero-desc' => 'Extension description displayed on [[Special:Version]]',
 );
 
-/** Lower Silesian (Schläsch)
- * @author Jonny84
- */
-$messages['sli'] = array(
-	'wikihiero-desc' => 'Fügt doas <tt>&lt;hiero&gt;</tt>-Tag zur Formatierung vo Hieroglyphen hinzu',
-);
-
 /** Afrikaans (Afrikaans)
  * @author Naudefj
  */
@@ -442,6 +435,13 @@ $messages['scn'] = array(
  */
 $messages['sk'] = array(
 	'wikihiero-desc' => 'Pridáva značku <tt>&lt;hiero&gt;</tt> na zobrazovanie hieroglyfov',
+);
+
+/** Lower Silesian (Schläsch)
+ * @author Jonny84
+ */
+$messages['sli'] = array(
+	'wikihiero-desc' => 'Fügt doas <tt>&lt;hiero&gt;</tt>-Tag zur Formatierung vo Hieroglyphen hinzu',
 );
 
 /** Albanian (Shqip)
