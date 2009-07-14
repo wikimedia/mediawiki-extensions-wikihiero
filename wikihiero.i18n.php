@@ -282,6 +282,13 @@ $messages['jv'] = array(
 	'wikihiero-desc' => 'Nambahaké tag <tt>&lt;hiero&gt;</tt> kanggo nuduhaké hieroglif',
 );
 
+/** Georgian (ქართული)
+ * @author გიორგიმელა
+ */
+$messages['ka'] = array(
+	'wikihiero-desc' => 'ჰმატებს თეგ <tt>&lt;hiero&gt;</tt> იეროგიფების საჩვენებლად',
+);
+
 /** Khmer (ភាសាខ្មែរ)
  * @author Lovekhmer
  */
