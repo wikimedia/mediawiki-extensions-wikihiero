@@ -353,6 +353,13 @@ $messages['nds'] = array(
 	'wikihiero-desc' => 'Föögt dat <tt>&lt;hiero&gt;</tt>-Tag för dat Formateren vun Hieroglyphen to',
 );
 
+/** Nedersaksisch (Nedersaksisch)
+ * @author Servien
+ */
+$messages['nds-nl'] = array(
+	'wikihiero-desc' => "'t Voeg de tekse <tt>&lt;hiero&gt;</tt> toe veur de weergave van hiërogliefen",
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
