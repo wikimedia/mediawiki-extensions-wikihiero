@@ -409,6 +409,13 @@ $messages['pt-br'] = array(
 	'wikihiero-desc' => 'Adiciona a marca <tt>&lt;hiero&gt;</tt> para exibir hieróglifos',
 );
 
+/** Quechua (Runa Simi)
+ * @author AlimanRuna
+ */
+$messages['qu'] = array(
+	'wikihiero-desc' => '<tt>&lt;hiero&gt;</tt> unanchachata yapan hirulliphikuta rikuchinapaq',
+);
+
 /** Romanian (Română)
  * @author KlaudiuMihaila
  */
