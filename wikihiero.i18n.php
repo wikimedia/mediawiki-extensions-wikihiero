@@ -217,6 +217,13 @@ $messages['hi'] = array(
 	'wikihiero-desc' => 'हाइरोग्लिफ दर्शाने के लिये <tt>&lt;hiero&gt;</tt> टैग देता हैं',
 );
 
+/** Hiligaynon (Ilonggo)
+ * @author Tagimata
+ */
+$messages['hil'] = array(
+	'wikihiero-desc' => 'Nagadugang <tt>&lt;hiero&gt;</tt> tag to para makit-an ang hayroglifs',
+);
+
 /** Croatian (Hrvatski)
  * @author Dnik
  */
