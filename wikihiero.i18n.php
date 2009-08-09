@@ -153,6 +153,13 @@ $messages['es'] = array(
 	'wikihiero-desc' => 'Añade elemento <tt>&lt;hiero&gt;</tt> para mostrar un jeroglífico',
 );
 
+/** Estonian (Eesti)
+ * @author Pikne
+ */
+$messages['et'] = array(
+	'wikihiero-desc' => 'Lisab hieroglüüfide kuvamiseks <tt>&lt;hiero&gt;</tt>-märgendi.',
+);
+
 /** Basque (Euskara)
  * @author Theklan
  */
