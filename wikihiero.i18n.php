@@ -493,6 +493,13 @@ $messages['sr-ec'] = array(
 	'wikihiero-desc' => 'Додаје <tt>&lt;hiero&gt;</tt> ознаку за приказ хијероглифа.',
 );
 
+/** latinica (latinica)
+ * @author Michaello
+ */
+$messages['sr-el'] = array(
+	'wikihiero-desc' => 'Dodaje <tt>&lt;hiero&gt;</tt> oznaku za prikaz hijeroglifa.',
+);
+
 /** Seeltersk (Seeltersk)
  * @author Pyt
  */
