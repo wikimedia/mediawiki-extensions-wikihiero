@@ -346,6 +346,13 @@ $messages['lt'] = array(
 	'wikihiero-desc' => 'Prideda <tt>&lt;hiero&gt;</tt> gaires rodyti hieroglifus',
 );
 
+/** Macedonian (Македонски)
+ * @author Bjankuloski06
+ */
+$messages['mk'] = array(
+	'wikihiero-desc' => 'Додава ознака <tt>&lt;hiero&gt;</tt> за прикажување на хиероглифи',
+);
+
 /** Marathi (मराठी)
  * @author Mahitgar
  */
