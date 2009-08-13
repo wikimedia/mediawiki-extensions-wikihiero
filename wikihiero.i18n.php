@@ -196,6 +196,13 @@ $messages['frp'] = array(
 	'wikihiero-desc' => 'Apond la balisa <tt>&lt;hiero&gt;</tt> por fâre vêre los hièroglifos.',
 );
 
+/** Western Frisian (Frysk)
+ * @author SK-luuut
+ */
+$messages['fy'] = array(
+	'wikihiero-desc' => 'Foegt mark <tt>&lt;hiero&gt;</tt> ta foar hiëroglyfwerjefte.',
+);
+
 /** Galician (Galego)
  * @author Toliño
  */
