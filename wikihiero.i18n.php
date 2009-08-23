@@ -423,6 +423,13 @@ $messages['pl'] = array(
 	'wikihiero-desc' => 'Dodaje znacznik <tt>&lt;hiero&gt;</tt> umożliwiający wyświetlanie hieroglifów',
 );
 
+/** Piedmontese (Piemontèis)
+ * @author Dragonòt
+ */
+$messages['pms'] = array(
+	'wikihiero-desc' => 'A gionta ël tag <tt>&lt;hiero&gt;</tt> për visualisé dij geroglif',
+);
+
 /** Portuguese (Português)
  * @author Malafaya
  */
@@ -500,14 +507,14 @@ $messages['sq'] = array(
 	'wikihiero-desc' => 'Vendosë kodin <tt>&lt;hiero&gt;</tt> për të shfaqur hieroglifë',
 );
 
-/** Serbian Cyrillic ekavian (ћирилица)
+/** Serbian Cyrillic ekavian (Српски (ћирилица))
  * @author Millosh
  */
 $messages['sr-ec'] = array(
 	'wikihiero-desc' => 'Додаје <tt>&lt;hiero&gt;</tt> ознаку за приказ хијероглифа.',
 );
 
-/** latinica (latinica)
+/** Serbian Latin ekavian (Srpski (latinica))
  * @author Michaello
  */
 $messages['sr-el'] = array(
