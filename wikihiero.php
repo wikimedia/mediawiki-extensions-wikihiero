@@ -25,12 +25,7 @@
 //////////////////////////////////////////////////////////////////////////
 
 // Register MediaWiki extension
-if ( defined( 'MW_SUPPORTS_PARSERFIRSTCALLINIT' ) ) {
-	$wgHooks['ParserFirstCallInit'][] = 'WH_Register';
-} else {
-	$wgExtensionFunctions[] = 'WH_Register';
-}
-
+$wgHooks['ParserFirstCallInit'][] = 'WH_Register';
 $wgExtensionCredits['parserhook'][] = array(
 	'path'           => __FILE__,
 	'name'           => 'WikiHiero',
@@ -41,9 +36,8 @@ $wgExtensionCredits['parserhook'][] = array(
 );
 $wgExtensionMessagesFiles['Wikihiero'] =  dirname(__FILE__) . '/wikihiero.i18n.php';
 
-function WH_Register() {
-	global $wgParser;
-	$wgParser->setHook( 'hiero', 'WikiHieroLoader' );
+function WH_Register( &$parser ) {
+	$parser->setHook( 'hiero', 'WikiHieroLoader' );
 	return true;
 }
 
