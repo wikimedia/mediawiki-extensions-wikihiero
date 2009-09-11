@@ -112,10 +112,11 @@ $messages['cs'] = array(
 );
 
 /** Danish (Dansk)
+ * @author Byrial
  * @author Jan Friberg
  */
 $messages['da'] = array(
-	'wikihiero-desc' => "Tilføjer tag'en <tt>&lt;hiero&gt;</tt> for at vise hieroglyffer",
+	'wikihiero-desc' => 'Tilføjer tagget <tt>&lt;hiero&gt;</tt> for at vise hieroglyffer',
 );
 
 /** German (Deutsch)
