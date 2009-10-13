@@ -126,6 +126,13 @@ $messages['de'] = array(
 	'wikihiero-desc' => 'Fügt das <tt>&lt;hiero&gt;</tt>-Tag zur Formatierung von Hieroglyphen hinzu',
 );
 
+/** Zazaki (Zazaki)
+ * @author Aspar
+ */
+$messages['diq'] = array(
+	'wikihiero-desc' => 'qey ra motışê hiyerooglifi, ninan têare keno <tt>&lt;hiero&gt;</tt>',
+);
+
 /** Lower Sorbian (Dolnoserbski)
  * @author Michawiki
  */
