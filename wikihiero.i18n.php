@@ -368,6 +368,13 @@ $messages['mk'] = array(
 	'wikihiero-desc' => 'Додава ознака <tt>&lt;hiero&gt;</tt> за прикажување на хиероглифи',
 );
 
+/** Malayalam (മലയാളം)
+ * @author Praveenp
+ */
+$messages['ml'] = array(
+	'wikihiero-desc' => 'ചിത്രാക്ഷരങ്ങൾ പ്രദർശിപ്പിക്കാനായി <tt>&lt;hiero&gt;</tt> എന്ന റ്റാഗ് കൂട്ടിച്ചേർക്കുന്നു',
+);
+
 /** Marathi (मराठी)
  * @author Mahitgar
  */
