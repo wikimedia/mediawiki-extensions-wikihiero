@@ -501,6 +501,13 @@ $messages['scn'] = array(
 	'wikihiero-desc' => 'Juncìricci lu tag <tt>&lt;hiero&gt;</tt> pi la visualizzazzioni di li giruglìfici',
 );
 
+/** Sinhala (සිංහල)
+ * @author Calcey
+ */
+$messages['si'] = array(
+	'wikihiero-desc' => 'හයිරෝරේඛනය ප්‍රදර්ශනය කිරීමට <tt>&lt;hiero&gt;</tt> ටැගය එකතු කරයි',
+);
+
 /** Slovak (Slovenčina)
  * @author Helix84
  */
