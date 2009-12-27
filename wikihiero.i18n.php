@@ -585,6 +585,13 @@ $messages['tg-cyrl'] = array(
 	'wikihiero-desc' => 'Бачасби <tt>&lt;hiero&gt;</tt>-ро барои намоиши ҳироглиф илова мекунад',
 );
 
+/** Tajik (Latin) (Тоҷикӣ (Latin))
+ * @author Liangent
+ */
+$messages['tg-latn'] = array(
+	'wikihiero-desc' => 'Bacasbi <tt>&lt;hiero&gt;</tt>-ro baroi namoişi hiroglif ilova mekunad',
+);
+
 /** Turkmen (Türkmençe)
  * @author Hanberke
  */
