@@ -31,7 +31,6 @@ $wgExtensionCredits['parserhook'][] = array(
 	'name'           => 'WikiHiero',
 	'author'         => 'Guillaume Blanchard',
 	'url'            => 'http://www.mediawiki.org/wiki/Extension:WikiHiero',
-	'description'    => 'Syntax to display hieroglyph',
 	'descriptionmsg' => 'wikihiero-desc',
 );
 $wgExtensionMessagesFiles['Wikihiero'] =  dirname(__FILE__) . '/wikihiero.i18n.php';
