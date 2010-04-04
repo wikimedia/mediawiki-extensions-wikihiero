@@ -515,6 +515,13 @@ $messages['sk'] = array(
 	'wikihiero-desc' => 'Pridáva značku <tt>&lt;hiero&gt;</tt> na zobrazovanie hieroglyfov',
 );
 
+/** Slovenian (Slovenščina)
+ * @author Dbc334
+ */
+$messages['sl'] = array(
+	'wikihiero-desc' => 'Doda etiketo <tt>&lt;hiero&gt;</tt> za prikaz hieroglifov',
+);
+
 /** Lower Silesian (Schläsch)
  * @author Jonny84
  */
