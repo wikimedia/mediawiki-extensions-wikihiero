@@ -332,7 +332,7 @@ $messages['ko'] = array(
 	'wikihiero-desc' => '히에로글리프 표현을 위해 <tt>&lt;hiero&gt;</tt>태그를 추가',
 );
 
-/** Ripoarisch (Ripoarisch)
+/** Colognian (Ripoarisch)
  * @author Purodha
  */
 $messages['ksh'] = array(
@@ -648,7 +648,7 @@ $messages['vi'] = array(
 	'wikihiero-desc' => 'Thêm thẻ <tt>&lt;hiero&gt;</tt> để hiển thị chữ tượng hình',
 );
 
-/** Yue (粵語)
+/** Cantonese (粵語)
  * @author Shinjiman
  */
 $messages['yue'] = array(
