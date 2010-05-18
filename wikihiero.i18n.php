@@ -215,7 +215,7 @@ $messages['fy'] = array(
  * @author Toliño
  */
 $messages['gl'] = array(
-	'wikihiero-desc' => 'Engade a etiqueta <code>&lt;hiero&gt;</code> para amosar hieroglifos (hieroglyph)',
+	'wikihiero-desc' => 'Engade a etiqueta <code>&lt;hiero&gt;</code> para amosar xeróglifos',
 );
 
 /** Swiss German (Alemannisch)
