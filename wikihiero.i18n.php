@@ -470,7 +470,7 @@ $messages['qu'] = array(
  * @author KlaudiuMihaila
  */
 $messages['ro'] = array(
-	'wikihiero-desc' => 'Adaugă tagul <code>&lt;hiero&gt;</code> pentru a afişa hieroglife',
+	'wikihiero-desc' => 'Adaugă tagul <code>&lt;hiero&gt;</code> pentru a afișa hieroglife',
 );
 
 /** Tarandíne (Tarandíne)
