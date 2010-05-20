@@ -26,6 +26,13 @@ $messages['af'] = array(
 	'wikihiero-desc' => "Maak 'n <code>&lt;hiero&gt;</code> etiket beskikbaar vir die vertoon van hierogliewe",
 );
 
+/** Gheg Albanian (Gegë)
+ * @author Mdupont
+ */
+$messages['aln'] = array(
+	'wikihiero-desc' => 'Adds <code><hiero></code> tag për të shfaqur hieroglifet',
+);
+
 /** Aragonese (Aragonés)
  * @author Juanpabl
  */
