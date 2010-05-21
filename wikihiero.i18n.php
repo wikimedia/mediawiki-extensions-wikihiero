@@ -288,6 +288,13 @@ $messages['id'] = array(
 	'wikihiero-desc' => 'Menambahkan tag <code>&lt;hiero&gt;</code> untuk menampilkan hieroglyph',
 );
 
+/** Igbo (Igbo)
+ * @author Ukabia
+ */
+$messages['ig'] = array(
+	'wikihiero-desc' => 'Nè tí <code>&lt;hiero&gt;</code> Í zí nsé',
+);
+
 /** Italian (Italiano)
  * @author BrokenArrow
  */
