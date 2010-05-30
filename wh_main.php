@@ -605,12 +605,12 @@ function WH_RenderGlyph($glyph, $option='') {
 
 	if($glyph == "..") { // Render void block
 	  $width = WH_HEIGHT;
-	  return "<table width='{$width}px' border='0' cellspacing='0' cellpadding='0'><tr><td>&nbsp;</td></tr></table>";
+	  return "<table width='{$width}px' border='0' cellspacing='0' cellpadding='0'><tr><td>&#160;</td></tr></table>";
 	}
 	else if($glyph == ".") // Render half-width void block
 	{
 	  $width = WH_HEIGHT/2;
-	  return "<table width='{$width}px' border='0' cellspacing='0' cellpadding='0'><tr><td>&nbsp;</td></tr></table>";
+	  return "<table width='{$width}px' border='0' cellspacing='0' cellpadding='0'><tr><td>&#160;</td></tr></table>";
 	}
 	else if($glyph == '<') // Render open cartouche
 	{

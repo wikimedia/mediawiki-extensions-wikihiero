@@ -121,7 +121,7 @@ $process_time = sprintf("%0.3f sec", $b_sec - $a_sec + $b_dec - $a_dec);
   <TITLE>WikiHiero</TITLE>
   <META http-equiv="Content-type" content="text/html; charset=UTF-8">
   <META name="Author" content="Guillaume Blanchard">
-  <META name="Copyright" content="&copy; 2004 Guillaume Blanchard, Under free GNU Public Licence">
+  <META name="Copyright" content="© 2004 Guillaume Blanchard, Under free GNU Public Licence">
   <LINK rel="shortcut icon" href="/favicon.ico">
   <SCRIPT type="text/javascript">
 
