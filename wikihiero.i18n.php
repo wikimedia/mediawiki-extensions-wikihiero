@@ -461,10 +461,11 @@ $messages['pms'] = array(
 );
 
 /** Portuguese (Português)
+ * @author Hamilton Abreu
  * @author Malafaya
  */
 $messages['pt'] = array(
-	'wikihiero-desc' => 'Adiciona a marca <code>&lt;hiero&gt;</code> para apresentar hieróglifos',
+	'wikihiero-desc' => 'Adiciona o elemento <code>&lt;hiero&gt;</code> para apresentar hieróglifos',
 );
 
 /** Brazilian Portuguese (Português do Brasil)
