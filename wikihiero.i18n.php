@@ -615,6 +615,13 @@ $messages['tg-latn'] = array(
 	'wikihiero-desc' => 'Bacasbi <code>&lt;hiero&gt;</code>-ro baroi namoişi hiroglif ilova mekunad',
 );
 
+/** Thai (ไทย)
+ * @author Passawuth
+ */
+$messages['th'] = array(
+	'wikihiero-desc' => 'เพิ่มแท็ก <code>&lt;hiero&gt;</code> เพื่อแสดงอักษรเฮียโรกลิฟิกส์',
+);
+
 /** Turkmen (Türkmençe)
  * @author Hanberke
  */
