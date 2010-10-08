@@ -62,6 +62,13 @@ $messages['ast'] = array(
 	'wikihiero-desc' => "Añade la etiqueta <code>&lt;hiero&gt;</code> p'amosar xeroglíficos",
 );
 
+/** Azerbaijani (Azərbaycanca)
+ * @author Sortilegus
+ */
+$messages['az'] = array(
+	'wikihiero-desc' => 'Heroqlifləri göstərmək üçün <code>&lt;hiero&gt;</code> teqini əlavə edir',
+);
+
 /** Bavarian (Boarisch)
  * @author Man77
  */
