@@ -135,10 +135,11 @@ $messages['da'] = array(
 );
 
 /** German (Deutsch)
+ * @author Kghbln
  * @author Raimond Spekking
  */
 $messages['de'] = array(
-	'wikihiero-desc' => 'Fügt das <code>&lt;hiero&gt;</code>-Tag zur Formatierung von Hieroglyphen hinzu',
+	'wikihiero-desc' => 'Ergänzt das <code>&lt;hiero&gt;</code>-Tag zur Formatierung von Hieroglyphen',
 );
 
 /** Zazaki (Zazaki)
