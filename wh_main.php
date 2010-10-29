@@ -598,7 +598,6 @@ function WikiHieroHook($hiero) {
 // return >> a string to add to the stream
 //------------------------------------------------------------------------
 function WH_RenderGlyph($glyph, $option='') {
-	global $wh_mode;
 	global $wh_phonemes;
 	global $wh_files;
 	global $wh_scale;
@@ -775,7 +774,6 @@ function WikiHieroHTML($hiero, $scale=WH_SCALE_DEFAULT, $line=false) {
     $parenthesis = 0;
     $type = WH_TYPE_NONE;
     $is_cartouche = false;
-    $is_striped = false;
 
 	for($char=0; $char<strlen($hiero); $char++) {
 
