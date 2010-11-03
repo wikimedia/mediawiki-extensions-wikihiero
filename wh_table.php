@@ -72,8 +72,8 @@ function WH_Text( $index ) {
     <?php
 
     echo "<b>" . htmlspecialchars( $table ) . "</b> - ".WH_Text($table)."<br /><br />";
-
-    if($dh = opendir(WH_IMG_DIR)) {
+	$dh = opendir(WH_IMG_DIR);
+    if( $dh ) {
       while(($file = readdir($dh)) !== false) {
         if($table == "All")
         {

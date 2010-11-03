@@ -57,7 +57,8 @@ if(array_key_exists("lang", $_GET)) {
 
     if(is_dir($img_dir))
     {
-      if ($dh = opendir($img_dir))
+	    $dh = opendir($img_dir);
+      if ( $dh )
       {
         while (($file = readdir($dh)) !== false) 
         {

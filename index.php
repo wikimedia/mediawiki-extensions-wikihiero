@@ -154,7 +154,8 @@ $process_time = sprintf("%0.3f sec", $b_sec - $a_sec + $b_dec - $a_dec);
         else
           echo "<a href=\"javascript:LangLink('".key($wh_language['Lang'])."');\">$l</a>";
         next($wh_language['Lang']);
-        if($l = current($wh_language['Lang']))
+        $l = current($wh_language['Lang']);
+        if( $l )
           echo " | ";
       }
     ?>]</SMALL>
