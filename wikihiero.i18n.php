@@ -69,6 +69,13 @@ $messages['az'] = array(
 	'wikihiero-desc' => 'Heroqlifləri göstərmək üçün <code>&lt;hiero&gt;</code> teqini əlavə edir',
 );
 
+/** Bashkir (Башҡорт)
+ * @author Assele
+ */
+$messages['ba'] = array(
+	'wikihiero-desc' => 'Иероглифтарҙы күрһәтеү өсөн <code>&lt;hiero&gt;</code> билдәһен өҫтәй',
+);
+
 /** Bavarian (Boarisch)
  * @author Man77
  */
