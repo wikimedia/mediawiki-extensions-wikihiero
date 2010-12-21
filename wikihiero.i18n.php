@@ -209,7 +209,7 @@ $messages['fa'] = array(
  * @author Crt
  */
 $messages['fi'] = array(
-	'wikihiero-desc' => 'Lisää <code>&lt;hiero&gt;</code>-tagin hieroglyfien esittämiseksi.',
+	'wikihiero-desc' => 'Lisää <code>&lt;hiero&gt;</code>-elementin hieroglyfien esittämiseksi.',
 );
 
 /** French (Français)
