@@ -49,7 +49,7 @@ function WikiHieroLoad() {
 }
 
 // MediaWiki entry point
-function WikiHieroLoader( $text, $attribs, &$parser ) {
+function WikiHieroLoader( $text, $attribs, $parser ) {
 	WikiHieroLoad();
 	$parser->setHook( 'hiero', 'WikiHieroHook' );
 	return WikiHieroHook( $text, $attribs, $parser );
