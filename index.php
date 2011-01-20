@@ -127,13 +127,13 @@ $process_time = sprintf("%0.3f sec", $b_sec - $a_sec + $b_dec - $a_dec);
 
     function LangLink(l)
     {
-      document.wh_form.lang.value = l
-      document.wh_form.submit()
+      document.wh_form.lang.value = l;
+      document.wh_form.submit();
     }
 
     function DisableScale(l)
     {
-      document.wh_form.scale.disabled = l
+      document.wh_form.scale.disabled = l;
     }
 
   </SCRIPT>
