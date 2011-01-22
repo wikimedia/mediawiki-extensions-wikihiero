@@ -69,7 +69,7 @@ $messages['az'] = array(
 	'wikihiero-desc' => 'Heroqlifləri göstərmək üçün <code>&lt;hiero&gt;</code> teqini əlavə edir',
 );
 
-/** Bashkir (Башҡорт)
+/** Bashkir (Башҡортса)
  * @author Assele
  */
 $messages['ba'] = array(
@@ -90,7 +90,7 @@ $messages['bcc'] = array(
 	'wikihiero-desc' => 'هور کنت <code>&lt;hiero&gt;</code> برچسپء په پیشدارگ هیروگلیف',
 );
 
-/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  */
@@ -567,14 +567,14 @@ $messages['sq'] = array(
 	'wikihiero-desc' => 'Vendosë kodin <code>&lt;hiero&gt;</code> për të shfaqur hieroglifë',
 );
 
-/** Serbian Cyrillic ekavian (Српски (ћирилица))
+/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
  * @author Millosh
  */
 $messages['sr-ec'] = array(
 	'wikihiero-desc' => 'Додаје <code>&lt;hiero&gt;</code> ознаку за приказ хијероглифа.',
 );
 
-/** Serbian Latin ekavian (Srpski (latinica))
+/** Serbian Latin ekavian (‪Srpski (latinica)‬)
  * @author Michaello
  */
 $messages['sr-el'] = array(
