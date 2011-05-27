@@ -249,10 +249,11 @@ $messages['gsw'] = array(
 );
 
 /** Hebrew (עברית)
+ * @author Amire80
  * @author Rotem Liss
  */
 $messages['he'] = array(
-	'wikihiero-desc' => 'הוספת תגית <code>&lt;hiero&gt;</code> להצגת הירוגליפים',
+	'wikihiero-desc' => 'הוספת תג <code>&lt;hiero&gt;</code> להצגת הירוגליפים',
 );
 
 /** Hindi (हिन्दी)
