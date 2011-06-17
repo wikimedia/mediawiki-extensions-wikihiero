@@ -2,22 +2,22 @@
 
 //////////////////////////////////////////////////////////////////////////
 //
-// WikiHiero - A PHP convert from text using "Manual for the encoding of 
+// WikiHiero - A PHP convert from text using "Manual for the encoding of
 // hieroglyphic texts for computer input" syntax to HTML entities (table and
 // images).
 //
 // Copyright (C) 2004 Guillaume Blanchard (Aoineko)
-// 
+//
 // This program is free software; you can redistribute it and/or
 // modify it under the terms of the GNU General Public License
 // as published by the Free Software Foundation; either version 2
 // of the License, or any later version.
-// 
+//
 // This program is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU General Public License for more details.
-// 
+//
 // You should have received a copy of the GNU General Public License
 // along with this program; if not, write to the Free Software
 // Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
@@ -83,28 +83,28 @@ function WH_Text( $index ) {
 							"title=\"" . htmlspecialchars( $code ) . " [".
 							htmlspecialchars( array_search($code, $wh_phonemes) ) . "]\">\n";
 					else
-						echo "<img src=\"".htmlspecialchars( WH_IMG_DIR.$file ) . "\" title=\"" . 
+						echo "<img src=\"".htmlspecialchars( WH_IMG_DIR.$file ) . "\" title=\"" .
 							htmlspecialchars( $code ) . "\">\n";
         }
-        else if($table == "Phoneme")
+        elseif($table == "Phoneme")
         {
           $code = WH_GetCode($file);
           if(in_array($code, $wh_phonemes))
-						echo "<img src=\"".htmlspecialchars( WH_IMG_DIR.$file ) . "\" " . 
+						echo "<img src=\"".htmlspecialchars( WH_IMG_DIR.$file ) . "\" " .
 							"title=\"" . htmlspecialchars( $code ) . " [".
 							htmlspecialchars( array_search($code, $wh_phonemes) )."]\">\n";
         }
-        else if($table == "Aa")
+        elseif($table == "Aa")
         {
           $code = WH_GetCode($file);
 					if((substr($code, 0, 2) == $table) && ctype_digit($code[2]))
 					{
 						if(in_array($code, $wh_phonemes))
-							echo "<img src=\"".htmlspecialchars( WH_IMG_DIR.$file) . "\" title=\"" . 
+							echo "<img src=\"".htmlspecialchars( WH_IMG_DIR.$file) . "\" title=\"" .
 								htmlspecialchars( $code ) . " [".
 								htmlspecialchars( array_search($code, $wh_phonemes) )."]\">\n";
 						else
-							echo "<img src=\"".htmlspecialchars( WH_IMG_DIR.$file ) . "\" title=\"" . 
+							echo "<img src=\"".htmlspecialchars( WH_IMG_DIR.$file ) . "\" title=\"" .
 								htmlspecialchars( $code ) . "\">\n";
 					}
         }
@@ -114,11 +114,11 @@ function WH_Text( $index ) {
 					if(($code[0] == $table) && ctype_digit($code[1]))
 					{
 						if(in_array($code, $wh_phonemes))
-							echo "<img src=\"".htmlspecialchars( WH_IMG_DIR.$file ) . "\" title=\"" . 
+							echo "<img src=\"".htmlspecialchars( WH_IMG_DIR.$file ) . "\" title=\"" .
 								htmlspecialchars( $code ) . "[".
 								htmlspecialchars( array_search($code, $wh_phonemes) )."]\">\n";
 						else
-							echo "<img src=\"".htmlspecialchars( WH_IMG_DIR.$file ). "\" title=\"" . 
+							echo "<img src=\"".htmlspecialchars( WH_IMG_DIR.$file ). "\" title=\"" .
 								htmlspecialchars( $code ) . "\">\n";
 					}
         }

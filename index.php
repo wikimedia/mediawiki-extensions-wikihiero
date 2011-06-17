@@ -2,22 +2,22 @@
 
 //////////////////////////////////////////////////////////////////////////
 //
-// WikiHiero - A PHP convert from text using "Manual for the encoding of 
+// WikiHiero - A PHP convert from text using "Manual for the encoding of
 // hieroglyphic texts for computer input" syntax to HTML entities (table and
 // images).
 //
 // Copyright (C) 2004 Guillaume Blanchard (Aoineko)
-// 
+//
 // This program is free software; you can redistribute it and/or
 // modify it under the terms of the GNU General Public License
 // as published by the Free Software Foundation; either version 2
 // of the License, or any later version.
-// 
+//
 // This program is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU General Public License for more details.
-// 
+//
 // You should have received a copy of the GNU General Public License
 // along with this program; if not, write to the Free Software
 // Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
@@ -28,7 +28,7 @@ echo "This script is insecure and shouldn't be used on a public wiki.\n";
 exit( 1 );
 
 $IP = getenv( 'MW_INSTALL_PATH' );
-if ( $IP === false ) { 
+if ( $IP === false ) {
 	$IP = dirname( __FILE__ ) .'/../..';
 }
 require( "$IP/includes/WebStart.php" );
@@ -57,7 +57,7 @@ else
 
 if(isset($_POST["lang"]))
 	$lang = $_POST["lang"];
-else if(isset($_GET["lang"]))
+elseif(isset($_GET["lang"]))
 	$lang = $_GET["lang"];
 else
 	$lang = "fr";
@@ -142,14 +142,14 @@ $process_time = sprintf("%0.3f sec", $b_sec - $a_sec + $b_dec - $a_dec);
 
   <TABLE border="0">
   <TR valign="top"><TD>
- 
+
     <BIG><?php echo "WikiHiero v".WH_VER_MAJ.".".WH_VER_MED.".".WH_VER_MIN; ?></BIG><br />
-    <SMALL>[<?php 
+    <SMALL>[<?php
 
       reset($wh_language['Lang']);
       while($l = current($wh_language['Lang']))
       {
-        if(key($wh_language['Lang']) == $lang) 
+        if(key($wh_language['Lang']) == $lang)
           echo "<b>$l</b>";
         else
           echo "<a href=\"javascript:LangLink('".key($wh_language['Lang'])."');\">$l</a>";
@@ -170,7 +170,7 @@ $process_time = sprintf("%0.3f sec", $b_sec - $a_sec + $b_dec - $a_dec);
         <option value="1" <?php if($mode==1) echo "selected"; ?> title="<?php echo WH_Text("HTML");  ?>" onclick="javascript:DisableScale(false);">Simple HTML
         <option disabled value="2" <?php if($mode==2) echo "selected"; ?> title="<?php echo WH_Text("CSS");   ?>">HTML & CSS
         <option disabled value="3" <?php if($mode==3) echo "selected"; ?> title="<?php echo WH_Text("Image"); ?>">Image
-      </select> 
+      </select>
       <?php echo WH_Text("Scale"); ?><input type="range" name="scale" <?php if($mode==0) echo "disabled"; ?> title="<?php echo WH_Text("Size"); ?>" min="1" max="999" size="3" maxlength="3" value="<?php echo htmlspecialchars( $scale ); ?>">%
       <?php echo WH_Text("Line"); ?><input type="checkbox" name="line" <?php if($line) echo "checked"; ?>>
       <input type="hidden" name="lang" value="<?php echo htmlspecialchars( $lang ); ?>">
@@ -218,7 +218,7 @@ $process_time = sprintf("%0.3f sec", $b_sec - $a_sec + $b_dec - $a_dec);
     <br /><br />
 
     <b><?php echo WH_Text("Download"); ?></b><br />
-    [<?php echo WH_Packet("rar"); ?>] - 
+    [<?php echo WH_Packet("rar"); ?>] -
     [<?php echo WH_Packet("zip"); ?>] -
     <a href="README">ReadMe</a>
 
@@ -249,7 +249,7 @@ $process_time = sprintf("%0.3f sec", $b_sec - $a_sec + $b_dec - $a_dec);
   <table align="right"><tr><td>
   <a href="http://www.mozilla.org/products/firefox/" title="Get Firefox - The free browser">
   <img src="http://www.mozilla.org/products/firefox/buttons/getfirefox_88x31.png"
-  width="88" height="31" border="0" alt="Get Firefox - The free browser"></a> 
+  width="88" height="31" border="0" alt="Get Firefox - The free browser"></a>
   </td></tr></table>
   <small><?php echo "Parsing duration: $process_time"; ?></small>
 
