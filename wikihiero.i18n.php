@@ -431,7 +431,7 @@ $messages['nds'] = array(
  * @author Servien
  */
 $messages['nds-nl'] = array(
-	'wikihiero-desc' => "'t Voeg de tekse <code>&lt;hiero&gt;</code> toe veur de weergave van hiërogliefen",
+	'wikihiero-desc' => 'Zet de tekste <code>&lt;hiero&gt;</code> derbie veur de weergave van hiërogliefen',
 );
 
 /** Dutch (Nederlands)
