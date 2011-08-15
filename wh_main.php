@@ -810,7 +810,7 @@ function WikiHieroHTML($hiero, $scale=WH_SCALE_DEFAULT, $line=false) {
 			$block[$block_id][$item_id] = $hiero[$char];
 			$type = WH_TYPE_END;
 
-		} elseif(ereg("[*:()]", $hiero[$char])) {
+		} elseif(preg_match("/[*:()]/", $hiero[$char])) {
 
 			if($type == WH_TYPE_GLYPH || $type == WH_TYPE_CODE) {
 				$item_id++;
@@ -884,7 +884,7 @@ function WikiHieroHTML($hiero, $scale=WH_SCALE_DEFAULT, $line=false) {
 			// convert all code into '&' to test prefabs glyph
 			$temp = "";
 			foreach($code as $t) {
-				if(ereg("[*:!()]", $t[0])) {
+				if(preg_match("/[*:!()]/", $t[0])) {
 					$temp .= "&";
 				} else {
 					$temp .= $t;
