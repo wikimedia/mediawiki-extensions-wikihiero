@@ -519,7 +519,7 @@ $messages['ru'] = array(
 	'wikihiero-desc' => 'Добавляет тег <code>&lt;hiero&gt;</code> для показа иероглифов',
 );
 
-/** Yakut (Саха тыла)
+/** Sakha (Саха тыла)
  * @author HalanTul
  */
 $messages['sah'] = array(
