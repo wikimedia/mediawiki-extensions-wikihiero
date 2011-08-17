@@ -24,8 +24,10 @@
 //
 //////////////////////////////////////////////////////////////////////////
 
-// Register MediaWiki extension
 $wgHooks['ParserFirstCallInit'][] = 'wfRegisterWikiHiero';
+$wgHooks['BeforePageDisplay'][] = 'wfHieroBeforePageDisplay';
+
+// Register MediaWiki extension
 $wgExtensionCredits['parserhook'][] = array(
 	'path'           => __FILE__,
 	'name'           => 'WikiHiero',
@@ -37,8 +39,20 @@ $wgExtensionMessagesFiles['Wikihiero'] =  dirname( __FILE__ ) . '/wikihiero.i18n
 
 $wgAutoloadClasses['WikiHiero'] = dirname( __FILE__ ) . '/wh_main.php';
 
+$wgResourceModules['ext.wikihiero'] = array(
+	'styles' => 'ext.wikihiero.css',
+	'localBasePath' => dirname( __FILE__ ) . '/modules',
+	'remoteExtPath' => 'wikihiero/modules',
+);
+
+// Because <hiero> tag is used rarely, we don't need to load its body on every hook call,
+// so we keep our simple hook handlers here.
 function wfRegisterWikiHiero( &$parser ) {
 	$parser->setHook( 'hiero', 'WikiHiero::parserHook' );
 	return true;
 }
 
+function wfHieroBeforePageDisplay( $out ) {
+	$out->addModuleStyles( 'ext.wikihiero' );
+	return true;
+}
