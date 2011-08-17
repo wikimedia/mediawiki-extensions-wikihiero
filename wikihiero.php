@@ -33,7 +33,7 @@ $wgExtensionCredits['parserhook'][] = array(
 	'url'            => 'http://www.mediawiki.org/wiki/Extension:WikiHiero',
 	'descriptionmsg' => 'wikihiero-desc',
 );
-$wgExtensionMessagesFiles['Wikihiero'] =  dirname(__FILE__) . '/wikihiero.i18n.php';
+$wgExtensionMessagesFiles['Wikihiero'] =  dirname( __FILE__ ) . '/wikihiero.i18n.php';
 
 $wgAutoloadClasses['WikiHiero'] = dirname( __FILE__ ) . '/wh_main.php';
 

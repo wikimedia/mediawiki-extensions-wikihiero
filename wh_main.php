@@ -28,45 +28,45 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	die( 'Not an entry point' );
 }
 
-//========================================================================
+// ========================================================================
 // I N C L U D E S
-include( dirname(__FILE__) . '/wh_list.php' );
+include( dirname( __FILE__ ) . '/wh_list.php' );
 
-//========================================================================
+// ========================================================================
 // D E F I N E S
-define("WH_TABLE_S",      "<table border='0' cellspacing='0' cellpadding='0'>");
-define("WH_TABLE_E",      "</table>");
-define("WH_TD_S",         "<td align='center' valign='middle'>");
-define("WH_TD_E",         "</td>");
+define( "WH_TABLE_S",      "<table border='0' cellspacing='0' cellpadding='0'>" );
+define( "WH_TABLE_E",      "</table>" );
+define( "WH_TD_S",         "<td align='center' valign='middle'>" );
+define( "WH_TD_E",         "</td>" );
 
-define("WH_MODE_DEFAULT", -1);    // use default mode
-define("WH_MODE_TEXT",     0);    // text only
-define("WH_MODE_HTML",     1);    // HTML without CSS
-define("WH_MODE_STYLE",    2);    // HTML and CSS // not supported
-define("WH_MODE_IMAGE",    3);    // picture (PNG) // not supported
-define("WH_MODE_RAW",      4);    // MdC test as it
+define( "WH_MODE_DEFAULT", -1 );    // use default mode
+define( "WH_MODE_TEXT",     0 );    // text only
+define( "WH_MODE_HTML",     1 );    // HTML without CSS
+define( "WH_MODE_STYLE",    2 );    // HTML and CSS // not supported
+define( "WH_MODE_IMAGE",    3 );    // picture (PNG) // not supported
+define( "WH_MODE_RAW",      4 );    // MdC test as it
 
-define("WH_TYPE_NONE",     0);
-define("WH_TYPE_GLYPH",    1);    // rendered items
-define("WH_TYPE_CODE",     2);    // single code as ':', '*', '!', '(' or ')'
-define("WH_TYPE_SPECIAL",  3);    // advanced code (more than 1 caracter)
-define("WH_TYPE_END",      4);    // end of line '!'
+define( "WH_TYPE_NONE",     0 );
+define( "WH_TYPE_GLYPH",    1 );    // rendered items
+define( "WH_TYPE_CODE",     2 );    // single code as ':', '*', '!', '(' or ')'
+define( "WH_TYPE_SPECIAL",  3 );    // advanced code (more than 1 caracter)
+define( "WH_TYPE_END",      4 );    // end of line '!'
 
-define("WH_SCALE_DEFAULT", -1);   // use default scale
-define("WH_HEIGHT",        44);
-define("WH_IMG_MARGIN",    1);    // default value
-define("WH_CARTOUCHE_WIDTH", 2);  // default value
+define( "WH_SCALE_DEFAULT", -1 );   // use default scale
+define( "WH_HEIGHT",        44 );
+define( "WH_IMG_MARGIN",    1 );    // default value
+define( "WH_CARTOUCHE_WIDTH", 2 );  // default value
 
-define("WH_VER_MAJ",       0);
-define("WH_VER_MED",       2);
-define("WH_VER_MIN",       14);
+define( "WH_VER_MAJ",       0 );
+define( "WH_VER_MED",       2 );
+define( "WH_VER_MIN",       14 );
 
 global $wgExtensionAssetsPath;
-define("WH_IMG_DIR",       $wgExtensionAssetsPath . '/wikihiero/img/' );
-define("WH_IMG_PRE",       "hiero_");
-define("WH_IMG_EXT",       "png");
+define( "WH_IMG_DIR",       $wgExtensionAssetsPath . '/wikihiero/img/' );
+define( "WH_IMG_PRE",       "hiero_" );
+define( "WH_IMG_EXT",       "png" );
 
-define("WH_DEBUG_MODE",    false);
+define( "WH_DEBUG_MODE",    false );
 
 class WikiHiero {
 	private $scale = 100;
@@ -83,20 +83,20 @@ class WikiHiero {
 	 * @param $line string: use line [true|false] (def=false)
 	 * @return string: converted code
 	 */
-	public static function render( $text, $mode=WH_MODE_DEFAULT, $scale=WH_SCALE_DEFAULT, $line=false ) {
+	public static function render( $text, $mode = WH_MODE_DEFAULT, $scale = WH_SCALE_DEFAULT, $line = false ) {
 		if ( $mode == WH_MODE_DEFAULT ) {
 			$mode = WH_MODE_HTML;
 		}
 
 		$hiero = new WikiHiero( $scale );
 
-		switch($mode) {
-			case WH_MODE_TEXT:  return $hiero->renderText( $text, $line);
-			case WH_MODE_HTML:  return $hiero->renderHtml( $text, $scale, $line);
-			case WH_MODE_STYLE: die("ERROR: CSS version not yet implemented");
-			case WH_MODE_IMAGE: die("ERROR: Image version not yet implemented");
+		switch( $mode ) {
+			case WH_MODE_TEXT:  return $hiero->renderText( $text, $line );
+			case WH_MODE_HTML:  return $hiero->renderHtml( $text, $scale, $line );
+			case WH_MODE_STYLE: die( "ERROR: CSS version not yet implemented" );
+			case WH_MODE_IMAGE: die( "ERROR: Image version not yet implemented" );
 		}
-		die("ERROR: Unknown mode!");
+		die( "ERROR: Unknown mode!" );
 	}
 
 	/**
@@ -117,7 +117,7 @@ class WikiHiero {
 
 	/**
 	 * Renders a glyph
-	 * 
+	 *
 	 * @param $glyph string: glyph's code to render
 	 * @param $option string: option to add into <img> tag (use for height)
 	 * @return string: a string to add to the stream
@@ -126,40 +126,40 @@ class WikiHiero {
 		global $wh_phonemes;
 		global $wh_files;
 
-		if($glyph == "..") { // Render void block
+		if ( $glyph == ".." ) { // Render void block
 		  $width = WH_HEIGHT;
 		  return "<table width='{$width}px' border='0' cellspacing='0' cellpadding='0'><tr><td>&#160;</td></tr></table>";
 		}
-		elseif($glyph == ".") // Render half-width void block
+		elseif ( $glyph == "." ) // Render half-width void block
 		{
-		  $width = WH_HEIGHT/2;
+		  $width = WH_HEIGHT / 2;
 		  return "<table width='{$width}px' border='0' cellspacing='0' cellpadding='0'><tr><td>&#160;</td></tr></table>";
 		}
-		elseif($glyph == '<') // Render open cartouche
+		elseif ( $glyph == '<' ) // Render open cartouche
 		{
-		  $height = intval(WH_HEIGHT * $this->scale / 100);
+		  $height = intval( WH_HEIGHT * $this->scale / 100 );
 		  $code = $wh_phonemes[$glyph];
-		  return "<img src='".htmlspecialchars(WH_IMG_DIR.WH_IMG_PRE."{$code}.".WH_IMG_EXT)."' height='{$height}px' title='".htmlspecialchars($glyph)."' alt='".htmlspecialchars($glyph)."' />";
+		  return "<img src='" . htmlspecialchars( WH_IMG_DIR . WH_IMG_PRE . "{$code}." . WH_IMG_EXT ) . "' height='{$height}px' title='" . htmlspecialchars( $glyph ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
 		}
-		elseif($glyph == '>') // Render close cartouche
+		elseif ( $glyph == '>' ) // Render close cartouche
 		{
-		  $height = intval(WH_HEIGHT * $this->scale / 100);
+		  $height = intval( WH_HEIGHT * $this->scale / 100 );
 		  $code = $wh_phonemes[$glyph];
-		  return "<img src='".htmlspecialchars(WH_IMG_DIR.WH_IMG_PRE."{$code}.".WH_IMG_EXT)."' height='{$height}px' title='".htmlspecialchars($glyph)."' alt='".htmlspecialchars($glyph)."' />";
+		  return "<img src='" . htmlspecialchars( WH_IMG_DIR . WH_IMG_PRE . "{$code}." . WH_IMG_EXT ) . "' height='{$height}px' title='" . htmlspecialchars( $glyph ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
 		}
 
-		if(array_key_exists($glyph, $wh_phonemes))
+		if ( array_key_exists( $glyph, $wh_phonemes ) )
 		{
 		  $code = $wh_phonemes[$glyph];
-		  if(array_key_exists($code, $wh_files))
-			return "<img style='margin:".WH_IMG_MARGIN."px;' $option src='".htmlspecialchars(WH_IMG_DIR.WH_IMG_PRE."{$code}.".WH_IMG_EXT)."' title='".htmlspecialchars("{$code} [{$glyph}]")."' alt='".htmlspecialchars($glyph)."' />";
+		  if ( array_key_exists( $code, $wh_files ) )
+			return "<img style='margin:" . WH_IMG_MARGIN . "px;' $option src='" . htmlspecialchars( WH_IMG_DIR . WH_IMG_PRE . "{$code}." . WH_IMG_EXT ) . "' title='" . htmlspecialchars( "{$code} [{$glyph}]" ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
 		  else
-			return "<font title='".htmlspecialchars($code)."'>".htmlspecialchars($glyph)."</font>";
+			return "<font title='" . htmlspecialchars( $code ) . "'>" . htmlspecialchars( $glyph ) . "</font>";
 		}
-		elseif(array_key_exists($glyph, $wh_files))
-		  return "<img style='margin:".WH_IMG_MARGIN."px;' $option src='".htmlspecialchars(WH_IMG_DIR.WH_IMG_PRE."{$glyph}.".WH_IMG_EXT)."' title='".htmlspecialchars($glyph)."' alt='".htmlspecialchars($glyph)."' />";
+		elseif ( array_key_exists( $glyph, $wh_files ) )
+		  return "<img style='margin:" . WH_IMG_MARGIN . "px;' $option src='" . htmlspecialchars( WH_IMG_DIR . WH_IMG_PRE . "{$glyph}." . WH_IMG_EXT ) . "' title='" . htmlspecialchars( $glyph ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
 		else
-		  return htmlspecialchars($glyph);
+		  return htmlspecialchars( $glyph );
 	}
 
 	/**
@@ -170,63 +170,63 @@ class WikiHiero {
 	 * @param $total int: total size of a group for multi-glyph block
 	 * @return size
 	 */
-	private function resizeGlyph( $item, $is_cartouche=false, $total=0 ) {
+	private function resizeGlyph( $item, $is_cartouche = false, $total = 0 ) {
 		global $wh_phonemes;
 		global $wh_files;
 
-		if(array_key_exists($item, $wh_phonemes)) {
+		if ( array_key_exists( $item, $wh_phonemes ) ) {
 			$glyph = $wh_phonemes[$item];
 		} else {
 		  $glyph = $item;
 		}
 
 		$margin = 2 * WH_IMG_MARGIN;
-		if($is_cartouche) {
-			$margin += 2 * intval(WH_CARTOUCHE_WIDTH * $this->scale / 100);
+		if ( $is_cartouche ) {
+			$margin += 2 * intval( WH_CARTOUCHE_WIDTH * $this->scale / 100 );
 		}
 
-		if(array_key_exists($glyph, $wh_files)) {
+		if ( array_key_exists( $glyph, $wh_files ) ) {
 			$height = $margin + $wh_files[$glyph][1];
-			if($total) {
-				if($total > WH_HEIGHT) {
-					return (intval( $height * WH_HEIGHT / $total ) - $margin) * $this->scale / 100;
+			if ( $total ) {
+				if ( $total > WH_HEIGHT ) {
+					return ( intval( $height * WH_HEIGHT / $total ) - $margin ) * $this->scale / 100;
 				} else {
-					return ($height - $margin) * $this->scale / 100;
+					return ( $height - $margin ) * $this->scale / 100;
 				}
 			} else {
-				if($height > WH_HEIGHT) {
-					return (intval( WH_HEIGHT * WH_HEIGHT / $height ) - $margin) * $this->scale / 100;
+				if ( $height > WH_HEIGHT ) {
+					return ( intval( WH_HEIGHT * WH_HEIGHT / $height ) - $margin ) * $this->scale / 100;
 				} else {
-					return ($height - $margin) * $this->scale / 100;
+					return ( $height - $margin ) * $this->scale / 100;
 				}
 			}
 		}
 
-		return (WH_HEIGHT - $margin) * $this->scale / 100;
+		return ( WH_HEIGHT - $margin ) * $this->scale / 100;
 	}
 
-	//------------------------------------------------------------------------
+	// ------------------------------------------------------------------------
 	// WikiHieroText - Render hieroglyph text in text mode
-	//------------------------------------------------------------------------
+	// ------------------------------------------------------------------------
 	// hiero  << text to convert
 	// line   << use line [true|false] (def=false)
 	// return >> string with converted code
-	//------------------------------------------------------------------------
-	public function renderText($hiero, $line=false) {
+	// ------------------------------------------------------------------------
+	public function renderText( $hiero, $line = false ) {
 		global $wh_text_conv;
 
 		$html = "";
 
-		if($line)
+		if ( $line )
 		  $html .= "<hr />\n";
 
-		for($char=0; $char<strlen($hiero); $char++)
+		for ( $char = 0; $char < strlen( $hiero ); $char++ )
 		{
-		  if(array_key_exists($hiero[$char], $wh_text_conv))
+		  if ( array_key_exists( $hiero[$char], $wh_text_conv ) )
 		  {
 			$html .= $wh_text_conv[$hiero[$char]];
-			if($hiero[$char] == '!')
-			  if($line)
+			if ( $hiero[$char] == '!' )
+			  if ( $line )
 				$html .= "<hr />\n";
 		  }
 		  else
@@ -236,29 +236,29 @@ class WikiHiero {
 		return $html;
 	  }
 
-	//------------------------------------------------------------------------
+	// ------------------------------------------------------------------------
 	// WikiHiero - Render hieroglyph text
-	//------------------------------------------------------------------------
+	// ------------------------------------------------------------------------
 	// hiero  << text to convert
 	// scale  << global scale in percentage (def=100%)
 	// line   << use line [true|false] (def=false)
 	// return >> string with converted code
-	//------------------------------------------------------------------------
-	public function renderHtml($hiero, $scale = WH_SCALE_DEFAULT, $line=false) {
+	// ------------------------------------------------------------------------
+	public function renderHtml( $hiero, $scale = WH_SCALE_DEFAULT, $line = false ) {
 		global $wh_prefabs;
 		global $wh_files;
 		global $wh_phonemes;
 
-		if($scale != WH_SCALE_DEFAULT)
+		if ( $scale != WH_SCALE_DEFAULT )
 		  $this->setScale( $scale );
 
 		$html = "";
 
-		if($line) {
+		if ( $line ) {
 		  $html .= "<hr />\n";
 		}
 
-		//------------------------------------------------------------------------
+		// ------------------------------------------------------------------------
 		// Split text into block, then split block into item
 		$block = array();
 		$block[0] = array();
@@ -269,17 +269,17 @@ class WikiHiero {
 		$type = WH_TYPE_NONE;
 		$is_cartouche = false;
 
-		for($char=0; $char<strlen($hiero); $char++) {
+		for ( $char = 0; $char < strlen( $hiero ); $char++ ) {
 
-			if( $hiero[$char] == '(' ) {
+			if ( $hiero[$char] == '(' ) {
 				$parenthesis++;
-			} elseif( $hiero[$char] == ')' ) {
+			} elseif ( $hiero[$char] == ')' ) {
 				$parenthesis--;
 			}
 
-			if( $parenthesis == 0 ) {
-				if($hiero[$char] == '-' || $hiero[$char] == ' ') {
-					if($type != WH_TYPE_NONE) {
+			if ( $parenthesis == 0 ) {
+				if ( $hiero[$char] == '-' || $hiero[$char] == ' ' ) {
+					if ( $type != WH_TYPE_NONE ) {
 						$block_id++;
 						$block[$block_id] = array();
 						$item_id = 0;
@@ -288,15 +288,15 @@ class WikiHiero {
 					}
 				}
 			} else {// don't slit block if inside parenthesis
-				if($hiero[$char] == '-') {
+				if ( $hiero[$char] == '-' ) {
 					$item_id++;
 					$block[$block_id][$item_id] = '-';
 					$type = WH_TYPE_CODE;
 				}
 			}
 
-			if($hiero[$char] == '!' ) {
-				if($item_id > 0) {
+			if ( $hiero[$char] == '!' ) {
+				if ( $item_id > 0 ) {
 					$block_id++;
 					$block[$block_id] = array();
 					$item_id = 0;
@@ -304,22 +304,22 @@ class WikiHiero {
 				$block[$block_id][$item_id] = $hiero[$char];
 				$type = WH_TYPE_END;
 
-			} elseif(preg_match("/[*:()]/", $hiero[$char])) {
+			} elseif ( preg_match( "/[*:()]/", $hiero[$char] ) ) {
 
-				if($type == WH_TYPE_GLYPH || $type == WH_TYPE_CODE) {
+				if ( $type == WH_TYPE_GLYPH || $type == WH_TYPE_CODE ) {
 					$item_id++;
 					$block[$block_id][$item_id] = "";
 				}
 			$block[$block_id][$item_id] = $hiero[$char];
 			$type = WH_TYPE_CODE;
 
-			} elseif(ctype_alnum($hiero[$char]) || $hiero[$char] == '.' || $hiero[$char] == '<' || $hiero[$char] == '>') {
-				if($type == WH_TYPE_END) {
+			} elseif ( ctype_alnum( $hiero[$char] ) || $hiero[$char] == '.' || $hiero[$char] == '<' || $hiero[$char] == '>' ) {
+				if ( $type == WH_TYPE_END ) {
 					$block_id++;
 					$block[$block_id] = array();
 					$item_id = 0;
 					$block[$block_id][$item_id] = "";
-				} elseif($type == WH_TYPE_CODE) {
+				} elseif ( $type == WH_TYPE_CODE ) {
 					$item_id++;
 					$block[$block_id][$item_id] = "";
 				}
@@ -329,11 +329,11 @@ class WikiHiero {
 		}
 
 		// DEBUG: See the block split table
-		if(WH_DEBUG_MODE) {
+		if ( WH_DEBUG_MODE ) {
 
-			foreach($block as $code) {
+			foreach ( $block as $code ) {
 				echo "| ";
-				foreach($code as $item) {
+				foreach ( $code as $item ) {
 					echo "$item | ";
 				}
 				echo "<br />\n";
@@ -341,35 +341,35 @@ class WikiHiero {
 		}
 
 		$contentHtml = $tableHtml = $tableContentHtml = "";
-		//$html .= WH_TABLE_S."<tr>\n";
+		// $html .= WH_TABLE_S."<tr>\n";
 
-		//------------------------------------------------------------------------
+		// ------------------------------------------------------------------------
 		// Loop into all blocks
-		foreach($block as $code) {
+		foreach ( $block as $code ) {
 
 			// simplest case, the block contain only 1 code -> render
-			if(count($code) == 1)
+			if ( count( $code ) == 1 )
 			{
-				if($code[0] == "!") { // end of line
-					$tableHtml = "</tr>".WH_TABLE_E.WH_TABLE_S."<tr>\n";
-					if($line) {
+				if ( $code[0] == "!" ) { // end of line
+					$tableHtml = "</tr>" . WH_TABLE_E . WH_TABLE_S . "<tr>\n";
+					if ( $line ) {
 						$contentHtml .= "<hr />\n";
 					}
 
-				} elseif(strchr($code[0], '<')) { // start cartouche
-					$contentHtml .= WH_TD_S . self::renderGlyph($code[0]).WH_TD_E;
+				} elseif ( strchr( $code[0], '<' ) ) { // start cartouche
+					$contentHtml .= WH_TD_S . self::renderGlyph( $code[0] ) . WH_TD_E;
 					$is_cartouche = true;
-					$contentHtml .= "<td>".WH_TABLE_S."<tr><td height='".intval(WH_CARTOUCHE_WIDTH * $this->scale / 100)."px' bgcolor='black'></td></tr><tr><td>".WH_TABLE_S."<tr>";
+					$contentHtml .= "<td>" . WH_TABLE_S . "<tr><td height='" . intval( WH_CARTOUCHE_WIDTH * $this->scale / 100 ) . "px' bgcolor='black'></td></tr><tr><td>" . WH_TABLE_S . "<tr>";
 
-				} elseif(strchr($code[0], '>')) { // end cartouche
-					$contentHtml .= "</tr>".WH_TABLE_E."</td></tr><tr><td height='".intval(WH_CARTOUCHE_WIDTH * $this->scale / 100)."px' bgcolor='black'></td></tr>".WH_TABLE_E."</td>";
+				} elseif ( strchr( $code[0], '>' ) ) { // end cartouche
+					$contentHtml .= "</tr>" . WH_TABLE_E . "</td></tr><tr><td height='" . intval( WH_CARTOUCHE_WIDTH * $this->scale / 100 ) . "px' bgcolor='black'></td></tr>" . WH_TABLE_E . "</td>";
 					$is_cartouche = false;
-					$contentHtml .= WH_TD_S . self::renderGlyph($code[0]).WH_TD_E;
+					$contentHtml .= WH_TD_S . self::renderGlyph( $code[0] ) . WH_TD_E;
 
-				} elseif($code[0] != "") { // assum is glyph or '..' or '.'
-					$option = "height='".$this->resizeGlyph($code[0], $is_cartouche)."px'";
+				} elseif ( $code[0] != "" ) { // assum is glyph or '..' or '.'
+					$option = "height='" . $this->resizeGlyph( $code[0], $is_cartouche ) . "px'";
 
-					$contentHtml .= WH_TD_S . self::renderGlyph($code[0], $option).WH_TD_E;
+					$contentHtml .= WH_TD_S . self::renderGlyph( $code[0], $option ) . WH_TD_E;
 				}
 
 			// block contain more than 1 glyph
@@ -377,8 +377,8 @@ class WikiHiero {
 
 				// convert all code into '&' to test prefabs glyph
 				$temp = "";
-				foreach($code as $t) {
-					if(preg_match("/[*:!()]/", $t[0])) {
+				foreach ( $code as $t ) {
+					if ( preg_match( "/[*:!()]/", $t[0] ) ) {
 						$temp .= "&";
 					} else {
 						$temp .= $t;
@@ -386,10 +386,10 @@ class WikiHiero {
 				}
 
 			// test is block is into tje prefabs list
-			if(in_array($temp, $wh_prefabs)) {
-				$option = "height='".$this->resizeGlyph($temp, $is_cartouche)."px'";
+			if ( in_array( $temp, $wh_prefabs ) ) {
+				$option = "height='" . $this->resizeGlyph( $temp, $is_cartouche ) . "px'";
 
-				$contentHtml .= WH_TD_S . self::renderGlyph($temp, $option).WH_TD_E;
+				$contentHtml .= WH_TD_S . self::renderGlyph( $temp, $option ) . WH_TD_E;
 
 			// block must be manualy computed
 			} else {
@@ -398,31 +398,31 @@ class WikiHiero {
 				$total    = 0;
 				$height   = 0;
 
-				foreach($code as $t) {
-					if($t == ":") {
-						if($height > $line_max) {
+				foreach ( $code as $t ) {
+					if ( $t == ":" ) {
+						if ( $height > $line_max ) {
 							$line_max = $height;
 						}
 						$total += $line_max;
 						$line_max = 0;
 
-					} elseif($t == "*") {
-						if($height > $line_max) {
+					} elseif ( $t == "*" ) {
+						if ( $height > $line_max ) {
 							$line_max = $height;
 						}
 					} else {
-						if(array_key_exists($t, $wh_phonemes)) {
+						if ( array_key_exists( $t, $wh_phonemes ) ) {
 							$glyph = $wh_phonemes[$t];
 						} else {
 							$glyph = $t;
 						}
-						if(array_key_exists($glyph, $wh_files)) {
+						if ( array_key_exists( $glyph, $wh_files ) ) {
 							$height = 2 + $wh_files[$glyph][1];
 						}
 					}
 				} // end foreach
 
-				if($height > $line_max) {
+				if ( $height > $line_max ) {
 					$line_max = $height;
 				}
 
@@ -430,34 +430,34 @@ class WikiHiero {
 
 				// render all glyph into the block
 				$temp = "";
-				foreach($code as $t) {
+				foreach ( $code as $t ) {
 
-					if($t == ":") {
+					if ( $t == ":" ) {
 						$temp .= "<br />";
 
-					} elseif($t == "*") {
+					} elseif ( $t == "*" ) {
 						$temp .= " ";
 
 					} else {
 						// resize the glyph according to the block total height
-						$option = "height='".$this->resizeGlyph($t, $is_cartouche, $total)."px'";
-						$temp .= self::renderGlyph($t, $option);
+						$option = "height='" . $this->resizeGlyph( $t, $is_cartouche, $total ) . "px'";
+						$temp .= self::renderGlyph( $t, $option );
 					}
 				} // end foreach
 
-				$contentHtml .= WH_TD_S.$temp.WH_TD_E;
+				$contentHtml .= WH_TD_S . $temp . WH_TD_E;
 			}
 			$contentHtml .= "\n";
 			}
 
-			if(strlen($contentHtml) > 0) {
-				$tableContentHtml .= $tableHtml.$contentHtml;
+			if ( strlen( $contentHtml ) > 0 ) {
+				$tableContentHtml .= $tableHtml . $contentHtml;
 				$contentHtml = $tableHtml = "";
 			}
 		}
 
-		if(strlen($tableContentHtml) > 0) {
-			$html .= WH_TABLE_S."<tr>\n".$tableContentHtml."</tr>".WH_TABLE_E;
+		if ( strlen( $tableContentHtml ) > 0 ) {
+			$html .= WH_TABLE_S . "<tr>\n" . $tableContentHtml . "</tr>" . WH_TABLE_E;
 		}
 
 		return "<table border='0' cellspacing='0' cellpadding='0' style='display:inline;' class='mw-hierotable' dir='ltr'><tr><td>\n$html\n</td></tr></table>";
@@ -465,7 +465,7 @@ class WikiHiero {
 
 }
 
-//========================================================================
+// ========================================================================
 // G L O B A L S
 global $wh_phonemes, $wh_text_conv;
 
@@ -866,13 +866,13 @@ $wh_phonemes	=	array(	//	convertion	table	phoneme	->	gardiner	code
 	"y"	=>	"Z4",
 	"W"	=>	"Z7",
 
-	"<1"	=>	"Ca1",	//cartouche
+	"<1"	=>	"Ca1",	// cartouche
 	"2>"	=>	"Ca2",
 	"<2"	=>	"Ca2a",
 	"1>"	=>	"Ca1a",
 	"<0"	=>	"Ca1",
 	"0>"	=>	"Ca2",
-	"<h1"	=>	"Cah1",	//horus
+	"<h1"	=>	"Cah1",	// horus
 	"h1>"	=>	"Cah1a",
 	"<h2"	=>	"Cah2",
 	"h2>"	=>	"Cah2a",
@@ -880,7 +880,7 @@ $wh_phonemes	=	array(	//	convertion	table	phoneme	->	gardiner	code
 	"h3>"	=>	"Cah3a",
 	"<h0"	=>	"Cah1",
 	"h0>"	=>	"Cah1a",
-	"<"	=>	"Ca1",	//cartouche
+	"<"	=>	"Ca1",	// cartouche
 	">"	=>	"Ca2",
 	"[&"	=>	"Ba16",
 	"&]"	=>	"Ba16",
@@ -960,7 +960,7 @@ $wh_text_conv = array(
   "1>"      => ")",
   "<0"      => "(",
   "0>"      => ")|",
-  "<h1"     => "[",  //horus
+  "<h1"     => "[",  // horus
   "h1>"     => "]",
   "<h2"     => "[",
   "h2>"     => "]",
@@ -968,37 +968,37 @@ $wh_text_conv = array(
   "h3>"     => "]",
   "<h0"     => "[",
   "h0>"     => "]",
-  "<"       => "(",    //cartouche
+  "<"       => "(",    // cartouche
   ">"       => ")|",
 );
 
-//========================================================================
+// ========================================================================
 // F U N C T I O N S
 
 
-//========================================================================
+// ========================================================================
 //
 // W i k i H i e r o
 //
 
-//------------------------------------------------------------------------
+// ------------------------------------------------------------------------
 // WH_GetCode - Get glyph code from file name
-//------------------------------------------------------------------------
+// ------------------------------------------------------------------------
 // file   << file name
 // return >> string with converted code
-//------------------------------------------------------------------------
-function WH_GetCode($file) {
-		return substr($file, strlen(WH_IMG_PRE), -(1+strlen(WH_IMG_EXT)));
+// ------------------------------------------------------------------------
+function WH_GetCode( $file ) {
+		return substr( $file, strlen( WH_IMG_PRE ), -( 1 + strlen( WH_IMG_EXT ) ) );
 }
 
-//------------------------------------------------------------------------
+// ------------------------------------------------------------------------
 // WH_Credit - Get glyph code from file name
-//------------------------------------------------------------------------
+// ------------------------------------------------------------------------
 // return >> credit string
-//------------------------------------------------------------------------
+// ------------------------------------------------------------------------
 function WH_Credit() {
 	$html = "";
-	$html .= "<b>WikiHiero v".WH_VER_MAJ.".".WH_VER_MED.".".WH_VER_MIN."</b>\n";
+	$html .= "<b>WikiHiero v" . WH_VER_MAJ . "." . WH_VER_MED . "." . WH_VER_MIN . "</b>\n";
 	$html .= "by Guillaume Blanchard (Aoineko) under GPL (2004).<br />\n";
 	$html .= "Hieroglyph credit: S. Rosmorduc, G. Watson, J. Hirst (under GFDL).\n";
 	return $html;

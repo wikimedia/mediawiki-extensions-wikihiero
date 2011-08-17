@@ -32,13 +32,13 @@ require "wikihiero.php";
 #
 
 # Fixme ! webRequest :)
-if(array_key_exists("table", $_GET)) {
+if ( array_key_exists( "table", $_GET ) ) {
 	$table = $_GET["table"];
 } else {
 	$table = "All";
 }
 
-if(array_key_exists("lang", $_GET)) {
+if ( array_key_exists( "lang", $_GET ) ) {
 	$lang = $_GET["lang"];
 } else {
 	$lang = "fr";
@@ -49,8 +49,8 @@ function WH_Text( $index ) {
 	global $wh_language;
 	global $lang;
 
-	if(isset($wh_language[$index])) {
-		if(isset($wh_language[$index][$lang])) {
+	if ( isset( $wh_language[$index] ) ) {
+		if ( isset( $wh_language[$index][$lang] ) ) {
 			return $wh_language[$index][$lang];
 		} else {
 			return $wh_language[$index]["en"];
@@ -61,9 +61,9 @@ function WH_Text( $index ) {
 }
 
 ?>
-<html lang=<?php echo htmlspecialchars($lang); ?>>
+<html lang=<?php echo htmlspecialchars( $lang ); ?>>
   <head>
-    <title><?php echo htmlspecialchars($table)." - ".WH_Text($table); ?> - WikiHiero</title>
+    <title><?php echo htmlspecialchars( $table ) . " - " . WH_Text( $table ); ?> - WikiHiero</title>
     <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
     <link rel="shortcut icon" href="/favicon.ico">
   </head>
@@ -71,59 +71,59 @@ function WH_Text( $index ) {
 
     <?php
 
-    echo "<b>" . htmlspecialchars( $table ) . "</b> - ".WH_Text($table)."<br /><br />";
-	$dh = opendir(WH_IMG_DIR);
-    if( $dh ) {
-      while(($file = readdir($dh)) !== false) {
-        if($table == "All")
+    echo "<b>" . htmlspecialchars( $table ) . "</b> - " . WH_Text( $table ) . "<br /><br />";
+	$dh = opendir( WH_IMG_DIR );
+    if ( $dh ) {
+      while ( ( $file = readdir( $dh ) ) !== false ) {
+        if ( $table == "All" )
         {
-          $code = WH_GetCode($file);
-					if(in_array($code, $wh_phonemes))
-						echo "<img src=\"".htmlspecialchars( WH_IMG_DIR.$file ) . "\" " .
-							"title=\"" . htmlspecialchars( $code ) . " [".
-							htmlspecialchars( array_search($code, $wh_phonemes) ) . "]\">\n";
+          $code = WH_GetCode( $file );
+					if ( in_array( $code, $wh_phonemes ) )
+						echo "<img src=\"" . htmlspecialchars( WH_IMG_DIR . $file ) . "\" " .
+							"title=\"" . htmlspecialchars( $code ) . " [" .
+							htmlspecialchars( array_search( $code, $wh_phonemes ) ) . "]\">\n";
 					else
-						echo "<img src=\"".htmlspecialchars( WH_IMG_DIR.$file ) . "\" title=\"" .
+						echo "<img src=\"" . htmlspecialchars( WH_IMG_DIR . $file ) . "\" title=\"" .
 							htmlspecialchars( $code ) . "\">\n";
         }
-        elseif($table == "Phoneme")
+        elseif ( $table == "Phoneme" )
         {
-          $code = WH_GetCode($file);
-          if(in_array($code, $wh_phonemes))
-						echo "<img src=\"".htmlspecialchars( WH_IMG_DIR.$file ) . "\" " .
-							"title=\"" . htmlspecialchars( $code ) . " [".
-							htmlspecialchars( array_search($code, $wh_phonemes) )."]\">\n";
+          $code = WH_GetCode( $file );
+          if ( in_array( $code, $wh_phonemes ) )
+						echo "<img src=\"" . htmlspecialchars( WH_IMG_DIR . $file ) . "\" " .
+							"title=\"" . htmlspecialchars( $code ) . " [" .
+							htmlspecialchars( array_search( $code, $wh_phonemes ) ) . "]\">\n";
         }
-        elseif($table == "Aa")
+        elseif ( $table == "Aa" )
         {
-          $code = WH_GetCode($file);
-					if((substr($code, 0, 2) == $table) && ctype_digit($code[2]))
+          $code = WH_GetCode( $file );
+					if ( ( substr( $code, 0, 2 ) == $table ) && ctype_digit( $code[2] ) )
 					{
-						if(in_array($code, $wh_phonemes))
-							echo "<img src=\"".htmlspecialchars( WH_IMG_DIR.$file) . "\" title=\"" .
-								htmlspecialchars( $code ) . " [".
-								htmlspecialchars( array_search($code, $wh_phonemes) )."]\">\n";
+						if ( in_array( $code, $wh_phonemes ) )
+							echo "<img src=\"" . htmlspecialchars( WH_IMG_DIR . $file ) . "\" title=\"" .
+								htmlspecialchars( $code ) . " [" .
+								htmlspecialchars( array_search( $code, $wh_phonemes ) ) . "]\">\n";
 						else
-							echo "<img src=\"".htmlspecialchars( WH_IMG_DIR.$file ) . "\" title=\"" .
+							echo "<img src=\"" . htmlspecialchars( WH_IMG_DIR . $file ) . "\" title=\"" .
 								htmlspecialchars( $code ) . "\">\n";
 					}
         }
         else
         {
-          $code = WH_GetCode($file);
-					if(($code[0] == $table) && ctype_digit($code[1]))
+          $code = WH_GetCode( $file );
+					if ( ( $code[0] == $table ) && ctype_digit( $code[1] ) )
 					{
-						if(in_array($code, $wh_phonemes))
-							echo "<img src=\"".htmlspecialchars( WH_IMG_DIR.$file ) . "\" title=\"" .
-								htmlspecialchars( $code ) . "[".
-								htmlspecialchars( array_search($code, $wh_phonemes) )."]\">\n";
+						if ( in_array( $code, $wh_phonemes ) )
+							echo "<img src=\"" . htmlspecialchars( WH_IMG_DIR . $file ) . "\" title=\"" .
+								htmlspecialchars( $code ) . "[" .
+								htmlspecialchars( array_search( $code, $wh_phonemes ) ) . "]\">\n";
 						else
-							echo "<img src=\"".htmlspecialchars( WH_IMG_DIR.$file ). "\" title=\"" .
+							echo "<img src=\"" . htmlspecialchars( WH_IMG_DIR . $file ) . "\" title=\"" .
 								htmlspecialchars( $code ) . "\">\n";
 					}
         }
       }
-      closedir($dh);
+      closedir( $dh );
     }
 
     ?>
