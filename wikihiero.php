@@ -25,7 +25,7 @@
 //////////////////////////////////////////////////////////////////////////
 
 // Register MediaWiki extension
-$wgHooks['ParserFirstCallInit'][] = 'WH_Register';
+$wgHooks['ParserFirstCallInit'][] = 'wfRegisterWikiHiero';
 $wgExtensionCredits['parserhook'][] = array(
 	'path'           => __FILE__,
 	'name'           => 'WikiHiero',
@@ -35,32 +35,10 @@ $wgExtensionCredits['parserhook'][] = array(
 );
 $wgExtensionMessagesFiles['Wikihiero'] =  dirname(__FILE__) . '/wikihiero.i18n.php';
 
-function WH_Register( &$parser ) {
-	$parser->setHook( 'hiero', 'WikiHieroLoader' );
+$wgAutoloadClasses['WikiHiero'] = dirname( __FILE__ ) . '/wh_main.php';
+
+function wfRegisterWikiHiero( &$parser ) {
+	$parser->setHook( 'hiero', 'WikiHiero::parserHook' );
 	return true;
 }
-
-function WikiHieroLoad() {
-	static $loaded = false;
-	if ( !$loaded ) {
-		require( dirname( __FILE__ ) . '/wh_main.php' );
-		$loaded = true;
-	}
-}
-
-// MediaWiki entry point
-function WikiHieroLoader( $text, $attribs, $parser ) {
-	WikiHieroLoad();
-	$parser->setHook( 'hiero', 'WikiHieroHook' );
-	return WikiHieroHook( $text, $attribs, $parser );
-}
-
-// Generic embedded entry point
-function WikiHiero($hiero, $mode=WH_MODE_DEFAULT, $scale=WH_SCALE_DEFAULT, $line=false) {
-	WikiHieroLoad();
-	return _WikiHiero( $hiero, $mode, $scale, $line );
-}
-
-// If anyone needs WikiHieroHTML() etc., loader functions should be put here.
-// Hopefully everyone's using the general-purpose entry point above.
 
