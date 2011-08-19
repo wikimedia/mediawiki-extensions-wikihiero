@@ -37,7 +37,7 @@ $wgExtensionCredits['parserhook'][] = array(
 );
 $wgExtensionMessagesFiles['Wikihiero'] =  dirname( __FILE__ ) . '/wikihiero.i18n.php';
 
-$wgAutoloadClasses['WikiHiero'] = dirname( __FILE__ ) . '/wh_main.php';
+$wgAutoloadClasses['WikiHiero'] = dirname( __FILE__ ) . '/wikihiero.body.php';
 
 $wgResourceModules['ext.wikihiero'] = array(
 	'styles' => 'ext.wikihiero.css',
