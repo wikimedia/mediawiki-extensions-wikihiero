@@ -10,6 +10,12 @@ $messages = array();
 
 $messages['en'] = array(
 	'wikihiero-desc' => 'Adds <code>&lt;hiero&gt;</code> tag to display hieroglyphs',
+	'hieroglyphs' => 'Try hieroglyph markup',
+	'wikihiero-special-page-text' => 'Use this page to try out WikiHiero markup.
+See [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax here] for markup description.',
+	'wikihiero-input' => 'Input text',
+	'wikihiero-result' => 'Result',
+	'wikihiero-load-error' => 'Load error!',
 );
 
 /** Message documentation (Message documentation)
@@ -17,7 +23,7 @@ $messages['en'] = array(
  * @author Raymond
  */
 $messages['qqq'] = array(
-	'wikihiero-desc' => 'Extension description displayed on [[Special:Version]]',
+	'wikihiero-desc' => '{{desc}}',
 );
 
 /** Afrikaans (Afrikaans)

@@ -35,15 +35,35 @@ $wgExtensionCredits['parserhook'][] = array(
 	'url'            => 'http://www.mediawiki.org/wiki/Extension:WikiHiero',
 	'descriptionmsg' => 'wikihiero-desc',
 );
-$wgExtensionMessagesFiles['Wikihiero'] =  dirname( __FILE__ ) . '/wikihiero.i18n.php';
 
-$wgAutoloadClasses['WikiHiero'] = dirname( __FILE__ ) . '/wikihiero.body.php';
+$dir = dirname( __FILE__ );
+
+$wgExtensionMessagesFiles['Wikihiero'] = "$dir/wikihiero.i18n.php";
+$wgExtensionAliasesFiles['Hieroglyphs'] = "$dir/wikihiero.alias.php";
+
+$wgAutoloadClasses['WikiHiero'] = "$dir/wikihiero.body.php";
+$wgAutoloadClasses['SpecialHieroglyphs'] = "$dir/SpecialHieroglyphs.php";
+
+$wgSpecialPages['Hieroglyphs'] = 'SpecialHieroglyphs';
+$wgSpecialPageGroups['Hieroglyphs'] = 'wiki';
 
 $wgResourceModules['ext.wikihiero'] = array(
 	'styles' => 'ext.wikihiero.css',
-	'localBasePath' => dirname( __FILE__ ) . '/modules',
+	'localBasePath' => "$dir/modules",
 	'remoteExtPath' => 'wikihiero/modules',
 );
+
+$wgResourceModules['ext.wikihiero.Special'] = array(
+	'scripts' => 'ext.wikihiero.Special.js',
+	'localBasePath' => dirname( __FILE__ ) . '/modules',
+	'remoteExtPath' => 'wikihiero/modules',
+	'messages' => array(
+		'wikihiero-input',
+		'wikihiero-result',
+		'wikihiero-load-error',
+	),
+);
+
 
 // Because <hiero> tag is used rarely, we don't need to load its body on every hook call,
 // so we keep our simple hook handlers here.

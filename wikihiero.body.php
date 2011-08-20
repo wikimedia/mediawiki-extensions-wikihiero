@@ -67,7 +67,6 @@ class WikiHiero {
 	private $scale = 100;
 
 	public function __construct( $scale = WH_SCALE_DEFAULT ) {
-		$this->moreTables = str_replace( "\r", '', $this->moreTables );
 	}
 
 	/**
@@ -466,6 +465,6 @@ class WikiHiero {
 	 * @return string: converted code
 	 */
 	public static function getCode( $file ) {
-			return substr( $file, strlen( WH_IMG_PRE ), -( 1 + strlen( self::IMG_EXT ) ) );
+		return substr( $file, strlen( WH_IMG_PRE ), -( 1 + strlen( self::IMG_EXT ) ) );
 	}
 }
