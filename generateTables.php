@@ -1,100 +1,81 @@
 <?php
 
-//////////////////////////////////////////////////////////////////////////
-//
-// WikiHiero - A PHP convert from text using "Manual for the encoding of
-// hieroglyphic texts for computer input" syntax to HTML entities (table and
-// images).
-//
-// Copyright (C) 2004 Guillaume Blanchard (Aoineko)
-//
-// This program is free software; you can redistribute it and/or
-// modify it under the terms of the GNU General Public License
-// as published by the Free Software Foundation; either version 2
-// of the License, or any later version.
-//
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-//
-// You should have received a copy of the GNU General Public License
-// along with this program; if not, write to the Free Software
-// Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
-//
-//////////////////////////////////////////////////////////////////////////
+/**
+ * WikiHiero - A PHP convert from text using "Manual for the encoding of
+ * hieroglyphic texts for computer input" syntax to HTML entities (table and
+ * images).
+ *
+ * Copyright (C) 2004 Guillaume Blanchard (Aoineko)
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License along
+ * with this program; if not, write to the Free Software Foundation, Inc.,
+ * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+ * http://www.gnu.org/copyleft/gpl.html
+ */
 
-echo "This script is insecure and shouldn't be used on a public wiki.\n";
-exit( 1 );
-
-
-include "wh_main.php";
-
-if ( array_key_exists( "lang", $_GET ) ) {
-	$lang = $_GET["lang"];
-} else {
-	$lang = "fr";
+$IP = getenv( 'MW_INSTALL_PATH' );
+if ( $IP === false ) {
+	$IP = dirname( __FILE__ ) . '/../..';
 }
-?>
-<html lang=<?php echo htmlspecialchars( $lang ); ?>>
-  <head>
-    <title>WikiHiero - Table generator</title>
-    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
-    <link rel="shortcut icon" href="/favicon.ico">
-  </head>
-  <body bgcolor="#DDDDDD">
+require_once( "$IP/maintenance/Maintenance.php" );
 
-    <big><?php echo "WikiHiero v" . WH_VER_MAJ . "." . WH_VER_MED . "." . WH_VER_MIN; ?></big>
+class GenerateWikiHieroTables extends Maintenance {
 
-    <br /><br />Parsing hieroglyph files and creating tables...<br /><br />
+	public function __construct() {
+		parent::__construct();
+		$this->mDescription = 'Generate tables with hieroglyph information';
+		// if ( !MWInit::classExists( 'WikiHiero' ) ) {
+			// $this->error( "Please install WikiHiero first!\n", true );
+		// }
+	}
+	
+	public function execute() {
+		$wh_prefabs = "\$wh_prefabs = array(\n";
+		$wh_files   = "\$wh_files   = array(\n";
 
-    <?php
+		$imgDir = dirname( __FILE__ ) . '/img/';
 
-    $wh_prefabs = "\$wh_prefabs = array(\n";
-    $wh_files   = "\$wh_files   = array(\n";
+		if ( is_dir( $imgDir ) ) {
+			$dh = opendir( $imgDir );
+			if ( $dh ) {
+				while ( ( $file = readdir( $dh ) ) !== false ) {
+					if ( stristr( $file, WikiHiero::IMG_EXT ) ) {
+						list( $width, $height, $type, $attr ) = getimagesize( $imgDir . $file );
+						$wh_files .= "  \"" . WikiHiero::getCode( $file ) . "\" => array( $width, $height ),\n";
+						if ( strchr( $file, '&' ) ) {
+							$wh_prefabs .= "  \"" . WikiHiero::getCode( $file ) . "\",\n";
+						}
+					}
+				}
+				closedir( $dh );
+			}
+		} else {
+			$this->error( "Images directory $imgDir not found!\n", true );
+		}
 
-    $img_dir = dirname( __FILE__ ) . '/img/';
+		$wh_prefabs .= ");";
+		$wh_files .= ");";
 
-    if ( is_dir( $img_dir ) )
-    {
-	    $dh = opendir( $img_dir );
-      if ( $dh )
-      {
-        while ( ( $file = readdir( $dh ) ) !== false )
-        {
-          if ( stristr( $file, WH_IMG_EXT ) )
-          {
-            list( $width, $height, $type, $attr ) = getimagesize( $img_dir . $file );
-            $wh_files .= "  \"" . WH_GetCode( $file ) . "\" => array( $width, $height ),\n";
-            if ( strchr( $file, '&' ) )
-              $wh_prefabs .= "  \"" . WH_GetCode( $file ) . "\",\n";
-          }
-        }
-        closedir( $dh );
-      }
-    }
+		$file = fopen( 'wh_list.php', 'w+' );
+		fwrite( $file, "<?php\n\n" );
+		fwrite( $file, '// File created by generateTables.php version ' . WikiHiero::VERSION . "\n" );
+		fwrite( $file, '// ' . date( 'Y/m/d \a\t H:i' ) . "\n\n" );
+		fwrite( $file, "global \$wh_prefabs, \$wh_files;\n\n" );
+		fwrite( $file, "$wh_prefabs\n\n" );
+		fwrite( $file, "$wh_files\n\n" );
+		fclose( $file );
+	}
+}
 
-    $wh_prefabs .= ");";
-    $wh_files .= ");";
-
-    echo "<pre>$wh_prefabs<br /><br />";
-    echo "$wh_files<br /><br /></pre>";
-
-    $file = fopen( "wh_list.php", "w+" );
-    fwrite( $file, "<?php\n\n" );
-    fwrite( $file, "// File created by wh_generate.php version " . WH_VER_MAJ . "." . WH_VER_MED . "." . WH_VER_MIN . "\n" );
-    fwrite( $file, "// " . date( "Y/m/d at H:i" ) . "\n\n" );
-    fwrite( $file, "global \$wh_prefabs, \$wh_files;\n\n" );
-    fwrite( $file, "$wh_prefabs\n\n" );
-    fwrite( $file, "$wh_files\n\n" );
-    fwrite( $file, "?>" );
-    fclose( $file );
-
-    // if(file_exists("wh_list(0).php"))
-
-    ?>
-
-    <small><?php echo WH_Credit(); ?></small>
-
-  </body>
-</html>
+$maintClass = "GenerateWikiHieroTables";
+require_once( RUN_MAINTENANCE_IF_MAIN );

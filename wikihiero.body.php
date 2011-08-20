@@ -57,18 +57,16 @@ define( "WH_HEIGHT",        44 );
 define( "WH_IMG_MARGIN",    1 );    // default value
 define( "WH_CARTOUCHE_WIDTH", 2 );  // default value
 
-define( "WH_VER_MAJ",       0 );
-define( "WH_VER_MED",       2 );
-define( "WH_VER_MIN",       14 );
-
 global $wgExtensionAssetsPath;
 define( "WH_IMG_DIR",       $wgExtensionAssetsPath . '/wikihiero/img/' );
 define( "WH_IMG_PRE",       "hiero_" );
-define( "WH_IMG_EXT",       "png" );
 
 define( "WH_DEBUG_MODE",    false );
 
 class WikiHiero {
+	const VERSION = '0.3.0alpha';
+	const IMG_EXT = 'png';
+
 	private $scale = 100;
 
 	public function __construct( $scale = WH_SCALE_DEFAULT ) {
@@ -139,25 +137,25 @@ class WikiHiero {
 		{
 		  $height = intval( WH_HEIGHT * $this->scale / 100 );
 		  $code = $wh_phonemes[$glyph];
-		  return "<img src='" . htmlspecialchars( WH_IMG_DIR . WH_IMG_PRE . "{$code}." . WH_IMG_EXT ) . "' height='{$height}' title='" . htmlspecialchars( $glyph ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
+		  return "<img src='" . htmlspecialchars( WH_IMG_DIR . WH_IMG_PRE . "{$code}." . self::IMG_EXT ) . "' height='{$height}' title='" . htmlspecialchars( $glyph ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
 		}
 		elseif ( $glyph == '>' ) // Render close cartouche
 		{
 		  $height = intval( WH_HEIGHT * $this->scale / 100 );
 		  $code = $wh_phonemes[$glyph];
-		  return "<img src='" . htmlspecialchars( WH_IMG_DIR . WH_IMG_PRE . "{$code}." . WH_IMG_EXT ) . "' height='{$height}' title='" . htmlspecialchars( $glyph ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
+		  return "<img src='" . htmlspecialchars( WH_IMG_DIR . WH_IMG_PRE . "{$code}." . self::IMG_EXT ) . "' height='{$height}' title='" . htmlspecialchars( $glyph ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
 		}
 
 		if ( array_key_exists( $glyph, $wh_phonemes ) )
 		{
 		  $code = $wh_phonemes[$glyph];
 		  if ( array_key_exists( $code, $wh_files ) )
-			return "<img style='margin:" . WH_IMG_MARGIN . "px;' $option src='" . htmlspecialchars( WH_IMG_DIR . WH_IMG_PRE . "{$code}." . WH_IMG_EXT ) . "' title='" . htmlspecialchars( "{$code} [{$glyph}]" ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
+			return "<img style='margin:" . WH_IMG_MARGIN . "px;' $option src='" . htmlspecialchars( WH_IMG_DIR . WH_IMG_PRE . "{$code}." . self::IMG_EXT ) . "' title='" . htmlspecialchars( "{$code} [{$glyph}]" ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
 		  else
 			return "<font title='" . htmlspecialchars( $code ) . "'>" . htmlspecialchars( $glyph ) . "</font>";
 		}
 		elseif ( array_key_exists( $glyph, $wh_files ) )
-		  return "<img style='margin:" . WH_IMG_MARGIN . "px;' $option src='" . htmlspecialchars( WH_IMG_DIR . WH_IMG_PRE . "{$glyph}." . WH_IMG_EXT ) . "' title='" . htmlspecialchars( $glyph ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
+		  return "<img style='margin:" . WH_IMG_MARGIN . "px;' $option src='" . htmlspecialchars( WH_IMG_DIR . WH_IMG_PRE . "{$glyph}." . self::IMG_EXT ) . "' title='" . htmlspecialchars( $glyph ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
 		else
 		  return htmlspecialchars( $glyph );
 	}
@@ -463,6 +461,15 @@ class WikiHiero {
 		return "<table class='mw-hiero-table mw-hiero-outer' dir='ltr'><tr><td>\n$html\n</td></tr></table>";
 	}
 
+	/**
+	 * Get glyph code from file name
+	 *
+	 * @param $file string: file name
+	 * @return string: converted code
+	 */
+	public static function getCode( $file ) {
+			return substr( $file, strlen( WH_IMG_PRE ), -( 1 + strlen( self::IMG_EXT ) ) );
+	}
 }
 
 // ========================================================================
@@ -971,35 +978,3 @@ $wh_text_conv = array(
   "<"       => "(",    // cartouche
   ">"       => ")|",
 );
-
-// ========================================================================
-// F U N C T I O N S
-
-
-// ========================================================================
-//
-// W i k i H i e r o
-//
-
-// ------------------------------------------------------------------------
-// WH_GetCode - Get glyph code from file name
-// ------------------------------------------------------------------------
-// file   << file name
-// return >> string with converted code
-// ------------------------------------------------------------------------
-function WH_GetCode( $file ) {
-		return substr( $file, strlen( WH_IMG_PRE ), -( 1 + strlen( WH_IMG_EXT ) ) );
-}
-
-// ------------------------------------------------------------------------
-// WH_Credit - Get glyph code from file name
-// ------------------------------------------------------------------------
-// return >> credit string
-// ------------------------------------------------------------------------
-function WH_Credit() {
-	$html = "";
-	$html .= "<b>WikiHiero v" . WH_VER_MAJ . "." . WH_VER_MED . "." . WH_VER_MIN . "</b>\n";
-	$html .= "by Guillaume Blanchard (Aoineko) under GPL (2004).<br />\n";
-	$html .= "Hieroglyph credit: S. Rosmorduc, G. Watson, J. Hirst (under GFDL).\n";
-	return $html;
-}
