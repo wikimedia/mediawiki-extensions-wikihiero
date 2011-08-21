@@ -17,9 +17,9 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
- class SpecialHieroglyphs extends SpecialPage {
+class SpecialHieroglyphs extends SpecialPage {
 	public function __construct() {
-		parent::__construct( 'Hieroglyphs', '', true );
+		parent::__construct( 'Hieroglyphs' );
 	}
 
 	public function execute( $par ) {
