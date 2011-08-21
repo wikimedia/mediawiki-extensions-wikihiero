@@ -23,7 +23,7 @@ $submit.click( function( e ) {
 		'text': '<hiero>' + text + '</hiero>',
 		'disablepp': ''
 	};
-	$.getJSON( mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/api' + mw.config.get( 'wgScriptExtension' ),
+	$.getJSON( mw.config.get( 'wgScriptPath' ) + '/api' + mw.config.get( 'wgScriptExtension' ),
 		data,
 		function( data ) {
 			var html = '<table class="wikitable">'

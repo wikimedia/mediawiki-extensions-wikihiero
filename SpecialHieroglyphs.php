@@ -47,7 +47,7 @@ class SpecialHieroglyphs extends SpecialPage {
 			Html::openElement( 'form',
 				array(
 					'method' => 'get',
-					'action' => SpecialPage::getTitleFor( 'Hieroglyphs' )->getLinkUrl(),
+					'action' => $this->getTitle()->getLinkUrl(),
 				)
 			)
 			. Html::element( 'textarea', array( 'id' => 'hiero-text', 'name' => 'text' ), $text )

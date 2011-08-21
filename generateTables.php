@@ -70,8 +70,8 @@ class GenerateWikiHieroTables extends Maintenance {
 
 		$file = fopen( 'wh_list.php', 'w+' );
 		fwrite( $file, "<?php\n\n" );
-		fwrite( $file, '// File created by generateTables.php version ' . WikiHiero::VERSION . "\n" );
-		fwrite( $file, '// ' . date( 'Y/m/d \a\t H:i' ) . "\n\n" );
+		fwrite( $file, '// File created by generateTables.php version ' . WIKIHIERO_VERSION . "\n" );
+		fwrite( $file, '// ' . date( 'Y-m-d \a\t H:i' ) . "\n\n" );
 		fwrite( $file, "$wh_prefabs\n\n$wh_files\n\n{$this->moreTables}\n" );
 		fclose( $file );
 	}

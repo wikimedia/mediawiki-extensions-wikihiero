@@ -1,7 +1,7 @@
 <?php
 
-// File created by generateTables.php version 0.3.0alpha
-// 2011/08/20 at 09:31
+// File created by generateTables.php version 1.0alpha
+// 2011-08-21 at 12:00
 
 $wh_prefabs = array(
   "a&A1",

@@ -1,28 +1,27 @@
 <?php
 
-//////////////////////////////////////////////////////////////////////////
-//
-// WikiHiero - A PHP convert from text using "Manual for the encoding of
-// hieroglyphic texts for computer input" syntax to HTML entities (table and
-// images).
-//
-// Copyright (C) 2004 Guillaume Blanchard (Aoineko)
-//
-// This program is free software; you can redistribute it and/or
-// modify it under the terms of the GNU General Public License
-// as published by the Free Software Foundation; either version 2
-// of the License, or any later version.
-//
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-//
-// You should have received a copy of the GNU General Public License
-// along with this program; if not, write to the Free Software
-// Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
-//
-//////////////////////////////////////////////////////////////////////////
+/**
+ * WikiHiero - adds Ancient Egyptian hieroglyphs support to MediaWiki
+ *
+ * Copyright (C) 2004 Guillaume Blanchard (Aoineko)
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License along
+ * with this program; if not, write to the Free Software Foundation, Inc.,
+ * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+ * http://www.gnu.org/copyleft/gpl.html
+ */
+
+define( 'WIKIHIERO_VERSION', '1.0alpha' );
 
 $wgHooks['ParserFirstCallInit'][] = 'wfRegisterWikiHiero';
 $wgHooks['BeforePageDisplay'][] = 'wfHieroBeforePageDisplay';
@@ -31,6 +30,7 @@ $wgHooks['BeforePageDisplay'][] = 'wfHieroBeforePageDisplay';
 $wgExtensionCredits['parserhook'][] = array(
 	'path'           => __FILE__,
 	'name'           => 'WikiHiero',
+	'version'        => WIKIHIERO_VERSION,
 	'author'         => array( 'Guillaume Blanchard', 'Max Semenik' ),
 	'url'            => 'http://www.mediawiki.org/wiki/Extension:WikiHiero',
 	'descriptionmsg' => 'wikihiero-desc',

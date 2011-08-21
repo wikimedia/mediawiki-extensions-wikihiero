@@ -61,7 +61,6 @@ define( "WH_IMG_PRE",       "hiero_" );
 define( "WH_DEBUG_MODE",    false );
 
 class WikiHiero {
-	const VERSION = '0.3.0alpha';
 	const IMG_EXT = 'png';
 
 	private $scale = 100;
