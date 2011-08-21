@@ -1,7 +1,14 @@
 <?php
+/**
+ * Aliases for special pages
+ *
+ * @file
+ * @ingroup Extensions
+ */
 
-$aliases = array();
+$specialPageAliases = array();
 
-$aliases['en'] = array(
+/** English (English) */
+$specialPageAliases['en'] = array(
 	'Hieroglyphs' => array( 'Hieroglyphs' ),
 );
