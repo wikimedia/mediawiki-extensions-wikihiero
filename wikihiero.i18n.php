@@ -149,10 +149,17 @@ $messages['da'] = array(
 
 /** German (Deutsch)
  * @author Kghbln
+ * @author Metalhead64
  * @author Raimond Spekking
  */
 $messages['de'] = array(
 	'wikihiero-desc' => 'Ergänzt das <code>&lt;hiero&gt;</code>-Tag zur Formatierung von [[Special:Hieroglyphs|Hieroglyphen]]',
+	'hieroglyphs' => 'Hieroglyphen-Markup testen',
+	'wikihiero-special-page-text' => 'Verwende diese Seite, um das WikiHiero-Markup zu testen.
+Siehe [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax hier] für eine Markup-Beschreibung.',
+	'wikihiero-input' => 'Eingabetext',
+	'wikihiero-result' => 'Ergebnis',
+	'wikihiero-load-error' => 'Ladefehler!',
 );
 
 /** Zazaki (Zazaki)
@@ -259,7 +266,13 @@ $messages['gsw'] = array(
  * @author Rotem Liss
  */
 $messages['he'] = array(
-	'wikihiero-desc' => 'הוספת תג <code>&lt;hiero&gt;</code> להצגת הירוגליפים',
+	'wikihiero-desc' => 'הוספת תג <code>&lt;hiero&gt;</code> להצגת [[Special:Hieroglyphs|היירוגליפים]]',
+	'hieroglyphs' => 'לנסות סימון היירוגליפים',
+	'wikihiero-special-page-text' => 'בדף הזה אפשר לנסות את אפשרויות הסימון של ויקיהיירו.
+ר׳ [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax כאן] לתיאור הסימון.',
+	'wikihiero-input' => 'טקסט קלט',
+	'wikihiero-result' => 'תוצאה',
+	'wikihiero-load-error' => 'שגיאה בטעינה!',
 );
 
 /** Hindi (हिन्दी)
@@ -403,6 +416,12 @@ $messages['lt'] = array(
  */
 $messages['mk'] = array(
 	'wikihiero-desc' => 'Додава ознака <code>&lt;hiero&gt;</code> за прикажување на [[Special:Hieroglyphs|хиероглифи]]',
+	'hieroglyphs' => 'Пробајте ја синтаксата за хиероглифи',
+	'wikihiero-special-page-text' => 'На оваа страница испробајте ја синтаксата на ВикиХиеро за претставување на египетски хиероглифи како слики во PNG формат (бидејќи засега Уникод пружа само делумна поддршка на ова писмо).
+Прочитајте за [http://mk.wikipedia.org/wiki/Помош:Египетски_хиероглифи синтаксата за хиероглифи].',
+	'wikihiero-input' => 'Влезен текст',
+	'wikihiero-result' => 'Извод',
+	'wikihiero-load-error' => 'Грешка при вчитувањето!',
 );
 
 /** Malayalam (മലയാളം)
@@ -410,6 +429,8 @@ $messages['mk'] = array(
  */
 $messages['ml'] = array(
 	'wikihiero-desc' => 'ചിത്രാക്ഷരങ്ങൾ പ്രദർശിപ്പിക്കാനായി <code>&lt;hiero&gt;</code> എന്ന റ്റാഗ് കൂട്ടിച്ചേർക്കുന്നു',
+	'wikihiero-input' => 'ഇൻപുട്ട് ടെക്സ്റ്റ്',
+	'wikihiero-result' => 'ഫലം',
 );
 
 /** Marathi (मराठी)
@@ -445,6 +466,12 @@ $messages['nds-nl'] = array(
  */
 $messages['nl'] = array(
 	'wikihiero-desc' => 'Voegt de tag <code>&lt;hiero&gt;</code> toe voor de weergave van [[Special:Hieroglyphs|hiërogliefen]]',
+	'hieroglyphs' => 'Hiërogliefopmaak uitproberen',
+	'wikihiero-special-page-text' => 'Gebruik deze pagina om de opmaak met WikiHiero uit te proberen.
+Zie ook de [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax gebruiksaanwijzing].',
+	'wikihiero-input' => 'Invoertekst',
+	'wikihiero-result' => 'Resultaat',
+	'wikihiero-load-error' => 'Fout bij het laden!',
 );
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
@@ -558,6 +585,12 @@ $messages['sk'] = array(
  */
 $messages['sl'] = array(
 	'wikihiero-desc' => 'Doda etiketo <code>&lt;hiero&gt;</code> za prikaz [[Special:Hieroglyphs|hieroglifov]]',
+	'hieroglyphs' => 'Preizkusite označevanje hieroglifov',
+	'wikihiero-special-page-text' => 'Uporabite to stran za preizkus označevanja WikiHiero.
+Opis označevanje si oglejte [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax tukaj].',
+	'wikihiero-input' => 'Vhodno besedilo',
+	'wikihiero-result' => 'Rezultat',
+	'wikihiero-load-error' => 'Napaka pri nalaganju!',
 );
 
 /** Lower Silesian (Schläsch)
