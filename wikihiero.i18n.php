@@ -441,10 +441,17 @@ $messages['mr'] = array(
 );
 
 /** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
  * @author Aviator
  */
 $messages['ms'] = array(
 	'wikihiero-desc' => 'Menambah tag <code>&lt;hiero&gt;</code> untuk menghasilkan [[Special:Hieroglyphs|hieroglif]]',
+	'hieroglyphs' => 'Cuba penanda tulisan hieroglif',
+	'wikihiero-special-page-text' => 'Gunakan laman ini untuk mencuba penanda WikiHiero.
+Rujuk keterangan penanda [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax di sini].',
+	'wikihiero-input' => 'Teks input',
+	'wikihiero-result' => 'Hasil',
+	'wikihiero-load-error' => 'Ralat ketika memuat!',
 );
 
 /** Low German (Plattdüütsch)
