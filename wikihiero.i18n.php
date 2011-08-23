@@ -727,10 +727,17 @@ $messages['vep'] = array(
 );
 
 /** Vietnamese (Tiếng Việt)
+ * @author Minh Nguyen
  * @author Vinhtantran
  */
 $messages['vi'] = array(
 	'wikihiero-desc' => 'Thêm thẻ <code>&lt;hiero&gt;</code> để hiển thị chữ tượng hình',
+	'hieroglyphs' => 'Thử mã chữ tượng hình',
+	'wikihiero-special-page-text' => 'Thử mã chữ tượng hình WikiHiero tại trang này.
+Xem [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax hướng dẫn về cú pháp WikiHiero].',
+	'wikihiero-input' => 'Văn bản nhập',
+	'wikihiero-result' => 'Kết quả',
+	'wikihiero-load-error' => 'Lỗi tải!',
 );
 
 /** Cantonese (粵語)
