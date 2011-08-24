@@ -644,9 +644,11 @@ $messages['su'] = array(
 
 /** Swedish (Svenska)
  * @author Lejonel
+ * @author Lokal Profil
  */
 $messages['sv'] = array(
 	'wikihiero-desc' => 'Lägger till taggen <code>&lt;hiero&gt;</code> för att visa [[Special:Hieroglyphs|hieroglyfer]]',
+	'wikihiero-result' => 'Resultat',
 );
 
 /** Silesian (Ślůnski)
