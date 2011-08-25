@@ -238,6 +238,7 @@ $messages['fr'] = array(
  */
 $messages['frp'] = array(
 	'wikihiero-desc' => 'Apond la balisa <code>&lt;hiero&gt;</code> por fâre vêre los [[Special:Hieroglyphs|hièroglifos]].',
+	'wikihiero-result' => 'Rèsultat',
 );
 
 /** Western Frisian (Frysk)
@@ -252,6 +253,12 @@ $messages['fy'] = array(
  */
 $messages['gl'] = array(
 	'wikihiero-desc' => 'Engade a etiqueta <code>&lt;hiero&gt;</code> para amosar [[Special:Hieroglyphs|xeróglifos]]',
+	'hieroglyphs' => 'Probe o formato dos xeróglifos',
+	'wikihiero-special-page-text' => 'Empregue esta páxina para probar o formato dos xeróglifos.
+Olle [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax aquí] a descrición do formato.',
+	'wikihiero-input' => 'Texto de entrada',
+	'wikihiero-result' => 'Resultado',
+	'wikihiero-load-error' => 'Erro ao cargar!',
 );
 
 /** Swiss German (Alemannisch)
@@ -507,6 +514,12 @@ $messages['oc'] = array(
  */
 $messages['pl'] = array(
 	'wikihiero-desc' => 'Dodaje znacznik <code>&lt;hiero&gt;</code> umożliwiający wyświetlanie [[Special:Hieroglyphs|hieroglifów]]',
+	'hieroglyphs' => 'Spróbuj znaczników hieroglifów',
+	'wikihiero-special-page-text' => 'Użyj tej strony, by wypróbować znaczniki WikiHiero.
+Opisy znaczników znajdziesz [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax tutaj].',
+	'wikihiero-input' => 'Tekst wejściowy',
+	'wikihiero-result' => 'Wynik',
+	'wikihiero-load-error' => 'Błąd ładowania!',
 );
 
 /** Piedmontese (Piemontèis)
