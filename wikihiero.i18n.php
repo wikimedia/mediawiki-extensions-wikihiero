@@ -63,9 +63,16 @@ $messages['arz'] = array(
 
 /** Asturian (Asturianu)
  * @author Esbardu
+ * @author Xuacu
  */
 $messages['ast'] = array(
-	'wikihiero-desc' => "Añade la etiqueta <code>&lt;hiero&gt;</code> p'amosar [[[[Special:Hieroglyphs|xeroglíficos]]",
+	'wikihiero-desc' => "Amiesta la etiqueta <code>&lt;hiero&gt;</code> p'amosar [[Special:Hieroglyphs|xeroglíficos]]",
+	'hieroglyphs' => "Prueba'l formatu xeroglíficu",
+	'wikihiero-special-page-text' => 'Usa esta páxina pa probar el formatu WikiHiero.
+Llee [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax equí] la descripción del formatu.',
+	'wikihiero-input' => "Testu d'entrada",
+	'wikihiero-result' => 'Resultáu',
+	'wikihiero-load-error' => '¡Fallu al cargar!',
 );
 
 /** Azerbaijani (Azərbaycanca)
