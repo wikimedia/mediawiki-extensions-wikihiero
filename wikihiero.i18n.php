@@ -149,9 +149,16 @@ $messages['cs'] = array(
 /** Danish (Dansk)
  * @author Byrial
  * @author Jan Friberg
+ * @author Peter Alberti
  */
 $messages['da'] = array(
 	'wikihiero-desc' => 'Tilføjer tagget <code>&lt;hiero&gt;</code> for at vise [[Special:Hieroglyphs|hieroglyffer]]',
+	'hieroglyphs' => 'Afprøv hieroglyfkode',
+	'wikihiero-special-page-text' => 'Brug denne side til at afprøve WikiHiero-kode.
+Se [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax her] for en beskrivelse af koden.',
+	'wikihiero-input' => 'Inputtekst',
+	'wikihiero-result' => 'Resultat',
+	'wikihiero-load-error' => 'Indlæsningsfejl!',
 );
 
 /** German (Deutsch)
@@ -443,8 +450,12 @@ $messages['mk'] = array(
  */
 $messages['ml'] = array(
 	'wikihiero-desc' => 'ചിത്രാക്ഷരങ്ങൾ പ്രദർശിപ്പിക്കാനായി <code>&lt;hiero&gt;</code> എന്ന റ്റാഗ് കൂട്ടിച്ചേർക്കുന്നു',
+	'hieroglyphs' => 'ഹൈറോഗ്ലിഫ് അടയാളപ്പെടുത്തലുകൾ പരീക്ഷിക്കുക',
+	'wikihiero-special-page-text' => 'വിക്കിഹൈറോ അടയാളപ്പെടുത്തലുകൾ പരീക്ഷിക്കാൻ ഈ താൾ ഉപയോഗിക്കുക.
+അടയാളപ്പെടുത്തലുകളുടെ വിശദവിവരങ്ങൾ കാണാൻ [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax ഇവിടം] സന്ദർശിക്കുക.',
 	'wikihiero-input' => 'ഇൻപുട്ട് ടെക്സ്റ്റ്',
 	'wikihiero-result' => 'ഫലം',
+	'wikihiero-load-error' => 'ശേഖരിക്കുന്നതിൽ പിഴവുണ്ടായി!',
 );
 
 /** Marathi (मराठी)
@@ -573,10 +584,17 @@ $messages['roa-tara'] = array(
 );
 
 /** Russian (Русский)
+ * @author Alexandr Efremov
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
 	'wikihiero-desc' => 'Добавляет тег <code>&lt;hiero&gt;</code> для показа [[Special:Hieroglyphs|иероглифов]]',
+	'hieroglyphs' => 'Попробуйте иероглифическую разметку',
+	'wikihiero-special-page-text' => 'Используйте эту страницу для опробования разметки WikiHiero.
+См. описание разметки [здесь http://ru.wikipedia.org/wiki/Википедия:Древнеегипетские_иероглифы].',
+	'wikihiero-input' => 'Входной текст:',
+	'wikihiero-result' => 'Результат',
+	'wikihiero-load-error' => 'Ошибка загрузки!',
 );
 
 /** Sakha (Саха тыла)
@@ -771,9 +789,10 @@ $messages['yue'] = array(
 
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Shinjiman
+ * @author Xiaomingyan
  */
 $messages['zh-hans'] = array(
-	'wikihiero-desc' => '加入 <code>&lt;hiero&gt;</code> 标签去显示象形文字',
+	'wikihiero-desc' => '添加“<code>&lt;hiero&gt;</code>”标签以显示[[Special:Hieroglyphs|象形文字]]',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
