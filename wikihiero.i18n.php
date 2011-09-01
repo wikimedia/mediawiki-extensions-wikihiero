@@ -432,11 +432,14 @@ $messages['li'] = array(
 );
 
 /** Lithuanian (Lietuvių)
+ * @author Eitvys200
  * @author Garas
  * @author Hugo.arg
  */
 $messages['lt'] = array(
 	'wikihiero-desc' => 'Prideda <code>&lt;hiero&gt;</code> gaires rodyti [[Special:Hieroglyphs|hieroglifus]]',
+	'wikihiero-result' => 'Rezultatas',
+	'wikihiero-load-error' => 'Įkelimo klaida!',
 );
 
 /** Macedonian (Македонски)
