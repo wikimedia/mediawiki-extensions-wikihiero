@@ -31,6 +31,7 @@ $messages['qqq'] = array(
  */
 $messages['af'] = array(
 	'wikihiero-desc' => "Maak 'n <code>&lt;hiero&gt;</code> etiket beskikbaar vir die vertoon van [[Special:Hieroglyphs|hierogliewe]]",
+	'wikihiero-result' => 'Resultaat',
 );
 
 /** Gheg Albanian (Gegë)
@@ -49,9 +50,16 @@ $messages['an'] = array(
 
 /** Arabic (العربية)
  * @author Meno25
+ * @author زكريا
  */
 $messages['ar'] = array(
 	'wikihiero-desc' => 'يضيف الوسم <code>&lt;hiero&gt;</code> لعرض الهيروغليفية',
+	'hieroglyphs' => 'جرب ترميز الهيرغليفية',
+	'wikihiero-special-page-text' => 'استخدم هذه الصفحة لتجربة ترميز ويكي هييرو.
+انظر [http://ar.wikipedia.org/wiki/مساعدة:نحو_ويكي_هييرو هنا] للاستعلام.',
+	'wikihiero-input' => 'إدخال نص',
+	'wikihiero-result' => 'نتيجة',
+	'wikihiero-load-error' => 'خطأ تحميل!',
 );
 
 /** Egyptian Spoken Arabic (مصرى)
@@ -227,9 +235,13 @@ $messages['eu'] = array(
 
 /** Persian (فارسی)
  * @author Huji
+ * @author Mjbmr
  */
 $messages['fa'] = array(
 	'wikihiero-desc' => 'برچسب <code>&lt;hiero&gt;</code> را برای نمایش هیروگلیف می‌افزاید',
+	'wikihiero-input' => 'متن ورودی',
+	'wikihiero-result' => 'نتیجه',
+	'wikihiero-load-error' => 'خطا در بارگیری!',
 );
 
 /** Finnish (Suomi)
@@ -259,7 +271,10 @@ Voyez [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax ici] la description du
  */
 $messages['frp'] = array(
 	'wikihiero-desc' => 'Apond la balisa <code>&lt;hiero&gt;</code> por fâre vêre los [[Special:Hieroglyphs|hièroglifos]].',
+	'hieroglyphs' => 'Èprovar un balisâjo per hièroglifo',
+	'wikihiero-input' => 'Tèxto buchiê',
 	'wikihiero-result' => 'Rèsultat',
+	'wikihiero-load-error' => 'Èrror de chargement !',
 );
 
 /** Western Frisian (Frysk)
@@ -580,10 +595,14 @@ $messages['qu'] = array(
 );
 
 /** Romanian (Română)
+ * @author Firilacroco
  * @author KlaudiuMihaila
  */
 $messages['ro'] = array(
 	'wikihiero-desc' => 'Adaugă tagul <code>&lt;hiero&gt;</code> pentru a afișa [[Special:Hieroglyphs|hieroglife]]',
+	'wikihiero-input' => 'Text introdus',
+	'wikihiero-result' => 'Rezultat',
+	'wikihiero-load-error' => 'Eroare de încărcare!',
 );
 
 /** Tarandíne (Tarandíne)
@@ -711,6 +730,7 @@ $messages['szl'] = array(
  */
 $messages['te'] = array(
 	'wikihiero-desc' => 'హీయెరోగ్లిఫ్&zwnj;ని చూపించడానికై <code>&lt;hiero&gt;</code> అనే టాగుని చేరుస్తుంది',
+	'wikihiero-result' => 'ఫలితం',
 );
 
 /** Tajik (Cyrillic) (Тоҷикӣ (Cyrillic))
