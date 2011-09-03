@@ -34,14 +34,15 @@ class GenerateWikiHieroTables extends Maintenance {
 	public function __construct() {
 		parent::__construct();
 		$this->mDescription = 'Generate tables with hieroglyph information';
-		// if ( !MWInit::classExists( 'WikiHiero' ) ) {
-			// $this->error( "Please install WikiHiero first!\n", true );
-		// }
 
 		$this->moreTables = str_replace( "\r", '', $this->moreTables );
 	}
 	
 	public function execute() {
+		if ( !defined( 'WIKIHIERO_VERSION' ) ) {
+			$this->error( "Please install WikiHiero first!\n", true );
+		}
+
 		$wh_prefabs = "\$wh_prefabs = array(\n";
 		$wh_files   = "\$wh_files   = array(\n";
 
