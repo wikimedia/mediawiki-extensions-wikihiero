@@ -27,9 +27,6 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	die( 'Not an entry point' );
 }
 
-global $wh_phonemes, $wh_prefabs, $wh_files, $wh_phonemes, $wh_text_conv;
-include( dirname( __FILE__ ) . '/wh_list.php' );
-
 // D E F I N E S
 define( "WH_TABLE_S",      '<table class="mw-hiero-table">' );
 define( "WH_TABLE_E",      '</table>' );
@@ -65,7 +62,24 @@ class WikiHiero {
 
 	private $scale = 100;
 
+	private static $phonemes, $prefabs, $files, $textConv;
+
 	public function __construct( $scale = WH_SCALE_DEFAULT ) {
+		self::loadData();
+	}
+
+	/**
+	 * Loads 
+	 */
+	private static function loadData() {
+		if ( self::$phonemes ) {
+			return;
+		}
+		require_once( dirname( __FILE__ ) . '/wh_list.php' );
+		self::$phonemes = $wh_phonemes;
+		self::$prefabs = $wh_prefabs;
+		self::$files = $wh_files;
+		self::$textConv = $wh_text_conv;
 	}
 
 	/**
@@ -117,9 +131,6 @@ class WikiHiero {
 	 * @return string: a string to add to the stream
 	 */
 	private function renderGlyph( $glyph, $option = '' ) {
-		global $wh_phonemes;
-		global $wh_files;
-
 		if ( $glyph == ".." ) { // Render void block
 		  $width = WH_HEIGHT;
 		  return "<table class=\"mw-hiero-table\" style=\"width: {$width}px;\"><tr><td>&#160;</td></tr></table>";
@@ -132,25 +143,25 @@ class WikiHiero {
 		elseif ( $glyph == '<' ) // Render open cartouche
 		{
 		  $height = intval( WH_HEIGHT * $this->scale / 100 );
-		  $code = $wh_phonemes[$glyph];
+		  $code = self::$phonemes[$glyph];
 		  return "<img src='" . htmlspecialchars( WH_IMG_DIR . WH_IMG_PRE . "{$code}." . self::IMG_EXT ) . "' height='{$height}' title='" . htmlspecialchars( $glyph ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
 		}
 		elseif ( $glyph == '>' ) // Render close cartouche
 		{
 		  $height = intval( WH_HEIGHT * $this->scale / 100 );
-		  $code = $wh_phonemes[$glyph];
+		  $code = self::$phonemes[$glyph];
 		  return "<img src='" . htmlspecialchars( WH_IMG_DIR . WH_IMG_PRE . "{$code}." . self::IMG_EXT ) . "' height='{$height}' title='" . htmlspecialchars( $glyph ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
 		}
 
-		if ( array_key_exists( $glyph, $wh_phonemes ) )
+		if ( array_key_exists( $glyph, self::$phonemes ) )
 		{
-		  $code = $wh_phonemes[$glyph];
-		  if ( array_key_exists( $code, $wh_files ) )
+		  $code = self::$phonemes[$glyph];
+		  if ( array_key_exists( $code, self::$files ) )
 			return "<img style='margin:" . WH_IMG_MARGIN . "px;' $option src='" . htmlspecialchars( WH_IMG_DIR . WH_IMG_PRE . "{$code}." . self::IMG_EXT ) . "' title='" . htmlspecialchars( "{$code} [{$glyph}]" ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
 		  else
 			return "<font title='" . htmlspecialchars( $code ) . "'>" . htmlspecialchars( $glyph ) . "</font>";
 		}
-		elseif ( array_key_exists( $glyph, $wh_files ) )
+		elseif ( array_key_exists( $glyph, self::$files ) )
 		  return "<img style='margin:" . WH_IMG_MARGIN . "px;' $option src='" . htmlspecialchars( WH_IMG_DIR . WH_IMG_PRE . "{$glyph}." . self::IMG_EXT ) . "' title='" . htmlspecialchars( $glyph ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
 		else
 		  return htmlspecialchars( $glyph );
@@ -165,11 +176,8 @@ class WikiHiero {
 	 * @return size
 	 */
 	private function resizeGlyph( $item, $is_cartouche = false, $total = 0 ) {
-		global $wh_phonemes;
-		global $wh_files;
-
-		if ( array_key_exists( $item, $wh_phonemes ) ) {
-			$glyph = $wh_phonemes[$item];
+		if ( array_key_exists( $item, self::$phonemes ) ) {
+			$glyph = self::$phonemes[$item];
 		} else {
 		  $glyph = $item;
 		}
@@ -179,8 +187,8 @@ class WikiHiero {
 			$margin += 2 * intval( WH_CARTOUCHE_WIDTH * $this->scale / 100 );
 		}
 
-		if ( array_key_exists( $glyph, $wh_files ) ) {
-			$height = $margin + $wh_files[$glyph][1];
+		if ( array_key_exists( $glyph, self::$files ) ) {
+			$height = $margin + self::$files[$glyph][1];
 			if ( $total ) {
 				if ( $total > WH_HEIGHT ) {
 					return ( intval( $height * WH_HEIGHT / $total ) - $margin ) * $this->scale / 100;
@@ -207,8 +215,6 @@ class WikiHiero {
 	 * @return string: converted code
 	 */
 	public function renderText( $hiero, $line = false ) {
-		global $wh_text_conv;
-
 		$html = "";
 
 		if ( $line )
@@ -216,9 +222,9 @@ class WikiHiero {
 
 		for ( $char = 0; $char < strlen( $hiero ); $char++ )
 		{
-		  if ( array_key_exists( $hiero[$char], $wh_text_conv ) )
+		  if ( array_key_exists( $hiero[$char], self::$textConv ) )
 		  {
-			$html .= $wh_text_conv[$hiero[$char]];
+			$html .= self::$textConv[$hiero[$char]];
 			if ( $hiero[$char] == '!' )
 			  if ( $line )
 				$html .= "<hr />\n";
@@ -239,10 +245,6 @@ class WikiHiero {
 	 * @return string: converted code
 	*/
 	public function renderHtml( $hiero, $scale = WH_SCALE_DEFAULT, $line = false ) {
-		global $wh_prefabs;
-		global $wh_files;
-		global $wh_phonemes;
-
 		if ( $scale != WH_SCALE_DEFAULT )
 		  $this->setScale( $scale );
 
@@ -380,7 +382,7 @@ class WikiHiero {
 				}
 
 			// test is block is into tje prefabs list
-			if ( in_array( $temp, $wh_prefabs ) ) {
+			if ( in_array( $temp, self::$prefabs ) ) {
 				$option = "height='" . $this->resizeGlyph( $temp, $is_cartouche ) . "'";
 
 				$contentHtml .= WH_TD_S . self::renderGlyph( $temp, $option ) . WH_TD_E;
@@ -405,13 +407,13 @@ class WikiHiero {
 							$line_max = $height;
 						}
 					} else {
-						if ( array_key_exists( $t, $wh_phonemes ) ) {
-							$glyph = $wh_phonemes[$t];
+						if ( array_key_exists( $t, self::$phonemes ) ) {
+							$glyph = self::$phonemes[$t];
 						} else {
 							$glyph = $t;
 						}
-						if ( array_key_exists( $glyph, $wh_files ) ) {
-							$height = 2 + $wh_files[$glyph][1];
+						if ( array_key_exists( $glyph, self::$files ) ) {
+							$height = 2 + self::$files[$glyph][1];
 						}
 					}
 				} // end foreach
@@ -464,6 +466,7 @@ class WikiHiero {
 	 * @return string: converted code
 	 */
 	public static function getCode( $file ) {
-		return substr( $file, strlen( WH_IMG_PRE ), -( 1 + strlen( self::IMG_EXT ) ) );
+		$s = substr( $file, strlen( WH_IMG_PRE ), -( 1 + strlen( self::IMG_EXT ) ) );
+		return str_replace( '&', ':', $s );
 	}
 }
