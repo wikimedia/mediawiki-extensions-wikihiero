@@ -460,6 +460,15 @@ class WikiHiero {
 	}
 
 	/**
+	 * Returns a list of image files used by this extension
+	 *
+	 * @return array: list of files in format 'file' => array( width, height )
+	 */
+	public function getFiles() {
+		return self::$files;
+	}
+
+	/**
 	 * Get glyph code from file name
 	 *
 	 * @param $file string: file name

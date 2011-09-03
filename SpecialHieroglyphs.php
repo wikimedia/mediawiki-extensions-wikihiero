@@ -18,6 +18,9 @@
  */
 
 class SpecialHieroglyphs extends SpecialPage {
+	const HIEROGLYPHS_PER_ROW = 10;
+	const CACHE_EXPIRY = 86400; // 1 day
+
 	public function __construct() {
 		parent::__construct( 'Hieroglyphs' );
 	}
@@ -58,6 +61,76 @@ class SpecialHieroglyphs extends SpecialPage {
 			) )
 			. Html::closeElement( 'form' )
 		);
-			
+
+		$out->addHTML( '<div class="mw-hiero-list">' );
+		$out->addHTML( $this->listHieroglyphs() );
+		$out->addHTML( '</div>' );
+	}
+
+	/**
+	 * Returns a HTML list of hieroglyphs
+	 */
+	private function listHieroglyphs() {
+		global $wgMemc;
+
+		$key = wfMemcKey( 'hiero-list', $this->getContext()->getLang()->getCode() );
+		$html = $wgMemc->get( $key );
+		if ( $html ) {
+			return $html;
+		}
+		$html = '';
+		$hiero = new WikiHiero();
+		$files = array_keys( $hiero->getFiles() );
+		natsort( $files );
+
+		foreach ( $this->getCategories() as $cat ) {
+			$alnum = strlen( $cat ) == 1;
+			$html .= "<h2 id=\"cat-$cat\">" . wfMessage( "wikihiero-category-$cat" )->escaped() . "</h2>
+<table class=\"wikitable\">
+";
+			$upperRow = $lowerRow = '';
+			$columns = 0;
+			$rows = 0;
+			foreach ( $files as $code ) {
+				if ( strpos( $code, '&' ) !== false ) {
+					continue; // prefab
+				}
+				if ( strpos( $code, $cat ) !== 0 || ( $alnum && !ctype_digit( $code[1] ) ) ) {
+					continue; // wrong category
+				}
+				$upperRow .= '<td>' . $hiero->renderHtml( $code ) . '</td>';
+				$lowerRow .= '<th>' . htmlspecialchars( $code ) . '</th>';
+				$columns++;
+				if ( $columns == self::HIEROGLYPHS_PER_ROW ) {
+					$html .= "<tr>$upperRow</tr>\n<tr>$lowerRow</tr>\n";
+					$upperRow = $lowerRow = '';
+					$columns = 0;
+					$rows++;
+				}
+			}
+			if ( $columns ) {
+				$html .= "<tr>$upperRow"
+					. ( $columns && $rows ? '<td colspan="' . ( self::HIEROGLYPHS_PER_ROW - $columns ) . '">&#160;</td>' : '' ) . "</tr>\n";
+				$html .= "<tr>$lowerRow"
+					. ( $columns && $rows ? '<th colspan="' . ( self::HIEROGLYPHS_PER_ROW - $columns ) . '">&#160;</th>' : '' ) . "</tr>\n";
+			}
+			$html .= "</table>\n";
+		}
+		$wgMemc->set( $key, $html, self::CACHE_EXPIRY );
+		return $html;
+	}
+
+	/**
+	 * Returns an array with hieroglyph categories from Gardiner's list
+	 */
+	private function getCategories() {
+		$res = array();
+		for ( $i = ord( 'A' ); $i <= ord( 'Z' ); $i++ ) {
+			if ( $i != ord( 'J' ) ) {
+				$res[] = chr( $i );
+			}
+		}
+		$res[] = 'Aa';
+		return $res;
 	}
  }

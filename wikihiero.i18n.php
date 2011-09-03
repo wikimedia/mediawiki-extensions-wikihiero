@@ -16,6 +16,32 @@ See [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax here] for markup descrip
 	'wikihiero-input' => 'Input text',
 	'wikihiero-result' => 'Result',
 	'wikihiero-load-error' => 'Load error!',
+	'wikihiero-category-A' => 'A: Man and his occupations',
+	'wikihiero-category-B' => 'B: Woman and her occupations',
+	'wikihiero-category-C' => 'C: Anthropomorphic deities',
+	'wikihiero-category-D' => 'D: Parts of the human body',
+	'wikihiero-category-E' => 'E: Mammals',
+	'wikihiero-category-F' => 'F: Parts of mammals',
+	'wikihiero-category-G' => 'G: Birds',
+	'wikihiero-category-H' => 'H: Parts of birds',
+	'wikihiero-category-I' => 'I: Amphibians, reptiles, etc.',
+	'wikihiero-category-K' => 'K: Fish and parts of fish',
+	'wikihiero-category-L' => 'L: Invertebrates and lesser animals',
+	'wikihiero-category-M' => 'M: Trees and plants',
+	'wikihiero-category-N' => 'N: Sky, earth, water',
+	'wikihiero-category-O' => 'O: Buildings, parts of buildings, etc.',
+	'wikihiero-category-P' => 'P: Ships and parts of ships',
+	'wikihiero-category-Q' => 'Q: Domestics and funerary furniture',
+	'wikihiero-category-R' => 'R: Temple furniture and sacred emblems',
+	'wikihiero-category-S' => 'S: Crowns, dress, staves, etc.',
+	'wikihiero-category-T' => 'T: Warfare, hunting, butchery',
+	'wikihiero-category-U' => 'U: Agriculture, crafts and professions',
+	'wikihiero-category-V' => 'V: Rope, fiber, baskets, bags, etc.',
+	'wikihiero-category-W' => 'W: Vessels of stone and earthenware',
+	'wikihiero-category-X' => 'X: Loaves and cakes',
+	'wikihiero-category-Y' => 'Y: Writings, games, music',
+	'wikihiero-category-Z' => 'Z: Strokes, geometrical figures, etc.',
+	'wikihiero-category-Aa' => 'Aa: Unclassified',
 );
 
 /** Message documentation (Message documentation)
@@ -131,6 +157,19 @@ $messages['be-tarask'] = array(
  */
 $messages['bg'] = array(
 	'wikihiero-desc' => 'Добавя етикет <code>&lt;hiero&gt;</code> за показване на [[Special:Hieroglyphs|йероглифи]]',
+	'wikihiero-category-A' => 'A: Мъжът и дейностите му',
+	'wikihiero-category-B' => 'B: Жената и дейностите й',
+	'wikihiero-category-C' => 'C: Антропоморфни божества',
+	'wikihiero-category-D' => 'D: Части на човешкото тяло',
+	'wikihiero-category-E' => 'E: Бозайници',
+	'wikihiero-category-F' => 'F: Части от бозайници',
+	'wikihiero-category-G' => 'G: Птици',
+	'wikihiero-category-H' => 'H: Части от птици',
+	'wikihiero-category-I' => 'I: Земноводни, гущери и пр.',
+	'wikihiero-category-K' => 'K: Риби и части от риби',
+	'wikihiero-category-L' => 'L: Насекоми, безгръбначни животни и пр.',
+	'wikihiero-category-Z' => 'Z: Геометрични форми',
+	'wikihiero-category-Aa' => 'Aa: Некласифицирани',
 );
 
 /** Breton (Brezhoneg)
@@ -138,6 +177,19 @@ $messages['bg'] = array(
  */
 $messages['br'] = array(
 	'wikihiero-desc' => 'Ouzhpennañ a ra ar valizenn <code>&lt;hiero&gt;</code> evit embann ar [[Special:Hieroglyphs|hieroglifoù]].',
+	'wikihiero-category-A' => 'A: Мъжът и дейностите му',
+	'wikihiero-category-B' => 'B: Жената и дейностите й',
+	'wikihiero-category-C' => 'C: Антропоморфни божества',
+	'wikihiero-category-D' => 'D: Части на човешкото тяло',
+	'wikihiero-category-E' => 'E: Бозайници',
+	'wikihiero-category-F' => 'F: Части от бозайници',
+	'wikihiero-category-G' => 'G: Птици',
+	'wikihiero-category-H' => 'H: Части от птици',
+	'wikihiero-category-I' => 'I: Земноводни, гущери и пр.',
+	'wikihiero-category-K' => 'K: Риби и части от риби',
+	'wikihiero-category-L' => 'L: Насекоми, безгръбначни животни и пр.',
+	'wikihiero-category-Z' => 'Z: Геометрични форми',
+	'wikihiero-category-Aa' => 'Aa: Некласифицирани',
 );
 
 /** Bosnian (Bosanski)
@@ -152,6 +204,19 @@ $messages['bs'] = array(
  */
 $messages['ca'] = array(
 	'wikihiero-desc' => "Afegeix l'etiqueta <code>&lt;hiero&gt;</code> per a visualitzar [[Special:Hieroglyphs|jeroglífics]]",
+	'wikihiero-category-A' => 'A: L\'home i les seves ocupacions',
+	'wikihiero-category-B' => 'B: La dona i les seves ocupacions',
+	'wikihiero-category-C' => 'C: Deitats antropomòrfiques',
+	'wikihiero-category-D' => 'D: Parts del cos humà',
+	'wikihiero-category-E' => 'E: Mamífers',
+	'wikihiero-category-F' => 'F: Parts dels mamífers',
+	'wikihiero-category-G' => 'G: Aus',
+	'wikihiero-category-H' => 'H: Parts de les aus',
+	'wikihiero-category-I' => 'I: Animals amfibis, rèptils, etc.',
+	'wikihiero-category-K' => 'K: Peixos i parts dels peixos',
+	'wikihiero-category-L' => 'L: Invertebrats i petits animals',
+	'wikihiero-category-Z' => 'Z: Traços, figures geomètriques, etc.',
+	'wikihiero-category-Aa' => 'Aa: no classificat',
 );
 
 /** Czech (Česky)
@@ -159,6 +224,19 @@ $messages['ca'] = array(
  */
 $messages['cs'] = array(
 	'wikihiero-desc' => 'Přidává značku <code>&lt;hiero&gt;</code> pro zobrazování [[Special:Hieroglyphs|hieroglyfů]]',
+	'wikihiero-category-A' => 'A: Muž a jeho práce',
+	'wikihiero-category-B' => 'B: Žena a její práce',
+	'wikihiero-category-C' => 'C: Antropomorfní božstva',
+	'wikihiero-category-D' => 'D: Části lidského těla',
+	'wikihiero-category-E' => 'E: Cicavce',
+	'wikihiero-category-F' => 'F: Části cicavců',
+	'wikihiero-category-G' => 'G: Ptáky',
+	'wikihiero-category-H' => 'H: Části ptáků',
+	'wikihiero-category-I' => 'I: Obouživelníky, plazy atd.',
+	'wikihiero-category-K' => 'K: Ryby a části ryb',
+	'wikihiero-category-L' => 'L: Bezstavovce a nižší druhy',
+	'wikihiero-category-Z' => 'Z: Tahy, geometrické obrazce atd.',
+	'wikihiero-category-Aa' => 'Aa: Nezařazeno',
 );
 
 /** Danish (Dansk)
@@ -189,6 +267,19 @@ Siehe [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax hier] für eine Markup
 	'wikihiero-input' => 'Eingabetext',
 	'wikihiero-result' => 'Ergebnis',
 	'wikihiero-load-error' => 'Ladefehler!',
+	'wikihiero-category-A' => 'A: Männer und ihre Beschäftigungen',
+	'wikihiero-category-B' => 'B: Frauen und ihre Beschäftigungen',
+	'wikihiero-category-C' => 'C: Menschenähnliche Gottheiten',
+	'wikihiero-category-D' => 'D: Menschliche Körperteile',
+	'wikihiero-category-E' => 'E: Säugetiere',
+	'wikihiero-category-F' => 'F: Körperteile von Säugetieren',
+	'wikihiero-category-G' => 'G: Vögel',
+	'wikihiero-category-H' => 'H: Körperteile von Vögeln',
+	'wikihiero-category-I' => 'I: Amphibien, Reptilien, usw.',
+	'wikihiero-category-K' => 'K: Fische und Körperteile von Fischen',
+	'wikihiero-category-L' => 'L: Wirbellose und Kleintiere',
+	'wikihiero-category-Z' => 'Z: Linien, geometrische Figuren, usw.',
+	'wikihiero-category-Aa' => 'Aa: Nicht klassifiziert',
 );
 
 /** Zazaki (Zazaki)
@@ -223,6 +314,19 @@ $messages['eo'] = array(
 	'wikihiero-desc' => 'Aldonas etikedon <code>&lt;hiero&gt;</code> por montri [[Special:Hieroglyphs|hieroglifon]]',
 	'hieroglyphs' => 'Provi hieroglifan marklingvon',
 	'wikihiero-result' => 'Rezulto',
+	'wikihiero-category-A' => 'A: Viro kaj siaj okupoj',
+	'wikihiero-category-B' => 'B: Virino kaj siaj okupoj',
+	'wikihiero-category-C' => 'C: Homformaj diuloj',
+	'wikihiero-category-D' => 'D: Homkorpaj partoj',
+	'wikihiero-category-E' => 'E: Mamuloj',
+	'wikihiero-category-F' => 'F: Mamulaj partoj',
+	'wikihiero-category-G' => 'G: Birdoj',
+	'wikihiero-category-H' => 'H: Birdaj partoj',
+	'wikihiero-category-I' => 'I: Amfibiaj bestoj, Reptilioj, ktp.',
+	'wikihiero-category-K' => 'K: Fiŝoj kaj Fiŝaj partoj',
+	'wikihiero-category-L' => 'L: Invertebruloj kaj malgrandaj bestoj',
+	'wikihiero-category-Z' => 'Z: Strekoj, Geometriaj Figuroj, ktp.',
+	'wikihiero-category-Aa' => 'Aa: Neklasifikita',
 );
 
 /** Spanish (Español)
@@ -230,6 +334,19 @@ $messages['eo'] = array(
  */
 $messages['es'] = array(
 	'wikihiero-desc' => 'Añade elemento <code>&lt;hiero&gt;</code> para mostrar un [[Special:Hieroglyphs|jeroglífico]]',
+	'wikihiero-category-A' => 'A: El hombre y sus oficios',
+	'wikihiero-category-B' => 'B: La mujer y sus oficios',
+	'wikihiero-category-C' => 'C: Dioses antropomórficos',
+	'wikihiero-category-D' => 'D: Partes del cuerpo humano',
+	'wikihiero-category-E' => 'E: Mamíferos',
+	'wikihiero-category-F' => 'F: Partes de los mamíferos',
+	'wikihiero-category-G' => 'G: Aves',
+	'wikihiero-category-H' => 'H: Partes de las aves',
+	'wikihiero-category-I' => 'I: Anfibios, reptiles, etc.',
+	'wikihiero-category-K' => 'K: Peces y partes de los peces',
+	'wikihiero-category-L' => 'L: Invertebrados y especies menores',
+	'wikihiero-category-Z' => 'Z: Trazos, figuras geométricas, etc.',
+	'wikihiero-category-Aa' => 'Aa: Sin clasificar',
 );
 
 /** Estonian (Eesti)
@@ -277,6 +394,19 @@ Voyez [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax ici] la description du
 	'wikihiero-input' => 'Texte entré',
 	'wikihiero-result' => 'Résultat',
 	'wikihiero-load-error' => 'Erreur de chargement!',
+	'wikihiero-category-A' => 'A: Hommes et leurs occupations',
+	'wikihiero-category-B' => 'B: Femmes et leurs occupations',
+	'wikihiero-category-C' => 'C: Divinités',
+	'wikihiero-category-D' => 'D: Parties du corps humain',
+	'wikihiero-category-E' => 'E: Animaux mammifères',
+	'wikihiero-category-F' => 'F: Parties de mammifères',
+	'wikihiero-category-G' => 'G: Oiseaux',
+	'wikihiero-category-H' => 'H: Parties d\'oiseaux',
+	'wikihiero-category-I' => 'I: Amphibiens, reptiles, etc.',
+	'wikihiero-category-K' => 'K: Poissons et parties de poissons',
+	'wikihiero-category-L' => 'L: Invertébrés et animals petits',
+	'wikihiero-category-Z' => 'Z: Traits et formes géométriques',
+	'wikihiero-category-Aa' => 'Aa: Signes non classés',
 );
 
 /** Franco-Provençal (Arpetan)
@@ -378,6 +508,19 @@ $messages['ia'] = array(
  */
 $messages['id'] = array(
 	'wikihiero-desc' => 'Menambahkan tag <code>&lt;hiero&gt;</code> untuk menampilkan [[Special:Hieroglyphs|hieroglyph]]',
+	'wikihiero-category-A' => 'A: Le homine e su occupationes',
+	'wikihiero-category-B' => 'B: Le femina e su occupationes',
+	'wikihiero-category-C' => 'C: Divinitates anthropomorphe',
+	'wikihiero-category-D' => 'D: Partes del corpore human',
+	'wikihiero-category-E' => 'E: Mammiferos',
+	'wikihiero-category-F' => 'F: Partes de mammiferos',
+	'wikihiero-category-G' => 'G: Aves',
+	'wikihiero-category-H' => 'H: Partes de aves',
+	'wikihiero-category-I' => 'I: Amphibios, reptiles, etc.',
+	'wikihiero-category-K' => 'K: Pisces e partes de pisces',
+	'wikihiero-category-L' => 'L: Invertebratos',
+	'wikihiero-category-Z' => 'Z: Tractos e formas geometric',
+	'wikihiero-category-Aa' => 'Aa: Signos non classificate',
 );
 
 /** Igbo (Igbo)
@@ -392,6 +535,19 @@ $messages['ig'] = array(
  */
 $messages['it'] = array(
 	'wikihiero-desc' => 'Aggiunge il tag <code>&lt;hiero&gt;</code> per la visualizzazione dei [[Special:Hieroglyphs|geroglifici]]',
+	'wikihiero-category-A' => 'A: L\'uomo e le sue occupazioni',
+	'wikihiero-category-B' => 'B: La donna e le sue occupazioni',
+	'wikihiero-category-C' => 'C: Divinità antropomorfe',
+	'wikihiero-category-D' => 'D: Parti del corpo umano',
+	'wikihiero-category-E' => 'E: Mammiferi',
+	'wikihiero-category-F' => 'F: Parti dei mammiferi',
+	'wikihiero-category-G' => 'G: Uccelli',
+	'wikihiero-category-H' => 'H: Parti degli uccelli',
+	'wikihiero-category-I' => 'I: Anfibi, rettili, ecc.',
+	'wikihiero-category-K' => 'K: Pesci e parti dei pesci',
+	'wikihiero-category-L' => 'L: Invertebrati e piccoli animali',
+	'wikihiero-category-Z' => 'Z: Linee e forme geometriche',
+	'wikihiero-category-Aa' => 'Aa: Segni non classificati',
 );
 
 /** Japanese (日本語)
@@ -401,6 +557,18 @@ $messages['it'] = array(
  */
 $messages['ja'] = array(
 	'wikihiero-desc' => 'ヒエログリフを表示する <code>&lt;hiero&gt;</code> タグを追加する',
+	'wikihiero-category-A' => 'A: 男性と職業',
+	'wikihiero-category-B' => 'B: 女性と職業',
+	'wikihiero-category-C' => 'C: 擬人化された神',
+	'wikihiero-category-D' => 'D: 人の身体の一部',
+	'wikihiero-category-E' => 'E: 哺乳類',
+	'wikihiero-category-F' => 'F: 哺乳類の一部',
+	'wikihiero-category-G' => 'G: 鳥類',
+	'wikihiero-category-H' => 'H: 鳥の一部',
+	'wikihiero-category-I' => 'I: 両棲類、爬虫類、など',
+	'wikihiero-category-K' => 'K: 魚類、または魚の一部',
+	'wikihiero-category-Z' => 'Z: 線、幾何学図形など',
+	'wikihiero-category-Aa' => 'Aa: その他',
 );
 
 /** Jutish (Jysk)
@@ -424,6 +592,22 @@ $messages['ka'] = array(
 	'wikihiero-desc' => 'ჰმატებს თეგ <code>&lt;hiero&gt;</code> იეროგიფების საჩვენებლად',
 );
 
+$messages['kk'] = array(
+	'wikihiero-category-A' => 'A: Ер адам және оның шұғылдануы',
+	'wikihiero-category-B' => 'B: Әйел адам және оның шұғылдануы',
+	'wikihiero-category-C' => 'C: Адам пішімді құдіреттер',
+	'wikihiero-category-D' => 'D: Адам денесінің мүшелері',
+	'wikihiero-category-E' => 'E: Сүтқоректілер',
+	'wikihiero-category-F' => 'F: Сүтқоректілер денесінің мүшелері',
+	'wikihiero-category-G' => 'G: Құстар',
+	'wikihiero-category-H' => 'H: Құстар денесінің мүшелері',
+	'wikihiero-category-I' => 'I: Қос мекенділер, бауырымен жорғалаушылар, т.б.',
+	'wikihiero-category-K' => 'K: Балықтар және балық денесінің мүшелері',
+	'wikihiero-category-L' => 'L: Омыртқасыздар мен ұсақ жануарлар',
+	'wikihiero-category-Z' => 'Z: Сызықтар, геометрия пішіндер.',
+	'wikihiero-category-Aa' => 'Aa: Таңбаланбағандар',
+);
+
 /** Khmer (ភាសាខ្មែរ)
  * @author Lovekhmer
  */
@@ -443,6 +627,22 @@ $messages['ko'] = array(
  */
 $messages['ksh'] = array(
 	'wikihiero-desc' => 'Deiht dat <code>&lt;hiero&gt;</code> zum Parser dobei, womet mer [[Special:Hieroglyphs|Hirojlüüfe]] em Wiki bruche kann.',
+);
+
+$messages['la'] = array(
+	'wikihiero-category-A' => 'A: Vir et negotia sua',
+	'wikihiero-category-B' => 'B: Femina et negotia sua',
+	'wikihiero-category-C' => 'C: Numina humanus aspectus',
+	'wikihiero-category-D' => 'D: Membra corporis humanus',
+	'wikihiero-category-E' => 'E: Mammalia',
+	'wikihiero-category-F' => 'F: Membra mammalium',
+	'wikihiero-category-G' => 'G: Aves',
+	'wikihiero-category-H' => 'H: Membra avium',
+	'wikihiero-category-I' => 'I: Amphibia, reptilia, etc.',
+	'wikihiero-category-K' => 'K: Pisces et membra piscium',
+	'wikihiero-category-L' => 'L: Invertebrata et animala parvula',
+	'wikihiero-category-Z' => 'Z: Liniae, figurae geometricae, etc.',
+	'wikihiero-category-Aa' => 'Aa: In classes non distributum',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -544,6 +744,19 @@ Zie ook de [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax gebruiksaanwijzin
 	'wikihiero-input' => 'Invoertekst',
 	'wikihiero-result' => 'Resultaat',
 	'wikihiero-load-error' => 'Fout bij het laden!',
+	'wikihiero-category-A' => 'A: De man en zijn bezigheden',
+	'wikihiero-category-B' => 'B: De vrouw en haar bezigheden',
+	'wikihiero-category-C' => 'C: Anthropomorfe Goden',
+	'wikihiero-category-D' => 'D: Delen van het menselijk lichaam',
+	'wikihiero-category-E' => 'E: Zoogdieren',
+	'wikihiero-category-F' => 'F: Delen van zoogdieren',
+	'wikihiero-category-G' => 'G: Vogels',
+	'wikihiero-category-H' => 'H: Delen van vogels',
+	'wikihiero-category-I' => 'I: Amfibieën, reptielen, etc.',
+	'wikihiero-category-K' => 'K: Vissen en delen daarvan',
+	'wikihiero-category-L' => 'L: Ongewervelden en lagere dieren',
+	'wikihiero-category-Z' => 'Z: Lijnen, geometrische figuren, etc.',
+	'wikihiero-category-Aa' => 'Aa: Niet geclassificeerd',
 );
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
@@ -593,6 +806,19 @@ $messages['pms'] = array(
  */
 $messages['pt'] = array(
 	'wikihiero-desc' => 'Adiciona o elemento <code>&lt;hiero&gt;</code> para apresentar [[Special:Hieroglyphs|hieróglifos]]',
+	'wikihiero-category-A' => 'A: O homem e suas ocupações',
+	'wikihiero-category-B' => 'B: A mulher e suas ocupações',
+	'wikihiero-category-C' => 'C: Divindades antropomorfas',
+	'wikihiero-category-D' => 'D: Partes do corpo humano',
+	'wikihiero-category-E' => 'E: Mamíferos',
+	'wikihiero-category-F' => 'F: Partes de mamíferos',
+	'wikihiero-category-G' => 'G: Aves',
+	'wikihiero-category-H' => 'H: Partes de aves',
+	'wikihiero-category-I' => 'I: Anfíbios, répteis, etc.',
+	'wikihiero-category-K' => 'K: Peixes e partes de peixes',
+	'wikihiero-category-L' => 'L: Invertebrados',
+	'wikihiero-category-Z' => 'Z: Traços e formas geométricas',
+	'wikihiero-category-Aa' => 'Aa: Signos não classificados',
 );
 
 /** Brazilian Portuguese (Português do Brasil)
@@ -641,10 +867,23 @@ $messages['ru'] = array(
 	'wikihiero-desc' => 'Добавляет тег <code>&lt;hiero&gt;</code> для показа [[Special:Hieroglyphs|иероглифов]]',
 	'hieroglyphs' => 'Попробуйте иероглифическую разметку',
 	'wikihiero-special-page-text' => 'Используйте эту страницу для опробования разметки WikiHiero.
-См. описание разметки [здесь http://ru.wikipedia.org/wiki/Википедия:Древнеегипетские_иероглифы].',
+См. описание разметки [http://ru.wikipedia.org/wiki/Википедия:Древнеегипетские_иероглифы здесь].',
 	'wikihiero-input' => 'Входной текст:',
 	'wikihiero-result' => 'Результат',
 	'wikihiero-load-error' => 'Ошибка загрузки!',
+	'wikihiero-category-A' => 'A: Мужчина и его занятия',
+	'wikihiero-category-B' => 'B: Женщина и её занятия',
+	'wikihiero-category-C' => 'C: Антропоморфные боги',
+	'wikihiero-category-D' => 'D: Части тела',
+	'wikihiero-category-E' => 'E: Млекопитающие',
+	'wikihiero-category-F' => 'F: Части млекопитающих',
+	'wikihiero-category-G' => 'G: Птицы',
+	'wikihiero-category-H' => 'H: Части птиц',
+	'wikihiero-category-I' => 'I: Амфибии, рептилии и т. п.',
+	'wikihiero-category-K' => 'K: Рыбы и их части',
+	'wikihiero-category-L' => 'L: Беспозвоночные и мелкие животные',
+	'wikihiero-category-Z' => 'Z: Линии, геометрические фигуры и т. п.',
+	'wikihiero-category-Aa' => 'Aa: Неклассифицированные',
 );
 
 /** Sakha (Саха тыла)
@@ -673,6 +912,19 @@ $messages['si'] = array(
  */
 $messages['sk'] = array(
 	'wikihiero-desc' => 'Pridáva značku <code>&lt;hiero&gt;</code> na zobrazovanie [[Special:Hieroglyphs|hieroglyfov]]',
+	'wikihiero-category-A' => 'A: Muž a jeho práce',
+	'wikihiero-category-B' => 'B: Žena a jej práce',
+	'wikihiero-category-C' => 'C: Antropomorfné božstvá',
+	'wikihiero-category-D' => 'D: Časti ľudského tela',
+	'wikihiero-category-E' => 'E: Cicavce',
+	'wikihiero-category-F' => 'F: Časti cicavcov',
+	'wikihiero-category-G' => 'G: Vtáky',
+	'wikihiero-category-H' => 'H: Časti vtákov',
+	'wikihiero-category-I' => 'I: Obojživelníky, plazy atď.',
+	'wikihiero-category-K' => 'K: Ryby a časti rýb',
+	'wikihiero-category-L' => 'L: Bezstavovce a nižšie druhy',
+	'wikihiero-category-Z' => 'Z: Ťahy, geometrické obrazce atď.',
+	'wikihiero-category-Aa' => 'Aa: Nezaradené',
 );
 
 /** Slovenian (Slovenščina)
@@ -707,6 +959,19 @@ $messages['sq'] = array(
  */
 $messages['sr-ec'] = array(
 	'wikihiero-desc' => 'Додаје <code>&lt;hiero&gt;</code> ознаку за приказ [[Special:Hieroglyphs|хијероглифа]].',
+	'wikihiero-category-A' => 'A: Мушкарац и његова занимања',
+	'wikihiero-category-B' => 'B: Жена и њена занимања',
+	'wikihiero-category-C' => 'C: Човеколика божанства',
+	'wikihiero-category-D' => 'D: Делови људског тела',
+	'wikihiero-category-E' => 'E: Сисари',
+	'wikihiero-category-F' => 'F: Делови тела сисара',
+	'wikihiero-category-G' => 'G: Птице',
+	'wikihiero-category-H' => 'H: Делови тела птица',
+	'wikihiero-category-I' => 'I: Водоземци, гмизавци и т. д.',
+	'wikihiero-category-K' => 'K: Рибе и делови риба',
+	'wikihiero-category-L' => 'L: Бескичмењаци',
+	'wikihiero-category-Z' => 'Z: Линије, геометријске фигуре',
+	'wikihiero-category-Aa' => 'Aa: Некласификовано',
 );
 
 /** Serbian Latin ekavian (‪Srpski (latinica)‬)
@@ -737,6 +1002,19 @@ $messages['su'] = array(
 $messages['sv'] = array(
 	'wikihiero-desc' => 'Lägger till taggen <code>&lt;hiero&gt;</code> för att visa [[Special:Hieroglyphs|hieroglyfer]]',
 	'wikihiero-result' => 'Resultat',
+	'wikihiero-category-A' => 'A: Mannen och hans sysslor',
+	'wikihiero-category-B' => 'B: Kvinnan och hennes sysslor',
+	'wikihiero-category-C' => 'C: Gudomligheter',
+	'wikihiero-category-D' => 'D: Kroppens delar',
+	'wikihiero-category-E' => 'E: Däggdjur',
+	'wikihiero-category-F' => 'F: Däggdjurens kroppsdelar',
+	'wikihiero-category-G' => 'G: Fåglar',
+	'wikihiero-category-H' => 'H: Fåglarnas kroppsdelar',
+	'wikihiero-category-I' => 'I: Insekter',
+	'wikihiero-category-K' => 'K: Fiskar och fiskarnas kroppsdelar',
+	'wikihiero-category-L' => 'L: Ryggradslösa djur och mindre djur',
+	'wikihiero-category-Z' => 'Z: Linjer, geometriska figurer o.dyl.',
+	'wikihiero-category-Aa' => 'Aa: Övrigt',
 );
 
 /** Silesian (Ślůnski)
@@ -834,6 +1112,22 @@ Xem [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax hướng dẫn về cú 
 	'wikihiero-input' => 'Văn bản nhập',
 	'wikihiero-result' => 'Kết quả',
 	'wikihiero-load-error' => 'Lỗi tải!',
+);
+
+$messages['wa'] = array(
+	'wikihiero-category-A' => 'A: L\' ome et ses fijhaedjes',
+	'wikihiero-category-B' => 'B: Li feme et ses fijhaedjes',
+	'wikihiero-category-C' => 'C: Dius',
+	'wikihiero-category-D' => 'D: Bokets do coir',
+	'wikihiero-category-E' => 'E: Biesses ås tetes',
+	'wikihiero-category-F' => 'F: Bokets d\' biesses ås tetes',
+	'wikihiero-category-G' => 'G: Oujheas',
+	'wikihiero-category-H' => 'H: Bokets d\' oujheas',
+	'wikihiero-category-I' => 'I: Anfibeyes, crålants, evnd.',
+	'wikihiero-category-K' => 'K: Pexhons et bokets d\' pexhons',
+	'wikihiero-category-L' => 'L: Sicrijhaedje, amuzmints, muzike',
+	'wikihiero-category-Z' => 'Z: Royes et cognes djeyometrikes',
+	'wikihiero-category-Aa' => 'Aa: Des ôtes (nén classifyî)',
 );
 
 /** Cantonese (粵語)

@@ -55,6 +55,7 @@ $wgResourceModules['ext.wikihiero'] = array(
 
 $wgResourceModules['ext.wikihiero.Special'] = array(
 	'scripts' => 'ext.wikihiero.Special.js',
+	'styles' => 'ext.wikihiero.Special.css',
 	'localBasePath' => dirname( __FILE__ ) . '/modules',
 	'remoteExtPath' => 'wikihiero/modules',
 	'messages' => array(
