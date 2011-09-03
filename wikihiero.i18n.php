@@ -114,9 +114,16 @@ $messages['bcc'] = array(
 /** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
+ * @author Renessaince
  */
 $messages['be-tarask'] = array(
 	'wikihiero-desc' => 'Дадае тэг <code>&lt;hiero&gt;</code> для адлюстраваньня [[Special:Hieroglyphs|гіерогліфаў]]',
+	'hieroglyphs' => 'Паспрабуйце герагліфічную разьметку',
+	'wikihiero-special-page-text' => 'Выкарыстоўвайце гэтую старонку, каб паспрабаваць разьметку WikiHiero.
+Азнаёмцеся з апісаньнем разьметкі [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax тут].',
+	'wikihiero-input' => 'Уваходны тэкст',
+	'wikihiero-result' => 'Вынік',
+	'wikihiero-load-error' => 'Памылка загрузкі!',
 );
 
 /** Bulgarian (Български)
@@ -200,9 +207,13 @@ $messages['dsb'] = array(
 
 /** Greek (Ελληνικά)
  * @author Dead3y3
+ * @author ZaDiak
  */
 $messages['el'] = array(
 	'wikihiero-desc' => 'Προσθέτει την ετικέτα <code>&lt;hiero&gt;</code> για την εμφάνιση [[Special:Hieroglyphs|ιερογλυφικών]]',
+	'wikihiero-input' => 'Κείμενο εισόδου',
+	'wikihiero-result' => 'Αποτέλεσμα',
+	'wikihiero-load-error' => 'Σφάλμα φόρτωσης!',
 );
 
 /** Esperanto (Esperanto)
@@ -210,6 +221,8 @@ $messages['el'] = array(
  */
 $messages['eo'] = array(
 	'wikihiero-desc' => 'Aldonas etikedon <code>&lt;hiero&gt;</code> por montri [[Special:Hieroglyphs|hieroglifon]]',
+	'hieroglyphs' => 'Provi hieroglifan marklingvon',
+	'wikihiero-result' => 'Rezulto',
 );
 
 /** Spanish (Español)
@@ -437,6 +450,8 @@ $messages['ksh'] = array(
  */
 $messages['lb'] = array(
 	'wikihiero-desc' => 'Setzt den Tag <code>&lt;hiero&gt;</code> derbäi fir [[Special:Hieroglyphs|Hieroglyphen]] unzeweisen',
+	'wikihiero-result' => 'Resultat',
+	'wikihiero-load-error' => 'Feeler beim Lueden!',
 );
 
 /** Limburgish (Limburgs)
@@ -582,9 +597,15 @@ $messages['pt'] = array(
 
 /** Brazilian Portuguese (Português do Brasil)
  * @author Eduardo.mps
+ * @author MetalBrasil
  */
 $messages['pt-br'] = array(
 	'wikihiero-desc' => 'Adiciona a marca <code>&lt;hiero&gt;</code> para exibir [[Special:Hieroglyphs|hieróglifos]]',
+	'hieroglyphs' => 'Tente a marcação hieróglifo',
+	'wikihiero-special-page-text' => 'Use esta página para experimentar a marcação wikihiero. Acesse [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax here] para descrição de marcação.',
+	'wikihiero-input' => 'Texto de entrada',
+	'wikihiero-result' => 'Resultado',
+	'wikihiero-load-error' => 'Erro ao carregar!',
 );
 
 /** Quechua (Runa Simi)
@@ -777,9 +798,14 @@ $messages['tr'] = array(
 
 /** Ukrainian (Українська)
  * @author Ahonc
+ * @author Dim Grits
  */
 $messages['uk'] = array(
 	'wikihiero-desc' => 'Додає тег <code>&lt;hiero&gt;</code> для відображення [[Special:Hieroglyphs|ієрогліфів]]',
+	'hieroglyphs' => 'Спробуйте ієрогліфічне письмо',
+	'wikihiero-input' => 'Вхідний текст',
+	'wikihiero-result' => 'Результат',
+	'wikihiero-load-error' => 'Помилка при завантаженні!',
 );
 
 /** Vèneto (Vèneto)
