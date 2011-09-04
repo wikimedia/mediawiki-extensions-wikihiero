@@ -482,7 +482,6 @@ class WikiHiero {
 	 * @return string: converted code
 	 */
 	public static function getCode( $file ) {
-		$s = substr( $file, strlen( WH_IMG_PRE ), -( 1 + strlen( self::IMG_EXT ) ) );
-		return str_replace( '&', ':', $s );
+		return substr( $file, strlen( WH_IMG_PRE ), -( 1 + strlen( self::IMG_EXT ) ) );
 	}
 }
