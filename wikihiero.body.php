@@ -86,7 +86,7 @@ class WikiHiero {
 	 * Render hieroglyph text
 	 *
 	 * @param $text string: text to convert
-	 * @param $mode string: convertion mode [DEFAULT|TEXT|HTML|STYLE|IMAGE] (def=HTML)
+	 * @param $mode string: conversion mode [DEFAULT|TEXT|HTML|STYLE|IMAGE] (def=HTML)
 	 * @param $scale string: global scale in percentage (def=100%)
 	 * @param $line string: use line [true|false] (def=false)
 	 * @return string: converted code
@@ -170,8 +170,8 @@ class WikiHiero {
 	/**
 	 * Resize a glyph
 	 *
-	 * @param $item string: glyph's code
-	 * @param $is_cartouche bool: true if glyph inside a cartouche
+	 * @param $item string: glyph code
+	 * @param $is_cartouche bool: true if glyph is inside a cartouche
 	 * @param $total int: total size of a group for multi-glyph block
 	 * @return size
 	 */
@@ -368,10 +368,10 @@ class WikiHiero {
 					$contentHtml .= WH_TD_S . self::renderGlyph( $code[0], $option ) . WH_TD_E;
 				}
 
-			// block contain more than 1 glyph
+			// block contains more than 1 glyph
 			} else {
 
-				// convert all code into '&' to test prefabs glyph
+				// convert all codes into '&' to test prefabs glyph
 				$temp = "";
 				foreach ( $code as $t ) {
 					if ( preg_match( "/[*:!()]/", $t[0] ) ) {
@@ -381,13 +381,13 @@ class WikiHiero {
 					}
 				}
 
-			// test is block is into tje prefabs list
+			// test if block exists in the prefabs list
 			if ( in_array( $temp, self::$prefabs ) ) {
 				$option = "height='" . $this->resizeGlyph( $temp, $is_cartouche ) . "'";
 
 				$contentHtml .= WH_TD_S . self::renderGlyph( $temp, $option ) . WH_TD_E;
 
-			// block must be manualy computed
+			// block must be manually computed
 			} else {
 				// get block total height
 				$line_max = 0;
