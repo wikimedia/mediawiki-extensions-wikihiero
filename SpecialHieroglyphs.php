@@ -73,7 +73,11 @@ class SpecialHieroglyphs extends SpecialPage {
 	private function listHieroglyphs() {
 		global $wgMemc;
 
-		$key = wfMemcKey( 'hiero-list', $this->getContext()->getLang()->getCode() );
+		$key = wfMemcKey( 'hiero-list',
+			$this->getContext()->getLang()->getCode(),
+			WikiHiero::getImagePath(),
+			WIKIHIERO_VERSION
+		);
 		$html = $wgMemc->get( $key );
 		if ( $html ) {
 			return $html;

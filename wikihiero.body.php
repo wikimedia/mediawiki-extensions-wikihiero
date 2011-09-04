@@ -469,6 +469,13 @@ class WikiHiero {
 	}
 
 	/**
+	 * @return string: URL of images directory
+	 */
+	public static function getImagePath() {
+		return WH_IMG_DIR;
+	}
+
+	/**
 	 * Get glyph code from file name
 	 *
 	 * @param $file string: file name
