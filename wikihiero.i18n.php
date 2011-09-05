@@ -513,10 +513,23 @@ Voyez [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax ici] la description du
 	'wikihiero-category-E' => 'E: Animaux mammifères',
 	'wikihiero-category-F' => 'F: Parties de mammifères',
 	'wikihiero-category-G' => 'G: Oiseaux',
-	'wikihiero-category-H' => 'H: Parties d\'oiseaux',
+	'wikihiero-category-H' => "H: Parties d'oiseaux",
 	'wikihiero-category-I' => 'I: Amphibiens, reptiles, etc.',
 	'wikihiero-category-K' => 'K: Poissons et parties de poissons',
 	'wikihiero-category-L' => 'L: Invertébrés et animals petits',
+	'wikihiero-category-M' => 'M: Arbres et plantes',
+	'wikihiero-category-N' => 'N: Ciel, terre, eau',
+	'wikihiero-category-O' => 'O: Bâtiments, parties de bâtiments, etc.',
+	'wikihiero-category-P' => 'P: Navires et parties de navires',
+	'wikihiero-category-Q' => 'Q: Mobilier domestique et funéraire',
+	'wikihiero-category-R' => 'R: Mobilier de temple et emblèmes sacrés',
+	'wikihiero-category-S' => 'S: Couronnes, robes, bâtons, etc.',
+	'wikihiero-category-T' => 'T: Guerre, chasse, boucherie',
+	'wikihiero-category-U' => 'U: Agriculture, artisanat et métiers',
+	'wikihiero-category-V' => 'V: Corde, fibre, paniers, sacs, etc.',
+	'wikihiero-category-W' => 'W: Vaisselle en pierre et en terre cuite',
+	'wikihiero-category-X' => 'X: Pains et pâtisseries',
+	'wikihiero-category-Y' => 'Y: Écrits, jeux, musique',
 	'wikihiero-category-Z' => 'Z: Traits et formes géométriques',
 	'wikihiero-category-Aa' => 'Aa: Signes non classés',
 );
@@ -527,6 +540,8 @@ Voyez [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax ici] la description du
 $messages['frp'] = array(
 	'wikihiero-desc' => 'Apond la balisa <code>&lt;hiero&gt;</code> por fâre vêre los [[Special:Hieroglyphs|hièroglifos]].',
 	'hieroglyphs' => 'Èprovar un balisâjo per hièroglifo',
+	'wikihiero-special-page-text' => 'Utilisâd ceta pâge por èprovar lo balisâjo de VouiquiHièrô.
+Vêde [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax ique] la dèscripcion du balisâjo.',
 	'wikihiero-input' => 'Tèxto buchiê',
 	'wikihiero-result' => 'Rèsultat',
 	'wikihiero-load-error' => 'Èrror de chargement !',
@@ -624,7 +639,32 @@ $messages['he'] = array(
 	'wikihiero-input' => 'טקסט קלט',
 	'wikihiero-result' => 'תוצאה',
 	'wikihiero-load-error' => 'שגיאה בטעינה!',
-	'wikihiero-category-G' => 'G: ציפורים',
+	'wikihiero-category-A' => 'A: האדם ועיסוקיו',
+	'wikihiero-category-B' => 'B: האישה ועיסוקיה',
+	'wikihiero-category-C' => 'C: אלים',
+	'wikihiero-category-D' => 'D: חלקי גוף האדם',
+	'wikihiero-category-E' => 'E: יונקים',
+	'wikihiero-category-F' => 'F: חלקי גוף של יונקים',
+	'wikihiero-category-G' => 'G: עופות',
+	'wikihiero-category-H' => 'H: חלקי גוף של עופות',
+	'wikihiero-category-I' => "I: דו־חיים, זוחלים, וכו'",
+	'wikihiero-category-K' => 'K: דגים וחלקי גוף של דגים',
+	'wikihiero-category-L' => 'L: רמשים וחיות פחותות',
+	'wikihiero-category-M' => 'M: עצים וצמחים',
+	'wikihiero-category-N' => 'N: שמים, אדמה, מים',
+	'wikihiero-category-O' => 'O: מבנים ומרכיביהם',
+	'wikihiero-category-P' => 'P: ספינות, סירות וחלקיהן',
+	'wikihiero-category-Q' => 'Q: כלי בית ורהיטי קבורה',
+	'wikihiero-category-R' => 'R: רהיטי מקדש וסמלים מקודשים',
+	'wikihiero-category-S' => "S: כתרים, ביגוד, שרביטים, וכו'",
+	'wikihiero-category-T' => 'T: לוחמה, ציד, שחיטה',
+	'wikihiero-category-U' => 'U: חקלאות, אומנויות ומקצועות',
+	'wikihiero-category-V' => "V: חבלים, שקים, סלים, סיבים וכו'",
+	'wikihiero-category-W' => 'W: כלים מאבן ומחרס',
+	'wikihiero-category-X' => 'X: לחמים ועוגות',
+	'wikihiero-category-Y' => 'Y: כתיבה, משחק, מוזיקה',
+	'wikihiero-category-Z' => "Z: קווים, צורות גאומטריות, וכו'",
+	'wikihiero-category-Aa' => 'Aa: לא ממוין',
 );
 
 /** Hindi (हिन्दी)
@@ -697,11 +737,13 @@ $messages['ig'] = array(
 );
 
 /** Italian (Italiano)
+ * @author Beta16
  * @author BrokenArrow
  */
 $messages['it'] = array(
 	'wikihiero-desc' => 'Aggiunge il tag <code>&lt;hiero&gt;</code> per la visualizzazione dei [[Special:Hieroglyphs|geroglifici]]',
-	'wikihiero-category-A' => 'A: L\'uomo e le sue occupazioni',
+	'wikihiero-load-error' => 'Errore di caricamento!',
+	'wikihiero-category-A' => "A: L'uomo e le sue occupazioni",
 	'wikihiero-category-B' => 'B: La donna e le sue occupazioni',
 	'wikihiero-category-C' => 'C: Divinità antropomorfe',
 	'wikihiero-category-D' => 'D: Parti del corpo umano',
@@ -712,6 +754,11 @@ $messages['it'] = array(
 	'wikihiero-category-I' => 'I: Anfibi, rettili, ecc.',
 	'wikihiero-category-K' => 'K: Pesci e parti dei pesci',
 	'wikihiero-category-L' => 'L: Invertebrati e piccoli animali',
+	'wikihiero-category-M' => 'M: alberi e piante',
+	'wikihiero-category-N' => 'N: cielo, terra, acqua',
+	'wikihiero-category-O' => 'O: edifici, parti di edifici, ecc.',
+	'wikihiero-category-P' => 'P: navi e parti di navi',
+	'wikihiero-category-Y' => 'Y: letteratura, giochi, musica',
 	'wikihiero-category-Z' => 'Z: Linee e forme geometriche',
 	'wikihiero-category-Aa' => 'Aa: Segni non classificati',
 );
@@ -818,6 +865,14 @@ $messages['lb'] = array(
 	'wikihiero-desc' => 'Setzt den Tag <code>&lt;hiero&gt;</code> derbäi fir [[Special:Hieroglyphs|Hieroglyphen]] unzeweisen',
 	'wikihiero-result' => 'Resultat',
 	'wikihiero-load-error' => 'Feeler beim Lueden!',
+	'wikihiero-category-B' => 'B: Fraen an hir Beschäftegungen',
+	'wikihiero-category-G' => 'G: Vigel',
+	'wikihiero-category-I' => 'I: Amphibien, Reptilien, asw.',
+	'wikihiero-category-M' => 'M: Beem a Planzen',
+	'wikihiero-category-N' => 'N: Himmel, Äerd, Waasser',
+	'wikihiero-category-P' => 'P: Schëffer an Deeler vu Schëffer',
+	'wikihiero-category-U' => 'U: Landwirtschaft, Handwierk a Berufer',
+	'wikihiero-category-Aa' => 'Aa: Net klassifizéiert',
 );
 
 /** Limburgish (Limburgs)
@@ -1060,9 +1115,15 @@ $messages['pms'] = array(
 /** Portuguese (Português)
  * @author Hamilton Abreu
  * @author Malafaya
+ * @author MetalBrasil
  */
 $messages['pt'] = array(
 	'wikihiero-desc' => 'Adiciona o elemento <code>&lt;hiero&gt;</code> para apresentar [[Special:Hieroglyphs|hieróglifos]]',
+	'hieroglyphs' => 'Tente marcação hieroglífica',
+	'wikihiero-special-page-text' => 'Use esta página para experimentar a marcação wikihiero. Veja [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax here] para descrição de marcação.',
+	'wikihiero-input' => 'Texto de entrada',
+	'wikihiero-result' => 'Resultado',
+	'wikihiero-load-error' => 'Erro de carga!',
 	'wikihiero-category-A' => 'A: O homem e suas ocupações',
 	'wikihiero-category-B' => 'B: A mulher e suas ocupações',
 	'wikihiero-category-C' => 'C: Divindades antropomorfas',
@@ -1074,6 +1135,19 @@ $messages['pt'] = array(
 	'wikihiero-category-I' => 'I: Anfíbios, répteis, etc.',
 	'wikihiero-category-K' => 'K: Peixes e partes de peixes',
 	'wikihiero-category-L' => 'L: Invertebrados',
+	'wikihiero-category-M' => 'M: Árvores e plantas',
+	'wikihiero-category-N' => 'N: Céu, terra, água',
+	'wikihiero-category-O' => 'O: Edifícios, partes de edifícios, etc.',
+	'wikihiero-category-P' => 'P: Navios e partes de navios',
+	'wikihiero-category-Q' => 'Q: Domésticos e mobília funerária',
+	'wikihiero-category-R' => 'R: Mobília de templos e emblemas sagrados',
+	'wikihiero-category-S' => 'S: Coroas, vestidos, cetros, etc.',
+	'wikihiero-category-T' => 'T: Guerra, caça, açougue',
+	'wikihiero-category-U' => 'Agricultura, artesanato e profissões',
+	'wikihiero-category-V' => 'V: Corda, fibra, cestos, bolsas, etc.',
+	'wikihiero-category-W' => 'W: Vasos de pedra e barro',
+	'wikihiero-category-X' => 'X: Pães e bolos',
+	'wikihiero-category-Y' => 'Y: Escritos, jogos, música',
 	'wikihiero-category-Z' => 'Z: Traços e formas geométricas',
 	'wikihiero-category-Aa' => 'Aa: Signos não classificados',
 );
