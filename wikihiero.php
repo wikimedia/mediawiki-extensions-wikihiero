@@ -65,6 +65,7 @@ $wgResourceModules['ext.wikihiero.Special'] = array(
 	),
 );
 
+$wgCompiledFiles[] = MWInit::extCompiledPath( 'wikihiero/data/tables.php' );
 
 // Because <hiero> tag is used rarely, we don't need to load its body on every hook call,
 // so we keep our simple hook handlers here.

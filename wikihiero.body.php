@@ -69,17 +69,30 @@ class WikiHiero {
 	}
 
 	/**
-	 * Loads 
+	 * Loads hieroglyph information
 	 */
 	private static function loadData() {
 		if ( self::$phonemes ) {
 			return;
 		}
-		require_once( dirname( __FILE__ ) . '/wh_list.php' );
-		self::$phonemes = $wh_phonemes;
-		self::$prefabs = $wh_prefabs;
-		self::$files = $wh_files;
-		self::$textConv = $wh_text_conv;
+		if ( MWInit::isHipHop() ) {
+			require_once( MWInit::extCompiledPath( 'wikihiero/data/tables.php' ) );
+			self::$phonemes = $wh_phonemes;
+			self::$prefabs = $wh_prefabs;
+			self::$files = $wh_files;
+			self::$textConv = $wh_text_conv;
+		} else {
+			$fileName = dirname( __FILE__ ) . '/data/tables.ser';
+			$stream = file_get_contents( $fileName );
+			if ( !$stream ) {
+				throw new MWException( "Cannot open serialized hieroglyph data file $fileName!" );
+			}
+			$data = unserialize( $stream );
+			self::$phonemes = $data['wh_phonemes'];
+			self::$prefabs = $data['wh_prefabs'];
+			self::$files = $data['wh_files'];
+			self::$textConv = $data['wh_text_conv'];
+		}
 	}
 
 	/**

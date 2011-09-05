@@ -69,16 +69,27 @@ class GenerateWikiHieroTables extends Maintenance {
 		$wh_prefabs .= ");";
 		$wh_files .= ");";
 
-		$file = fopen( 'wh_list.php', 'w+' );
+		$file = fopen( 'data/tables.php', 'w+' );
 		fwrite( $file, "<?php\n\n" );
 		fwrite( $file, '// File created by generateTables.php version ' . WIKIHIERO_VERSION . "\n" );
 		fwrite( $file, '// ' . date( 'Y-m-d \a\t H:i' ) . "\n\n" );
 		fwrite( $file, "$wh_prefabs\n\n$wh_files\n\n{$this->moreTables}\n" );
 		fclose( $file );
+
+		$this->serialize();
+	}
+
+	private function serialize() {
+		require( 'data/tables.php' );
+		$result = array();
+		foreach ( array( 'wh_phonemes', 'wh_prefabs', 'wh_files', 'wh_text_conv' ) as $varName ) {
+			$result[$varName] = $$varName;
+		}
+		file_put_contents( 'data/tables.ser', serialize( $result ) );
 	}
 
 	var $moreTables = '
-$wh_phonemes	=	array(	//	convertion	table	phoneme	->	gardiner	code
+$wh_phonemes	=	array(	//	convertion	table	phoneme	->	Gardiner	code
 	"mSa"	=>	"A12",
 	"xr"	=>	"A15",
 	"Xrd"	=>	"A17",

@@ -1,7 +1,7 @@
 <?php
 
 // File created by generateTables.php version 1.0alpha
-// 2011-08-21 at 12:00
+// 2011-09-05 at 18:04
 
 $wh_prefabs = array(
   "a&A1",
@@ -1118,7 +1118,7 @@ $wh_files   = array(
 );
 
 
-$wh_phonemes	=	array(	//	convertion	table	phoneme	->	gardiner	code
+$wh_phonemes	=	array(	//	convertion	table	phoneme	->	Gardiner	code
 	"mSa"	=>	"A12",
 	"xr"	=>	"A15",
 	"Xrd"	=>	"A17",
