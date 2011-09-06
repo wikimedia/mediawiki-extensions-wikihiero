@@ -59,7 +59,11 @@ $messages['qqq'] = array(
  */
 $messages['af'] = array(
 	'wikihiero-desc' => "Maak 'n <code>&lt;hiero&gt;</code> etiket beskikbaar vir die vertoon van [[Special:Hieroglyphs|hierogliewe]]",
+	'wikihiero-input' => 'Invoerteks',
 	'wikihiero-result' => 'Resultaat',
+	'wikihiero-load-error' => 'Fout met die laai!',
+	'wikihiero-category-A' => 'A: Die man en sy beroepe',
+	'wikihiero-category-Aa' => 'Aa: Ongeklassifiseerd',
 );
 
 /** Gheg Albanian (Gegë)
@@ -448,6 +452,7 @@ $messages['eu'] = array(
 );
 
 /** Persian (فارسی)
+ * @author Ebraminio
  * @author Huji
  * @author Mjbmr
  */
@@ -477,7 +482,7 @@ $messages['fa'] = array(
 	'wikihiero-category-Q' => 'Q: دام‌های اهلی و مبلمان تدفینی',
 	'wikihiero-category-R' => 'R: مبلمان معبد و نمادهای مقدس',
 	'wikihiero-category-S' => 'S: تاج‌ها، لباس، شیار‌ها،‌ و غیره.',
-	'wikihiero-category-T' => 'T: جنگ ، شکار ، گوشت‌فروشی',
+	'wikihiero-category-T' => 'T: جنگ، شکار، گوشت‌فروشی',
 	'wikihiero-category-U' => 'U: کشاورزی، صنایع دستی و مشاغل',
 	'wikihiero-category-V' => 'V: طناب، فیبر، سبد، کیف، و غیره.',
 	'wikihiero-category-W' => 'W: عروق از سنگ و سفال',
@@ -1111,6 +1116,38 @@ Opisy znaczników znajdziesz [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax
  */
 $messages['pms'] = array(
 	'wikihiero-desc' => 'A gionta ël tag <code>&lt;hiero&gt;</code> për visualisé dij [[Special:Hieroglyphs|geroglif]]',
+	'hieroglyphs' => 'Preuva marcador geroglìfich',
+	'wikihiero-special-page-text' => 'Dòvra sta pagina për prové ël marcador WikiHiero.
+Varda [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax ambelessì] për la descrission dël marcador.',
+	'wikihiero-input' => "Test d'ingress",
+	'wikihiero-result' => 'Arzultà',
+	'wikihiero-load-error' => 'Eror ëd cariagi!',
+	'wikihiero-category-A' => "A: L'òm e soe ocupassion",
+	'wikihiero-category-B' => 'A: La fomna e soe ocupassion',
+	'wikihiero-category-C' => 'C: Divinità antropomòrfe',
+	'wikihiero-category-D' => 'D: Part dël còrp uman',
+	'wikihiero-category-E' => 'E: Mamìfer',
+	'wikihiero-category-F' => 'F: Part dij Mamìfer',
+	'wikihiero-category-G' => 'G: Osej',
+	'wikihiero-category-H' => "H: Part dj'osej",
+	'wikihiero-category-I' => 'I: Anfibi, Rétij, etc.',
+	'wikihiero-category-K' => 'K: Pess e part dij pess',
+	'wikihiero-category-L' => 'L: Anvërtebrà e animaj pi cit',
+	'wikihiero-category-M' => 'M: Erbo e piante',
+	'wikihiero-category-N' => 'N: Ciel, tèra, eva',
+	'wikihiero-category-O' => 'O: Costrussion, part ëd costrussion, etc.',
+	'wikihiero-category-P' => 'P: nav e part ëd nav',
+	'wikihiero-category-Q' => 'Q: Aredament doméstich e funerari',
+	'wikihiero-category-R' => 'R: aredament ëd templ e ornament sacr',
+	'wikihiero-category-S' => 'S: Coron-e, vestimente, baston, etc.',
+	'wikihiero-category-T' => 'T: Guèra, cassa, masselerìa',
+	'wikihiero-category-U' => 'U: Agricoltura, artigianà e profession',
+	'wikihiero-category-V' => 'V: Corda, fibra, sëste, borse, etc.',
+	'wikihiero-category-W' => 'W: Vas ëd pera e teracheuita',
+	'wikihiero-category-X' => 'X: Pan e doss',
+	'wikihiero-category-Y' => 'Y: Scrit, gieugh, mùsica',
+	'wikihiero-category-Z' => 'Z: Sbòss, figure geométriche, etc.',
+	'wikihiero-category-Aa' => 'Aa: Pa classificà',
 );
 
 /** Portuguese (Português)
@@ -1215,6 +1252,28 @@ $messages['ro'] = array(
  */
 $messages['roa-tara'] = array(
 	'wikihiero-desc' => "Ause 'u tag <code>&lt;hiero&gt;</code> pe visualizzà 'a [[Special:Hieroglyphs|hieroglife]]",
+	'wikihiero-input' => 'Teste de input:',
+	'wikihiero-result' => 'Resultate',
+	'wikihiero-load-error' => 'Errore de carecamende!',
+	'wikihiero-category-A' => "A: L'omme e l'occupaziune sue",
+	'wikihiero-category-B' => "A: 'A femmene e l'occupaziune sue",
+	'wikihiero-category-C' => 'C: Divinità andropomorfeche',
+	'wikihiero-category-D' => "D: Parte d'u cuèrpe umane",
+	'wikihiero-category-E' => 'E: Mammifere',
+	'wikihiero-category-F' => 'F: Parte de mammifere',
+	'wikihiero-category-G' => 'G: Acidde',
+	'wikihiero-category-H' => 'H: Parte de acidde',
+	'wikihiero-category-I' => 'I: Anfibbie, rettile, etc.',
+	'wikihiero-category-K' => 'K: Pisce e parte de le pisce',
+	'wikihiero-category-L' => 'L: Invertebbrate e mene animale',
+	'wikihiero-category-M' => 'M: Arvule e chiande',
+	'wikihiero-category-N' => 'N: Ciele, terre, acque',
+	'wikihiero-category-O' => 'O: Costruziune, parte de costruziune, etc.',
+	'wikihiero-category-P' => 'P: Nave e parte de nave',
+	'wikihiero-category-Q' => 'Q: Mobbele domestece e funerarie',
+	'wikihiero-category-R' => 'R: Mobbele de le tembie e embleme sacre',
+	'wikihiero-category-S' => 'S: Corone, vestite, doghe, etc.',
+	'wikihiero-category-T' => 'T: Uerre, cacce, macellerie',
 );
 
 /** Russian (Русский)
@@ -1565,6 +1624,32 @@ Xem [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax hướng dẫn về cú 
 	'wikihiero-input' => 'Văn bản nhập',
 	'wikihiero-result' => 'Kết quả',
 	'wikihiero-load-error' => 'Lỗi tải!',
+	'wikihiero-category-A' => 'A: Đàn ông và các nghề đàn ông',
+	'wikihiero-category-B' => 'B: Đàn bà và các nghề đàn bà',
+	'wikihiero-category-C' => 'C: Thần hình người',
+	'wikihiero-category-D' => 'D: Phần của cơ thể con người',
+	'wikihiero-category-E' => 'E: Động vật hữu nhũ',
+	'wikihiero-category-F' => 'F: Phần của động vật hữu nhũ',
+	'wikihiero-category-G' => 'G: Chim',
+	'wikihiero-category-H' => 'H: Phần chim',
+	'wikihiero-category-I' => 'I: Động vật lưỡng cư, bò sát, v.v.',
+	'wikihiero-category-K' => 'K: Cá và phần cá',
+	'wikihiero-category-L' => 'L: Động vật không xương sống hoặc không quan trọng',
+	'wikihiero-category-M' => 'M: Cây và thực vật',
+	'wikihiero-category-N' => 'N: Trời, đất, nước',
+	'wikihiero-category-O' => 'O: Tòa nhà, phần của tòa nhà, v.v.',
+	'wikihiero-category-P' => 'P: Tàu thủy và phần của tàu thủy',
+	'wikihiero-category-Q' => 'Q: Đồ đạc nhà cửa và đồ đạc đám ma',
+	'wikihiero-category-R' => 'R: Đồ đạc đền thờ và biểu tượng thần thánh',
+	'wikihiero-category-S' => 'S: Mũ miện, quần áo, quyền trượng, v.v.',
+	'wikihiero-category-T' => 'T: Chiến tranh, săn, làm thịt',
+	'wikihiero-category-U' => 'U: Nông nghiệp, nghề thủ công, và nghề nghiệp',
+	'wikihiero-category-V' => 'V: Dây, sợi, rổ, bao, v.v.',
+	'wikihiero-category-W' => 'W: Bình đá và bình gốm',
+	'wikihiero-category-X' => 'X: Bánh',
+	'wikihiero-category-Y' => 'Y: Văn bản, trò chơi, âm nhạc',
+	'wikihiero-category-Z' => 'Z: Nét, hình hình học, v.v.',
+	'wikihiero-category-Aa' => 'Aa: Không phân loại',
 );
 
 $messages['wa'] = array(
