@@ -630,6 +630,7 @@ $messages['gsw'] = array(
 /** Hebrew (עברית)
  * @author Amire80
  * @author Rotem Liss
+ * @author Dan Elharrar
  */
 $messages['he'] = array(
 	'wikihiero-desc' => 'הוספת תג <code>&lt;hiero&gt;</code> להצגת [[Special:Hieroglyphs|היירוגליפים]]',
