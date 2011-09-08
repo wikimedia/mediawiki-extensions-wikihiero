@@ -62,9 +62,12 @@ class SpecialHieroglyphs extends SpecialPage {
 			. Html::closeElement( 'form' )
 		);
 
+		$out->addHTML( '<table><tr><td>' );
 		$out->addHTML( '<div class="mw-hiero-list">' );
 		$out->addHTML( $this->listHieroglyphs() );
-		$out->addHTML( '</div>' );
+		$out->addHTML( '</div></td><td>' );
+		$out->addHTML( $this->getToc() );
+		$out->addHTML( '</td></tr></table>' );
 	}
 
 	/**
@@ -122,6 +125,32 @@ class SpecialHieroglyphs extends SpecialPage {
 		}
 		$wgMemc->set( $key, $html, self::CACHE_EXPIRY );
 		return $html;
+	}
+
+	private function getToc() {
+		$html = '<table class="toc mw-hiero-toc"><tr>';
+		$count = 0;
+		$cats = $this->getCategories();
+		$end = array_pop( $cats );
+		foreach ( $cats as $cat ) {
+			$html .= '<td>'
+				. Html::element( 'a',
+					array( 'href' => "#cat-$cat", 'title' => wfMessage( "wikihiero-category-$cat" )->text() ),
+					$cat
+				)
+				. '</td>';
+			$count++;
+			if ( $count % 5 == 0 ) {
+				$html .= '</tr><tr>';
+			}
+		}
+		$html .= '</tr><tr><td colspan="5">'
+				. Html::element( 'a',
+					array( 'href' => "#cat-$end", 'title' => wfMessage( "wikihiero-category-$end" )->text() ),
+					$end
+				)
+				. '</td>';
+		return $html . '</tr></table>';
 	}
 
 	/**

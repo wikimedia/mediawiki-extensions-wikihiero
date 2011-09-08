@@ -2,4 +2,9 @@
 	overflow: auto;
 	height: 400px;
 	margin-top: 1em;
+	border: 1px solid silver;
+}
+
+.mw-hiero-toc {
+	text-align: center;
 }
