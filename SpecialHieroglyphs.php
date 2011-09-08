@@ -21,6 +21,20 @@ class SpecialHieroglyphs extends SpecialPage {
 	const HIEROGLYPHS_PER_ROW = 10;
 	const CACHE_EXPIRY = 86400; // 1 day
 
+	private $hiero;
+	private $syntaxHelp = array(
+		array( 'code' => '-', 'message' => 'wikihiero-separator', 'example' => 'A1 - B1' ),
+		array( 'code' => ':', 'message' => 'wikihiero-superposition', 'example' => 'p:t' ),
+		array( 'code' => ':', 'message' => 'wikihiero-juxtaposition', 'example' => 'p*t' ),
+		array( 'code' => '!', 'message' => 'wikihiero-eol', 'example' => 'A1-B1 ! C1-D1' ),
+	);
+	private $helpColumns = array(
+		'code',
+		'meaning',
+		'example',
+		'result',
+	);
+
 	public function __construct() {
 		parent::__construct( 'Hieroglyphs' );
 	}
@@ -62,6 +76,8 @@ class SpecialHieroglyphs extends SpecialPage {
 			. Html::closeElement( 'form' )
 		);
 
+		$this->hiero = new WikiHiero();
+
 		$out->addHTML( '<table><tr><td>' );
 		$out->addHTML( '<div class="mw-hiero-list">' );
 		$out->addHTML( $this->listHieroglyphs() );
@@ -86,15 +102,25 @@ class SpecialHieroglyphs extends SpecialPage {
 			return $html;
 		}
 		$html = '';
-		$hiero = new WikiHiero();
-		$files = array_keys( $hiero->getFiles() );
+
+		$html .= $this->getHeading( 'wikihiero-syntax', 'syntax' );
+		$html .= '<table class="wikitable"><tr>';
+		foreach ( $this->helpColumns as $col ) {
+			$html .= '<th>' . wfMessage( "wikihiero-th-$col" )->escaped() . '</th>';
+		}
+		$html .= '</tr>';
+		foreach ( $this->syntaxHelp as $e ) {
+			$html .= $this->getSyntaxHelp( $e['code'], $e['message'], $e['example'] );
+		}
+		$html .= "</table>\n";
+
+		$files = array_keys( $this->hiero->getFiles() );
 		natsort( $files );
 
 		foreach ( $this->getCategories() as $cat ) {
 			$alnum = strlen( $cat ) == 1;
-			$html .= "<h2 id=\"cat-$cat\">" . wfMessage( "wikihiero-category-$cat" )->escaped() . "</h2>
-<table class=\"wikitable\">
-";
+			$html .= $this->getHeading( "wikihiero-category-$cat", "cat-$cat" );
+			$html .= "<table class=\"wikitable\">\n";
 			$upperRow = $lowerRow = '';
 			$columns = 0;
 			$rows = 0;
@@ -105,7 +131,7 @@ class SpecialHieroglyphs extends SpecialPage {
 				if ( strpos( $code, $cat ) !== 0 || ( $alnum && !ctype_digit( $code[1] ) ) ) {
 					continue; // wrong category
 				}
-				$upperRow .= '<td>' . $hiero->renderHtml( $code ) . '</td>';
+				$upperRow .= '<td>' . $this->hiero->renderHtml( $code ) . '</td>';
 				$lowerRow .= '<th>' . htmlspecialchars( $code ) . '</th>';
 				$columns++;
 				if ( $columns == self::HIEROGLYPHS_PER_ROW ) {
@@ -128,11 +154,22 @@ class SpecialHieroglyphs extends SpecialPage {
 	}
 
 	private function getToc() {
-		$html = '<table class="toc mw-hiero-toc"><tr>';
+		$html = '<table class="toc mw-hiero-toc">';
+
+		$syntax = wfMessage( 'wikihiero-syntax' )->text();
+		$html .= '<tr><td colspan="5">'
+				. Html::element( 'a',
+					array( 'href' => "#syntax", 'title' => $syntax ),
+					$syntax
+				)
+				. '</td></tr>';
 		$count = 0;
 		$cats = $this->getCategories();
 		$end = array_pop( $cats );
 		foreach ( $cats as $cat ) {
+			if ( $count % 5 == 0 ) {
+				$html .= '<tr>';
+			}
 			$html .= '<td>'
 				. Html::element( 'a',
 					array( 'href' => "#cat-$cat", 'title' => wfMessage( "wikihiero-category-$cat" )->text() ),
@@ -141,16 +178,16 @@ class SpecialHieroglyphs extends SpecialPage {
 				. '</td>';
 			$count++;
 			if ( $count % 5 == 0 ) {
-				$html .= '</tr><tr>';
+				$html .= '</tr>';
 			}
 		}
-		$html .= '</tr><tr><td colspan="5">'
+		$html .= '<tr><td colspan="5">'
 				. Html::element( 'a',
 					array( 'href' => "#cat-$end", 'title' => wfMessage( "wikihiero-category-$end" )->text() ),
 					$end
 				)
-				. '</td>';
-		return $html . '</tr></table>';
+				. '</td></tr></table>';
+		return $html;
 	}
 
 	/**
@@ -165,5 +202,17 @@ class SpecialHieroglyphs extends SpecialPage {
 		}
 		$res[] = 'Aa';
 		return $res;
+	}
+
+	private function getHeading( $message, $anchor ) {
+		return "<h2 id=\"$anchor\">" . wfMessage( $message )->escaped() . "</h2>\n";
+	}
+
+	private function getSyntaxHelp( $code, $message, $example ) {
+		return '<tr><th>' . htmlspecialchars( $code ) . '</th><td>'
+			. wfMessage( $message )->escaped() . '</td><td>'
+			. '<code>' . htmlspecialchars( "<hiero>$example</hiero>" ) . '</code></td><td>'
+			. $this->hiero->renderHtml( $example )
+			. "</td></tr>\n";
 	}
  }

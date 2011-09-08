@@ -15,6 +15,15 @@ $messages['en'] = array(
 See [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax here] for markup description.',
 	'wikihiero-input' => 'Input text',
 	'wikihiero-result' => 'Result',
+	'wikihiero-syntax' => 'Syntax',
+	'wikihiero-th-code' => 'Code',
+	'wikihiero-th-meaning' => 'Meaning',
+	'wikihiero-th-example' => 'Example code',
+	'wikihiero-th-result' => 'Result',
+	'wikihiero-separator' => 'Separator',
+	'wikihiero-eol' => 'End of line',
+	'wikihiero-superposition' => 'Subdivision',
+	'wikihiero-juxtaposition' => 'Juxtaposition',
 	'wikihiero-load-error' => 'Load error!',
 	'wikihiero-category-A' => 'A: Man and his occupations',
 	'wikihiero-category-B' => 'B: Woman and her occupations',
@@ -192,6 +201,11 @@ $messages['be-tarask'] = array(
  */
 $messages['bg'] = array(
 	'wikihiero-desc' => 'Добавя етикет <code>&lt;hiero&gt;</code> за показване на [[Special:Hieroglyphs|йероглифи]]',
+	'wikihiero-syntax' => 'Синтаксис',
+	'wikihiero-eol' => 'Край на реда',
+	'wikihiero-separator' => 'Сепаратор',
+	'wikihiero-superposition' => 'Разделител',
+	'wikihiero-juxtaposition' => 'Премятане',
 	'wikihiero-category-A' => 'A: Мъжът и дейностите му',
 	'wikihiero-category-B' => 'B: Жената и дейностите й',
 	'wikihiero-category-C' => 'C: Антропоморфни божества',
@@ -212,6 +226,11 @@ $messages['bg'] = array(
  */
 $messages['br'] = array(
 	'wikihiero-desc' => 'Ouzhpennañ a ra ar valizenn <code>&lt;hiero&gt;</code> evit embann ar [[Special:Hieroglyphs|hieroglifoù]].',
+	'wikihiero-syntax' => 'Ereadur',
+	'wikihiero-eol' => 'Dibenn al linenn',
+	'wikihiero-separator' => 'Dispartier',
+	'wikihiero-superposition' => 'Isrann',
+	'wikihiero-juxtaposition' => 'Kenstok',
 	'wikihiero-category-A' => 'A: Мъжът и дейностите му',
 	'wikihiero-category-B' => 'B: Жената и дейностите й',
 	'wikihiero-category-C' => 'C: Антропоморфни божества',
@@ -239,6 +258,11 @@ $messages['bs'] = array(
  */
 $messages['ca'] = array(
 	'wikihiero-desc' => "Afegeix l'etiqueta <code>&lt;hiero&gt;</code> per a visualitzar [[Special:Hieroglyphs|jeroglífics]]",
+	'wikihiero-syntax' => 'Sintaxi',
+	'wikihiero-eol' => 'Fi de línia',
+	'wikihiero-separator' => 'Separador',
+	'wikihiero-superposition' => 'Subdivisió',
+	'wikihiero-juxtaposition' => 'Juxtaposició',
 	'wikihiero-category-A' => 'A: L\'home i les seves ocupacions',
 	'wikihiero-category-B' => 'B: La dona i les seves ocupacions',
 	'wikihiero-category-C' => 'C: Deitats antropomòrfiques',
@@ -259,6 +283,11 @@ $messages['ca'] = array(
  */
 $messages['cs'] = array(
 	'wikihiero-desc' => 'Přidává značku <code>&lt;hiero&gt;</code> pro zobrazování [[Special:Hieroglyphs|hieroglyfů]]',
+	'wikihiero-syntax' => 'Syntaxe',
+	'wikihiero-eol' => 'Konec řádka',
+	'wikihiero-separator' => 'Oddělovač',
+	'wikihiero-superposition' => 'Podrozdělení',
+	'wikihiero-juxtaposition' => 'Juxtapozice',
 	'wikihiero-category-A' => 'A: Muž a jeho práce',
 	'wikihiero-category-B' => 'B: Žena a její práce',
 	'wikihiero-category-C' => 'C: Antropomorfní božstva',
@@ -328,6 +357,11 @@ Siehe [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax hier] für eine Markup
 	'wikihiero-input' => 'Eingabetext',
 	'wikihiero-result' => 'Ergebnis',
 	'wikihiero-load-error' => 'Ladefehler!',
+	'wikihiero-syntax' => 'Syntax',
+	'wikihiero-eol' => 'Ende der Zeile',
+	'wikihiero-separator' => 'Trennzeichen',
+	'wikihiero-superposition' => 'Untereinanderstellung',
+	'wikihiero-juxtaposition' => 'Nebeneinanderstellung',
 	'wikihiero-category-A' => 'A: Männer und ihre Beschäftigungen',
 	'wikihiero-category-B' => 'B: Frauen und ihre Beschäftigungen',
 	'wikihiero-category-C' => 'C: Menschenähnliche Gottheiten',
@@ -392,6 +426,11 @@ Vidu [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax ĉi tie] por priskribo 
 	'wikihiero-input' => 'Enmetu tekston',
 	'wikihiero-result' => 'Rezulto',
 	'wikihiero-load-error' => 'Eraro de ŝarĝado!',
+	'wikihiero-syntax' => 'Sintakso',
+	'wikihiero-eol' => 'Linifino',
+	'wikihiero-separator' => 'Disigilo',
+	'wikihiero-superposition' => 'Subdivido',
+	'wikihiero-juxtaposition' => 'Apudmeto',
 	'wikihiero-category-A' => 'A: Viro kaj siaj okupoj',
 	'wikihiero-category-B' => 'B: Virino kaj siaj okupoj',
 	'wikihiero-category-C' => 'C: Homformaj diuloj',
@@ -425,6 +464,11 @@ Vidu [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax ĉi tie] por priskribo 
  */
 $messages['es'] = array(
 	'wikihiero-desc' => 'Añade elemento <code>&lt;hiero&gt;</code> para mostrar un [[Special:Hieroglyphs|jeroglífico]]',
+	'wikihiero-syntax' => 'Sintaxis',
+	'wikihiero-eol' => 'Fin de línea',
+	'wikihiero-separator' => 'Separador',
+	'wikihiero-superposition' => 'Dispårtaedje',
+	'wikihiero-juxtaposition' => 'Yuxtaposición',
 	'wikihiero-category-A' => 'A: El hombre y sus oficios',
 	'wikihiero-category-B' => 'B: La mujer y sus oficios',
 	'wikihiero-category-C' => 'C: Dioses antropomórficos',
@@ -514,6 +558,11 @@ Voyez [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax ici] la description du
 	'wikihiero-input' => 'Texte entré',
 	'wikihiero-result' => 'Résultat',
 	'wikihiero-load-error' => 'Erreur de chargement!',
+	'wikihiero-syntax' => 'Syntaxe',
+	'wikihiero-eol' => 'Fin de ligne',
+	'wikihiero-separator' => 'Separateur',
+	'wikihiero-superposition' => 'Subdivision',
+	'wikihiero-juxtaposition' => 'Juxtaposition',
 	'wikihiero-category-A' => 'A: Hommes et leurs occupations',
 	'wikihiero-category-B' => 'B: Femmes et leurs occupations',
 	'wikihiero-category-C' => 'C: Divinités',
@@ -716,6 +765,11 @@ $messages['hu'] = array(
  */
 $messages['ia'] = array(
 	'wikihiero-desc' => 'Adde le etiquetta <code>&lt;hiero&gt;</code> pro inserer [[Special:Hieroglyphs|hieroglyphos]]',
+	'wikihiero-syntax' => 'Syntaxe',
+	'wikihiero-eol' => 'Fin de linea',
+	'wikihiero-separator' => 'Separator',
+	'wikihiero-superposition' => 'Subdivision',
+	'wikihiero-juxtaposition' => 'Juxtaposition',
 );
 
 /** Indonesian (Bahasa Indonesia)
@@ -754,6 +808,10 @@ $messages['it'] = array(
 	'wikihiero-input' => 'Inserisci il testo',
 	'wikihiero-result' => 'Risultato',
 	'wikihiero-load-error' => 'Errore di caricamento!',
+	'wikihiero-syntax' => 'Sintassi',
+	'wikihiero-eol' => 'Fine riga',
+	'wikihiero-separator' => 'Separatore',
+	'wikihiero-superposition' => 'Suddivisione',
 	'wikihiero-category-A' => "A: L'uomo e le sue occupazioni",
 	'wikihiero-category-B' => 'B: La donna e le sue occupazioni',
 	'wikihiero-category-C' => 'C: Divinità antropomorfe',
@@ -825,6 +883,11 @@ $messages['ka'] = array(
 );
 
 $messages['kk'] = array(
+	'wikihiero-syntax' => 'Синтаксис',
+	'wikihiero-eol' => 'Жол аяғы',
+	'wikihiero-separator' => 'Айырғыш',
+	'wikihiero-superposition' => 'Төменгі бөлім',
+	'wikihiero-juxtaposition' => 'Тығыз жақындату',
 	'wikihiero-category-A' => 'A: Ер адам және оның шұғылдануы',
 	'wikihiero-category-B' => 'B: Әйел адам және оның шұғылдануы',
 	'wikihiero-category-C' => 'C: Адам пішімді құдіреттер',
@@ -862,6 +925,11 @@ $messages['ksh'] = array(
 );
 
 $messages['la'] = array(
+	'wikihiero-syntax' => 'Syntaxis',
+	'wikihiero-eol' => 'Finis versus',
+	'wikihiero-separator' => 'Separator',
+	'wikihiero-superposition' => 'Subdivisio',
+	'wikihiero-juxtaposition' => 'Iuxtapositio',
 	'wikihiero-category-A' => 'A: Vir et negotia sua',
 	'wikihiero-category-B' => 'B: Femina et negotia sua',
 	'wikihiero-category-C' => 'C: Numina humanus aspectus',
@@ -1036,6 +1104,11 @@ Zie ook de [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax gebruiksaanwijzin
 	'wikihiero-input' => 'Invoertekst',
 	'wikihiero-result' => 'Resultaat',
 	'wikihiero-load-error' => 'Fout bij het laden!',
+	'wikihiero-syntax' => 'Syntax',
+	'wikihiero-eol' => 'Einde van regel',
+	'wikihiero-separator' => 'Scheidingsteken',
+	'wikihiero-superposition' => 'Onderverdeling',
+	'wikihiero-juxtaposition' => 'Nevenschikking',
 	'wikihiero-category-A' => 'A: De man en zijn bezigheden',
 	'wikihiero-category-B' => 'B: De vrouw en haar bezigheden',
 	'wikihiero-category-C' => 'C: Anthropomorfe Goden',
@@ -1188,6 +1261,11 @@ $messages['pt'] = array(
 	'wikihiero-input' => 'Texto de entrada',
 	'wikihiero-result' => 'Resultado',
 	'wikihiero-load-error' => 'Erro de carga!',
+	'wikihiero-syntax' => 'Sintaxe',
+	'wikihiero-eol' => 'Fim de linha',
+	'wikihiero-separator' => 'Separador',
+	'wikihiero-superposition' => 'Subdivisão',
+	'wikihiero-juxtaposition' => 'Justaposição',
 	'wikihiero-category-A' => 'A: O homem e suas ocupações',
 	'wikihiero-category-B' => 'B: A mulher e suas ocupações',
 	'wikihiero-category-C' => 'C: Divindades antropomorfas',
@@ -1349,6 +1427,11 @@ $messages['ru'] = array(
 	'wikihiero-input' => 'Входной текст:',
 	'wikihiero-result' => 'Результат',
 	'wikihiero-load-error' => 'Ошибка загрузки!',
+	'wikihiero-syntax' => 'Синтаксис',
+	'wikihiero-eol' => 'Перевод строки',
+	'wikihiero-separator' => 'Разделитель',
+	'wikihiero-superposition' => 'Вертикальная группировка',
+	'wikihiero-juxtaposition' => 'Горизонтальная группировка',
 	'wikihiero-category-A' => 'A: Мужчина и его занятия',
 	'wikihiero-category-B' => 'B: Женщина и её занятия',
 	'wikihiero-category-C' => 'C: Антропоморфные боги',
@@ -1415,6 +1498,11 @@ $messages['si'] = array(
  */
 $messages['sk'] = array(
 	'wikihiero-desc' => 'Pridáva značku <code>&lt;hiero&gt;</code> na zobrazovanie [[Special:Hieroglyphs|hieroglyfov]]',
+	'wikihiero-syntax' => 'Syntax',
+	'wikihiero-eol' => 'Koniec riadka',
+	'wikihiero-separator' => 'Oddeľovač',
+	'wikihiero-superposition' => 'Podrozdelenie',
+	'wikihiero-juxtaposition' => 'Juxtapozícia',
 	'wikihiero-category-A' => 'A: Muž a jeho práce',
 	'wikihiero-category-B' => 'B: Žena a jej práce',
 	'wikihiero-category-C' => 'C: Antropomorfné božstvá',
@@ -1488,6 +1576,11 @@ $messages['sq'] = array(
  */
 $messages['sr-ec'] = array(
 	'wikihiero-desc' => 'Додаје <code>&lt;hiero&gt;</code> ознаку за приказ [[Special:Hieroglyphs|хијероглифа]].',
+	'wikihiero-syntax' => 'Синтакса',
+	'wikihiero-eol' => 'Крај реда',
+	'wikihiero-separator' => 'Раздвајач',
+	'wikihiero-superposition' => 'Преметање',
+	'wikihiero-juxtaposition' => 'Прирашћивање',
 	'wikihiero-category-A' => 'A: Мушкарац и његова занимања',
 	'wikihiero-category-B' => 'B: Жена и њена занимања',
 	'wikihiero-category-C' => 'C: Човеколика божанства',
@@ -1534,6 +1627,11 @@ $messages['sv'] = array(
 	'wikihiero-input' => 'Inmatningstext',
 	'wikihiero-result' => 'Resultat',
 	'wikihiero-load-error' => 'Inläsningsfel!',
+	'wikihiero-syntax' => 'Syntax',
+	'wikihiero-eol' => 'Radbrytning',
+	'wikihiero-separator' => 'Separator',
+	'wikihiero-superposition' => 'Underavdelning',
+	'wikihiero-juxtaposition' => 'Juxaposition (stående förbindelse)',
 	'wikihiero-category-A' => 'A: Mannen och hans sysslor',
 	'wikihiero-category-B' => 'B: Kvinnan och hennes sysslor',
 	'wikihiero-category-C' => 'C: Gudomligheter',
@@ -1714,6 +1812,9 @@ Xem [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax hướng dẫn về cú 
 );
 
 $messages['wa'] = array(
+	'wikihiero-syntax' => 'Sintacse',
+	'wikihiero-eol' => 'Fén d\' roye',
+	'wikihiero-separator' => 'Separateur',
 	'wikihiero-category-A' => 'A: L\' ome et ses fijhaedjes',
 	'wikihiero-category-B' => 'B: Li feme et ses fijhaedjes',
 	'wikihiero-category-C' => 'C: Dius',
