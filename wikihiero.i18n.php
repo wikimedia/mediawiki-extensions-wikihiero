@@ -24,6 +24,7 @@ See [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax here] for markup descrip
 	'wikihiero-eol' => 'End of line',
 	'wikihiero-superposition' => 'Subdivision',
 	'wikihiero-juxtaposition' => 'Juxtaposition',
+	'wikihiero-mirror' => 'Mirror a hieroglyph',
 	'wikihiero-load-error' => 'Load error!',
 	'wikihiero-category-A' => 'A: Man and his occupations',
 	'wikihiero-category-B' => 'B: Woman and her occupations',

@@ -144,6 +144,11 @@ class WikiHiero {
 	 * @return string: a string to add to the stream
 	 */
 	private function renderGlyph( $glyph, $option = '' ) {
+		$imageClass = '';
+		if ( $this->isMirrored( $glyph ) ) {
+			$imageClass = 'class="mw-mirrored" ';
+		}
+		$glyph = $this->extractCode( $glyph );
 		if ( $glyph == ".." ) { // Render void block
 		  $width = WH_HEIGHT;
 		  return "<table class=\"mw-hiero-table\" style=\"width: {$width}px;\"><tr><td>&#160;</td></tr></table>";
@@ -170,16 +175,26 @@ class WikiHiero {
 		{
 		  $code = self::$phonemes[$glyph];
 		  if ( array_key_exists( $code, self::$files ) )
-			return "<img style='margin:" . WH_IMG_MARGIN . "px;' $option src='" . htmlspecialchars( WH_IMG_DIR . WH_IMG_PRE . "{$code}." . self::IMG_EXT ) . "' title='" . htmlspecialchars( "{$code} [{$glyph}]" ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
+			return "<img {$imageClass}style='margin:" . WH_IMG_MARGIN . "px;' $option src='" . htmlspecialchars( WH_IMG_DIR . WH_IMG_PRE . "{$code}." . self::IMG_EXT ) . "' title='" . htmlspecialchars( "{$code} [{$glyph}]" ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
 		  else
 			return "<font title='" . htmlspecialchars( $code ) . "'>" . htmlspecialchars( $glyph ) . "</font>";
 		}
 		elseif ( array_key_exists( $glyph, self::$files ) )
-		  return "<img style='margin:" . WH_IMG_MARGIN . "px;' $option src='" . htmlspecialchars( WH_IMG_DIR . WH_IMG_PRE . "{$glyph}." . self::IMG_EXT ) . "' title='" . htmlspecialchars( $glyph ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
+		  return "<img {$imageClass}style='margin:" . WH_IMG_MARGIN . "px;' $option src='" . htmlspecialchars( WH_IMG_DIR . WH_IMG_PRE . "{$glyph}." . self::IMG_EXT ) . "' title='" . htmlspecialchars( $glyph ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
 		else
 		  return htmlspecialchars( $glyph );
 	}
 
+	private function isMirrored( $glyph ) {
+		return substr( $glyph, -1 ) == '\\';
+	}
+
+	/**
+	 * Extracts hieroglyph code from glyph, e.g. A1\ --> A1
+	 */
+	private function extractCode( $glyph ) {
+		return preg_replace( '/\\\\.*$/', '', $glyph );
+	}
 	/**
 	 * Resize a glyph
 	 *
@@ -189,6 +204,7 @@ class WikiHiero {
 	 * @return size
 	 */
 	private function resizeGlyph( $item, $is_cartouche = false, $total = 0 ) {
+		$item = $this->extractCode( $item );
 		if ( array_key_exists( $item, self::$phonemes ) ) {
 			$glyph = self::$phonemes[$item];
 		} else {
@@ -322,7 +338,8 @@ class WikiHiero {
 			$block[$block_id][$item_id] = $hiero[$char];
 			$type = WH_TYPE_CODE;
 
-			} elseif ( ctype_alnum( $hiero[$char] ) || $hiero[$char] == '.' || $hiero[$char] == '<' || $hiero[$char] == '>' ) {
+			} elseif ( ctype_alnum( $hiero[$char] ) || $hiero[$char] == '.' || $hiero[$char] == '<'
+				|| $hiero[$char] == '>' || $hiero[$char] == '\\' ) {
 				if ( $type == WH_TYPE_END ) {
 					$block_id++;
 					$block[$block_id] = array();
