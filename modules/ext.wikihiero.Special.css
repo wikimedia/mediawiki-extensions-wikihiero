@@ -1,10 +1,10 @@
-.hiero-list {
+.mw-hiero-list {
 	overflow: auto;
 	height: 400px;
 	margin-top: 1em;
 	border: 1px solid silver;
 }
 
-.hiero-toc {
+.mw-hiero-toc {
 	text-align: center;
 }

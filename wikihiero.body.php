@@ -28,7 +28,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 }
 
 // D E F I N E S
-define( "WH_TABLE_S",      '<table class="hiero-table">' );
+define( "WH_TABLE_S",      '<table class="mw-hiero-table">' );
 define( "WH_TABLE_E",      '</table>' );
 define( "WH_TD_S",         '<td>' );
 define( "WH_TD_E",         '</td>' );
@@ -146,12 +146,12 @@ class WikiHiero {
 	private function renderGlyph( $glyph, $option = '' ) {
 		if ( $glyph == ".." ) { // Render void block
 		  $width = WH_HEIGHT;
-		  return "<table class=\"hiero-table\" style=\"width: {$width}px;\"><tr><td>&#160;</td></tr></table>";
+		  return "<table class=\"mw-hiero-table\" style=\"width: {$width}px;\"><tr><td>&#160;</td></tr></table>";
 		}
 		elseif ( $glyph == "." ) // Render half-width void block
 		{
 		  $width = WH_HEIGHT / 2;
-		  return "<table class=\"hiero-table\" style=\"width: {$width}px;\"><tr><td>&#160;</td></tr></table>";
+		  return "<table class=\"mw-hiero-table\" style=\"width: {$width}px;\"><tr><td>&#160;</td></tr></table>";
 		}
 		elseif ( $glyph == '<' ) // Render open cartouche
 		{
@@ -469,7 +469,7 @@ class WikiHiero {
 			$html .= WH_TABLE_S . "<tr>\n" . $tableContentHtml . "</tr>" . WH_TABLE_E;
 		}
 
-		return "<table class='hiero-table hiero-outer' dir='ltr'><tr><td>\n$html\n</td></tr></table>";
+		return "<table class='mw-hiero-table mw-hiero-outer' dir='ltr'><tr><td>\n$html\n</td></tr></table>";
 	}
 
 	/**

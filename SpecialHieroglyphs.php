@@ -79,7 +79,7 @@ class SpecialHieroglyphs extends SpecialPage {
 		$this->hiero = new WikiHiero();
 
 		$out->addHTML( '<table><tr><td>' );
-		$out->addHTML( '<div class="hiero-list">' );
+		$out->addHTML( '<div class="mw-hiero-list">' );
 		$out->addHTML( $this->listHieroglyphs() );
 		$out->addHTML( '</div></td><td>' );
 		$out->addHTML( $this->getToc() );
@@ -154,7 +154,7 @@ class SpecialHieroglyphs extends SpecialPage {
 	}
 
 	private function getToc() {
-		$html = '<table class="toc hiero-toc">';
+		$html = '<table class="toc mw-hiero-toc">';
 
 		$syntax = wfMessage( 'wikihiero-syntax' )->text();
 		$html .= '<tr><td colspan="5">'

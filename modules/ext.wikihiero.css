@@ -1,13 +1,13 @@
-.hiero-table {
+.mw-hiero-table {
 	border: 0 !important;
 	border-spacing: 0 !important;
 }
 
-.hiero-outer {
+.mw-hiero-outer {
 	display: inline;
 }
 
-.hiero-table td {
+.mw-hiero-table td {
 	border: 0 !important;
 	padding: 0 !important;
 	text-align: center !important;
