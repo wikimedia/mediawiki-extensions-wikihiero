@@ -150,39 +150,40 @@ class WikiHiero {
 		}
 		$glyph = $this->extractCode( $glyph );
 		if ( $glyph == ".." ) { // Render void block
-		  $width = WH_HEIGHT;
-		  return "<table class=\"mw-hiero-table\" style=\"width: {$width}px;\"><tr><td>&#160;</td></tr></table>";
+			$width = WH_HEIGHT;
+			return "<table class=\"mw-hiero-table\" style=\"width: {$width}px;\"><tr><td>&#160;</td></tr></table>";
 		}
 		elseif ( $glyph == "." ) // Render half-width void block
 		{
-		  $width = WH_HEIGHT / 2;
-		  return "<table class=\"mw-hiero-table\" style=\"width: {$width}px;\"><tr><td>&#160;</td></tr></table>";
+			$width = WH_HEIGHT / 2;
+			return "<table class=\"mw-hiero-table\" style=\"width: {$width}px;\"><tr><td>&#160;</td></tr></table>";
 		}
 		elseif ( $glyph == '<' ) // Render open cartouche
 		{
-		  $height = intval( WH_HEIGHT * $this->scale / 100 );
-		  $code = self::$phonemes[$glyph];
-		  return "<img src='" . htmlspecialchars( WH_IMG_DIR . WH_IMG_PRE . "{$code}." . self::IMG_EXT ) . "' height='{$height}' title='" . htmlspecialchars( $glyph ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
+			$height = intval( WH_HEIGHT * $this->scale / 100 );
+			$code = self::$phonemes[$glyph];
+			return "<img src='" . htmlspecialchars( WH_IMG_DIR . WH_IMG_PRE . "{$code}." . self::IMG_EXT ) . "' height='{$height}' title='" . htmlspecialchars( $glyph ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
 		}
 		elseif ( $glyph == '>' ) // Render close cartouche
 		{
-		  $height = intval( WH_HEIGHT * $this->scale / 100 );
-		  $code = self::$phonemes[$glyph];
-		  return "<img src='" . htmlspecialchars( WH_IMG_DIR . WH_IMG_PRE . "{$code}." . self::IMG_EXT ) . "' height='{$height}' title='" . htmlspecialchars( $glyph ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
+			$height = intval( WH_HEIGHT * $this->scale / 100 );
+			$code = self::$phonemes[$glyph];
+			return "<img src='" . htmlspecialchars( WH_IMG_DIR . WH_IMG_PRE . "{$code}." . self::IMG_EXT ) . "' height='{$height}' title='" . htmlspecialchars( $glyph ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
 		}
 
 		if ( array_key_exists( $glyph, self::$phonemes ) )
 		{
-		  $code = self::$phonemes[$glyph];
-		  if ( array_key_exists( $code, self::$files ) )
-			return "<img {$imageClass}style='margin:" . WH_IMG_MARGIN . "px;' $option src='" . htmlspecialchars( WH_IMG_DIR . WH_IMG_PRE . "{$code}." . self::IMG_EXT ) . "' title='" . htmlspecialchars( "{$code} [{$glyph}]" ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
-		  else
-			return "<font title='" . htmlspecialchars( $code ) . "'>" . htmlspecialchars( $glyph ) . "</font>";
+			$code = self::$phonemes[$glyph];
+			if ( array_key_exists( $code, self::$files ) ) {
+				return "<img {$imageClass}style='margin:" . WH_IMG_MARGIN . "px;' $option src='" . htmlspecialchars( WH_IMG_DIR . WH_IMG_PRE . "{$code}." . self::IMG_EXT ) . "' title='" . htmlspecialchars( "{$code} [{$glyph}]" ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
+			} else {
+				return "<font title='" . htmlspecialchars( $code ) . "'>" . htmlspecialchars( $glyph ) . "</font>";
+			}
+		} elseif ( array_key_exists( $glyph, self::$files ) ) {
+			return "<img {$imageClass}style='margin:" . WH_IMG_MARGIN . "px;' $option src='" . htmlspecialchars( WH_IMG_DIR . WH_IMG_PRE . "{$glyph}." . self::IMG_EXT ) . "' title='" . htmlspecialchars( $glyph ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
+		} else {
+			return htmlspecialchars( $glyph );
 		}
-		elseif ( array_key_exists( $glyph, self::$files ) )
-		  return "<img {$imageClass}style='margin:" . WH_IMG_MARGIN . "px;' $option src='" . htmlspecialchars( WH_IMG_DIR . WH_IMG_PRE . "{$glyph}." . self::IMG_EXT ) . "' title='" . htmlspecialchars( $glyph ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
-		else
-		  return htmlspecialchars( $glyph );
 	}
 
 	private function isMirrored( $glyph ) {
@@ -208,7 +209,7 @@ class WikiHiero {
 		if ( array_key_exists( $item, self::$phonemes ) ) {
 			$glyph = self::$phonemes[$item];
 		} else {
-		  $glyph = $item;
+			$glyph = $item;
 		}
 
 		$margin = 2 * WH_IMG_MARGIN;
@@ -246,20 +247,20 @@ class WikiHiero {
 	public function renderText( $hiero, $line = false ) {
 		$html = "";
 
-		if ( $line )
-		  $html .= "<hr />\n";
+		if ( $line ) {
+			$html .= "<hr />\n";
+		}
 
-		for ( $char = 0; $char < strlen( $hiero ); $char++ )
-		{
-		  if ( array_key_exists( $hiero[$char], self::$textConv ) )
-		  {
-			$html .= self::$textConv[$hiero[$char]];
-			if ( $hiero[$char] == '!' )
-			  if ( $line )
-				$html .= "<hr />\n";
-		  }
-		  else
-			$html .= $hiero[$char];
+		for ( $char = 0; $char < strlen( $hiero ); $char++ ) {
+			if ( array_key_exists( $hiero[$char], self::$textConv ) ) {
+				$html .= self::$textConv[$hiero[$char]];
+				if ( $hiero[$char] == '!' && $line ) {
+					$html .= "<hr />\n";
+				}
+			}
+			else {
+				$html .= $hiero[$char];
+			}
 		}
 
 		return $html;
@@ -274,13 +275,14 @@ class WikiHiero {
 	 * @return string: converted code
 	*/
 	public function renderHtml( $hiero, $scale = WH_SCALE_DEFAULT, $line = false ) {
-		if ( $scale != WH_SCALE_DEFAULT )
-		  $this->setScale( $scale );
+		if ( $scale != WH_SCALE_DEFAULT ) {
+			$this->setScale( $scale );
+		}
 
 		$html = "";
 
 		if ( $line ) {
-		  $html .= "<hr />\n";
+			$html .= "<hr />\n";
 		}
 
 		// ------------------------------------------------------------------------
@@ -312,7 +314,7 @@ class WikiHiero {
 						$type = WH_TYPE_NONE;
 					}
 				}
-			} else {// don't slit block if inside parenthesis
+			} else {// don't split block if inside parenthesis
 				if ( $hiero[$char] == '-' ) {
 					$item_id++;
 					$block[$block_id][$item_id] = '-';
@@ -392,7 +394,7 @@ class WikiHiero {
 					$is_cartouche = false;
 					$contentHtml .= WH_TD_S . self::renderGlyph( $code[0] ) . WH_TD_E;
 
-				} elseif ( $code[0] != "" ) { // assum is glyph or '..' or '.'
+				} elseif ( $code[0] != "" ) { // assume it's a glyph or '..' or '.'
 					$option = "height='" . $this->resizeGlyph( $code[0], $is_cartouche ) . "'";
 
 					$contentHtml .= WH_TD_S . self::renderGlyph( $code[0], $option ) . WH_TD_E;
