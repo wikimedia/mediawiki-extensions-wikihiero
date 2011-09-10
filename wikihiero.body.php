@@ -146,30 +146,26 @@ class WikiHiero {
 			$imageClass = 'class="mw-mirrored" ';
 		}
 		$glyph = $this->extractCode( $glyph );
-		if ( $glyph == ".." ) { // Render void block
+		if ( $glyph == '..' ) { // Render void block
 			$width = self::MAX_HEIGHT;
 			return "<table class=\"mw-hiero-table\" style=\"width: {$width}px;\"><tr><td>&#160;</td></tr></table>";
 		}
-		elseif ( $glyph == "." ) // Render half-width void block
-		{
+		elseif ( $glyph == '.' ) { // Render half-width void block
 			$width = self::MAX_HEIGHT / 2;
 			return "<table class=\"mw-hiero-table\" style=\"width: {$width}px;\"><tr><td>&#160;</td></tr></table>";
 		}
-		elseif ( $glyph == '<' ) // Render open cartouche
-		{
+		elseif ( $glyph == '<' ) { // Render open cartouche
 			$height = intval( self::MAX_HEIGHT * $this->scale / 100 );
 			$code = self::$phonemes[$glyph];
 			return "<img src='" . htmlspecialchars( WH_IMG_DIR . self::IMAGE_PREFIX . "{$code}." . self::IMAGE_EXT ) . "' height='{$height}' title='" . htmlspecialchars( $glyph ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
 		}
-		elseif ( $glyph == '>' ) // Render close cartouche
-		{
+		elseif ( $glyph == '>' ) { // Render close cartouche
 			$height = intval( self::MAX_HEIGHT * $this->scale / 100 );
 			$code = self::$phonemes[$glyph];
 			return "<img src='" . htmlspecialchars( WH_IMG_DIR . self::IMAGE_PREFIX . "{$code}." . self::IMAGE_EXT ) . "' height='{$height}' title='" . htmlspecialchars( $glyph ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
 		}
 
-		if ( array_key_exists( $glyph, self::$phonemes ) )
-		{
+		if ( array_key_exists( $glyph, self::$phonemes ) ) {
 			$code = self::$phonemes[$glyph];
 			if ( array_key_exists( $code, self::$files ) ) {
 				return "<img {$imageClass}style='margin:" . self::IMAGE_MARGIN . "px;' $option src='" . htmlspecialchars( WH_IMG_DIR . self::IMAGE_PREFIX . "{$code}." . self::IMAGE_EXT ) . "' title='" . htmlspecialchars( "{$code} [{$glyph}]" ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
@@ -283,11 +279,11 @@ class WikiHiero {
 		}
 
 		// ------------------------------------------------------------------------
-		// Split text into block, then split block into item
-		$block = array();
-		$block[0] = array();
-		$block[0][0] = "";
-		$block_id = 0;
+		// Split text into blocks, then split blocks into items
+		$blocks = array();
+		$blocks[0] = array();
+		$blocks[0][0] = "";
+		$blocks_id = 0;
 		$item_id = 0;
 		$parenthesis = 0;
 		$type = WH_TYPE_NONE;
@@ -304,66 +300,65 @@ class WikiHiero {
 			if ( $parenthesis == 0 ) {
 				if ( $hiero[$char] == '-' || $hiero[$char] == ' ' ) {
 					if ( $type != WH_TYPE_NONE ) {
-						$block_id++;
-						$block[$block_id] = array();
+						$blocks_id++;
+						$blocks[$blocks_id] = array();
 						$item_id = 0;
-						$block[$block_id][$item_id] = "";
+						$blocks[$blocks_id][$item_id] = "";
 						$type = WH_TYPE_NONE;
 					}
 				}
 			} else {// don't split block if inside parenthesis
 				if ( $hiero[$char] == '-' ) {
 					$item_id++;
-					$block[$block_id][$item_id] = '-';
+					$blocks[$blocks_id][$item_id] = '-';
 					$type = WH_TYPE_CODE;
 				}
 			}
 
 			if ( $hiero[$char] == '!' ) {
 				if ( $item_id > 0 ) {
-					$block_id++;
-					$block[$block_id] = array();
+					$blocks_id++;
+					$blocks[$blocks_id] = array();
 					$item_id = 0;
 				}
-				$block[$block_id][$item_id] = $hiero[$char];
+				$blocks[$blocks_id][$item_id] = $hiero[$char];
 				$type = WH_TYPE_END;
 
 			} elseif ( preg_match( "/[*:()]/", $hiero[$char] ) ) {
 
 				if ( $type == WH_TYPE_GLYPH || $type == WH_TYPE_CODE ) {
 					$item_id++;
-					$block[$block_id][$item_id] = "";
+					$blocks[$blocks_id][$item_id] = "";
 				}
-			$block[$block_id][$item_id] = $hiero[$char];
+			$blocks[$blocks_id][$item_id] = $hiero[$char];
 			$type = WH_TYPE_CODE;
 
 			} elseif ( ctype_alnum( $hiero[$char] ) || $hiero[$char] == '.' || $hiero[$char] == '<'
 				|| $hiero[$char] == '>' || $hiero[$char] == '\\' ) {
 				if ( $type == WH_TYPE_END ) {
-					$block_id++;
-					$block[$block_id] = array();
+					$blocks_id++;
+					$blocks[$blocks_id] = array();
 					$item_id = 0;
-					$block[$block_id][$item_id] = "";
+					$blocks[$blocks_id][$item_id] = "";
 				} elseif ( $type == WH_TYPE_CODE ) {
 					$item_id++;
-					$block[$block_id][$item_id] = "";
+					$blocks[$blocks_id][$item_id] = "";
 				}
-				$block[$block_id][$item_id] .= $hiero[$char];
+				$blocks[$blocks_id][$item_id] .= $hiero[$char];
 				$type = WH_TYPE_GLYPH;
 			}
 		}
 
 		$contentHtml = $tableHtml = $tableContentHtml = "";
-		// $html .= self::TABLE_START."<tr>\n";
 
 		// ------------------------------------------------------------------------
 		// Loop into all blocks
-		foreach ( $block as $code ) {
+		foreach ( $blocks as $code ) {
 
 			// simplest case, the block contain only 1 code -> render
 			if ( count( $code ) == 1 )
 			{
-				if ( $code[0] == "!" ) { // end of line
+				if ( $code[0] == '!' ) { // end of line
 					$tableHtml = '</tr></table>' . self::TABLE_START . "<tr>\n";
 					if ( $line ) {
 						$contentHtml .= "<hr />\n";
