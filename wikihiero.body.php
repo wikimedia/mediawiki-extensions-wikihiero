@@ -35,12 +35,6 @@ define( "WH_MODE_STYLE",    2 );    // HTML and CSS // not supported
 define( "WH_MODE_IMAGE",    3 );    // picture (PNG) // not supported
 define( "WH_MODE_RAW",      4 );    // MdC test as it
 
-define( "WH_TYPE_NONE",     0 );
-define( "WH_TYPE_GLYPH",    1 );    // rendered items
-define( "WH_TYPE_CODE",     2 );    // single code as ':', '*', '!', '(' or ')'
-define( "WH_TYPE_SPECIAL",  3 );    // advanced code (more than 1 caracter)
-define( "WH_TYPE_END",      4 );    // end of line '!'
-
 define( "WH_SCALE_DEFAULT", -1 );   // use default scale
 
 global $wgExtensionAssetsPath;
@@ -278,78 +272,10 @@ class WikiHiero {
 			$html .= "<hr />\n";
 		}
 
-		// ------------------------------------------------------------------------
-		// Split text into blocks, then split blocks into items
-		$blocks = array();
-		$blocks[0] = array();
-		$blocks[0][0] = "";
-		$blocks_id = 0;
-		$item_id = 0;
-		$parenthesis = 0;
-		$type = WH_TYPE_NONE;
-		$is_cartouche = false;
-
-		for ( $char = 0; $char < strlen( $hiero ); $char++ ) {
-
-			if ( $hiero[$char] == '(' ) {
-				$parenthesis++;
-			} elseif ( $hiero[$char] == ')' ) {
-				$parenthesis--;
-			}
-
-			if ( $parenthesis == 0 ) {
-				if ( $hiero[$char] == '-' || $hiero[$char] == ' ' ) {
-					if ( $type != WH_TYPE_NONE ) {
-						$blocks_id++;
-						$blocks[$blocks_id] = array();
-						$item_id = 0;
-						$blocks[$blocks_id][$item_id] = "";
-						$type = WH_TYPE_NONE;
-					}
-				}
-			} else {// don't split block if inside parenthesis
-				if ( $hiero[$char] == '-' ) {
-					$item_id++;
-					$blocks[$blocks_id][$item_id] = '-';
-					$type = WH_TYPE_CODE;
-				}
-			}
-
-			if ( $hiero[$char] == '!' ) {
-				if ( $item_id > 0 ) {
-					$blocks_id++;
-					$blocks[$blocks_id] = array();
-					$item_id = 0;
-				}
-				$blocks[$blocks_id][$item_id] = $hiero[$char];
-				$type = WH_TYPE_END;
-
-			} elseif ( preg_match( "/[*:()]/", $hiero[$char] ) ) {
-
-				if ( $type == WH_TYPE_GLYPH || $type == WH_TYPE_CODE ) {
-					$item_id++;
-					$blocks[$blocks_id][$item_id] = "";
-				}
-			$blocks[$blocks_id][$item_id] = $hiero[$char];
-			$type = WH_TYPE_CODE;
-
-			} elseif ( ctype_alnum( $hiero[$char] ) || $hiero[$char] == '.' || $hiero[$char] == '<'
-				|| $hiero[$char] == '>' || $hiero[$char] == '\\' ) {
-				if ( $type == WH_TYPE_END ) {
-					$blocks_id++;
-					$blocks[$blocks_id] = array();
-					$item_id = 0;
-					$blocks[$blocks_id][$item_id] = "";
-				} elseif ( $type == WH_TYPE_CODE ) {
-					$item_id++;
-					$blocks[$blocks_id][$item_id] = "";
-				}
-				$blocks[$blocks_id][$item_id] .= $hiero[$char];
-				$type = WH_TYPE_GLYPH;
-			}
-		}
-
+		$tokenizer = new HieroTokenizer( $hiero );
+		$blocks = $tokenizer->tokenize();
 		$contentHtml = $tableHtml = $tableContentHtml = "";
+		$is_cartouche = false;
 
 		// ------------------------------------------------------------------------
 		// Loop into all blocks
@@ -497,5 +423,108 @@ class WikiHiero {
 	 */
 	public static function getCode( $file ) {
 		return substr( $file, strlen( self::IMAGE_PREFIX ), -( 1 + strlen( self::IMAGE_EXT ) ) );
+	}
+}
+
+/**
+ * Hieroglyphs tokenizer class
+ */
+/*private*/ class HieroTokenizer {
+	const TYPE_NONE    = 0;
+	const TYPE_GLYPH   = 1;    // rendered items
+	const TYPE_CODE    = 2;    // single code as ':', '*', '!', '(' or ')'
+	const TYPE_SPECIAL = 3;    // advanced code (more than 1 caracter)
+	const TYPE_END     = 4;    // end of line '!'
+
+	private $text;
+	private $blocks = false;
+	private $blocks_id = 0;
+	private $item_id = 0;
+
+	/**
+	 * Constructor
+	 *
+	 * @param $text string: 
+	 */
+	public function __construct( $text ) {
+		$this->text = $text;
+	}
+
+	/**
+	 * Split text into blocks, then split blocks into items
+	 * 
+	 * @return array: tokenized text
+	 */
+	public function tokenize() {
+		if ( $this->blocks !== false ) {
+			return $this->blocks;
+		}
+		$this->blocks = array( array( '' ) );
+		$parentheses = 0;
+		$type = self::TYPE_NONE;
+
+		for ( $i = 0; $i < strlen( $this->text ); $i++ ) {
+			$char = $this->text[$i];
+
+			if ( $char == '(' ) {
+				$parentheses++;
+			} elseif ( $char == ')' ) {
+				$parentheses--;
+			}
+
+			if ( $parentheses == 0 ) {
+				if ( $char == '-' || $char == ' ' ) {
+					if ( $type != self::TYPE_NONE ) {
+						$this->addBlock( '' );
+						$type = self::TYPE_NONE;
+					}
+				}
+			} else {// don't split block if inside parentheses
+				if ( $char == '-' ) {
+					$this->addItem( '-' );
+					$type = self::TYPE_CODE;
+				}
+			}
+
+			if ( $char == '!' ) {
+				if ( $this->item_id > 0 ) {
+					$this->addBlock();
+				}
+				$this->blocks[$this->blocks_id][$this->item_id] = $char;
+				$type = self::TYPE_END;
+
+			} elseif ( preg_match( '/[*:()]/', $char ) ) {
+				if ( $type == self::TYPE_GLYPH || $type == self::TYPE_CODE ) {
+					$this->addItem( '' );
+				}
+				$this->blocks[$this->blocks_id][$this->item_id] = $char;
+				$type = self::TYPE_CODE;
+
+			} elseif ( ctype_alnum( $char ) || $char == '.' || $char == '<'
+				|| $char == '>' || $char == '\\' ) {
+				if ( $type == self::TYPE_END ) {
+					$this->addBlock( '' );
+				} elseif ( $type == self::TYPE_CODE ) {
+					$this->addItem( '' );
+				}
+				$this->blocks[$this->blocks_id][$this->item_id] .= $char;
+				$type = self::TYPE_GLYPH;
+			}
+		}
+		return $this->blocks;
+	}
+
+	private function addBlock( $newItem = false ) {
+		$this->blocks_id++;
+		$this->blocks[$this->blocks_id] = array();
+		$this->item_id = 0;
+		if ( $newItem !== false ) {
+			$this->blocks[$this->blocks_id][$this->item_id] = $newItem;
+		}
+	}
+
+	private function addItem( $item ) {
+		$this->item_id++;
+		$this->blocks[$this->blocks_id][$this->item_id] = $item;
 	}
 }
