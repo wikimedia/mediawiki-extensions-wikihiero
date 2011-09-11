@@ -28,18 +28,18 @@ WikiHiero - prefabs
 !! test
 WikiHiero - Horus name
 !! input
-<hiero>N28:Aa13-R19-t:N24</hiero>
+<hiero><h1 A h1></hiero>
 !! result
-<table class='mw-hiero-table mw-hiero-outer' dir='ltr'><tr><td> <table class="mw-hiero-table"><tr> <td><img style='margin:1px;' height='15' src='/extensions/wikihiero/img/hiero_N28.png' title='N28' alt='N28' /><br /><img style='margin:1px;' height='8' src='/extensions/wikihiero/img/hiero_Aa13.png' title='Aa13' alt='Aa13' /></td> <td><img style='margin:1px;' height='38' src='/extensions/wikihiero/img/hiero_R19.png' title='R19' alt='R19' /></td><td><img style='margin:1px;' height='11' src='/extensions/wikihiero/img/hiero_X1.png' title='X1 [t]' alt='t' /><br /><img style='margin:1px;' height='14' src='/extensions/wikihiero/img/hiero_N24.png' title='N24' alt='N24' /></td> </tr></table> </td></tr></table>
+<table class='mw-hiero-table mw-hiero-outer' dir='ltr'><tr><td> <table class="mw-hiero-table"><tr> <td><img style='margin:1px;'  src='/extensions/wikihiero/img/hiero_Cah1.png' title='Cah1 [&lt;h1]' alt='&lt;h1' /></td><td><table class="mw-hiero-table"><tr><td height='2px' bgcolor='black'></td></tr><tr><td><table class="mw-hiero-table"><tr><td><img style='margin:1px;' height='38' src='/extensions/wikihiero/img/hiero_G1.png' title='G1 [A]' alt='A' /></td></tr></table></td></tr><tr><td height='2px' bgcolor='black'></td></tr></table></td><td><img style='margin:1px;'  src='/extensions/wikihiero/img/hiero_Cah1a.png' title='Cah1a [h1&gt;]' alt='h1&gt;' /></td></tr></table> </td></tr></table>
 
 !! end
 
 !! test
 WikiHiero - cartouche
 !! input
-<hiero>N5-O34:N29-N35:N35</hiero>
+<hiero>< A ></hiero>
 !! result
-<table class='mw-hiero-table mw-hiero-outer' dir='ltr'><tr><td> <table class="mw-hiero-table"><tr> <td><img style='margin:1px;' height='18' src='/extensions/wikihiero/img/hiero_N5.png' title='N5' alt='N5' /></td><td><img style='margin:1px;' height='6' src='/extensions/wikihiero/img/hiero_O34.png' title='O34' alt='O34' /><br /><img style='margin:1px;' height='17' src='/extensions/wikihiero/img/hiero_N29.png' title='N29' alt='N29' /></td> <td><img style='margin:1px;' height='5' src='/extensions/wikihiero/img/hiero_N35.png' title='N35' alt='N35' /><br /><img style='margin:1px;' height='5' src='/extensions/wikihiero/img/hiero_N35.png' title='N35' alt='N35' /></td> </tr></table> </td></tr></table>
+<table class='mw-hiero-table mw-hiero-outer' dir='ltr'><tr><td> <table class="mw-hiero-table"><tr> <td><img src='/extensions/wikihiero/img/hiero_Ca1.png' height='44' title='&lt;' alt='&lt;' /></td><td><table class="mw-hiero-table"><tr><td height='2px' bgcolor='black'></td></tr><tr><td><table class="mw-hiero-table"><tr><td><img style='margin:1px;' height='38' src='/extensions/wikihiero/img/hiero_G1.png' title='G1 [A]' alt='A' /></td></tr></table></td></tr><tr><td height='2px' bgcolor='black'></td></tr></table></td><td><img src='/extensions/wikihiero/img/hiero_Ca2.png' height='44' title='&gt;' alt='&gt;' /></td></tr></table> </td></tr></table>
 
 !! end
 
