@@ -55,6 +55,7 @@ See [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax here] for markup descrip
 );
 
 /** Message documentation (Message documentation)
+ * @author EugeneZelenko
  * @author MaxSem
  * @author Raimond Spekking
  * @author Raymond
@@ -65,6 +66,7 @@ $messages['qqq'] = array(
 Wikihiero is a markup language to render hieroglyphics. See http://www.mediawiki.org/wiki/Extension:WikiHiero for more information.',
 	'hieroglyphs' => 'WikiHiero is a markup language to render Hieroglyphics. See http://www.mediawiki.org/wiki/Extension:WikiHiero for more information.',
 	'wikihiero-special-page-text' => 'This message is shown on [[Special:Hieroglyphs]]. Keep the link external. If there is a help page in your language about WikiHiero syntax (not Gardiner codes), feel free to change the link destination.',
+	'wikihiero-result' => '{{Identical|Result}}',
 );
 
 /** Afrikaans (Afrikaans)
@@ -295,26 +297,51 @@ $messages['ca'] = array(
 
 /** Czech (Česky)
  * @author Matěj Grabovský
+ * @author Mormegil
  */
 $messages['cs'] = array(
 	'wikihiero-desc' => 'Přidává značku <code>&lt;hiero&gt;</code> pro zobrazování [[Special:Hieroglyphs|hieroglyfů]]',
+	'hieroglyphs' => 'Vyzkoušet značení hieroglyfů',
+	'wikihiero-special-page-text' => 'Na této stránce si můžete vyzkoušet jazyk WikiHiero.
+Popis jazyka najdete v [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax nápovědě].',
+	'wikihiero-input' => 'Vstupní text',
+	'wikihiero-result' => 'Výsledek',
 	'wikihiero-syntax' => 'Syntaxe',
+	'wikihiero-th-code' => 'Kód',
+	'wikihiero-th-meaning' => 'Význam',
+	'wikihiero-th-example' => 'Příklad kódu',
+	'wikihiero-th-result' => 'Výsledek',
 	'wikihiero-separator' => 'Oddělovač',
 	'wikihiero-eol' => 'Konec řádka',
 	'wikihiero-superposition' => 'Podrozdělení',
 	'wikihiero-juxtaposition' => 'Juxtapozice',
+	'wikihiero-mirror' => 'Zrcadlově převrátit hieroglyf',
+	'wikihiero-load-error' => 'Chyba při načítání!',
 	'wikihiero-category-A' => 'A: Muž a jeho práce',
 	'wikihiero-category-B' => 'B: Žena a její práce',
 	'wikihiero-category-C' => 'C: Antropomorfní božstva',
 	'wikihiero-category-D' => 'D: Části lidského těla',
-	'wikihiero-category-E' => 'E: Cicavce',
-	'wikihiero-category-F' => 'F: Části cicavců',
-	'wikihiero-category-G' => 'G: Ptáky',
+	'wikihiero-category-E' => 'E: Savci',
+	'wikihiero-category-F' => 'F: Části savců',
+	'wikihiero-category-G' => 'G: Ptáci',
 	'wikihiero-category-H' => 'H: Části ptáků',
-	'wikihiero-category-I' => 'I: Obouživelníky, plazy atd.',
+	'wikihiero-category-I' => 'I: Obojživelníci, plazi atd.',
 	'wikihiero-category-K' => 'K: Ryby a části ryb',
-	'wikihiero-category-L' => 'L: Bezstavovce a nižší druhy',
-	'wikihiero-category-Z' => 'Z: Tahy, geometrické obrazce atd.',
+	'wikihiero-category-L' => 'L: Bezobratlí a nižší živočichové',
+	'wikihiero-category-M' => 'M: Stromy a rostliny',
+	'wikihiero-category-N' => 'N: Nebe, země, voda',
+	'wikihiero-category-O' => 'O: Budovy, části budov atd.',
+	'wikihiero-category-P' => 'P: Lodě a části lodí',
+	'wikihiero-category-Q' => 'Q: Domácí a pohřební nábytek',
+	'wikihiero-category-R' => 'R: Chrámový nábytek a posvátné emblémy',
+	'wikihiero-category-S' => 'Koruny, oděvy, hole atd.',
+	'wikihiero-category-T' => 'T: Válečnictví, lov, řeznictví',
+	'wikihiero-category-U' => 'U: Zemědělství, řemesla a profese',
+	'wikihiero-category-V' => 'V: Lana, vlákna, koše, pytle atd.',
+	'wikihiero-category-W' => 'W: Nádoby z kamene a kameniny',
+	'wikihiero-category-X' => 'X: Chléb a koláče',
+	'wikihiero-category-Y' => 'Y: Spisy, hry, hudba',
+	'wikihiero-category-Z' => 'Z: Linie, geometrické obrazce atd.',
 	'wikihiero-category-Aa' => 'Aa: Nezařazeno',
 );
 
@@ -1090,11 +1117,14 @@ $messages['lb'] = array(
 	'wikihiero-syntax' => 'Syntax',
 	'wikihiero-th-code' => 'Code',
 	'wikihiero-th-meaning' => 'Bedeitung',
+	'wikihiero-th-example' => 'Beispill vum Code',
 	'wikihiero-th-result' => 'Resultat',
+	'wikihiero-superposition' => 'Ënnerdeelung',
 	'wikihiero-load-error' => 'Feeler beim Lueden!',
 	'wikihiero-category-A' => 'A: Männer an hir Beschäftegungen',
 	'wikihiero-category-B' => 'B: Fraen an hir Beschäftegungen',
 	'wikihiero-category-D' => 'D: Deeler vum mënschleche Kierper',
+	'wikihiero-category-E' => 'E: Mamendéieren',
 	'wikihiero-category-G' => 'G: Vigel',
 	'wikihiero-category-H' => 'H: Deeler vu Vigel',
 	'wikihiero-category-I' => 'I: Amphibien, Reptilien, asw.',
@@ -1465,6 +1495,7 @@ $messages['ps'] = array(
  * @author Hamilton Abreu
  * @author Malafaya
  * @author MetalBrasil
+ * @author SandroHc
  */
 $messages['pt'] = array(
 	'wikihiero-desc' => 'Adiciona o elemento <code>&lt;hiero&gt;</code> para apresentar [[Special:Hieroglyphs|hieróglifos]]',
@@ -1473,6 +1504,10 @@ $messages['pt'] = array(
 	'wikihiero-input' => 'Texto de entrada',
 	'wikihiero-result' => 'Resultado',
 	'wikihiero-syntax' => 'Sintaxe',
+	'wikihiero-th-code' => 'Código',
+	'wikihiero-th-meaning' => 'Significado',
+	'wikihiero-th-example' => 'Código de exemplo',
+	'wikihiero-th-result' => 'Resultado',
 	'wikihiero-separator' => 'Separador',
 	'wikihiero-eol' => 'Fim de linha',
 	'wikihiero-superposition' => 'Subdivisão',
