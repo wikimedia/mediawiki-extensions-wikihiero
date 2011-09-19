@@ -12,7 +12,7 @@ WikiHiero - XSS protection
 !! input
 <hiero><script>alert("FAIL")</script></hiero>
 !! result
-<table class='mw-hiero-table mw-hiero-outer' dir='ltr'><tr><td> <table class="mw-hiero-table"><tr> <td>&lt;script&gt;alert(FAIL)&lt;script&gt;</td> </tr></table> </td></tr></table>
+<table class='mw-hiero-table mw-hiero-outer' dir='ltr'><tr><td> <table class="mw-hiero-table"><tr> <td>&lt;script&gt;alert(&quot;FAIL&quot;)&lt;/script&gt;</td> </tr></table> </td></tr></table>
 
 !! end
 
@@ -44,6 +44,15 @@ WikiHiero - cartouche
 !! end
 
 !! test
+WikiHiero - EOL
+!! input
+<hiero>A1!B1 ! C1</hiero>
+!! result
+<table class='mw-hiero-table mw-hiero-outer' dir='ltr'><tr><td> <table class="mw-hiero-table"><tr> <td><img style='margin:1px;' height='38' src='/extensions/wikihiero/img/hiero_A1.png' title='A1' alt='A1' /></td></tr></table><table class="mw-hiero-table"><tr> <td><img style='margin:1px;' height='38' src='/extensions/wikihiero/img/hiero_B1.png' title='B1' alt='B1' /></td></tr></table><table class="mw-hiero-table"><tr> <td><img style='margin:1px;' height='38' src='/extensions/wikihiero/img/hiero_C1.png' title='C1' alt='C1' /></td></tr></table> </td></tr></table>
+
+!! end
+
+!! test
 WikiHiero - complex text with EOL
 !! input
 <hiero>M23-X1:R4-X8-Q2:D4-W17-R14-G4-R8-O29:V30-U23 !
@@ -59,5 +68,16 @@ WikiHiero - image mirroring
 <hiero>A1\-A1</hiero>
 !! result
 <table class='mw-hiero-table mw-hiero-outer' dir='ltr'><tr><td> <table class="mw-hiero-table"><tr> <td><img class="mw-mirrored" style='margin:1px;' height='38' src='/extensions/wikihiero/img/hiero_A1.png' title='A1' alt='A1' /></td><td><img style='margin:1px;' height='38' src='/extensions/wikihiero/img/hiero_A1.png' title='A1' alt='A1' /></td></tr></table> </td></tr></table>
+
+!! end
+
+!! test
+WikiHiero - void blocks
+!! input
+<hiero>A1..B1.C1</hiero>
+<hiero>A1 .. B1 . C1</hiero>
+!!result
+<table class='mw-hiero-table mw-hiero-outer' dir='ltr'><tr><td> <table class="mw-hiero-table"><tr> <td><img style='margin:1px;' height='38' src='/extensions/wikihiero/img/hiero_A1.png' title='A1' alt='A1' /></td><td><table class="mw-hiero-table" style="width: 44px;"><tr><td>&#160;</td></tr></table></td><td><img style='margin:1px;' height='38' src='/extensions/wikihiero/img/hiero_B1.png' title='B1' alt='B1' /></td><td><table class="mw-hiero-table" style="width: 22px;"><tr><td>&#160;</td></tr></table></td><td><img style='margin:1px;' height='38' src='/extensions/wikihiero/img/hiero_C1.png' title='C1' alt='C1' /></td></tr></table> </td></tr></table>
+<table class='mw-hiero-table mw-hiero-outer' dir='ltr'><tr><td> <table class="mw-hiero-table"><tr> <td><img style='margin:1px;' height='38' src='/extensions/wikihiero/img/hiero_A1.png' title='A1' alt='A1' /></td><td><table class="mw-hiero-table" style="width: 44px;"><tr><td>&#160;</td></tr></table></td><td><img style='margin:1px;' height='38' src='/extensions/wikihiero/img/hiero_B1.png' title='B1' alt='B1' /></td><td><table class="mw-hiero-table" style="width: 22px;"><tr><td>&#160;</td></tr></table></td><td><img style='margin:1px;' height='38' src='/extensions/wikihiero/img/hiero_C1.png' title='C1' alt='C1' /></td></tr></table> </td></tr></table>
 
 !! end

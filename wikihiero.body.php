@@ -430,16 +430,14 @@ class WikiHiero {
  * Hieroglyphs tokenizer class
  */
 /*private*/ class HieroTokenizer {
-	const TYPE_NONE    = 0;
-	const TYPE_GLYPH   = 1;    // rendered items
-	const TYPE_CODE    = 2;    // single code as ':', '*', '!', '(' or ')'
-	const TYPE_SPECIAL = 3;    // advanced code (more than 1 caracter)
-	const TYPE_END     = 4;    // end of line '!'
+	private static $delimiters = false;
+	private static $tokenDelimiters;
+	private static $singleChars;
 
 	private $text;
 	private $blocks = false;
-	private $blocks_id = 0;
-	private $item_id = 0;
+	private $currentBlock;
+	private $token;
 
 	/**
 	 * Constructor
@@ -448,6 +446,17 @@ class WikiHiero {
 	 */
 	public function __construct( $text ) {
 		$this->text = $text;
+		self::initStatic();
+	}
+
+	private static function initStatic() {
+		if ( self::$delimiters ) {
+			return;
+		}
+
+		self::$delimiters = array_flip( array( ' ', '-', "\t", "\n" ) );
+		self::$tokenDelimiters = array_flip( array( '*', ':', '(', ')' ) );
+		self::$singleChars = array_flip( array( '!' ) );
 	}
 
 	/**
@@ -459,72 +468,93 @@ class WikiHiero {
 		if ( $this->blocks !== false ) {
 			return $this->blocks;
 		}
-		$this->blocks = array( array( '' ) );
-		$parentheses = 0;
-		$type = self::TYPE_NONE;
+		$this->blocks = array();
+		$this->currentBlock = array();
+		$this->token = '';
+		
+		$text = preg_replace( '/<!--.*?-->/', '', $this->text ); // remove HTML comments
 
-		for ( $i = 0; $i < strlen( $this->text ); $i++ ) {
+		for ( $i = 0; $i < strlen( $text ); $i++ ) {
 			$char = $this->text[$i];
 
-			if ( $char == '(' ) {
-				$parentheses++;
-			} elseif ( $char == ')' ) {
-				$parentheses--;
-			}
-
-			if ( $parentheses == 0 ) {
-				if ( $char == '-' || $char == ' ' ) {
-					if ( $type != self::TYPE_NONE ) {
-						$this->addBlock( '' );
-						$type = self::TYPE_NONE;
-					}
-				}
-			} else {// don't split block if inside parentheses
-				if ( $char == '-' ) {
-					$this->addItem( '-' );
-					$type = self::TYPE_CODE;
-				}
-			}
-
-			if ( $char == '!' ) {
-				if ( $this->item_id > 0 ) {
-					$this->addBlock();
-				}
-				$this->blocks[$this->blocks_id][$this->item_id] = $char;
-				$type = self::TYPE_END;
-
-			} elseif ( preg_match( '/[*:()]/', $char ) ) {
-				if ( $type == self::TYPE_GLYPH || $type == self::TYPE_CODE ) {
-					$this->addItem( '' );
-				}
-				$this->blocks[$this->blocks_id][$this->item_id] = $char;
-				$type = self::TYPE_CODE;
-
-			} elseif ( ctype_alnum( $char ) || $char == '.' || $char == '<'
-				|| $char == '>' || $char == '\\' ) {
-				if ( $type == self::TYPE_END ) {
-					$this->addBlock( '' );
-				} elseif ( $type == self::TYPE_CODE ) {
-					$this->addItem( '' );
-				}
-				$this->blocks[$this->blocks_id][$this->item_id] .= $char;
-				$type = self::TYPE_GLYPH;
+			if ( isset( self::$delimiters[$char] ) ) {
+				$this->newBlock();
+			} elseif ( isset( self::$singleChars[$char] ) ) {
+				$this->singleCharBlock( $char );
+			} elseif ( $char == '.' ) {
+				$this->dot();
+			} elseif ( isset( self::$tokenDelimiters[$char] ) ) {
+				$this->newToken( $char );
+			} else {
+				$this->char( $char );
 			}
 		}
+
+		$this->newBlock(); // flush stuff being processed
+
 		return $this->blocks;
 	}
 
-	private function addBlock( $newItem = false ) {
-		$this->blocks_id++;
-		$this->blocks[$this->blocks_id] = array();
-		$this->item_id = 0;
-		if ( $newItem !== false ) {
-			$this->blocks[$this->blocks_id][$this->item_id] = $newItem;
+	/**
+	 * Handles a block delimiter
+	 */
+	private function newBlock() {
+		$this->newToken();
+		if( $this->currentBlock ) {
+			$this->blocks[] = $this->currentBlock;
+			$this->currentBlock = array();
 		}
 	}
 
-	private function addItem( $item ) {
-		$this->item_id++;
-		$this->blocks[$this->blocks_id][$this->item_id] = $item;
+	/**
+	 * Flushes current token, optionally adds another one
+	 *
+	 * @param $token Mixed: token to add or false
+	 */
+	private function newToken( $token = false ) {
+		if ( $this->token !== '' ) {
+			$this->currentBlock[] = $this->token;
+			$this->token = '';
+		}
+		if ( $token !== false ) {
+			$this->currentBlock[] = $token;
+		}
+	}
+
+	/**
+	 * Adds a block consisting of one character
+	 *
+	 * @param $char string: block character
+	 */
+	private function singleCharBlock( $char ) {
+		$this->newBlock();
+		$this->blocks[] = array( $char );
+	}
+
+	/**
+	 * Handles void blocks represented by dots
+	 */
+	private function dot() {
+		if ( $this->token == '.' ) {
+			$this->token = '..';
+			$this->newBlock();
+		} else {
+			$this->newBlock();
+			$this->token = '.';
+		}
+	}
+
+	/**
+	 * Adds a miscellaneous character to current token
+	 *
+	 * @param $char string: character to add
+	 */
+	private function char( $char ) {
+		if ( $this->token == '.' ) {
+			$this->newBlock();
+			$this->token = $char;
+		} else {
+			$this->token .= $char;
+		}
 	}
 }
