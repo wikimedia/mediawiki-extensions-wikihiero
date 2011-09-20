@@ -27,14 +27,6 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	die( 'Not an entry point' );
 }
 
-// D E F I N E S
-define( "WH_MODE_DEFAULT", -1 );    // use default mode
-define( "WH_MODE_TEXT",     0 );    // text only
-define( "WH_MODE_HTML",     1 );    // HTML without CSS
-define( "WH_MODE_STYLE",    2 );    // HTML and CSS // not supported
-define( "WH_MODE_IMAGE",    3 );    // picture (PNG) // not supported
-define( "WH_MODE_RAW",      4 );    // MdC test as it
-
 define( "WH_SCALE_DEFAULT", -1 );   // use default scale
 
 global $wgExtensionAssetsPath;
@@ -53,7 +45,7 @@ class WikiHiero {
 
 	private $scale = 100;
 
-	private static $phonemes, $prefabs, $files, $textConv;
+	private static $phonemes, $prefabs, $files;
 
 	public function __construct( $scale = WH_SCALE_DEFAULT ) {
 		self::loadData();
@@ -71,7 +63,6 @@ class WikiHiero {
 			self::$phonemes = $wh_phonemes;
 			self::$prefabs = $wh_prefabs;
 			self::$files = $wh_files;
-			self::$textConv = $wh_text_conv;
 		} else {
 			$fileName = dirname( __FILE__ ) . '/data/tables.ser';
 			$stream = file_get_contents( $fileName );
@@ -82,41 +73,16 @@ class WikiHiero {
 			self::$phonemes = $data['wh_phonemes'];
 			self::$prefabs = $data['wh_prefabs'];
 			self::$files = $data['wh_files'];
-			self::$textConv = $data['wh_text_conv'];
 		}
-	}
-
-	/**
-	 * Render hieroglyph text
-	 *
-	 * @param $text string: text to convert
-	 * @param $mode string: conversion mode [DEFAULT|TEXT|HTML|STYLE|IMAGE] (def=HTML)
-	 * @param $scale string: global scale in percentage (def=100%)
-	 * @param $line string: use line [true|false] (def=false)
-	 * @return string: converted code
-	 */
-	public static function render( $text, $mode = WH_MODE_DEFAULT, $scale = WH_SCALE_DEFAULT, $line = false ) {
-		if ( $mode == WH_MODE_DEFAULT ) {
-			$mode = WH_MODE_HTML;
-		}
-
-		$hiero = new WikiHiero( $scale );
-
-		switch( $mode ) {
-			case WH_MODE_TEXT:  return $hiero->renderText( $text, $line );
-			case WH_MODE_HTML:  return $hiero->renderHtml( $text, $scale, $line );
-			case WH_MODE_STYLE: die( "ERROR: CSS version not yet implemented" );
-			case WH_MODE_IMAGE: die( "ERROR: Image version not yet implemented" );
-		}
-		die( "ERROR: Unknown mode!" );
 	}
 
 	/**
 	 *
 	 */
 	public static function parserHook( $input ) {
+		$hiero = new WikiHiero();
 		// Strip newlines to avoid breakage in the wiki parser block pass
-		return str_replace( "\n", " ", self::render( $input, WH_MODE_HTML ) );
+		return str_replace( "\n", " ", $hiero->render( $input ) );
 	}
 
 	public function getScale() {
@@ -183,6 +149,7 @@ class WikiHiero {
 	private function extractCode( $glyph ) {
 		return preg_replace( '/\\\\.*$/', '', $glyph );
 	}
+
 	/**
 	 * Resize a glyph
 	 *
@@ -225,35 +192,6 @@ class WikiHiero {
 	}
 
 	/**
-	 * Render hieroglyph text in text mode
-	 *
-	 * @param $hiero string: text to convert
-	 * @param $line bool: use line (default = false)
-	 * @return string: converted code
-	 */
-	public function renderText( $hiero, $line = false ) {
-		$html = "";
-
-		if ( $line ) {
-			$html .= "<hr />\n";
-		}
-
-		for ( $char = 0; $char < strlen( $hiero ); $char++ ) {
-			if ( array_key_exists( $hiero[$char], self::$textConv ) ) {
-				$html .= self::$textConv[$hiero[$char]];
-				if ( $hiero[$char] == '!' && $line ) {
-					$html .= "<hr />\n";
-				}
-			}
-			else {
-				$html .= $hiero[$char];
-			}
-		}
-
-		return $html;
-	  }
-
-	/**
 	 * Render hieroglyph text
 	 *
 	 * @param $hiero string: text to convert
@@ -261,7 +199,7 @@ class WikiHiero {
 	 * @param $line bool: use line (default = false)
 	 * @return string: converted code
 	*/
-	public function renderHtml( $hiero, $scale = WH_SCALE_DEFAULT, $line = false ) {
+	public function render( $hiero, $scale = WH_SCALE_DEFAULT, $line = false ) {
 		if ( $scale != WH_SCALE_DEFAULT ) {
 			$this->setScale( $scale );
 		}

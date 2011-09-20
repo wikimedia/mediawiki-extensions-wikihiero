@@ -52,7 +52,7 @@ class GenerateWikiHieroTables extends Maintenance {
 			$dh = opendir( $imgDir );
 			if ( $dh ) {
 				while ( ( $file = readdir( $dh ) ) !== false ) {
-					if ( stristr( $file, WikiHiero::IMG_EXT ) ) {
+					if ( stristr( $file, WikiHiero::IMAGE_EXT ) ) {
 						list( $width, $height, $type, $attr ) = getimagesize( $imgDir . $file );
 						$wh_files .= "  \"" . WikiHiero::getCode( $file ) . "\" => array( $width, $height ),\n";
 						if ( strchr( $file, '&' ) ) {
@@ -82,7 +82,7 @@ class GenerateWikiHieroTables extends Maintenance {
 	private function serialize() {
 		require( 'data/tables.php' );
 		$result = array();
-		foreach ( array( 'wh_phonemes', 'wh_prefabs', 'wh_files', 'wh_text_conv' ) as $varName ) {
+		foreach ( array( 'wh_phonemes', 'wh_prefabs', 'wh_files' ) as $varName ) {
 			$result[$varName] = $$varName;
 		}
 		file_put_contents( 'data/tables.ser', serialize( $result ) );
@@ -512,34 +512,6 @@ $wh_phonemes	=	array(	//	convertion	table	phoneme	->	Gardiner	code
 	"\"]"	=>	"",
 	"[\'"	=>	"",
 	"\']"	=>	"",
-);
-
-// convertion table for text mode
-$wh_text_conv = array(
-  "-"       => " ",
-  ":"       => "-",
-  "*"       => "-",
-  "!"       => "<br />",
-  "."       => "",
-  "="       => "",
-  "("       => "",
-  ")"       => "",
-  "<1"      => "(",
-  "2>"      => ")|",
-  "<2"      => "|(",
-  "1>"      => ")",
-  "<0"      => "(",
-  "0>"      => ")|",
-  "<h1"     => "[",  // horus
-  "h1>"     => "]",
-  "<h2"     => "[",
-  "h2>"     => "]",
-  "<h3"     => "[",
-  "h3>"     => "]",
-  "<h0"     => "[",
-  "h0>"     => "]",
-  "<"       => "(",    // cartouche
-  ">"       => ")|",
 );
 ';
 

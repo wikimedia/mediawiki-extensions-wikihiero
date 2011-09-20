@@ -55,7 +55,7 @@ class SpecialHieroglyphs extends SpecialPage {
 				. '<tr><th>' . wfMsg( 'wikihiero-input' ) . '</th><th>' 
 				. wfMsg( 'wikihiero-result' ) . '</th></tr>'
 				. '<tr><td><code>&lt;hiero&gt;' . htmlspecialchars( $text ) . '&lt;/hiero&gt;</code></td>'
-				. "<td>{$hiero->renderHtml( $text )}</td></tr></table>"
+				. "<td>{$hiero->render( $text )}</td></tr></table>"
 			);
 		}
 
@@ -132,7 +132,7 @@ class SpecialHieroglyphs extends SpecialPage {
 				if ( strpos( $code, $cat ) !== 0 || ( $alnum && !ctype_digit( $code[1] ) ) ) {
 					continue; // wrong category
 				}
-				$upperRow .= '<td>' . $this->hiero->renderHtml( $code ) . '</td>';
+				$upperRow .= '<td>' . $this->hiero->render( $code ) . '</td>';
 				$lowerRow .= '<th>' . htmlspecialchars( $code ) . '</th>';
 				$columns++;
 				if ( $columns == self::HIEROGLYPHS_PER_ROW ) {
@@ -213,7 +213,7 @@ class SpecialHieroglyphs extends SpecialPage {
 		return '<tr><th>' . htmlspecialchars( $code ) . '</th><td>'
 			. wfMessage( $message )->escaped() . '</td><td>'
 			. '<code>' . htmlspecialchars( "<hiero>$example</hiero>" ) . '</code></td><td>'
-			. $this->hiero->renderHtml( $example )
+			. $this->hiero->render( $example )
 			. "</td></tr>\n";
 	}
  }

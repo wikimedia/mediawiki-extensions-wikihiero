@@ -1,7 +1,7 @@
 <?php
 
-// File created by generateTables.php version 1.0alpha
-// 2011-09-05 at 18:04
+// File created by generateTables.php version 1.0alpha2
+// 2011-09-20 at 10:20
 
 $wh_prefabs = array(
   "a&A1",
@@ -1541,33 +1541,5 @@ $wh_phonemes	=	array(	//	convertion	table	phoneme	->	Gardiner	code
 	"\"]"	=>	"",
 	"['"	=>	"",
 	"']"	=>	"",
-);
-
-// convertion table for text mode
-$wh_text_conv = array(
-  "-"       => " ",
-  ":"       => "-",
-  "*"       => "-",
-  "!"       => "<br />",
-  "."       => "",
-  "="       => "",
-  "("       => "",
-  ")"       => "",
-  "<1"      => "(",
-  "2>"      => ")|",
-  "<2"      => "|(",
-  "1>"      => ")",
-  "<0"      => "(",
-  "0>"      => ")|",
-  "<h1"     => "[",  // horus
-  "h1>"     => "]",
-  "<h2"     => "[",
-  "h2>"     => "]",
-  "<h3"     => "[",
-  "h3>"     => "]",
-  "<h0"     => "[",
-  "h0>"     => "]",
-  "<"       => "(",    // cartouche
-  ">"       => ")|",
 );
 

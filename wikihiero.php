@@ -21,7 +21,7 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
-define( 'WIKIHIERO_VERSION', '1.0alpha' );
+define( 'WIKIHIERO_VERSION', '1.0alpha2' );
 
 $wgHooks['ParserFirstCallInit'][] = 'wfRegisterWikiHiero';
 $wgHooks['BeforePageDisplay'][] = 'wfHieroBeforePageDisplay';
