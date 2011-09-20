@@ -28,6 +28,9 @@ class SpecialHieroglyphs extends SpecialPage {
 		array( 'code' => ':', 'message' => 'wikihiero-juxtaposition', 'example' => 'p*t' ),
 		array( 'code' => '!', 'message' => 'wikihiero-eol', 'example' => 'A1-B1 ! C1-D1' ),
 		array( 'code' => '\\', 'message' => 'wikihiero-mirror', 'example' => 'A1\-A1' ),
+		array( 'code' => '..', 'message' => 'wikihiero-void', 'example' => 'A1 .. B1' ),
+		array( 'code' => '..', 'message' => 'wikihiero-half-void', 'example' => 'A1 . B1' ),
+		array( 'code' => '<!-- -->', 'message' => 'wikihiero-comment', 'example' => 'A<!-- B1 -->1' ),
 	);
 	private $helpColumns = array(
 		'code',
