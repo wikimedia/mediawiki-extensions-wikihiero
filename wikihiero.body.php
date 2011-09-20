@@ -410,10 +410,10 @@ class WikiHiero {
 		$this->currentBlock = array();
 		$this->token = '';
 		
-		$text = preg_replace( '/<!--.*?-->/', '', $this->text ); // remove HTML comments
+		$text = preg_replace( '/\\<!--.*?--\\>/s', '', $this->text ); // remove HTML comments
 
 		for ( $i = 0; $i < strlen( $text ); $i++ ) {
-			$char = $this->text[$i];
+			$char = $text[$i];
 
 			if ( isset( self::$delimiters[$char] ) ) {
 				$this->newBlock();

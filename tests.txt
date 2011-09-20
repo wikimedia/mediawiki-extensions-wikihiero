@@ -81,3 +81,13 @@ WikiHiero - void blocks
 <table class='mw-hiero-table mw-hiero-outer' dir='ltr'><tr><td> <table class="mw-hiero-table"><tr> <td><img style='margin:1px;' height='38' src='/extensions/wikihiero/img/hiero_A1.png' title='A1' alt='A1' /></td><td><table class="mw-hiero-table" style="width: 44px;"><tr><td>&#160;</td></tr></table></td><td><img style='margin:1px;' height='38' src='/extensions/wikihiero/img/hiero_B1.png' title='B1' alt='B1' /></td><td><table class="mw-hiero-table" style="width: 22px;"><tr><td>&#160;</td></tr></table></td><td><img style='margin:1px;' height='38' src='/extensions/wikihiero/img/hiero_C1.png' title='C1' alt='C1' /></td></tr></table> </td></tr></table>
 
 !! end
+
+!! test
+WikiHiero - HTML comments
+!! input
+<hiero>A1<!-- B1 --> C1 D<!--
+fooooo -->1</hiero>
+!! result
+<table class='mw-hiero-table mw-hiero-outer' dir='ltr'><tr><td> <table class="mw-hiero-table"><tr> <td><img style='margin:1px;' height='38' src='/extensions/wikihiero/img/hiero_A1.png' title='A1' alt='A1' /></td><td><img style='margin:1px;' height='38' src='/extensions/wikihiero/img/hiero_C1.png' title='C1' alt='C1' /></td><td><img style='margin:1px;' height='19' src='/extensions/wikihiero/img/hiero_D1.png' title='D1' alt='D1' /></td></tr></table> </td></tr></table>
+
+!! end
