@@ -27,16 +27,11 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	die( 'Not an entry point' );
 }
 
-define( "WH_SCALE_DEFAULT", -1 );   // use default scale
-
-global $wgExtensionAssetsPath;
-define( "WH_IMG_DIR",       $wgExtensionAssetsPath . '/wikihiero/img/' );
-
-
 class WikiHiero {
 	const IMAGE_EXT = 'png';
 	const IMAGE_PREFIX = 'hiero_';
 
+	const DEFAULT_SCALE = -1; // use default scale
 	const CARTOUCHE_WIDTH = 2;
 	const IMAGE_MARGIN = 1;
 	const MAX_HEIGHT = 44;
@@ -47,7 +42,7 @@ class WikiHiero {
 
 	private static $phonemes, $prefabs, $files;
 
-	public function __construct( $scale = WH_SCALE_DEFAULT ) {
+	public function __construct() {
 		self::loadData();
 	}
 
@@ -117,23 +112,23 @@ class WikiHiero {
 		elseif ( $glyph == '<' ) { // Render open cartouche
 			$height = intval( self::MAX_HEIGHT * $this->scale / 100 );
 			$code = self::$phonemes[$glyph];
-			return "<img src='" . htmlspecialchars( WH_IMG_DIR . self::IMAGE_PREFIX . "{$code}." . self::IMAGE_EXT ) . "' height='{$height}' title='" . htmlspecialchars( $glyph ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
+			return "<img src='" . htmlspecialchars( self::getImagePath() . self::IMAGE_PREFIX . "{$code}." . self::IMAGE_EXT ) . "' height='{$height}' title='" . htmlspecialchars( $glyph ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
 		}
 		elseif ( $glyph == '>' ) { // Render close cartouche
 			$height = intval( self::MAX_HEIGHT * $this->scale / 100 );
 			$code = self::$phonemes[$glyph];
-			return "<img src='" . htmlspecialchars( WH_IMG_DIR . self::IMAGE_PREFIX . "{$code}." . self::IMAGE_EXT ) . "' height='{$height}' title='" . htmlspecialchars( $glyph ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
+			return "<img src='" . htmlspecialchars( self::getImagePath() . self::IMAGE_PREFIX . "{$code}." . self::IMAGE_EXT ) . "' height='{$height}' title='" . htmlspecialchars( $glyph ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
 		}
 
 		if ( array_key_exists( $glyph, self::$phonemes ) ) {
 			$code = self::$phonemes[$glyph];
 			if ( array_key_exists( $code, self::$files ) ) {
-				return "<img {$imageClass}style='margin:" . self::IMAGE_MARGIN . "px;' $option src='" . htmlspecialchars( WH_IMG_DIR . self::IMAGE_PREFIX . "{$code}." . self::IMAGE_EXT ) . "' title='" . htmlspecialchars( "{$code} [{$glyph}]" ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
+				return "<img {$imageClass}style='margin:" . self::IMAGE_MARGIN . "px;' $option src='" . htmlspecialchars( self::getImagePath() . self::IMAGE_PREFIX . "{$code}." . self::IMAGE_EXT ) . "' title='" . htmlspecialchars( "{$code} [{$glyph}]" ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
 			} else {
 				return htmlspecialchars( $glyph );
 			}
 		} elseif ( array_key_exists( $glyph, self::$files ) ) {
-			return "<img {$imageClass}style='margin:" . self::IMAGE_MARGIN . "px;' $option src='" . htmlspecialchars( WH_IMG_DIR . self::IMAGE_PREFIX . "{$glyph}." . self::IMAGE_EXT ) . "' title='" . htmlspecialchars( $glyph ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
+			return "<img {$imageClass}style='margin:" . self::IMAGE_MARGIN . "px;' $option src='" . htmlspecialchars( self::getImagePath() . self::IMAGE_PREFIX . "{$glyph}." . self::IMAGE_EXT ) . "' title='" . htmlspecialchars( $glyph ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
 		} else {
 			return htmlspecialchars( $glyph );
 		}
@@ -199,8 +194,8 @@ class WikiHiero {
 	 * @param $line bool: use line (default = false)
 	 * @return string: converted code
 	*/
-	public function render( $hiero, $scale = WH_SCALE_DEFAULT, $line = false ) {
-		if ( $scale != WH_SCALE_DEFAULT ) {
+	public function render( $hiero, $scale = self::DEFAULT_SCALE, $line = false ) {
+		if ( $scale != self::DEFAULT_SCALE ) {
 			$this->setScale( $scale );
 		}
 
@@ -350,7 +345,8 @@ class WikiHiero {
 	 * @return string: URL of images directory
 	 */
 	public static function getImagePath() {
-		return WH_IMG_DIR;
+		global $wgExtensionAssetsPath;
+		return "$wgExtensionAssetsPath/wikihiero/img/";
 	}
 
 	/**
