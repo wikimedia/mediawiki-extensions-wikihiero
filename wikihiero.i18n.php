@@ -70,6 +70,7 @@ Wikihiero is a markup language to render hieroglyphics. See http://www.mediawiki
 	'hieroglyphs' => 'WikiHiero is a markup language to render Hieroglyphics. See http://www.mediawiki.org/wiki/Extension:WikiHiero for more information.',
 	'wikihiero-special-page-text' => 'This message is shown on [[Special:Hieroglyphs]]. Keep the link external. If there is a help page in your language about WikiHiero syntax (not Gardiner codes), feel free to change the link destination.',
 	'wikihiero-result' => '{{Identical|Result}}',
+	'wikihiero-th-code' => '{{Identical|Code}}',
 );
 
 /** Afrikaans (Afrikaans)
@@ -173,6 +174,8 @@ $messages['be-tarask'] = array(
 Азнаёмцеся з апісаньнем разьметкі [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax тут].',
 	'wikihiero-input' => 'Уваходны тэкст',
 	'wikihiero-result' => 'Вынік',
+	'wikihiero-syntax' => 'Сынтаксіс',
+	'wikihiero-th-code' => 'Код',
 	'wikihiero-load-error' => 'Памылка загрузкі!',
 	'wikihiero-category-A' => 'Мужчына і ягоныя прафэсіі',
 	'wikihiero-category-B' => 'Жанчына і ейныя прафэсіі',
@@ -686,6 +689,7 @@ Vêde [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax ique] la dèscripcion 
 	'wikihiero-superposition' => 'Subdivision',
 	'wikihiero-juxtaposition' => 'Juxtaposicion',
 	'wikihiero-mirror' => 'Remandar un hièroglifo',
+	'wikihiero-comment' => 'Comentèro',
 	'wikihiero-load-error' => 'Èrror de chargement !',
 	'wikihiero-category-A' => 'A : homo et ses ocupacions',
 	'wikihiero-category-B' => 'B : femèla et ses ocupacions',
@@ -1250,6 +1254,7 @@ $messages['ml'] = array(
 	'wikihiero-th-result' => 'ഫലം',
 	'wikihiero-eol' => 'വരിയുടെ അവസാനം',
 	'wikihiero-superposition' => 'ഉപവിഭാഗം',
+	'wikihiero-comment' => 'കുറിപ്പ്',
 	'wikihiero-load-error' => 'ശേഖരിക്കുന്നതിൽ പിഴവുണ്ടായി!',
 	'wikihiero-category-A' => 'ക: പുരുഷനും അവന്റെ തൊഴിലുകളും',
 	'wikihiero-category-B' => 'ഖ: സ്ത്രീയും അവളുടെ തൊഴിലുകളും',
@@ -2145,6 +2150,9 @@ Xem [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax hướng dẫn về cú 
 	'wikihiero-superposition' => 'Đặt trên nhau',
 	'wikihiero-juxtaposition' => 'Đặt cạnh nhau',
 	'wikihiero-mirror' => 'Đảo ngược chữ tượng hình',
+	'wikihiero-void' => 'Khoảng cách rộng',
+	'wikihiero-half-void' => 'Khoảng cách hẹp',
+	'wikihiero-comment' => 'Chú giải',
 	'wikihiero-load-error' => 'Lỗi tải!',
 	'wikihiero-category-A' => 'A: Đàn ông và các nghề đàn ông',
 	'wikihiero-category-B' => 'B: Đàn bà và các nghề đàn bà',
