@@ -246,10 +246,15 @@ $messages['bg'] = array(
 
 /** Breton (Brezhoneg)
  * @author Fulup
+ * @author Y-M D
  */
 $messages['br'] = array(
 	'wikihiero-desc' => 'Ouzhpennañ a ra ar valizenn <code>&lt;hiero&gt;</code> evit embann ar [[Special:Hieroglyphs|hieroglifoù]].',
+	'wikihiero-result' => "Disoc'h",
 	'wikihiero-syntax' => 'Ereadur',
+	'wikihiero-th-code' => 'Kod',
+	'wikihiero-th-meaning' => 'Ster',
+	'wikihiero-th-result' => "Disoc'h",
 	'wikihiero-separator' => 'Dispartier',
 	'wikihiero-eol' => 'Dibenn al linenn',
 	'wikihiero-superposition' => 'Isrann',
