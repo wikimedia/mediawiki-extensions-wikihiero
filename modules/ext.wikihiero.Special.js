@@ -16,6 +16,7 @@ $textarea.keyup();
 $submit.click( function( e ) {
 	e.preventDefault();
 	$result.hide();
+	$result.injectSpinner( 'hiero' );
 	var text = $textarea.val();
 	var data = {
 		'format': 'json',
@@ -31,6 +32,7 @@ $submit.click( function( e ) {
 				+ mw.msg( 'wikihiero-result' ) + '</th></tr>'
 				+ '<tr><td><code>&lt;hiero&gt;' + mw.html.escape( text ) + '&lt;/hiero&gt;</code></td>'
 				+ '<td>' + data.parse.text['*'] + '</td></tr></table>';
+			$.removeSpinner( 'hiero' );
 			$result.html( html );
 			$result.show();
 		}
