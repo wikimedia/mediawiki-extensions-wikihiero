@@ -123,12 +123,12 @@ class WikiHiero {
 		if ( array_key_exists( $glyph, self::$phonemes ) ) {
 			$code = self::$phonemes[$glyph];
 			if ( array_key_exists( $code, self::$files ) ) {
-				return "<img {$imageClass}style='margin:" . self::IMAGE_MARGIN . "px;' $option src='" . htmlspecialchars( self::getImagePath() . self::IMAGE_PREFIX . "{$code}." . self::IMAGE_EXT ) . "' title='" . htmlspecialchars( "{$code} [{$glyph}]" ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
+				return "<img {$imageClass}style='margin: " . self::IMAGE_MARGIN . "px; $option' src='" . htmlspecialchars( self::getImagePath() . self::IMAGE_PREFIX . "{$code}." . self::IMAGE_EXT ) . "' title='" . htmlspecialchars( "{$code} [{$glyph}]" ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
 			} else {
 				return htmlspecialchars( $glyph );
 			}
 		} elseif ( array_key_exists( $glyph, self::$files ) ) {
-			return "<img {$imageClass}style='margin:" . self::IMAGE_MARGIN . "px;' $option src='" . htmlspecialchars( self::getImagePath() . self::IMAGE_PREFIX . "{$glyph}." . self::IMAGE_EXT ) . "' title='" . htmlspecialchars( $glyph ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
+			return "<img {$imageClass}style='margin: " . self::IMAGE_MARGIN . "px; $option' src='" . htmlspecialchars( self::getImagePath() . self::IMAGE_PREFIX . "{$glyph}." . self::IMAGE_EXT ) . "' title='" . htmlspecialchars( $glyph ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
 		} else {
 			return htmlspecialchars( $glyph );
 		}
@@ -226,17 +226,18 @@ class WikiHiero {
 				} elseif ( strchr( $code[0], '<' ) ) { // start cartouche
 					$contentHtml .= '<td>' . self::renderGlyph( $code[0] ) . '</td>';
 					$is_cartouche = true;
-					$contentHtml .= '<td>' . self::TABLE_START . "<tr><td height='" . intval( self::CARTOUCHE_WIDTH * $this->scale / 100 ) . "px' bgcolor='black'></td></tr><tr><td>" . self::TABLE_START . "<tr>";
+					$contentHtml .= '<td>' . self::TABLE_START . "<tr><td class='mw-hiero-box' style='height: "
+						. intval( self::CARTOUCHE_WIDTH * $this->scale / 100 ) . "px;'></td></tr><tr><td>" . self::TABLE_START . "<tr>";
 
 				} elseif ( strchr( $code[0], '>' ) ) { // end cartouche
-					$contentHtml .= "</tr></table></td></tr><tr><td height='" 
+					$contentHtml .= "</tr></table></td></tr><tr><td class='mw-hiero-box' style='height: "
 						. intval( self::CARTOUCHE_WIDTH * $this->scale / 100 ) 
-						. "px' bgcolor='black'></td></tr>" . '</table></td>';
+						. "px;'></td></tr>" . '</table></td>';
 					$is_cartouche = false;
 					$contentHtml .= '<td>' . self::renderGlyph( $code[0] ) . '</td>';
 
 				} elseif ( $code[0] != "" ) { // assume it's a glyph or '..' or '.'
-					$option = "height='" . $this->resizeGlyph( $code[0], $is_cartouche ) . "'";
+					$option = "height: " . $this->resizeGlyph( $code[0], $is_cartouche ) . "px;";
 
 					$contentHtml .= '<td>' . self::renderGlyph( $code[0], $option ) . '</td>';
 				}
@@ -256,7 +257,7 @@ class WikiHiero {
 
 			// test if block exists in the prefabs list
 			if ( in_array( $temp, self::$prefabs ) ) {
-				$option = "height='" . $this->resizeGlyph( $temp, $is_cartouche ) . "'";
+				$option = "height: " . $this->resizeGlyph( $temp, $is_cartouche ) . "px;";
 
 				$contentHtml .= '<td>' . self::renderGlyph( $temp, $option ) . '</td>';
 
@@ -309,7 +310,7 @@ class WikiHiero {
 
 					} else {
 						// resize the glyph according to the block total height
-						$option = "height='" . $this->resizeGlyph( $t, $is_cartouche, $total ) . "'";
+						$option = "height: " . $this->resizeGlyph( $t, $is_cartouche, $total ) . "px;";
 						$temp .= self::renderGlyph( $t, $option );
 					}
 				} // end foreach
