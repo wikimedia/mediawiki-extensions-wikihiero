@@ -1713,6 +1713,7 @@ Vide [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax aqquà] pe 'na descrizi
 /** Russian (Русский)
  * @author Alexandr Efremov
  * @author Dim Grits
+ * @author MaxSem
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
@@ -1731,9 +1732,9 @@ $messages['ru'] = array(
 	'wikihiero-eol' => 'Перевод строки',
 	'wikihiero-superposition' => 'Вертикальная группировка',
 	'wikihiero-juxtaposition' => 'Горизонтальная группировка',
-	'wikihiero-mirror' => 'Зеркалировать иероглиф',
-	'wikihiero-void' => 'Полная ширина пробельного блока',
-	'wikihiero-half-void' => 'Половинная ширина пробельного блока',
+	'wikihiero-mirror' => 'Развернуть иероглиф по горизонтали',
+	'wikihiero-void' => 'Пустой блок полной ширины',
+	'wikihiero-half-void' => 'Пустой блок половинной ширины',
 	'wikihiero-comment' => 'Примечание',
 	'wikihiero-load-error' => 'Ошибка загрузки!',
 	'wikihiero-category-A' => 'A: Мужчина и его занятия',
@@ -1878,6 +1879,9 @@ Opis označevanje si oglejte [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax
 	'wikihiero-superposition' => 'Pododdelek',
 	'wikihiero-juxtaposition' => 'Vzporejanje',
 	'wikihiero-mirror' => 'Zrcali hieroglif',
+	'wikihiero-void' => 'Prazen blok polne širine',
+	'wikihiero-half-void' => 'Prazen blok polovične širine',
+	'wikihiero-comment' => 'Pripomba',
 	'wikihiero-load-error' => 'Napaka pri nalaganju!',
 	'wikihiero-category-A' => 'A: Moški in njegovi poklici',
 	'wikihiero-category-B' => 'B: Ženska in njeni poklici',
