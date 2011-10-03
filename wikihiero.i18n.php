@@ -71,6 +71,7 @@ Wikihiero is a markup language to render hieroglyphics. See http://www.mediawiki
 	'wikihiero-special-page-text' => 'This message is shown on [[Special:Hieroglyphs]]. Keep the link external. If there is a help page in your language about WikiHiero syntax (not Gardiner codes), feel free to change the link destination.',
 	'wikihiero-result' => '{{Identical|Result}}',
 	'wikihiero-th-code' => '{{Identical|Code}}',
+	'wikihiero-th-result' => '{{Identical|Result}}',
 );
 
 /** Afrikaans (Afrikaans)
@@ -176,6 +177,12 @@ $messages['be-tarask'] = array(
 	'wikihiero-result' => 'Вынік',
 	'wikihiero-syntax' => 'Сынтаксіс',
 	'wikihiero-th-code' => 'Код',
+	'wikihiero-th-meaning' => 'Значэньне',
+	'wikihiero-th-example' => 'Прыклад коду',
+	'wikihiero-th-result' => 'Вынік',
+	'wikihiero-separator' => 'Разьдзяляльнік',
+	'wikihiero-eol' => 'Канец радку',
+	'wikihiero-superposition' => 'Вэртыкальнае групаваньне',
 	'wikihiero-load-error' => 'Памылка загрузкі!',
 	'wikihiero-category-A' => 'Мужчына і ягоныя прафэсіі',
 	'wikihiero-category-B' => 'Жанчына і ейныя прафэсіі',
@@ -645,6 +652,10 @@ Voyez [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax ici] la description du
 	'wikihiero-eol' => 'Fin de ligne',
 	'wikihiero-superposition' => 'Subdivision',
 	'wikihiero-juxtaposition' => 'Juxtaposition',
+	'wikihiero-mirror' => "Faire le reflet d'un hiéroglyphe",
+	'wikihiero-void' => 'Bloc vide de largeur complète',
+	'wikihiero-half-void' => 'Bloc de vide de demie-largeur',
+	'wikihiero-comment' => 'Commentaire',
 	'wikihiero-load-error' => 'Erreur de chargement!',
 	'wikihiero-category-A' => 'A: Hommes et leurs occupations',
 	'wikihiero-category-B' => 'B: Femmes et leurs occupations',
