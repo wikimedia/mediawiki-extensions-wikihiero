@@ -72,6 +72,7 @@ Wikihiero is a markup language to render hieroglyphics. See http://www.mediawiki
 	'wikihiero-result' => '{{Identical|Result}}',
 	'wikihiero-th-code' => '{{Identical|Code}}',
 	'wikihiero-th-result' => '{{Identical|Result}}',
+	'wikihiero-comment' => '{{Identical|Comment}}',
 );
 
 /** Afrikaans (Afrikaans)
@@ -183,6 +184,11 @@ $messages['be-tarask'] = array(
 	'wikihiero-separator' => 'Разьдзяляльнік',
 	'wikihiero-eol' => 'Канец радку',
 	'wikihiero-superposition' => 'Вэртыкальнае групаваньне',
+	'wikihiero-juxtaposition' => 'Гарызантальнае групаваньне',
+	'wikihiero-mirror' => 'Люстэркавы адбітак гіерогліфа',
+	'wikihiero-void' => 'Пусты блёк поўнай шырыні',
+	'wikihiero-half-void' => 'Пусты блёк з паловай шырыні',
+	'wikihiero-comment' => 'Камэнтар',
 	'wikihiero-load-error' => 'Памылка загрузкі!',
 	'wikihiero-category-A' => 'Мужчына і ягоныя прафэсіі',
 	'wikihiero-category-B' => 'Жанчына і ейныя прафэсіі',
