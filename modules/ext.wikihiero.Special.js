@@ -24,7 +24,7 @@ $submit.click( function( e ) {
 		'text': '<hiero>' + text + '</hiero>',
 		'disablepp': ''
 	};
-	$.getJSON( mw.util.wikiScript( 'api' ),
+	$.post( mw.util.wikiScript( 'api' ),
 		data,
 		function( data ) {
 			var html = '<table class="wikitable">'
