@@ -802,10 +802,20 @@ Olle [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax aquí] a descrición do
 );
 
 /** Swiss German (Alemannisch)
+ * @author Als-Chlämens
  * @author Als-Holder
  */
 $messages['gsw'] = array(
 	'wikihiero-desc' => 'Fiegt s <code>&lt;hiero&gt;</code>-Tag fir d Formatierig vu [[Special:Hieroglyphs|Hieroglyphe]] yy',
+	'wikihiero-input' => 'Yygabteggst',
+	'wikihiero-result' => 'Ergebniss',
+	'wikihiero-syntax' => 'Syntax',
+	'wikihiero-th-code' => 'Code',
+	'wikihiero-th-meaning' => 'Bedytig',
+	'wikihiero-th-example' => 'Byspiilcode',
+	'wikihiero-th-result' => 'Ergebniss',
+	'wikihiero-separator' => 'Trennzeiche',
+	'wikihiero-eol' => 'Änd vo de Zyyle',
 );
 
 /** Hebrew (עברית)
