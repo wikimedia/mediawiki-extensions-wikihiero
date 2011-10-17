@@ -1486,6 +1486,8 @@ Opisy znaczników znajdziesz [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax
 	'wikihiero-superposition' => 'Grupuj w pionie',
 	'wikihiero-juxtaposition' => 'Grupuj w poziomie',
 	'wikihiero-mirror' => 'Lustrzany hieroglif',
+	'wikihiero-void' => 'Pełnej szerokości pusty blok',
+	'wikihiero-half-void' => 'Pusty blok połowicznej szerokości',
 	'wikihiero-load-error' => 'Błąd ładowania!',
 	'wikihiero-category-A' => 'A: Człowiek i jego zawód',
 	'wikihiero-category-B' => 'B: Kobieta i jej zawód',
