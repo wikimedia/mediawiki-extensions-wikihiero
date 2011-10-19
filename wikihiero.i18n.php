@@ -1572,6 +1572,7 @@ Ch'a bèica [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax ambelessì] për
  */
 $messages['ps'] = array(
 	'wikihiero-result' => 'پايله',
+	'wikihiero-comment' => 'تبصره',
 	'wikihiero-category-E' => 'E: تيور ژوي',
 	'wikihiero-category-G' => 'G: مارغان',
 	'wikihiero-category-I' => 'I: دوه ژوندوي، خاپوړن، او نور.',
