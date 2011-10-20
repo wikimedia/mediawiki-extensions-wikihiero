@@ -711,6 +711,8 @@ Vêde [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax ique] la dèscripcion 
 	'wikihiero-superposition' => 'Subdivision',
 	'wikihiero-juxtaposition' => 'Juxtaposicion',
 	'wikihiero-mirror' => 'Remandar un hièroglifo',
+	'wikihiero-void' => 'Bloco vouedo de largior complèta',
+	'wikihiero-half-void' => 'Bloco vouedo de mié-largior',
 	'wikihiero-comment' => 'Comentèro',
 	'wikihiero-load-error' => 'Èrror de chargement !',
 	'wikihiero-category-A' => 'A : homo et ses ocupacions',
