@@ -1431,6 +1431,8 @@ Zie ook de [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax gebruiksaanwijzin
 	'wikihiero-superposition' => 'Onderverdeling',
 	'wikihiero-juxtaposition' => 'Nevenschikking',
 	'wikihiero-mirror' => 'Hiëroglief spiegelen',
+	'wikihiero-void' => 'Volledige breedte',
+	'wikihiero-half-void' => 'Halve breedte',
 	'wikihiero-comment' => 'Opmerking',
 	'wikihiero-load-error' => 'Fout bij het laden!',
 	'wikihiero-category-A' => 'A: De man en zijn bezigheden',
@@ -1505,6 +1507,7 @@ Opisy znaczników znajdziesz [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax
 	'wikihiero-mirror' => 'Lustrzany hieroglif',
 	'wikihiero-void' => 'Pełnej szerokości pusty blok',
 	'wikihiero-half-void' => 'Pusty blok połowicznej szerokości',
+	'wikihiero-comment' => 'Komentarz',
 	'wikihiero-load-error' => 'Błąd ładowania!',
 	'wikihiero-category-A' => 'A: Człowiek i jego zawód',
 	'wikihiero-category-B' => 'B: Kobieta i jej zawód',
@@ -2131,10 +2134,14 @@ $messages['tl'] = array(
 );
 
 /** Turkish (Türkçe)
+ * @author Emperyan
  * @author Joseph
  */
 $messages['tr'] = array(
 	'wikihiero-desc' => '[[Special:Hieroglyphs|Hiyeroglifleri]] görüntülemek için <code>&lt;hiero&gt;</code> etiketini ekler',
+	'hieroglyphs' => 'Hiyeroglif biçimlendirmeyi deneyin',
+	'wikihiero-special-page-text' => 'WikiHiero biçimlendirmesini denemek için bu sayfayı kullanın.
+Biçimlendirme açıklaması için [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax buraya] bakınız.',
 );
 
 /** Ukrainian (Українська)
