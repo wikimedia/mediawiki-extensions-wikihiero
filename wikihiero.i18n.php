@@ -1249,6 +1249,7 @@ $messages['lb'] = array(
 	'wikihiero-category-O' => 'O: Gebaier, Deeler vu Gebaier, asw.',
 	'wikihiero-category-P' => 'P: Schëffer an Deeler vu Schëffer',
 	'wikihiero-category-U' => 'U: Landwirtschaft, Handwierk a Berufer',
+	'wikihiero-category-V' => 'V: Seel, Faser, Kierf, Pochen, asw.',
 	'wikihiero-category-W' => 'W: Objeten aus Toun a Keramik',
 	'wikihiero-category-Aa' => 'Aa: Net klassifizéiert',
 );
