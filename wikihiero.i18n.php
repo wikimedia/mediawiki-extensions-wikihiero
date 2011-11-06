@@ -103,6 +103,7 @@ $messages['an'] = array(
 
 /** Arabic (العربية)
  * @author Meno25
+ * @author روخو
  * @author زكريا
  */
 $messages['ar'] = array(
@@ -112,6 +113,14 @@ $messages['ar'] = array(
 انظر [http://ar.wikipedia.org/wiki/مساعدة:نحو_ويكي_هييرو هنا] للاستعلام.',
 	'wikihiero-input' => 'إدخال نص',
 	'wikihiero-result' => 'نتيجة',
+	'wikihiero-syntax' => 'صياغة',
+	'wikihiero-th-code' => 'كود',
+	'wikihiero-th-meaning' => 'المعنى',
+	'wikihiero-th-example' => 'مثال كود',
+	'wikihiero-th-result' => 'النتيجة',
+	'wikihiero-separator' => 'فاصل',
+	'wikihiero-eol' => 'نهاية السطر',
+	'wikihiero-comment' => 'تعليق',
 	'wikihiero-load-error' => 'خطأ تحميل!',
 );
 
