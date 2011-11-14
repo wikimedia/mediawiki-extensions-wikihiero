@@ -276,24 +276,27 @@ $messages['br'] = array(
 	'wikihiero-syntax' => 'Ereadur',
 	'wikihiero-th-code' => 'Kod',
 	'wikihiero-th-meaning' => 'Ster',
+	'wikihiero-th-example' => "Skouer ur c'hod",
 	'wikihiero-th-result' => "Disoc'h",
 	'wikihiero-separator' => 'Dispartier',
 	'wikihiero-eol' => 'Dibenn al linenn',
 	'wikihiero-superposition' => 'Isrann',
 	'wikihiero-juxtaposition' => 'Kenstok',
+	'wikihiero-void' => "Bloc'had goullo klok e led.",
+	'wikihiero-half-void' => "Bloc'had goullo hanter led.",
 	'wikihiero-comment' => 'Evezhiadenn',
 	'wikihiero-load-error' => 'Fazi kargañ !',
-	'wikihiero-category-A' => 'A: Мъжът и дейностите му',
-	'wikihiero-category-B' => 'B: Жената и дейностите й',
-	'wikihiero-category-C' => 'C: Антропоморфни божества',
-	'wikihiero-category-D' => 'D: Части на човешкото тяло',
-	'wikihiero-category-E' => 'E: Бозайници',
-	'wikihiero-category-F' => 'F: Части от бозайници',
-	'wikihiero-category-G' => 'G: Птици',
-	'wikihiero-category-H' => 'H: Части от птици',
-	'wikihiero-category-I' => 'I: Земноводни, гущери и пр.',
-	'wikihiero-category-K' => 'K: Риби и части от риби',
-	'wikihiero-category-L' => 'L: Насекоми, безгръбначни животни и пр.',
+	'wikihiero-category-A' => 'A: An dud hag o obererezh',
+	'wikihiero-category-B' => "A: Ar merc'hed hag o obererezh",
+	'wikihiero-category-C' => 'C: Doueoù denheñvel',
+	'wikihiero-category-D' => 'D: Rann eus korf an den',
+	'wikihiero-category-E' => 'E: Bronneged',
+	'wikihiero-category-F' => 'F: Rannoù korf bronneged',
+	'wikihiero-category-G' => 'G: Evned',
+	'wikihiero-category-H' => 'H: Rannoù korf evned',
+	'wikihiero-category-I' => 'I: Divelfenneged, stlejviled, h.a.',
+	'wikihiero-category-K' => 'K: Pesked ha rannoù pesked',
+	'wikihiero-category-L' => 'L: Divellkeineged ha loenedigoù munut',
 	'wikihiero-category-M' => 'M: Gwez ha plant',
 	'wikihiero-category-N' => 'N: Oabl, douar, dour',
 	'wikihiero-category-O' => 'O: Savadurioù, tammoù savadurioù, h.a.',
@@ -307,8 +310,8 @@ $messages['br'] = array(
 	'wikihiero-category-W' => 'W: Listri mein ha pri-poazh',
 	'wikihiero-category-X' => 'X: Bara ha gwestell',
 	'wikihiero-category-Y' => "Y: Skrivañ, c'hoarioù, sonerezh",
-	'wikihiero-category-Z' => 'Z: Геометрични форми',
-	'wikihiero-category-Aa' => 'Aa: Некласифицирани',
+	'wikihiero-category-Z' => 'Z: Tresoù, lunioù mentoniel, h.a.',
+	'wikihiero-category-Aa' => 'Aa: Dirumm',
 );
 
 /** Bosnian (Bosanski)
@@ -1528,6 +1531,15 @@ $messages['no'] = array(
  */
 $messages['oc'] = array(
 	'wikihiero-desc' => 'Apond la balisa <code>&lt;hiero&gt;</code> per afichar los [[Special:Hieroglyphs|ieroglifes]]',
+);
+
+/** Deitsch (Deitsch)
+ * @author Xqt
+ */
+$messages['pdc'] = array(
+	'wikihiero-category-G' => 'G: Veggel',
+	'wikihiero-category-M' => 'M: Beem unn Blanze',
+	'wikihiero-category-N' => 'N: Himmel, Erd, Wasser',
 );
 
 /** Polish (Polski)
