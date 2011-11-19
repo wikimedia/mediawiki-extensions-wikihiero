@@ -782,7 +782,7 @@ $messages['fy'] = array(
  * @author Toliño
  */
 $messages['gl'] = array(
-	'wikihiero-desc' => 'Engade a etiqueta <code>&lt;hiero&gt;</code> para amosar [[Special:Hieroglyphs|xeróglifos]]',
+	'wikihiero-desc' => 'Engade a etiqueta <code>&lt;hiero&gt;</code> para mostrar [[Special:Hieroglyphs|xeróglifos]]',
 	'hieroglyphs' => 'Probe o formato dos xeróglifos',
 	'wikihiero-special-page-text' => 'Empregue esta páxina para probar o formato dos xeróglifos.
 Olle [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax aquí] a descrición do formato.',
