@@ -1170,10 +1170,11 @@ $messages['ka'] = array(
 	'wikihiero-desc' => 'ჰმატებს თეგ <code>&lt;hiero&gt;</code> იეროგიფების საჩვენებლად',
 );
 
+/** Kazakh (Қазақша) */
 $messages['kk'] = array(
 	'wikihiero-syntax' => 'Синтаксис',
-	'wikihiero-eol' => 'Жол аяғы',
 	'wikihiero-separator' => 'Айырғыш',
+	'wikihiero-eol' => 'Жол аяғы',
 	'wikihiero-superposition' => 'Төменгі бөлім',
 	'wikihiero-juxtaposition' => 'Тығыз жақындату',
 	'wikihiero-category-A' => 'A: Ер адам және оның шұғылдануы',
@@ -2073,7 +2074,7 @@ $messages['sr-ec'] = array(
 	'wikihiero-category-Aa' => 'Aa: Некласификовано',
 );
 
-/** Serbian Latin ekavian (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪Srpski (latinica)‬)
  * @author Michaello
  */
 $messages['sr-el'] = array(
@@ -2156,14 +2157,14 @@ $messages['te'] = array(
 	'wikihiero-result' => 'ఫలితం',
 );
 
-/** Tajik (Cyrillic) (Тоҷикӣ (Cyrillic))
+/** Tajik (Cyrillic script) (Тоҷикӣ)
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
 	'wikihiero-desc' => 'Бачасби <code>&lt;hiero&gt;</code>-ро барои намоиши [[Special:Hieroglyphs|ҳироглиф]] илова мекунад',
 );
 
-/** Tajik (Latin) (Тоҷикӣ (Latin))
+/** Tajik (Latin script) (tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
