@@ -224,7 +224,7 @@ class WikiHiero {
 					}
 
 				} elseif ( strchr( $code[0], '<' ) ) { // start cartouche
-					$contentHtml .= '<td>' . self::renderGlyph( $code[0] ) . '</td>';
+					$contentHtml .= '<td>' . $this->renderGlyph( $code[0] ) . '</td>';
 					$is_cartouche = true;
 					$contentHtml .= '<td>' . self::TABLE_START . "<tr><td class='mw-hiero-box' style='height: "
 						. intval( self::CARTOUCHE_WIDTH * $this->scale / 100 ) . "px;'></td></tr><tr><td>" . self::TABLE_START . "<tr>";
@@ -234,12 +234,12 @@ class WikiHiero {
 						. intval( self::CARTOUCHE_WIDTH * $this->scale / 100 ) 
 						. "px;'></td></tr>" . '</table></td>';
 					$is_cartouche = false;
-					$contentHtml .= '<td>' . self::renderGlyph( $code[0] ) . '</td>';
+					$contentHtml .= '<td>' . $this->renderGlyph( $code[0] ) . '</td>';
 
 				} elseif ( $code[0] != "" ) { // assume it's a glyph or '..' or '.'
 					$option = "height: " . $this->resizeGlyph( $code[0], $is_cartouche ) . "px;";
 
-					$contentHtml .= '<td>' . self::renderGlyph( $code[0], $option ) . '</td>';
+					$contentHtml .= '<td>' . $this->renderGlyph( $code[0], $option ) . '</td>';
 				}
 
 			// block contains more than 1 glyph
@@ -259,7 +259,7 @@ class WikiHiero {
 			if ( in_array( $temp, self::$prefabs ) ) {
 				$option = "height: " . $this->resizeGlyph( $temp, $is_cartouche ) . "px;";
 
-				$contentHtml .= '<td>' . self::renderGlyph( $temp, $option ) . '</td>';
+				$contentHtml .= '<td>' . $this->renderGlyph( $temp, $option ) . '</td>';
 
 			// block must be manually computed
 			} else {
@@ -311,7 +311,7 @@ class WikiHiero {
 					} else {
 						// resize the glyph according to the block total height
 						$option = "height: " . $this->resizeGlyph( $t, $is_cartouche, $total ) . "px;";
-						$temp .= self::renderGlyph( $t, $option );
+						$temp .= $this->renderGlyph( $t, $option );
 					}
 				} // end foreach
 
