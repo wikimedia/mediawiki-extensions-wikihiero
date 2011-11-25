@@ -12,7 +12,7 @@ $messages['en'] = array(
 	'wikihiero-desc' => 'Adds <code>&lt;hiero&gt;</code> tag to display [[Special:Hieroglyphs|hieroglyphs]]',
 	'hieroglyphs' => 'Try hieroglyph markup',
 	'wikihiero-special-page-text' => 'Use this page to try out WikiHiero markup.
-See [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax here] for markup description.',
+See [//en.wikipedia.org/wiki/Help:WikiHiero_syntax here] for markup description.',
 	'wikihiero-input' => 'Input text',
 	'wikihiero-result' => 'Result',
 	'wikihiero-syntax' => 'Syntax',
@@ -66,8 +66,8 @@ See [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax here] for markup descrip
  */
 $messages['qqq'] = array(
 	'wikihiero-desc' => '{{desc}}
-Wikihiero is a markup language to render hieroglyphics. See http://www.mediawiki.org/wiki/Extension:WikiHiero for more information.',
-	'hieroglyphs' => 'WikiHiero is a markup language to render Hieroglyphics. See http://www.mediawiki.org/wiki/Extension:WikiHiero for more information.',
+Wikihiero is a markup language to render hieroglyphics. See [//www.mediawiki.org/wiki/Extension:WikiHiero Extension:WikiHiero] for more information.',
+	'hieroglyphs' => 'WikiHiero is a markup language to render Hieroglyphics. See [//www.mediawiki.org/wiki/Extension:WikiHiero Extension:WikiHiero] for more information.',
 	'wikihiero-special-page-text' => 'This message is shown on [[Special:Hieroglyphs]]. Keep the link external. If there is a help page in your language about WikiHiero syntax (not Gardiner codes), feel free to change the link destination.',
 	'wikihiero-result' => '{{Identical|Result}}',
 	'wikihiero-th-code' => '{{Identical|Code}}',
@@ -110,7 +110,7 @@ $messages['ar'] = array(
 	'wikihiero-desc' => 'يضيف الوسم <code>&lt;hiero&gt;</code> لعرض الهيروغليفية',
 	'hieroglyphs' => 'جرب ترميز الهيرغليفية',
 	'wikihiero-special-page-text' => 'استخدم هذه الصفحة لتجربة ترميز ويكي هييرو.
-انظر [http://ar.wikipedia.org/wiki/مساعدة:نحو_ويكي_هييرو هنا] للاستعلام.',
+انظر [//ar.wikipedia.org/wiki/مساعدة:نحو_ويكي_هييرو هنا] للاستعلام.',
 	'wikihiero-input' => 'إدخال نص',
 	'wikihiero-result' => 'نتيجة',
 	'wikihiero-syntax' => 'صياغة',
@@ -139,7 +139,7 @@ $messages['ast'] = array(
 	'wikihiero-desc' => "Amiesta la etiqueta <code>&lt;hiero&gt;</code> p'amosar [[Special:Hieroglyphs|xeroglíficos]]",
 	'hieroglyphs' => "Prueba'l formatu xeroglíficu",
 	'wikihiero-special-page-text' => 'Usa esta páxina pa probar el formatu WikiHiero.
-Llee [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax equí] la descripción del formatu.',
+Llee [//en.wikipedia.org/wiki/Help:WikiHiero_syntax equí] la descripción del formatu.',
 	'wikihiero-input' => "Testu d'entrada",
 	'wikihiero-result' => 'Resultáu',
 	'wikihiero-load-error' => '¡Fallu al cargar!',
@@ -182,7 +182,7 @@ $messages['be-tarask'] = array(
 	'wikihiero-desc' => 'Дадае тэг <code>&lt;hiero&gt;</code> для адлюстраваньня [[Special:Hieroglyphs|гіерогліфаў]]',
 	'hieroglyphs' => 'Паспрабуйце герагліфічную разьметку',
 	'wikihiero-special-page-text' => 'Выкарыстоўвайце гэтую старонку, каб паспрабаваць разьметку WikiHiero.
-Азнаёмцеся з апісаньнем разьметкі [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax тут].',
+Азнаёмцеся з апісаньнем разьметкі [//en.wikipedia.org/wiki/Help:WikiHiero_syntax тут].',
 	'wikihiero-input' => 'Уваходны тэкст',
 	'wikihiero-result' => 'Вынік',
 	'wikihiero-syntax' => 'Сынтаксіс',
@@ -354,7 +354,7 @@ $messages['cs'] = array(
 	'wikihiero-desc' => 'Přidává značku <code>&lt;hiero&gt;</code> pro zobrazování [[Special:Hieroglyphs|hieroglyfů]]',
 	'hieroglyphs' => 'Vyzkoušet značení hieroglyfů',
 	'wikihiero-special-page-text' => 'Na této stránce si můžete vyzkoušet jazyk WikiHiero.
-Popis jazyka najdete v [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax nápovědě].',
+Popis jazyka najdete v [//en.wikipedia.org/wiki/Help:WikiHiero_syntax nápovědě].',
 	'wikihiero-input' => 'Vstupní text',
 	'wikihiero-result' => 'Výsledek',
 	'wikihiero-syntax' => 'Syntaxe',
@@ -405,7 +405,7 @@ $messages['da'] = array(
 	'wikihiero-desc' => 'Tilføjer tagget <code>&lt;hiero&gt;</code> for at vise [[Special:Hieroglyphs|hieroglyffer]]',
 	'hieroglyphs' => 'Afprøv hieroglyfkode',
 	'wikihiero-special-page-text' => 'Brug denne side til at afprøve WikiHiero-kode.
-Se [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax her] for en beskrivelse af koden.',
+Se [//en.wikipedia.org/wiki/Help:WikiHiero_syntax her] for en beskrivelse af koden.',
 	'wikihiero-input' => 'Inputtekst',
 	'wikihiero-result' => 'Resultat',
 	'wikihiero-syntax' => 'Syntaks',
@@ -459,7 +459,7 @@ $messages['de'] = array(
 	'wikihiero-desc' => 'Ergänzt das <code>&lt;hiero&gt;</code>-Tag zur Formatierung von [[Special:Hieroglyphs|Hieroglyphen]]',
 	'hieroglyphs' => 'Hieroglyphen-Markup testen',
 	'wikihiero-special-page-text' => 'Verwende diese Seite, um das WikiHiero-Markup zu testen.
-Siehe [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax hier] für eine Markup-Beschreibung.',
+Siehe [//en.wikipedia.org/wiki/Help:WikiHiero_syntax hier] für eine Markup-Beschreibung.',
 	'wikihiero-input' => 'Eingabetext',
 	'wikihiero-result' => 'Ergebnis',
 	'wikihiero-syntax' => 'Syntax',
@@ -536,7 +536,7 @@ $messages['eo'] = array(
 	'wikihiero-desc' => 'Aldonas etikedon <code>&lt;hiero&gt;</code> por montri [[Special:Hieroglyphs|hieroglifon]]',
 	'hieroglyphs' => 'Provi hieroglifan marklingvon',
 	'wikihiero-special-page-text' => 'Uzu ĉi tiu paĝo por provi WikiHiero-marklingvo.
-Vidu [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax ĉi tie] por priskribo de marklingvo (anglalingve).',
+Vidu [//en.wikipedia.org/wiki/Help:WikiHiero_syntax ĉi tie] por priskribo de marklingvo (anglalingve).',
 	'wikihiero-input' => 'Enmetu tekston',
 	'wikihiero-result' => 'Rezulto',
 	'wikihiero-syntax' => 'Sintakso',
@@ -625,7 +625,7 @@ $messages['fa'] = array(
 	'wikihiero-desc' => 'برچسب <code>&lt;hiero&gt;</code> را برای نمایش هیروگلیف می‌افزاید',
 	'hieroglyphs' => 'نشانه گذاری هیروگلیف را امتحان کنید',
 	'wikihiero-special-page-text' => 'برای امتحان نشانه‌گذاری ویکی‌هیرو از این صفحه استفاده کنید.
-برای توضیحات نشانه‌گذاری، [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax اینجا] را ببینید.',
+برای توضیحات نشانه‌گذاری، [//en.wikipedia.org/wiki/Help:WikiHiero_syntax اینجا] را ببینید.',
 	'wikihiero-input' => 'متن ورودی',
 	'wikihiero-result' => 'نتیجه',
 	'wikihiero-load-error' => 'خطا در بارگیری!',
@@ -673,7 +673,7 @@ $messages['fr'] = array(
 	'wikihiero-desc' => 'Ajoute la balise <code>&lt;hiero&gt;</code> pour afficher des [[Special:Hieroglyphs|hiéroglyphes]]',
 	'hieroglyphs' => 'Essayer un balisage par hiéroglyphe',
 	'wikihiero-special-page-text' => 'Utiliser cette page pour tester le balisage de WikiHiero.
-Voyez [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax ici] la description du balisage.',
+Voyez [//en.wikipedia.org/wiki/Help:WikiHiero_syntax ici] la description du balisage.',
 	'wikihiero-input' => 'Texte entré',
 	'wikihiero-result' => 'Résultat',
 	'wikihiero-syntax' => 'Syntaxe',
@@ -725,7 +725,7 @@ $messages['frp'] = array(
 	'wikihiero-desc' => 'Apond la balisa <code>&lt;hiero&gt;</code> por fâre vêre los [[Special:Hieroglyphs|hièroglifos]].',
 	'hieroglyphs' => 'Èprovar un balisâjo per hièroglifo',
 	'wikihiero-special-page-text' => 'Utilisâd ceta pâge por èprovar lo balisâjo de VouiquiHièrô.
-Vêde [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax ique] la dèscripcion du balisâjo.',
+Vêde [//en.wikipedia.org/wiki/Help:WikiHiero_syntax ique] la dèscripcion du balisâjo.',
 	'wikihiero-input' => 'Tèxto buchiê',
 	'wikihiero-result' => 'Rèsultat',
 	'wikihiero-syntax' => 'Sintaxa',
@@ -785,7 +785,7 @@ $messages['gl'] = array(
 	'wikihiero-desc' => 'Engade a etiqueta <code>&lt;hiero&gt;</code> para mostrar [[Special:Hieroglyphs|xeróglifos]]',
 	'hieroglyphs' => 'Probe o formato dos xeróglifos',
 	'wikihiero-special-page-text' => 'Empregue esta páxina para probar o formato dos xeróglifos.
-Olle [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax aquí] a descrición do formato.',
+Olle [//en.wikipedia.org/wiki/Help:WikiHiero_syntax aquí] a descrición do formato.',
 	'wikihiero-input' => 'Texto de entrada',
 	'wikihiero-result' => 'Resultado',
 	'wikihiero-syntax' => 'Sintaxe',
@@ -838,7 +838,7 @@ $messages['gsw'] = array(
 	'wikihiero-desc' => 'Fiegt s <code>&lt;hiero&gt;</code>-Tag fir d Formatierig vu [[Special:Hieroglyphs|Hieroglyphe]] yy',
 	'hieroglyphs' => 'Hieroglyphe-Markup ussprobiere',
 	'wikihiero-special-page-text' => 'Bruuch die Syte, zume s WikiHiero-Markup z teschte.
-Lueg uff [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax] für e Beschrybig vum Markup.',
+Lueg uff [//en.wikipedia.org/wiki/Help:WikiHiero_syntax] für e Beschrybig vum Markup.',
 	'wikihiero-input' => 'Yygabteggst',
 	'wikihiero-result' => 'Ergebniss',
 	'wikihiero-syntax' => 'Syntax',
@@ -892,7 +892,7 @@ $messages['he'] = array(
 	'wikihiero-desc' => 'הוספת תג <code>&lt;hiero&gt;</code> להצגת [[Special:Hieroglyphs|היירוגליפים]]',
 	'hieroglyphs' => 'לנסות סימון היירוגליפים',
 	'wikihiero-special-page-text' => 'בדף הזה אפשר לנסות את אפשרויות הסימון של ויקיהיירו.
-ר׳ [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax כאן] לתיאור הסימון.',
+ר׳ [//en.wikipedia.org/wiki/Help:WikiHiero_syntax כאן] לתיאור הסימון.',
 	'wikihiero-input' => 'טקסט קלט',
 	'wikihiero-result' => 'תוצאה',
 	'wikihiero-syntax' => 'תחביר',
@@ -979,7 +979,7 @@ $messages['ia'] = array(
 	'wikihiero-desc' => 'Adde le etiquetta <code>&lt;hiero&gt;</code> pro inserer [[Special:Hieroglyphs|hieroglyphos]]',
 	'hieroglyphs' => 'Testar marcation hieroglyphic',
 	'wikihiero-special-page-text' => 'Usa iste pagina pro testar le linguage de marcation WikiHiero.
-Vide [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax hic] pro le description del marcation.',
+Vide [//en.wikipedia.org/wiki/Help:WikiHiero_syntax hic] pro le description del marcation.',
 	'wikihiero-input' => 'Texto de entrata',
 	'wikihiero-result' => 'Resultato',
 	'wikihiero-syntax' => 'Syntaxe',
@@ -1107,7 +1107,7 @@ $messages['ja'] = array(
 	'wikihiero-desc' => ' [[Special:Hieroglyphs|ヒエログリフ]]を表示する <code>&lt;hiero&gt;</code> タグを追加します。',
 	'hieroglyphs' => '象形文字マークアップを試行',
 	'wikihiero-special-page-text' => 'WikiHieroマークアップを試すためにこのページを使用してください。
-マークアップの説明につきましては、[http://ja.wikipedia.org/wiki/Help:WikiHieroの文法 こちら] をご覧ください。',
+マークアップの説明につきましては、[//ja.wikipedia.org/wiki/Help:WikiHieroの文法 こちら] をご覧ください。',
 	'wikihiero-input' => '入力テキスト',
 	'wikihiero-result' => '結果',
 	'wikihiero-syntax' => '構文',
@@ -1292,7 +1292,7 @@ $messages['mk'] = array(
 	'wikihiero-desc' => 'Додава ознака <code>&lt;hiero&gt;</code> за прикажување на [[Special:Hieroglyphs|хиероглифи]]',
 	'hieroglyphs' => 'Пробајте ја синтаксата за хиероглифи',
 	'wikihiero-special-page-text' => 'На оваа страница испробајте ја синтаксата на ВикиХиеро за претставување на египетски хиероглифи како слики во PNG формат (бидејќи засега Уникод пружа само делумна поддршка на ова писмо).
-Прочитајте за [http://mk.wikipedia.org/wiki/Помош:Египетски_хиероглифи синтаксата за хиероглифи].',
+Прочитајте за [//mk.wikipedia.org/wiki/Помош:Египетски_хиероглифи синтаксата за хиероглифи].',
 	'wikihiero-input' => 'Влезен текст',
 	'wikihiero-result' => 'Извод',
 	'wikihiero-syntax' => 'Синтакса',
@@ -1344,7 +1344,7 @@ $messages['ml'] = array(
 	'wikihiero-desc' => 'ചിത്രാക്ഷരങ്ങൾ പ്രദർശിപ്പിക്കാനായി <code>&lt;hiero&gt;</code> എന്ന റ്റാഗ് കൂട്ടിച്ചേർക്കുന്നു',
 	'hieroglyphs' => 'ഹൈറോഗ്ലിഫ് അടയാളപ്പെടുത്തലുകൾ പരീക്ഷിക്കുക',
 	'wikihiero-special-page-text' => 'വിക്കിഹൈറോ അടയാളപ്പെടുത്തലുകൾ പരീക്ഷിക്കാൻ ഈ താൾ ഉപയോഗിക്കുക.
-അടയാളപ്പെടുത്തലുകളുടെ വിശദവിവരങ്ങൾ കാണാൻ [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax ഇവിടം] സന്ദർശിക്കുക.',
+അടയാളപ്പെടുത്തലുകളുടെ വിശദവിവരങ്ങൾ കാണാൻ [//en.wikipedia.org/wiki/Help:WikiHiero_syntax ഇവിടം] സന്ദർശിക്കുക.',
 	'wikihiero-input' => 'ഇൻപുട്ട് ടെക്സ്റ്റ്',
 	'wikihiero-result' => 'ഫലം',
 	'wikihiero-syntax' => 'എഴുത്ത് വ്യവസ്ഥ',
@@ -1402,7 +1402,7 @@ $messages['ms'] = array(
 	'wikihiero-desc' => 'Menambah tag <code>&lt;hiero&gt;</code> untuk menghasilkan [[Special:Hieroglyphs|hieroglif]]',
 	'hieroglyphs' => 'Cuba penanda tulisan hieroglif',
 	'wikihiero-special-page-text' => 'Gunakan laman ini untuk mencuba penanda WikiHiero.
-Rujuk keterangan penanda [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax di sini].',
+Rujuk keterangan penanda [//en.wikipedia.org/wiki/Help:WikiHiero_syntax di sini].',
 	'wikihiero-input' => 'Teks input',
 	'wikihiero-result' => 'Hasil',
 	'wikihiero-syntax' => 'Sintaks',
@@ -1468,7 +1468,7 @@ $messages['nl'] = array(
 	'wikihiero-desc' => 'Voegt de tag <code>&lt;hiero&gt;</code> toe voor de weergave van [[Special:Hieroglyphs|hiërogliefen]]',
 	'hieroglyphs' => 'Hiërogliefopmaak uitproberen',
 	'wikihiero-special-page-text' => 'Gebruik deze pagina om de opmaak met WikiHiero uit te proberen.
-Zie ook de [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax gebruiksaanwijzing].',
+Zie ook de [//en.wikipedia.org/wiki/Help:WikiHiero_syntax gebruiksaanwijzing].',
 	'wikihiero-input' => 'Invoertekst',
 	'wikihiero-result' => 'Resultaat',
 	'wikihiero-syntax' => 'Syntax',
@@ -1551,7 +1551,7 @@ $messages['pl'] = array(
 	'wikihiero-desc' => 'Dodaje znacznik <code>&lt;hiero&gt;</code> umożliwiający wyświetlanie [[Special:Hieroglyphs|hieroglifów]]',
 	'hieroglyphs' => 'Spróbuj znaczników hieroglifów',
 	'wikihiero-special-page-text' => 'Użyj tej strony, by wypróbować znaczniki WikiHiero.
-Opisy znaczników znajdziesz [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax tutaj].',
+Opisy znaczników znajdziesz [//en.wikipedia.org/wiki/Help:WikiHiero_syntax tutaj].',
 	'wikihiero-input' => 'Tekst wejściowy',
 	'wikihiero-result' => 'Wynik',
 	'wikihiero-syntax' => 'Składnia',
@@ -1604,7 +1604,7 @@ $messages['pms'] = array(
 	'wikihiero-desc' => 'A gionta ël tag <code>&lt;hiero&gt;</code> për visualisé dij [[Special:Hieroglyphs|geroglif]]',
 	'hieroglyphs' => 'Prové na marcadura con geroglif',
 	'wikihiero-special-page-text' => "Dovré costa pàgina për prové ël marcador WikiHiero.
-Ch'a bèica [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax ambelessì] për la descrission dël marcador.",
+Ch'a bèica [//en.wikipedia.org/wiki/Help:WikiHiero_syntax ambelessì] për la descrission dël marcador.",
 	'wikihiero-input' => 'Test butà',
 	'wikihiero-result' => 'Arzultà',
 	'wikihiero-syntax' => 'Sintassi',
@@ -1668,7 +1668,7 @@ $messages['ps'] = array(
 $messages['pt'] = array(
 	'wikihiero-desc' => 'Adiciona o elemento <code>&lt;hiero&gt;</code> para apresentar [[Special:Hieroglyphs|hieróglifos]]',
 	'hieroglyphs' => 'Tente marcação hieroglífica',
-	'wikihiero-special-page-text' => 'Use esta página para experimentar a marcação wikihiero. Veja [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax here] para descrição de marcação.',
+	'wikihiero-special-page-text' => 'Use esta página para experimentar a marcação wikihiero. Veja [//en.wikipedia.org/wiki/Help:WikiHiero_syntax here] para descrição de marcação.',
 	'wikihiero-input' => 'Texto de entrada',
 	'wikihiero-result' => 'Resultado',
 	'wikihiero-syntax' => 'Sintaxe',
@@ -1718,7 +1718,7 @@ $messages['pt-br'] = array(
 	'wikihiero-desc' => 'Adiciona a marca <code>&lt;hiero&gt;</code> para exibir [[Special:Hieroglyphs|hieróglifos]]',
 	'hieroglyphs' => 'Tente a marcação hieróglifo',
 	'wikihiero-special-page-text' => 'Use esta página para experimentar a marcação wikihiero.
-Acesse [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax here] para descrição de marcação.',
+Acesse [//en.wikipedia.org/wiki/Help:WikiHiero_syntax here] para descrição de marcação.',
 	'wikihiero-input' => 'Texto de entrada',
 	'wikihiero-result' => 'Resultado',
 	'wikihiero-load-error' => 'Erro ao carregar!',
@@ -1802,7 +1802,7 @@ $messages['roa-tara'] = array(
 	'wikihiero-desc' => "Ause 'u tag <code>&lt;hiero&gt;</code> pe visualizzà 'a [[Special:Hieroglyphs|hieroglife]]",
 	'hieroglyphs' => "Pruève 'u markup de geroglifece",
 	'wikihiero-special-page-text' => "Ause sta pàgene pe pruvà 'u UicchiHiero markup.
-Vide [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax aqquà] pe 'na descrizione d'u markup.",
+Vide [//en.wikipedia.org/wiki/Help:WikiHiero_syntax aqquà] pe 'na descrizione d'u markup.",
 	'wikihiero-input' => 'Teste de input:',
 	'wikihiero-result' => 'Resultate',
 	'wikihiero-load-error' => 'Errore de carecamende!',
@@ -1844,7 +1844,7 @@ $messages['ru'] = array(
 	'wikihiero-desc' => 'Добавляет тег <code>&lt;hiero&gt;</code> для показа [[Special:Hieroglyphs|иероглифов]]',
 	'hieroglyphs' => 'Попробуйте иероглифическую разметку',
 	'wikihiero-special-page-text' => 'Используйте эту страницу для опробования разметки WikiHiero.
-См. описание разметки [http://ru.wikipedia.org/wiki/Википедия:Древнеегипетские_иероглифы здесь].',
+См. описание разметки [//ru.wikipedia.org/wiki/Википедия:Древнеегипетские_иероглифы здесь].',
 	'wikihiero-input' => 'Входной текст:',
 	'wikihiero-result' => 'Результат',
 	'wikihiero-syntax' => 'Синтаксис',
@@ -1896,7 +1896,7 @@ $messages['rue'] = array(
 	'wikihiero-desc' => 'Додавать значку <code>&lt;hiero&gt;</code> про зобразованя [[Special:Hieroglyphs|гєроґліфів]]',
 	'hieroglyphs' => 'Спробуйте єроґліфічне писмо',
 	'wikihiero-special-page-text' => 'На тій сторінцї можне спробовати WikiHiero позначку.
-Попис позначкы посмотьте [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax гев].',
+Попис позначкы посмотьте [//en.wikipedia.org/wiki/Help:WikiHiero_syntax гев].',
 	'wikihiero-input' => 'Вступный текст',
 	'wikihiero-result' => 'Резултат',
 	'wikihiero-syntax' => 'Сінтаксіс',
@@ -1990,7 +1990,7 @@ $messages['sl'] = array(
 	'wikihiero-desc' => 'Doda etiketo <code>&lt;hiero&gt;</code> za prikaz [[Special:Hieroglyphs|hieroglifov]]',
 	'hieroglyphs' => 'Preizkusite označevanje hieroglifov',
 	'wikihiero-special-page-text' => 'Uporabite to stran za preizkus označevanja WikiHiero.
-Opis označevanje si oglejte [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax tukaj].',
+Opis označevanje si oglejte [//en.wikipedia.org/wiki/Help:WikiHiero_syntax tukaj].',
 	'wikihiero-input' => 'Vhodno besedilo',
 	'wikihiero-result' => 'Rezultat',
 	'wikihiero-syntax' => 'Skladnja',
@@ -2200,7 +2200,7 @@ $messages['tr'] = array(
 	'wikihiero-desc' => '[[Special:Hieroglyphs|Hiyeroglifleri]] görüntülemek için <code>&lt;hiero&gt;</code> etiketini ekler',
 	'hieroglyphs' => 'Hiyeroglif biçimlendirmeyi deneyin',
 	'wikihiero-special-page-text' => 'WikiHiero biçimlendirmesini denemek için bu sayfayı kullanın.
-Biçimlendirme açıklaması için [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax buraya] bakınız.',
+Biçimlendirme açıklaması için [//en.wikipedia.org/wiki/Help:WikiHiero_syntax buraya] bakınız.',
 );
 
 /** Ukrainian (Українська)
@@ -2211,7 +2211,7 @@ $messages['uk'] = array(
 	'wikihiero-desc' => 'Додає тег <code>&lt;hiero&gt;</code> для відображення [[Special:Hieroglyphs|ієрогліфів]]',
 	'hieroglyphs' => 'Спробуйте ієрогліфічне письмо',
 	'wikihiero-special-page-text' => 'На цій сторінці можна спробувати WikiHiero розмітку.
-Опис розмітки дивіться [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax тут].',
+Опис розмітки дивіться [//en.wikipedia.org/wiki/Help:WikiHiero_syntax тут].',
 	'wikihiero-input' => 'Вхідний текст',
 	'wikihiero-result' => 'Результат',
 	'wikihiero-syntax' => 'Синтаксис',
@@ -2275,7 +2275,7 @@ $messages['vi'] = array(
 	'wikihiero-desc' => 'Thêm thẻ <code>&lt;hiero&gt;</code> để hiển thị chữ tượng hình',
 	'hieroglyphs' => 'Thử mã chữ tượng hình',
 	'wikihiero-special-page-text' => 'Thử mã chữ tượng hình WikiHiero tại trang này.
-Xem [http://en.wikipedia.org/wiki/Help:WikiHiero_syntax hướng dẫn về cú pháp WikiHiero].',
+Xem [//en.wikipedia.org/wiki/Help:WikiHiero_syntax hướng dẫn về cú pháp WikiHiero].',
 	'wikihiero-input' => 'Văn bản nhập',
 	'wikihiero-result' => 'Kết quả',
 	'wikihiero-syntax' => 'Cú pháp',
@@ -2356,7 +2356,7 @@ $messages['zh-hans'] = array(
 	'wikihiero-desc' => '添加“<code>&lt;hiero&gt;</code>”标签以显示[[Special:Hieroglyphs|象形文字]]',
 	'hieroglyphs' => '尝试象形文字标记',
 	'wikihiero-special-page-text' => '使用此页可以试试 WikiHiero 标记。
-对于标记说明，请参阅[http://en.wikipedia.org/wiki/Help:WikiHiero_syntax 此处]。',
+对于标记说明，请参阅[//en.wikipedia.org/wiki/Help:WikiHiero_syntax 此处]。',
 	'wikihiero-input' => '输入文本',
 	'wikihiero-result' => '结果',
 	'wikihiero-syntax' => '语法',
@@ -2405,7 +2405,7 @@ $messages['zh-hant'] = array(
 	'wikihiero-desc' => '加入 <code>&lt;hiero&gt;</code> 標籤去顯示象形文字',
 	'hieroglyphs' => '嘗試象形文字標記',
 	'wikihiero-special-page-text' => '使用此頁可以試試 WikiHiero 標記。
-對於標記說明，請參閱[http://en.wikipedia.org/wiki/Help:WikiHiero_syntax 此處]。',
+對於標記說明，請參閱[//en.wikipedia.org/wiki/Help:WikiHiero_syntax 此處]。',
 	'wikihiero-input' => '輸入文字',
 	'wikihiero-result' => '結果',
 	'wikihiero-syntax' => '語法',
