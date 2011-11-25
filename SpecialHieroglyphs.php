@@ -25,11 +25,11 @@ class SpecialHieroglyphs extends SpecialPage {
 	private $syntaxHelp = array(
 		array( 'code' => '-', 'message' => 'wikihiero-separator', 'example' => 'A1 - B1' ),
 		array( 'code' => ':', 'message' => 'wikihiero-superposition', 'example' => 'p:t' ),
-		array( 'code' => ':', 'message' => 'wikihiero-juxtaposition', 'example' => 'p*t' ),
+		array( 'code' => '*', 'message' => 'wikihiero-juxtaposition', 'example' => 'p*t' ),
 		array( 'code' => '!', 'message' => 'wikihiero-eol', 'example' => 'A1-B1 ! C1-D1' ),
 		array( 'code' => '\\', 'message' => 'wikihiero-mirror', 'example' => 'A1\-A1' ),
 		array( 'code' => '..', 'message' => 'wikihiero-void', 'example' => 'A1 .. B1' ),
-		array( 'code' => '..', 'message' => 'wikihiero-half-void', 'example' => 'A1 . B1' ),
+		array( 'code' => '.', 'message' => 'wikihiero-half-void', 'example' => 'A1 . B1' ),
 		array( 'code' => '<!-- -->', 'message' => 'wikihiero-comment', 'example' => 'A<!-- B1 -->1' ),
 	);
 	private $helpColumns = array(
@@ -57,8 +57,8 @@ class SpecialHieroglyphs extends SpecialPage {
 			$out->addHTML( '<table class="wikitable">'
 				. '<tr><th>' . wfMsg( 'wikihiero-input' ) . '</th><th>' 
 				. wfMsg( 'wikihiero-result' ) . '</th></tr>'
-				. '<tr><td><code>&lt;hiero&gt;' . htmlspecialchars( $text ) . '&lt;/hiero&gt;</code></td>'
-				. "<td>{$hiero->render( $text )}</td></tr></table>"
+				. '<tr><td><code>&lt;hiero&gt;' . nl2br( htmlspecialchars( $text ) ) 
+				. "&lt;/hiero&gt;</code></td><td>{$hiero->render( $text )}</td></tr></table>"
 			);
 		}
 
