@@ -389,7 +389,7 @@ class WikiHiero {
 			return;
 		}
 
-		self::$delimiters = array_flip( array( ' ', '-', "\t", "\n" ) );
+		self::$delimiters = array_flip( array( ' ', '-', "\t", "\n", "\r" ) );
 		self::$tokenDelimiters = array_flip( array( '*', ':', '(', ')' ) );
 		self::$singleChars = array_flip( array( '!' ) );
 	}
