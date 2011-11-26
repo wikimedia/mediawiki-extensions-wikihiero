@@ -504,6 +504,14 @@ Siehe [//en.wikipedia.org/wiki/Help:WikiHiero_syntax hier] für eine Markup-Besc
 	'wikihiero-category-Aa' => 'Aa: Nicht klassifiziert',
 );
 
+/** German (formal address) (‪Deutsch (Sie-Form)‬)
+ * @author Kghbln
+ */
+$messages['de-formal'] = array(
+	'wikihiero-special-page-text' => 'Verwenden Sie diese Seite, um das WikiHiero-Markup zu testen.
+Siehe [//en.wikipedia.org/wiki/Help:WikiHiero_syntax hier] für eine Markup-Beschreibung.',
+);
+
 /** Zazaki (Zazaki)
  * @author Aspar
  */
