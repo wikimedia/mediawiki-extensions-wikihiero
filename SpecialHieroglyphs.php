@@ -48,16 +48,16 @@ class SpecialHieroglyphs extends SpecialPage {
 		$out = $this->getContext()->getOutput();
 		$out->addModules( 'ext.wikihiero.Special' );
 		$out->addWikiMsg( 'wikihiero-special-page-text' );
-		
+
 		$out->addHTML( '<div id="hiero-result">' );
 
 		$text = trim( $this->getContext()->getRequest()->getVal( 'text', '' ) );
 		if ( $text !== '' ) {
 			$hiero = new WikiHiero();
 			$out->addHTML( '<table class="wikitable">'
-				. '<tr><th>' . wfMsg( 'wikihiero-input' ) . '</th><th>' 
+				. '<tr><th>' . wfMsg( 'wikihiero-input' ) . '</th><th>'
 				. wfMsg( 'wikihiero-result' ) . '</th></tr>'
-				. '<tr><td><code>&lt;hiero&gt;' . nl2br( htmlspecialchars( $text ) ) 
+				. '<tr><td><code>&lt;hiero&gt;' . nl2br( htmlspecialchars( $text ) )
 				. "&lt;/hiero&gt;</code></td><td>{$hiero->render( $text )}</td></tr></table>"
 			);
 		}

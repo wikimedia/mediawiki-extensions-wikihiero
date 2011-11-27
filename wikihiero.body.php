@@ -231,7 +231,7 @@ class WikiHiero {
 
 				} elseif ( strchr( $code[0], '>' ) ) { // end cartouche
 					$contentHtml .= "</tr></table></td></tr><tr><td class='mw-hiero-box' style='height: "
-						. intval( self::CARTOUCHE_WIDTH * $this->scale / 100 ) 
+						. intval( self::CARTOUCHE_WIDTH * $this->scale / 100 )
 						. "px;'></td></tr>" . '</table></td>';
 					$is_cartouche = false;
 					$contentHtml .= '<td>' . $this->renderGlyph( $code[0] ) . '</td>';
@@ -244,7 +244,6 @@ class WikiHiero {
 
 			// block contains more than 1 glyph
 			} else {
-
 				// convert all codes into '&' to test prefabs glyph
 				$temp = "";
 				foreach ( $code as $t ) {
@@ -255,69 +254,69 @@ class WikiHiero {
 					}
 				}
 
-			// test if block exists in the prefabs list
-			if ( in_array( $temp, self::$prefabs ) ) {
-				$option = "height: " . $this->resizeGlyph( $temp, $is_cartouche ) . "px;";
+				// test if block exists in the prefabs list
+				if ( in_array( $temp, self::$prefabs ) ) {
+					$option = "height: " . $this->resizeGlyph( $temp, $is_cartouche ) . "px;";
 
-				$contentHtml .= '<td>' . $this->renderGlyph( $temp, $option ) . '</td>';
+					$contentHtml .= '<td>' . $this->renderGlyph( $temp, $option ) . '</td>';
 
-			// block must be manually computed
-			} else {
-				// get block total height
-				$line_max = 0;
-				$total    = 0;
-				$height   = 0;
+				// block must be manually computed
+				} else {
+					// get block total height
+					$line_max = 0;
+					$total    = 0;
+					$height   = 0;
 
-				foreach ( $code as $t ) {
-					if ( $t == ":" ) {
-						if ( $height > $line_max ) {
-							$line_max = $height;
-						}
-						$total += $line_max;
-						$line_max = 0;
+					foreach ( $code as $t ) {
+						if ( $t == ":" ) {
+							if ( $height > $line_max ) {
+								$line_max = $height;
+							}
+							$total += $line_max;
+							$line_max = 0;
 
-					} elseif ( $t == "*" ) {
-						if ( $height > $line_max ) {
-							$line_max = $height;
-						}
-					} else {
-						if ( array_key_exists( $t, self::$phonemes ) ) {
-							$glyph = self::$phonemes[$t];
+						} elseif ( $t == "*" ) {
+							if ( $height > $line_max ) {
+								$line_max = $height;
+							}
 						} else {
-							$glyph = $t;
+							if ( array_key_exists( $t, self::$phonemes ) ) {
+								$glyph = self::$phonemes[$t];
+							} else {
+								$glyph = $t;
+							}
+							if ( array_key_exists( $glyph, self::$files ) ) {
+								$height = 2 + self::$files[$glyph][1];
+							}
 						}
-						if ( array_key_exists( $glyph, self::$files ) ) {
-							$height = 2 + self::$files[$glyph][1];
-						}
-					}
-				} // end foreach
+					} // end foreach
 
-				if ( $height > $line_max ) {
-					$line_max = $height;
+					if ( $height > $line_max ) {
+						$line_max = $height;
+					}
+
+					$total += $line_max;
+
+					// render all glyph into the block
+					$temp = "";
+					foreach ( $code as $t ) {
+
+						if ( $t == ":" ) {
+							$temp .= "<br />";
+
+						} elseif ( $t == "*" ) {
+							$temp .= " ";
+
+						} else {
+							// resize the glyph according to the block total height
+							$option = "height: " . $this->resizeGlyph( $t, $is_cartouche, $total ) . "px;";
+							$temp .= $this->renderGlyph( $t, $option );
+						}
+					} // end foreach
+
+					$contentHtml .= '<td>' . $temp . '</td>';
 				}
-
-				$total += $line_max;
-
-				// render all glyph into the block
-				$temp = "";
-				foreach ( $code as $t ) {
-
-					if ( $t == ":" ) {
-						$temp .= "<br />";
-
-					} elseif ( $t == "*" ) {
-						$temp .= " ";
-
-					} else {
-						// resize the glyph according to the block total height
-						$option = "height: " . $this->resizeGlyph( $t, $is_cartouche, $total ) . "px;";
-						$temp .= $this->renderGlyph( $t, $option );
-					}
-				} // end foreach
-
-				$contentHtml .= '<td>' . $temp . '</td>';
-			}
-			$contentHtml .= "\n";
+				$contentHtml .= "\n";
 			}
 
 			if ( strlen( $contentHtml ) > 0 ) {
@@ -377,7 +376,7 @@ class WikiHiero {
 	/**
 	 * Constructor
 	 *
-	 * @param $text string: 
+	 * @param $text string:
 	 */
 	public function __construct( $text ) {
 		$this->text = $text;
@@ -396,7 +395,7 @@ class WikiHiero {
 
 	/**
 	 * Split text into blocks, then split blocks into items
-	 * 
+	 *
 	 * @return array: tokenized text
 	 */
 	public function tokenize() {
@@ -406,7 +405,7 @@ class WikiHiero {
 		$this->blocks = array();
 		$this->currentBlock = array();
 		$this->token = '';
-		
+
 		$text = preg_replace( '/\\<!--.*?--\\>/s', '', $this->text ); // remove HTML comments
 
 		for ( $i = 0; $i < strlen( $text ); $i++ ) {
@@ -435,7 +434,7 @@ class WikiHiero {
 	 */
 	private function newBlock() {
 		$this->newToken();
-		if( $this->currentBlock ) {
+		if ( $this->currentBlock ) {
 			$this->blocks[] = $this->currentBlock;
 			$this->currentBlock = array();
 		}

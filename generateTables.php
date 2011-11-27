@@ -37,7 +37,7 @@ class GenerateWikiHieroTables extends Maintenance {
 
 		$this->moreTables = str_replace( "\r", '', $this->moreTables );
 	}
-	
+
 	public function execute() {
 		if ( !defined( 'WIKIHIERO_VERSION' ) ) {
 			$this->error( "Please install WikiHiero first!\n", true );
