@@ -1272,6 +1272,7 @@ $messages['lb'] = array(
 	'wikihiero-category-U' => 'U: Landwirtschaft, Handwierk a Berufer',
 	'wikihiero-category-V' => 'V: Seel, Faser, Kierf, Pochen, asw.',
 	'wikihiero-category-W' => 'W: Objeten aus Toun a Keramik',
+	'wikihiero-category-Y' => 'Y: Schrëften, Spiller, Musek',
 	'wikihiero-category-Aa' => 'Aa: Net klassifizéiert',
 );
 
