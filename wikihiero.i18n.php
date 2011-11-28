@@ -1248,6 +1248,7 @@ $messages['la'] = array(
  */
 $messages['lb'] = array(
 	'wikihiero-desc' => 'Setzt den Tag <code>&lt;hiero&gt;</code> derbäi fir [[Special:Hieroglyphs|Hieroglyphen]] unzeweisen',
+	'hieroglyphs' => 'Hieroglyphen-Markup testen',
 	'wikihiero-result' => 'Resultat',
 	'wikihiero-syntax' => 'Syntax',
 	'wikihiero-th-code' => 'Code',
