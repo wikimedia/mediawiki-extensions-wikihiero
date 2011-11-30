@@ -628,6 +628,7 @@ $messages['eu'] = array(
  * @author Ebraminio
  * @author Huji
  * @author Mjbmr
+ * @author ZxxZxxZ
  */
 $messages['fa'] = array(
 	'wikihiero-desc' => 'برچسب <code>&lt;hiero&gt;</code> را برای نمایش هیروگلیف می‌افزاید',
@@ -636,6 +637,9 @@ $messages['fa'] = array(
 برای توضیحات نشانه‌گذاری، [//en.wikipedia.org/wiki/Help:WikiHiero_syntax اینجا] را ببینید.',
 	'wikihiero-input' => 'متن ورودی',
 	'wikihiero-result' => 'نتیجه',
+	'wikihiero-th-result' => 'نتیجه',
+	'wikihiero-separator' => 'جداکننده',
+	'wikihiero-eol' => 'پایان خط',
 	'wikihiero-load-error' => 'خطا در بارگیری!',
 	'wikihiero-category-A' => 'A: مرد و مشاغل آن',
 	'wikihiero-category-B' => 'B: زن مشاغل آن',
