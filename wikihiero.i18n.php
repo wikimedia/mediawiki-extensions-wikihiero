@@ -456,7 +456,7 @@ Se [//en.wikipedia.org/wiki/Help:WikiHiero_syntax her] for en beskrivelse af kod
  * @author Raimond Spekking
  */
 $messages['de'] = array(
-	'wikihiero-desc' => 'Ergänzt das <code>&lt;hiero&gt;</code>-Tag zur Formatierung von [[Special:Hieroglyphs|Hieroglyphen]]',
+	'wikihiero-desc' => 'Ergänzt das Tag <code>&lt;hiero&gt;</code> zur Anzeige von [[Special:Hieroglyphs|Hieroglyphen]]',
 	'hieroglyphs' => 'Hieroglyphen-Markup testen',
 	'wikihiero-special-page-text' => 'Verwende diese Seite, um das WikiHiero-Markup zu testen.
 Siehe [//en.wikipedia.org/wiki/Help:WikiHiero_syntax hier] für eine Markup-Beschreibung.',
