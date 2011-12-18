@@ -272,6 +272,10 @@ $messages['bg'] = array(
  */
 $messages['br'] = array(
 	'wikihiero-desc' => 'Ouzhpennañ a ra ar valizenn <code>&lt;hiero&gt;</code> evit embann ar [[Special:Hieroglyphs|hieroglifoù]].',
+	'hieroglyphs' => 'Un taol esae gant ur balizennañ dre hieroglif',
+	'wikihiero-special-page-text' => 'Grit gant ar bajenn-mañ evit arnodiñ ar balizennañ WikiHiero.
+Gwelet [//en.wikipedia.org/wiki/Help:WikiHiero_syntax amañ] evit deskrivadur ar balizennañ.',
+	'wikihiero-input' => 'Testenn merket',
 	'wikihiero-result' => "Disoc'h",
 	'wikihiero-syntax' => 'Ereadur',
 	'wikihiero-th-code' => 'Kod',
@@ -282,6 +286,7 @@ $messages['br'] = array(
 	'wikihiero-eol' => 'Dibenn al linenn',
 	'wikihiero-superposition' => 'Isrann',
 	'wikihiero-juxtaposition' => 'Kenstok',
+	'wikihiero-mirror' => 'Sevel skeud ur hieroglif',
 	'wikihiero-void' => "Bloc'had goullo klok e led.",
 	'wikihiero-half-void' => "Bloc'had goullo hanter led.",
 	'wikihiero-comment' => 'Evezhiadenn',
@@ -673,6 +678,8 @@ $messages['fa'] = array(
  */
 $messages['fi'] = array(
 	'wikihiero-desc' => 'Lisää <code>&lt;hiero&gt;</code>-elementin [[Special:Hieroglyphs|hieroglyfien]] esittämiseksi.',
+	'wikihiero-result' => 'Tulos',
+	'wikihiero-th-result' => 'Tulos',
 );
 
 /** French (Français)
