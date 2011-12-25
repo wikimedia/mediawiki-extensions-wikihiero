@@ -39,7 +39,7 @@ $wgExtensionCredits['parserhook'][] = array(
 $dir = dirname( __FILE__ );
 
 $wgExtensionMessagesFiles['Wikihiero'] = "$dir/wikihiero.i18n.php";
-$wgExtensionAliasesFiles['Hieroglyphs'] = "$dir/wikihiero.alias.php";
+$wgExtensionMessagesFiles['HieroglyphsAlias'] = "$dir/wikihiero.alias.php";
 
 $wgAutoloadClasses['WikiHiero'] = "$dir/wikihiero.body.php";
 $wgAutoloadClasses['SpecialHieroglyphs'] = "$dir/SpecialHieroglyphs.php";
