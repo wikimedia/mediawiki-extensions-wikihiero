@@ -23,12 +23,27 @@ $specialPageAliases['da'] = array(
 	'Hieroglyphs' => array( 'Hieroglyffer' ),
 );
 
+/** German (Deutsch) */
+$specialPageAliases['de'] = array(
+	'Hieroglyphs' => array( 'Hieroglyphen' ),
+);
+
+/** Interlingua (Interlingua) */
+$specialPageAliases['ia'] = array(
+	'Hieroglyphs' => array( 'Hieroglyphos' ),
+);
+
+/** Japanese (日本語) */
+$specialPageAliases['ja'] = array(
+	'Hieroglyphs' => array( 'ヒエログリフ' ),
+);
+
 /** Macedonian (Македонски) */
 $specialPageAliases['mk'] = array(
 	'Hieroglyphs' => array( 'Хиероглифи' ),
 );
 
-/**
- * For backwards compatibility with MediaWiki 1.15 and earlier.
- */
-$aliases =& $specialPageAliases;
+/** Dutch (Nederlands) */
+$specialPageAliases['nl'] = array(
+	'Hieroglyphs' => array( 'Hierogliefen' ),
+);
