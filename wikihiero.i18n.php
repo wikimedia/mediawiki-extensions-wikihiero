@@ -154,9 +154,21 @@ $messages['az'] = array(
 
 /** Bashkir (Башҡортса)
  * @author Assele
+ * @author Haqmar
  */
 $messages['ba'] = array(
 	'wikihiero-desc' => '[[Special:Hieroglyphs|Иероглифтарҙы]] күрһәтеү өсөн <code>&lt;hiero&gt;</code> билдәһен өҫтәй',
+	'wikihiero-input' => 'Инеш тексты:',
+	'wikihiero-result' => 'Һөҙөмтә',
+	'wikihiero-syntax' => 'Синтаксис',
+	'wikihiero-th-code' => 'Код',
+	'wikihiero-th-meaning' => 'Мәғәнәһе',
+	'wikihiero-th-example' => 'Код үрнәге',
+	'wikihiero-th-result' => 'Һөҙөмтә',
+	'wikihiero-separator' => 'Айырғыс',
+	'wikihiero-eol' => 'Юл аҙағы',
+	'wikihiero-superposition' => 'Вертикаль группалау',
+	'wikihiero-juxtaposition' => 'Горизонталь группалау',
 );
 
 /** Bavarian (Boarisch)
@@ -264,6 +276,15 @@ $messages['bg'] = array(
 	'wikihiero-category-Y' => 'Y: Литературни произведения, игри, музика',
 	'wikihiero-category-Z' => 'Z: Линии, геометрични фигури и т.н.',
 	'wikihiero-category-Aa' => 'Aa: Некласифицирани',
+);
+
+/** Bengali (বাংলা)
+ * @author Bellayet
+ */
+$messages['bn'] = array(
+	'wikihiero-result' => 'ফলাফল',
+	'wikihiero-th-code' => 'কোড',
+	'wikihiero-th-result' => 'ফলাফল',
 );
 
 /** Breton (Brezhoneg)
@@ -620,6 +641,43 @@ $messages['es'] = array(
  */
 $messages['et'] = array(
 	'wikihiero-desc' => 'Lisab [[Special:Hieroglyphs|hieroglüüfide]] kuvamiseks <code>&lt;hiero&gt;</code>-märgendi.',
+	'wikihiero-input' => 'Sisendtekst',
+	'wikihiero-result' => 'Tulemus',
+	'wikihiero-syntax' => 'Süntaks',
+	'wikihiero-th-code' => 'Kood',
+	'wikihiero-th-meaning' => 'Tähendus',
+	'wikihiero-th-example' => 'Näidiskood',
+	'wikihiero-th-result' => 'Tulemus',
+	'wikihiero-separator' => 'Eraldaja',
+	'wikihiero-eol' => 'Rea lõpp',
+	'wikihiero-comment' => 'Kommentaar',
+	'wikihiero-load-error' => 'Laadimistõrge!',
+	'wikihiero-category-A' => 'A: Mees ja tema ametid',
+	'wikihiero-category-B' => 'B: Naine ja tema ametid',
+	'wikihiero-category-C' => 'C: Inimesetaolised jumalused',
+	'wikihiero-category-D' => 'D: Inimese kehaosad',
+	'wikihiero-category-E' => 'E: Imetajad',
+	'wikihiero-category-F' => 'F: Imetajate kehaosad',
+	'wikihiero-category-G' => 'G: Linnud',
+	'wikihiero-category-H' => 'H: Lindude kehaosad',
+	'wikihiero-category-I' => 'I: Kahepaiksed, roomajad jne',
+	'wikihiero-category-K' => 'K: Kalad ja kalade kehaosad',
+	'wikihiero-category-L' => 'L: Selgrootud ja väikeloomad',
+	'wikihiero-category-M' => 'M: Puud ja taimed',
+	'wikihiero-category-N' => 'N: Taevas, maa, vesi',
+	'wikihiero-category-O' => 'O: Ehitised, ehitiste osad jne',
+	'wikihiero-category-P' => 'P: Laevad ja laevaosad',
+	'wikihiero-category-Q' => 'Q: Kodu ja hauakambri sisustus',
+	'wikihiero-category-R' => 'R: Templi sisustus ja pühad embleemid',
+	'wikihiero-category-S' => 'S: Kroonid, riided, sauad jne.',
+	'wikihiero-category-T' => 'T: Sõjandus, jaht, lihunikutöö',
+	'wikihiero-category-U' => 'U: Põllundus, käsitöö ja elukutsed',
+	'wikihiero-category-V' => 'V: Köis, kiud, korvid, kotid jne',
+	'wikihiero-category-W' => 'W: Kivi- ja savinõud',
+	'wikihiero-category-X' => 'X: Leivad ja koogid',
+	'wikihiero-category-Y' => 'Y: Kirjutamine, mängud, muusika',
+	'wikihiero-category-Z' => 'Z: Jooned, geomeetrilised kujundid jne',
+	'wikihiero-category-Aa' => 'Aa: Liigitamata',
 );
 
 /** Basque (Euskara)
@@ -1073,6 +1131,7 @@ $messages['ig'] = array(
 /** Italian (Italiano)
  * @author Beta16
  * @author BrokenArrow
+ * @author F. Cosoleto
  */
 $messages['it'] = array(
 	'wikihiero-desc' => 'Aggiunge il tag <code>&lt;hiero&gt;</code> per la visualizzazione dei [[Special:Hieroglyphs|geroglifici]]',
@@ -1087,6 +1146,7 @@ $messages['it'] = array(
 	'wikihiero-eol' => 'Fine riga',
 	'wikihiero-superposition' => 'Suddivisione',
 	'wikihiero-juxtaposition' => 'Giustapposizione',
+	'wikihiero-comment' => 'Commento',
 	'wikihiero-load-error' => 'Errore di caricamento!',
 	'wikihiero-category-A' => "A: L'uomo e le sue occupazioni",
 	'wikihiero-category-B' => 'B: La donna e le sue occupazioni',
@@ -1410,9 +1470,15 @@ $messages['ml'] = array(
 
 /** Marathi (मराठी)
  * @author Mahitgar
+ * @author Tusharawate
  */
 $messages['mr'] = array(
 	'wikihiero-desc' => 'hieroग्लिफ दाखवण्याकरिता  <code>&lt;hiero&gt;</code> खूण जोडते',
+	'wikihiero-syntax' => 'वाक्य रचना',
+	'wikihiero-th-meaning' => 'अर्थ',
+	'wikihiero-th-example' => 'उदाहरण कोड',
+	'wikihiero-eol' => 'ओळीचा शेवट',
+	'wikihiero-superposition' => 'उपशाखा',
 );
 
 /** Malay (Bahasa Melayu)
@@ -1466,6 +1532,13 @@ Rujuk keterangan penanda [//en.wikipedia.org/wiki/Help:WikiHiero_syntax di sini]
 	'wikihiero-category-Y' => 'Y: Penulisan, permainan, muzik',
 	'wikihiero-category-Z' => 'Z: Lejang, bentuk geometri, dsb.',
 	'wikihiero-category-Aa' => 'Aa: Tidak dikelaskan',
+);
+
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author Jon Harald Søby
+ */
+$messages['nb'] = array(
+	'wikihiero-desc' => 'Legger til taggen <code>&lt;hiero&gt;</code> for å vise [[Special:Hieroglyphs|hieroglyfer]]',
 );
 
 /** Low German (Plattdüütsch)
@@ -1541,18 +1614,18 @@ $messages['nn'] = array(
 	'wikihiero-desc' => 'Legg til taggen <code>&lt;hiero&gt;</code> for å vise [[Special:Hieroglyphs|hieroglyfar]]',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Jon Harald Søby
- */
-$messages['nb'] = array(
-	'wikihiero-desc' => 'Legger til taggen <code>&lt;hiero&gt;</code> for å vise [[Special:Hieroglyphs|hieroglyfer]]',
-);
-
 /** Occitan (Occitan)
  * @author Cedric31
  */
 $messages['oc'] = array(
 	'wikihiero-desc' => 'Apond la balisa <code>&lt;hiero&gt;</code> per afichar los [[Special:Hieroglyphs|ieroglifes]]',
+);
+
+/** Oriya (ଓଡ଼ିଆ)
+ * @author Ansumang
+ */
+$messages['or'] = array(
+	'wikihiero-category-G' => 'G: ପକ୍ଷୀ',
 );
 
 /** Deitsch (Deitsch)
@@ -2417,6 +2490,8 @@ $messages['zh-hans'] = array(
 	'wikihiero-eol' => '行的结尾',
 	'wikihiero-superposition' => '细分',
 	'wikihiero-juxtaposition' => '并列',
+	'wikihiero-mirror' => '反映一个象形文字',
+	'wikihiero-comment' => '评论',
 	'wikihiero-load-error' => '加载错误!',
 	'wikihiero-category-A' => 'A：男性与他的职业',
 	'wikihiero-category-B' => 'B：女性与她的职业',
