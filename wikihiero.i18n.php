@@ -733,11 +733,56 @@ $messages['fa'] = array(
 
 /** Finnish (Suomi)
  * @author Crt
+ * @author Nedergard
+ * @author Olli
  */
 $messages['fi'] = array(
 	'wikihiero-desc' => 'Lisää <code>&lt;hiero&gt;</code>-elementin [[Special:Hieroglyphs|hieroglyfien]] esittämiseksi.',
+	'hieroglyphs' => 'Kokeile hieroglyfien merkintäkieltä',
+	'wikihiero-special-page-text' => 'Käytä tätä sivua WikiHiero-merkintäkielen kokeilemiseen.
+[//en.wikipedia.org/wiki/Help:WikiHiero_syntax Täällä] kerrotaan merkintöjen kuvauksista.',
+	'wikihiero-input' => 'Teksti',
 	'wikihiero-result' => 'Tulos',
+	'wikihiero-syntax' => 'Syntaksi',
+	'wikihiero-th-code' => 'Koodi',
+	'wikihiero-th-meaning' => 'Merkitys',
+	'wikihiero-th-example' => 'Esimerkkikoodi',
 	'wikihiero-th-result' => 'Tulos',
+	'wikihiero-separator' => 'Erotin',
+	'wikihiero-eol' => 'Rivin loppu',
+	'wikihiero-superposition' => 'Alaosasto',
+	'wikihiero-juxtaposition' => 'Rinnastus',
+	'wikihiero-mirror' => 'Peilaa hieroglyfi',
+	'wikihiero-void' => 'Koko leveyden laatikko',
+	'wikihiero-half-void' => 'Puolilevyinen laatikko',
+	'wikihiero-comment' => 'Kommentti',
+	'wikihiero-load-error' => 'Latausvirhe!',
+	'wikihiero-category-A' => 'A: Mies ja miesten tehtävät',
+	'wikihiero-category-B' => 'B: Nainen ja naisten tehtävät',
+	'wikihiero-category-C' => 'C: Antropomorfisia jumalia',
+	'wikihiero-category-D' => 'D: Ihmisen ruumiinosat',
+	'wikihiero-category-E' => 'E: Nisäkkäät',
+	'wikihiero-category-F' => 'F: Nisäkkäisen ruumiinosat',
+	'wikihiero-category-G' => 'G: Linnut',
+	'wikihiero-category-H' => 'H: Lintujen ruumiinosat',
+	'wikihiero-category-I' => 'I: Sammakoita, matelijoita, jne.',
+	'wikihiero-category-K' => 'K: Kaloja ja kalan osia',
+	'wikihiero-category-L' => 'L: Selkärangattomia ja pienempiä eläimiä',
+	'wikihiero-category-M' => 'M: Puut ja kasvit',
+	'wikihiero-category-N' => 'N: Taivas, maa, vesi',
+	'wikihiero-category-O' => 'O: Rakennukset, rakennusten osat jne.',
+	'wikihiero-category-P' => 'P: Laivat ja laivojen osat',
+	'wikihiero-category-Q' => 'Q: Kotitaloustarvikkeet',
+	'wikihiero-category-R' => 'R: Temppelitavarat ja tunnuskuvat',
+	'wikihiero-category-S' => 'S: Kruunuja, pukuja, keppejä, jne.',
+	'wikihiero-category-T' => 'T: Sodankäynti, metsästys, teurastus',
+	'wikihiero-category-U' => 'U: Agrikulttuuri, käsityöt ja uskonnot',
+	'wikihiero-category-V' => 'V: Köysiä, kuituar, koreja, laukkuja, jne.',
+	'wikihiero-category-W' => 'W: Kivi- ja saviastiat',
+	'wikihiero-category-X' => 'X: Leipiä ja kakkuja',
+	'wikihiero-category-Y' => 'Y: Kirjoitukset, pelit, musiikki',
+	'wikihiero-category-Z' => 'Z: Viivat, geometriset kuviot jne.',
+	'wikihiero-category-Aa' => 'Aa: Luokittelemattomat',
 );
 
 /** French (Français)
@@ -1745,10 +1790,16 @@ Ch'a bèica [//en.wikipedia.org/wiki/Help:WikiHiero_syntax ambelessì] për la d
  */
 $messages['ps'] = array(
 	'wikihiero-result' => 'پايله',
+	'wikihiero-th-code' => 'کوډ',
+	'wikihiero-th-result' => 'پايله',
+	'wikihiero-eol' => 'د کرښې پای',
 	'wikihiero-comment' => 'تبصره',
 	'wikihiero-category-E' => 'E: تيور ژوي',
+	'wikihiero-category-F' => 'F: د تيورو برخې',
 	'wikihiero-category-G' => 'G: مارغان',
+	'wikihiero-category-H' => 'H: د مارغانو برخې',
 	'wikihiero-category-I' => 'I: دوه ژوندوي، خاپوړن، او نور.',
+	'wikihiero-category-K' => 'K: کب او د کب برخې',
 	'wikihiero-category-M' => 'M: ونې او بوټي',
 	'wikihiero-category-N' => 'N: اسمان، زمکه، اوبه',
 );
@@ -2049,10 +2100,16 @@ $messages['sah'] = array(
 );
 
 /** Sicilian (Sicilianu)
+ * @author Aushulz
  * @author Santu
  */
 $messages['scn'] = array(
 	'wikihiero-desc' => 'Juncìricci lu tag <code>&lt;hiero&gt;</code> pi la visualizzazzioni di li [[Special:Hieroglyphs|giruglìfici]]',
+	'wikihiero-category-G' => 'G: Aceddi',
+	'wikihiero-category-H' => "H: Parti d'aceddi",
+	'wikihiero-category-K' => 'K: Pisci e parti di pisci',
+	'wikihiero-category-M' => 'M: Arvuli e rasti',
+	'wikihiero-category-N' => 'N: Celu, terra, aqua',
 );
 
 /** Sinhala (සිංහල)
@@ -2328,6 +2385,7 @@ Biçimlendirme açıklaması için [//en.wikipedia.org/wiki/Help:WikiHiero_synta
 /** Ukrainian (Українська)
  * @author Ahonc
  * @author Dim Grits
+ * @author Тест
  */
 $messages['uk'] = array(
 	'wikihiero-desc' => 'Додає тег <code>&lt;hiero&gt;</code> для відображення [[Special:Hieroglyphs|ієрогліфів]]',
@@ -2346,6 +2404,7 @@ $messages['uk'] = array(
 	'wikihiero-superposition' => 'Вертикальне групування',
 	'wikihiero-juxtaposition' => 'Горизонтальне групування',
 	'wikihiero-mirror' => 'Відзеркалити ієрогліф',
+	'wikihiero-comment' => 'Коментар',
 	'wikihiero-load-error' => 'Помилка при завантаженні!',
 	'wikihiero-category-A' => 'A: Людина та її професії',
 	'wikihiero-category-B' => 'B: Жінка та її професії',
@@ -2491,6 +2550,8 @@ $messages['zh-hans'] = array(
 	'wikihiero-superposition' => '细分',
 	'wikihiero-juxtaposition' => '并列',
 	'wikihiero-mirror' => '反映一个象形文字',
+	'wikihiero-void' => '半宽虚空块',
+	'wikihiero-half-void' => '全宽虚空块',
 	'wikihiero-comment' => '评论',
 	'wikihiero-load-error' => '加载错误!',
 	'wikihiero-category-A' => 'A：男性与他的职业',
