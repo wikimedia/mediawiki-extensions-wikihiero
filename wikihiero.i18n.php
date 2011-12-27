@@ -146,10 +146,13 @@ Llee [//en.wikipedia.org/wiki/Help:WikiHiero_syntax equí] la descripción del f
 );
 
 /** Azerbaijani (Azərbaycanca)
+ * @author Cekli829
  * @author Sortilegus
  */
 $messages['az'] = array(
 	'wikihiero-desc' => '[[Special:Hieroglyphs|Heroqlifləri]] göstərmək üçün <code>&lt;hiero&gt;</code> teqini əlavə edir',
+	'wikihiero-comment' => 'Şərh',
+	'wikihiero-category-G' => 'G: Quşlar',
 );
 
 /** Bashkir (Башҡортса)
@@ -612,15 +615,22 @@ Vidu [//en.wikipedia.org/wiki/Help:WikiHiero_syntax ĉi tie] por priskribo de ma
 );
 
 /** Spanish (Español)
+ * @author Imre
  * @author Remember the dot
  */
 $messages['es'] = array(
 	'wikihiero-desc' => 'Añade elemento <code>&lt;hiero&gt;</code> para mostrar un [[Special:Hieroglyphs|jeroglífico]]',
+	'wikihiero-input' => 'Texto a expandir',
+	'wikihiero-result' => 'Resultado',
 	'wikihiero-syntax' => 'Sintaxis',
+	'wikihiero-th-code' => 'Código',
+	'wikihiero-th-meaning' => 'Significado',
+	'wikihiero-th-result' => 'Resultado',
 	'wikihiero-separator' => 'Separador',
 	'wikihiero-eol' => 'Fin de línea',
 	'wikihiero-superposition' => 'Dispårtaedje',
 	'wikihiero-juxtaposition' => 'Yuxtaposición',
+	'wikihiero-comment' => 'Comentario',
 	'wikihiero-category-A' => 'A: El hombre y sus oficios',
 	'wikihiero-category-B' => 'B: La mujer y sus oficios',
 	'wikihiero-category-C' => 'C: Dioses antropomórficos',
@@ -632,6 +642,14 @@ $messages['es'] = array(
 	'wikihiero-category-I' => 'I: Anfibios, reptiles, etc.',
 	'wikihiero-category-K' => 'K: Peces y partes de los peces',
 	'wikihiero-category-L' => 'L: Invertebrados y especies menores',
+	'wikihiero-category-M' => 'M: Árboles y plantas',
+	'wikihiero-category-N' => 'N: Cielo, tierra, agua',
+	'wikihiero-category-S' => 'S: Coronas, vestido, duelas, etc..',
+	'wikihiero-category-T' => 'T: Guerra, caza, carnicería',
+	'wikihiero-category-U' => 'U: Agricultura, oficios y profesiones',
+	'wikihiero-category-V' => 'V: Cuerda, fibra, cestas, bolsas, etc..',
+	'wikihiero-category-X' => 'X: Panes y pasteles',
+	'wikihiero-category-Y' => 'Y: Escritos, juegos, música',
 	'wikihiero-category-Z' => 'Z: Trazos, figuras geométricas, etc.',
 	'wikihiero-category-Aa' => 'Aa: Sin clasificar',
 );
@@ -1411,6 +1429,14 @@ $messages['lt'] = array(
 	'wikihiero-load-error' => 'Įkelimo klaida!',
 );
 
+/** Latvian (Latviešu)
+ * @author Papuass
+ */
+$messages['lv'] = array(
+	'wikihiero-comment' => 'Komentārs',
+	'wikihiero-load-error' => 'Ielādes kļūda!',
+);
+
 /** Macedonian (Македонски)
  * @author Bjankuloski06
  */
@@ -1791,6 +1817,7 @@ Ch'a bèica [//en.wikipedia.org/wiki/Help:WikiHiero_syntax ambelessì] për la d
 $messages['ps'] = array(
 	'wikihiero-result' => 'پايله',
 	'wikihiero-th-code' => 'کوډ',
+	'wikihiero-th-meaning' => 'مانا',
 	'wikihiero-th-result' => 'پايله',
 	'wikihiero-eol' => 'د کرښې پای',
 	'wikihiero-comment' => 'تبصره',
@@ -1960,6 +1987,7 @@ $messages['roa-tara'] = array(
 Vide [//en.wikipedia.org/wiki/Help:WikiHiero_syntax aqquà] pe 'na descrizione d'u markup.",
 	'wikihiero-input' => 'Teste de input:',
 	'wikihiero-result' => 'Resultate',
+	'wikihiero-comment' => 'Commende',
 	'wikihiero-load-error' => 'Errore de carecamende!',
 	'wikihiero-category-A' => "A: L'omme e l'occupaziune sue",
 	'wikihiero-category-B' => "A: 'A femmene e l'occupaziune sue",
@@ -2114,9 +2142,18 @@ $messages['scn'] = array(
 
 /** Sinhala (සිංහල)
  * @author Calcey
+ * @author පසිඳු කාවින්ද
  */
 $messages['si'] = array(
 	'wikihiero-desc' => 'හයිරෝරේඛනය ප්‍රදර්ශනය කිරීමට <code>&lt;hiero&gt;</code> ටැගය එකතු කරයි',
+	'wikihiero-input' => 'ආදාන පාඨය',
+	'wikihiero-result' => 'ප්‍රතිඵලය',
+	'wikihiero-th-code' => 'කේතය',
+	'wikihiero-th-meaning' => 'අර්ථය',
+	'wikihiero-th-example' => 'නිදසුන් කේතය',
+	'wikihiero-th-result' => 'ප්‍රතිඵලය',
+	'wikihiero-comment' => 'පරිකථනය',
+	'wikihiero-load-error' => 'පූරණ දෝෂය!',
 );
 
 /** Slovak (Slovenčina)
@@ -2334,6 +2371,8 @@ $messages['szl'] = array(
 $messages['te'] = array(
 	'wikihiero-desc' => 'హీయెరోగ్లిఫ్&zwnj;ని చూపించడానికై <code>&lt;hiero&gt;</code> అనే టాగుని చేరుస్తుంది',
 	'wikihiero-result' => 'ఫలితం',
+	'wikihiero-th-result' => 'ఫలితం',
+	'wikihiero-comment' => 'వ్యాఖ్య',
 );
 
 /** Tajik (Cyrillic script) (Тоҷикӣ)
@@ -2372,6 +2411,7 @@ $messages['tl'] = array(
 );
 
 /** Turkish (Türkçe)
+ * @author Cekli829
  * @author Emperyan
  * @author Joseph
  */
@@ -2380,6 +2420,8 @@ $messages['tr'] = array(
 	'hieroglyphs' => 'Hiyeroglif biçimlendirmeyi deneyin',
 	'wikihiero-special-page-text' => 'WikiHiero biçimlendirmesini denemek için bu sayfayı kullanın.
 Biçimlendirme açıklaması için [//en.wikipedia.org/wiki/Help:WikiHiero_syntax buraya] bakınız.',
+	'wikihiero-result' => 'Sonuç',
+	'wikihiero-th-code' => 'Kod',
 );
 
 /** Ukrainian (Українська)
@@ -2549,7 +2591,7 @@ $messages['zh-hans'] = array(
 	'wikihiero-eol' => '行的结尾',
 	'wikihiero-superposition' => '细分',
 	'wikihiero-juxtaposition' => '并列',
-	'wikihiero-mirror' => '反映一个象形文字',
+	'wikihiero-mirror' => '反映象形文字',
 	'wikihiero-void' => '半宽虚空块',
 	'wikihiero-half-void' => '全宽虚空块',
 	'wikihiero-comment' => '评论',
@@ -2602,6 +2644,10 @@ $messages['zh-hant'] = array(
 	'wikihiero-eol' => '行尾',
 	'wikihiero-superposition' => '細分',
 	'wikihiero-juxtaposition' => '相拼',
+	'wikihiero-mirror' => '反映像形文字',
+	'wikihiero-void' => '半寬虛空塊',
+	'wikihiero-half-void' => '全寬虛空塊',
+	'wikihiero-comment' => '評論',
 	'wikihiero-load-error' => '加載錯誤！',
 	'wikihiero-category-A' => 'A：男性與他的職業',
 	'wikihiero-category-B' => 'B：女性和她的職業',
