@@ -1107,9 +1107,55 @@ $messages['hsb'] = array(
 
 /** Hungarian (Magyar)
  * @author Dani
+ * @author Dj
  */
 $messages['hu'] = array(
 	'wikihiero-desc' => '<code>&lt;hiero&gt;</code> tag [[Special:Hieroglyphs|hieroglifák]] megjelenítéséhez',
+	'hieroglyphs' => 'Próbálja ki a hieroglifák leírását!',
+	'wikihiero-special-page-text' => 'Ezen a lapon kipróbálhatja a hieroglifák megjelenítését.
+A részletes leírás [//en.wikipedia.org/wiki/Help:WikiHiero_syntax itt] található.',
+	'wikihiero-input' => 'Beírt szöveg',
+	'wikihiero-result' => 'Eredmény',
+	'wikihiero-syntax' => 'Szintaxis',
+	'wikihiero-th-code' => 'Kód',
+	'wikihiero-th-meaning' => 'Jelentés',
+	'wikihiero-th-example' => 'Példa kód',
+	'wikihiero-th-result' => 'Eredmény',
+	'wikihiero-separator' => 'Elválasztó',
+	'wikihiero-eol' => 'Sor vége',
+	'wikihiero-superposition' => 'Alosztó',
+	'wikihiero-juxtaposition' => 'Határosság',
+	'wikihiero-mirror' => 'Hieroglifa tükrözése',
+	'wikihiero-void' => 'Teljes szélességű üres blokk',
+	'wikihiero-half-void' => 'Fél szélességű üres blokk',
+	'wikihiero-comment' => 'Megjegyzés',
+	'wikihiero-load-error' => 'Betöltési hiba!',
+	'wikihiero-category-A' => 'A: Férfi és foglalkozásai',
+	'wikihiero-category-B' => 'B: Nő és foglalkozásai',
+	'wikihiero-category-C' => 'C: Antropomorf istenségek',
+	'wikihiero-category-D' => 'D: Emberi test részei',
+	'wikihiero-category-E' => 'E: Emlősök',
+	'wikihiero-category-F' => 'F: Emlősök részei',
+	'wikihiero-category-G' => 'G: Madarak',
+	'wikihiero-category-H' => 'H: Madarak részei',
+	'wikihiero-category-I' => 'I: Kétéltűek, hüllők, stb.',
+	'wikihiero-category-K' => 'K: Halak és halak részei',
+	'wikihiero-category-L' => 'L: Gerinctelenek és kisebb állatok',
+	'wikihiero-category-M' => 'M: Fák és virágok',
+	'wikihiero-category-N' => 'N: Ég, föld, víz',
+	'wikihiero-category-O' => 'O: Épületes, épületek részei, stb.',
+	'wikihiero-category-P' => 'P: Hajók és hajók részei',
+	'wikihiero-category-Q' => 'Q: Házi és temetkezési berendezések',
+	'wikihiero-category-R' => 'R: Templom berendezések és szent jelképek',
+	'wikihiero-category-S' => 'S: Koronák, ruhák, stb.',
+	'wikihiero-category-T' => 'T: Hadviselés, vadászat, mészárlás',
+	'wikihiero-category-U' => 'U: Földművelés, mesterséged, foglalkozások',
+	'wikihiero-category-V' => 'V: Kötél, rost, kosarak, zsákok, stb.',
+	'wikihiero-category-W' => 'W: Kő- és agyagedények',
+	'wikihiero-category-X' => 'X: Cipók és sütemények',
+	'wikihiero-category-Y' => 'Y: Írás, játékok, zene',
+	'wikihiero-category-Z' => 'Z: Vonalak, geometriai alakzatok, stb.',
+	'wikihiero-category-Aa' => 'Aa: Kategorizálatlan',
 );
 
 /** Interlingua (Interlingua)
@@ -1396,6 +1442,7 @@ $messages['lb'] = array(
 	'wikihiero-category-B' => 'B: Fraen an hir Beschäftegungen',
 	'wikihiero-category-D' => 'D: Deeler vum mënschleche Kierper',
 	'wikihiero-category-E' => 'E: Mamendéieren',
+	'wikihiero-category-F' => 'F: Deeler vu Mamendéieren',
 	'wikihiero-category-G' => 'G: Vigel',
 	'wikihiero-category-H' => 'H: Deeler vu Vigel',
 	'wikihiero-category-I' => 'I: Amphibien, Reptilien, asw.',
@@ -1426,7 +1473,21 @@ $messages['li'] = array(
 $messages['lt'] = array(
 	'wikihiero-desc' => 'Prideda <code>&lt;hiero&gt;</code> gaires rodyti [[Special:Hieroglyphs|hieroglifus]]',
 	'wikihiero-result' => 'Rezultatas',
+	'wikihiero-syntax' => 'Sintaksė',
+	'wikihiero-th-code' => 'Kodas',
+	'wikihiero-th-meaning' => 'Reikšmė',
+	'wikihiero-th-example' => 'Pavyzdinis kodas',
+	'wikihiero-th-result' => 'Rezultatas',
+	'wikihiero-separator' => 'Skirtukas',
+	'wikihiero-eol' => 'Eilutės pabaiga',
+	'wikihiero-comment' => 'Komentuoti',
 	'wikihiero-load-error' => 'Įkelimo klaida!',
+	'wikihiero-category-D' => 'D: žmogaus kūno dalys',
+	'wikihiero-category-G' => 'G: Paukščiai',
+	'wikihiero-category-H' => 'H: paukščių dalys',
+	'wikihiero-category-N' => 'N: Dangus, žemė, vanduo',
+	'wikihiero-category-O' => 'O: Pastatai, pastatų dalys ir t.t.',
+	'wikihiero-category-P' => 'P: Laivai ir laivų dalys',
 );
 
 /** Latvian (Latviešu)
@@ -1696,6 +1757,12 @@ $messages['oc'] = array(
  * @author Ansumang
  */
 $messages['or'] = array(
+	'wikihiero-result' => 'ପରିଣାମ',
+	'wikihiero-th-code' => 'କୋଡ଼',
+	'wikihiero-th-meaning' => 'ମାନେ',
+	'wikihiero-th-result' => 'ପରିଣାମ',
+	'wikihiero-comment' => 'ମତାମତ',
+	'wikihiero-load-error' => 'ଲୋଡ଼ ତ୍ରୁଟି!',
 	'wikihiero-category-G' => 'G: ପକ୍ଷୀ',
 );
 
@@ -2157,12 +2224,17 @@ $messages['si'] = array(
 	'wikihiero-desc' => 'හයිරෝරේඛනය ප්‍රදර්ශනය කිරීමට <code>&lt;hiero&gt;</code> ටැගය එකතු කරයි',
 	'wikihiero-input' => 'ආදාන පාඨය',
 	'wikihiero-result' => 'ප්‍රතිඵලය',
+	'wikihiero-syntax' => 'වාක්‍ය වින්‍යාසය',
 	'wikihiero-th-code' => 'කේතය',
 	'wikihiero-th-meaning' => 'අර්ථය',
 	'wikihiero-th-example' => 'නිදසුන් කේතය',
 	'wikihiero-th-result' => 'ප්‍රතිඵලය',
+	'wikihiero-separator' => 'විභේදකය',
+	'wikihiero-eol' => 'රේඛාවේ අවසානය',
+	'wikihiero-superposition' => 'ප්‍රශාඛාව',
 	'wikihiero-comment' => 'පරිකථනය',
 	'wikihiero-load-error' => 'පූරණ දෝෂය!',
+	'wikihiero-category-Aa' => 'Aa: වර්ග නොකළ',
 );
 
 /** Slovak (Slovenčina)
