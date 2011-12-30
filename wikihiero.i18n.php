@@ -2234,6 +2234,8 @@ $messages['si'] = array(
 	'wikihiero-superposition' => 'ප්‍රශාඛාව',
 	'wikihiero-comment' => 'පරිකථනය',
 	'wikihiero-load-error' => 'පූරණ දෝෂය!',
+	'wikihiero-category-E' => 'E: ක්ෂීරපායින්',
+	'wikihiero-category-G' => 'G: කුරුල්ලෝ',
 	'wikihiero-category-Aa' => 'Aa: වර්ග නොකළ',
 );
 
@@ -2642,6 +2644,14 @@ $messages['wa'] = array(
 	'wikihiero-category-L' => 'L: Sicrijhaedje, amuzmints, muzike',
 	'wikihiero-category-Z' => 'Z: Royes et cognes djeyometrikes',
 	'wikihiero-category-Aa' => 'Aa: Des ôtes (nén classifyî)',
+);
+
+/** Yiddish (ייִדיש)
+ * @author Imre
+ */
+$messages['yi'] = array(
+	'wikihiero-result' => 'רעזולטאט',
+	'wikihiero-th-result' => 'רעזולטאט',
 );
 
 /** Cantonese (粵語)
