@@ -1,6 +1,6 @@
 .mw-hiero-table {
-	border: 0 !important;
-	border-spacing: 0 !important;
+	border: 0;
+	border-spacing: 0;
 }
 
 .mw-hiero-outer {
@@ -8,10 +8,9 @@
 }
 
 .mw-hiero-table td {
-	border: 0 !important;
-	padding: 0 !important;
-	text-align: center !important;
-	vertical-align: middle !important;
+	padding: 0;
+	align: center;
+	vertical-align: middle;
 }
 
 .mw-hiero-box {
