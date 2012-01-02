@@ -1851,6 +1851,9 @@ Ch'a bèica [//en.wikipedia.org/wiki/Help:WikiHiero_syntax ambelessì] për la d
 	'wikihiero-superposition' => 'Sotdivision',
 	'wikihiero-juxtaposition' => 'Giustaposission',
 	'wikihiero-mirror' => 'Specié un geroglìfich.',
+	'wikihiero-void' => 'Blòch veuid a grandëssa pien-a',
+	'wikihiero-half-void' => 'Blòch veuid a mesa grandëssa',
+	'wikihiero-comment' => 'Coment',
 	'wikihiero-load-error' => 'Eror ëd cariament!',
 	'wikihiero-category-A' => "A: L'òm e soe ocupassion",
 	'wikihiero-category-B' => 'A: La fomna e soe ocupassion',
@@ -2478,6 +2481,50 @@ $messages['sv'] = array(
  */
 $messages['szl'] = array(
 	'wikihiero-desc' => 'Dodowo znaczńik <code>&lt;hiero&gt;</code> kery dozwalo wyśwjetlać [[Special:Hieroglyphs|hjeroglify]]',
+);
+
+/** Tamil (தமிழ்)
+ * @author Shanmugamp7
+ */
+$messages['ta'] = array(
+	'wikihiero-input' => 'உள்ளீட்டு உரை',
+	'wikihiero-result' => 'முடிவு',
+	'wikihiero-syntax' => 'சொற்றொடரியல்',
+	'wikihiero-th-code' => 'குறியீடு',
+	'wikihiero-th-meaning' => 'அர்த்தம்',
+	'wikihiero-th-example' => 'உதாரணக் குறியீடு',
+	'wikihiero-th-result' => 'முடிவு',
+	'wikihiero-separator' => 'பிரிப்பான்',
+	'wikihiero-eol' => 'கோட்டின் முடிவு',
+	'wikihiero-superposition' => 'துணைப்பிரிவுகள்',
+	'wikihiero-void' => 'முழு-அகல பெறும் தொகுதி',
+	'wikihiero-half-void' => 'அரை-அகல பெறும் தொகுதி',
+	'wikihiero-comment' => 'கருத்துரை',
+	'wikihiero-load-error' => 'ஏற்றல் பிழை!',
+	'wikihiero-category-B' => 'B: பெண் மற்றும் அவரது தொழில்கள்',
+	'wikihiero-category-D' => 'D: மனித உடலில் பகுதிகள்',
+	'wikihiero-category-E' => 'E:பாலூட்டிகள்',
+	'wikihiero-category-F' => 'F: பாலூட்டிகளின் பகுதிகள்',
+	'wikihiero-category-G' => 'G: பறவைகள்',
+	'wikihiero-category-H' => 'H: பறவைகளின் பகுதிகள்',
+	'wikihiero-category-I' => 'I: நிலநீர் வாழ்வன, ஊர்வன, ஆகிய.',
+	'wikihiero-category-K' => 'K: மீன் மற்றும் மீன் பகுதிகள்',
+	'wikihiero-category-L' => 'L:: முதுகெலும்பில்லாத மற்றும் சிறிய விலங்குகள்',
+	'wikihiero-category-M' => 'M: மரங்கள் மற்றும் தாவரங்கள்',
+	'wikihiero-category-N' => 'N: வான், புவி, நீர்',
+	'wikihiero-category-O' => 'O: கட்டடங்கள், கட்டிடங்களின் பகுதிகள், ஆகியன.',
+	'wikihiero-category-P' => 'P: கப்பல்கள் மற்றும் கப்பல்களின் பகுதிகள்',
+	'wikihiero-category-Q' => 'Q: வீட்டு உபயோக மற்றும் இறுதி ஊர்வல மரச்சாமான்கள்',
+	'wikihiero-category-R' => 'R: கோவில் மரச்சாமான்கள் மற்றும் புனித சின்னங்கள்',
+	'wikihiero-category-S' => 'S: பட்டம், ஆடை, staves, முதலியன.',
+	'wikihiero-category-T' => 'T: போர், வேட்டையாடுதல், butchery',
+	'wikihiero-category-U' => 'U: விவசாயம், கைத்தொழில் மற்றும் தொழில்',
+	'wikihiero-category-V' => 'V: கயிறு, ஃபைபர், கூடைகள், பைகள், முதலியன',
+	'wikihiero-category-W' => 'W:கல் பாத்திரங்கள் மற்றும் மண் பாண்டம்',
+	'wikihiero-category-X' => 'X: Loaves மற்றும் கேக்குகள்',
+	'wikihiero-category-Y' => 'Y:எழுத்துக்கள், விளையாட்டுகள், இசை',
+	'wikihiero-category-Z' => 'Z: சிறுவீச்சுக்கள்,வடிவியல் புள்ளிவிவரங்கள், முதலியன',
+	'wikihiero-category-Aa' => 'Aa: வகைப்படுத்தாதது',
 );
 
 /** Telugu (తెలుగు)
