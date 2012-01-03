@@ -76,12 +76,17 @@ Wikihiero is a markup language to render hieroglyphics. See [//www.mediawiki.org
 );
 
 /** Afrikaans (Afrikaans)
+ * @author Ansumang
  * @author Naudefj
  */
 $messages['af'] = array(
 	'wikihiero-desc' => "Maak 'n <code>&lt;hiero&gt;</code> etiket beskikbaar vir die vertoon van [[Special:Hieroglyphs|hierogliewe]]",
 	'wikihiero-input' => 'Invoerteks',
 	'wikihiero-result' => 'Resultaat',
+	'wikihiero-syntax' => 'Sintaks',
+	'wikihiero-th-code' => 'Kode',
+	'wikihiero-th-result' => 'Resultaat',
+	'wikihiero-comment' => 'Opmerking',
 	'wikihiero-load-error' => 'Fout met die laai!',
 	'wikihiero-category-A' => 'A: Die man en sy beroepe',
 	'wikihiero-category-Aa' => 'Aa: Ongeklassifiseerd',
@@ -1080,10 +1085,14 @@ $messages['he'] = array(
 );
 
 /** Hindi (हिन्दी)
+ * @author Ansumang
  * @author Kaustubh
  */
 $messages['hi'] = array(
 	'wikihiero-desc' => 'हाइरोग्लिफ दर्शाने के लिये <code>&lt;hiero&gt;</code> टैग देता हैं',
+	'wikihiero-result' => 'परिणाम',
+	'wikihiero-th-code' => 'कोड',
+	'wikihiero-comment' => 'टिप्पणी',
 );
 
 /** Hiligaynon (Ilonggo)
@@ -2199,6 +2208,15 @@ $messages['rue'] = array(
 	'wikihiero-category-Y' => 'Y: Писаня, гры, музика',
 	'wikihiero-category-Z' => 'Z: Ґеометрічны фіґуры і тягы ітд.',
 	'wikihiero-category-Aa' => 'Аа: Некласіфікованы',
+);
+
+/** Sanskrit (संस्कृतम्)
+ * @author Ansumang
+ */
+$messages['sa'] = array(
+	'wikihiero-result' => 'परिणामम्',
+	'wikihiero-th-result' => 'परिणामम्',
+	'wikihiero-comment' => 'टिप्पणी',
 );
 
 /** Sakha (Саха тыла)
