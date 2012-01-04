@@ -1090,9 +1090,16 @@ $messages['he'] = array(
  */
 $messages['hi'] = array(
 	'wikihiero-desc' => 'हाइरोग्लिफ दर्शाने के लिये <code>&lt;hiero&gt;</code> टैग देता हैं',
+	'wikihiero-input' => 'इनपुट पाठ',
 	'wikihiero-result' => 'परिणाम',
 	'wikihiero-th-code' => 'कोड',
+	'wikihiero-th-meaning' => 'अर्थ',
+	'wikihiero-th-example' => 'उदाहरण कोड़',
+	'wikihiero-th-result' => 'परिणाम',
+	'wikihiero-separator' => 'सेपारेटर',
+	'wikihiero-eol' => 'लाइन की अंत',
 	'wikihiero-comment' => 'टिप्पणी',
+	'wikihiero-load-error' => 'लोड त्रुटि!',
 );
 
 /** Hiligaynon (Ilonggo)
