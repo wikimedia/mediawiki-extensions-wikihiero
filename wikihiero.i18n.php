@@ -1121,6 +1121,20 @@ $messages['hr'] = array(
  */
 $messages['hsb'] = array(
 	'wikihiero-desc' => 'Přidawa tafličku <code>&lt;hiero&gt;</code> za zwobraznjenje [[Special:Hieroglyphs|hieroglyfow]]',
+	'wikihiero-result' => 'Wuslědk',
+	'wikihiero-syntax' => 'Syntaksa',
+	'wikihiero-th-code' => 'Kod',
+	'wikihiero-th-meaning' => 'Woznam',
+	'wikihiero-th-example' => 'Přikładowy kod',
+	'wikihiero-th-result' => 'Wuslědk',
+	'wikihiero-separator' => 'Dźělatko',
+	'wikihiero-comment' => 'Komentar',
+	'wikihiero-category-A' => 'B: Mužojo a jich dźěławosće',
+	'wikihiero-category-B' => 'B: Žony a jich dźěławosće',
+	'wikihiero-category-D' => 'D: Dźěle čłowjeskeho ćěła',
+	'wikihiero-category-E' => 'E: Cycaki',
+	'wikihiero-category-G' => 'G: Ptački',
+	'wikihiero-category-M' => 'M: Štomy a rostliny',
 );
 
 /** Hungarian (Magyar)
