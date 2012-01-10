@@ -1913,7 +1913,7 @@ Ch'a bèica [//en.wikipedia.org/wiki/Help:WikiHiero_syntax ambelessì] për la d
 	'wikihiero-juxtaposition' => 'Giustaposission',
 	'wikihiero-mirror' => 'Specié un geroglìfich.',
 	'wikihiero-void' => 'Blòch veuid a grandëssa pien-a',
-	'wikihiero-half-void' => 'Blòch veuid a mesa grandëssa',
+	'wikihiero-half-void' => 'Blòch ëd veuid ëd mesa grandëssa',
 	'wikihiero-comment' => 'Coment',
 	'wikihiero-load-error' => 'Eror ëd cariament!',
 	'wikihiero-category-A' => "A: L'òm e soe ocupassion",
