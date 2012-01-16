@@ -2797,9 +2797,13 @@ $messages['wa'] = array(
 
 /** Yiddish (ייִדיש)
  * @author Imre
+ * @author פוילישער
  */
 $messages['yi'] = array(
 	'wikihiero-result' => 'רעזולטאט',
+	'wikihiero-th-code' => 'קאד',
+	'wikihiero-th-meaning' => 'באדייט',
+	'wikihiero-th-example' => 'ביישפיל קאד',
 	'wikihiero-th-result' => 'רעזולטאט',
 );
 
