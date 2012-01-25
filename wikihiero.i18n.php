@@ -672,6 +672,9 @@ $messages['es'] = array(
  */
 $messages['et'] = array(
 	'wikihiero-desc' => 'Lisab [[Special:Hieroglyphs|hieroglüüfide]] kuvamiseks <code>&lt;hiero&gt;</code>-märgendi.',
+	'hieroglyphs' => 'Hieroglüüfide proovimine',
+	'wikihiero-special-page-text' => 'Kasuta seda lehekülge, et katsetada WikiHiero märke.
+Märkide kirjeldused leiad [//en.wikipedia.org/wiki/Help:WikiHiero_syntax siit].',
 	'wikihiero-input' => 'Sisendtekst',
 	'wikihiero-result' => 'Tulemus',
 	'wikihiero-syntax' => 'Süntaks',
@@ -681,6 +684,11 @@ $messages['et'] = array(
 	'wikihiero-th-result' => 'Tulemus',
 	'wikihiero-separator' => 'Eraldaja',
 	'wikihiero-eol' => 'Rea lõpp',
+	'wikihiero-superposition' => 'Ülalt alla kiri',
+	'wikihiero-juxtaposition' => 'Kõrvuasend',
+	'wikihiero-mirror' => 'Hieroglüüfi peegeldamine',
+	'wikihiero-void' => 'Täislaiuses tühimik',
+	'wikihiero-half-void' => 'Pool tühimikku',
 	'wikihiero-comment' => 'Kommentaar',
 	'wikihiero-load-error' => 'Laadimistõrge!',
 	'wikihiero-category-A' => 'A: Mees ja tema ametid',
