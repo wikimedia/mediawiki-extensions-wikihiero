@@ -408,6 +408,8 @@ Popis jazyka najdete v [//en.wikipedia.org/wiki/Help:WikiHiero_syntax nápověd�
 	'wikihiero-superposition' => 'Podrozdělení',
 	'wikihiero-juxtaposition' => 'Juxtapozice',
 	'wikihiero-mirror' => 'Zrcadlově převrátit hieroglyf',
+	'wikihiero-void' => 'Prázdný blok s plnou šířkou',
+	'wikihiero-half-void' => 'Prázdný blok s poloviční šířkou',
 	'wikihiero-load-error' => 'Chyba při načítání!',
 	'wikihiero-category-A' => 'A: Muž a jeho práce',
 	'wikihiero-category-B' => 'B: Žena a její práce',
