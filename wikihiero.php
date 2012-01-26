@@ -70,13 +70,22 @@ $wgResourceModules['ext.wikihiero.Special'] = array(
 
 $wgCompiledFiles[] = MWInit::extCompiledPath( 'wikihiero/data/tables.php' );
 
-// Because <hiero> tag is used rarely, we don't need to load its body on every hook call,
-// so we keep our simple hook handlers here.
+/**
+ * Because <hiero> tag is used rarely, we don't need to load its body on every hook call,
+ * so we keep our simple hook handlers here.
+ *
+ * @param $parser Parser
+ * @return bool
+ */
 function wfRegisterWikiHiero( &$parser ) {
 	$parser->setHook( 'hiero', 'WikiHiero::parserHook' );
 	return true;
 }
 
+/**
+ * @param $out OutputPage
+ * @return bool
+ */
 function wfHieroBeforePageDisplay( $out ) {
 	$out->addModuleStyles( 'ext.wikihiero' );
 	return true;
