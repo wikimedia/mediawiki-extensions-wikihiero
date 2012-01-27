@@ -710,7 +710,7 @@ Märkide kirjeldused leiad [//en.wikipedia.org/wiki/Help:WikiHiero_syntax siit].
 	'wikihiero-category-P' => 'P: Laevad ja laevaosad',
 	'wikihiero-category-Q' => 'Q: Kodu ja hauakambri sisustus',
 	'wikihiero-category-R' => 'R: Templi sisustus ja pühad embleemid',
-	'wikihiero-category-S' => 'S: Kroonid, riided, sauad jne.',
+	'wikihiero-category-S' => 'S: Kroonid, riided, sauad jne',
 	'wikihiero-category-T' => 'T: Sõjandus, jaht, lihunikutöö',
 	'wikihiero-category-U' => 'U: Põllundus, käsitöö ja elukutsed',
 	'wikihiero-category-V' => 'V: Köis, kiud, korvid, kotid jne',
@@ -2454,26 +2454,27 @@ $messages['sq'] = array(
 
 /** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
  * @author Millosh
+ * @author Rancher
  */
 $messages['sr-ec'] = array(
 	'wikihiero-desc' => 'Додаје <code>&lt;hiero&gt;</code> ознаку за приказ [[Special:Hieroglyphs|хијероглифа]].',
 	'wikihiero-syntax' => 'Синтакса',
 	'wikihiero-separator' => 'Раздвајач',
 	'wikihiero-eol' => 'Крај реда',
-	'wikihiero-superposition' => 'Преметање',
-	'wikihiero-juxtaposition' => 'Прирашћивање',
-	'wikihiero-category-A' => 'A: Мушкарац и његова занимања',
-	'wikihiero-category-B' => 'B: Жена и њена занимања',
+	'wikihiero-superposition' => 'Усправно груписање',
+	'wikihiero-juxtaposition' => 'Водоравно груписање',
+	'wikihiero-category-A' => 'A: Мушкарац и његове активности',
+	'wikihiero-category-B' => 'B: Жена и њене активности',
 	'wikihiero-category-C' => 'C: Човеколика божанства',
 	'wikihiero-category-D' => 'D: Делови људског тела',
 	'wikihiero-category-E' => 'E: Сисари',
-	'wikihiero-category-F' => 'F: Делови тела сисара',
+	'wikihiero-category-F' => 'F: Делови сисара',
 	'wikihiero-category-G' => 'G: Птице',
-	'wikihiero-category-H' => 'H: Делови тела птица',
-	'wikihiero-category-I' => 'I: Водоземци, гмизавци и т. д.',
+	'wikihiero-category-H' => 'H: Делови птица',
+	'wikihiero-category-I' => 'I: Водоземци, гмизавци итд.',
 	'wikihiero-category-K' => 'K: Рибе и делови риба',
-	'wikihiero-category-L' => 'L: Бескичмењаци',
-	'wikihiero-category-Z' => 'Z: Линије, геометријске фигуре',
+	'wikihiero-category-L' => 'L: Бескичмењаци и ситне животиње',
+	'wikihiero-category-Z' => 'Z: Линије, геометријске фигуре итд.',
 	'wikihiero-category-Aa' => 'Aa: Некласификовано',
 );
 
