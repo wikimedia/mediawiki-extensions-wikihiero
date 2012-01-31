@@ -1767,6 +1767,54 @@ $messages['nds-nl'] = array(
 	'wikihiero-desc' => 'Zet de tekste <code>&lt;hiero&gt;</code> derbie veur de weergave van [[Special:Hieroglyphs|hiërogliefen]]',
 );
 
+/** Nepali (नेपाली)
+ * @author RajeshPandey
+ */
+$messages['ne'] = array(
+	'wikihiero-input' => 'इनपुट पाठ',
+	'wikihiero-result' => 'परिणाम',
+	'wikihiero-syntax' => 'वाक्यविन्यास',
+	'wikihiero-th-code' => 'कोड',
+	'wikihiero-th-meaning' => 'अर्थ',
+	'wikihiero-th-example' => 'उदाहरण कोड',
+	'wikihiero-th-result' => 'परिणाम',
+	'wikihiero-separator' => 'विभाजक',
+	'wikihiero-eol' => 'वाक्य को अन्त',
+	'wikihiero-superposition' => 'उपशाखा',
+	'wikihiero-juxtaposition' => 'मुकाबला',
+	'wikihiero-mirror' => 'एक चित्र - लेख(hieroglyph) लाइ प्रतिबिम्बित गर्नुहोस',
+	'wikihiero-void' => 'पूर्ण-चौडाइको खाली भाग',
+	'wikihiero-half-void' => 'आधा-चौडाइको खाली भाग',
+	'wikihiero-comment' => 'टिप्पणी',
+	'wikihiero-load-error' => 'लोड त्रुटि!',
+	'wikihiero-category-A' => 'क: मान्छे र उसका व्यवसायहरू',
+	'wikihiero-category-B' => 'ख: महिला र उनको व्यवसायहरू',
+	'wikihiero-category-C' => 'ग:मानवचित्रीत देवताहरू',
+	'wikihiero-category-D' => 'घ:  मानव शरीर का केहि भागहरू',
+	'wikihiero-category-E' => 'ङ: स्तनधारीहरू',
+	'wikihiero-category-F' => 'च: स्तनधारिहरू का केहि भागहरू',
+	'wikihiero-category-G' => 'छ: पंक्षिहरू',
+	'wikihiero-category-H' => 'ज: पंक्षिहरू का केही भागहरू',
+	'wikihiero-category-I' => 'झ: उभयचर, सरीसृप, आदि।',
+	'wikihiero-category-K' => 'ट: माछा र माछा को भागहरू',
+	'wikihiero-category-L' => 'ठ: मेरूदण्ड नभएका तथा तलका जनावरहरू',
+	'wikihiero-category-M' => 'ड: रूख तथा बिरूवाहरू',
+	'wikihiero-category-N' => 'ढ: आकाश, थल, जल',
+	'wikihiero-category-O' => 'ण: भवनहरू, भवनका भागहरू, आदि ।',
+	'wikihiero-category-P' => 'त: जहाजहरु तथा जहाजका भागहरू',
+	'wikihiero-category-Q' => 'त: घरेलु तथा अन्तिम संस्कारका फर्नीचर',
+	'wikihiero-category-R' => 'द: मन्दिरका फर्नीचर तथा पवित्र प्रतीकहरू',
+	'wikihiero-category-S' => 'ध: मुकुट, पोशाक, लठ्ठीहरू, आदि।',
+	'wikihiero-category-T' => 'न: युद्ध, शिकार, मारकाट',
+	'wikihiero-category-U' => 'प: कृषि, शिल्प तथा व्यवसायहरू',
+	'wikihiero-category-V' => 'फ: डोरी, रेशा, टोकरिहरू, झोलाहरू, आदि।',
+	'wikihiero-category-W' => 'ब: ढुँङ्गा र माटाका भाँडाहरू',
+	'wikihiero-category-X' => 'भ: रोटीका टुक्राहरू र केक',
+	'wikihiero-category-Y' => 'म: लेखहरू, खेलहरु, संगीत',
+	'wikihiero-category-Z' => 'य: धर्साहरू, ज्यामितीय आकारहरू, आदि।',
+	'wikihiero-category-Aa' => 'र: अवर्गीकृत',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
