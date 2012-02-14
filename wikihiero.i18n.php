@@ -630,22 +630,31 @@ Vidu [//en.wikipedia.org/wiki/Help:WikiHiero_syntax ĉi tie] por priskribo de ma
 );
 
 /** Spanish (Español)
+ * @author Armando-Martin
  * @author Imre
  * @author Remember the dot
  */
 $messages['es'] = array(
 	'wikihiero-desc' => 'Añade elemento <code>&lt;hiero&gt;</code> para mostrar un [[Special:Hieroglyphs|jeroglífico]]',
+	'hieroglyphs' => 'Probar marcado de jeroglífico',
+	'wikihiero-special-page-text' => 'Utilice esta página para probar marcado WikiHiero.
+Vea [//en.wikipedia.org/wiki/Help:WikiHiero_syntax esta página] para descripción de marcado.',
 	'wikihiero-input' => 'Texto a expandir',
 	'wikihiero-result' => 'Resultado',
 	'wikihiero-syntax' => 'Sintaxis',
 	'wikihiero-th-code' => 'Código',
 	'wikihiero-th-meaning' => 'Significado',
+	'wikihiero-th-example' => 'Código de ejemplo',
 	'wikihiero-th-result' => 'Resultado',
 	'wikihiero-separator' => 'Separador',
 	'wikihiero-eol' => 'Fin de línea',
 	'wikihiero-superposition' => 'Dispårtaedje',
 	'wikihiero-juxtaposition' => 'Yuxtaposición',
+	'wikihiero-mirror' => 'Hacer espejo de un jeroglífico',
+	'wikihiero-void' => 'Bloque vacío de anchura completa',
+	'wikihiero-half-void' => 'Bloque vacío de media anchura',
 	'wikihiero-comment' => 'Comentario',
+	'wikihiero-load-error' => '¡Error de carga!',
 	'wikihiero-category-A' => 'A: El hombre y sus oficios',
 	'wikihiero-category-B' => 'B: La mujer y sus oficios',
 	'wikihiero-category-C' => 'C: Dioses antropomórficos',
@@ -659,10 +668,15 @@ $messages['es'] = array(
 	'wikihiero-category-L' => 'L: Invertebrados y especies menores',
 	'wikihiero-category-M' => 'M: Árboles y plantas',
 	'wikihiero-category-N' => 'N: Cielo, tierra, agua',
+	'wikihiero-category-O' => 'O: Edificios, partes de edificios, etc..',
+	'wikihiero-category-P' => 'P: Barcos y partes de barcos',
+	'wikihiero-category-Q' => 'P: Mobiliario doméstico y funerario',
+	'wikihiero-category-R' => 'R: Muebles religiosos y emblemas sagrados',
 	'wikihiero-category-S' => 'S: Coronas, vestido, duelas, etc..',
 	'wikihiero-category-T' => 'T: Guerra, caza, carnicería',
 	'wikihiero-category-U' => 'U: Agricultura, oficios y profesiones',
 	'wikihiero-category-V' => 'V: Cuerda, fibra, cestas, bolsas, etc..',
+	'wikihiero-category-W' => 'W: Vasijas de piedra y barro',
 	'wikihiero-category-X' => 'X: Panes y pasteles',
 	'wikihiero-category-Y' => 'Y: Escritos, juegos, música',
 	'wikihiero-category-Z' => 'Z: Trazos, figuras geométricas, etc.',
