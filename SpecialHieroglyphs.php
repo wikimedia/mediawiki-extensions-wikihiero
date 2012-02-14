@@ -47,6 +47,7 @@ class SpecialHieroglyphs extends SpecialPage {
 		$this->setHeaders();
 		$out = $this->getContext()->getOutput();
 		$out->addModules( 'ext.wikihiero.Special' );
+		$out->addModuleStyles( 'ext.wikihiero.Special' ); // apply CSS during slow load
 		$out->addWikiMsg( 'wikihiero-special-page-text' );
 
 		$out->addHTML( '<div id="hiero-result">' );
