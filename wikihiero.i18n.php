@@ -1531,6 +1531,7 @@ $messages['lb'] = array(
 	'wikihiero-th-example' => 'Beispill vum Code',
 	'wikihiero-th-result' => 'Resultat',
 	'wikihiero-superposition' => 'Ënnerdeelung',
+	'wikihiero-mirror' => 'Eng Hieroglyph spigelen (mirror)',
 	'wikihiero-comment' => 'Bemierkung',
 	'wikihiero-load-error' => 'Feeler beim Lueden!',
 	'wikihiero-category-A' => 'A: Männer an hir Beschäftegungen',
