@@ -497,12 +497,13 @@ Se [//en.wikipedia.org/wiki/Help:WikiHiero_syntax her] for en beskrivelse af kod
  * @author Kghbln
  * @author Metalhead64
  * @author Raimond Spekking
+ * @author Umherirrender
  */
 $messages['de'] = array(
 	'wikihiero-desc' => 'Ergänzt das Tag <code>&lt;hiero&gt;</code> zur Anzeige von [[Special:Hieroglyphs|Hieroglyphen]]',
 	'hieroglyphs' => 'Hieroglyphen-Markup testen',
 	'wikihiero-special-page-text' => 'Verwende diese Seite, um das WikiHiero-Markup zu testen.
-Siehe [//en.wikipedia.org/wiki/Help:WikiHiero_syntax hier] für eine Markup-Beschreibung.',
+Siehe [//de.wikipedia.org/wiki/Hilfe:Hieroglyphen hier] für eine Markup-Beschreibung.',
 	'wikihiero-input' => 'Eingabetext',
 	'wikihiero-result' => 'Ergebnis',
 	'wikihiero-syntax' => 'Syntax',
@@ -549,10 +550,11 @@ Siehe [//en.wikipedia.org/wiki/Help:WikiHiero_syntax hier] für eine Markup-Besc
 
 /** German (formal address) (‪Deutsch (Sie-Form)‬)
  * @author Kghbln
+ * @author Umherirrender
  */
 $messages['de-formal'] = array(
 	'wikihiero-special-page-text' => 'Verwenden Sie diese Seite, um das WikiHiero-Markup zu testen.
-Siehe [//en.wikipedia.org/wiki/Help:WikiHiero_syntax hier] für eine Markup-Beschreibung.',
+Siehe [//en.wikipedia.org/wiki/Hilfe:Hieroglyphen hier] für eine Markup-Beschreibung.',
 );
 
 /** Zazaki (Zazaki)
@@ -750,7 +752,7 @@ $messages['eu'] = array(
  */
 $messages['fa'] = array(
 	'wikihiero-desc' => 'برچسب <code>&lt;hiero&gt;</code> را برای نمایش هیروگلیف می‌افزاید',
-	'hieroglyphs' => 'نشانه گذاری هیروگلیف را امتحان کنید',
+	'hieroglyphs' => 'امتحان‌کردن نشانه‌گذاری هیروگلیف',
 	'wikihiero-special-page-text' => 'برای امتحان نشانه‌گذاری ویکی‌هیرو از این صفحه استفاده کنید.
 برای توضیحات نشانه‌گذاری، [//en.wikipedia.org/wiki/Help:WikiHiero_syntax اینجا] را ببینید.',
 	'wikihiero-input' => 'متن ورودی',
