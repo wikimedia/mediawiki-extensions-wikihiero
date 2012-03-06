@@ -763,6 +763,7 @@ $messages['fa'] = array(
 	'wikihiero-th-result' => 'نتیجه',
 	'wikihiero-separator' => 'جداکننده',
 	'wikihiero-eol' => 'پایان خط',
+	'wikihiero-comment' => 'نظر',
 	'wikihiero-load-error' => 'خطا در بارگیری!',
 	'wikihiero-category-A' => 'A: مرد و مشاغل آن',
 	'wikihiero-category-B' => 'B: زن مشاغل آن',
