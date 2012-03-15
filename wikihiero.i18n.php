@@ -2248,6 +2248,7 @@ Vide [//en.wikipedia.org/wiki/Help:WikiHiero_syntax aqquà] pe 'na descrizione d
 
 /** Russian (Русский)
  * @author Alexandr Efremov
+ * @author DR
  * @author Dim Grits
  * @author MaxSem
  * @author Александр Сигачёв
@@ -2292,7 +2293,7 @@ $messages['ru'] = array(
 	'wikihiero-category-R' => 'R: Храмовые принадлежности и священная символика',
 	'wikihiero-category-S' => 'S: Короны, убранство, шесты и т. д.',
 	'wikihiero-category-T' => 'T: Военное дело, охота, мясная лавка',
-	'wikihiero-category-U' => 'U: Сельске хозяйство, ремесла и профессии',
+	'wikihiero-category-U' => 'U: Сельское хозяйство, ремесла и профессии',
 	'wikihiero-category-V' => 'V: Веревки, клетки, корзины, сумки и т. д.',
 	'wikihiero-category-W' => 'W: Каменные и глиняные сосуды',
 	'wikihiero-category-X' => 'X: Хлебы и выпечка',
