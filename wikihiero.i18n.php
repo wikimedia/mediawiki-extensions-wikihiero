@@ -1344,6 +1344,9 @@ $messages['ig'] = array(
  */
 $messages['it'] = array(
 	'wikihiero-desc' => 'Aggiunge il tag <code>&lt;hiero&gt;</code> per la visualizzazione dei [[Special:Hieroglyphs|geroglifici]]',
+	'hieroglyphs' => 'Prova il markup per geroglifici',
+	'wikihiero-special-page-text' => 'Usa questa pagina per provare il markup WikiHiero.
+Vedi [//it.wikipedia.org/wiki/Aiuto:Geroglifico qui] per la descrizione del markup.',
 	'wikihiero-input' => 'Inserisci il testo',
 	'wikihiero-result' => 'Risultato',
 	'wikihiero-syntax' => 'Sintassi',
@@ -1355,6 +1358,9 @@ $messages['it'] = array(
 	'wikihiero-eol' => 'Fine riga',
 	'wikihiero-superposition' => 'Suddivisione',
 	'wikihiero-juxtaposition' => 'Giustapposizione',
+	'wikihiero-mirror' => 'Specchia un geroglifico',
+	'wikihiero-void' => 'Blocco vuoto a larghezza piena',
+	'wikihiero-half-void' => 'Blocco vuoto di metà larghezza',
 	'wikihiero-comment' => 'Commento',
 	'wikihiero-load-error' => 'Errore di caricamento!',
 	'wikihiero-category-A' => "A: L'uomo e le sue occupazioni",
