@@ -2895,11 +2895,17 @@ $messages['wa'] = array(
  * @author פוילישער
  */
 $messages['yi'] = array(
+	'wikihiero-input' => 'אײַנגעבן טעקסט',
 	'wikihiero-result' => 'רעזולטאט',
+	'wikihiero-syntax' => 'סינטאקס',
 	'wikihiero-th-code' => 'קאד',
 	'wikihiero-th-meaning' => 'באדייט',
 	'wikihiero-th-example' => 'ביישפיל קאד',
 	'wikihiero-th-result' => 'רעזולטאט',
+	'wikihiero-category-E' => 'E: זויגערס',
+	'wikihiero-category-F' => 'F: קערפערטיילן פון זויגערס',
+	'wikihiero-category-M' => 'M: ביימער און פלאנצן',
+	'wikihiero-category-N' => 'N: הימל, ערד און וואסער',
 );
 
 /** Cantonese (粵語)
