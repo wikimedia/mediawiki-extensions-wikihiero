@@ -1932,6 +1932,18 @@ $messages['pdc'] = array(
 	'wikihiero-category-N' => 'N: Himmel, Erd, Wasser',
 );
 
+/** Pälzisch (Pälzisch)
+ * @author Manuae
+ */
+$messages['pfl'] = array(
+	'wikihiero-category-D' => 'D: Menschlischi Kerbadeel',
+	'wikihiero-category-G' => 'G: Veschl',
+	'wikihiero-category-H' => 'H: Kerbadeel vun Veschl',
+	'wikihiero-category-M' => 'M: Beem un Bflonze',
+	'wikihiero-category-N' => 'N: Himml, Erd, Wassa',
+	'wikihiero-category-U' => 'U: Londwerdschafd, Hondwerg un Beruf',
+);
+
 /** Polish (Polski)
  * @author Sp5uhe
  * @author Woytecr
@@ -2710,7 +2722,7 @@ $messages['tg-cyrl'] = array(
 	'wikihiero-desc' => 'Бачасби <code>&lt;hiero&gt;</code>-ро барои намоиши [[Special:Hieroglyphs|ҳироглиф]] илова мекунад',
 );
 
-/** Tajik (Latin script) (tojikī)
+/** Tajik (Latin script) (Tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
@@ -2742,6 +2754,7 @@ $messages['tl'] = array(
  * @author Cekli829
  * @author Emperyan
  * @author Joseph
+ * @author Suelnur
  */
 $messages['tr'] = array(
 	'wikihiero-desc' => '[[Special:Hieroglyphs|Hiyeroglifleri]] görüntülemek için <code>&lt;hiero&gt;</code> etiketini ekler',
@@ -2750,6 +2763,7 @@ $messages['tr'] = array(
 Biçimlendirme açıklaması için [//en.wikipedia.org/wiki/Help:WikiHiero_syntax buraya] bakınız.',
 	'wikihiero-result' => 'Sonuç',
 	'wikihiero-th-code' => 'Kod',
+	'wikihiero-th-result' => 'Sonuç',
 );
 
 /** Ukrainian (Українська)
@@ -2811,7 +2825,7 @@ $messages['vec'] = array(
 	'wikihiero-desc' => 'Zonta el tag <code>&lt;hiero&gt;</code> par la visualizazion dei [[Special:Hieroglyphs|geroglifici]]',
 );
 
-/** Veps (Vepsan kel')
+/** Veps (Vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
