@@ -15,6 +15,7 @@ $messages['en'] = array(
 See [//en.wikipedia.org/wiki/Help:WikiHiero_syntax here] for markup description.',
 	'wikihiero-input' => 'Input text',
 	'wikihiero-result' => 'Result',
+	'wikihiero-submit' => 'Submit',
 	'wikihiero-syntax' => 'Syntax',
 	'wikihiero-th-code' => 'Code',
 	'wikihiero-th-meaning' => 'Meaning',

@@ -77,6 +77,7 @@ class SpecialHieroglyphs extends SpecialPage {
 				'type' => 'submit',
 				'id' => 'hiero-submit',
 				'name' => 'submit',
+				'value' => wfMsg( 'wikihiero-submit' ),
 			) )
 			. Html::closeElement( 'form' )
 		);
