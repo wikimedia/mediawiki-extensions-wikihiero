@@ -1397,6 +1397,7 @@ Vedi [//it.wikipedia.org/wiki/Aiuto:Geroglifico qui] per la descrizione del mark
  * @author Fryed-peach
  * @author JtFuruhata
  * @author Schu
+ * @author Shirayuki
  */
 $messages['ja'] = array(
 	'wikihiero-desc' => ' [[Special:Hieroglyphs|ヒエログリフ]]を表示する <code>&lt;hiero&gt;</code> タグを追加します。',
@@ -1415,6 +1416,7 @@ $messages['ja'] = array(
 	'wikihiero-superposition' => '下位区分',
 	'wikihiero-juxtaposition' => '並置',
 	'wikihiero-mirror' => '象形文字を描写',
+	'wikihiero-comment' => 'コメント',
 	'wikihiero-load-error' => '読み込みエラー！',
 	'wikihiero-category-A' => 'A：男とその職業',
 	'wikihiero-category-B' => 'B：女とその職業',
