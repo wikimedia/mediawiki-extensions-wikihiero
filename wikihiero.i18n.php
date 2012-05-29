@@ -1461,10 +1461,12 @@ $messages['jv'] = array(
 );
 
 /** Georgian (ქართული)
+ * @author BRUTE
  * @author გიორგიმელა
  */
 $messages['ka'] = array(
 	'wikihiero-desc' => 'ჰმატებს თეგ <code>&lt;hiero&gt;</code> იეროგიფების საჩვენებლად',
+	'wikihiero-comment' => 'კომენტარი',
 );
 
 /** Kazakh (Қазақша) */
