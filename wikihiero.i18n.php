@@ -1500,9 +1500,10 @@ $messages['km'] = array(
 
 /** Korean (한국어)
  * @author ToePeu
+ * @author 아라
  */
 $messages['ko'] = array(
-	'wikihiero-desc' => '히에로글리프 표현을 위해 <code>&lt;hiero&gt;</code>태그를 추가',
+	'wikihiero-desc' => '[[Special:Hieroglyphs|상형 문자]] 표현을 위해 <code>&lt;hiero&gt;</code>태그를 추가',
 );
 
 /** Colognian (Ripoarisch)
