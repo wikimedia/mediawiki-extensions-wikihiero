@@ -1400,7 +1400,7 @@ Vedi [//it.wikipedia.org/wiki/Aiuto:Geroglifico qui] per la descrizione del mark
  * @author Shirayuki
  */
 $messages['ja'] = array(
-	'wikihiero-desc' => ' [[Special:Hieroglyphs|ヒエログリフ]]を表示する <code>&lt;hiero&gt;</code> タグを追加します。',
+	'wikihiero-desc' => '[[Special:Hieroglyphs|ヒエログリフ]]を表示する <code>&lt;hiero&gt;</code> タグを追加する',
 	'hieroglyphs' => '象形文字マークアップを試行',
 	'wikihiero-special-page-text' => 'WikiHieroマークアップを試すためにこのページを使用してください。
 マークアップの説明につきましては、[//ja.wikipedia.org/wiki/Help:WikiHieroの文法 こちら] をご覧ください。',
