@@ -632,10 +632,11 @@ Vidu [//en.wikipedia.org/wiki/Help:WikiHiero_syntax ĉi tie] por priskribo de ma
 	'wikihiero-category-Aa' => 'Aa: Neklasifikita',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Armando-Martin
  * @author Imre
  * @author Remember the dot
+ * @author Srtxg
  */
 $messages['es'] = array(
 	'wikihiero-desc' => 'Añade elemento <code>&lt;hiero&gt;</code> para mostrar un [[Special:Hieroglyphs|jeroglífico]]',
@@ -651,7 +652,7 @@ Vea [//en.wikipedia.org/wiki/Help:WikiHiero_syntax esta página] para descripci�
 	'wikihiero-th-result' => 'Resultado',
 	'wikihiero-separator' => 'Separador',
 	'wikihiero-eol' => 'Fin de línea',
-	'wikihiero-superposition' => 'Dispårtaedje',
+	'wikihiero-superposition' => 'Subdivisión',
 	'wikihiero-juxtaposition' => 'Yuxtaposición',
 	'wikihiero-mirror' => 'Hacer espejo de un jeroglífico',
 	'wikihiero-void' => 'Bloque vacío de anchura completa',
@@ -673,7 +674,7 @@ Vea [//en.wikipedia.org/wiki/Help:WikiHiero_syntax esta página] para descripci�
 	'wikihiero-category-N' => 'N: Cielo, tierra, agua',
 	'wikihiero-category-O' => 'O: Edificios, partes de edificios, etc..',
 	'wikihiero-category-P' => 'P: Barcos y partes de barcos',
-	'wikihiero-category-Q' => 'P: Mobiliario doméstico y funerario',
+	'wikihiero-category-Q' => 'Q: Mobiliario doméstico y funerario',
 	'wikihiero-category-R' => 'R: Muebles religiosos y emblemas sagrados',
 	'wikihiero-category-S' => 'S: Coronas, vestido, duelas, etc..',
 	'wikihiero-category-T' => 'T: Guerra, caza, carnicería',
@@ -1504,6 +1505,51 @@ $messages['km'] = array(
  */
 $messages['ko'] = array(
 	'wikihiero-desc' => '[[Special:Hieroglyphs|상형 문자]] 표현을 위해 <code>&lt;hiero&gt;</code>태그를 추가',
+	'hieroglyphs' => '상형 문자 마크업 시도',
+	'wikihiero-special-page-text' => '위키상형 마크업을 사용해 이 페이지를 사용합니다.
+마크업 설명에 대해서는 [http://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:%EC%9C%84%ED%82%A4%EC%83%81%ED%98%95_%EB%A7%88%ED%81%AC%EC%97%85 여기]를 참고하세요.',
+	'wikihiero-input' => '입력한 텍스트',
+	'wikihiero-result' => '결과',
+	'wikihiero-syntax' => '구문',
+	'wikihiero-th-code' => '코드',
+	'wikihiero-th-meaning' => '의미',
+	'wikihiero-th-example' => '예제 코드',
+	'wikihiero-th-result' => '결과',
+	'wikihiero-separator' => '구분 기호',
+	'wikihiero-eol' => '줄 끝',
+	'wikihiero-superposition' => '세분',
+	'wikihiero-juxtaposition' => '나란히 하기',
+	'wikihiero-mirror' => '상형 문자 미러',
+	'wikihiero-void' => '전각 미반환 블록',
+	'wikihiero-half-void' => '반각 미반환 블록',
+	'wikihiero-comment' => '덧글',
+	'wikihiero-load-error' => '불러오기 오류!',
+	'wikihiero-category-A' => 'A: 남자와 그의 직업',
+	'wikihiero-category-B' => 'B: 여자와 그녀의 직업',
+	'wikihiero-category-C' => 'C: 의인화된 신',
+	'wikihiero-category-D' => 'D: 인체의 부분',
+	'wikihiero-category-E' => 'E: 포유류',
+	'wikihiero-category-F' => 'F: 포유류의 부분',
+	'wikihiero-category-G' => 'G: 조류',
+	'wikihiero-category-H' => 'H: 조류의 부분',
+	'wikihiero-category-I' => 'I: 양서류, 파충류 등',
+	'wikihiero-category-K' => 'K: 어류와 어류의 부분',
+	'wikihiero-category-L' => 'L: 무척추 동물과 덜 발달한 동물',
+	'wikihiero-category-M' => 'M: 나무와 식물',
+	'wikihiero-category-N' => 'N: 하늘, 땅, 물',
+	'wikihiero-category-O' => 'O: 건물, 건물의 부분, 기타',
+	'wikihiero-category-P' => 'P: 배와 배의 부분',
+	'wikihiero-category-Q' => 'Q: 가정과 장례 가구',
+	'wikihiero-category-R' => 'R: 성전 가구와 신성한 엠블럼',
+	'wikihiero-category-S' => 'S: 왕관, 드레스, 악보 등',
+	'wikihiero-category-T' => 'T: 전쟁, 사냥, 살생',
+	'wikihiero-category-U' => 'U: 농업, 공예, 직업',
+	'wikihiero-category-V' => 'V: 밧줄, 섬유, 바구니, 가방 등',
+	'wikihiero-category-W' => 'W: 돌 및 토기의 선박',
+	'wikihiero-category-X' => 'X: 빵과 케이크',
+	'wikihiero-category-Y' => 'Y: 저술, 게임, 음악',
+	'wikihiero-category-Z' => 'Z: 선, 기하학적 그림 등',
+	'wikihiero-category-Aa' => 'Aa: 분류되지 않음',
 );
 
 /** Colognian (Ripoarisch)
@@ -2890,11 +2936,30 @@ Xem [//en.wikipedia.org/wiki/Help:WikiHiero_syntax hướng dẫn về cú pháp
 	'wikihiero-category-Aa' => 'Aa: Không phân loại',
 );
 
-/** Walloon (Walon) */
+/** Walloon (walon)
+ * @author Srtxg
+ */
 $messages['wa'] = array(
+	'wikihiero-desc' => "Radjoute l' etikete <code>&lt;hiero&gt;</code> po håyner des [[Special:Hieroglyphs|hieroglifes]]",
+	'hieroglyphs' => 'Sayî li marcaedje di hieroglifes',
+	'wikihiero-special-page-text' => "Eployîz cisse pådje chal po fé des sayes avou l' lingaedje pa etiketes di WikiHiero.
+Loukîz [//en.wikipedia.org/wiki/Help:WikiHiero_syntax chal] pol discrijhaedje del sintacse.",
+	'wikihiero-input' => 'Tecse tapé',
+	'wikihiero-result' => 'Rizultat',
 	'wikihiero-syntax' => 'Sintacse',
+	'wikihiero-th-code' => 'Côde',
+	'wikihiero-th-meaning' => 'Sinse',
+	'wikihiero-th-example' => "Côde d' egzimpe",
+	'wikihiero-th-result' => 'Rizultat',
 	'wikihiero-separator' => 'Separateur',
 	'wikihiero-eol' => "Fén d' roye",
+	'wikihiero-superposition' => 'Dispårtaedje',
+	'wikihiero-juxtaposition' => "Onk a costé d' l' ôte",
+	'wikihiero-mirror' => 'Muroe do hieroglife',
+	'wikihiero-void' => 'Blok vude di plinne lårdjeur',
+	'wikihiero-half-void' => 'Blok vude di dmeye lårdjeur',
+	'wikihiero-comment' => 'Comintaire',
+	'wikihiero-load-error' => "Åk n' a nén stî tot tcherdjant!",
 	'wikihiero-category-A' => "A: L' ome et ses fijhaedjes",
 	'wikihiero-category-B' => 'B: Li feme et ses fijhaedjes',
 	'wikihiero-category-C' => 'C: Dius',
@@ -2906,6 +2971,19 @@ $messages['wa'] = array(
 	'wikihiero-category-I' => 'I: Anfibeyes, crålants, evnd.',
 	'wikihiero-category-K' => "K: Pexhons et bokets d' pexhons",
 	'wikihiero-category-L' => 'L: Sicrijhaedje, amuzmints, muzike',
+	'wikihiero-category-M' => 'M: Åbes et plantes',
+	'wikihiero-category-N' => "N: Li cir, li tere, l' aiwe",
+	'wikihiero-category-O' => "O: Bastimints, bokets d' ene måjhone, evnd.",
+	'wikihiero-category-P' => "P: Bateas et bokets d' batea",
+	'wikihiero-category-Q' => 'Q: Meubes di måjhone eyet funeraires',
+	'wikihiero-category-R' => 'R: Meubes rilidjeus eyet simboles sacrés',
+	'wikihiero-category-S' => 'S: Corones, mousmints, bastons, evnd.',
+	'wikihiero-category-T' => 'T: Guere, tchesse, mangonreye',
+	'wikihiero-category-U' => 'U: Agricouteure, årtizanat eyet mestîs',
+	'wikihiero-category-V' => 'V: Coides, fibes, banses, saetchs, evnd.',
+	'wikihiero-category-W' => "W: Taexhons et schieles di pire ou d' cûte tere",
+	'wikihiero-category-X' => 'X: Pwin eyet påstedjreye',
+	'wikihiero-category-Y' => 'Y: Sicrijhaedje, djeus, muzike',
 	'wikihiero-category-Z' => 'Z: Royes et cognes djeyometrikes',
 	'wikihiero-category-Aa' => 'Aa: Des ôtes (nén classifyî)',
 );
