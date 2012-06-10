@@ -1404,7 +1404,7 @@ $messages['ja'] = array(
 	'wikihiero-desc' => '[[Special:Hieroglyphs|ヒエログリフ]]を表示する <code>&lt;hiero&gt;</code> タグを追加する',
 	'hieroglyphs' => '象形文字マークアップを試行',
 	'wikihiero-special-page-text' => 'WikiHieroマークアップを試すためにこのページを使用してください。
-マークアップの説明につきましては、[//ja.wikipedia.org/wiki/Help:WikiHieroの文法 こちら] をご覧ください。',
+マークアップについては[//ja.wikipedia.org/wiki/Help:WikiHieroの文法 こちら]をご覧ください。',
 	'wikihiero-input' => '入力テキスト',
 	'wikihiero-result' => '結果',
 	'wikihiero-syntax' => '構文',
@@ -3013,14 +3013,14 @@ $messages['yue'] = array(
 	'wikihiero-desc' => '加 <code>&lt;hiero&gt;</code> 標籤去顯示象形文字',
 );
 
-/** Simplified Chinese (‪中文(简体)‬)
+/** Simplified Chinese (‪中文（简体）‬)
  * @author Anakmalaysia
  * @author Shinjiman
  * @author Xiaomingyan
  */
 $messages['zh-hans'] = array(
 	'wikihiero-desc' => '添加“<code>&lt;hiero&gt;</code>”标签以显示[[Special:Hieroglyphs|象形文字]]',
-	'hieroglyphs' => '尝试象形文字标记',
+	'hieroglyphs' => '试验象形符号标记',
 	'wikihiero-special-page-text' => '使用此页可以试试 WikiHiero 标记。
 对于标记说明，请参阅[//en.wikipedia.org/wiki/Help:WikiHiero_syntax 此处]。',
 	'wikihiero-input' => '输入文本',
