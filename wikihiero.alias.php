@@ -18,7 +18,7 @@ $specialPageAliases['ar'] = array(
 	'Hieroglyphs' => array( 'هيروغليفي' ),
 );
 
-/** Danish (Dansk) */
+/** Danish (dansk) */
 $specialPageAliases['da'] = array(
 	'Hieroglyphs' => array( 'Hieroglyffer' ),
 );
@@ -28,7 +28,12 @@ $specialPageAliases['de'] = array(
 	'Hieroglyphs' => array( 'Hieroglyphen' ),
 );
 
-/** Estonian (Eesti) */
+/** Zazaki (Zazaki) */
+$specialPageAliases['diq'] = array(
+	'Hieroglyphs' => array( 'Hiyeroglifi' ),
+);
+
+/** Estonian (eesti) */
 $specialPageAliases['et'] = array(
 	'Hieroglyphs' => array( 'Hieroglüüfid' ),
 );
@@ -38,12 +43,12 @@ $specialPageAliases['gsw'] = array(
 	'Hieroglyphs' => array( 'Hieroglyphe' ),
 );
 
-/** Interlingua (Interlingua) */
+/** Interlingua (interlingua) */
 $specialPageAliases['ia'] = array(
 	'Hieroglyphs' => array( 'Hieroglyphos' ),
 );
 
-/** Italian (Italiano) */
+/** Italian (italiano) */
 $specialPageAliases['it'] = array(
 	'Hieroglyphs' => array( 'Geroglifici' ),
 );
@@ -58,12 +63,17 @@ $specialPageAliases['ka'] = array(
 	'Hieroglyphs' => array( 'იეროგლიფები' ),
 );
 
+/** Korean (한국어) */
+$specialPageAliases['ko'] = array(
+	'Hieroglyphs' => array( '상형문자', '히에로글리프' ),
+);
+
 /** Luxembourgish (Lëtzebuergesch) */
 $specialPageAliases['lb'] = array(
 	'Hieroglyphs' => array( 'Hieroglyphen' ),
 );
 
-/** Macedonian (Македонски) */
+/** Macedonian (македонски) */
 $specialPageAliases['mk'] = array(
 	'Hieroglyphs' => array( 'Хиероглифи' ),
 );
@@ -73,7 +83,7 @@ $specialPageAliases['ml'] = array(
 	'Hieroglyphs' => array( 'ഹൈറോഗ്ലിഫ്സ്' ),
 );
 
-/** Norwegian Bokmål (‪Norsk (bokmål)‬) */
+/** Norwegian Bokmål (‪norsk (bokmål)‬) */
 $specialPageAliases['nb'] = array(
 	'Hieroglyphs' => array( 'Hieroglyfer' ),
 );
@@ -81,4 +91,9 @@ $specialPageAliases['nb'] = array(
 /** Dutch (Nederlands) */
 $specialPageAliases['nl'] = array(
 	'Hieroglyphs' => array( 'Hierogliefen' ),
+);
+
+/** Ukrainian (українська) */
+$specialPageAliases['uk'] = array(
+	'Hieroglyphs' => array( 'Ієрогліфи' ),
 );
