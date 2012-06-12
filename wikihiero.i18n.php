@@ -1507,8 +1507,8 @@ $messages['km'] = array(
 $messages['ko'] = array(
 	'wikihiero-desc' => '[[Special:Hieroglyphs|상형 문자]] 표현을 위해 <code>&lt;hiero&gt;</code>태그를 추가',
 	'hieroglyphs' => '상형 문자 마크업 시도',
-	'wikihiero-special-page-text' => '위키상형 마크업을 사용해 이 페이지를 사용합니다.
-마크업 설명에 대해서는 [http://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:%EC%9C%84%ED%82%A4%EC%83%81%ED%98%95_%EB%A7%88%ED%81%AC%EC%97%85 여기]를 참고하세요.',
+	'wikihiero-special-page-text' => '위키상형 마크업을 시도하기 위해 이 페이지를 사용합니다.
+마크업 설명에 대해서는 [http://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:%EC%9C%84%ED%82%A4%EC%83%81%ED%98%95_%EB%AC%B8%EB%B2%95 여기]를 참고하세요.',
 	'wikihiero-input' => '입력한 텍스트',
 	'wikihiero-result' => '결과',
 	'wikihiero-syntax' => '구문',
@@ -1518,12 +1518,12 @@ $messages['ko'] = array(
 	'wikihiero-th-result' => '결과',
 	'wikihiero-separator' => '구분 기호',
 	'wikihiero-eol' => '줄 끝',
-	'wikihiero-superposition' => '세분',
-	'wikihiero-juxtaposition' => '나란히 하기',
-	'wikihiero-mirror' => '상형 문자 미러',
+	'wikihiero-superposition' => '위에 놓기',
+	'wikihiero-juxtaposition' => '나란히 놓기',
+	'wikihiero-mirror' => '상형 문자 거울',
 	'wikihiero-void' => '전각 미반환 블록',
 	'wikihiero-half-void' => '반각 미반환 블록',
-	'wikihiero-comment' => '덧글',
+	'wikihiero-comment' => '주석',
 	'wikihiero-load-error' => '불러오기 오류!',
 	'wikihiero-category-A' => 'A: 남자와 그의 직업',
 	'wikihiero-category-B' => 'B: 여자와 그녀의 직업',
