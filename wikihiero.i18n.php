@@ -508,6 +508,7 @@ $messages['de'] = array(
 Siehe [//de.wikipedia.org/wiki/Hilfe:Hieroglyphen hier] für eine Markup-Beschreibung.',
 	'wikihiero-input' => 'Eingabetext',
 	'wikihiero-result' => 'Ergebnis',
+	'wikihiero-submit' => 'Speichern',
 	'wikihiero-syntax' => 'Syntax',
 	'wikihiero-th-code' => 'Code',
 	'wikihiero-th-meaning' => 'Bedeutung',
@@ -646,6 +647,7 @@ $messages['es'] = array(
 Vea [//en.wikipedia.org/wiki/Help:WikiHiero_syntax esta página] para descripción de marcado.',
 	'wikihiero-input' => 'Texto a expandir',
 	'wikihiero-result' => 'Resultado',
+	'wikihiero-submit' => 'Enviar',
 	'wikihiero-syntax' => 'Sintaxis',
 	'wikihiero-th-code' => 'Código',
 	'wikihiero-th-meaning' => 'Significado',
@@ -975,6 +977,7 @@ $messages['gl'] = array(
 Olle [//en.wikipedia.org/wiki/Help:WikiHiero_syntax aquí] a descrición do formato.',
 	'wikihiero-input' => 'Texto de entrada',
 	'wikihiero-result' => 'Resultado',
+	'wikihiero-submit' => 'Enviar',
 	'wikihiero-syntax' => 'Sintaxe',
 	'wikihiero-th-code' => 'Código',
 	'wikihiero-th-meaning' => 'Significado',
@@ -1340,7 +1343,7 @@ $messages['ig'] = array(
 	'wikihiero-desc' => 'Nè tí <code>&lt;hiero&gt;</code> Í zí nsé',
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author Beta16
  * @author BrokenArrow
  * @author F. Cosoleto
@@ -1352,6 +1355,7 @@ $messages['it'] = array(
 Vedi [//it.wikipedia.org/wiki/Aiuto:Geroglifico qui] per la descrizione del markup.',
 	'wikihiero-input' => 'Inserisci il testo',
 	'wikihiero-result' => 'Risultato',
+	'wikihiero-submit' => 'Invia',
 	'wikihiero-syntax' => 'Sintassi',
 	'wikihiero-th-code' => 'Codice',
 	'wikihiero-th-meaning' => 'Significato',
@@ -1659,7 +1663,7 @@ $messages['lv'] = array(
 	'wikihiero-load-error' => 'Ielādes kļūda!',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
@@ -1669,6 +1673,7 @@ $messages['mk'] = array(
 Прочитајте за [//mk.wikipedia.org/wiki/Помош:Египетски_хиероглифи синтаксата за хиероглифи].',
 	'wikihiero-input' => 'Влезен текст',
 	'wikihiero-result' => 'Извод',
+	'wikihiero-submit' => 'Поднеси',
 	'wikihiero-syntax' => 'Синтакса',
 	'wikihiero-th-code' => 'Код',
 	'wikihiero-th-meaning' => 'Значење',
@@ -2060,6 +2065,7 @@ $messages['pms'] = array(
 Ch'a bèica [//en.wikipedia.org/wiki/Help:WikiHiero_syntax ambelessì] për la descrission dël marcador.",
 	'wikihiero-input' => 'Test butà',
 	'wikihiero-result' => 'Arzultà',
+	'wikihiero-submit' => 'Spediss',
 	'wikihiero-syntax' => 'Sintassi',
 	'wikihiero-th-code' => 'Còdes',
 	'wikihiero-th-meaning' => 'Sens',
@@ -2895,6 +2901,7 @@ $messages['vi'] = array(
 Xem [//en.wikipedia.org/wiki/Help:WikiHiero_syntax hướng dẫn về cú pháp WikiHiero].',
 	'wikihiero-input' => 'Văn bản nhập',
 	'wikihiero-result' => 'Kết quả',
+	'wikihiero-submit' => 'Xem thử',
 	'wikihiero-syntax' => 'Cú pháp',
 	'wikihiero-th-code' => 'Đoạn mã',
 	'wikihiero-th-meaning' => 'Ý nghĩa',
@@ -2947,14 +2954,15 @@ $messages['wa'] = array(
 Loukîz [//en.wikipedia.org/wiki/Help:WikiHiero_syntax chal] pol discrijhaedje del sintacse.",
 	'wikihiero-input' => 'Tecse tapé',
 	'wikihiero-result' => 'Rizultat',
+	'wikihiero-submit' => 'Evoyî',
 	'wikihiero-syntax' => 'Sintacse',
 	'wikihiero-th-code' => 'Côde',
 	'wikihiero-th-meaning' => 'Sinse',
 	'wikihiero-th-example' => "Côde d' egzimpe",
 	'wikihiero-th-result' => 'Rizultat',
-	'wikihiero-separator' => 'Separateur',
+	'wikihiero-separator' => 'Separateu',
 	'wikihiero-eol' => "Fén d' roye",
-	'wikihiero-superposition' => 'Dispårtaedje',
+	'wikihiero-superposition' => "Onk so l' ôte",
 	'wikihiero-juxtaposition' => "Onk a costé d' l' ôte",
 	'wikihiero-mirror' => 'Muroe do hieroglife',
 	'wikihiero-void' => 'Blok vude di plinne lårdjeur',
