@@ -137,7 +137,7 @@ $messages['arz'] = array(
 	'wikihiero-desc' => 'بيضيف تاج ال <code>&lt;hiero&gt;</code> علشان يعرض الهيروغليفي',
 );
 
-/** Asturian (Asturianu)
+/** Asturian (asturianu)
  * @author Esbardu
  * @author Xuacu
  */
@@ -151,7 +151,7 @@ Llee [//en.wikipedia.org/wiki/Help:WikiHiero_syntax equí] la descripción del f
 	'wikihiero-load-error' => '¡Fallu al cargar!',
 );
 
-/** Azerbaijani (Azərbaycanca)
+/** Azerbaijani (azərbaycanca)
  * @author Cekli829
  * @author Sortilegus
  */
@@ -248,7 +248,7 @@ $messages['be-tarask'] = array(
 	'wikihiero-category-Aa' => 'Неклясыфікаванае',
 );
 
-/** Bulgarian (Български)
+/** Bulgarian (български)
  * @author DCLXVI
  * @author Spiritia
  */
@@ -303,7 +303,7 @@ $messages['bn'] = array(
 	'wikihiero-th-result' => 'ফলাফল',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fulup
  * @author Y-M D
  */
@@ -356,14 +356,14 @@ Gwelet [//en.wikipedia.org/wiki/Help:WikiHiero_syntax amañ] evit deskrivadur ar
 	'wikihiero-category-Aa' => 'Aa: Dirumm',
 );
 
-/** Bosnian (Bosanski)
+/** Bosnian (bosanski)
  * @author CERminator
  */
 $messages['bs'] = array(
 	'wikihiero-desc' => 'Dodaje <code>&lt;hiero&gt;</code> tag za prikazivanje [[Special:Hieroglyphs|hieroglifa]]',
 );
 
-/** Catalan (Català)
+/** Catalan (català)
  * @author Paucabot
  */
 $messages['ca'] = array(
@@ -388,7 +388,7 @@ $messages['ca'] = array(
 	'wikihiero-category-Aa' => 'Aa: no classificat',
 );
 
-/** Czech (Česky)
+/** Czech (česky)
  * @author Matěj Grabovský
  * @author Mormegil
  */
@@ -691,7 +691,7 @@ Vea [//en.wikipedia.org/wiki/Help:WikiHiero_syntax esta página] para descripci�
 	'wikihiero-category-Aa' => 'Aa: Sin clasificar',
 );
 
-/** Estonian (Eesti)
+/** Estonian (eesti)
  * @author Pikne
  */
 $messages['et'] = array(
@@ -743,7 +743,7 @@ Märkide kirjeldused leiad [//en.wikipedia.org/wiki/Help:WikiHiero_syntax siit].
 	'wikihiero-category-Aa' => 'Aa: Liigitamata',
 );
 
-/** Basque (Euskara)
+/** Basque (euskara)
  * @author Theklan
  */
 $messages['eu'] = array(
@@ -798,7 +798,7 @@ $messages['fa'] = array(
 	'wikihiero-category-Aa' => 'Aa: طبقه‌بندی نشده',
 );
 
-/** Finnish (Suomi)
+/** Finnish (suomi)
  * @author Crt
  * @author Nedergard
  * @author Nike
@@ -853,7 +853,7 @@ $messages['fi'] = array(
 	'wikihiero-category-Aa' => 'Aa: Luokittelematon',
 );
 
-/** French (Français)
+/** French (français)
  * @author Gomoko
  * @author Grondin
  * @author Hashar
@@ -908,7 +908,7 @@ Voyez [//en.wikipedia.org/wiki/Help:WikiHiero_syntax ici] la description du bali
 	'wikihiero-category-Aa' => 'Aa: Signes non classés',
 );
 
-/** Franco-Provençal (Arpetan)
+/** Franco-Provençal (arpetan)
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
@@ -1153,7 +1153,7 @@ $messages['hil'] = array(
 	'wikihiero-desc' => 'Nagadugang <code>&lt;hiero&gt;</code> tag to para makit-an ang [[Special:Hieroglyphs|hayroglifs]]',
 );
 
-/** Croatian (Hrvatski)
+/** Croatian (hrvatski)
  * @author Dnik
  */
 $messages['hr'] = array(
@@ -1212,7 +1212,7 @@ Hlej [//en.wikipedia.org/wiki/Help:WikiHiero_syntax tu] za markup-wopisanje.',
 	'wikihiero-category-Aa' => 'Aa: Njeklasifikowany',
 );
 
-/** Hungarian (Magyar)
+/** Hungarian (magyar)
  * @author Dani
  * @author Dj
  */
@@ -1454,7 +1454,7 @@ $messages['ja'] = array(
 	'wikihiero-category-Aa' => 'Aa：未分類',
 );
 
-/** Jutish (Jysk)
+/** Jutish (jysk)
  * @author Huslåke
  */
 $messages['jut'] = array(
@@ -1632,7 +1632,7 @@ $messages['li'] = array(
 	'wikihiero-desc' => 'Voegt de tag <code>&lt;hiero&gt;</code> toe veur de weergave van [[Special:Hieroglyphs|hiërogliefe]]',
 );
 
-/** Lithuanian (Lietuvių)
+/** Lithuanian (lietuvių)
  * @author Eitvys200
  * @author Garas
  * @author Hugo.arg
@@ -1657,7 +1657,7 @@ $messages['lt'] = array(
 	'wikihiero-category-P' => 'P: Laivai ir laivų dalys',
 );
 
-/** Latvian (Latviešu)
+/** Latvian (latviešu)
  * @author Papuass
  */
 $messages['lv'] = array(
@@ -1955,14 +1955,14 @@ Zie ook de [//en.wikipedia.org/wiki/Help:WikiHiero_syntax gebruiksaanwijzing].',
 	'wikihiero-category-Aa' => 'Aa: Niet geclassificeerd',
 );
 
-/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
  * @author Frokor
  */
 $messages['nn'] = array(
 	'wikihiero-desc' => 'Legg til taggen <code>&lt;hiero&gt;</code> for å vise [[Special:Hieroglyphs|hieroglyfar]]',
 );
 
-/** Occitan (Occitan)
+/** Occitan (occitan)
  * @author Cedric31
  */
 $messages['oc'] = array(
@@ -2003,7 +2003,7 @@ $messages['pfl'] = array(
 	'wikihiero-category-U' => 'U: Londwerdschafd, Hondwerg un Beruf',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author Sp5uhe
  * @author Woytecr
  */
@@ -2130,7 +2130,7 @@ $messages['ps'] = array(
 	'wikihiero-category-N' => 'N: اسمان، زمکه، اوبه',
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author Hamilton Abreu
  * @author Malafaya
  * @author MetalBrasil
@@ -2180,7 +2180,7 @@ $messages['pt'] = array(
 	'wikihiero-category-Aa' => 'Aa: Signos não classificados',
 );
 
-/** Brazilian Portuguese (Português do Brasil)
+/** Brazilian Portuguese (português do Brasil)
  * @author Eduardo.mps
  * @author Giro720
  * @author MetalBrasil
@@ -2228,7 +2228,7 @@ $messages['qu'] = array(
 	'wikihiero-desc' => '<code>&lt;hiero&gt;</code> unanchachata yapan hirulliphikuta rikuchinapaq',
 );
 
-/** Romanian (Română)
+/** Romanian (română)
  * @author Firilacroco
  * @author KlaudiuMihaila
  * @author Minisarm
@@ -2276,7 +2276,7 @@ $messages['ro'] = array(
 	'wikihiero-category-Aa' => 'Aa: Neclasificat',
 );
 
-/** Tarandíne (Tarandíne)
+/** tarandíne (tarandíne)
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
@@ -2325,7 +2325,7 @@ Vide [//en.wikipedia.org/wiki/Help:WikiHiero_syntax aqquà] pe 'na descrizione d
 	'wikihiero-category-Aa' => 'Aa: None classifecate',
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Alexandr Efremov
  * @author DR
  * @author Dim Grits
@@ -2438,14 +2438,14 @@ $messages['sa'] = array(
 	'wikihiero-comment' => 'टिप्पणी',
 );
 
-/** Sakha (Саха тыла)
+/** Sakha (саха тыла)
  * @author HalanTul
  */
 $messages['sah'] = array(
 	'wikihiero-desc' => '[[Special:Hieroglyphs|Иероглифтары]] көрдөрөргө анаан <code>&lt;hiero&gt;</code> тиэги эбэр',
 );
 
-/** Sicilian (Sicilianu)
+/** Sicilian (sicilianu)
  * @author Aushulz
  * @author Santu
  */
@@ -2511,7 +2511,7 @@ $messages['si'] = array(
 	'wikihiero-category-Aa' => 'Aa: වර්ග නොකළ',
 );
 
-/** Slovak (Slovenčina)
+/** Slovak (slovenčina)
  * @author Helix84
  */
 $messages['sk'] = array(
@@ -2536,7 +2536,7 @@ $messages['sk'] = array(
 	'wikihiero-category-Aa' => 'Aa: Nezaradené',
 );
 
-/** Slovenian (Slovenščina)
+/** Slovenian (slovenščina)
  * @author Dbc334
  */
 $messages['sl'] = array(
@@ -2595,14 +2595,14 @@ $messages['sli'] = array(
 	'wikihiero-desc' => 'Fügt doas <code>&lt;hiero&gt;</code>-Tag zur Formatierung vo [[Special:Hieroglyphs|Hieroglyphen]] hinzu',
 );
 
-/** Albanian (Shqip)
+/** Albanian (shqip)
  * @author Puntori
  */
 $messages['sq'] = array(
 	'wikihiero-desc' => 'Vendosë kodin <code>&lt;hiero&gt;</code> për të shfaqur [[Special:Hieroglyphs|hieroglifë]]',
 );
 
-/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
  * @author Millosh
  * @author Rancher
  */
@@ -2628,7 +2628,7 @@ $messages['sr-ec'] = array(
 	'wikihiero-category-Aa' => 'Aa: Некласификовано',
 );
 
-/** Serbian (Latin script) (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪srpski (latinica)‬)
  * @author Michaello
  */
 $messages['sr-el'] = array(
@@ -2667,7 +2667,7 @@ $messages['su'] = array(
 	'wikihiero-desc' => 'Nambahkeun tag <code>&lt;hiero&gt;</code> pikeun némbongkeun [[Special:Hieroglyphs|hiroglip]]',
 );
 
-/** Swedish (Svenska)
+/** Swedish (svenska)
  * @author Lejonel
  * @author Lokal Profil
  * @author WikiPhoenix
@@ -2775,14 +2775,14 @@ $messages['te'] = array(
 	'wikihiero-comment' => 'వ్యాఖ్య',
 );
 
-/** Tajik (Cyrillic script) (Тоҷикӣ)
+/** Tajik (Cyrillic script) (тоҷикӣ)
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
 	'wikihiero-desc' => 'Бачасби <code>&lt;hiero&gt;</code>-ро барои намоиши [[Special:Hieroglyphs|ҳироглиф]] илова мекунад',
 );
 
-/** Tajik (Latin script) (Tojikī)
+/** Tajik (Latin script) (tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
@@ -2826,7 +2826,7 @@ Biçimlendirme açıklaması için [//en.wikipedia.org/wiki/Help:WikiHiero_synta
 	'wikihiero-th-result' => 'Sonuç',
 );
 
-/** Ukrainian (Українська)
+/** Ukrainian (українська)
  * @author Ahonc
  * @author Dim Grits
  * @author Тест
@@ -2878,7 +2878,7 @@ $messages['uk'] = array(
 	'wikihiero-category-Aa' => 'Аа: Некласифіковані',
 );
 
-/** Vèneto (Vèneto)
+/** vèneto (vèneto)
  * @author Candalua
  */
 $messages['vec'] = array(
@@ -3078,7 +3078,7 @@ $messages['zh-hans'] = array(
 	'wikihiero-category-Aa' => 'Aa：未分类',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬)
+/** Traditional Chinese (‪中文（繁體）‬)
  * @author Anakmalaysia
  * @author Shinjiman
  */
