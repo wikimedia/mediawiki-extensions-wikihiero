@@ -441,7 +441,7 @@ Popis jazyka najdete v [//en.wikipedia.org/wiki/Help:WikiHiero_syntax nápověd�
 	'wikihiero-category-Aa' => 'Aa: Nezařazeno',
 );
 
-/** Danish (Dansk)
+/** Danish (dansk)
  * @author Byrial
  * @author Jan Friberg
  * @author Peter Alberti
@@ -453,6 +453,7 @@ $messages['da'] = array(
 Se [//en.wikipedia.org/wiki/Help:WikiHiero_syntax her] for en beskrivelse af koden.',
 	'wikihiero-input' => 'Inputtekst',
 	'wikihiero-result' => 'Resultat',
+	'wikihiero-submit' => 'Gem',
 	'wikihiero-syntax' => 'Syntaks',
 	'wikihiero-th-code' => 'Kode',
 	'wikihiero-th-meaning' => 'Betydning',
@@ -1264,7 +1265,7 @@ A részletes leírás [//en.wikipedia.org/wiki/Help:WikiHiero_syntax itt] talál
 	'wikihiero-category-Aa' => 'Aa: Kategorizálatlan',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -1274,6 +1275,7 @@ $messages['ia'] = array(
 Vide [//en.wikipedia.org/wiki/Help:WikiHiero_syntax hic] pro le description del marcation.',
 	'wikihiero-input' => 'Texto de entrata',
 	'wikihiero-result' => 'Resultato',
+	'wikihiero-submit' => 'Submitter',
 	'wikihiero-syntax' => 'Syntaxe',
 	'wikihiero-th-code' => 'Codice',
 	'wikihiero-th-meaning' => 'Significato',
