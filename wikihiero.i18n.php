@@ -198,6 +198,7 @@ $messages['bcc'] = array(
  * @author EugeneZelenko
  * @author Jim-by
  * @author Renessaince
+ * @author Wizardist
  */
 $messages['be-tarask'] = array(
 	'wikihiero-desc' => 'Дадае тэг <code>&lt;hiero&gt;</code> для адлюстраваньня [[Special:Hieroglyphs|гіерогліфаў]]',
@@ -206,6 +207,7 @@ $messages['be-tarask'] = array(
 Азнаёмцеся з апісаньнем разьметкі [//en.wikipedia.org/wiki/Help:WikiHiero_syntax тут].',
 	'wikihiero-input' => 'Уваходны тэкст',
 	'wikihiero-result' => 'Вынік',
+	'wikihiero-submit' => 'Адправіць',
 	'wikihiero-syntax' => 'Сынтаксіс',
 	'wikihiero-th-code' => 'Код',
 	'wikihiero-th-meaning' => 'Значэньне',
@@ -573,6 +575,31 @@ $messages['diq'] = array(
  */
 $messages['dsb'] = array(
 	'wikihiero-desc' => 'Pśidawa toflicku <code>&lt;hiero&gt;</code> za zwobraznjenje [[Special:Hieroglyphs|hieroglyfow]]',
+	'wikihiero-input' => 'Zapódany tekst',
+	'wikihiero-result' => 'Wuslědk',
+	'wikihiero-submit' => 'Wótpósłaś',
+	'wikihiero-syntax' => 'Syntaksa',
+	'wikihiero-th-code' => 'Kod',
+	'wikihiero-th-meaning' => 'Wóznam',
+	'wikihiero-th-example' => 'Pśikładowy kod',
+	'wikihiero-th-result' => 'Wuslědk',
+	'wikihiero-separator' => 'Źěleńske znamuško',
+	'wikihiero-eol' => 'Kóńc smužki',
+	'wikihiero-comment' => 'Komentar',
+	'wikihiero-load-error' => 'Zacytowańska zmólka!',
+	'wikihiero-category-A' => 'A: Muske a jich źěłabnosći',
+	'wikihiero-category-B' => 'B: Žeńske a  jich źěłabnosći',
+	'wikihiero-category-E' => 'E: Cycarje',
+	'wikihiero-category-F' => 'F: Źěle cycarjow',
+	'wikihiero-category-G' => 'G: Ptaški',
+	'wikihiero-category-H' => 'H: Źěle ptaškow',
+	'wikihiero-category-K' => 'K: Ryby a źěle rybow',
+	'wikihiero-category-M' => 'M: Bomy a rostliny',
+	'wikihiero-category-N' => 'N: Njebjo, zemja, wóda',
+	'wikihiero-category-O' => 'O: Twarjenja, źěle twarjenjow atd.',
+	'wikihiero-category-P' => 'P: Łoźi a źěle łoźow',
+	'wikihiero-category-Y' => 'Y: Pisma, graśa, muzika',
+	'wikihiero-category-Aa' => 'Aa: Njeklasificěrowany',
 );
 
 /** Greek (Ελληνικά)
@@ -858,6 +885,7 @@ $messages['fi'] = array(
  * @author Grondin
  * @author Hashar
  * @author PieRRoMaN
+ * @author Wyz
  */
 $messages['fr'] = array(
 	'wikihiero-desc' => 'Ajoute la balise <code>&lt;hiero&gt;</code> pour afficher des [[Special:Hieroglyphs|hiéroglyphes]]',
@@ -866,6 +894,7 @@ $messages['fr'] = array(
 Voyez [//en.wikipedia.org/wiki/Help:WikiHiero_syntax ici] la description du balisage.',
 	'wikihiero-input' => 'Texte entré',
 	'wikihiero-result' => 'Résultat',
+	'wikihiero-submit' => 'Soumettre',
 	'wikihiero-syntax' => 'Syntaxe',
 	'wikihiero-th-code' => 'Code',
 	'wikihiero-th-meaning' => 'Signification',
@@ -1086,6 +1115,7 @@ $messages['he'] = array(
 ר׳ [//en.wikipedia.org/wiki/Help:WikiHiero_syntax כאן] לתיאור הסימון.',
 	'wikihiero-input' => 'טקסט קלט',
 	'wikihiero-result' => 'תוצאה',
+	'wikihiero-submit' => 'שליחה',
 	'wikihiero-syntax' => 'תחביר',
 	'wikihiero-th-code' => 'קוד',
 	'wikihiero-th-meaning' => 'משמעות',
@@ -1170,6 +1200,7 @@ $messages['hsb'] = array(
 Hlej [//en.wikipedia.org/wiki/Help:WikiHiero_syntax tu] za markup-wopisanje.',
 	'wikihiero-input' => 'Zapodawanski tekst',
 	'wikihiero-result' => 'Wuslědk',
+	'wikihiero-submit' => 'Wotesłać',
 	'wikihiero-syntax' => 'Syntaksa',
 	'wikihiero-th-code' => 'Kod',
 	'wikihiero-th-meaning' => 'Woznam',
@@ -1184,7 +1215,7 @@ Hlej [//en.wikipedia.org/wiki/Help:WikiHiero_syntax tu] za markup-wopisanje.',
 	'wikihiero-half-void' => 'Prózdny blok z poł šěrokosću',
 	'wikihiero-comment' => 'Komentar',
 	'wikihiero-load-error' => 'Začitanski zmylk!',
-	'wikihiero-category-A' => 'B: Mužojo a jich dźěławosće',
+	'wikihiero-category-A' => 'A: Mužojo a jich dźěławosće',
 	'wikihiero-category-B' => 'B: Žony a jich dźěławosće',
 	'wikihiero-category-C' => 'C: Čłowjekej podobne bójstwa',
 	'wikihiero-category-D' => 'D: Dźěle čłowjeskeho ćěła',
@@ -1792,6 +1823,7 @@ $messages['ms'] = array(
 Rujuk keterangan penanda [//en.wikipedia.org/wiki/Help:WikiHiero_syntax di sini].',
 	'wikihiero-input' => 'Teks input',
 	'wikihiero-result' => 'Hasil',
+	'wikihiero-submit' => 'Hantar',
 	'wikihiero-syntax' => 'Sintaks',
 	'wikihiero-th-code' => 'Kod',
 	'wikihiero-th-meaning' => 'Maksud',
@@ -1913,6 +1945,7 @@ $messages['nl'] = array(
 Zie ook de [//en.wikipedia.org/wiki/Help:WikiHiero_syntax gebruiksaanwijzing].',
 	'wikihiero-input' => 'Invoertekst',
 	'wikihiero-result' => 'Resultaat',
+	'wikihiero-submit' => 'Opslaan',
 	'wikihiero-syntax' => 'Syntax',
 	'wikihiero-th-code' => 'Code',
 	'wikihiero-th-meaning' => 'Betekenis',
