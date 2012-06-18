@@ -2037,6 +2037,7 @@ $messages['pfl'] = array(
 );
 
 /** Polish (polski)
+ * @author BeginaFelicysym
  * @author Sp5uhe
  * @author Woytecr
  */
@@ -2047,6 +2048,7 @@ $messages['pl'] = array(
 Opisy znaczników znajdziesz [//en.wikipedia.org/wiki/Help:WikiHiero_syntax tutaj].',
 	'wikihiero-input' => 'Tekst wejściowy',
 	'wikihiero-result' => 'Wynik',
+	'wikihiero-submit' => 'Wyślij',
 	'wikihiero-syntax' => 'Składnia',
 	'wikihiero-th-code' => 'Kod',
 	'wikihiero-th-meaning' => 'Znaczenie',
