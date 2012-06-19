@@ -996,7 +996,7 @@ $messages['fy'] = array(
 	'wikihiero-desc' => 'Foegt mark <code>&lt;hiero&gt;</code> ta foar [[Special:Hieroglyphs|hiëroglyfwerjefte]].',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author MetalBrasil
  * @author Toliño
  */
