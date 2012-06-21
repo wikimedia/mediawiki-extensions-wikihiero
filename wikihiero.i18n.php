@@ -2581,6 +2581,7 @@ $messages['sl'] = array(
 Opis označevanje si oglejte [//en.wikipedia.org/wiki/Help:WikiHiero_syntax tukaj].',
 	'wikihiero-input' => 'Vhodno besedilo',
 	'wikihiero-result' => 'Rezultat',
+	'wikihiero-submit' => 'Potrdi',
 	'wikihiero-syntax' => 'Skladnja',
 	'wikihiero-th-code' => 'Koda',
 	'wikihiero-th-meaning' => 'Pomen',
