@@ -1759,6 +1759,7 @@ $messages['ml'] = array(
 അടയാളപ്പെടുത്തലുകളുടെ വിശദവിവരങ്ങൾ കാണാൻ [//en.wikipedia.org/wiki/Help:WikiHiero_syntax ഇവിടം] സന്ദർശിക്കുക.',
 	'wikihiero-input' => 'ഇൻപുട്ട് ടെക്സ്റ്റ്',
 	'wikihiero-result' => 'ഫലം',
+	'wikihiero-submit' => 'സമർപ്പിക്കുക',
 	'wikihiero-syntax' => 'എഴുത്ത് വ്യവസ്ഥ',
 	'wikihiero-th-code' => 'കോഡ്',
 	'wikihiero-th-meaning' => 'അർത്ഥം',
