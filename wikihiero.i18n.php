@@ -316,6 +316,7 @@ $messages['br'] = array(
 Gwelet [//en.wikipedia.org/wiki/Help:WikiHiero_syntax amañ] evit deskrivadur ar balizennañ.',
 	'wikihiero-input' => 'Testenn merket',
 	'wikihiero-result' => "Disoc'h",
+	'wikihiero-submit' => 'Kas',
 	'wikihiero-syntax' => 'Ereadur',
 	'wikihiero-th-code' => 'Kod',
 	'wikihiero-th-meaning' => 'Ster',
