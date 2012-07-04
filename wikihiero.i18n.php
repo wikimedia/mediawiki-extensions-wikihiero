@@ -137,6 +137,13 @@ $messages['arz'] = array(
 	'wikihiero-desc' => 'بيضيف تاج ال <code>&lt;hiero&gt;</code> علشان يعرض الهيروغليفي',
 );
 
+/** Assamese (অসমীয়া)
+ * @author Bishnu Saikia
+ */
+$messages['as'] = array(
+	'wikihiero-result' => 'ফলাফল',
+);
+
 /** Asturian (asturianu)
  * @author Esbardu
  * @author Xuacu
