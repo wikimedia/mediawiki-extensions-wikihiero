@@ -736,6 +736,7 @@ $messages['et'] = array(
 Märkide kirjeldused leiad [//en.wikipedia.org/wiki/Help:WikiHiero_syntax siit].',
 	'wikihiero-input' => 'Sisendtekst',
 	'wikihiero-result' => 'Tulemus',
+	'wikihiero-submit' => 'Proovi',
 	'wikihiero-syntax' => 'Süntaks',
 	'wikihiero-th-code' => 'Kood',
 	'wikihiero-th-meaning' => 'Tähendus',
