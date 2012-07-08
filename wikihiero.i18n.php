@@ -409,6 +409,7 @@ $messages['cs'] = array(
 Popis jazyka najdete v [//en.wikipedia.org/wiki/Help:WikiHiero_syntax nápovědě].',
 	'wikihiero-input' => 'Vstupní text',
 	'wikihiero-result' => 'Výsledek',
+	'wikihiero-submit' => 'Odeslat',
 	'wikihiero-syntax' => 'Syntaxe',
 	'wikihiero-th-code' => 'Kód',
 	'wikihiero-th-meaning' => 'Význam',
