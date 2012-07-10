@@ -93,6 +93,11 @@ $specialPageAliases['nl'] = array(
 	'Hieroglyphs' => array( 'Hierogliefen' ),
 );
 
+/** Turkish (Türkçe) */
+$specialPageAliases['tr'] = array(
+	'Hieroglyphs' => array( 'Hiyeroglifler' ),
+);
+
 /** Ukrainian (українська) */
 $specialPageAliases['uk'] = array(
 	'Hieroglyphs' => array( 'Ієрогліфи' ),
