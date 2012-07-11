@@ -100,7 +100,7 @@ $messages['aln'] = array(
 	'wikihiero-desc' => 'Adds <code><hiero></code> tag për të shfaqur [[Special:Hieroglyphs|hieroglifet]]',
 );
 
-/** Aragonese (Aragonés)
+/** Aragonese (aragonés)
  * @author Juanpabl
  */
 $messages['an'] = array(
@@ -168,7 +168,7 @@ $messages['az'] = array(
 	'wikihiero-category-G' => 'G: Quşlar',
 );
 
-/** Bashkir (Башҡортса)
+/** Bashkir (башҡортса)
  * @author Assele
  * @author Haqmar
  */
@@ -201,7 +201,7 @@ $messages['bcc'] = array(
 	'wikihiero-desc' => 'هور کنت <code>&lt;hiero&gt;</code> برچسپء په پیشدارگ هیروگلیف',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Renessaince
@@ -579,7 +579,7 @@ $messages['diq'] = array(
 	'wikihiero-desc' => 'qey ra motışê [[Special:Hieroglyphs|hiyerooglifi]], ninan têare keno <code>&lt;hiero&gt;</code>',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -1200,7 +1200,7 @@ $messages['hr'] = array(
 	'wikihiero-desc' => 'Dodaje oznaku <code>&lt;hiero&gt;</code> za prikaz [[Special:Hieroglyphs|hijeroglifa]]',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
@@ -1880,11 +1880,54 @@ Rujuk keterangan penanda [//en.wikipedia.org/wiki/Help:WikiHiero_syntax di sini]
 	'wikihiero-category-Aa' => 'Aa: Tidak dikelaskan',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Jon Harald Søby
- */
+/** Norwegian Bokmål (‪norsk (bokmål)‬) */
 $messages['nb'] = array(
 	'wikihiero-desc' => 'Legger til taggen <code>&lt;hiero&gt;</code> for å vise [[Special:Hieroglyphs|hieroglyfer]]',
+	'hieroglyphs' => 'Prøv hieroglyfmerking',
+	'wikihiero-special-page-text' => 'Bruk denne siden for å prøve ut WikiHiero-merking.
+Se [//en.wikipedia.org/wiki/Help:WikiHiero_syntax her] for merkingsbeskrivelse.',
+	'wikihiero-input' => 'Skriv inn tekst',
+	'wikihiero-result' => 'Resultat',
+	'wikihiero-syntax' => 'Syntaks',
+	'wikihiero-th-code' => 'Kode',
+	'wikihiero-th-meaning' => 'Betydning',
+	'wikihiero-th-example' => 'Eksempelkode',
+	'wikihiero-th-result' => 'Resultat',
+	'wikihiero-separator' => 'Separator',
+	'wikihiero-eol' => 'Linjeslutt',
+	'wikihiero-superposition' => 'Underdeling',
+	'wikihiero-juxtaposition' => 'Sidestilling',
+	'wikihiero-mirror' => 'Speilvend en hieroglyf',
+	'wikihiero-void' => 'Tom blokk i full bredde',
+	'wikihiero-half-void' => 'Tom blokk i halv bredde',
+	'wikihiero-comment' => 'Kommentar',
+	'wikihiero-load-error' => 'Lastingsfeil!',
+	'wikihiero-category-A' => 'A: Mann og hans sysler',
+	'wikihiero-category-B' => 'B: Kvinne og hennes sysler',
+	'wikihiero-category-C' => 'C: Antropomorfiske guddommer',
+	'wikihiero-category-D' => 'D: Deler av menneskekroppen',
+	'wikihiero-category-E' => 'E: Pattedyr',
+	'wikihiero-category-F' => 'F: Deler av pattedyr',
+	'wikihiero-category-G' => 'G: Fugler',
+	'wikihiero-category-H' => 'H: Deler av fugler',
+	'wikihiero-category-I' => 'I: Amfibier, reptiler, etc.',
+	'wikihiero-category-K' => 'K: Fisker og deler av fisker',
+	'wikihiero-category-L' => 'L: Virvelløse dyr og mindre dyr',
+	'wikihiero-category-M' => 'M: Trær og planter',
+	'wikihiero-category-N' => 'N: Himmel, jord og vann',
+	'wikihiero-category-O' => 'O: Bygninger, deler av bygninger, etc.',
+	'wikihiero-category-P' => 'P: Skip og deler av skip',
+	'wikihiero-category-Q' => 'Q: Husholdning og begravelsesmøbler',
+	'wikihiero-category-R' => 'R: Tempelmøbler og hellige emblemer',
+	'wikihiero-category-S' => 'S: Kroner, påkledning, staver, etc.',
+	'wikihiero-category-T' => 'T: Krigføring, jakt, slakting',
+	'wikihiero-category-U' => 'U: Jordbruk, håndtverk og yrker',
+	'wikihiero-category-V' => 'V: Tau, fiber, kurver, vesker, etc.',
+	'wikihiero-category-W' => 'W: Fartøy av stein og keramikk',
+	'wikihiero-category-X' => 'X: Brød og kaker',
+	'wikihiero-category-Y' => 'Y: Skrifter, spill, musikk',
+	'wikihiero-category-Z' => 'Z: Linjer, geometriske figurer, etc.',
+	'wikihiero-category-Aa' => 'Aa: Uklassifisert',
 );
 
 /** Low German (Plattdüütsch)
@@ -2430,7 +2473,7 @@ $messages['ru'] = array(
 	'wikihiero-category-Aa' => 'Aa: Неклассифицированные',
 );
 
-/** Rusyn (Русиньскый)
+/** Rusyn (русиньскый)
  * @author Gazeb
  */
 $messages['rue'] = array(
@@ -2764,7 +2807,7 @@ $messages['sv'] = array(
 	'wikihiero-category-Aa' => 'Aa: Övrigt',
 );
 
-/** Silesian (Ślůnski)
+/** Silesian (ślůnski)
  * @author Lajsikonik
  */
 $messages['szl'] = array(
@@ -2935,7 +2978,7 @@ $messages['vec'] = array(
 	'wikihiero-desc' => 'Zonta el tag <code>&lt;hiero&gt;</code> par la visualizazion dei [[Special:Hieroglyphs|geroglifici]]',
 );
 
-/** Veps (Vepsän kel’)
+/** Veps (vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
