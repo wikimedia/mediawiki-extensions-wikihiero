@@ -731,7 +731,7 @@ Vea [//en.wikipedia.org/wiki/Help:WikiHiero_syntax esta página] para descripci�
  * @author Pikne
  */
 $messages['et'] = array(
-	'wikihiero-desc' => 'Lisab [[Special:Hieroglyphs|hieroglüüfide]] kuvamiseks <code>&lt;hiero&gt;</code>-märgendi.',
+	'wikihiero-desc' => 'Lisab [[Special:Hieroglyphs|hieroglüüfide]] kuvamiseks <code>&lt;hiero&gt;</code>-sildi.',
 	'hieroglyphs' => 'Hieroglüüfide proovimine',
 	'wikihiero-special-page-text' => 'Kasuta seda lehekülge, et katsetada WikiHiero märke.
 Märkide kirjeldused leiad [//en.wikipedia.org/wiki/Help:WikiHiero_syntax siit].',
@@ -800,12 +800,15 @@ $messages['fa'] = array(
 برای توضیحات نشانه‌گذاری، [//en.wikipedia.org/wiki/Help:WikiHiero_syntax اینجا] را ببینید.',
 	'wikihiero-input' => 'متن ورودی',
 	'wikihiero-result' => 'نتیجه',
+	'wikihiero-submit' => 'ثبت',
+	'wikihiero-syntax' => 'نحو',
 	'wikihiero-th-code' => 'کد',
 	'wikihiero-th-meaning' => 'معنی',
 	'wikihiero-th-example' => 'کد نمونه',
 	'wikihiero-th-result' => 'نتیجه',
 	'wikihiero-separator' => 'جداکننده',
 	'wikihiero-eol' => 'پایان خط',
+	'wikihiero-superposition' => 'زیربخش',
 	'wikihiero-comment' => 'نظر',
 	'wikihiero-load-error' => 'خطا در بارگیری!',
 	'wikihiero-category-A' => 'A: مرد و مشاغل آن',
@@ -1511,11 +1514,48 @@ $messages['jv'] = array(
 
 /** Georgian (ქართული)
  * @author BRUTE
+ * @author David1010
  * @author გიორგიმელა
  */
 $messages['ka'] = array(
 	'wikihiero-desc' => 'ჰმატებს თეგ <code>&lt;hiero&gt;</code> იეროგიფების საჩვენებლად',
+	'wikihiero-input' => 'შესაყვანი ტექსტი',
+	'wikihiero-result' => 'შედეგი',
+	'wikihiero-submit' => 'მიღება',
+	'wikihiero-syntax' => 'სინტაქსი',
+	'wikihiero-th-code' => 'კოდი',
+	'wikihiero-th-meaning' => 'მნიშვნელობა',
+	'wikihiero-th-example' => 'კოდის მაგალითი',
+	'wikihiero-th-result' => 'შედეგი',
+	'wikihiero-separator' => 'გამყოფი',
+	'wikihiero-eol' => 'ხაზის დასასრული',
 	'wikihiero-comment' => 'კომენტარი',
+	'wikihiero-category-A' => 'A: მამაკაცი და მისი საქმიანობა',
+	'wikihiero-category-B' => 'B: ქალი და მისი საქმიანობა',
+	'wikihiero-category-C' => 'C: ანთროპომორფული ღმერთები',
+	'wikihiero-category-D' => 'D: ადამიანის სხეულის ნაწილები',
+	'wikihiero-category-E' => 'E: ძუძუმწოვრები',
+	'wikihiero-category-F' => 'F: ძუძუმწოვრების ნაწილები',
+	'wikihiero-category-G' => 'G: ფრინველები',
+	'wikihiero-category-H' => 'H: ფრინველების ნაწილები',
+	'wikihiero-category-I' => 'I: ამფიბიები, ქვეწარმავლები და ა.შ.',
+	'wikihiero-category-K' => 'K: თევზები და მათი ნაწილები',
+	'wikihiero-category-L' => 'L: უხერხემლო და მცირე ცხოველები',
+	'wikihiero-category-M' => 'M: ხეები და მცენარეები',
+	'wikihiero-category-N' => 'N: ცა, დედამიწა, წყალი',
+	'wikihiero-category-O' => 'O: შენობები, შენობების ნაწილები და ა.შ.',
+	'wikihiero-category-P' => 'P: გემები და მათი ნაწილები',
+	'wikihiero-category-Q' => 'Q: საოჯახო და დამკრძალავი ავეჯი',
+	'wikihiero-category-R' => 'R: საეკლესიო საკუთრება და წმინდა სიმბოლიკა',
+	'wikihiero-category-S' => 'S: გვირგვინები, მორთულობა, კვერთხები და ა.შ.',
+	'wikihiero-category-T' => 'T: სამხედრო საქმე, ნადირობა, საყასბო',
+	'wikihiero-category-U' => 'U: სოფლის მეურნეობა, სახელოსნო და პროფესიები',
+	'wikihiero-category-V' => 'V: თოკი, ბადე, კალათები, ჩანთები და ა.შ.',
+	'wikihiero-category-W' => 'W: ქვისა და თიხის ჭურჭელი',
+	'wikihiero-category-X' => 'X: პური და ნამცხვრები',
+	'wikihiero-category-Y' => 'Y: ნაწერები, თამაშები, მუსიკა',
+	'wikihiero-category-Z' => 'Z: ხაზები, გეომეტრიული ფიგურები და ა.შ.',
+	'wikihiero-category-Aa' => 'Aa: არაკლასიფიცირებული',
 );
 
 /** Kazakh (Қазақша) */
@@ -2209,6 +2249,7 @@ Ch'a bèica [//en.wikipedia.org/wiki/Help:WikiHiero_syntax ambelessì] për la d
  */
 $messages['ps'] = array(
 	'wikihiero-result' => 'پايله',
+	'wikihiero-submit' => 'سپارل',
 	'wikihiero-th-code' => 'کوډ',
 	'wikihiero-th-meaning' => 'مانا',
 	'wikihiero-th-result' => 'پايله',
@@ -2563,6 +2604,7 @@ $messages['si'] = array(
 අධික විස්තරය සඳහා [//en.wikipedia.org/wiki/Help:WikiHiero_syntax මෙහි] බලන්න.',
 	'wikihiero-input' => 'ආදාන පාඨය',
 	'wikihiero-result' => 'ප්‍රතිඵලය',
+	'wikihiero-submit' => 'යොමන්න',
 	'wikihiero-syntax' => 'වාක්‍ය වින්‍යාසය',
 	'wikihiero-th-code' => 'කේතය',
 	'wikihiero-th-meaning' => 'අර්ථය',
@@ -3224,6 +3266,7 @@ $messages['zh-hans'] = array(
 /** Traditional Chinese (‪中文（繁體）‬)
  * @author Anakmalaysia
  * @author Shinjiman
+ * @author Simon Shek
  */
 $messages['zh-hant'] = array(
 	'wikihiero-desc' => '加入 <code>&lt;hiero&gt;</code> 標籤去顯示象形文字',
@@ -3232,6 +3275,7 @@ $messages['zh-hant'] = array(
 對於標記說明，請參閱[//en.wikipedia.org/wiki/Help:WikiHiero_syntax 此處]。',
 	'wikihiero-input' => '輸入文字',
 	'wikihiero-result' => '結果',
+	'wikihiero-submit' => '提交',
 	'wikihiero-syntax' => '語法',
 	'wikihiero-th-code' => '代碼',
 	'wikihiero-th-meaning' => '意思',
