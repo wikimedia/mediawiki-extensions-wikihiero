@@ -3212,6 +3212,7 @@ $messages['yue'] = array(
 /** Simplified Chinese (‪中文（简体）‬)
  * @author Anakmalaysia
  * @author Shinjiman
+ * @author Shirayuki
  * @author Xiaomingyan
  */
 $messages['zh-hans'] = array(
@@ -3221,6 +3222,7 @@ $messages['zh-hans'] = array(
 对于标记说明，请参阅[//en.wikipedia.org/wiki/Help:WikiHiero_syntax 此处]。',
 	'wikihiero-input' => '输入文本',
 	'wikihiero-result' => '结果',
+	'wikihiero-submit' => '提交',
 	'wikihiero-syntax' => '语法',
 	'wikihiero-th-code' => '代码',
 	'wikihiero-th-meaning' => '意思',
