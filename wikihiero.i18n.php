@@ -2912,6 +2912,8 @@ $messages['te'] = array(
 	'wikihiero-result' => 'ఫలితం',
 	'wikihiero-th-result' => 'ఫలితం',
 	'wikihiero-comment' => 'వ్యాఖ్య',
+	'wikihiero-category-E' => 'E: క్షీరదాలు',
+	'wikihiero-category-G' => 'G: పక్షులు',
 );
 
 /** Tajik (Cyrillic script) (тоҷикӣ)
