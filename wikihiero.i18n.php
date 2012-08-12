@@ -2861,11 +2861,13 @@ $messages['szl'] = array(
 );
 
 /** Tamil (தமிழ்)
+ * @author Karthi.dr
  * @author Shanmugamp7
  */
 $messages['ta'] = array(
 	'wikihiero-input' => 'உள்ளீட்டு உரை',
 	'wikihiero-result' => 'முடிவு',
+	'wikihiero-submit' => 'சமர்ப்பி',
 	'wikihiero-syntax' => 'சொற்றொடரியல்',
 	'wikihiero-th-code' => 'குறியீடு',
 	'wikihiero-th-meaning' => 'அர்த்தம்',
