@@ -782,9 +782,12 @@ Märkide kirjeldused leiad [//en.wikipedia.org/wiki/Help:WikiHiero_syntax siit].
 
 /** Basque (euskara)
  * @author Theklan
+ * @author පසිඳු කාවින්ද
  */
 $messages['eu'] = array(
 	'wikihiero-desc' => '[[Special:Hieroglyphs|Jeroglifikoak]] jarri ahal izateko <code>&lt;hiero&gt;</code> etiketa gehitzen du',
+	'wikihiero-submit' => 'Bidali',
+	'wikihiero-comment' => 'Iruzkinak',
 );
 
 /** Persian (فارسی)
@@ -960,6 +963,7 @@ $messages['frp'] = array(
 Vêde [//en.wikipedia.org/wiki/Help:WikiHiero_syntax ique] la dèscripcion du balisâjo.',
 	'wikihiero-input' => 'Tèxto buchiê',
 	'wikihiero-result' => 'Rèsultat',
+	'wikihiero-submit' => 'Sometre',
 	'wikihiero-syntax' => 'Sintaxa',
 	'wikihiero-th-code' => 'Code',
 	'wikihiero-th-meaning' => 'Significacion',
@@ -1007,6 +1011,13 @@ Vêde [//en.wikipedia.org/wiki/Help:WikiHiero_syntax ique] la dèscripcion du ba
  */
 $messages['fy'] = array(
 	'wikihiero-desc' => 'Foegt mark <code>&lt;hiero&gt;</code> ta foar [[Special:Hieroglyphs|hiëroglyfwerjefte]].',
+);
+
+/** Irish (Gaeilge)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ga'] = array(
+	'wikihiero-comment' => 'Nóta tráchta',
 );
 
 /** Galician (galego)
