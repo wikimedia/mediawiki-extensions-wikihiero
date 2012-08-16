@@ -786,7 +786,9 @@ Märkide kirjeldused leiad [//en.wikipedia.org/wiki/Help:WikiHiero_syntax siit].
  */
 $messages['eu'] = array(
 	'wikihiero-desc' => '[[Special:Hieroglyphs|Jeroglifikoak]] jarri ahal izateko <code>&lt;hiero&gt;</code> etiketa gehitzen du',
+	'wikihiero-result' => 'Emaitza',
 	'wikihiero-submit' => 'Bidali',
+	'wikihiero-th-code' => 'Kodea',
 	'wikihiero-comment' => 'Iruzkinak',
 );
 
@@ -842,6 +844,7 @@ $messages['fa'] = array(
 );
 
 /** Finnish (suomi)
+ * @author Beluga
  * @author Crt
  * @author Nedergard
  * @author Nike
@@ -854,6 +857,7 @@ $messages['fi'] = array(
 [//en.wikipedia.org/wiki/Help:WikiHiero_syntax Merkintöjen selitykset].',
 	'wikihiero-input' => 'Syöte',
 	'wikihiero-result' => 'Tulos',
+	'wikihiero-submit' => 'Lähetä',
 	'wikihiero-syntax' => 'Syntaksi',
 	'wikihiero-th-code' => 'Koodi',
 	'wikihiero-th-meaning' => 'Merkitys',
@@ -2475,6 +2479,7 @@ Vide [//en.wikipedia.org/wiki/Help:WikiHiero_syntax aqquà] pe 'na descrizione d
  * @author Alexandr Efremov
  * @author DR
  * @author Dim Grits
+ * @author Kalan
  * @author MaxSem
  * @author Александр Сигачёв
  */
@@ -2485,6 +2490,7 @@ $messages['ru'] = array(
 См. описание разметки [//ru.wikipedia.org/wiki/Википедия:Древнеегипетские_иероглифы здесь].',
 	'wikihiero-input' => 'Входной текст:',
 	'wikihiero-result' => 'Результат',
+	'wikihiero-submit' => 'Посмотреть',
 	'wikihiero-syntax' => 'Синтаксис',
 	'wikihiero-th-code' => 'Исходный текст',
 	'wikihiero-th-meaning' => 'Значение',
@@ -2865,6 +2871,19 @@ Kolla [//en.wikipedia.org/wiki/Help:WikiHiero_syntax här] för kodbeskrivning.'
 	'wikihiero-category-Y' => 'Y: Skrifter, spel, musik',
 	'wikihiero-category-Z' => 'Z: Linjer, geometriska figurer o.dyl.',
 	'wikihiero-category-Aa' => 'Aa: Övrigt',
+);
+
+/** Swahili (Kiswahili)
+ * @author Kwisha
+ */
+$messages['sw'] = array(
+	'wikihiero-result' => 'Tokeo',
+	'wikihiero-submit' => 'Wasilisha',
+	'wikihiero-th-meaning' => 'Maana',
+	'wikihiero-th-result' => 'Tokeo',
+	'wikihiero-eol' => 'Mwisho wa laini',
+	'wikihiero-comment' => 'Maoni',
+	'wikihiero-category-G' => 'G: Ndege',
 );
 
 /** Silesian (ślůnski)
