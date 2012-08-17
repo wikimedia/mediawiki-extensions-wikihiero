@@ -1522,9 +1522,55 @@ $messages['jut'] = array(
 
 /** Javanese (Basa Jawa)
  * @author Meursault2004
+ * @author NoiX180
  */
 $messages['jv'] = array(
 	'wikihiero-desc' => 'Nambahaké tag <code>&lt;hiero&gt;</code> kanggo nuduhaké [[Special:Hieroglyphs|hieroglif]]',
+	'hieroglyphs' => 'Jajal markup hieroglif',
+	'wikihiero-special-page-text' => 'Anggo kaca iki kanggo njajal markup WikiHiero.
+Delok [//en.wikipedia.org/wiki/Help:WikiHiero_syntax kéné] kanggo katrangan markup.',
+	'wikihiero-input' => 'Tèks lebon',
+	'wikihiero-result' => 'Asil',
+	'wikihiero-submit' => 'Kirim',
+	'wikihiero-syntax' => 'Sintaks',
+	'wikihiero-th-code' => 'Kodhé',
+	'wikihiero-th-meaning' => 'Arti',
+	'wikihiero-th-example' => 'Kodhé conto',
+	'wikihiero-th-result' => 'Asil',
+	'wikihiero-separator' => 'Pamisah',
+	'wikihiero-eol' => 'Pojok larik',
+	'wikihiero-superposition' => 'Subdivisi',
+	'wikihiero-juxtaposition' => 'Panjajaran',
+	'wikihiero-mirror' => 'Ngilo hieroglif',
+	'wikihiero-void' => 'Blok suwung amba pentok',
+	'wikihiero-half-void' => 'Blok suwung amba tengahan',
+	'wikihiero-comment' => 'Tanggepan',
+	'wikihiero-load-error' => 'Kasalahan ngemot!',
+	'wikihiero-category-A' => 'A: Wong lanang lan pakaryané',
+	'wikihiero-category-B' => 'B: Wong wadon lan pakaryané',
+	'wikihiero-category-C' => 'C: Dewa-dewi antropomorfis',
+	'wikihiero-category-D' => 'D: Bagéyan awak manungsa',
+	'wikihiero-category-E' => 'E: Mamalia',
+	'wikihiero-category-F' => 'F: Bagéyan mamalia',
+	'wikihiero-category-G' => 'G: Manuk',
+	'wikihiero-category-H' => 'H: Bagéyan manuk',
+	'wikihiero-category-I' => 'I: Amfibi, reptil, lsp.',
+	'wikihiero-category-K' => 'K: Iwak lan bagéyan iwak',
+	'wikihiero-category-L' => 'L: Kéwan tanpa balung mburi lan kewan-kewan cilik',
+	'wikihiero-category-M' => 'M: Wit lan tetuwuhan',
+	'wikihiero-category-N' => 'N: Langit, bumi, banyu',
+	'wikihiero-category-O' => 'O: Bangunan, bagéyan bangunan, lsp.',
+	'wikihiero-category-P' => 'P: Prau lan bagéyan prau',
+	'wikihiero-category-Q' => 'Q: Ubarampé omah tangga lan panguburan',
+	'wikihiero-category-R' => 'R: Ubarampé candhi lan lambang-lambang suci',
+	'wikihiero-category-S' => 'S: Mahkota, rasukan, tongkat, lsp.',
+	'wikihiero-category-T' => 'T: Perang, mburu, dodol',
+	'wikihiero-category-U' => 'U: Tani, krajinan tangan lan profési',
+	'wikihiero-category-V' => 'V: Tali, fiber, kranjang, tas, etc.',
+	'wikihiero-category-W' => 'W: Wadhah watu lan tembikar',
+	'wikihiero-category-X' => 'X: Roti lan kué',
+	'wikihiero-category-Y' => 'Y: Tulisan, dolanan, tembang',
+	'wikihiero-category-Aa' => 'Aa: Durung diklasifikasi',
 );
 
 /** Georgian (ქართული)
@@ -3098,6 +3144,21 @@ $messages['uk'] = array(
 	'wikihiero-category-Y' => 'Y: Письмо, ігри, музика',
 	'wikihiero-category-Z' => 'Z: Геометричні фігури та візерунки',
 	'wikihiero-category-Aa' => 'Аа: Некласифіковані',
+);
+
+/** Urdu (اردو)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ur'] = array(
+	'wikihiero-input' => 'ان پٹ ٹیکسٹ',
+	'wikihiero-result' => 'نتیجہ',
+	'wikihiero-submit' => 'جمع کرائیں',
+	'wikihiero-syntax' => 'نحو',
+	'wikihiero-th-code' => 'کوڈ',
+	'wikihiero-th-meaning' => 'فرمان',
+	'wikihiero-th-example' => 'مثال کے طور پر کوڈ',
+	'wikihiero-th-result' => 'نتیجہ',
+	'wikihiero-separator' => 'علیحدہ',
 );
 
 /** vèneto (vèneto)
