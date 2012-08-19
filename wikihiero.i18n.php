@@ -130,6 +130,13 @@ $messages['ar'] = array(
 	'wikihiero-load-error' => 'خطأ تحميل!',
 );
 
+/** Aramaic (ܐܪܡܝܐ)
+ * @author Basharh
+ */
+$messages['arc'] = array(
+	'hieroglyphs' => 'ܢܣܝ ܪܘܡܙܐ ܗܝܪܘܓܠܝܦܝܐ',
+);
+
 /** Egyptian Spoken Arabic (مصرى)
  * @author Ramsis II
  */
@@ -1030,7 +1037,7 @@ $messages['ga'] = array(
  */
 $messages['gl'] = array(
 	'wikihiero-desc' => 'Engade a etiqueta <code>&lt;hiero&gt;</code> para mostrar [[Special:Hieroglyphs|xeróglifos]]',
-	'hieroglyphs' => 'Probe o formato dos xeróglifos',
+	'hieroglyphs' => 'Probar o formato dos xeróglifos',
 	'wikihiero-special-page-text' => 'Empregue esta páxina para probar o formato dos xeróglifos.
 Olle [//en.wikipedia.org/wiki/Help:WikiHiero_syntax aquí] a descrición do formato.',
 	'wikihiero-input' => 'Texto de entrada',
@@ -1063,7 +1070,7 @@ Olle [//en.wikipedia.org/wiki/Help:WikiHiero_syntax aquí] a descrición do form
 	'wikihiero-category-L' => 'L: Invertebrados e animais menores',
 	'wikihiero-category-M' => 'M: Árbores e plantas',
 	'wikihiero-category-N' => 'N: Ceo, terra, auga',
-	'wikihiero-category-O' => 'O: Edificios, partes dos edificios etc',
+	'wikihiero-category-O' => 'O: Edificios, partes dos edificios etc.',
 	'wikihiero-category-P' => 'P: Barcos e partes dos barcos',
 	'wikihiero-category-Q' => 'Q: Mobiliario doméstico e funerario',
 	'wikihiero-category-R' => 'R: Mobiliario dos templos e emblemas sagrados',

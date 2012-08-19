@@ -38,6 +38,11 @@ $specialPageAliases['et'] = array(
 	'Hieroglyphs' => array( 'Hieroglüüfid' ),
 );
 
+/** Galician (galego) */
+$specialPageAliases['gl'] = array(
+	'Hieroglyphs' => array( 'Xeróglifos' ),
+);
+
 /** Swiss German (Alemannisch) */
 $specialPageAliases['gsw'] = array(
 	'Hieroglyphs' => array( 'Hieroglyphe' ),
