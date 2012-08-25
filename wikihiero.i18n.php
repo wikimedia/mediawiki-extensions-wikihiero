@@ -59,6 +59,7 @@ See [//en.wikipedia.org/wiki/Help:WikiHiero_syntax here] for markup description.
 );
 
 /** Message documentation (Message documentation)
+ * @author Amire80
  * @author EugeneZelenko
  * @author MaxSem
  * @author Raimond Spekking
@@ -73,6 +74,7 @@ Wikihiero is a markup language to render hieroglyphics. See [//www.mediawiki.org
 	'wikihiero-result' => '{{Identical|Result}}',
 	'wikihiero-th-code' => '{{Identical|Code}}',
 	'wikihiero-th-result' => '{{Identical|Result}}',
+	'wikihiero-eol' => 'Help text that says that "!" inserts an end of a line of Egyptian text.',
 	'wikihiero-comment' => '{{Identical|Comment}}',
 );
 
@@ -2928,13 +2930,14 @@ Kolla [//en.wikipedia.org/wiki/Help:WikiHiero_syntax här] för kodbeskrivning.'
 
 /** Swahili (Kiswahili)
  * @author Kwisha
+ * @author Lloffiwr
  */
 $messages['sw'] = array(
 	'wikihiero-result' => 'Tokeo',
 	'wikihiero-submit' => 'Wasilisha',
 	'wikihiero-th-meaning' => 'Maana',
 	'wikihiero-th-result' => 'Tokeo',
-	'wikihiero-eol' => 'Mwisho wa laini',
+	'wikihiero-eol' => 'Mwisho wa mstari',
 	'wikihiero-comment' => 'Maoni',
 	'wikihiero-category-G' => 'G: Ndege',
 );
