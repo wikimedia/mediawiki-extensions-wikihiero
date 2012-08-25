@@ -216,7 +216,7 @@ class SpecialHieroglyphs extends SpecialPage {
 
 	private function getSyntaxHelp( $code, $message, $example ) {
 		return '<tr><th>' . htmlspecialchars( $code ) . '</th><td>'
-			. wfMessage( $message )->escaped() . '</td><td>'
+			. wfMessage( $message )->escaped() . '</td><td dir="ltr">'
 			. '<code>' . htmlspecialchars( "<hiero>$example</hiero>" ) . '</code></td><td>'
 			. $this->hiero->render( $example )
 			. "</td></tr>\n";
