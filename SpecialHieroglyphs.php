@@ -21,6 +21,9 @@ class SpecialHieroglyphs extends SpecialPage {
 	const HIEROGLYPHS_PER_ROW = 10;
 	const CACHE_EXPIRY = 86400; // 1 day
 
+	/**
+	 * @var WikiHiero $hiero
+	 */
 	private $hiero;
 	private $syntaxHelp = array(
 		array( 'code' => '-', 'message' => 'wikihiero-separator', 'example' => 'A1 - B1' ),
@@ -56,8 +59,8 @@ class SpecialHieroglyphs extends SpecialPage {
 		if ( $text !== '' ) {
 			$hiero = new WikiHiero();
 			$out->addHTML( '<table class="wikitable">'
-				. '<tr><th>' . wfMsg( 'wikihiero-input' ) . '</th><th>'
-				. wfMsg( 'wikihiero-result' ) . '</th></tr>'
+				. '<tr><th>' . $this->msg( 'wikihiero-input' )->escaped() . '</th><th>'
+				. $this->msg( 'wikihiero-result' )->escaped() . '</th></tr>'
 				. '<tr><td><code>&lt;hiero&gt;' . nl2br( htmlspecialchars( $text ) )
 				. "&lt;/hiero&gt;</code></td><td>{$hiero->render( $text )}</td></tr></table>"
 			);
@@ -77,7 +80,7 @@ class SpecialHieroglyphs extends SpecialPage {
 				'type' => 'submit',
 				'id' => 'hiero-submit',
 				'name' => 'submit',
-				'value' => wfMsg( 'wikihiero-submit' ),
+				'value' => $this->msg( 'wikihiero-submit' )->text(),
 			) )
 			. Html::closeElement( 'form' )
 		);
