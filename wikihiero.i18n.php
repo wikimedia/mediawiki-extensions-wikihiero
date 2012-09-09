@@ -2318,6 +2318,7 @@ Ch'a bèica [//en.wikipedia.org/wiki/Help:WikiHiero_syntax ambelessì] për la d
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
 $messages['ps'] = array(
+	'hieroglyphs' => 'هېروګليف نښې وآزمويۍ',
 	'wikihiero-result' => 'پايله',
 	'wikihiero-submit' => 'سپارل',
 	'wikihiero-th-code' => 'کوډ',
@@ -2325,14 +2326,19 @@ $messages['ps'] = array(
 	'wikihiero-th-result' => 'پايله',
 	'wikihiero-eol' => 'د کرښې پای',
 	'wikihiero-comment' => 'تبصره',
+	'wikihiero-category-A' => 'A: سړی او دندې يې',
+	'wikihiero-category-B' => 'B: ښځه او دنده يې',
 	'wikihiero-category-E' => 'E: تيور ژوي',
 	'wikihiero-category-F' => 'F: د تيورو برخې',
 	'wikihiero-category-G' => 'G: مارغان',
 	'wikihiero-category-H' => 'H: د مارغانو برخې',
 	'wikihiero-category-I' => 'I: دوه ژوندوي، خاپوړن، او نور.',
 	'wikihiero-category-K' => 'K: کب او د کب برخې',
+	'wikihiero-category-L' => 'L: بې شمزۍ او واړه ژوي',
 	'wikihiero-category-M' => 'M: ونې او بوټي',
 	'wikihiero-category-N' => 'N: اسمان، زمکه، اوبه',
+	'wikihiero-category-O' => 'O: ودانۍ، د ودانيو برخې، او نور',
+	'wikihiero-category-P' => 'P: بېړۍ او د بېړيو برخې',
 );
 
 /** Portuguese (português)
