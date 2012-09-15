@@ -2207,12 +2207,13 @@ $messages['pfl'] = array(
 
 /** Polish (polski)
  * @author BeginaFelicysym
+ * @author Matma Rex
  * @author Sp5uhe
  * @author Woytecr
  */
 $messages['pl'] = array(
 	'wikihiero-desc' => 'Dodaje znacznik <code>&lt;hiero&gt;</code> umożliwiający wyświetlanie [[Special:Hieroglyphs|hieroglifów]]',
-	'hieroglyphs' => 'Spróbuj znaczników hieroglifów',
+	'hieroglyphs' => 'Hieroglify',
 	'wikihiero-special-page-text' => 'Użyj tej strony, by wypróbować znaczniki WikiHiero.
 Opisy znaczników znajdziesz [//en.wikipedia.org/wiki/Help:WikiHiero_syntax tutaj].',
 	'wikihiero-input' => 'Tekst wejściowy',
