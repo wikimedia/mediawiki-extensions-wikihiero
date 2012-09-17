@@ -519,6 +519,7 @@ Se [//en.wikipedia.org/wiki/Help:WikiHiero_syntax her] for en beskrivelse af kod
 /** German (Deutsch)
  * @author Kghbln
  * @author Metalhead64
+ * @author Purodha
  * @author Raimond Spekking
  * @author Umherirrender
  */
@@ -526,7 +527,7 @@ $messages['de'] = array(
 	'wikihiero-desc' => 'Ergänzt das Tag <code>&lt;hiero&gt;</code> zur Anzeige von [[Special:Hieroglyphs|Hieroglyphen]]',
 	'hieroglyphs' => 'Hieroglyphen-Markup testen',
 	'wikihiero-special-page-text' => 'Verwende diese Seite, um das WikiHiero-Markup zu testen.
-Siehe [//de.wikipedia.org/wiki/Hilfe:Hieroglyphen hier] für eine Markup-Beschreibung.',
+Siehe dazu auch die [//de.wikipedia.org/wiki/Hilfe:Hieroglyphen Markup-Beschreibung].',
 	'wikihiero-input' => 'Eingabetext',
 	'wikihiero-result' => 'Ergebnis',
 	'wikihiero-submit' => 'Speichern',
@@ -574,11 +575,12 @@ Siehe [//de.wikipedia.org/wiki/Hilfe:Hieroglyphen hier] für eine Markup-Beschre
 
 /** German (formal address) (‪Deutsch (Sie-Form)‬)
  * @author Kghbln
+ * @author Purodha
  * @author Umherirrender
  */
 $messages['de-formal'] = array(
 	'wikihiero-special-page-text' => 'Verwenden Sie diese Seite, um das WikiHiero-Markup zu testen.
-Siehe [//en.wikipedia.org/wiki/Hilfe:Hieroglyphen hier] für eine Markup-Beschreibung.',
+Beachten Sie dazu auch die [//de.wikipedia.org/wiki/Hilfe:Hieroglyphen Markup-Beschreibung].',
 );
 
 /** Zazaki (Zazaki)
@@ -1716,7 +1718,52 @@ $messages['ko'] = array(
  */
 $messages['ksh'] = array(
 	'wikihiero-desc' => 'Deiht dat <code>&lt;hiero&gt;</code> zum Parser dobei, womet mer [[Special:Hieroglyphs|Hirojlüüfe]] em Wiki bruche kann.',
+	'hieroglyphs' => 'Et Hirojlüüfe-Enjävve ußprobeere',
+	'wikihiero-special-page-text' => 'Op heh dä Sigg kanns De et Hirojlüüfe-Enjävve ußprobeere.
+Mer han och en Sigg met [//de.wikipedia.org/wiki/Hilfe:Hieroglyphen Hölp för et Hirojlüüfe-Enjävve].',
+	'wikihiero-input' => 'Wat De üvverpröfe wells:',
+	'wikihiero-result' => 'Wat erus kütt:',
 	'wikihiero-submit' => 'Lohß Jonn!',
+	'wikihiero-syntax' => 'Süntax',
+	'wikihiero-th-code' => 'Afjekööz',
+	'wikihiero-th-meaning' => 'Bedüggdeneß',
+	'wikihiero-th-example' => 'Beischpell',
+	'wikihiero-th-result' => 'Erus kütt',
+	'wikihiero-separator' => 'Zeische för en Trännong',
+	'wikihiero-eol' => 'Engk vun de Reih',
+	'wikihiero-superposition' => 'Ongerdeilong',
+	'wikihiero-juxtaposition' => 'Jääjeövver udder nävvenander jeschtallt',
+	'wikihiero-mirror' => 'Don enen Hirojüf schpeejelle',
+	'wikihiero-void' => 'Ene läddeje Afschtand övver de jannze Breede',
+	'wikihiero-half-void' => 'Ene läddeje Afschtand övver de hallve Breede',
+	'wikihiero-comment' => 'Aanmärkong',
+	'wikihiero-load-error' => 'Fähler beim Laade!',
+	'wikihiero-category-A' => 'A: Männer un wat se donn',
+	'wikihiero-category-B' => 'B: Fraue un wat se donn',
+	'wikihiero-category-C' => 'C: Jötter, die Minsche ähnlesch sin',
+	'wikihiero-category-D' => 'D: Körperdeile vun Minsche',
+	'wikihiero-category-E' => 'E: Säujediere',
+	'wikihiero-category-F' => 'F: Körperdeile vun Säujediere',
+	'wikihiero-category-G' => 'G: Vüjjel',
+	'wikihiero-category-H' => 'H: Deile vun Vüjjel',
+	'wikihiero-category-I' => 'I: Amfiibije un Räpilije un esu',
+	'wikihiero-category-K' => 'K: Fesche un Deile dervun',
+	'wikihiero-category-L' => 'L: Diere der ohne Werbel un nider Jedier',
+	'wikihiero-category-M' => 'M: Beum un Flanze',
+	'wikihiero-category-N' => 'N: Hemmel, Ääd un Wasser',
+	'wikihiero-category-O' => 'O: Baute un Deile dervun, un esu',
+	'wikihiero-category-P' => 'P: Scheffe un Deile dervun',
+	'wikihiero-category-Q' => 'Q: Huusaanjeschtellte un Möbel eus Jrääber',
+	'wikihiero-category-R' => 'R: Mööbele us Tämpele un hillije Ämbleeme',
+	'wikihiero-category-S' => 'S: Kruhne, Kledaasch, Schtöze, un esu',
+	'wikihiero-category-T' => 'T: Kreesch, Jaare, Schlaachte',
+	'wikihiero-category-U' => 'U: Buure, Handwärk, Berohfe',
+	'wikihiero-category-V' => 'V: Siel, Faaser, Körv, Täsche, un esu',
+	'wikihiero-category-W' => 'W: Steinjefääße un Tonzeusch',
+	'wikihiero-category-X' => 'X: Bruud un Kooche',
+	'wikihiero-category-Y' => 'Y: Schrefte, Schpell, Mussik',
+	'wikihiero-category-Z' => 'Z: Schtresche, Zeischefejuure, un esu',
+	'wikihiero-category-Aa' => 'Aa: Nit Enzotteet',
 );
 
 /** Latin (Latina) */
