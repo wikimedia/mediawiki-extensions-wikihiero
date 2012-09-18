@@ -527,7 +527,7 @@ $messages['de'] = array(
 	'wikihiero-desc' => 'Ergänzt das Tag <code>&lt;hiero&gt;</code> zur Anzeige von [[Special:Hieroglyphs|Hieroglyphen]]',
 	'hieroglyphs' => 'Hieroglyphen-Markup testen',
 	'wikihiero-special-page-text' => 'Verwende diese Seite, um das WikiHiero-Markup zu testen.
-Siehe dazu auch die [//de.wikipedia.org/wiki/Hilfe:Hieroglyphen Markup-Beschreibung].',
+Beachte dazu auch die [//de.wikipedia.org/wiki/Hilfe:Hieroglyphen Markup-Beschreibung].',
 	'wikihiero-input' => 'Eingabetext',
 	'wikihiero-result' => 'Ergebnis',
 	'wikihiero-submit' => 'Speichern',
