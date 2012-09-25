@@ -88,7 +88,7 @@ $specialPageAliases['ml'] = array(
 	'Hieroglyphs' => array( 'ഹൈറോഗ്ലിഫ്സ്' ),
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬) */
+/** Norwegian Bokmål (norsk (bokmål)‎) */
 $specialPageAliases['nb'] = array(
 	'Hieroglyphs' => array( 'Hieroglyfer' ),
 );

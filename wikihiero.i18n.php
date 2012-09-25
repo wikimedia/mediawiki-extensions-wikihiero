@@ -3161,6 +3161,7 @@ Biçimlendirme açıklaması için [//en.wikipedia.org/wiki/Help:WikiHiero_synta
 /** Ukrainian (українська)
  * @author Ahonc
  * @author Dim Grits
+ * @author DixonD
  * @author Тест
  */
 $messages['uk'] = array(
@@ -3170,6 +3171,7 @@ $messages['uk'] = array(
 Опис розмітки дивіться [//en.wikipedia.org/wiki/Help:WikiHiero_syntax тут].',
 	'wikihiero-input' => 'Вхідний текст',
 	'wikihiero-result' => 'Результат',
+	'wikihiero-submit' => 'Переглянути',
 	'wikihiero-syntax' => 'Синтаксис',
 	'wikihiero-th-code' => 'Код',
 	'wikihiero-th-meaning' => 'Значення',
@@ -3180,6 +3182,8 @@ $messages['uk'] = array(
 	'wikihiero-superposition' => 'Вертикальне групування',
 	'wikihiero-juxtaposition' => 'Горизонтальне групування',
 	'wikihiero-mirror' => 'Відзеркалити ієрогліф',
+	'wikihiero-void' => 'Порожній блок повної ширини',
+	'wikihiero-half-void' => 'Порожній блок на півширини',
 	'wikihiero-comment' => 'Коментар',
 	'wikihiero-load-error' => 'Помилка при завантаженні!',
 	'wikihiero-category-A' => 'A: Людина та її професії',
