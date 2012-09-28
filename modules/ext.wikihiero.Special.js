@@ -1,11 +1,12 @@
 jQuery( function ( $ ) {
+'use strict';
 
-var $textarea = $( '#hiero-text' );
-var $submit = $( '#hiero-submit' );
-var $result = $( '#hiero-result' );
+var $textarea = $( '#hiero-text' ),
+	$submit = $( '#hiero-submit' ),
+	$result = $( '#hiero-result' );
 
 $textarea.keyup( function() {
-	if ( $textarea.val().length == 0 ) {
+	if ( $textarea.val().length === 0 ) {
 		$submit.attr( 'disabled', 'disabled' );
 	} else {
 		$submit.removeAttr( 'disabled' );
