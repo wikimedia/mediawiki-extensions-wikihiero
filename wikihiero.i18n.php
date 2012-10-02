@@ -210,7 +210,7 @@ $messages['bcc'] = array(
 	'wikihiero-desc' => 'هور کنت <code>&lt;hiero&gt;</code> برچسپء په پیشدارگ هیروگلیف',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Renessaince
@@ -573,7 +573,7 @@ Beachte dazu auch die [//de.wikipedia.org/wiki/Hilfe:Hieroglyphen Markup-Beschre
 	'wikihiero-category-Aa' => 'Aa: Nicht klassifiziert',
 );
 
-/** German (formal address) (‪Deutsch (Sie-Form)‬)
+/** German (formal address) (Deutsch (Sie-Form)‎)
  * @author Kghbln
  * @author Purodha
  * @author Umherirrender
@@ -2039,7 +2039,7 @@ Rujuk keterangan penanda [//en.wikipedia.org/wiki/Help:WikiHiero_syntax di sini]
 	'wikihiero-category-Aa' => 'Aa: Tidak dikelaskan',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬) */
+/** Norwegian Bokmål (norsk (bokmål)‎) */
 $messages['nb'] = array(
 	'wikihiero-desc' => 'Legger til taggen <code>&lt;hiero&gt;</code> for å vise [[Special:Hieroglyphs|hieroglyfer]]',
 	'hieroglyphs' => 'Prøv hieroglyfmerking',
@@ -2204,7 +2204,7 @@ Zie ook de [//en.wikipedia.org/wiki/Help:WikiHiero_syntax gebruiksaanwijzing].',
 	'wikihiero-category-Aa' => 'Aa: Niet geclassificeerd',
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
+/** Norwegian Nynorsk (norsk (nynorsk)‎)
  * @author Frokor
  */
 $messages['nn'] = array(
@@ -2865,7 +2865,7 @@ $messages['sq'] = array(
 	'wikihiero-desc' => 'Vendosë kodin <code>&lt;hiero&gt;</code> për të shfaqur [[Special:Hieroglyphs|hieroglifë]]',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Millosh
  * @author Rancher
  */
@@ -2891,7 +2891,7 @@ $messages['sr-ec'] = array(
 	'wikihiero-category-Aa' => 'Aa: Некласификовано',
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬)
+/** Serbian (Latin script) (srpski (latinica)‎)
  * @author Michaello
  */
 $messages['sr-el'] = array(
@@ -3375,7 +3375,7 @@ $messages['yue'] = array(
 	'wikihiero-desc' => '加 <code>&lt;hiero&gt;</code> 標籤去顯示象形文字',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Anakmalaysia
  * @author Shinjiman
  * @author Shirayuki
@@ -3431,7 +3431,7 @@ $messages['zh-hans'] = array(
 	'wikihiero-category-Aa' => 'Aa：未分类',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Anakmalaysia
  * @author Shinjiman
  * @author Simon Shek
