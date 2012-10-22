@@ -106,7 +106,7 @@ $messages['aln'] = array(
  * @author Juanpabl
  */
 $messages['an'] = array(
-	'wikihiero-desc' => 'Adibe a etiqueta <code>&lt;hiero&gt;</code> ta mostrar [[[[Special:Hieroglyphs|cheroglifos]]',
+	'wikihiero-desc' => 'Adibe a etiqueta <code>&lt;hiero&gt;</code> ta mostrar [[[[Special:Hieroglyphs|cheroglifos]]', # Fuzzy
 );
 
 /** Arabic (العربية)
@@ -1766,7 +1766,8 @@ Mer han och en Sigg met [//de.wikipedia.org/wiki/Hilfe:Hieroglyphen Hölp för e
 	'wikihiero-category-Aa' => 'Aa: Nit Enzotteet',
 );
 
-/** Latin (Latina) */
+/** Latin (Latina)
+ */
 $messages['la'] = array(
 	'wikihiero-syntax' => 'Syntaxis',
 	'wikihiero-separator' => 'Separator',
@@ -2039,7 +2040,8 @@ Rujuk keterangan penanda [//en.wikipedia.org/wiki/Help:WikiHiero_syntax di sini]
 	'wikihiero-category-Aa' => 'Aa: Tidak dikelaskan',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎) */
+/** Norwegian Bokmål (norsk (bokmål)‎)
+ */
 $messages['nb'] = array(
 	'wikihiero-desc' => 'Legger til taggen <code>&lt;hiero&gt;</code> for å vise [[Special:Hieroglyphs|hieroglyfer]]',
 	'hieroglyphs' => 'Prøv hieroglyfmerking',
@@ -2940,7 +2942,7 @@ $messages['sv'] = array(
 	'wikihiero-desc' => 'Lägger till taggen <code>&lt;hiero&gt;</code> för att visa [[Special:Hieroglyphs|hieroglyfer]]',
 	'hieroglyphs' => 'Prova hieroglyfkod',
 	'wikihiero-special-page-text' => 'Använd denna sida för att prova WikiHiero-koden.
-Kolla [//en.wikipedia.org/wiki/Help:WikiHiero_syntax här] för kodbeskrivning.',
+Kolla [//en.wikipedia.org/wiki/Help:WikiHiero_syntax här] för kodbeskrivning.', # Fuzzy
 	'wikihiero-input' => 'Inmatningstext',
 	'wikihiero-result' => 'Resultat',
 	'wikihiero-submit' => 'Skicka',
@@ -3485,4 +3487,3 @@ $messages['zh-hant'] = array(
 	'wikihiero-category-Z' => 'Z：筆劃、幾何圖形等',
 	'wikihiero-category-Aa' => 'Aa：未分類',
 );
-
