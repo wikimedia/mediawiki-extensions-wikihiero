@@ -1484,6 +1484,7 @@ $messages['ja'] = array(
 マークアップについては[//ja.wikipedia.org/wiki/Help:WikiHieroの文法 こちら]をご覧ください。',
 	'wikihiero-input' => '入力テキスト',
 	'wikihiero-result' => '結果',
+	'wikihiero-submit' => '送信',
 	'wikihiero-syntax' => '構文',
 	'wikihiero-th-code' => 'コード',
 	'wikihiero-th-meaning' => '意味',
