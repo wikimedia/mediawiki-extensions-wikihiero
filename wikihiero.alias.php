@@ -107,3 +107,8 @@ $specialPageAliases['tr'] = array(
 $specialPageAliases['uk'] = array(
 	'Hieroglyphs' => array( 'Ієрогліфи' ),
 );
+
+/** Simplified Chinese (中文（简体）‎) */
+$specialPageAliases['zh-hans'] = array(
+	'Hieroglyphs' => array( '象形文字' ),
+);
