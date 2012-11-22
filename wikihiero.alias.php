@@ -98,6 +98,11 @@ $specialPageAliases['nl'] = array(
 	'Hieroglyphs' => array( 'Hierogliefen' ),
 );
 
+/** Sicilian (sicilianu) */
+$specialPageAliases['scn'] = array(
+	'Hieroglyphs' => array( 'Geroglifici' ),
+);
+
 /** Turkish (Türkçe) */
 $specialPageAliases['tr'] = array(
 	'Hieroglyphs' => array( 'Hiyeroglifler' ),

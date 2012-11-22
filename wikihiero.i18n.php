@@ -3162,6 +3162,14 @@ Biçimlendirme açıklaması için [//en.wikipedia.org/wiki/Help:WikiHiero_synta
 	'wikihiero-th-result' => 'Sonuç',
 );
 
+/** Central Atlas Tamazight (ⵜⴰⵎⴰⵣⵉⵖⵜ)
+ * @author Tifinaghes
+ */
+$messages['tzm'] = array(
+	'wikihiero-result' => 'ⵜⴰⵢⴰⴼⵓⵜ',
+	'wikihiero-th-result' => 'ⵜⴰⵢⴰⴼⵓⵜ',
+);
+
 /** Ukrainian (українська)
  * @author Ahonc
  * @author Dim Grits
