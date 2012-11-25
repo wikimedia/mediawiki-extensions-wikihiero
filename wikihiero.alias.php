@@ -18,6 +18,11 @@ $specialPageAliases['ar'] = array(
 	'Hieroglyphs' => array( 'هيروغليفي' ),
 );
 
+/** буряад (буряад) */
+$specialPageAliases['bxr'] = array(
+	'Hieroglyphs' => array( 'Дүрсэ_үзэг' ),
+);
+
 /** Church Slavic (словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ) */
 $specialPageAliases['cu'] = array(
 	'Hieroglyphs' => array( 'Їєроглѷфꙑ' ),
