@@ -113,6 +113,11 @@ $specialPageAliases['scn'] = array(
 	'Hieroglyphs' => array( 'Geroglifici' ),
 );
 
+/** Northern Sami (sámegiella) */
+$specialPageAliases['se'] = array(
+	'Hieroglyphs' => array( 'Hieroglyfat' ),
+);
+
 /** Turkish (Türkçe) */
 $specialPageAliases['tr'] = array(
 	'Hieroglyphs' => array( 'Hiyeroglifler' ),
