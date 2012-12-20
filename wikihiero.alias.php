@@ -128,6 +128,11 @@ $specialPageAliases['uk'] = array(
 	'Hieroglyphs' => array( 'Ієрогліфи' ),
 );
 
+/** Vietnamese (Tiếng Việt) */
+$specialPageAliases['vi'] = array(
+	'Hieroglyphs' => array( 'Chữ_tượng_hình' ),
+);
+
 /** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
 	'Hieroglyphs' => array( '象形文字' ),
