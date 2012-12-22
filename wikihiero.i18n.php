@@ -2495,11 +2495,13 @@ $messages['qu'] = array(
  * @author Firilacroco
  * @author KlaudiuMihaila
  * @author Minisarm
+ * @author Stelistcristi
  */
 $messages['ro'] = array(
 	'wikihiero-desc' => 'Adaugă tagul <code>&lt;hiero&gt;</code> pentru a afișa [[Special:Hieroglyphs|hieroglife]]',
 	'wikihiero-input' => 'Text introdus',
 	'wikihiero-result' => 'Rezultat',
+	'wikihiero-submit' => 'Trimite',
 	'wikihiero-syntax' => 'Sintaxă',
 	'wikihiero-th-code' => 'Cod',
 	'wikihiero-th-meaning' => 'Semnificație',
