@@ -1391,9 +1391,11 @@ Vide [//en.wikipedia.org/wiki/Help:WikiHiero_syntax hic] pro le description del 
 
 /** Indonesian (Bahasa Indonesia)
  * @author IvanLanin
+ * @author පසිඳු කාවින්ද
  */
 $messages['id'] = array(
 	'wikihiero-desc' => 'Menambahkan tag <code>&lt;hiero&gt;</code> untuk menampilkan [[Special:Hieroglyphs|hieroglyph]]',
+	'wikihiero-submit' => 'Kirim',
 	'wikihiero-category-A' => 'A: Le homine e su occupationes',
 	'wikihiero-category-B' => 'B: Le femina e su occupationes',
 	'wikihiero-category-C' => 'C: Divinitates anthropomorphe',
