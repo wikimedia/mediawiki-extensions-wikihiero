@@ -1770,6 +1770,14 @@ Mer han och en Sigg met [//de.wikipedia.org/wiki/Hilfe:Hieroglyphen Hölp för e
 	'wikihiero-category-Aa' => 'Aa: Nit Enzotteet',
 );
 
+/** Kirghiz (Кыргызча)
+ * @author Growingup
+ */
+$messages['ky'] = array(
+	'wikihiero-comment' => 'Эскертүү',
+	'wikihiero-load-error' => 'Жүктөө катасы!',
+);
+
 /** Latin (Latina)
  */
 $messages['la'] = array(
