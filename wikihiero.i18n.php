@@ -3182,6 +3182,22 @@ $messages['tzm'] = array(
 	'wikihiero-th-result' => 'ⵜⴰⵢⴰⴼⵓⵜ',
 );
 
+/** Uyghur (Arabic script) (ئۇيغۇرچە)
+ * @author Sahran
+ */
+$messages['ug-arab'] = array(
+	'wikihiero-result' => 'نەتىجە',
+	'wikihiero-submit' => 'تاپشۇر',
+	'wikihiero-syntax' => 'گرامماتىكا',
+	'wikihiero-th-code' => 'كود',
+	'wikihiero-th-meaning' => 'مەنىسى',
+	'wikihiero-th-result' => 'نەتىجە',
+	'wikihiero-separator' => 'ئايرىغۇچ',
+	'wikihiero-eol' => 'قۇرنىڭ ئاخىرى',
+	'wikihiero-superposition' => 'سىزىق نۇقتا ئارىلىقى',
+	'wikihiero-comment' => 'ئىزاھات',
+);
+
 /** Ukrainian (українська)
  * @author Ahonc
  * @author Dim Grits
