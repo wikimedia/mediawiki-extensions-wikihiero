@@ -2220,9 +2220,37 @@ Zie ook de [//en.wikipedia.org/wiki/Help:WikiHiero_syntax gebruiksaanwijzing].',
 
 /** Norwegian Nynorsk (norsk (nynorsk)‎)
  * @author Frokor
+ * @author Njardarlogar
  */
 $messages['nn'] = array(
 	'wikihiero-desc' => 'Legg til taggen <code>&lt;hiero&gt;</code> for å vise [[Special:Hieroglyphs|hieroglyfar]]',
+	'hieroglyphs' => 'Røyn ut hieroglyfmerking',
+	'wikihiero-special-page-text' => 'Bruk sida for å røyna ut WikiHiero-merking.
+Sjå [//en.wikipedia.org/wiki/Help:WikiHiero_syntax her] for merkingsskildring.',
+	'wikihiero-input' => 'Inntekst',
+	'wikihiero-result' => 'Resultat',
+	'wikihiero-submit' => 'Send',
+	'wikihiero-syntax' => 'Syntaks',
+	'wikihiero-th-code' => 'Kode',
+	'wikihiero-th-meaning' => 'Tyding',
+	'wikihiero-th-example' => 'Dømekode',
+	'wikihiero-th-result' => 'Resultat',
+	'wikihiero-separator' => 'Skilje',
+	'wikihiero-eol' => 'Lineende',
+	'wikihiero-superposition' => 'Underdeling',
+	'wikihiero-juxtaposition' => 'Sidestilling',
+	'wikihiero-mirror' => 'Spegelvend ein hieroglyf',
+	'wikihiero-comment' => 'Merknad',
+	'wikihiero-load-error' => 'Lastefeil!',
+	'wikihiero-category-A' => 'A: Mannen og gjeremåla hans',
+	'wikihiero-category-B' => 'B: Kvinna og gjeremåla hennar',
+	'wikihiero-category-C' => 'C: Menneskeliknande guddomar',
+	'wikihiero-category-D' => 'D: Delar av menneskekroppen',
+	'wikihiero-category-E' => 'E: Sogdyr',
+	'wikihiero-category-F' => 'F: Delar av sogdyr',
+	'wikihiero-category-G' => 'G: Fuglar',
+	'wikihiero-category-H' => 'H: Delar av fuglar',
+	'wikihiero-category-K' => 'K: Fiskar og delar av fiskar',
 );
 
 /** Occitan (occitan)
