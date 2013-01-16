@@ -2250,7 +2250,15 @@ Sjå [//en.wikipedia.org/wiki/Help:WikiHiero_syntax her] for merkingsskildring.'
 	'wikihiero-category-F' => 'F: Delar av sogdyr',
 	'wikihiero-category-G' => 'G: Fuglar',
 	'wikihiero-category-H' => 'H: Delar av fuglar',
+	'wikihiero-category-I' => 'I: Amfibium, reptil osb.',
 	'wikihiero-category-K' => 'K: Fiskar og delar av fiskar',
+	'wikihiero-category-L' => 'L: Ryggbeinslause dyr og mindre dyr',
+	'wikihiero-category-M' => 'M: Tre og planter',
+	'wikihiero-category-N' => 'N: Himmel, jord, vatn',
+	'wikihiero-category-O' => 'O: Bygningar, delar av bygningar osb.',
+	'wikihiero-category-P' => 'P: Skip og delar av skip',
+	'wikihiero-category-Q' => 'Q: Hushald og gravferdsmøblar',
+	'wikihiero-category-R' => 'R: Tempelmøblar og heilage emblem',
 );
 
 /** Occitan (occitan)
