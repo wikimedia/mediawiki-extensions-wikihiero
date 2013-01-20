@@ -2226,7 +2226,7 @@ $messages['nn'] = array(
 	'wikihiero-desc' => 'Legg til taggen <code>&lt;hiero&gt;</code> for å vise [[Special:Hieroglyphs|hieroglyfar]]',
 	'hieroglyphs' => 'Røyn ut hieroglyfmerking',
 	'wikihiero-special-page-text' => 'Bruk sida for å røyna ut WikiHiero-merking.
-Sjå [//en.wikipedia.org/wiki/Help:WikiHiero_syntax her] for merkingsskildring.',
+Sjå [//en.wikipedia.org/wiki/Help:WikiHiero_syntax her] for merkeskildring.',
 	'wikihiero-input' => 'Inntekst',
 	'wikihiero-result' => 'Resultat',
 	'wikihiero-submit' => 'Send',
