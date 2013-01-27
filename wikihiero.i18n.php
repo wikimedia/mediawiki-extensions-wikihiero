@@ -2110,7 +2110,7 @@ $messages['nds'] = array(
 	'wikihiero-desc' => 'Föögt dat <code>&lt;hiero&gt;</code>-Tag för dat Formateren vun [[Special:Hieroglyphs|Hieroglyphen]] to',
 );
 
-/** Nedersaksisch (Nedersaksisch)
+/** Nedersaksies (Nedersaksies)
  * @author Servien
  */
 $messages['nds-nl'] = array(
