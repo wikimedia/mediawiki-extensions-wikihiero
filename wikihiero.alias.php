@@ -88,6 +88,11 @@ $specialPageAliases['lb'] = array(
 	'Hieroglyphs' => array( 'Hieroglyphen' ),
 );
 
+/** Minangkabau (Baso Minangkabau) */
+$specialPageAliases['min'] = array(
+	'Hieroglyphs' => array( 'Heroglip' ),
+);
+
 /** Macedonian (македонски) */
 $specialPageAliases['mk'] = array(
 	'Hieroglyphs' => array( 'Хиероглифи' ),
