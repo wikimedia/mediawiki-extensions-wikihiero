@@ -2608,6 +2608,8 @@ Vide [//en.wikipedia.org/wiki/Help:WikiHiero_syntax aqquà] pe 'na descrizione d
 	'wikihiero-superposition' => 'Suddivisione',
 	'wikihiero-juxtaposition' => 'Giustapposizzione',
 	'wikihiero-mirror' => "Soecchie 'nu geroglifiche",
+	'wikihiero-void' => 'Blocche vacande a larghezza massime',
+	'wikihiero-half-void' => 'Blocche vacande a mezza larghezze',
 	'wikihiero-comment' => 'Commende',
 	'wikihiero-load-error' => 'Errore de carecamende!',
 	'wikihiero-category-A' => "A: L'omme e l'occupaziune sue",
