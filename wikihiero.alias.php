@@ -113,6 +113,11 @@ $specialPageAliases['nl'] = array(
 	'Hieroglyphs' => array( 'Hierogliefen' ),
 );
 
+/** Norwegian Nynorsk (norsk nynorsk) */
+$specialPageAliases['nn'] = array(
+	'Hieroglyphs' => array( 'Hieroglyfar' ),
+);
+
 /** Sicilian (sicilianu) */
 $specialPageAliases['scn'] = array(
 	'Hieroglyphs' => array( 'Geroglifici' ),
