@@ -1595,6 +1595,7 @@ Delok [//en.wikipedia.org/wiki/Help:WikiHiero_syntax kéné] kanggo katrangan ma
  */
 $messages['ka'] = array(
 	'wikihiero-desc' => 'ჰმატებს თეგ <code>&lt;hiero&gt;</code> იეროგიფების საჩვენებლად',
+	'hieroglyphs' => 'სცადეთ იეროგლიფური მონიშვნა',
 	'wikihiero-input' => 'შესაყვანი ტექსტი',
 	'wikihiero-result' => 'შედეგი',
 	'wikihiero-submit' => 'მიღება',
@@ -1605,7 +1606,13 @@ $messages['ka'] = array(
 	'wikihiero-th-result' => 'შედეგი',
 	'wikihiero-separator' => 'გამყოფი',
 	'wikihiero-eol' => 'ხაზის დასასრული',
+	'wikihiero-superposition' => 'ვერტიკალური დაჯგუფება',
+	'wikihiero-juxtaposition' => 'ჰორიზონტალური დაჯგუფება',
+	'wikihiero-mirror' => 'იეროგლიფის სარკისებურად მობრუნება',
+	'wikihiero-void' => 'სრული სიგანის ცარიელი ბლოკი',
+	'wikihiero-half-void' => 'ნახევარი სიგანის ცარიელი ბლოკი',
 	'wikihiero-comment' => 'კომენტარი',
+	'wikihiero-load-error' => 'ჩატვირთვის შეცდომა!',
 	'wikihiero-category-A' => 'A: მამაკაცი და მისი საქმიანობა',
 	'wikihiero-category-B' => 'B: ქალი და მისი საქმიანობა',
 	'wikihiero-category-C' => 'C: ანთროპომორფული ღმერთები',
