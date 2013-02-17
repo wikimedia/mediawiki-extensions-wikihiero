@@ -70,7 +70,7 @@ See [//en.wikipedia.org/wiki/Help:WikiHiero_syntax here] for markup description.
 $messages['qqq'] = array(
 	'wikihiero-desc' => '{{desc|name=WikiHiero|url=http://www.mediawiki.org/wiki/Extension:WikiHiero}}
 Wikihiero is a markup language to render hieroglyphics. See [//www.mediawiki.org/wiki/Extension:WikiHiero Extension:WikiHiero] for more information.',
-	'hieroglyphs' => 'WikiHiero is a markup language to render Hieroglyphics. See [//www.mediawiki.org/wiki/Extension:WikiHiero Extension:WikiHiero] for more information.',
+	'hieroglyphs' => 'WikiHiero is a markup language to render Hieroglyphics. See [[mw:Extension:WikiHiero|Extension:WikiHiero]] for more information.',
 	'wikihiero-special-page-text' => 'This message is shown on [[Special:Hieroglyphs]]. Keep the link external. If there is a help page in your language about WikiHiero syntax (not Gardiner codes), feel free to change the link destination.',
 	'wikihiero-result' => '{{Identical|Result}}',
 	'wikihiero-th-code' => '{{Identical|Code}}',
