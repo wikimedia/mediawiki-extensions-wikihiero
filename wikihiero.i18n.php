@@ -1391,6 +1391,7 @@ Vide [//en.wikipedia.org/wiki/Help:WikiHiero_syntax hic] pro le description del 
 
 /** Indonesian (Bahasa Indonesia)
  * @author IvanLanin
+ * @author Iwan Novirion
  * @author පසිඳු කාවින්ද
  */
 $messages['id'] = array(
@@ -1398,7 +1399,7 @@ $messages['id'] = array(
 	'wikihiero-submit' => 'Kirim',
 	'wikihiero-category-A' => 'A: Le homine e su occupationes',
 	'wikihiero-category-B' => 'B: Le femina e su occupationes',
-	'wikihiero-category-C' => 'C: Divinitates anthropomorphe',
+	'wikihiero-category-C' => 'C: Dewa antropomorfik',
 	'wikihiero-category-D' => 'D: Partes del corpore human',
 	'wikihiero-category-E' => 'E: Mammiferos',
 	'wikihiero-category-F' => 'F: Partes de mammiferos',
@@ -1884,6 +1885,59 @@ $messages['lt'] = array(
 $messages['lv'] = array(
 	'wikihiero-comment' => 'Komentārs',
 	'wikihiero-load-error' => 'Ielādes kļūda!',
+);
+
+/** Minangkabau (Baso Minangkabau)
+ * @author Iwan Novirion
+ */
+$messages['min'] = array(
+	'wikihiero-desc' => 'Manambah tag <code>&lt;hiero&gt;</code> untuak manampilan teks [[Special:Hieroglyphs|hiroglif]]',
+	'hieroglyphs' => 'Cubo teks hiroglif',
+	'wikihiero-special-page-text' => 'Gunoan laman ko buek mancubo teks WikiHiero.
+Caliak [//en.wikipedia.org/wiki/Help:WikiHiero_syntax here] untuak labiah jaleh.',
+	'wikihiero-input' => 'Teks input',
+	'wikihiero-result' => 'Hasil',
+	'wikihiero-submit' => 'Kirim',
+	'wikihiero-syntax' => 'Parintah',
+	'wikihiero-th-code' => 'Kode',
+	'wikihiero-th-meaning' => 'Arti',
+	'wikihiero-th-example' => 'Contoh kode',
+	'wikihiero-th-result' => 'Hasil',
+	'wikihiero-separator' => 'Pamisah',
+	'wikihiero-eol' => 'Akhia barih',
+	'wikihiero-superposition' => 'Subdivisi',
+	'wikihiero-juxtaposition' => 'Sajaja',
+	'wikihiero-mirror' => 'Kaco hiroglif',
+	'wikihiero-void' => 'Leba panuah tanpa blok',
+	'wikihiero-half-void' => 'Leba satangah tanpa blok',
+	'wikihiero-comment' => 'Komen',
+	'wikihiero-load-error' => 'Load error!',
+	'wikihiero-category-A' => 'A: Laki-laki jo karajonyo',
+	'wikihiero-category-B' => 'B: Padusi jo karajonyo',
+	'wikihiero-category-C' => 'C: Dewa Antropomorfik',
+	'wikihiero-category-D' => 'D: Bagian tubuah manusia',
+	'wikihiero-category-E' => 'E: Mamalia',
+	'wikihiero-category-F' => 'F: Bagian mamalia',
+	'wikihiero-category-G' => 'G: Buruang',
+	'wikihiero-category-H' => 'H: Bagian buruang',
+	'wikihiero-category-I' => 'I: Ampibi, reptil, dll.',
+	'wikihiero-category-K' => 'K: Ikan jo bagiannyo',
+	'wikihiero-category-L' => 'L: Invertebrata jo binatang labiah randah',
+	'wikihiero-category-M' => 'M: Pohon jo tanaman',
+	'wikihiero-category-N' => 'N: Langik, bumi, aia',
+	'wikihiero-category-O' => 'O: Bangunan, bagian bangunan, dll.',
+	'wikihiero-category-P' => 'P: Kapa jo bagiannyo',
+	'wikihiero-category-Q' => 'Q: Pakakeh rumah tanggo jo panguburan',
+	'wikihiero-category-R' => 'R: Pakakeh kuil jo lambang suci',
+	'wikihiero-category-S' => 'S: Mahkota, pakaian, tungkek, dll.',
+	'wikihiero-category-T' => 'T: Sanjato, baburu, rumah potong',
+	'wikihiero-category-U' => 'U: Partanian, karajinan tangan jo propesi',
+	'wikihiero-category-V' => 'V: Tali, sabuik, karanjang, tas, dll.',
+	'wikihiero-category-W' => 'W: Kapa dari batu jo garabah',
+	'wikihiero-category-X' => 'X: Roti jo kue',
+	'wikihiero-category-Y' => 'Y: Manulih, pamainan, musik',
+	'wikihiero-category-Z' => 'Z: Goresan, simbol geometri, etc.',
+	'wikihiero-category-Aa' => 'Aa: Alun jaleh',
 );
 
 /** Macedonian (македонски)
