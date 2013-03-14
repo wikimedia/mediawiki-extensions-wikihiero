@@ -161,8 +161,8 @@ $messages['as'] = array(
 $messages['ast'] = array(
 	'wikihiero-desc' => "Amiesta la etiqueta <code>&lt;hiero&gt;</code> p'amosar [[Special:Hieroglyphs|xeroglíficos]]",
 	'hieroglyphs' => "Prueba'l formatu xeroglíficu",
-	'wikihiero-special-page-text' => 'Usa esta páxina pa probar el formatu WikiHiero.
-Llee [//en.wikipedia.org/wiki/Help:WikiHiero_syntax equí] la descripción del formatu.',
+	'wikihiero-special-page-text' => 'Use esta páxina pa probar el formatu WikiHiero.
+Llea [//en.wikipedia.org/wiki/Help:WikiHiero_syntax equí] la descripción del formatu.',
 	'wikihiero-input' => "Testu d'entrada",
 	'wikihiero-result' => 'Resultáu',
 	'wikihiero-load-error' => '¡Fallu al cargar!',
