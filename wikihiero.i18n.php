@@ -916,14 +916,15 @@ $messages['fi'] = array(
  * @author Gomoko
  * @author Grondin
  * @author Hashar
+ * @author Nnemo
  * @author PieRRoMaN
  * @author Wyz
  */
 $messages['fr'] = array(
 	'wikihiero-desc' => 'Ajoute la balise <code>&lt;hiero&gt;</code> pour afficher des [[Special:Hieroglyphs|hiéroglyphes]]',
 	'hieroglyphs' => 'Essayer un balisage par hiéroglyphe',
-	'wikihiero-special-page-text' => 'Utiliser cette page pour tester le balisage de WikiHiero.
-Voyez [//en.wikipedia.org/wiki/Help:WikiHiero_syntax ici] la description du balisage.',
+	'wikihiero-special-page-text' => 'Utilisez cette page pour tester le balisage de WikiHiero.
+[//en.wikipedia.org/wiki/Help:WikiHiero_syntax Voyez ici la description du balisage.]',
 	'wikihiero-input' => 'Texte entré',
 	'wikihiero-result' => 'Résultat',
 	'wikihiero-submit' => 'Soumettre',
