@@ -1486,7 +1486,7 @@ $messages['ja'] = array(
 	'wikihiero-desc' => '[[Special:Hieroglyphs|ヒエログリフ]]を表示する <code>&lt;hiero&gt;</code> タグを追加する',
 	'hieroglyphs' => '象形文字マークアップを試行',
 	'wikihiero-special-page-text' => 'WikiHieroマークアップを試すためにこのページを使用してください。
-マークアップについては[//ja.wikipedia.org/wiki/Help:WikiHieroの文法 こちら]をご覧ください。',
+[//ja.wikipedia.org/wiki/Help:WikiHieroの文法 マークアップについてはこちらを参照してください。]',
 	'wikihiero-input' => '入力テキスト',
 	'wikihiero-result' => '結果',
 	'wikihiero-submit' => '送信',
