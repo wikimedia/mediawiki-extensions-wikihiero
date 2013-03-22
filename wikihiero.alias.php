@@ -43,6 +43,11 @@ $specialPageAliases['diq'] = array(
 	'Hieroglyphs' => array( 'Hiyeroglifi' ),
 );
 
+/** Esperanto (Esperanto) */
+$specialPageAliases['eo'] = array(
+	'Hieroglyphs' => array( 'Hieroglifoj' ),
+);
+
 /** Estonian (eesti) */
 $specialPageAliases['et'] = array(
 	'Hieroglyphs' => array( 'Hieroglüüfid' ),
