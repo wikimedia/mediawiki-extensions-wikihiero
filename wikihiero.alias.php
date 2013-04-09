@@ -123,6 +123,11 @@ $specialPageAliases['nn'] = array(
 	'Hieroglyphs' => array( 'Hieroglyfar' ),
 );
 
+/** Russian (русский) */
+$specialPageAliases['ru'] = array(
+	'Hieroglyphs' => array( 'Иероглифы' ),
+);
+
 /** Sicilian (sicilianu) */
 $specialPageAliases['scn'] = array(
 	'Hieroglyphs' => array( 'Geroglifici' ),
