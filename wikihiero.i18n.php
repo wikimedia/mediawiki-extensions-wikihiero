@@ -455,7 +455,7 @@ Popis jazyka najdete v [//en.wikipedia.org/wiki/Help:WikiHiero_syntax nápověd�
 	'wikihiero-category-P' => 'P: Lodě a části lodí',
 	'wikihiero-category-Q' => 'Q: Domácí a pohřební nábytek',
 	'wikihiero-category-R' => 'R: Chrámový nábytek a posvátné emblémy',
-	'wikihiero-category-S' => 'Koruny, oděvy, hole atd.',
+	'wikihiero-category-S' => 'S: Koruny, oděvy, hole atd.',
 	'wikihiero-category-T' => 'T: Válečnictví, lov, řeznictví',
 	'wikihiero-category-U' => 'U: Zemědělství, řemesla a profese',
 	'wikihiero-category-V' => 'V: Lana, vlákna, koše, pytle atd.',
