@@ -1401,8 +1401,9 @@ Vide [//en.wikipedia.org/wiki/Help:WikiHiero_syntax hic] pro le description del 
  */
 $messages['id'] = array(
 	'wikihiero-desc' => 'Menambahkan tag <code>&lt;hiero&gt;</code> untuk menampilkan [[Special:Hieroglyphs|hieroglyph]]',
+	'hieroglyphs' => 'Coba teks hiroglif',
 	'wikihiero-submit' => 'Kirim',
-	'wikihiero-category-A' => 'A: Le homine e su occupationes',
+	'wikihiero-category-A' => 'A: Laki-laki dan pekerjaannya',
 	'wikihiero-category-B' => 'B: Le femina e su occupationes',
 	'wikihiero-category-C' => 'C: Dewa antropomorfik',
 	'wikihiero-category-D' => 'D: Partes del corpore human',
