@@ -18,6 +18,11 @@ $specialPageAliases['ar'] = array(
 	'Hieroglyphs' => array( 'هيروغليفي' ),
 );
 
+/** Asturian (asturianu) */
+$specialPageAliases['ast'] = array(
+	'Hieroglyphs' => array( 'Xeroglíficos' ),
+);
+
 /** буряад (буряад) */
 $specialPageAliases['bxr'] = array(
 	'Hieroglyphs' => array( 'Дүрсэ_үзэг' ),
