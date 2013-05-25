@@ -3412,6 +3412,7 @@ $messages['ur'] = array(
  */
 $messages['vec'] = array(
 	'wikihiero-desc' => 'Zonta el tag <code>&lt;hiero&gt;</code> par la visualizazion dei [[Special:Hieroglyphs|geroglifici]]',
+	'hieroglyphs' => 'Próa el markup par i geroglifici',
 );
 
 /** Veps (vepsän kel’)
