@@ -2630,6 +2630,7 @@ $messages['pt'] = array(
 /** Brazilian Portuguese (português do Brasil)
  * @author Eduardo.mps
  * @author Giro720
+ * @author Luckas
  * @author MetalBrasil
  */
 $messages['pt-br'] = array(
@@ -2639,6 +2640,15 @@ $messages['pt-br'] = array(
 Acesse [//en.wikipedia.org/wiki/Help:WikiHiero_syntax here] para descrição de marcação.',
 	'wikihiero-input' => 'Texto de entrada',
 	'wikihiero-result' => 'Resultado',
+	'wikihiero-submit' => 'Enviar',
+	'wikihiero-syntax' => 'Sintaxe',
+	'wikihiero-th-code' => 'Código',
+	'wikihiero-th-meaning' => 'Significado',
+	'wikihiero-th-example' => 'Código de exemplo',
+	'wikihiero-th-result' => 'Resultado',
+	'wikihiero-separator' => 'Separador',
+	'wikihiero-eol' => 'Fim da linha',
+	'wikihiero-superposition' => 'Subdivisão',
 	'wikihiero-load-error' => 'Erro ao carregar!',
 	'wikihiero-category-A' => 'A: Homem e suas ocupações',
 	'wikihiero-category-B' => 'B: Mulher e suas ocupações',
