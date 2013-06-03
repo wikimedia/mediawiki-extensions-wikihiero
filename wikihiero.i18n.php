@@ -58,10 +58,7 @@ See [//en.wikipedia.org/wiki/Help:WikiHiero_syntax here] for markup description.
 	'wikihiero-category-Aa' => 'Aa: Unclassified',
 );
 
-/** Message documentation (This is the name of the message documentation language code (qqq). Follow the rules of your languages and use small first letter if it doesn't capitalize language names always.
-
-It might be easier to translate it as "translation guidelines" or "translation help".
-{{Identical|Message documentation}})
+/** Message documentation (Message documentation)
  * @author Amire80
  * @author EugeneZelenko
  * @author MaxSem
@@ -151,7 +148,7 @@ $messages['arz'] = array(
 	'wikihiero-desc' => 'بيضيف تاج ال <code>&lt;hiero&gt;</code> علشان يعرض الهيروغليفي',
 );
 
-/** Assamese (অসমীয়া)
+/** Assamese (অসমীয়া)
  * @author Bishnu Saikia
  */
 $messages['as'] = array(
@@ -2190,7 +2187,7 @@ Rujuk keterangan penanda [//en.wikipedia.org/wiki/Help:WikiHiero_syntax di sini]
 	'wikihiero-category-Aa' => 'Aa: Tidak dikelaskan',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎)
+/** Norwegian Bokmål (norsk bokmål)
  */
 $messages['nb'] = array(
 	'wikihiero-desc' => 'Legger til taggen <code>&lt;hiero&gt;</code> for å vise [[Special:Hieroglyphs|hieroglyfer]]',
@@ -2248,7 +2245,7 @@ $messages['nds'] = array(
 	'wikihiero-desc' => 'Föögt dat <code>&lt;hiero&gt;</code>-Tag för dat Formateren vun [[Special:Hieroglyphs|Hieroglyphen]] to',
 );
 
-/** Nedersaksies (Nedersaksies)
+/** Low Saxon (Netherlands) (Nedersaksies)
  * @author Servien
  */
 $messages['nds-nl'] = array(
@@ -2356,7 +2353,7 @@ Zie ook de [//en.wikipedia.org/wiki/Help:WikiHiero_syntax gebruiksaanwijzing].',
 	'wikihiero-category-Aa' => 'Aa: Niet geclassificeerd',
 );
 
-/** Norwegian Nynorsk (norsk (nynorsk)‎)
+/** Norwegian Nynorsk (norsk nynorsk)
  * @author Frokor
  * @author Njardarlogar
  */
@@ -2406,7 +2403,7 @@ $messages['oc'] = array(
 	'wikihiero-desc' => 'Apond la balisa <code>&lt;hiero&gt;</code> per afichar los [[Special:Hieroglyphs|ieroglifes]]',
 );
 
-/** Oriya (ଓଡ଼ିଆ)
+/** Oriya (ଓଡ଼ିଆ)
  * @author Ansumang
  */
 $messages['or'] = array(
