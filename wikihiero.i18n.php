@@ -3659,11 +3659,12 @@ $messages['zh-hans'] = array(
 
 /** Traditional Chinese (中文（繁體）‎)
  * @author Anakmalaysia
+ * @author Justincheng12345
  * @author Shinjiman
  * @author Simon Shek
  */
 $messages['zh-hant'] = array(
-	'wikihiero-desc' => '加入 <code>&lt;hiero&gt;</code> 標籤去顯示象形文字',
+	'wikihiero-desc' => '加入<code>&lt;hiero&gt;</code>標籤以顯示[[Special:Hieroglyphs|象形文字]]',
 	'hieroglyphs' => '嘗試象形文字標記',
 	'wikihiero-special-page-text' => '使用此頁可以試試 WikiHiero 標記。
 對於標記說明，請參閱[//en.wikipedia.org/wiki/Help:WikiHiero_syntax 此處]。',
