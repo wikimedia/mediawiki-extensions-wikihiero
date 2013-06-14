@@ -3480,7 +3480,7 @@ $messages['vi'] = array(
 Xem [//en.wikipedia.org/wiki/Help:WikiHiero_syntax hướng dẫn về cú pháp WikiHiero].',
 	'wikihiero-input' => 'Văn bản nhập',
 	'wikihiero-result' => 'Kết quả',
-	'wikihiero-submit' => 'Xem thử',
+	'wikihiero-submit' => 'Xem trước',
 	'wikihiero-syntax' => 'Cú pháp',
 	'wikihiero-th-code' => 'Đoạn mã',
 	'wikihiero-th-meaning' => 'Ý nghĩa',
