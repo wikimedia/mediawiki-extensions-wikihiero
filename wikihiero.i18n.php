@@ -74,10 +74,13 @@ Wikihiero is a markup language to render hieroglyphics. See [//www.mediawiki.org
 WikiHiero is a markup language to render Hieroglyphics. See [[mw:Extension:WikiHiero|Extension:WikiHiero]] for more information.',
 	'wikihiero-special-page-text' => 'This message is shown on [[Special:Hieroglyphs]]. Keep the link external. If there is a help page in your language about WikiHiero syntax (not Gardiner codes), feel free to change the link destination.',
 	'wikihiero-result' => '{{Identical|Result}}',
+	'wikihiero-submit' => '{{Identical|Submit}}',
+	'wikihiero-syntax' => '{{Identical|Syntax}}',
 	'wikihiero-th-code' => '{{Identical|Code}}',
 	'wikihiero-th-meaning' => '{{Identical|Meaning}}',
 	'wikihiero-th-result' => '{{Identical|Result}}',
 	'wikihiero-eol' => 'Help text that says that "!" inserts an end of a line of Egyptian text.',
+	'wikihiero-superposition' => '{{Identical|Subdivision}}',
 	'wikihiero-comment' => '{{Identical|Comment}}',
 );
 
