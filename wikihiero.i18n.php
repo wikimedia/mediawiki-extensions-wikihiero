@@ -2254,6 +2254,15 @@ $messages['nds'] = array(
  */
 $messages['nds-nl'] = array(
 	'wikihiero-desc' => 'Zet de tekste <code>&lt;hiero&gt;</code> derbie veur de weergave van [[Special:Hieroglyphs|hiërogliefen]]',
+	'hieroglyphs' => 'Hiërogliefopmaak uutproberen',
+	'wikihiero-syntax' => 'Syntaxis',
+	'wikihiero-th-code' => 'Kode',
+	'wikihiero-th-meaning' => 'Betekenisse',
+	'wikihiero-th-example' => 'Veurbeeldkode',
+	'wikihiero-th-result' => 'Resultaot',
+	'wikihiero-separator' => 'Scheidingsteken',
+	'wikihiero-eol' => 'Einde van regel',
+	'wikihiero-superposition' => 'Onderverdeling',
 );
 
 /** Nepali (नेपाली)
