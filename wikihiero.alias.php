@@ -63,6 +63,11 @@ $specialPageAliases['et'] = array(
 	'Hieroglyphs' => array( 'Hieroglüüfid' ),
 );
 
+/** Persian (فارسی) */
+$specialPageAliases['fa'] = array(
+	'Hieroglyphs' => array( 'هیروگلیف‌ها' ),
+);
+
 /** Galician (galego) */
 $specialPageAliases['gl'] = array(
 	'Hieroglyphs' => array( 'Xeróglifos' ),
