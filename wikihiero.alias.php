@@ -33,6 +33,11 @@ $specialPageAliases['ca'] = array(
 	'Hieroglyphs' => array( 'Jeroglífics' ),
 );
 
+/** Chechen (нохчийн) */
+$specialPageAliases['ce'] = array(
+	'Hieroglyphs' => array( 'Иероглифаш' ),
+);
+
 /** Church Slavic (словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ) */
 $specialPageAliases['cu'] = array(
 	'Hieroglyphs' => array( 'Їєроглѷфꙑ' ),
