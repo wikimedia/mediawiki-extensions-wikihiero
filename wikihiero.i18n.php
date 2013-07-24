@@ -482,6 +482,13 @@ Vegeu [//en.wikipedia.org/wiki/Help:WikiHiero_syntax aquí] la descripció de la
 	'wikihiero-category-Aa' => 'Aa: No classificats',
 );
 
+/** Chechen (нохчийн)
+ * @author Умар
+ */
+$messages['ce'] = array(
+	'wikihiero-th-meaning' => 'МаьӀна',
+);
+
 /** Czech (česky)
  * @author Matěj Grabovský
  * @author Mormegil
