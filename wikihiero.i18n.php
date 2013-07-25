@@ -3152,6 +3152,7 @@ $messages['su'] = array(
 );
 
 /** Swedish (svenska)
+ * @author Jopparn
  * @author Lejonel
  * @author Lokal Profil
  * @author Thurs
@@ -3174,6 +3175,8 @@ Kolla [//en.wikipedia.org/wiki/Help:WikiHiero_syntax här] för kodbeskrivning.'
 	'wikihiero-eol' => 'Radbrytning',
 	'wikihiero-superposition' => 'Underavdelning',
 	'wikihiero-juxtaposition' => 'Juxaposition (stående förbindelse)',
+	'wikihiero-mirror' => 'Spegelvänd en hieroglyf',
+	'wikihiero-comment' => 'Kommentar',
 	'wikihiero-load-error' => 'Inläsningsfel!',
 	'wikihiero-category-A' => 'A: Mannen och hans sysslor',
 	'wikihiero-category-B' => 'B: Kvinnan och hennes sysslor',
