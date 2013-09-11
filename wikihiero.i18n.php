@@ -2810,12 +2810,13 @@ Vide [//en.wikipedia.org/wiki/Help:WikiHiero_syntax aqquà] pe 'na descrizione d
  * @author DR
  * @author Dim Grits
  * @author Kalan
+ * @author Lockal
  * @author MaxSem
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
 	'wikihiero-desc' => 'Добавляет тег <code>&lt;hiero&gt;</code> для показа [[Special:Hieroglyphs|иероглифов]]',
-	'hieroglyphs' => 'Попробуйте иероглифическую разметку',
+	'hieroglyphs' => 'Проверка иероглифической разметки',
 	'wikihiero-special-page-text' => 'Используйте эту страницу для опробования разметки WikiHiero.
 См. описание разметки [//ru.wikipedia.org/wiki/Википедия:Древнеегипетские_иероглифы здесь].',
 	'wikihiero-input' => 'Входной текст:',
