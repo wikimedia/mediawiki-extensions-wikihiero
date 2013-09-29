@@ -487,6 +487,7 @@ Vegeu [//en.wikipedia.org/wiki/Help:WikiHiero_syntax aquí] la descripció de la
  */
 $messages['ce'] = array(
 	'wikihiero-th-meaning' => 'МаьӀна',
+	'wikihiero-eol' => 'МогӀам гочбар',
 );
 
 /** Czech (česky)
