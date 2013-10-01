@@ -2572,7 +2572,7 @@ Ch'a bèica [//en.wikipedia.org/wiki/Help:WikiHiero_syntax ambelessì] për la d
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
 $messages['ps'] = array(
-	'hieroglyphs' => 'هېروګليف نښې وآزمويۍ',
+	'hieroglyphs' => 'هېروگليف نښې وآزمويۍ',
 	'wikihiero-result' => 'پايله',
 	'wikihiero-submit' => 'سپارل',
 	'wikihiero-th-code' => 'کوډ',
