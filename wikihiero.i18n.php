@@ -1284,6 +1284,7 @@ $messages['he'] = array(
 /** Hindi (हिन्दी)
  * @author Ansumang
  * @author Kaustubh
+ * @author Siddhartha Ghai
  */
 $messages['hi'] = array(
 	'wikihiero-desc' => 'हाइरोग्लिफ दर्शाने के लिये <code>&lt;hiero&gt;</code> टैग देता हैं',
@@ -1291,7 +1292,7 @@ $messages['hi'] = array(
 	'wikihiero-result' => 'परिणाम',
 	'wikihiero-th-code' => 'कोड',
 	'wikihiero-th-meaning' => 'अर्थ',
-	'wikihiero-th-example' => 'उदाहरण कोड़',
+	'wikihiero-th-example' => 'उदाहरण कोड',
 	'wikihiero-th-result' => 'परिणाम',
 	'wikihiero-separator' => 'सेपारेटर',
 	'wikihiero-eol' => 'लाइन की अंत',
