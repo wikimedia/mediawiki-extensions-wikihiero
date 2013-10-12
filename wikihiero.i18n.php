@@ -1126,8 +1126,8 @@ $messages['ga'] = array(
 $messages['gl'] = array(
 	'wikihiero-desc' => 'Engade a etiqueta <code>&lt;hiero&gt;</code> para mostrar [[Special:Hieroglyphs|xeróglifos]]',
 	'hieroglyphs' => 'Probar o formato dos xeróglifos',
-	'wikihiero-special-page-text' => 'Empregue esta páxina para probar o formato dos xeróglifos.
-Olle [//en.wikipedia.org/wiki/Help:WikiHiero_syntax aquí] a descrición do formato.', # Fuzzy
+	'wikihiero-special-page-text' => 'Utilice esta páxina para probar o formato dos xeróglifos.
+Olle [//en.wikipedia.org/wiki/Help:WikiHiero_syntax aquí] a descrición do formato.',
 	'wikihiero-input' => 'Texto de entrada',
 	'wikihiero-result' => 'Resultado',
 	'wikihiero-submit' => 'Enviar',
