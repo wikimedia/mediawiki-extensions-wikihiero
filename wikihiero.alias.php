@@ -24,6 +24,11 @@ $specialPageAliases['ast'] = array(
 	'Hieroglyphs' => array( 'Xeroglíficos' ),
 );
 
+/** Bulgarian (български) */
+$specialPageAliases['bg'] = array(
+	'Hieroglyphs' => array( 'Йероглифи' ),
+);
+
 /** буряад (буряад) */
 $specialPageAliases['bxr'] = array(
 	'Hieroglyphs' => array( 'Дүрсэ_үзэг' ),
