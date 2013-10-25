@@ -3206,7 +3206,8 @@ $messages['sv'] = array(
 	'wikihiero-desc' => 'Lägger till taggen <code>&lt;hiero&gt;</code> för att visa [[Special:Hieroglyphs|hieroglyfer]]',
 	'hieroglyphs' => 'Prova hieroglyfkod',
 	'wikihiero-special-page-text' => 'Använd denna sida för att prova WikiHiero-koden.
-Kolla [//en.wikipedia.org/wiki/Help:WikiHiero_syntax här] för kodbeskrivning.', # Fuzzy
+
+Se [//en.wikipedia.org/wiki/Help:WikiHiero_syntax här] för en beskrivning av koden.',
 	'wikihiero-input' => 'Inmatningstext',
 	'wikihiero-result' => 'Resultat',
 	'wikihiero-submit' => 'Skicka',
