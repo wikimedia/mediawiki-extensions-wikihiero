@@ -935,8 +935,8 @@ $messages['eu'] = array(
 $messages['fa'] = array(
 	'wikihiero-desc' => 'برچسب <code>&lt;hiero&gt;</code> را برای نمایش هیروگلیف می‌افزاید',
 	'hieroglyphs' => 'امتحان‌کردن نشانه‌گذاری هیروگلیف',
-	'wikihiero-special-page-text' => 'برای امتحان نشانه‌گذاری ویکی‌هیرو از این صفحه استفاده کنید.
-برای توضیحات نشانه‌گذاری، [//en.wikipedia.org/wiki/Help:WikiHiero_syntax اینجا] را ببینید.', # Fuzzy
+	'wikihiero-special-page-text' => 'از این صفحه برای آزمایش نشانه‌گذاری ویکی‌هیرو استفاده کنید.
+برای توضیحات نشانه‌گذاری، [//en.wikipedia.org/wiki/Help:WikiHiero_syntax اینجا] را ببینید.',
 	'wikihiero-input' => 'متن ورودی',
 	'wikihiero-result' => 'نتیجه',
 	'wikihiero-submit' => 'ثبت',
