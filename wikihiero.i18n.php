@@ -1145,6 +1145,13 @@ Vêde [//en.wikipedia.org/wiki/Help:WikiHiero_syntax ique] la dèscripcion du ba
 	'wikihiero-category-Aa' => 'Aa : pas rengiê',
 );
 
+/** Northern Frisian (Nordfriisk)
+ * @author Murma174
+ */
+$messages['frr'] = array(
+	'hieroglyphs' => 'Hieroglyphenskraft ööwe',
+);
+
 /** Western Frisian (Frysk)
  * @author SK-luuut
  */
