@@ -2694,6 +2694,7 @@ $messages['pt'] = array(
 );
 
 /** Brazilian Portuguese (português do Brasil)
+ * @author Cainamarques
  * @author Eduardo.mps
  * @author Giro720
  * @author Luckas
@@ -2702,8 +2703,8 @@ $messages['pt'] = array(
 $messages['pt-br'] = array(
 	'wikihiero-desc' => 'Adiciona a marca <code>&lt;hiero&gt;</code> para exibir [[Special:Hieroglyphs|hieróglifos]]',
 	'hieroglyphs' => 'Tente a marcação hieróglifo',
-	'wikihiero-special-page-text' => 'Use esta página para experimentar a marcação wikihiero.
-Acesse [//en.wikipedia.org/wiki/Help:WikiHiero_syntax here] para descrição de marcação.', # Fuzzy
+	'wikihiero-special-page-text' => 'Use esta página para experimentar a sintaxe Wikihiero.
+Acesse [//en.wikipedia.org/wiki/Help:WikiHiero_syntax aqui] para uma descrição da sintaxe.',
 	'wikihiero-input' => 'Texto de entrada',
 	'wikihiero-result' => 'Resultado',
 	'wikihiero-submit' => 'Enviar',
