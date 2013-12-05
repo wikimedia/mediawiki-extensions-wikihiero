@@ -44,7 +44,7 @@ $specialPageAliases['ce'] = array(
 	'Hieroglyphs' => array( 'Иероглифаш' ),
 );
 
-/** Church Slavic (словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ) */
+/** Church Slavic (словѣньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ) */
 $specialPageAliases['cu'] = array(
 	'Hieroglyphs' => array( 'Їєроглѷфꙑ' ),
 );
