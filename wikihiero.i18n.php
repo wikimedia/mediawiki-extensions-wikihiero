@@ -2419,7 +2419,7 @@ Zie ook de [//en.wikipedia.org/wiki/Help:WikiHiero_syntax gebruiksaanwijzing] vo
 	'wikihiero-category-X' => 'X: broden en gebak',
 	'wikihiero-category-Y' => 'Y: geschriften, spel, muziek',
 	'wikihiero-category-Z' => 'Z: Lijnen, geometrische figuren, etc.',
-	'wikihiero-category-Aa' => 'Aa: Niet geclassificeerd',
+	'wikihiero-category-Aa' => 'Aa: Niet ingedeeld',
 );
 
 /** Norwegian Nynorsk (norsk nynorsk)
