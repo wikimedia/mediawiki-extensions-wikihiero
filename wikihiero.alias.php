@@ -69,6 +69,11 @@ $specialPageAliases['eo'] = array(
 	'Hieroglyphs' => array( 'Hieroglifoj' ),
 );
 
+/** Spanish (español) */
+$specialPageAliases['es'] = array(
+	'Hieroglyphs' => array( 'Geroglíficos' ),
+);
+
 /** Estonian (eesti) */
 $specialPageAliases['et'] = array(
 	'Hieroglyphs' => array( 'Hieroglüüfid' ),
