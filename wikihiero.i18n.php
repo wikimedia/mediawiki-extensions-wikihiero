@@ -1805,6 +1805,13 @@ $messages['km'] = array(
 	'wikihiero-desc' => 'ដាក់បន្ថែមប្លាក <code>&lt;hiero&gt;</code> ដើម្បីបង្ហាញអក្សររូបភាព',
 );
 
+/** Kannada (ಕನ್ನಡ)
+ * @author Dimension10
+ */
+$messages['kn'] = array(
+	'wikihiero-comment' => 'ಟಿಪ್ಪಣಿ',
+);
+
 /** Korean (한국어)
  * @author ToePeu
  * @author 아라
@@ -1945,9 +1952,10 @@ $messages['la'] = array(
 
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
+ * @author Soued031
  */
 $messages['lb'] = array(
-	'wikihiero-desc' => 'Setzt den Tag <code>&lt;hiero&gt;</code> derbäi fir [[Special:Hieroglyphs|Hieroglyphen]] unzeweisen',
+	'wikihiero-desc' => 'Setzt den Tag <code>&lt;hiero&gt;</code> dobäi fir [[Special:Hieroglyphs|Hieroglyphen]] unzeweisen',
 	'hieroglyphs' => 'Hieroglyphen-Markup testen',
 	'wikihiero-input' => 'Text aginn',
 	'wikihiero-result' => 'Resultat',
