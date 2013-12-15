@@ -1955,7 +1955,7 @@ $messages['la'] = array(
  * @author Soued031
  */
 $messages['lb'] = array(
-	'wikihiero-desc' => 'Setzt den Tag <code>&lt;hiero&gt;</code> dobäi fir [[Special:Hieroglyphs|Hieroglyphen]] unzeweisen',
+	'wikihiero-desc' => 'Setzt den Tag <code>&lt;hiero&gt;</code> derbäi fir [[Special:Hieroglyphs|Hieroglyphen]] unzeweisen',
 	'hieroglyphs' => 'Hieroglyphen-Markup testen',
 	'wikihiero-input' => 'Text aginn',
 	'wikihiero-result' => 'Resultat',
