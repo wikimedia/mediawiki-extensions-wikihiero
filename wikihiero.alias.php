@@ -94,6 +94,11 @@ $specialPageAliases['gsw'] = array(
 	'Hieroglyphs' => array( 'Hieroglyphe' ),
 );
 
+/** Hebrew (עברית) */
+$specialPageAliases['he'] = array(
+	'Hieroglyphs' => array( 'סימון_היירוגליפים' ),
+);
+
 /** Interlingua (interlingua) */
 $specialPageAliases['ia'] = array(
 	'Hieroglyphs' => array( 'Hieroglyphos' ),
