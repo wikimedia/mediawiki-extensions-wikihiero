@@ -3688,6 +3688,7 @@ $messages['yue'] = array(
 
 /** Simplified Chinese (中文（简体）‎)
  * @author Anakmalaysia
+ * @author Liuxinyu970226
  * @author Shinjiman
  * @author Shirayuki
  * @author Xiaomingyan
@@ -3695,8 +3696,7 @@ $messages['yue'] = array(
 $messages['zh-hans'] = array(
 	'wikihiero-desc' => '添加“<code>&lt;hiero&gt;</code>”标签以显示[[Special:Hieroglyphs|象形文字]]',
 	'hieroglyphs' => '试验象形符号标记',
-	'wikihiero-special-page-text' => '使用此页可以试试 WikiHiero 标记。
-对于标记说明，请参阅[//en.wikipedia.org/wiki/Help:WikiHiero_syntax 此处]。', # Fuzzy
+	'wikihiero-special-page-text' => '使用此页可以试验维基象形文字标记。对于标记说明，请参阅[//zh.wikipedia.org/wiki/Help:WikiHiero語法教學 此处]。',
 	'wikihiero-input' => '输入文本',
 	'wikihiero-result' => '结果',
 	'wikihiero-submit' => '提交',
