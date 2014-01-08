@@ -166,8 +166,8 @@ $messages['as'] = array(
 $messages['ast'] = array(
 	'wikihiero-desc' => "Amiesta la etiqueta <code>&lt;hiero&gt;</code> p'amosar [[Special:Hieroglyphs|xeroglíficos]]",
 	'hieroglyphs' => "Prueba'l formatu xeroglíficu",
-	'wikihiero-special-page-text' => 'Use esta páxina pa probar el formatu WikiHiero.
-Llea [//en.wikipedia.org/wiki/Help:WikiHiero_syntax equí] la descripción del formatu.', # Fuzzy
+	'wikihiero-special-page-text' => 'Use esta páxina pa probar el marcáu WikiHiero.
+Llea [//en.wikipedia.org/wiki/Help:WikiHiero_syntax equí] la descripción del marcáu.',
 	'wikihiero-input' => "Testu d'entrada",
 	'wikihiero-result' => 'Resultáu',
 	'wikihiero-submit' => 'Unviar',
