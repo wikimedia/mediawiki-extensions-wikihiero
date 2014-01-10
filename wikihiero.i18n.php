@@ -489,6 +489,7 @@ $messages['ce'] = array(
 	'hieroglyphs' => 'Иероглифин билгалоне хьажар',
 	'wikihiero-special-page-text' => 'Лела йаь хӀара агӀо, WikiHiero билгалонаш хьожуш. 
 Билгалонах лаьцна хьажа [//ru.wikipedia.org/wiki/Википедия:Древнеегипетские_иероглифы кхузахь].',
+	'wikihiero-input' => 'Чудолу йоза:',
 	'wikihiero-submit' => 'Хьажа',
 	'wikihiero-th-code' => 'ДӀадолалун йоза',
 	'wikihiero-th-meaning' => 'МаьӀна',
