@@ -1849,14 +1849,15 @@ $messages['kn'] = array(
 );
 
 /** Korean (한국어)
+ * @author Priviet
  * @author ToePeu
  * @author 아라
  */
 $messages['ko'] = array(
 	'wikihiero-desc' => '[[Special:Hieroglyphs|상형 문자]] 표현을 위해 <code>&lt;hiero&gt;</code> 태그를 추가합니다',
 	'hieroglyphs' => '상형 문자 마크업 시도',
-	'wikihiero-special-page-text' => '위키상형 마크업을 시도하기 위해 이 페이지를 사용합니다.
-마크업 설명에 대해서는 [http://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:%EC%9C%84%ED%82%A4%EC%83%81%ED%98%95_%EB%AC%B8%EB%B2%95 여기]를 참고하세요.', # Fuzzy
+	'wikihiero-special-page-text' => '위키상형 마크업을 시도하기 위해 이 문서를 사용해 주세요.
+마크업 설명에 대해서는 [//en.wikipedia.org/wiki/Help:WikiHiero_syntax here]를 참고하세요.',
 	'wikihiero-input' => '입력한 텍스트',
 	'wikihiero-result' => '결과',
 	'wikihiero-submit' => '제출',
