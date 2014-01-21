@@ -486,6 +486,7 @@ Vegeu [//en.wikipedia.org/wiki/Help:WikiHiero_syntax aquí] la descripció de la
  * @author Умар
  */
 $messages['ce'] = array(
+	'wikihiero-desc' => 'ТӀетуху тег <code>&lt;hiero&gt;</code> [[Special:Hieroglyphs|иероглифаш]] гайта',
 	'hieroglyphs' => 'Иероглифин билгалоне хьажар',
 	'wikihiero-special-page-text' => 'Лела йаь хӀара агӀо, WikiHiero билгалонаш хьожуш. 
 Билгалонах лаьцна хьажа [//ru.wikipedia.org/wiki/Википедия:Древнеегипетские_иероглифы кхузахь].',
