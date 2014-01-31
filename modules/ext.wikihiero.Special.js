@@ -28,11 +28,13 @@ $submit.click( function( e ) {
 	$.post( mw.util.wikiScript( 'api' ),
 		data,
 		function( data ) {
-			var html = '<table class="wikitable">'
-				+ '<tr><th>' + mw.msg( 'wikihiero-input' ) + '</th><th>' 
-				+ mw.msg( 'wikihiero-result' ) + '</th></tr>'
-				+ '<tr><td><code>&lt;hiero&gt;' + mw.html.escape( text ).replace( '\n', '<br/>' ) + '&lt;/hiero&gt;</code></td>'
-				+ '<td>' + data.parse.text['*'] + '</td></tr></table>';
+			var html = '<table class="wikitable">' +
+				'<tr><th>' + mw.msg( 'wikihiero-input' ) + '</th><th>' +
+				mw.msg( 'wikihiero-result' ) + '</th></tr>' +
+				'<tr><td><code>&lt;hiero&gt;' +
+				mw.html.escape( text ).replace( '\n', '<br/>' ) +
+				'&lt;/hiero&gt;</code></td>' +
+				'<td>' + data.parse.text['*'] + '</td></tr></table>';
 			$.removeSpinner( 'hiero' );
 			$result.html( html );
 			$result.show();
