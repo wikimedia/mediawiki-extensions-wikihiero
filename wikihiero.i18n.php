@@ -964,6 +964,7 @@ $messages['eu'] = array(
 );
 
 /** Persian (فارسی)
+ * @author Armin1392
  * @author Ebraminio
  * @author Huji
  * @author Mjbmr
@@ -985,6 +986,7 @@ $messages['fa'] = array(
 	'wikihiero-separator' => 'جداکننده',
 	'wikihiero-eol' => 'پایان خط',
 	'wikihiero-superposition' => 'زیربخش',
+	'wikihiero-juxtaposition' => 'الحاق',
 	'wikihiero-comment' => 'نظر',
 	'wikihiero-load-error' => 'خطای بارگیری!',
 	'wikihiero-category-A' => 'A: مرد و مشاغل آن',
