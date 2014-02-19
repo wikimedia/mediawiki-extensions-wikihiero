@@ -19,6 +19,11 @@ $specialPageAliases['ar'] = array(
 	'Hieroglyphs' => array( 'هيروغليفي' ),
 );
 
+/** Egyptian Spoken Arabic (مصرى) */
+$specialPageAliases['arz'] = array(
+	'Hieroglyphs' => array( 'هيروغليفى' ),
+);
+
 /** Asturian (asturianu) */
 $specialPageAliases['ast'] = array(
 	'Hieroglyphs' => array( 'Xeroglíficos' ),
