@@ -987,6 +987,7 @@ $messages['fa'] = array(
 	'wikihiero-eol' => 'پایان خط',
 	'wikihiero-superposition' => 'زیربخش',
 	'wikihiero-juxtaposition' => 'الحاق',
+	'wikihiero-mirror' => 'آینه هیروگلیف',
 	'wikihiero-comment' => 'نظر',
 	'wikihiero-load-error' => 'خطای بارگیری!',
 	'wikihiero-category-A' => 'A: مرد و مشاغل آن',
