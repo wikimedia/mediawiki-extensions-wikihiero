@@ -179,6 +179,11 @@ $specialPageAliases['se'] = array(
 	'Hieroglyphs' => array( 'Hieroglyfat' ),
 );
 
+/** Swedish (svenska) */
+$specialPageAliases['sv'] = array(
+	'Hieroglyphs' => array( 'Hieroglyfer' ),
+);
+
 /** Turkish (Türkçe) */
 $specialPageAliases['tr'] = array(
 	'Hieroglyphs' => array( 'Hiyeroglifler' ),
