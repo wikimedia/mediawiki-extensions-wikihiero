@@ -1411,7 +1411,7 @@ $messages['hsb'] = array(
 	'wikihiero-desc' => 'Přidawa tafličku <code>&lt;hiero&gt;</code> za zwobraznjenje [[Special:Hieroglyphs|hieroglyfow]]',
 	'hieroglyphs' => 'Hieroglyfowy markup testować',
 	'wikihiero-special-page-text' => 'Wužij tutu stronu, zo by WikiHiero-markup testował.
-Hlej [//en.wikipedia.org/wiki/Help:WikiHiero_syntax tu] za markup-wopisanje.', # Fuzzy
+Hlej [//de.wikipedia.org/wiki/Hilfe:Hieroglyphen Markup-Beschreibung tu] za wopisanje markup.',
 	'wikihiero-input' => 'Zapodawanski tekst',
 	'wikihiero-result' => 'Wuslědk',
 	'wikihiero-submit' => 'Wotesłać',
