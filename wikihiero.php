@@ -37,8 +37,9 @@ $wgExtensionCredits['parserhook'][] = array(
 	'license-name'   => 'GPLv2',
 );
 
-$dir = dirname( __FILE__ );
+$dir = __DIR__;
 
+$wgMessagesDirs['Wikihiero'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['Wikihiero'] = "$dir/wikihiero.i18n.php";
 $wgExtensionMessagesFiles['HieroglyphsAlias'] = "$dir/wikihiero.alias.php";
 

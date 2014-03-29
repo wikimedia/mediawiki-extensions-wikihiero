@@ -1,0 +1,40 @@
+{
+    "@metadata": {
+        "authors": [
+            "Robby",
+            "Soued031"
+        ]
+    },
+    "wikihiero-desc": "Setzt den Tag <code>&lt;hiero&gt;</code> derbäi fir [[Special:Hieroglyphs|Hieroglyphen]] unzeweisen",
+    "hieroglyphs": "Hieroglyphen-Markup testen",
+    "wikihiero-input": "Text aginn",
+    "wikihiero-result": "Resultat",
+    "wikihiero-syntax": "Syntax",
+    "wikihiero-th-code": "Code",
+    "wikihiero-th-meaning": "Bedeitung",
+    "wikihiero-th-example": "Beispill vum Code",
+    "wikihiero-th-result": "Resultat",
+    "wikihiero-superposition": "Ënnerdeelung",
+    "wikihiero-juxtaposition": "Géintiwwerstellung",
+    "wikihiero-mirror": "Eng Hieroglyph spigelen (mirror)",
+    "wikihiero-comment": "Bemierkung",
+    "wikihiero-load-error": "Feeler beim Lueden!",
+    "wikihiero-category-A": "A: Männer an hir Beschäftegungen",
+    "wikihiero-category-B": "B: Fraen an hir Beschäftegungen",
+    "wikihiero-category-D": "D: Deeler vum mënschleche Kierper",
+    "wikihiero-category-E": "E: Mamendéieren",
+    "wikihiero-category-F": "F: Deeler vu Mamendéieren",
+    "wikihiero-category-G": "G: Vigel",
+    "wikihiero-category-H": "H: Deeler vu Vigel",
+    "wikihiero-category-I": "I: Amphibien, Reptilien, asw.",
+    "wikihiero-category-K": "K: Fësch an Deeler vu Fësch",
+    "wikihiero-category-M": "M: Beem a Planzen",
+    "wikihiero-category-N": "N: Himmel, Äerd, Waasser",
+    "wikihiero-category-O": "O: Gebaier, Deeler vu Gebaier, asw.",
+    "wikihiero-category-P": "P: Schëffer an Deeler vu Schëffer",
+    "wikihiero-category-U": "U: Landwirtschaft, Handwierk a Berufer",
+    "wikihiero-category-V": "V: Seel, Faser, Kierf, Pochen, asw.",
+    "wikihiero-category-W": "W: Objeten aus Toun a Keramik",
+    "wikihiero-category-Y": "Y: Schrëften, Spiller, Musek",
+    "wikihiero-category-Aa": "Aa: Net klassifizéiert"
+}

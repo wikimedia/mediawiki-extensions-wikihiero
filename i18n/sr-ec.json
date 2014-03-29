@@ -1,0 +1,27 @@
+{
+    "@metadata": {
+        "authors": [
+            "Millosh",
+            "Rancher"
+        ]
+    },
+    "wikihiero-desc": "Додаје <code>&lt;hiero&gt;</code> ознаку за приказ [[Special:Hieroglyphs|хијероглифа]].",
+    "wikihiero-syntax": "Синтакса",
+    "wikihiero-separator": "Раздвајач",
+    "wikihiero-eol": "Крај реда",
+    "wikihiero-superposition": "Усправно груписање",
+    "wikihiero-juxtaposition": "Водоравно груписање",
+    "wikihiero-category-A": "A: Мушкарац и његове активности",
+    "wikihiero-category-B": "B: Жена и њене активности",
+    "wikihiero-category-C": "C: Човеколика божанства",
+    "wikihiero-category-D": "D: Делови људског тела",
+    "wikihiero-category-E": "E: Сисари",
+    "wikihiero-category-F": "F: Делови сисара",
+    "wikihiero-category-G": "G: Птице",
+    "wikihiero-category-H": "H: Делови птица",
+    "wikihiero-category-I": "I: Водоземци, гмизавци итд.",
+    "wikihiero-category-K": "K: Рибе и делови риба",
+    "wikihiero-category-L": "L: Бескичмењаци и ситне животиње",
+    "wikihiero-category-Z": "Z: Линије, геометријске фигуре итд.",
+    "wikihiero-category-Aa": "Aa: Некласификовано"
+}

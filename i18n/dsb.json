@@ -1,0 +1,33 @@
+{
+    "@metadata": {
+        "authors": [
+            "Michawiki"
+        ]
+    },
+    "wikihiero-desc": "Pśidawa toflicku <code>&lt;hiero&gt;</code> za zwobraznjenje [[Special:Hieroglyphs|hieroglyfow]]",
+    "wikihiero-input": "Zapódany tekst",
+    "wikihiero-result": "Wuslědk",
+    "wikihiero-submit": "Wótpósłaś",
+    "wikihiero-syntax": "Syntaksa",
+    "wikihiero-th-code": "Kod",
+    "wikihiero-th-meaning": "Wóznam",
+    "wikihiero-th-example": "Pśikładowy kod",
+    "wikihiero-th-result": "Wuslědk",
+    "wikihiero-separator": "Źěleńske znamuško",
+    "wikihiero-eol": "Kóńc smužki",
+    "wikihiero-comment": "Komentar",
+    "wikihiero-load-error": "Zacytowańska zmólka!",
+    "wikihiero-category-A": "A: Muske a jich źěłabnosći",
+    "wikihiero-category-B": "B: Žeńske a  jich źěłabnosći",
+    "wikihiero-category-E": "E: Cycarje",
+    "wikihiero-category-F": "F: Źěle cycarjow",
+    "wikihiero-category-G": "G: Ptaški",
+    "wikihiero-category-H": "H: Źěle ptaškow",
+    "wikihiero-category-K": "K: Ryby a źěle rybow",
+    "wikihiero-category-M": "M: Bomy a rostliny",
+    "wikihiero-category-N": "N: Njebjo, zemja, wóda",
+    "wikihiero-category-O": "O: Twarjenja, źěle twarjenjow atd.",
+    "wikihiero-category-P": "P: Łoźi a źěle łoźow",
+    "wikihiero-category-Y": "Y: Pisma, graśa, muzika",
+    "wikihiero-category-Aa": "Aa: Njeklasificěrowany"
+}

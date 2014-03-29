@@ -1,0 +1,23 @@
+{
+    "@metadata": {
+        "authors": []
+    },
+    "wikihiero-syntax": "Syntaxis",
+    "wikihiero-separator": "Separator",
+    "wikihiero-eol": "Finis versus",
+    "wikihiero-superposition": "Subdivisio",
+    "wikihiero-juxtaposition": "Iuxtapositio",
+    "wikihiero-category-A": "A: Vir et negotia sua",
+    "wikihiero-category-B": "B: Femina et negotia sua",
+    "wikihiero-category-C": "C: Numina humanus aspectus",
+    "wikihiero-category-D": "D: Membra corporis humanus",
+    "wikihiero-category-E": "E: Mammalia",
+    "wikihiero-category-F": "F: Membra mammalium",
+    "wikihiero-category-G": "G: Aves",
+    "wikihiero-category-H": "H: Membra avium",
+    "wikihiero-category-I": "I: Amphibia, reptilia, etc.",
+    "wikihiero-category-K": "K: Pisces et membra piscium",
+    "wikihiero-category-L": "L: Invertebrata et animala parvula",
+    "wikihiero-category-Z": "Z: Liniae, figurae geometricae, etc.",
+    "wikihiero-category-Aa": "Aa: In classes non distributum"
+}

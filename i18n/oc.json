@@ -1,0 +1,9 @@
+{
+    "@metadata": {
+        "authors": [
+            "Cedric31"
+        ]
+    },
+    "wikihiero-desc": "Apond la balisa <code>&lt;hiero&gt;</code> per afichar los [[Special:Hieroglyphs|ieroglifes]]",
+    "hieroglyphs": "Ensajar un balisatge per ieroglifes"
+}
