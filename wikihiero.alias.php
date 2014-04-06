@@ -76,7 +76,7 @@ $specialPageAliases['eo'] = array(
 
 /** Spanish (español) */
 $specialPageAliases['es'] = array(
-	'Hieroglyphs' => array( 'Geroglíficos' ),
+	'Hieroglyphs' => array( 'Jeroglíficos' ),
 );
 
 /** Estonian (eesti) */

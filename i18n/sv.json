@@ -24,6 +24,8 @@
     "wikihiero-superposition": "Underavdelning",
     "wikihiero-juxtaposition": "Juxaposition (stående förbindelse)",
     "wikihiero-mirror": "Spegelvänd en hieroglyf",
+    "wikihiero-void": "Tomt block i full bredd",
+    "wikihiero-half-void": "Tomt block i halv bredd",
     "wikihiero-comment": "Kommentar",
     "wikihiero-load-error": "Inläsningsfel!",
     "wikihiero-category-A": "A: Mannen och hans sysslor",
