@@ -1,25 +1,25 @@
 {
-    "@metadata": {
-        "authors": [
-            "IvanLanin",
-            "Iwan Novirion",
-            "පසිඳු කාවින්ද"
-        ]
-    },
-    "wikihiero-desc": "Menambahkan tag <code>&lt;hiero&gt;</code> untuk menampilkan [[Special:Hieroglyphs|hieroglyph]]",
-    "hieroglyphs": "Coba teks hiroglif",
-    "wikihiero-submit": "Kirim",
-    "wikihiero-category-A": "A: Laki-laki dan pekerjaannya",
-    "wikihiero-category-B": "B: Le femina e su occupationes",
-    "wikihiero-category-C": "C: Dewa antropomorfik",
-    "wikihiero-category-D": "D: Partes del corpore human",
-    "wikihiero-category-E": "E: Mammiferos",
-    "wikihiero-category-F": "F: Partes de mammiferos",
-    "wikihiero-category-G": "G: Aves",
-    "wikihiero-category-H": "H: Partes de aves",
-    "wikihiero-category-I": "I: Amphibios, reptiles, etc.",
-    "wikihiero-category-K": "K: Pisces e partes de pisces",
-    "wikihiero-category-L": "L: Invertebratos",
-    "wikihiero-category-Z": "Z: Tractos e formas geometric",
-    "wikihiero-category-Aa": "Aa: Signos non classificate"
+	"@metadata": {
+		"authors": [
+			"IvanLanin",
+			"Iwan Novirion",
+			"පසිඳු කාවින්ද"
+		]
+	},
+	"wikihiero-desc": "Menambahkan tag <code>&lt;hiero&gt;</code> untuk menampilkan [[Special:Hieroglyphs|hieroglyph]]",
+	"hieroglyphs": "Coba teks hiroglif",
+	"wikihiero-submit": "Kirim",
+	"wikihiero-category-A": "A: Laki-laki dan pekerjaannya",
+	"wikihiero-category-B": "B: Le femina e su occupationes",
+	"wikihiero-category-C": "C: Dewa antropomorfik",
+	"wikihiero-category-D": "D: Partes del corpore human",
+	"wikihiero-category-E": "E: Mammiferos",
+	"wikihiero-category-F": "F: Partes de mammiferos",
+	"wikihiero-category-G": "G: Aves",
+	"wikihiero-category-H": "H: Partes de aves",
+	"wikihiero-category-I": "I: Amphibios, reptiles, etc.",
+	"wikihiero-category-K": "K: Pisces e partes de pisces",
+	"wikihiero-category-L": "L: Invertebratos",
+	"wikihiero-category-Z": "Z: Tractos e formas geometric",
+	"wikihiero-category-Aa": "Aa: Signos non classificate"
 }

@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Cekli829",
-            "Sortilegus"
-        ]
-    },
-    "wikihiero-desc": "[[Special:Hieroglyphs|Heroqlifləri]] göstərmək üçün <code>&lt;hiero&gt;</code> teqini əlavə edir",
-    "wikihiero-comment": "Şərh",
-    "wikihiero-category-G": "G: Quşlar"
+	"@metadata": {
+		"authors": [
+			"Cekli829",
+			"Sortilegus"
+		]
+	},
+	"wikihiero-desc": "[[Special:Hieroglyphs|Heroqlifləri]] göstərmək üçün <code>&lt;hiero&gt;</code> teqini əlavə edir",
+	"wikihiero-comment": "Şərh",
+	"wikihiero-category-G": "G: Quşlar"
 }

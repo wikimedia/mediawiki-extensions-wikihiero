@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Papuass"
-        ]
-    },
-    "wikihiero-comment": "Komentārs",
-    "wikihiero-load-error": "Ielādes kļūda!"
+	"@metadata": {
+		"authors": [
+			"Papuass"
+		]
+	},
+	"wikihiero-comment": "Komentārs",
+	"wikihiero-load-error": "Ielādes kļūda!"
 }

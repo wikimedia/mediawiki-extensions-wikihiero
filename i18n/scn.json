@@ -1,14 +1,14 @@
 {
-    "@metadata": {
-        "authors": [
-            "Aushulz",
-            "Santu"
-        ]
-    },
-    "wikihiero-desc": "Juncìricci lu tag <code>&lt;hiero&gt;</code> pi la visualizzazzioni di li [[Special:Hieroglyphs|giruglìfici]]",
-    "wikihiero-category-G": "G: Aceddi",
-    "wikihiero-category-H": "H: Parti d'aceddi",
-    "wikihiero-category-K": "K: Pisci e parti di pisci",
-    "wikihiero-category-M": "M: Arvuli e rasti",
-    "wikihiero-category-N": "N: Celu, terra, aqua"
+	"@metadata": {
+		"authors": [
+			"Aushulz",
+			"Santu"
+		]
+	},
+	"wikihiero-desc": "Juncìricci lu tag <code>&lt;hiero&gt;</code> pi la visualizzazzioni di li [[Special:Hieroglyphs|giruglìfici]]",
+	"wikihiero-category-G": "G: Aceddi",
+	"wikihiero-category-H": "H: Parti d'aceddi",
+	"wikihiero-category-K": "K: Pisci e parti di pisci",
+	"wikihiero-category-M": "M: Arvuli e rasti",
+	"wikihiero-category-N": "N: Celu, terra, aqua"
 }

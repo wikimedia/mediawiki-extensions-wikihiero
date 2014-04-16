@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "CERminator"
-        ]
-    },
-    "wikihiero-desc": "Dodaje <code>&lt;hiero&gt;</code> tag za prikazivanje [[Special:Hieroglyphs|hieroglifa]]"
+	"@metadata": {
+		"authors": [
+			"CERminator"
+		]
+	},
+	"wikihiero-desc": "Dodaje <code>&lt;hiero&gt;</code> tag za prikazivanje [[Special:Hieroglyphs|hieroglifa]]"
 }

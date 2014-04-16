@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Man77"
-        ]
-    },
-    "wikihiero-desc": "Fügt s'<code>&lt;hiero&gt;</code>-Tag zum Formatian vu [[Special:Hieroglyphs|Hieroglyphn]] dazua"
+	"@metadata": {
+		"authors": [
+			"Man77"
+		]
+	},
+	"wikihiero-desc": "Fügt s'<code>&lt;hiero&gt;</code>-Tag zum Formatian vu [[Special:Hieroglyphs|Hieroglyphn]] dazua"
 }

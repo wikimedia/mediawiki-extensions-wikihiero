@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Passawuth"
-        ]
-    },
-    "wikihiero-desc": "เพิ่มแท็ก <code>&lt;hiero&gt;</code> เพื่อแสดงอักษรเฮียโรกลิฟิกส์"
+	"@metadata": {
+		"authors": [
+			"Passawuth"
+		]
+	},
+	"wikihiero-desc": "เพิ่มแท็ก <code>&lt;hiero&gt;</code> เพื่อแสดงอักษรเฮียโรกลิฟิกส์"
 }

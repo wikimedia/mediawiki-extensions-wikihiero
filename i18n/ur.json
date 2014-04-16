@@ -1,16 +1,16 @@
 {
-    "@metadata": {
-        "authors": [
-            "පසිඳු කාවින්ද"
-        ]
-    },
-    "wikihiero-input": "ان پٹ ٹیکسٹ",
-    "wikihiero-result": "نتیجہ",
-    "wikihiero-submit": "جمع کرائیں",
-    "wikihiero-syntax": "نحو",
-    "wikihiero-th-code": "کوڈ",
-    "wikihiero-th-meaning": "فرمان",
-    "wikihiero-th-example": "مثال کے طور پر کوڈ",
-    "wikihiero-th-result": "نتیجہ",
-    "wikihiero-separator": "علیحدہ"
+	"@metadata": {
+		"authors": [
+			"පසිඳු කාවින්ද"
+		]
+	},
+	"wikihiero-input": "ان پٹ ٹیکسٹ",
+	"wikihiero-result": "نتیجہ",
+	"wikihiero-submit": "جمع کرائیں",
+	"wikihiero-syntax": "نحو",
+	"wikihiero-th-code": "کوڈ",
+	"wikihiero-th-meaning": "فرمان",
+	"wikihiero-th-example": "مثال کے طور پر کوڈ",
+	"wikihiero-th-result": "نتیجہ",
+	"wikihiero-separator": "علیحدہ"
 }

@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Mdupont"
-        ]
-    },
-    "wikihiero-desc": "Adds <code><hiero></code> tag për të shfaqur [[Special:Hieroglyphs|hieroglifet]]"
+	"@metadata": {
+		"authors": [
+			"Mdupont"
+		]
+	},
+	"wikihiero-desc": "Adds <code><hiero></code> tag për të shfaqur [[Special:Hieroglyphs|hieroglifet]]"
 }
