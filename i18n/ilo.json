@@ -4,8 +4,8 @@
 			"Lam-ang"
 		]
 	},
-	"wikihiero-desc": "Agnayon ti etiketa ti <code>&lt;hiero&gt;</code> tapno maiparang dagiti [[Special:Hieroglyphs|hiroglipiko]]",
-	"hieroglyphs": "Padasen ti panagmarka ti hiroglipiko",
+	"wikihiero-desc": "Agnayon ti etiketa ti <code>&lt;hiero&gt;</code> tapno maiparang dagiti [[Special:Hieroglyphs|heroglipiko]]",
+	"hieroglyphs": "Padasen ti panagmarka ti heroglipiko",
 	"wikihiero-special-page-text": "Usaren daytoy a panid tapno makapadas ti panagmarka iti WikiHiero.\nKitaen ti [//en.wikipedia.org/wiki/Help:WikiHiero_syntax ditoy] para iti deskripsion ti panagmarka.",
 	"wikihiero-input": "Maikabil a testo",
 	"wikihiero-result": "Resulta",
@@ -15,11 +15,11 @@
 	"wikihiero-th-meaning": "Kaibuksilan",
 	"wikihiero-th-example": "Kas pagarigan a kodigo",
 	"wikihiero-th-result": "Resulta",
-	"wikihiero-separator": "Panangilasain",
+	"wikihiero-separator": "Panangilasin",
 	"wikihiero-eol": "Patingga ti linia",
 	"wikihiero-superposition": "Subdibision",
 	"wikihiero-juxtaposition": "Pannakaitapil",
-	"wikihiero-mirror": "Tuladen ti hiroglipiko",
+	"wikihiero-mirror": "Tuladen ti heroglipiko",
 	"wikihiero-void": "Lapped a baetan ti napno a kaakaba",
 	"wikihiero-half-void": "Lapped a baetan ti gudua a kaakaba",
 	"wikihiero-comment": "Komentario",
@@ -47,7 +47,7 @@
 	"wikihiero-category-V": "V: tali, sagut, basbasket, baybay-on, kdpy.",
 	"wikihiero-category-W": "W: Basbasiha ti bato ken dinamdamili",
 	"wikihiero-category-X": "X: Dagiti tukel ti tinapay ken dagiti sinam-it",
-	"wikihiero-category-Y": "Y: Sinursurat, ay-ayam, musicka",
+	"wikihiero-category-Y": "Y: Sinursurat, ay-ayam, musika",
 	"wikihiero-category-Z": "Z: Kurkur-it, dagiti heometrikal a pigura, kdpy.",
 	"wikihiero-category-Aa": "Aa: Di naikeddeng"
 }
