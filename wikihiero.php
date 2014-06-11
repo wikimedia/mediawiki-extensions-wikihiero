@@ -51,24 +51,47 @@ $wgParserTestFiles[] = "$dir/tests.txt";
 $wgSpecialPages['Hieroglyphs'] = 'SpecialHieroglyphs';
 $wgSpecialPageGroups['Hieroglyphs'] = 'wiki';
 
+$moduleTemplate = array(
+    'localBasePath' => __DIR__ . '/modules',
+    'remoteExtPath' => 'wikihiero/modules',
+);
+
 $wgResourceModules['ext.wikihiero'] = array(
 	'styles' => 'ext.wikihiero.css',
-	'localBasePath' => "$dir/modules",
-	'remoteExtPath' => 'wikihiero/modules',
-);
+) + $moduleTemplate;
 
 $wgResourceModules['ext.wikihiero.Special'] = array(
 	'scripts' => 'ext.wikihiero.Special.js',
 	'styles' => 'ext.wikihiero.Special.css',
-	'localBasePath' => dirname( __FILE__ ) . '/modules',
-	'remoteExtPath' => 'wikihiero/modules',
 	'dependencies' => array( 'jquery.spinner' ),
 	'messages' => array(
 		'wikihiero-input',
 		'wikihiero-result',
 		'wikihiero-load-error',
 	),
-);
+) + $moduleTemplate;
+
+$wgResourceModules['ext.wikihiero.visualEditor'] = array(
+	'scripts' => array(
+		'VisualEditor/ve.dm.MWHieroNode.js',
+		'VisualEditor/ve.ce.MWHieroNode.js',
+		'VisualEditor/ve.ui.MWHieroInspector.js',
+		'VisualEditor/ve.ui.MWHieroInspectorTool.js',
+	),
+	'styles' => array(
+		'VisualEditor/ve.ce.MWHieroNode.css',
+		'VisualEditor/ve.ui.MWHieroIcons.css',
+	),
+	'dependencies' => array(
+		'ext.visualEditor.mwcore',
+	),
+	'messages' => array(
+		'wikihiero-visualeditor-mwhieroinspector-title',
+	),
+	'targets' => array( 'desktop', 'mobile' ),
+) + $moduleTemplate;
+
+$wgVisualEditorPluginModules[] = 'ext.wikihiero.visualEditor';
 
 /**
  * Because <hiero> tag is used rarely, we don't need to load its body on every hook call,
