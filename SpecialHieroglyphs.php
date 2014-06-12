@@ -102,7 +102,7 @@ class SpecialHieroglyphs extends SpecialPage {
 		global $wgMemc;
 
 		$key = wfMemcKey( 'hiero-list',
-			$this->getContext()->getLang()->getExtraHashOptions(),
+			$this->getContext()->getLanguage()->getExtraHashOptions(),
 			WikiHiero::getImagePath(),
 			WIKIHIERO_VERSION
 		);
