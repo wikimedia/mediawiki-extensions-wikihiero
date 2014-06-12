@@ -4,7 +4,7 @@
 }
 
 .mw-hiero-outer {
-	display: inline;
+	display: inline-block;
 }
 
 .mw-hiero-table td {
