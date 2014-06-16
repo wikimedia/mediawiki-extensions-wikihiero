@@ -79,7 +79,6 @@ $wgResourceModules['ext.wikihiero.visualEditor'] = array(
 		'VisualEditor/ve.ui.MWHieroInspectorTool.js',
 	),
 	'styles' => array(
-		'VisualEditor/ve.ce.MWHieroNode.css',
 		'VisualEditor/ve.ui.MWHieroIcons.css',
 	),
 	'dependencies' => array(
