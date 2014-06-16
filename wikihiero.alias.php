@@ -104,6 +104,11 @@ $specialPageAliases['he'] = array(
 	'Hieroglyphs' => array( 'סימון_היירוגליפים' ),
 );
 
+/** Upper Sorbian (hornjoserbsce) */
+$specialPageAliases['hsb'] = array(
+	'Hieroglyphs' => array( 'Hieroglyfy' ),
+);
+
 /** Interlingua (interlingua) */
 $specialPageAliases['ia'] = array(
 	'Hieroglyphs' => array( 'Hieroglyphos' ),
