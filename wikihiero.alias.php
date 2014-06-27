@@ -169,6 +169,11 @@ $specialPageAliases['nn'] = array(
 	'Hieroglyphs' => array( 'Hieroglyfar' ),
 );
 
+/** Polish (polski) */
+$specialPageAliases['pl'] = array(
+	'Hieroglyphs' => array( 'Hiertoglify' ),
+);
+
 /** Russian (русский) */
 $specialPageAliases['ru'] = array(
 	'Hieroglyphs' => array( 'Иероглифы' ),
