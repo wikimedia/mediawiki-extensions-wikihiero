@@ -53,22 +53,16 @@ class WikiHiero {
 		if ( self::$phonemes ) {
 			return;
 		}
-		if ( MWInit::isHipHop() ) {
-			require_once( MWInit::extCompiledPath( 'wikihiero/data/tables.php' ) );
-			self::$phonemes = $wh_phonemes;
-			self::$prefabs = $wh_prefabs;
-			self::$files = $wh_files;
-		} else {
-			$fileName = dirname( __FILE__ ) . '/data/tables.ser';
-			$stream = file_get_contents( $fileName );
-			if ( !$stream ) {
-				throw new MWException( "Cannot open serialized hieroglyph data file $fileName!" );
-			}
-			$data = unserialize( $stream );
-			self::$phonemes = $data['wh_phonemes'];
-			self::$prefabs = $data['wh_prefabs'];
-			self::$files = $data['wh_files'];
+
+		$fileName = dirname( __FILE__ ) . '/data/tables.ser';
+		$stream = file_get_contents( $fileName );
+		if ( !$stream ) {
+			throw new MWException( "Cannot open serialized hieroglyph data file $fileName!" );
 		}
+		$data = unserialize( $stream );
+		self::$phonemes = $data['wh_phonemes'];
+		self::$prefabs = $data['wh_prefabs'];
+		self::$files = $data['wh_files'];
 	}
 
 	/**
