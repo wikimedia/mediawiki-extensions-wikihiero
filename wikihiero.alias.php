@@ -199,6 +199,11 @@ $specialPageAliases['tr'] = array(
 	'Hieroglyphs' => array( 'Hiyeroglifler' ),
 );
 
+/** Tuvinian (тыва дыл) */
+$specialPageAliases['tyv'] = array(
+	'Hieroglyphs' => array( 'Иероглифтер' ),
+);
+
 /** Ukrainian (українська) */
 $specialPageAliases['uk'] = array(
 	'Hieroglyphs' => array( 'Ієрогліфи' ),
