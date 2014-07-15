@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Dani",
-			"Dj"
+			"Dj",
+			"Csega"
 		]
 	},
 	"wikihiero-desc": "<code>&lt;hiero&gt;</code> tag [[Special:Hieroglyphs|hieroglifák]] megjelenítéséhez",
 	"hieroglyphs": "Próbálja ki a hieroglifák leírását!",
-	"wikihiero-special-page-text": "Ezen a lapon kipróbálhatja a hieroglifák megjelenítését.\nA részletes leírás [//en.wikipedia.org/wiki/Help:WikiHiero_syntax itt] található.",
+	"wikihiero-special-page-text": "Ezen a lapon kipróbálhatja a hieroglifák megjelenítését.\nA részletes leírás [$1 itt] található.",
 	"wikihiero-input": "Beírt szöveg",
 	"wikihiero-result": "Eredmény",
 	"wikihiero-syntax": "Szintaxis",

@@ -13,7 +13,7 @@
 	},
 	"wikihiero-desc": "Добавляет тег <code>&lt;hiero&gt;</code> для показа [[Special:Hieroglyphs|иероглифов]]",
 	"hieroglyphs": "Проверка иероглифической разметки",
-	"wikihiero-special-page-text": "Используйте эту страницу, чтобы опробовать разметку WikiHiero.\nСм. описание разметки [//ru.wikipedia.org/wiki/Википедия:Древнеегипетские_иероглифы здесь].",
+	"wikihiero-special-page-text": "Используйте эту страницу, чтобы опробовать разметку WikiHiero.\nСм. [$1 описание разметки], чтоб понять, как её использовать.",
 	"wikihiero-input": "Входной текст:",
 	"wikihiero-result": "Результат",
 	"wikihiero-submit": "Посмотреть",

@@ -4,12 +4,13 @@
 			"Hamilton Abreu",
 			"Malafaya",
 			"MetalBrasil",
-			"SandroHc"
+			"SandroHc",
+			"Vitorvicentevalente"
 		]
 	},
 	"wikihiero-desc": "Adiciona o elemento <code>&lt;hiero&gt;</code> para apresentar [[Special:Hieroglyphs|hieróglifos]]",
 	"hieroglyphs": "Tente marcação hieroglífica",
-	"wikihiero-special-page-text": "Use esta página para experimentar a marcação wikihiero. Veja [//en.wikipedia.org/wiki/Help:WikiHiero_syntax here] para descrição de marcação.",
+	"wikihiero-special-page-text": "Use esta página para experimentar a marcação WikiHiero. Veja [$1 a descrição de marcação] para saber como usar.",
 	"wikihiero-input": "Texto de entrada",
 	"wikihiero-result": "Resultado",
 	"wikihiero-syntax": "Sintaxe",

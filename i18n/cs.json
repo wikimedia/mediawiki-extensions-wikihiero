@@ -7,7 +7,7 @@
 	},
 	"wikihiero-desc": "Přidává značku <code>&lt;hiero&gt;</code> pro zobrazování [[Special:Hieroglyphs|hieroglyfů]]",
 	"hieroglyphs": "Vyzkoušet značení hieroglyfů",
-	"wikihiero-special-page-text": "Na této stránce si můžete vyzkoušet jazyk WikiHiero.\nPopis jazyka najdete v [//en.wikipedia.org/wiki/Help:WikiHiero_syntax nápovědě].",
+	"wikihiero-special-page-text": "Na této stránce si můžete vyzkoušet jazyk WikiHiero.\nNápovědu k použití najdete v [$1 popisu jazyka].",
 	"wikihiero-input": "Vstupní text",
 	"wikihiero-result": "Výsledek",
 	"wikihiero-submit": "Odeslat",

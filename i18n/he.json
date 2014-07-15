@@ -8,7 +8,7 @@
 	},
 	"wikihiero-desc": "הוספת תג <code>&lt;hiero&gt;</code> להצגת [[Special:Hieroglyphs|היירוגליפים]]",
 	"hieroglyphs": "לנסות סימון היירוגליפים",
-	"wikihiero-special-page-text": "בדף הזה אפשר לנסות את אפשרויות הסימון של ויקיהיירו.\nר׳ [//en.wikipedia.org/wiki/Help:WikiHiero_syntax כאן] לתיאור הסימון.",
+	"wikihiero-special-page-text": "בדף הזה אפשר לנסות את אפשרויות הסימון של ויקיהיירו.\nר׳ [$1 תיאור הסימון] להוראות השימוש.",
 	"wikihiero-input": "טקסט קלט",
 	"wikihiero-result": "תוצאה",
 	"wikihiero-submit": "שליחה",
