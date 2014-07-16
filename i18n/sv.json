@@ -10,7 +10,7 @@
 	},
 	"wikihiero-desc": "Lägger till taggen <code>&lt;hiero&gt;</code> för att visa [[Special:Hieroglyphs|hieroglyfer]]",
 	"hieroglyphs": "Prova hieroglyfkod",
-	"wikihiero-special-page-text": "Använd denna sida för att prova WikiHiero-koden.\n\nSe [//en.wikipedia.org/wiki/Help:WikiHiero_syntax här] för en beskrivning av koden.",
+	"wikihiero-special-page-text": "Använd denna sida för att prova WikiHiero-koden.\n\nSe [$1 kodbeskrivningen] om hur man använder den.",
 	"wikihiero-input": "Inmatningstext",
 	"wikihiero-result": "Resultat",
 	"wikihiero-submit": "Skicka",
