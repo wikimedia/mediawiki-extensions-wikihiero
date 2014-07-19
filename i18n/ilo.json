@@ -6,7 +6,7 @@
 	},
 	"wikihiero-desc": "Agnayon ti etiketa ti <code>&lt;hiero&gt;</code> tapno maiparang dagiti [[Special:Hieroglyphs|heroglipiko]]",
 	"hieroglyphs": "Padasen ti panagmarka ti heroglipiko",
-	"wikihiero-special-page-text": "Usaren daytoy a panid tapno makapadas ti panagmarka iti WikiHiero.\nKitaen ti [//en.wikipedia.org/wiki/Help:WikiHiero_syntax ditoy] para iti deskripsion ti panagmarka.",
+	"wikihiero-special-page-text": "Usaren daytoy a panid tapno makapadas ti panagmarka iti WikiHiero.\nKitaen [$1 ti deskripsion ti panagmarka] no kasno ti agusar.",
 	"wikihiero-input": "Maikabil a testo",
 	"wikihiero-result": "Resulta",
 	"wikihiero-submit": "Ited",
