@@ -4,12 +4,13 @@
 			"Armando-Martin",
 			"Imre",
 			"Remember the dot",
-			"Srtxg"
+			"Srtxg",
+			"Macofe"
 		]
 	},
 	"wikihiero-desc": "Añade elemento <code>&lt;hiero&gt;</code> para mostrar un [[Special:Hieroglyphs|jeroglífico]]",
 	"hieroglyphs": "Probar marcado de jeroglífico",
-	"wikihiero-special-page-text": "Utilice esta página para probar marcado WikiHiero.\nVea [//en.wikipedia.org/wiki/Help:WikiHiero_syntax esta página] para descripción de marcado.",
+	"wikihiero-special-page-text": "Usa esta página para probar el marcado WikiHiero.\nVéase [$1 la descripción del marcado] para saber cómo se usa.",
 	"wikihiero-input": "Texto a expandir",
 	"wikihiero-result": "Resultado",
 	"wikihiero-submit": "Enviar",
