@@ -6,7 +6,7 @@
 	},
 	"wikihiero-desc": "Lisab [[Special:Hieroglyphs|hieroglüüfide]] kuvamiseks <code>&lt;hiero&gt;</code>-sildi.",
 	"hieroglyphs": "Hieroglüüfide proovimine",
-	"wikihiero-special-page-text": "Kasuta seda lehekülge, et katsetada WikiHiero märke.\nMärkide kirjeldused leiad [//en.wikipedia.org/wiki/Help:WikiHiero_syntax siit].",
+	"wikihiero-special-page-text": "Kasuta seda lehekülge, et katsetada WikiHiero märke.\nKasutamise kohta loe [$1 märkide kirjeldusest].",
 	"wikihiero-input": "Sisendtekst",
 	"wikihiero-result": "Tulemus",
 	"wikihiero-submit": "Proovi",
