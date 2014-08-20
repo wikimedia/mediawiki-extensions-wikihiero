@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Siebrand"
+			"Siebrand",
+			"Sjoerddebruin"
 		]
 	},
 	"wikihiero-desc": "Voegt de tag <code>&lt;hiero&gt;</code> toe voor de weergave van [[Special:Hieroglyphs|hiërogliefen]]",
 	"hieroglyphs": "Hiërogliefopmaak uitproberen",
-	"wikihiero-special-page-text": "Gebruik deze pagina om de opmaak met WikiHiero uit te proberen.\nZie ook de [//en.wikipedia.org/wiki/Help:WikiHiero_syntax gebruiksaanwijzing] voor meer hulp over deze vorm van opmaak.",
+	"wikihiero-special-page-text": "Gebruik deze pagina om de opmaak met WikiHiero uit te proberen.\nZie ook de [$1 gebruiksaanwijzing] voor meer hulp over deze vorm van opmaak.",
 	"wikihiero-input": "Invoertekst",
 	"wikihiero-result": "Resultaat",
 	"wikihiero-submit": "Opslaan",
