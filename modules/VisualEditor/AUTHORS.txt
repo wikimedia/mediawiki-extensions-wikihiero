@@ -1,0 +1,6 @@
+Ed Sanders <esanders@wikimedia.org>
+James Forrester <jforrester@wikimedia.org>
+Moriel Schottlender <mschottlender@wikimedia.org>
+Roan Kattouw <roan@wikimedia.org>
+Timo Tijhof <timo@wikimedia.org>
+Trevor Parscal <trevor@wikimedia.org>
