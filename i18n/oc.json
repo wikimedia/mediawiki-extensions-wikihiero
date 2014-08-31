@@ -5,5 +5,6 @@
 		]
 	},
 	"wikihiero-desc": "Apond la balisa <code>&lt;hiero&gt;</code> per afichar los [[Special:Hieroglyphs|ieroglifes]]",
-	"hieroglyphs": "Ensajar un balisatge per ieroglifes"
+	"hieroglyphs": "Ensajar un balisatge per ieroglifes",
+	"wikihiero-visualeditor-mwhieroinspector-title": "Ieroglifes"
 }
