@@ -10,7 +10,8 @@
 	},
 	"wikihiero-desc": "[[Special:Hieroglyphs|ヒエログリフ]]を表示する <code>&lt;hiero&gt;</code> タグを追加する",
 	"hieroglyphs": "象形文字マークアップを試行",
-	"wikihiero-special-page-text": "WikiHiero マークアップをこのページでお試しください。\nマークアップについては[//ja.wikipedia.org/wiki/Help:WikiHieroの文法 こちら]を参照してください。",
+	"wikihiero-special-page-text": "WikiHiero マークアップをこのページでお試しください。\n使用法については[$1 マークアップの説明]を参照してください。",
+	"wikihiero-help-link": "//ja.wikipedia.org/wiki/Help:WikiHieroの文法",
 	"wikihiero-input": "入力テキスト",
 	"wikihiero-result": "結果",
 	"wikihiero-submit": "送信",
@@ -53,5 +54,6 @@
 	"wikihiero-category-X": "X: パンとケーキ",
 	"wikihiero-category-Y": "Y: 筆記、ゲーム、音楽",
 	"wikihiero-category-Z": "Z: 字画、ヒエラティック由来の記号、幾何学的図形",
-	"wikihiero-category-Aa": "Aa: 未分類"
+	"wikihiero-category-Aa": "Aa: 未分類",
+	"wikihiero-visualeditor-mwhieroinspector-title": "象形文字"
 }
