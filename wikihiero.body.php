@@ -91,20 +91,20 @@ class WikiHiero {
 			$imageClass = 'class="mw-mirrored" ';
 		}
 		$glyph = $this->extractCode( $glyph );
+
 		if ( $glyph == '..' ) { // Render void block
-			$width = self::MAX_HEIGHT;
-			return "<table class=\"mw-hiero-table\" style=\"width: {$width}px;\"><tr><td>&#160;</td></tr></table>";
+			return $this->renderVoidBlock( self::MAX_HEIGHT );
 		}
-		elseif ( $glyph == '.' ) { // Render half-width void block
-			$width = self::MAX_HEIGHT / 2;
-			return "<table class=\"mw-hiero-table\" style=\"width: {$width}px;\"><tr><td>&#160;</td></tr></table>";
+		if ( $glyph == '.' ) { // Render half-width void block
+			return $this->renderVoidBlock( self::MAX_HEIGHT / 2 );
 		}
-		elseif ( $glyph == '<' ) { // Render open cartouche
+
+		if ( $glyph == '<' ) { // Render open cartouche
 			$height = intval( self::MAX_HEIGHT * $this->scale / 100 );
 			$code = self::$phonemes[$glyph];
 			return "<img src='" . htmlspecialchars( self::getImagePath() . self::IMAGE_PREFIX . "{$code}." . self::IMAGE_EXT ) . "' height='{$height}' title='" . htmlspecialchars( $glyph ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
 		}
-		elseif ( $glyph == '>' ) { // Render close cartouche
+		if ( $glyph == '>' ) { // Render close cartouche
 			$height = intval( self::MAX_HEIGHT * $this->scale / 100 );
 			$code = self::$phonemes[$glyph];
 			return "<img src='" . htmlspecialchars( self::getImagePath() . self::IMAGE_PREFIX . "{$code}." . self::IMAGE_EXT ) . "' height='{$height}' title='" . htmlspecialchars( $glyph ) . "' alt='" . htmlspecialchars( $glyph ) . "' />";
@@ -122,6 +122,23 @@ class WikiHiero {
 		} else {
 			return htmlspecialchars( $glyph );
 		}
+	}
+
+	/**
+	 * Returns HTML for a void block
+	 * @param int $width
+	 * @return string
+	 */
+	private function renderVoidBlock( $width ) {
+		$width = intval( $width );
+		return Html::rawElement(
+			'table',
+			array(
+				'class' => 'mw-hiero-table',
+			    'style' => "width: {$width}px;",
+			),
+			'<tr><td>&#160;</td></tr>'
+		);
 	}
 
 	private function isMirrored( $glyph ) {
