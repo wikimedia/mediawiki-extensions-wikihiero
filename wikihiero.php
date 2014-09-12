@@ -45,6 +45,7 @@ $wgExtensionMessagesFiles['HieroglyphsAlias'] = "$dir/wikihiero.alias.php";
 
 $wgAutoloadClasses['WikiHiero'] = "$dir/wikihiero.body.php";
 $wgAutoloadClasses['SpecialHieroglyphs'] = "$dir/SpecialHieroglyphs.php";
+$wgAutoloadClasses['HieroTokenizer'] = "$dir/HieroTokenizer.php";
 
 $wgParserTestFiles[] = "$dir/tests.txt";
 
