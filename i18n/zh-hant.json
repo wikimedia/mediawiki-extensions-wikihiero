@@ -5,21 +5,23 @@
 			"Justincheng12345",
 			"Liuxinyu970226",
 			"Shinjiman",
-			"Simon Shek"
+			"Simon Shek",
+			"Cwlin0416"
 		]
 	},
 	"wikihiero-desc": "加入<code>&lt;hiero&gt;</code>標籤以顯示[[Special:Hieroglyphs|象形文字]]",
 	"hieroglyphs": "嘗試象形文字標記",
-	"wikihiero-special-page-text": "使用此頁以嘗試WikiHiero標記。對於標記說明，請參閱[//zh.wikipedia.org/wiki/Help:WikiHiero語法教學 此處]。",
+	"wikihiero-special-page-text": "使用此頁面來試用 WikiHiero 標籤。\n請參考 [$1 標籤描述] 以了解如何使用。",
+	"wikihiero-help-link": "//zh.wikipedia.org/wiki/Help:WikiHiero語法教學",
 	"wikihiero-input": "輸入文字",
 	"wikihiero-result": "結果",
-	"wikihiero-submit": "提交",
+	"wikihiero-submit": "送出",
 	"wikihiero-syntax": "語法",
 	"wikihiero-th-code": "代碼",
 	"wikihiero-th-meaning": "意思",
-	"wikihiero-th-example": "示例代碼",
+	"wikihiero-th-example": "範例代碼",
 	"wikihiero-th-result": "結果",
-	"wikihiero-separator": "分隔符",
+	"wikihiero-separator": "分隔符號",
 	"wikihiero-eol": "行尾",
 	"wikihiero-superposition": "細分",
 	"wikihiero-juxtaposition": "相拼",
@@ -27,7 +29,7 @@
 	"wikihiero-void": "半寬虛空塊",
 	"wikihiero-half-void": "全寬虛空塊",
 	"wikihiero-comment": "評論",
-	"wikihiero-load-error": "加載錯誤！",
+	"wikihiero-load-error": "讀取錯誤！",
 	"wikihiero-category-A": "A：男性與他的職業",
 	"wikihiero-category-B": "B：女性和她的職業",
 	"wikihiero-category-C": "C：擬人神仙",
@@ -53,5 +55,6 @@
 	"wikihiero-category-X": "X：麵包與蛋糕",
 	"wikihiero-category-Y": "Y：著作、遊戲、音樂",
 	"wikihiero-category-Z": "Z：筆劃、幾何圖形等",
-	"wikihiero-category-Aa": "Aa：未分類"
+	"wikihiero-category-Aa": "Aa：未分類",
+	"wikihiero-visualeditor-mwhieroinspector-title": "象形文字"
 }
