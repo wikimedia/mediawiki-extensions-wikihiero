@@ -89,6 +89,11 @@ $specialPageAliases['fa'] = array(
 	'Hieroglyphs' => array( 'هیروگلیف‌ها' ),
 );
 
+/** Finnish (suomi) */
+$specialPageAliases['fi'] = array(
+	'Hieroglyphs' => array( 'Hieroglyyfit' ),
+);
+
 /** Galician (galego) */
 $specialPageAliases['gl'] = array(
 	'Hieroglyphs' => array( 'Xeróglifos' ),
