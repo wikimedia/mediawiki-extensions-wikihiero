@@ -10,7 +10,7 @@
 		]
 	},
 	"wikihiero-desc": "加入<code>&lt;hiero&gt;</code>標籤以顯示[[Special:Hieroglyphs|象形文字]]",
-	"hieroglyphs": "嘗試象形文字標記",
+	"hieroglyphs": "試用象形文字標籤",
 	"wikihiero-special-page-text": "使用此頁面來試用 WikiHiero 標籤。\n請參考 [$1 標籤描述] 以了解如何使用。",
 	"wikihiero-help-link": "//zh.wikipedia.org/wiki/Help:WikiHiero語法教學",
 	"wikihiero-input": "輸入文字",
