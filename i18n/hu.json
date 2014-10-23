@@ -3,12 +3,13 @@
 		"authors": [
 			"Dani",
 			"Dj",
-			"Csega"
+			"Csega",
+			"Dorgan"
 		]
 	},
 	"wikihiero-desc": "<code>&lt;hiero&gt;</code> tag [[Special:Hieroglyphs|hieroglifák]] megjelenítéséhez",
-	"hieroglyphs": "Próbálja ki a hieroglifák leírását!",
-	"wikihiero-special-page-text": "Ezen a lapon kipróbálhatja a hieroglifák megjelenítését.\nA részletes leírás [$1 itt] található.",
+	"hieroglyphs": "Hieroglif jelölőnyelv",
+	"wikihiero-special-page-text": "Ezen a lapon kipróbálhatod a hieroglifák megjelenítését. Részletes leírás [$1 itt] található.",
 	"wikihiero-input": "Beírt szöveg",
 	"wikihiero-result": "Eredmény",
 	"wikihiero-syntax": "Szintaxis",
@@ -50,5 +51,6 @@
 	"wikihiero-category-X": "X: Cipók és sütemények",
 	"wikihiero-category-Y": "Y: Írás, játékok, zene",
 	"wikihiero-category-Z": "Z: Vonalak, geometriai alakzatok, stb.",
-	"wikihiero-category-Aa": "Aa: Kategorizálatlan"
+	"wikihiero-category-Aa": "Aa: Kategorizálatlan",
+	"wikihiero-visualeditor-mwhieroinspector-title": "Hieroglifák"
 }
