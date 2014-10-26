@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Mahitgar",
-			"Tusharawate"
+			"Tusharawate",
+			"संतोष दहिवळ"
 		]
 	},
 	"wikihiero-desc": "hieroग्लिफ दाखवण्याकरिता  <code>&lt;hiero&gt;</code> खूण जोडते",
@@ -10,5 +11,6 @@
 	"wikihiero-th-meaning": "अर्थ",
 	"wikihiero-th-example": "उदाहरण कोड",
 	"wikihiero-eol": "ओळीचा शेवट",
-	"wikihiero-superposition": "उपशाखा"
+	"wikihiero-superposition": "उपशाखा",
+	"wikihiero-visualeditor-mwhieroinspector-title": "चित्रलिपी"
 }
