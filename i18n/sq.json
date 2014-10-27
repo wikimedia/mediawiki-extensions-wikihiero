@@ -4,5 +4,6 @@
 			"Puntori"
 		]
 	},
-	"wikihiero-desc": "Vendosë kodin <code>&lt;hiero&gt;</code> për të shfaqur [[Special:Hieroglyphs|hieroglifë]]"
+	"wikihiero-desc": "Vendosë kodin <code>&lt;hiero&gt;</code> për të shfaqur [[Special:Hieroglyphs|hieroglifë]]",
+	"wikihiero-visualeditor-mwhieroinspector-title": "Hieroglife"
 }

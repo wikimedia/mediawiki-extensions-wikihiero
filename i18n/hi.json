@@ -16,5 +16,6 @@
 	"wikihiero-separator": "सेपारेटर",
 	"wikihiero-eol": "लाइन की अंत",
 	"wikihiero-comment": "टिप्पणी",
-	"wikihiero-load-error": "लोड त्रुटि!"
+	"wikihiero-load-error": "लोड त्रुटि!",
+	"wikihiero-visualeditor-mwhieroinspector-title": "चित्रलिपि"
 }

@@ -4,5 +4,6 @@
 			"CERminator"
 		]
 	},
-	"wikihiero-desc": "Dodaje <code>&lt;hiero&gt;</code> tag za prikazivanje [[Special:Hieroglyphs|hieroglifa]]"
+	"wikihiero-desc": "Dodaje <code>&lt;hiero&gt;</code> tag za prikazivanje [[Special:Hieroglyphs|hieroglifa]]",
+	"wikihiero-visualeditor-mwhieroinspector-title": "Hijeroglifi"
 }
