@@ -20,7 +20,6 @@ ve.ui.MWHieroInspectorTool.static.title =
 	OO.ui.deferMsg( 'wikihiero-visualeditor-mwhieroinspector-title' );
 ve.ui.MWHieroInspectorTool.static.modelClasses = [ ve.dm.MWHieroNode ];
 ve.ui.MWHieroInspectorTool.static.commandName = 'hiero';
-ve.ui.MWHieroInspectorTool.static.autoAddToGroup = false;
 
 ve.ui.toolFactory.register( ve.ui.MWHieroInspectorTool );
 ve.ui.commandRegistry.register(
