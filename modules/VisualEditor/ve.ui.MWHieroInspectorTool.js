@@ -23,5 +23,8 @@ ve.ui.MWHieroInspectorTool.static.commandName = 'hiero';
 
 ve.ui.toolFactory.register( ve.ui.MWHieroInspectorTool );
 ve.ui.commandRegistry.register(
-	new ve.ui.Command( 'hiero', 'window', 'open', 'hiero' )
+	new ve.ui.Command(
+		'hiero', 'window', 'open',
+		{ args: ['hiero'], supportedSelections: ['linear'] }
+	)
 );
