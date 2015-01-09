@@ -6,7 +6,7 @@
 	},
 	"wikihiero-desc": "Ause 'u tag <code>&lt;hiero&gt;</code> pe visualizzà 'a [[Special:Hieroglyphs|hieroglife]]",
 	"hieroglyphs": "Pruève 'u markup de geroglifece",
-	"wikihiero-special-page-text": "Ause sta pàgene pe pruvà 'u UicchiHiero markup.\nVide [//en.wikipedia.org/wiki/Help:WikiHiero_syntax aqquà] pe 'na descrizione d'u markup.",
+	"wikihiero-special-page-text": "Ause sta pàgene pe pruvà 'u UicchiHiero markup.\n'Ndruche [$1 'a descrizione d'u markup] pe accume se ause.",
 	"wikihiero-input": "Teste de input:",
 	"wikihiero-result": "Resultate",
 	"wikihiero-submit": "Conferme",
