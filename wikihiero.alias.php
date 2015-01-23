@@ -29,6 +29,11 @@ $specialPageAliases['ast'] = array(
 	'Hieroglyphs' => array( 'Xeroglíficos' ),
 );
 
+/** Avaric (авар) */
+$specialPageAliases['av'] = array(
+	'Hieroglyphs' => array( 'Иероглифы' ),
+);
+
 /** Bulgarian (български) */
 $specialPageAliases['bg'] = array(
 	'Hieroglyphs' => array( 'Йероглифи' ),
