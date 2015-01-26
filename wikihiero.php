@@ -34,7 +34,7 @@ $wgExtensionCredits['parserhook'][] = array(
 	'author'         => array( 'Guillaume Blanchard', 'Max Semenik' ),
 	'url'            => '//www.mediawiki.org/wiki/Extension:WikiHiero',
 	'descriptionmsg' => 'wikihiero-desc',
-	'license-name'   => 'GPLv2',
+	'license-name'   => 'GPL-2.0+',
 );
 
 $dir = __DIR__;
