@@ -60,7 +60,6 @@ class HieroTokenizer {
 		if ( $this->blocks !== false ) {
 			return $this->blocks;
 		}
-		$profileSection = new ProfileSection( __METHOD__ );
 
 		$this->blocks = array();
 		$this->currentBlock = array();

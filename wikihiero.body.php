@@ -49,7 +49,6 @@ class WikiHiero {
 		if ( self::$phonemes ) {
 			return;
 		}
-		$profileSection = new ProfileSection( __METHOD__ );
 
 		$fileName = dirname( __FILE__ ) . '/data/tables.ser';
 		$stream = file_get_contents( $fileName );
@@ -219,8 +218,6 @@ class WikiHiero {
 	 * @return string: converted code
 	*/
 	public function render( $hiero, $scale = self::DEFAULT_SCALE, $line = false ) {
-		$profileSection = new ProfileSection( __METHOD__ );
-
 		if ( $scale != self::DEFAULT_SCALE ) {
 			$this->setScale( $scale );
 		}
