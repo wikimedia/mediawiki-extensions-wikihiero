@@ -9,6 +9,7 @@
 	"wikihiero-desc": "[[Special:Hieroglyphs|상형 문자]] 표현을 위해 <code>&lt;hiero&gt;</code> 태그를 추가합니다",
 	"hieroglyphs": "상형 문자 마크업 시도",
 	"wikihiero-special-page-text": "위키상형 마크업을 시도하기 위해 이 문서를 사용해 주세요.\n마크업 설명에 대해서는 [//en.wikipedia.org/wiki/Help:WikiHiero_syntax here]를 참고하세요.",
+	"wikihiero-help-link": "//ko.wikipedia.org/wiki/위키백과:위키상형_문법",
 	"wikihiero-input": "입력한 텍스트",
 	"wikihiero-result": "결과",
 	"wikihiero-submit": "제출",
