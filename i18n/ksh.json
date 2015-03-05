@@ -4,10 +4,10 @@
 			"Purodha"
 		]
 	},
-	"wikihiero-desc": "Deiht dat <code>&lt;hiero&gt;</code> zum Parser dobei, womet mer [[Special:Hieroglyphs|Hirojlüüfe]] em Wiki bruche kann.",
-	"hieroglyphs": "Et Hirojlüüfe-Enjävve ußprobeere",
-	"wikihiero-special-page-text": "Op heh dä Sigg kanns De et Hirojlühfe-Enjävve ußprobehre.\nMer han och en Sigg met [$1 Hölp för et Hirojlühfe-Enjävve].",
-	"wikihiero-input": "Wat De üvverpröfe wells:",
+	"wikihiero-desc": "Deiht dat <code lang=\"en\" xml:lang=\"en\" dir=\"ltr\">&lt;hiero&gt;</code> zom Paaser dobei, womet mer [[Special:Hieroglyphs|Hirrojlühfe]] em Wiki bruche kann.",
+	"hieroglyphs": "Et Hirrojlühfe-Enjävve ußprobehre",
+	"wikihiero-special-page-text": "Op heh dä Sigg kanns De et Hirrojlühfe-Enjävve ußprobehre.\nMer han och en Sigg met [$1 Hölp för et Hirrojlühfe-Enjävve].",
+	"wikihiero-input": "Wat De övverpröhfe wells:",
 	"wikihiero-result": "Wat erus kütt:",
 	"wikihiero-submit": "Lohß Jonn!",
 	"wikihiero-syntax": "Süntax",
@@ -49,5 +49,6 @@
 	"wikihiero-category-X": "X: Bruud un Kooche",
 	"wikihiero-category-Y": "Y: Schrefte, Schpell, Mussik",
 	"wikihiero-category-Z": "Z: Schtresche, Zeischefejuure, un esu",
-	"wikihiero-category-Aa": "Aa: Nit Enzotteet"
+	"wikihiero-category-Aa": "Aa: Nit Enzotteet",
+	"wikihiero-visualeditor-mwhieroinspector-title": "Hirrojlühfe"
 }
