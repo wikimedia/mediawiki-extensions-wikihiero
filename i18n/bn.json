@@ -1,11 +1,33 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bellayet"
+			"Bellayet",
+			"Aftabuzzaman"
 		]
 	},
+	"hieroglyphs": "হায়ারোগ্লিফ মার্কআপ চেষ্টা করুন",
+	"wikihiero-input": "ইনপুট লেখা",
 	"wikihiero-result": "ফলাফল",
+	"wikihiero-submit": "জমা দাও",
+	"wikihiero-syntax": "সিনট্যাক্স",
 	"wikihiero-th-code": "কোড",
+	"wikihiero-th-meaning": "অর্থ",
+	"wikihiero-th-example": "উদাহরণ কোড",
 	"wikihiero-th-result": "ফলাফল",
-	"wikihiero-visualeditor-mwhieroinspector-title": "চিত্রলিপিসমূহ"
+	"wikihiero-separator": "পৃথককারী",
+	"wikihiero-eol": "লাইনের শেষ",
+	"wikihiero-superposition": "উপবিভাগ",
+	"wikihiero-juxtaposition": "পাশাপাশি অবস্থান",
+	"wikihiero-comment": "মন্তব্য",
+	"wikihiero-load-error": "লোড ত্রুটি!",
+	"wikihiero-category-E": "E: স্তন্যপায়ী প্রাণী",
+	"wikihiero-category-F": "F: স্তন্যপায়ী প্রাণীর অংশবিশেষ",
+	"wikihiero-category-G": "G: পাখি",
+	"wikihiero-category-H": "H: পাখির অংশবিশেষ",
+	"wikihiero-category-M": "M: গাছ ও উদ্ভিদ",
+	"wikihiero-category-N": "N: আকাশ, পৃথিবী, পানি",
+	"wikihiero-category-X": "X: রুটি ও পিঠা",
+	"wikihiero-category-Y": "Y: লেখা, খেলাধুলা, সঙ্গীত",
+	"wikihiero-category-Aa": "Aa: অশ্রেণীভুক্ত",
+	"wikihiero-visualeditor-mwhieroinspector-title": "হায়ারোগ্লিপসমূহ"
 }
