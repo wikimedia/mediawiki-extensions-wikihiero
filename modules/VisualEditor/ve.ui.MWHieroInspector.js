@@ -27,7 +27,7 @@ ve.ui.MWHieroInspector.static.icon = 'hiero';
 ve.ui.MWHieroInspector.static.title =
 	OO.ui.deferMsg( 'wikihiero-visualeditor-mwhieroinspector-title' );
 
-ve.ui.MWHieroInspector.static.nodeModel = ve.dm.MWHieroNode;
+ve.ui.MWHieroInspector.static.modelClasses = [ ve.dm.MWHieroNode ];
 
 ve.ui.MWHieroInspector.static.dir = 'ltr';
 
