@@ -7,10 +7,11 @@
 			"Raimond Spekking",
 			"Raymond",
 			"Shirayuki",
-			"Yekrats"
+			"Yekrats",
+			"Umherirrender"
 		]
 	},
-	"wikihiero-desc": "{{desc|name=WikiHiero|url=http://www.mediawiki.org/wiki/Extension:WikiHiero}}\nWikihiero is a markup language to render hieroglyphics. See [//www.mediawiki.org/wiki/Extension:WikiHiero Extension:WikiHiero] for more information.",
+	"wikihiero-desc": "{{desc|name=WikiHiero|url=https://www.mediawiki.org/wiki/Extension:WikiHiero}}\nWikihiero is a markup language to render hieroglyphics. See [//www.mediawiki.org/wiki/Extension:WikiHiero Extension:WikiHiero] for more information.",
 	"hieroglyphs": "{{doc-special|Hieroglyphs}}\nWikiHiero is a markup language to render Hieroglyphics. See [[mw:Extension:WikiHiero|Extension:WikiHiero]] for more information.",
 	"wikihiero-special-page-text": "This message is shown on [[Special:Hieroglyphs]].\n\nParameters:\n* $1 – An external link to a help page, supplied in {{msg-mw|Wikihiero-help-link}}",
 	"wikihiero-help-link": "A link to a help page about the format used by WikiHiero.\n\nUsed as <code>$1</code> in {{msg-mw|wikihiero-special-page-text}}.\n\nKeep the link external.",
