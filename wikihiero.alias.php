@@ -149,6 +149,11 @@ $specialPageAliases['lb'] = array(
 	'Hieroglyphs' => array( 'Hieroglyphen' ),
 );
 
+/** لوری (لوری) */
+$specialPageAliases['lrc'] = array(
+	'Hieroglyphs' => array( 'هیروگلیف' ),
+);
+
 /** Minangkabau (Baso Minangkabau) */
 $specialPageAliases['min'] = array(
 	'Hieroglyphs' => array( 'Heroglip' ),
