@@ -39,6 +39,11 @@ $specialPageAliases['bg'] = array(
 	'Hieroglyphs' => array( 'Йероглифи' ),
 );
 
+/** Western Balochi (بلوچی رخشانی) */
+$specialPageAliases['bgn'] = array(
+	'Hieroglyphs' => array( 'هیروگیپ_ئان' ),
+);
+
 /** буряад (буряад) */
 $specialPageAliases['bxr'] = array(
 	'Hieroglyphs' => array( 'Дүрсэ_үзэг' ),
