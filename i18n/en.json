@@ -4,7 +4,7 @@
     },
     "wikihiero-desc": "Adds <code>&lt;hiero&gt;</code> tag to display [[Special:Hieroglyphs|hieroglyphs]]",
     "hieroglyphs": "Try hieroglyph markup",
-    "wikihiero-special-page-text": "Use this page to try out WikiHiero markup.\nSee [$1 the markup description] for how to use.",
+    "wikihiero-special-page-text": "Use this page to try out WikiHiero markup.\nSee [$1 the markup description] for how to use it.",
     "wikihiero-help-link": "//en.wikipedia.org/wiki/Help:WikiHiero_syntax",
     "wikihiero-input": "Input text",
     "wikihiero-result": "Result",
