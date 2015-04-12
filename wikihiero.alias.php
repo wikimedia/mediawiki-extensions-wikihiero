@@ -59,6 +59,11 @@ $specialPageAliases['ce'] = array(
 	'Hieroglyphs' => array( 'Иероглифаш' ),
 );
 
+/** Czech (čeština) */
+$specialPageAliases['cs'] = array(
+	'Hieroglyphs' => array( 'Hieroglyfy' ),
+);
+
 /** Church Slavic (словѣньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ) */
 $specialPageAliases['cu'] = array(
 	'Hieroglyphs' => array( 'Їєроглѷфꙑ' ),
