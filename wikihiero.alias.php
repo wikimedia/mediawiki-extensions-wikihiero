@@ -196,7 +196,7 @@ $specialPageAliases['nn'] = array(
 
 /** Polish (polski) */
 $specialPageAliases['pl'] = array(
-	'Hieroglyphs' => array( 'Hiertoglify' ),
+	'Hieroglyphs' => array( 'Hieroglify', 'Hiertoglify' ),
 );
 
 /** Russian (русский) */
