@@ -19,7 +19,7 @@ $specialPageAliases['ar'] = array(
 	'Hieroglyphs' => array( 'هيروغليفي' ),
 );
 
-/** Egyptian Spoken Arabic (مصرى) */
+/** Egyptian Arabic (مصرى) */
 $specialPageAliases['arz'] = array(
 	'Hieroglyphs' => array( 'هيروغليفى' ),
 );
@@ -159,7 +159,7 @@ $specialPageAliases['lb'] = array(
 	'Hieroglyphs' => array( 'Hieroglyphen' ),
 );
 
-/** لوری (لوری) */
+/** لوری مینجایی (لوری مینجایی) */
 $specialPageAliases['lrc'] = array(
 	'Hieroglyphs' => array( 'هیروگلیف' ),
 );
