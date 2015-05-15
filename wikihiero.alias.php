@@ -159,7 +159,7 @@ $specialPageAliases['lb'] = array(
 	'Hieroglyphs' => array( 'Hieroglyphen' ),
 );
 
-/** لوری مینجایی (لوری مینجایی) */
+/** Northern Luri (لوری مینجایی) */
 $specialPageAliases['lrc'] = array(
 	'Hieroglyphs' => array( 'هیروگلیف' ),
 );
