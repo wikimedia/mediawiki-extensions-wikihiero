@@ -224,4 +224,8 @@ class SpecialHieroglyphs extends SpecialPage {
 			. $this->hiero->render( $example )
 			. "</td></tr>\n";
 	}
- }
+
+	protected function getGroupName() {
+		return 'wiki';
+	}
+}

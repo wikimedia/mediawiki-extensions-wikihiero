@@ -50,7 +50,6 @@ $wgAutoloadClasses['HieroTokenizer'] = "$dir/HieroTokenizer.php";
 $wgParserTestFiles[] = "$dir/tests.txt";
 
 $wgSpecialPages['Hieroglyphs'] = 'SpecialHieroglyphs';
-$wgSpecialPageGroups['Hieroglyphs'] = 'wiki';
 
 $moduleTemplate = array(
     'localBasePath' => __DIR__ . '/modules',
