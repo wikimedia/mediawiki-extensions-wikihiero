@@ -11,7 +11,7 @@
 	},
 	"wikihiero-desc": "Adiciona a marca <code>&lt;hiero&gt;</code> para exibir [[Special:Hieroglyphs|hieróglifos]]",
 	"hieroglyphs": "Tente a marcação hieróglifo",
-	"wikihiero-special-page-text": "Use esta página para experimentar a sintaxe Wikihiero.\nAcesse [//en.wikipedia.org/wiki/Help:WikiHiero_syntax aqui] para uma descrição da sintaxe.",
+	"wikihiero-special-page-text": "Use esta página para experimentar a sintaxe Wikihiero.\nVeja [$1 a descrição sobre a marcação aqui] para saber como usá-la.",
 	"wikihiero-input": "Texto de entrada",
 	"wikihiero-result": "Resultado",
 	"wikihiero-submit": "Enviar",
