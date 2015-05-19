@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"SK-luuut"
+			"SK-luuut",
+			"Robin0van0der0vliet"
 		]
 	},
-	"wikihiero-desc": "Foegt mark <code>&lt;hiero&gt;</code> ta foar [[Special:Hieroglyphs|hiëroglyfwerjefte]]."
+	"wikihiero-desc": "Foegt mark <code>&lt;hiero&gt;</code> ta foar [[Special:Hieroglyphs|hiëroglyfwerjefte]].",
+	"wikihiero-submit": "Ferstjoere",
+	"wikihiero-th-code": "Koade"
 }
