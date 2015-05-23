@@ -1,10 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ansumang"
+			"Ansumang",
+			"NehalDaveND"
 		]
 	},
 	"wikihiero-result": "परिणामम्",
+	"wikihiero-submit": "उपस्थाप्यताम्",
+	"wikihiero-th-meaning": "अर्थः",
 	"wikihiero-th-result": "परिणामम्",
 	"wikihiero-comment": "टिप्पणी"
 }
