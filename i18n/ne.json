@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"RajeshPandey"
+			"RajeshPandey",
+			"NehalDaveND"
 		]
 	},
 	"wikihiero-input": "इनपुट पाठ",
 	"wikihiero-result": "परिणाम",
+	"wikihiero-submit": "बुझाउने",
 	"wikihiero-syntax": "वाक्यविन्यास",
 	"wikihiero-th-code": "कोड",
 	"wikihiero-th-meaning": "अर्थ",
