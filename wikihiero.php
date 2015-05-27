@@ -57,10 +57,12 @@ $moduleTemplate = array(
 );
 
 $wgResourceModules['ext.wikihiero'] = array(
+	'position' => 'top',
 	'styles' => 'ext.wikihiero.css',
 ) + $moduleTemplate;
 
 $wgResourceModules['ext.wikihiero.Special'] = array(
+	'position' => 'top',
 	'scripts' => 'ext.wikihiero.Special.js',
 	'styles' => 'ext.wikihiero.Special.css',
 	'dependencies' => array( 'jquery.spinner' ),
