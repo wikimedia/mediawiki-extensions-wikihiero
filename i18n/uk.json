@@ -5,12 +5,13 @@
 			"Andriykopanytsia",
 			"Dim Grits",
 			"DixonD",
-			"Тест"
+			"Тест",
+			"Ата"
 		]
 	},
 	"wikihiero-desc": "Додає тег <code>&lt;hiero&gt;</code> для відображення [[Special:Hieroglyphs|ієрогліфів]]",
 	"hieroglyphs": "Спробуйте ієрогліфічне письмо",
-	"wikihiero-special-page-text": "Використайте цю сторінку, аби спробувати WikiHiero розмітку.\nОпис розмітки дивіться [//en.wikipedia.org/wiki/Help:WikiHiero_syntax тут].",
+	"wikihiero-special-page-text": "Використайте цю сторінку, аби спробувати розмітку WikiHiero.\nДивіться [$1 опис розмітки] і як нею користуватись.",
 	"wikihiero-input": "Вхідний текст",
 	"wikihiero-result": "Результат",
 	"wikihiero-submit": "Переглянути",
