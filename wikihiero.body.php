@@ -66,9 +66,27 @@ class WikiHiero {
 	 */
 	public static function parserHook( $input, $args = array(), $parser ) {
 		$hiero = new WikiHiero();
+		$parser->getOutput()->addModuleStyles( 'ext.wikihiero' );
 		// Strip newlines to avoid breakage in the wiki parser block pass
 		return str_replace( "\n", " ", $hiero->render( $input ) );
-		$parser->getOutput()->addModuleStyles( 'ext.wikihiero' );
+	}
+
+	/**
+	 * Invalid parser cache entries which pre-date I5a0c4cbcb.
+	 *
+	 * @param ParserOutput $parserOutput
+	 * @param WikiPage|Article $page
+	 * @param ParserOptions $popts
+	 * @return bool
+	 */
+	public static function onRejectParserCacheValue( ParserOutput $parserOutput, $page, ParserOptions $popts ) {
+		if (
+			strpos( $parserOutput->getText(), self::TABLE_START ) !== false
+			&& !in_array( 'ext.wikihiero', $parserOutput->getModuleStyles() )
+		) {
+			return false;
+		}
+		return true;
 	}
 
 	public function getScale() {
