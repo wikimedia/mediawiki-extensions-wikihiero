@@ -24,7 +24,6 @@
 define( 'WIKIHIERO_VERSION', '1.1' );
 
 $wgHooks['ParserFirstCallInit'][] = 'wfRegisterWikiHiero';
-$wgHooks['BeforePageDisplay'][] = 'wfHieroBeforePageDisplay';
 
 // Register MediaWiki extension
 $wgExtensionCredits['parserhook'][] = array(
@@ -103,14 +102,5 @@ $wgVisualEditorPluginModules[] = 'ext.wikihiero.visualEditor';
  */
 function wfRegisterWikiHiero( &$parser ) {
 	$parser->setHook( 'hiero', 'WikiHiero::parserHook' );
-	return true;
-}
-
-/**
- * @param $out OutputPage
- * @return bool
- */
-function wfHieroBeforePageDisplay( $out ) {
-	$out->addModuleStyles( 'ext.wikihiero' );
 	return true;
 }
