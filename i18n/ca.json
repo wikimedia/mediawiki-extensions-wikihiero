@@ -7,7 +7,7 @@
 	},
 	"wikihiero-desc": "Afegeix l'etiqueta <code>&lt;hiero&gt;</code> per a visualitzar [[Special:Hieroglyphs|jeroglífics]]",
 	"hieroglyphs": "Proves de sintaxi per a jeroglífics",
-	"wikihiero-special-page-text": "Utilitzeu aquesta pàgina per provar la sintaxi de marques WikiHiero.\nVegeu [//en.wikipedia.org/wiki/Help:WikiHiero_syntax aquí] la descripció de la sintaxi.",
+	"wikihiero-special-page-text": "Utilitzeu aquesta pàgina per provar la sintaxi de marques WikiHiero.\nVegeu [$1 la descripció de la sintaxi] per saber com utilitzar-la.",
 	"wikihiero-input": "Text d'entrada",
 	"wikihiero-result": "Resultat",
 	"wikihiero-submit": "Envia",
