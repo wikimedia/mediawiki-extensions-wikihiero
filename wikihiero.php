@@ -75,13 +75,13 @@ $wgResourceModules['ext.wikihiero.Special'] = array(
 
 $wgResourceModules['ext.wikihiero.visualEditor'] = array(
 	'scripts' => array(
-		'VisualEditor/ve.dm.MWHieroNode.js',
-		'VisualEditor/ve.ce.MWHieroNode.js',
-		'VisualEditor/ve.ui.MWHieroInspector.js',
-		'VisualEditor/ve.ui.MWHieroInspectorTool.js',
+		've-wikihiero/ve.dm.MWHieroNode.js',
+		've-wikihiero/ve.ce.MWHieroNode.js',
+		've-wikihiero/ve.ui.MWHieroInspector.js',
+		've-wikihiero/ve.ui.MWHieroInspectorTool.js',
 	),
 	'styles' => array(
-		'VisualEditor/ve.ui.MWHieroIcons.css',
+		've-wikihiero/ve.ui.MWHieroIcons.css',
 	),
 	'dependencies' => array(
 		'ext.visualEditor.mwcore',
