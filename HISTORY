@@ -1,0 +1,47 @@
+== Version history ==
+
+0.2.0: New parser
+
+0.2.1: Fix link to hieroglyph tables
+
+0.2.2:
+- Fix hieroglyph size when into a [[w:cartouche|cartouche]]
+- Fix phonemes table to use 'Aa' category rather than 'J'
+
+0.2.3: Add Swedish interface
+
+0.2.4: Add Japanese and Dutch interface
+
+0.2.5:
+- Fix Swedish interface
+- Create a function to handle language entries lack
+- Change 'height' option by a 'scale' (in percentage)
+- Add a 'line' option to split text lines
+
+0.2.6:
+- Add source annotation.
+- Support of both '-' and ' ' as separator
+
+0.2.7:
+- Add parsing process duration.
+- Add download section
+
+0.2.8:
+- Add Chinese interface.
+- Minor fix
+
+0.2.9:
+- Add Esperanto interface.
+- Fix cartouche size
+
+1.0:
+- Seriously rewritten to conform with modern standards:
+-- Code overhauled and improved.
+-- Uses CSS instead of inline styles/attributes and produces valid HTML5.
+-- Adds Special:Hieroglyphs page that replaces two old and broken extra entry points.
+-- Uses MediaWiki localisation system.
+-- Honors $wgExtensionAssetsPath.
+- Support for functioning as something other than a MediaWiki extension dropped.
+
+1.1.0:
+- Refactor image addition
