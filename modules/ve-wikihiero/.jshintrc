@@ -9,13 +9,17 @@
 	"undef": true,
 	"unused": true,
 	"strict": false,
-	"es3": true,
+
+	// Relaxing
+	"es3": false,
 
 	// Environment
 	"browser": true,
 	"jquery": true,
 
 	"globals": {
-		"mw": false
+		"mw": false,
+		"OO": false,
+		"ve": false
 	}
 }

@@ -25,6 +25,6 @@ ve.ui.toolFactory.register( ve.ui.MWHieroInspectorTool );
 ve.ui.commandRegistry.register(
 	new ve.ui.Command(
 		'hiero', 'window', 'open',
-		{ args: ['hiero'], supportedSelections: ['linear'] }
+		{ args: [ 'hiero' ], supportedSelections: [ 'linear' ] }
 	)
 );
