@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Huslåke"
+			"Huslåke",
+			"Jyllanj"
 		]
 	},
-	"wikihiero-desc": "Gæv <code>&lt;hiero&gt;</code> tag til displæ [[Special:Hieroglyphs|hiærågliifer]]"
+	"wikihiero-desc": "Tilfye taggi <code>&lt;hiero&gt;</code> for å wis [[Special:Hieroglyphs|hieroglyffe]]"
 }
