@@ -4,14 +4,7 @@
 			"Ahmed-Najib-Biabani-Ibrahimkhel"
 		]
 	},
-	"hieroglyphs": "هېروگليف نښې وآزمويۍ",
-	"wikihiero-result": "پايله",
-	"wikihiero-submit": "سپارل",
-	"wikihiero-th-code": "کوډ",
-	"wikihiero-th-meaning": "مانا",
-	"wikihiero-th-result": "پايله",
-	"wikihiero-eol": "د کرښې پای",
-	"wikihiero-comment": "تبصره",
+	"hieroglyphs": "هېروگليف نښې وآزمويئ",
 	"wikihiero-category-A": "A: سړی او دندې يې",
 	"wikihiero-category-B": "B: ښځه او دنده يې",
 	"wikihiero-category-E": "E: تيور ژوي",
@@ -25,5 +18,13 @@
 	"wikihiero-category-N": "N: اسمان، زمکه، اوبه",
 	"wikihiero-category-O": "O: ودانۍ، د ودانيو برخې، او نور",
 	"wikihiero-category-P": "P: بېړۍ او د بېړيو برخې",
+	"wikihiero-comment": "تبصره",
+	"wikihiero-eol": "د کرښې پای",
+	"wikihiero-result": "پايله",
+	"wikihiero-submit": "سپارل",
+	"wikihiero-th-code": "کوډ",
+	"wikihiero-th-example": "کوډ بېلگه",
+	"wikihiero-th-meaning": "مانا",
+	"wikihiero-th-result": "پايله",
 	"wikihiero-visualeditor-mwhieroinspector-title": "هيروگلېفېکونه"
 }
