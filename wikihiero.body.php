@@ -71,24 +71,6 @@ class WikiHiero {
 		return str_replace( "\n", " ", $hiero->render( $input ) );
 	}
 
-	/**
-	 * Invalid parser cache entries which pre-date I5a0c4cbcb.
-	 *
-	 * @param ParserOutput $parserOutput
-	 * @param WikiPage|Article $page
-	 * @param ParserOptions $popts
-	 * @return bool
-	 */
-	public static function onRejectParserCacheValue( ParserOutput $parserOutput, $page, ParserOptions $popts ) {
-		if (
-			strpos( $parserOutput->getText(), self::TABLE_START ) !== false
-			&& !in_array( 'ext.wikihiero', $parserOutput->getModuleStyles() )
-		) {
-			return false;
-		}
-		return true;
-	}
-
 	public function getScale() {
 		return $this->scale;
 	}

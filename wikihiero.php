@@ -24,7 +24,6 @@
 define( 'WIKIHIERO_VERSION', '1.1' );
 
 $wgHooks['ParserFirstCallInit'][] = 'wfRegisterWikiHiero';
-$wgHooks['RejectParserCacheValue'][] = 'WikiHiero::onRejectParserCacheValue';
 
 // Register MediaWiki extension
 $wgExtensionCredits['parserhook'][] = array(
