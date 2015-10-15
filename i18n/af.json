@@ -5,15 +5,15 @@
 			"Naudefj"
 		]
 	},
-	"wikihiero-desc": "Maak 'n <code>&lt;hiero&gt;</code> etiket beskikbaar vir die vertoon van [[Special:Hieroglyphs|hierogliewe]]",
 	"hieroglyphs": "Probeer hiëroglief-opmerkteks",
+	"wikihiero-category-A": "A: Die man en sy beroepe",
+	"wikihiero-category-Aa": "Aa: Ongeklassifiseerd",
+	"wikihiero-comment": "Opmerking",
+	"wikihiero-desc": "Maak 'n <code>&lt;hiero&gt;</code> etiket beskikbaar vir die vertoon van [[Special:Hieroglyphs|hierogliewe]]",
 	"wikihiero-input": "Invoerteks",
+	"wikihiero-load-error": "Fout met die laai!",
 	"wikihiero-result": "Resultaat",
 	"wikihiero-syntax": "Sintaks",
 	"wikihiero-th-code": "Kode",
-	"wikihiero-th-result": "Resultaat",
-	"wikihiero-comment": "Opmerking",
-	"wikihiero-load-error": "Fout met die laai!",
-	"wikihiero-category-A": "A: Die man en sy beroepe",
-	"wikihiero-category-Aa": "Aa: Ongeklassifiseerd"
+	"wikihiero-th-result": "Resultaat"
 }

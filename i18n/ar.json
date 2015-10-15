@@ -6,19 +6,19 @@
 			"زكريا"
 		]
 	},
-	"wikihiero-desc": "يضيف الوسم <code>&lt;hiero&gt;</code> لعرض الهيروغليفية",
 	"hieroglyphs": "جرب ترميز الهيرغليفية",
-	"wikihiero-special-page-text": "استخدم هذه الصفحة لتجربة ترميز ويكي هييرو.\nانظر [//ar.wikipedia.org/wiki/مساعدة:نحو_ويكي_هييرو هنا] للاستعلام.",
+	"wikihiero-comment": "تعليق",
+	"wikihiero-desc": "يضيف الوسم <code>&lt;hiero&gt;</code> لعرض الهيروغليفية",
+	"wikihiero-eol": "نهاية السطر",
 	"wikihiero-input": "إدخال نص",
+	"wikihiero-load-error": "خطأ تحميل!",
 	"wikihiero-result": "نتيجة",
+	"wikihiero-separator": "فاصل",
+	"wikihiero-special-page-text": "استخدم هذه الصفحة لتجربة ترميز ويكي هييرو.\nانظر [//ar.wikipedia.org/wiki/مساعدة:نحو_ويكي_هييرو هنا] للاستعلام.",
 	"wikihiero-syntax": "صياغة",
 	"wikihiero-th-code": "كود",
-	"wikihiero-th-meaning": "المعنى",
 	"wikihiero-th-example": "مثال كود",
+	"wikihiero-th-meaning": "المعنى",
 	"wikihiero-th-result": "النتيجة",
-	"wikihiero-separator": "فاصل",
-	"wikihiero-eol": "نهاية السطر",
-	"wikihiero-comment": "تعليق",
-	"wikihiero-load-error": "خطأ تحميل!",
 	"wikihiero-visualeditor-mwhieroinspector-title": "هيرغليفية"
 }

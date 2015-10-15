@@ -5,13 +5,8 @@
 			"Rancher"
 		]
 	},
-	"wikihiero-desc": "Додаје <code>&lt;hiero&gt;</code> ознаку за приказ [[Special:Hieroglyphs|хијероглифа]].",
-	"wikihiero-syntax": "Синтакса",
-	"wikihiero-separator": "Раздвајач",
-	"wikihiero-eol": "Крај реда",
-	"wikihiero-superposition": "Усправно груписање",
-	"wikihiero-juxtaposition": "Водоравно груписање",
 	"wikihiero-category-A": "A: Мушкарац и његове активности",
+	"wikihiero-category-Aa": "Aa: Некласификовано",
 	"wikihiero-category-B": "B: Жена и њене активности",
 	"wikihiero-category-C": "C: Човеколика божанства",
 	"wikihiero-category-D": "D: Делови људског тела",
@@ -23,6 +18,11 @@
 	"wikihiero-category-K": "K: Рибе и делови риба",
 	"wikihiero-category-L": "L: Бескичмењаци и ситне животиње",
 	"wikihiero-category-Z": "Z: Линије, геометријске фигуре итд.",
-	"wikihiero-category-Aa": "Aa: Некласификовано",
+	"wikihiero-desc": "Додаје <code>&lt;hiero&gt;</code> ознаку за приказ [[Special:Hieroglyphs|хијероглифа]].",
+	"wikihiero-eol": "Крај реда",
+	"wikihiero-juxtaposition": "Водоравно груписање",
+	"wikihiero-separator": "Раздвајач",
+	"wikihiero-superposition": "Усправно груписање",
+	"wikihiero-syntax": "Синтакса",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Хијероглифи"
 }

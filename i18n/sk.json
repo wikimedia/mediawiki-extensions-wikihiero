@@ -4,13 +4,8 @@
 			"Helix84"
 		]
 	},
-	"wikihiero-desc": "Pridáva značku <code>&lt;hiero&gt;</code> na zobrazovanie [[Special:Hieroglyphs|hieroglyfov]]",
-	"wikihiero-syntax": "Syntax",
-	"wikihiero-separator": "Oddeľovač",
-	"wikihiero-eol": "Koniec riadka",
-	"wikihiero-superposition": "Podrozdelenie",
-	"wikihiero-juxtaposition": "Juxtapozícia",
 	"wikihiero-category-A": "A: Muž a jeho práce",
+	"wikihiero-category-Aa": "Aa: Nezaradené",
 	"wikihiero-category-B": "B: Žena a jej práce",
 	"wikihiero-category-C": "C: Antropomorfné božstvá",
 	"wikihiero-category-D": "D: Časti ľudského tela",
@@ -22,6 +17,11 @@
 	"wikihiero-category-K": "K: Ryby a časti rýb",
 	"wikihiero-category-L": "L: Bezstavovce a nižšie druhy",
 	"wikihiero-category-Z": "Z: Ťahy, geometrické obrazce atď.",
-	"wikihiero-category-Aa": "Aa: Nezaradené",
+	"wikihiero-desc": "Pridáva značku <code>&lt;hiero&gt;</code> na zobrazovanie [[Special:Hieroglyphs|hieroglyfov]]",
+	"wikihiero-eol": "Koniec riadka",
+	"wikihiero-juxtaposition": "Juxtapozícia",
+	"wikihiero-separator": "Oddeľovač",
+	"wikihiero-superposition": "Podrozdelenie",
+	"wikihiero-syntax": "Syntax",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Hieroglyfy"
 }

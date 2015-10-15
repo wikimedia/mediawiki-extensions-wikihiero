@@ -7,10 +7,10 @@
 		]
 	},
 	"wikihiero-desc": "hieroग्लिफ दाखवण्याकरिता  <code>&lt;hiero&gt;</code> खूण जोडते",
-	"wikihiero-syntax": "वाक्य रचना",
-	"wikihiero-th-meaning": "अर्थ",
-	"wikihiero-th-example": "उदाहरण कोड",
 	"wikihiero-eol": "ओळीचा शेवट",
 	"wikihiero-superposition": "उपशाखा",
+	"wikihiero-syntax": "वाक्य रचना",
+	"wikihiero-th-example": "उदाहरण कोड",
+	"wikihiero-th-meaning": "अर्थ",
 	"wikihiero-visualeditor-mwhieroinspector-title": "चित्रलिपी"
 }

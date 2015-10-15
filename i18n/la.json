@@ -1,11 +1,7 @@
 {
 	"@metadata": [],
-	"wikihiero-syntax": "Syntaxis",
-	"wikihiero-separator": "Separator",
-	"wikihiero-eol": "Finis versus",
-	"wikihiero-superposition": "Subdivisio",
-	"wikihiero-juxtaposition": "Iuxtapositio",
 	"wikihiero-category-A": "A: Vir et negotia sua",
+	"wikihiero-category-Aa": "Aa: In classes non distributum",
 	"wikihiero-category-B": "B: Femina et negotia sua",
 	"wikihiero-category-C": "C: Numina humanus aspectus",
 	"wikihiero-category-D": "D: Membra corporis humanus",
@@ -17,6 +13,10 @@
 	"wikihiero-category-K": "K: Pisces et membra piscium",
 	"wikihiero-category-L": "L: Invertebrata et animala parvula",
 	"wikihiero-category-Z": "Z: Liniae, figurae geometricae, etc.",
-	"wikihiero-category-Aa": "Aa: In classes non distributum",
+	"wikihiero-eol": "Finis versus",
+	"wikihiero-juxtaposition": "Iuxtapositio",
+	"wikihiero-separator": "Separator",
+	"wikihiero-superposition": "Subdivisio",
+	"wikihiero-syntax": "Syntaxis",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Hieroglyphica"
 }

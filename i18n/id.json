@@ -7,10 +7,9 @@
 			"Kenrick95"
 		]
 	},
-	"wikihiero-desc": "Menambahkan tag <code>&lt;hiero&gt;</code> untuk menampilkan [[Special:Hieroglyphs|hieroglyph]]",
 	"hieroglyphs": "Coba teks hiroglif",
-	"wikihiero-submit": "Kirim",
 	"wikihiero-category-A": "A: Laki-laki dan pekerjaannya",
+	"wikihiero-category-Aa": "Aa: Signos non classificate",
 	"wikihiero-category-B": "B: Le femina e su occupationes",
 	"wikihiero-category-C": "C: Dewa antropomorfik",
 	"wikihiero-category-D": "D: Partes del corpore human",
@@ -22,6 +21,7 @@
 	"wikihiero-category-K": "K: Ikan dan bagian ikan",
 	"wikihiero-category-L": "L: Invertebratos",
 	"wikihiero-category-Z": "Z: Tractos e formas geometric",
-	"wikihiero-category-Aa": "Aa: Signos non classificate",
+	"wikihiero-desc": "Menambahkan tag <code>&lt;hiero&gt;</code> untuk menampilkan [[Special:Hieroglyphs|hieroglyph]]",
+	"wikihiero-submit": "Kirim",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Hieroglif"
 }

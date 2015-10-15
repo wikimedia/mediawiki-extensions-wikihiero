@@ -4,13 +4,8 @@
 			"Michaello"
 		]
 	},
-	"wikihiero-desc": "Dodaje <code>&lt;hiero&gt;</code> oznaku za prikaz [[Special:Hieroglyphs|hijeroglifa]].",
-	"wikihiero-syntax": "Sintaksa",
-	"wikihiero-separator": "Razdvajač",
-	"wikihiero-eol": "Kraj reda",
-	"wikihiero-superposition": "Premetanje",
-	"wikihiero-juxtaposition": "Prirašćivanje",
 	"wikihiero-category-A": "A: Muškarac i njegova zanimanja",
+	"wikihiero-category-Aa": "Aa: Neklasifikovano",
 	"wikihiero-category-B": "B: Žena i njena zanimanja",
 	"wikihiero-category-C": "C: Čovekolika božanstva",
 	"wikihiero-category-D": "D: Delovi ljudskog tela",
@@ -22,6 +17,11 @@
 	"wikihiero-category-K": "K: Ribe i delovi riba",
 	"wikihiero-category-L": "L: Beskičmenjaci",
 	"wikihiero-category-Z": "Z: Linije, geometrijske figure",
-	"wikihiero-category-Aa": "Aa: Neklasifikovano",
+	"wikihiero-desc": "Dodaje <code>&lt;hiero&gt;</code> oznaku za prikaz [[Special:Hieroglyphs|hijeroglifa]].",
+	"wikihiero-eol": "Kraj reda",
+	"wikihiero-juxtaposition": "Prirašćivanje",
+	"wikihiero-separator": "Razdvajač",
+	"wikihiero-superposition": "Premetanje",
+	"wikihiero-syntax": "Sintaksa",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Hijeroglifi"
 }

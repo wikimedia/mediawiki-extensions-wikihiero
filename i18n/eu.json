@@ -6,13 +6,13 @@
 			"Subi"
 		]
 	},
+	"wikihiero-category-A": "A: Gizona eta bere ogibideak",
+	"wikihiero-category-B": "B: Emakumea eta bere ogibideak",
+	"wikihiero-category-E": "E: Ugaztunak",
+	"wikihiero-comment": "Iruzkinak",
 	"wikihiero-desc": "[[Special:Hieroglyphs|Jeroglifikoak]] jarri ahal izateko <code>&lt;hiero&gt;</code> etiketa gehitzen du",
 	"wikihiero-result": "Emaitza",
 	"wikihiero-submit": "Bidali",
 	"wikihiero-th-code": "Kodea",
-	"wikihiero-comment": "Iruzkinak",
-	"wikihiero-category-A": "A: Gizona eta bere ogibideak",
-	"wikihiero-category-B": "B: Emakumea eta bere ogibideak",
-	"wikihiero-category-E": "E: Ugaztunak",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Hieroglifoak"
 }

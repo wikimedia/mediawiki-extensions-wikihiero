@@ -7,7 +7,7 @@
 	},
 	"wikihiero-desc": "Προσθέτει την ετικέτα <code>&lt;hiero&gt;</code> για την εμφάνιση [[Special:Hieroglyphs|ιερογλυφικών]]",
 	"wikihiero-input": "Κείμενο εισόδου",
-	"wikihiero-result": "Αποτέλεσμα",
 	"wikihiero-load-error": "Σφάλμα φόρτωσης!",
+	"wikihiero-result": "Αποτέλεσμα",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Ιερογλυφικά"
 }
