@@ -28,3 +28,7 @@ ve.ui.commandRegistry.register(
 		{ args: [ 'hiero' ], supportedSelections: [ 'linear' ] }
 	)
 );
+
+ve.ui.sequenceRegistry.register(
+	new ve.ui.Sequence( 'wikitextHiero', 'hiero', '<hiero', 6 )
+);
