@@ -3,9 +3,11 @@
 		"authors": [
 			"Mahitgar",
 			"Tusharawate",
-			"संतोष दहिवळ"
+			"संतोष दहिवळ",
+			"V.narsikar"
 		]
 	},
+	"hieroglyphs": "हायरोग्लायफ मार्कप अजमावा",
 	"wikihiero-desc": "hieroग्लिफ दाखवण्याकरिता  <code>&lt;hiero&gt;</code> खूण जोडते",
 	"wikihiero-eol": "ओळीचा शेवट",
 	"wikihiero-superposition": "उपशाखा",
