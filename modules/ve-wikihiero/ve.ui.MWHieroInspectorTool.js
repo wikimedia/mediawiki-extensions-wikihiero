@@ -32,3 +32,8 @@ ve.ui.commandRegistry.register(
 ve.ui.sequenceRegistry.register(
 	new ve.ui.Sequence( 'wikitextHiero', 'hiero', '<hiero', 6 )
 );
+
+ve.ui.commandHelpRegistry.register( 'insert', 'hiero', {
+	sequences: [ 'wikitextHiero' ],
+	label: OO.ui.deferMsg( 'wikihiero-visualeditor-mwhieroinspector-title' )
+} );
