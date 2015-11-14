@@ -4,7 +4,8 @@
 			"EugeneZelenko",
 			"Jim-by",
 			"Renessaince",
-			"Wizardist"
+			"Wizardist",
+			"Red Winged Duck"
 		]
 	},
 	"hieroglyphs": "Паспрабуйце герагліфічную разьметку",
@@ -44,7 +45,7 @@
 	"wikihiero-mirror": "Люстэркавы адбітак гіерогліфа",
 	"wikihiero-result": "Вынік",
 	"wikihiero-separator": "Разьдзяляльнік",
-	"wikihiero-special-page-text": "Выкарыстоўвайце гэтую старонку, каб паспрабаваць разьметку WikiHiero.\nАзнаёмцеся з апісаньнем разьметкі [//en.wikipedia.org/wiki/Help:WikiHiero_syntax тут].",
+	"wikihiero-special-page-text": "Выкарыстоўвайце гэтую старонку, каб паспрабаваць разьметку WikiHiero.\nГлядзіце [$1 апісаньне разьметкі], каб зразумець, як ужываць яе.",
 	"wikihiero-submit": "Адправіць",
 	"wikihiero-superposition": "Вэртыкальнае групаваньне",
 	"wikihiero-syntax": "Сынтаксіс",
