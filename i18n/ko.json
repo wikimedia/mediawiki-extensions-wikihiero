@@ -3,10 +3,11 @@
 		"authors": [
 			"Priviet",
 			"ToePeu",
-			"아라"
+			"아라",
+			"IRTC1015"
 		]
 	},
-	"hieroglyphs": "상형 문자 마크업 시도",
+	"hieroglyphs": "상형 문자 마크업 시험",
 	"wikihiero-category-A": "A: 남자와 그의 직업",
 	"wikihiero-category-Aa": "Aa: 분류되지 않음",
 	"wikihiero-category-B": "B: 여자와 그녀의 직업",
@@ -44,7 +45,7 @@
 	"wikihiero-mirror": "상형 문자 거울",
 	"wikihiero-result": "결과",
 	"wikihiero-separator": "구분 기호",
-	"wikihiero-special-page-text": "위키상형 마크업을 시도하기 위해 이 문서를 사용해 주세요.\n마크업 설명에 대해서는 [//en.wikipedia.org/wiki/Help:WikiHiero_syntax here]를 참고하세요.",
+	"wikihiero-special-page-text": "위키상형 마크업을 시험하려면 이 문서를 사용하시기 바랍니다.\n사용법은 [$1 여기]를 참고하세요.",
 	"wikihiero-submit": "제출",
 	"wikihiero-superposition": "위에 놓기",
 	"wikihiero-syntax": "구문",
