@@ -4,15 +4,15 @@
  * MediaWiki UserInterface hieroglyphics tool.
  *
  * @class
- * @extends ve.ui.InspectorTool
+ * @extends ve.ui.FragmentInspectorTool
  * @constructor
  * @param {OO.ui.ToolGroup} toolGroup
  * @param {Object} [config] Configuration options
  */
-ve.ui.MWHieroInspectorTool = function VeUiMWHieroInspectorTool( toolGroup, config ) {
-	ve.ui.InspectorTool.call( this, toolGroup, config );
+ve.ui.MWHieroInspectorTool = function VeUiMWHieroInspectorTool() {
+	ve.ui.MWHieroInspectorTool.super.apply( this, arguments );
 };
-OO.inheritClass( ve.ui.MWHieroInspectorTool, ve.ui.InspectorTool );
+OO.inheritClass( ve.ui.MWHieroInspectorTool, ve.ui.FragmentInspectorTool );
 ve.ui.MWHieroInspectorTool.static.name = 'hiero';
 ve.ui.MWHieroInspectorTool.static.group = 'object';
 ve.ui.MWHieroInspectorTool.static.icon = 'hiero';
