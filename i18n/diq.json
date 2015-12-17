@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Aspar"
+			"Aspar",
+			"Mirzali"
 		]
 	},
+	"wikihiero-comment": "Mışewre",
 	"wikihiero-desc": "qey ra motışê [[Special:Hieroglyphs|hiyerooglifi]], ninan têare keno <code>&lt;hiero&gt;</code>",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Hiyeroglifi"
 }
