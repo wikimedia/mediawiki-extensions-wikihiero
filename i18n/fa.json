@@ -5,7 +5,8 @@
 			"Ebraminio",
 			"Huji",
 			"Mjbmr",
-			"ZxxZxxZ"
+			"ZxxZxxZ",
+			"Reza1615"
 		]
 	},
 	"hieroglyphs": "امتحان‌کردن نشانه‌گذاری هیروگلیف",
@@ -45,7 +46,7 @@
 	"wikihiero-mirror": "آینه هیروگلیف",
 	"wikihiero-result": "نتیجه",
 	"wikihiero-separator": "جداکننده",
-	"wikihiero-special-page-text": "از این صفحه برای آزمایش نشانه‌گذاری ویکی‌هیرو استفاده کنید.\nبرای توضیحات نشانه‌گذاری، [//en.wikipedia.org/wiki/Help:WikiHiero_syntax اینجا] را ببینید.",
+	"wikihiero-special-page-text": "از این صفحه برای آزمایش نشانه‌گذاری ویکی‌هیرو استفاده کنید.\nبرای توضیحات نشانه‌گذاری، [$1 این] را ببینید.",
 	"wikihiero-submit": "ثبت",
 	"wikihiero-superposition": "زیربخش",
 	"wikihiero-syntax": "نحو",
