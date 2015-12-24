@@ -39,10 +39,6 @@ class GenerateWikiHieroTables extends Maintenance {
 	}
 
 	public function execute() {
-		if ( !defined( 'WIKIHIERO_VERSION' ) ) {
-			$this->error( "Please install WikiHiero first!\n", true );
-		}
-
 		$wh_prefabs = "\$wh_prefabs = array(\n";
 		$wh_files   = "\$wh_files   = array(\n";
 

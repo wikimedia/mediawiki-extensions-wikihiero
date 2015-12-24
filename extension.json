@@ -1,0 +1,86 @@
+{
+	"name": "WikiHiero",
+	"version": "1.1",
+	"author": [
+		"Guillaume Blanchard",
+		"Max Semenik"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:WikiHiero",
+	"descriptionmsg": "wikihiero-desc",
+	"license-name": "GPL-2.0+",
+	"type": "parserhook",
+	"Hooks": {
+		"ParserFirstCallInit": [
+			"WikiHieroHooks::onParserFirstCallInit"
+		]
+	},
+	"MessagesDirs": {
+		"Wikihiero": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"Wikihiero": "wikihiero.i18n.php",
+		"HieroglyphsAlias": "wikihiero.alias.php"
+	},
+	"AutoloadClasses": {
+		"WikiHiero": "wikihiero.body.php",
+		"SpecialHieroglyphs": "SpecialHieroglyphs.php",
+		"HieroTokenizer": "HieroTokenizer.php",
+		"WikiHieroHooks": "wikihiero.hooks.php"
+	},
+	"ParserTestFiles": [
+		"tests.txt"
+	],
+	"SpecialPages": {
+		"Hieroglyphs": "SpecialHieroglyphs"
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "wikihiero/modules"
+	},
+	"ResourceModules": {
+		"ext.wikihiero": {
+			"position": "top",
+			"styles": "ext.wikihiero.css"
+		},
+		"ext.wikihiero.Special": {
+			"position": "top",
+			"scripts": "ext.wikihiero.Special.js",
+			"styles": "ext.wikihiero.Special.css",
+			"dependencies": [
+				"jquery.spinner"
+			],
+			"messages": [
+				"wikihiero-input",
+				"wikihiero-result",
+				"wikihiero-load-error"
+			]
+		},
+		"ext.wikihiero.visualEditor": {
+			"scripts": [
+				"ve-wikihiero/ve.dm.MWHieroNode.js",
+				"ve-wikihiero/ve.ce.MWHieroNode.js",
+				"ve-wikihiero/ve.ui.MWHieroInspector.js",
+				"ve-wikihiero/ve.ui.MWHieroInspectorTool.js"
+			],
+			"styles": [
+				"ve-wikihiero/ve.ui.MWHieroIcons.css"
+			],
+			"dependencies": [
+				"ext.visualEditor.mwcore"
+			],
+			"messages": [
+				"wikihiero-visualeditor-mwhieroinspector-title"
+			],
+			"targets": [
+				"desktop",
+				"mobile"
+			]
+		}
+	},
+	"VisualEditorPluginModules": [
+		"ext.wikihiero.visualEditor"
+	],
+	"manifest_version": 1
+}

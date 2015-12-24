@@ -104,7 +104,7 @@ class SpecialHieroglyphs extends SpecialPage {
 		$key = wfMemcKey( 'hiero-list',
 			$this->getContext()->getLanguage()->getExtraHashOptions(),
 			WikiHiero::getImagePath(),
-			WIKIHIERO_VERSION
+			'1.1'
 		);
 		$html = $wgMemc->get( $key );
 		if ( $html ) {
