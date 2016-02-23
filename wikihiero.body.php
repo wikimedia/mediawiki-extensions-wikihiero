@@ -35,10 +35,12 @@ class WikiHiero {
 	const TABLE_START = '<table class="mw-hiero-table">';
 
 	private $scale = 100;
+	private $config;
 
 	private static $phonemes, $prefabs, $files;
 
-	public function __construct() {
+	public function __construct( Config $config = null) {
+		$this->config = $config ?: RequestContext::getMain()->getConfig();
 		self::loadData();
 	}
 
@@ -62,7 +64,7 @@ class WikiHiero {
 	}
 
 	/**
-	 *
+	 * Parser callback for <hiero> tag
 	 */
 	public static function parserHook( $input, $args = array(), $parser ) {
 		$hiero = new WikiHiero();
@@ -119,13 +121,13 @@ class WikiHiero {
 	private function renderGlyphImage( $glyph, $height = null, $margin = null, $class = null ) {
 		if ( array_key_exists( $glyph, self::$phonemes ) ) {
 			$code = self::$phonemes[$glyph];
-			$file = $code;
+			$fileName = $code;
 			// Don't show image name for cartouches and such
 			$title = preg_match( '/^[A-Za-z0-9]+$/', $glyph ) ? "{$code} [{$glyph}]" : $glyph;
 		} else {
-			$file = $title = $glyph;
+			$fileName = $title = $glyph;
 		}
-		if ( !array_key_exists( $file, self::$files ) ) {
+		if ( !array_key_exists( $fileName, self::$files ) ) {
 			return htmlspecialchars( $glyph );
 		}
 
@@ -133,7 +135,7 @@ class WikiHiero {
 		$attribs = array(
 			'class' => $class,
 		    'style' => $style,
-		    'src' => self::getImagePath() . self::IMAGE_PREFIX . "{$file}." . self::IMAGE_EXT,
+		    'src' => $this->getImageUrl( $fileName ),
 		    'height' => $height,
 		    'title' => $title,
 		    'alt' => $glyph,
@@ -156,6 +158,11 @@ class WikiHiero {
 			),
 			'<tr><td>&#160;</td></tr>'
 		);
+	}
+
+	private function getImageUrl( $fileName ) {
+		$url = self::getImagePath() . self::IMAGE_PREFIX . $fileName . '.' . self::IMAGE_EXT;
+		return OutputPage::transformResourcePath( $this->config, $url );
 	}
 
 	private function isMirrored( $glyph ) {
