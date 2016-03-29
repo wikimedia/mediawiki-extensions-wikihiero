@@ -22,8 +22,6 @@ OO.inheritClass( ve.ui.MWHieroInspector, ve.ui.MWLiveExtensionInspector );
 
 ve.ui.MWHieroInspector.static.name = 'hiero';
 
-ve.ui.MWHieroInspector.static.icon = 'hiero';
-
 ve.ui.MWHieroInspector.static.title =
 	OO.ui.deferMsg( 'wikihiero-visualeditor-mwhieroinspector-title' );
 
