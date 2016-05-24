@@ -14,7 +14,7 @@
 }
 
 .mw-hiero-box {
-	background: black;
+	background: #000;
 }
 
 .mw-mirrored {
@@ -24,5 +24,5 @@
 	-webkit-transform: scaleX( -1 );
 	transform: scaleX( -1 );
 	filter: FlipH;
-	-ms-filter: "FlipH";
+	-ms-filter: 'FlipH';
 }
