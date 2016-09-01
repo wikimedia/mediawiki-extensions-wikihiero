@@ -5,10 +5,11 @@
 			"Malafaya",
 			"MetalBrasil",
 			"SandroHc",
-			"Vitorvicentevalente"
+			"Vitorvicentevalente",
+			"Luan"
 		]
 	},
-	"hieroglyphs": "Tente marcação hieroglífica",
+	"hieroglyphs": "Testar marcação hieroglífica",
 	"wikihiero-category-A": "A: O homem e suas ocupações",
 	"wikihiero-category-Aa": "Aa: Signos não classificados",
 	"wikihiero-category-B": "B: A mulher e suas ocupações",
@@ -43,6 +44,7 @@
 	"wikihiero-result": "Resultado",
 	"wikihiero-separator": "Separador",
 	"wikihiero-special-page-text": "Use esta página para experimentar a marcação WikiHiero. Veja [$1 a descrição de marcação] para saber como usar.",
+	"wikihiero-submit": "Enviar",
 	"wikihiero-superposition": "Subdivisão",
 	"wikihiero-syntax": "Sintaxe",
 	"wikihiero-th-code": "Código",
