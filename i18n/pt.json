@@ -6,7 +6,8 @@
 			"MetalBrasil",
 			"SandroHc",
 			"Vitorvicentevalente",
-			"Luan"
+			"Luan",
+			"Mansil"
 		]
 	},
 	"hieroglyphs": "Testar marcação hieroglífica",
@@ -44,7 +45,7 @@
 	"wikihiero-result": "Resultado",
 	"wikihiero-separator": "Separador",
 	"wikihiero-special-page-text": "Use esta página para experimentar a marcação WikiHiero. Veja [$1 a descrição de marcação] para saber como usar.",
-	"wikihiero-submit": "Enviar",
+	"wikihiero-submit": "Submeter",
 	"wikihiero-superposition": "Subdivisão",
 	"wikihiero-syntax": "Sintaxe",
 	"wikihiero-th-code": "Código",
