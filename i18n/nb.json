@@ -1,5 +1,9 @@
 {
-	"@metadata": [],
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
 	"hieroglyphs": "Prøv hieroglyfmerking",
 	"wikihiero-category-A": "A: Mann og hans sysler",
 	"wikihiero-category-Aa": "Aa: Uklassifisert",
@@ -37,7 +41,8 @@
 	"wikihiero-mirror": "Speilvend en hieroglyf",
 	"wikihiero-result": "Resultat",
 	"wikihiero-separator": "Separator",
-	"wikihiero-special-page-text": "Bruk denne siden for å prøve ut WikiHiero-merking.\nSe [//en.wikipedia.org/wiki/Help:WikiHiero_syntax her] for merkingsbeskrivelse.",
+	"wikihiero-special-page-text": "Bruk denne siden for å prøve ut WikiHiero-merking.\nSe [$1 her] for merkingsbeskrivelse.",
+	"wikihiero-submit": "Send inn",
 	"wikihiero-superposition": "Underdeling",
 	"wikihiero-syntax": "Syntaks",
 	"wikihiero-th-code": "Kode",
