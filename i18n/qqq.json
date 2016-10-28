@@ -8,7 +8,8 @@
 			"Raymond",
 			"Shirayuki",
 			"Yekrats",
-			"Umherirrender"
+			"Umherirrender",
+			"Liuxinyu970226"
 		]
 	},
 	"hieroglyphs": "{{doc-special|Hieroglyphs}}\nWikiHiero is a markup language to render Hieroglyphics. See [[mw:Extension:WikiHiero|Extension:WikiHiero]] for more information.",
@@ -48,7 +49,7 @@
 	"wikihiero-load-error": "Error message when loading failed",
 	"wikihiero-mirror": "Help text for mirror syntax",
 	"wikihiero-result": "{{Identical|Result}}",
-	"wikihiero-separator": "Help text for separator syntax",
+	"wikihiero-separator": "Help text for separator syntax\n{{Identical|Separator}}",
 	"wikihiero-special-page-text": "This message is shown on [[Special:Hieroglyphs]].\n\nParameters:\n* $1 – An external link to a help page, supplied in {{msg-mw|Wikihiero-help-link}}",
 	"wikihiero-submit": "{{Identical|Submit}}",
 	"wikihiero-superposition": "{{Identical|Subdivision}}",
