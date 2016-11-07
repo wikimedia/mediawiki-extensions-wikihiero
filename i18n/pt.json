@@ -44,7 +44,7 @@
 	"wikihiero-load-error": "Erro de carga!",
 	"wikihiero-result": "Resultado",
 	"wikihiero-separator": "Separador",
-	"wikihiero-special-page-text": "Use esta página para experimentar a marcação WikiHiero. Veja [$1 a descrição de marcação] para saber como usar.",
+	"wikihiero-special-page-text": "Use esta página para experimentar a marcação WikiHiero.\nConsulte [$1 a sintaxe de marcação] para aprender a utilizá-la.",
 	"wikihiero-submit": "Submeter",
 	"wikihiero-superposition": "Subdivisão",
 	"wikihiero-syntax": "Sintaxe",
