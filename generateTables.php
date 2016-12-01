@@ -39,10 +39,13 @@ class GenerateWikiHieroTables extends Maintenance {
 	}
 
 	public function execute() {
+		$repo = new GitInfo( __DIR__ );
+		$gitVersion = $repo->getHeadSHA1() ?: '<unknown revision>';
+
 		$wh_prefabs = "\$wh_prefabs = array(\n";
 		$wh_files   = "\$wh_files   = array(\n";
 
-		$imgDir = dirname( __FILE__ ) . '/img/';
+		$imgDir = __DIR__ . '/img/';
 
 		if ( is_dir( $imgDir ) ) {
 			$dh = opendir( $imgDir );
@@ -65,10 +68,10 @@ class GenerateWikiHieroTables extends Maintenance {
 		$wh_prefabs .= ");";
 		$wh_files .= ");";
 
-		$file = fopen( 'data/tables.php', 'w+' );
+		$file = fopen( __DIR__ . '/data/tables.php', 'w+' );
 		fwrite( $file, "<?php\n\n" );
-		fwrite( $file, '// File created by generateTables.php version ' . WIKIHIERO_VERSION . "\n" );
-		fwrite( $file, '// ' . date( 'Y-m-d \a\t H:i' ) . "\n\n" );
+		fwrite( $file, "// File created by generateTables.php version $gitVersion\n" );
+		fwrite( $file, '// on ' . date( 'Y-m-d \a\t H:i' ) . "\n\n" );
 		fwrite( $file, "$wh_prefabs\n\n$wh_files\n\n{$this->moreTables}\n" );
 		fclose( $file );
 
@@ -76,12 +79,12 @@ class GenerateWikiHieroTables extends Maintenance {
 	}
 
 	private function serialize() {
-		require( 'data/tables.php' );
+		require( __DIR__ . '/data/tables.php' );
 		$result = array();
 		foreach ( array( 'wh_phonemes', 'wh_prefabs', 'wh_files' ) as $varName ) {
 			$result[$varName] = $$varName;
 		}
-		file_put_contents( 'data/tables.ser', serialize( $result ) );
+		file_put_contents( __DIR__ . '/data/tables.ser', serialize( $result ) );
 	}
 
 	private $moreTables = '

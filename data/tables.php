@@ -1,7 +1,7 @@
 <?php
 
-// File created by generateTables.php version 1.0alpha2
-// 2011-09-20 at 10:20
+// File created by generateTables.php version 8860f200cd7a6cf121b38344e753b4ddaf98ec3d
+// on 2016-12-01 at 21:59
 
 $wh_prefabs = array(
   "a&A1",
@@ -550,11 +550,11 @@ $wh_files   = array(
   "H7" => array( 34, 32 ),
   "H8" => array( 15, 18 ),
   "H8W" => array( 37, 38 ),
+  "H_HASH" => array( 38, 16 ),
+  "H_SPACE" => array( 5, 15 ),
   "HASH" => array( 30, 38 ),
   "hatching" => array( 75, 46 ),
   "Hmw&kA" => array( 24, 38 ),
-  "H_HASH" => array( 38, 16 ),
-  "H_SPACE" => array( 5, 15 ),
   "I1" => array( 36, 33 ),
   "I10" => array( 35, 38 ),
   "I11" => array( 36, 38 ),
@@ -795,8 +795,8 @@ $wh_files   = array(
   "Q5" => array( 38, 15 ),
   "Q6" => array( 38, 24 ),
   "Q7" => array( 20, 37 ),
-  "QUERY" => array( 18, 28 ),
   "Q_HASH" => array( 20, 20 ),
+  "QUERY" => array( 18, 28 ),
   "r&a&k" => array( 38, 38 ),
   "r&a&t" => array( 38, 38 ),
   "r&A1" => array( 38, 38 ),
@@ -1025,8 +1025,8 @@ $wh_files   = array(
   "V7" => array( 9, 26 ),
   "V8" => array( 12, 28 ),
   "V9" => array( 20, 20 ),
-  "VTHREE" => array( 25, 34 ),
   "V_HASH" => array( 15, 38 ),
+  "VTHREE" => array( 25, 34 ),
   "w&&t" => array( 18, 38 ),
   "w&t" => array( 36, 38 ),
   "w&y" => array( 38, 38 ),
@@ -1118,7 +1118,7 @@ $wh_files   = array(
 );
 
 
-$wh_phonemes	=	array(	//	convertion	table	phoneme	->	Gardiner	code
+$wh_phonemes	=	array( // phoneme -> Gardiner code conversion table
 	"mSa"	=>	"A12",
 	"xr"	=>	"A15",
 	"Xrd"	=>	"A17",
