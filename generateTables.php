@@ -34,6 +34,7 @@ class GenerateWikiHieroTables extends Maintenance {
 	public function __construct() {
 		parent::__construct();
 		$this->mDescription = 'Generate tables with hieroglyph information';
+		$this->requireExtension( 'WikiHiero' );
 
 		$this->moreTables = str_replace( "\r", '', $this->moreTables );
 	}
