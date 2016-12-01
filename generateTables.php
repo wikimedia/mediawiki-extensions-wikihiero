@@ -1,9 +1,8 @@
 <?php
 
 /**
- * WikiHiero - A PHP convert from text using "Manual for the encoding of
- * hieroglyphic texts for computer input" syntax to HTML entities (table and
- * images).
+ * This maintenance script regenerates data tables used for
+ * hieroglyphics rendering.
  *
  * Copyright (C) 2004 Guillaume Blanchard (Aoineko)
  *
@@ -33,7 +32,7 @@ class GenerateWikiHieroTables extends Maintenance {
 
 	public function __construct() {
 		parent::__construct();
-		$this->mDescription = 'Generate tables with hieroglyph information';
+		$this->addDescription( 'Generate tables with hieroglyph information' );
 		$this->requireExtension( 'WikiHiero' );
 
 		$this->moreTables = str_replace( "\r", '', $this->moreTables );
@@ -50,7 +49,7 @@ class GenerateWikiHieroTables extends Maintenance {
 			if ( $dh ) {
 				while ( ( $file = readdir( $dh ) ) !== false ) {
 					if ( stristr( $file, WikiHiero::IMAGE_EXT ) ) {
-						list( $width, $height, $type, $attr ) = getimagesize( $imgDir . $file );
+						list( $width, $height, , ) = getimagesize( $imgDir . $file );
 						$wh_files .= "  \"" . WikiHiero::getCode( $file ) . "\" => array( $width, $height ),\n";
 						if ( strchr( $file, '&' ) ) {
 							$wh_prefabs .= "  \"" . WikiHiero::getCode( $file ) . "\",\n";
@@ -85,8 +84,8 @@ class GenerateWikiHieroTables extends Maintenance {
 		file_put_contents( 'data/tables.ser', serialize( $result ) );
 	}
 
-	var $moreTables = '
-$wh_phonemes	=	array(	//	convertion	table	phoneme	->	Gardiner	code
+	private $moreTables = '
+$wh_phonemes	=	array( // phoneme -> Gardiner code conversion table
 	"mSa"	=>	"A12",
 	"xr"	=>	"A15",
 	"Xrd"	=>	"A17",
@@ -511,56 +510,6 @@ $wh_phonemes	=	array(	//	convertion	table	phoneme	->	Gardiner	code
 	"\']"	=>	"",
 );
 ';
-
-/* not used yet
-$wh_syntax = array(
-  "-",    //block sepatator
-  ":",    //supperposition
-  "*",    //juxtaposition
-  "(",    //open bracket
-  ")",    //close bracket
-  "!!",   //end of text
-  "!",    //end of line
-  "..",   //blank caracter
-  ".",    //half-size blank caracter
-  "$",    //color
-  "#",    //shade
-  "[&",   //select
-  "&]",
-  "[{",
-  "}]",
-  "[[",
-  "]]",
-  "[\"",
-  "\"]",
-  "['",
-  "']",
-  "<",    //cartouche
-  ">",
-  "<1",
-  "2>",
-  "<2",
-  "1>",
-  "<0",
-  "0>",
-  "<h1",  //horus
-  "h1>",
-  "<h2",
-  "h2>",
-  "<h3",
-  "h3>",
-  "<h0",
-  "h0>",
-  "++",   //comment
-  "+s",   //hieroglyph
-  "+t",   //transcription
-  "+l",   //latin-normal
-  "+i",   //latin-italic
-  "+g",   //latin-bold (gras)
-  "+b",   //latin-bold
-  "+c",
-);
-*/
 
 }
 
