@@ -46,9 +46,9 @@ class HieroTokenizer {
 			return;
 		}
 
-		self::$delimiters = array_flip( array( ' ', '-', "\t", "\n", "\r" ) );
-		self::$tokenDelimiters = array_flip( array( '*', ':', '(', ')' ) );
-		self::$singleChars = array_flip( array( '!' ) );
+		self::$delimiters = array_flip( [ ' ', '-', "\t", "\n", "\r" ] );
+		self::$tokenDelimiters = array_flip( [ '*', ':', '(', ')' ] );
+		self::$singleChars = array_flip( [ '!' ] );
 	}
 
 	/**
@@ -61,8 +61,8 @@ class HieroTokenizer {
 			return $this->blocks;
 		}
 
-		$this->blocks = array();
-		$this->currentBlock = array();
+		$this->blocks = [];
+		$this->currentBlock = [];
 		$this->token = '';
 
 		$text = preg_replace( '/\\<!--.*?--\\>/s', '', $this->text ); // remove HTML comments
@@ -95,7 +95,7 @@ class HieroTokenizer {
 		$this->newToken();
 		if ( $this->currentBlock ) {
 			$this->blocks[] = $this->currentBlock;
-			$this->currentBlock = array();
+			$this->currentBlock = [];
 		}
 	}
 
@@ -121,7 +121,7 @@ class HieroTokenizer {
 	 */
 	private function singleCharBlock( $char ) {
 		$this->newBlock();
-		$this->blocks[] = array( $char );
+		$this->blocks[] = [ $char ];
 	}
 
 	/**

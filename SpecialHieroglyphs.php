@@ -25,22 +25,22 @@ class SpecialHieroglyphs extends SpecialPage {
 	 * @var WikiHiero $hiero
 	 */
 	private $hiero;
-	private $syntaxHelp = array(
-		array( 'code' => '-', 'message' => 'wikihiero-separator', 'example' => 'A1 - B1' ),
-		array( 'code' => ':', 'message' => 'wikihiero-superposition', 'example' => 'p:t' ),
-		array( 'code' => '*', 'message' => 'wikihiero-juxtaposition', 'example' => 'p*t' ),
-		array( 'code' => '!', 'message' => 'wikihiero-eol', 'example' => 'A1-B1 ! C1-D1' ),
-		array( 'code' => '\\', 'message' => 'wikihiero-mirror', 'example' => 'A1\-A1' ),
-		array( 'code' => '..', 'message' => 'wikihiero-void', 'example' => 'A1 .. B1' ),
-		array( 'code' => '.', 'message' => 'wikihiero-half-void', 'example' => 'A1 . B1' ),
-		array( 'code' => '<!-- -->', 'message' => 'wikihiero-comment', 'example' => 'A<!-- B1 -->1' ),
-	);
-	private $helpColumns = array(
+	private $syntaxHelp = [
+		[ 'code' => '-', 'message' => 'wikihiero-separator', 'example' => 'A1 - B1' ],
+		[ 'code' => ':', 'message' => 'wikihiero-superposition', 'example' => 'p:t' ],
+		[ 'code' => '*', 'message' => 'wikihiero-juxtaposition', 'example' => 'p*t' ],
+		[ 'code' => '!', 'message' => 'wikihiero-eol', 'example' => 'A1-B1 ! C1-D1' ],
+		[ 'code' => '\\', 'message' => 'wikihiero-mirror', 'example' => 'A1\-A1' ],
+		[ 'code' => '..', 'message' => 'wikihiero-void', 'example' => 'A1 .. B1' ],
+		[ 'code' => '.', 'message' => 'wikihiero-half-void', 'example' => 'A1 . B1' ],
+		[ 'code' => '<!-- -->', 'message' => 'wikihiero-comment', 'example' => 'A<!-- B1 -->1' ],
+	];
+	private $helpColumns = [
 		'code',
 		'meaning',
 		'example',
 		'result',
-	);
+	];
 
 	public function __construct() {
 		parent::__construct( 'Hieroglyphs' );
@@ -70,18 +70,18 @@ class SpecialHieroglyphs extends SpecialPage {
 
 		$out->addHTML(
 			Html::openElement( 'form',
-				array(
+				[
 					'method' => 'get',
 					'action' => $this->getPageTitle()->getLinkUrl(),
-				)
+				]
 			)
-			. Html::element( 'textarea', array( 'id' => 'hiero-text', 'name' => 'text' ), $text )
-			. Html::element( 'input', array(
+			. Html::element( 'textarea', [ 'id' => 'hiero-text', 'name' => 'text' ], $text )
+			. Html::element( 'input', [
 				'type' => 'submit',
 				'id' => 'hiero-submit',
 				'name' => 'submit',
 				'value' => $this->msg( 'wikihiero-submit' )->text(),
-			) )
+			] )
 			. Html::closeElement( 'form' )
 		);
 
@@ -168,7 +168,7 @@ class SpecialHieroglyphs extends SpecialPage {
 		$syntax = wfMessage( 'wikihiero-syntax' )->text();
 		$html .= '<tr><td colspan="5">'
 				. Html::element( 'a',
-					array( 'href' => "#syntax", 'title' => $syntax ),
+					[ 'href' => "#syntax", 'title' => $syntax ],
 					$syntax
 				)
 				. '</td></tr>';
@@ -181,7 +181,7 @@ class SpecialHieroglyphs extends SpecialPage {
 			}
 			$html .= '<td>'
 				. Html::element( 'a',
-					array( 'href' => "#cat-$cat", 'title' => wfMessage( "wikihiero-category-$cat" )->text() ),
+					[ 'href' => "#cat-$cat", 'title' => wfMessage( "wikihiero-category-$cat" )->text() ],
 					$cat
 				)
 				. '</td>';
@@ -192,7 +192,7 @@ class SpecialHieroglyphs extends SpecialPage {
 		}
 		$html .= '<tr><td colspan="5">'
 				. Html::element( 'a',
-					array( 'href' => "#cat-$end", 'title' => wfMessage( "wikihiero-category-$end" )->text() ),
+					[ 'href' => "#cat-$end", 'title' => wfMessage( "wikihiero-category-$end" )->text() ],
 					$end
 				)
 				. '</td></tr></table>';
@@ -203,7 +203,7 @@ class SpecialHieroglyphs extends SpecialPage {
 	 * Returns an array with hieroglyph categories from Gardiner's list
 	 */
 	private function getCategories() {
-		$res = array();
+		$res = [];
 		for ( $i = ord( 'A' ); $i <= ord( 'Z' ); $i++ ) {
 			if ( $i != ord( 'J' ) ) {
 				$res[] = chr( $i );

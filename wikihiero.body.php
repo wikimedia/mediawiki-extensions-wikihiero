@@ -39,7 +39,7 @@ class WikiHiero {
 
 	private static $phonemes, $prefabs, $files;
 
-	public function __construct( Config $config = null) {
+	public function __construct( Config $config = null ) {
 		$this->config = $config ?: RequestContext::getMain()->getConfig();
 		self::loadData();
 	}
@@ -72,7 +72,7 @@ class WikiHiero {
 	/**
 	 * Parser callback for <hiero> tag
 	 */
-	public static function parserHook( $input, $args = array(), $parser ) {
+	public static function parserHook( $input, $args = [], $parser ) {
 		$hiero = new WikiHiero();
 		$parser->getOutput()->addModuleStyles( 'ext.wikihiero' );
 		// Strip newlines to avoid breakage in the wiki parser block pass
@@ -138,14 +138,14 @@ class WikiHiero {
 		}
 
 		$style = is_null( $margin ) ? null : "margin: {$margin}px;";
-		$attribs = array(
+		$attribs = [
 			'class' => $class,
 		    'style' => $style,
 		    'src' => $this->getImageUrl( $fileName ),
 		    'height' => $height,
 		    'title' => $title,
 		    'alt' => $glyph,
-		);
+		];
 		return Html::element( 'img', $attribs );
 	}
 
@@ -158,10 +158,10 @@ class WikiHiero {
 		$width = intval( $width );
 		return Html::rawElement(
 			'table',
-			array(
+			[
 				'class' => 'mw-hiero-table',
 			    'style' => "width: {$width}px;",
-			),
+			],
 			'<tr><td>&#160;</td></tr>'
 		);
 	}
@@ -370,11 +370,11 @@ class WikiHiero {
 
 		return Html::rawElement(
 			'table',
-			array(
+			[
 				'class' => 'mw-hiero-table mw-hiero-outer',
 				'dir' => 'ltr',
 			    'style' => $style,
-			),
+			],
 			"<tr><td>\n$html\n</td></tr>"
 		);
 	}
@@ -382,7 +382,7 @@ class WikiHiero {
 	/**
 	 * Returns a list of image files used by this extension
 	 *
-	 * @return array: list of files in format 'file' => array( width, height )
+	 * @return array: list of files in format 'file' => [ width, height ]
 	 */
 	public function getFiles() {
 		return self::$files;

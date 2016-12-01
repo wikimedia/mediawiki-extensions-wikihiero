@@ -24,9 +24,9 @@
 
 $IP = getenv( 'MW_INSTALL_PATH' );
 if ( $IP === false ) {
-	$IP = dirname( __FILE__ ) . '/../..';
+	$IP = __DIR__ . '/../..';
 }
-require_once( "$IP/maintenance/Maintenance.php" );
+require_once ( "$IP/maintenance/Maintenance.php" );
 
 class GenerateWikiHieroTables extends Maintenance {
 
@@ -42,8 +42,8 @@ class GenerateWikiHieroTables extends Maintenance {
 		$repo = new GitInfo( __DIR__ );
 		$gitVersion = $repo->getHeadSHA1() ?: '<unknown revision>';
 
-		$wh_prefabs = "\$wh_prefabs = array(\n";
-		$wh_files   = "\$wh_files   = array(\n";
+		$wh_prefabs = "\$wh_prefabs = [\n";
+		$wh_files   = "\$wh_files   = [\n";
 
 		$imgDir = __DIR__ . '/img/';
 
@@ -53,7 +53,7 @@ class GenerateWikiHieroTables extends Maintenance {
 				while ( ( $file = readdir( $dh ) ) !== false ) {
 					if ( stristr( $file, WikiHiero::IMAGE_EXT ) ) {
 						list( $width, $height, , ) = getimagesize( $imgDir . $file );
-						$wh_files .= "  \"" . WikiHiero::getCode( $file ) . "\" => array( $width, $height ),\n";
+						$wh_files .= "  \"" . WikiHiero::getCode( $file ) . "\" => [ $width, $height ],\n";
 						if ( strchr( $file, '&' ) ) {
 							$wh_prefabs .= "  \"" . WikiHiero::getCode( $file ) . "\",\n";
 						}
@@ -65,8 +65,8 @@ class GenerateWikiHieroTables extends Maintenance {
 			$this->error( "Images directory $imgDir not found!\n", true );
 		}
 
-		$wh_prefabs .= ");";
-		$wh_files .= ");";
+		$wh_prefabs .= "];";
+		$wh_files .= "];";
 
 		$file = fopen( __DIR__ . '/data/tables.php', 'w+' );
 		fwrite( $file, "<?php\n\n" );
@@ -79,16 +79,16 @@ class GenerateWikiHieroTables extends Maintenance {
 	}
 
 	private function serialize() {
-		require( __DIR__ . '/data/tables.php' );
-		$result = array();
-		foreach ( array( 'wh_phonemes', 'wh_prefabs', 'wh_files' ) as $varName ) {
+		require ( __DIR__ . '/data/tables.php' );
+		$result = [];
+		foreach ( [ 'wh_phonemes', 'wh_prefabs', 'wh_files' ] as $varName ) {
 			$result[$varName] = $$varName;
 		}
 		file_put_contents( __DIR__ . '/data/tables.ser', serialize( $result ) );
 	}
 
 	private $moreTables = '
-$wh_phonemes	=	array( // phoneme -> Gardiner code conversion table
+$wh_phonemes	=	[ // phoneme -> Gardiner code conversion table
 	"mSa"	=>	"A12",
 	"xr"	=>	"A15",
 	"Xrd"	=>	"A17",
@@ -511,7 +511,7 @@ $wh_phonemes	=	array( // phoneme -> Gardiner code conversion table
 	"\"]"	=>	"",
 	"[\'"	=>	"",
 	"\']"	=>	"",
-);
+];
 ';
 
 }
