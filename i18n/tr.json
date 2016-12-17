@@ -4,7 +4,8 @@
 			"Cekli829",
 			"Emperyan",
 			"Joseph",
-			"Suelnur"
+			"Suelnur",
+			"1917 Ekim Devrimi"
 		]
 	},
 	"hieroglyphs": "Hiyeroglif biçimlendirmeyi deneyin",
@@ -44,7 +45,7 @@
 	"wikihiero-mirror": "Hiyeroglifi yansıt",
 	"wikihiero-result": "Sonuç",
 	"wikihiero-separator": "Ayırıcı",
-	"wikihiero-special-page-text": "WikiHiero biçimlendirmesini denemek için bu sayfayı kullanın.\nBiçimlendirme açıklaması için [//en.wikipedia.org/wiki/Help:WikiHiero_syntax buraya] bakınız.",
+	"wikihiero-special-page-text": "WikiHiero biçimlendirmesini denemek için bu sayfayı kullanın.\nBiçimlendirme açıklaması için [$1 Biçimlendirme tanımına ] bakınız.",
 	"wikihiero-submit": "Gönder",
 	"wikihiero-superposition": "Alt bölüm",
 	"wikihiero-syntax": "Sözdizimi",
