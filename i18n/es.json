@@ -5,7 +5,8 @@
 			"Imre",
 			"Remember the dot",
 			"Srtxg",
-			"Macofe"
+			"Macofe",
+			"Dgstranz"
 		]
 	},
 	"hieroglyphs": "Probar marcado de jeroglífico",
@@ -36,7 +37,7 @@
 	"wikihiero-category-Y": "Y: Escritos, juegos, música",
 	"wikihiero-category-Z": "Z: Trazos, figuras geométricas, etc.",
 	"wikihiero-comment": "Comentario",
-	"wikihiero-desc": "Añade elemento <code>&lt;hiero&gt;</code> para mostrar un [[Special:Hieroglyphs|jeroglífico]]",
+	"wikihiero-desc": "Añade elemento <code>&lt;hiero&gt;</code> para mostrar [[Special:Hieroglyphs|jeroglíficos]]",
 	"wikihiero-eol": "Fin de línea",
 	"wikihiero-half-void": "Bloque vacío de media anchura",
 	"wikihiero-input": "Texto a expandir",
