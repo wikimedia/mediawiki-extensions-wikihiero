@@ -20,7 +20,6 @@
 		]
 	},
 	"ExtensionMessagesFiles": {
-		"Wikihiero": "wikihiero.i18n.php",
 		"HieroglyphsAlias": "wikihiero.alias.php"
 	},
 	"AutoloadClasses": {
