@@ -1,5 +1,7 @@
 /*jshint node:true */
 module.exports = function ( grunt ) {
+	var conf = grunt.file.readJSON( 'extension.json' );
+
 	grunt.loadNpmTasks( 'grunt-banana-checker' );
 	grunt.loadNpmTasks( 'grunt-contrib-jshint' );
 	grunt.loadNpmTasks( 'grunt-contrib-watch' );
@@ -32,9 +34,7 @@ module.exports = function ( grunt ) {
 			],
 			tasks: 'lint'
 		},
-		banana: {
-			all: 'i18n/'
-		},
+		banana: conf.MessagesDirs,
 		jsonlint: {
 			all: [
 				'**/*.json',
