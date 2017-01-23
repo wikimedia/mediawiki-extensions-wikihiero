@@ -10,9 +10,9 @@
  * @param {ve.dm.MWHieroNode} model Model to observe
  * @param {Object} [config] Configuration options
  */
-ve.ce.MWHieroNode = function VeCeMWHieroNode( model, config ) {
+ve.ce.MWHieroNode = function VeCeMWHieroNode() {
 	// Parent constructor
-	ve.ce.MWBlockExtensionNode.call( this, model, config );
+	ve.ce.MWHieroNode.super.apply( this, arguments );
 
 	// DOM changes
 	this.$element.addClass( 've-ce-mwHieroNode' );

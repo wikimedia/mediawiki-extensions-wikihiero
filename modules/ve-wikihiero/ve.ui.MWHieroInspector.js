@@ -9,9 +9,9 @@
  * @constructor
  * @param {Object} [config] Configuration options
  */
-ve.ui.MWHieroInspector = function VeUiMWHieroInspector( config ) {
+ve.ui.MWHieroInspector = function VeUiMWHieroInspector() {
 	// Parent constructor
-	ve.ui.MWLiveExtensionInspector.call( this, config );
+	ve.ui.MWHieroInspector.super.apply( this, arguments );
 };
 
 /* Inheritance */
