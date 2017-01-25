@@ -11,7 +11,7 @@
  */
 ve.dm.MWHieroNode = function VeDmMWHieroNode() {
 	// Parent constructor
-	ve.dm.MWBlockExtensionNode.apply( this, arguments );
+	ve.dm.MWHieroNode.super.apply( this, arguments );
 };
 
 /* Inheritance */
