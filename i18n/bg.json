@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"DCLXVI",
-			"Spiritia"
+			"Spiritia",
+			"Termininja"
 		]
 	},
 	"wikihiero-category-A": "A: Мъжът и неговите занятия",
@@ -38,6 +39,7 @@
 	"wikihiero-load-error": "Грешка при зареждане!",
 	"wikihiero-result": "Резултат",
 	"wikihiero-separator": "Сепаратор",
+	"wikihiero-special-page-text": "Използвайте тази страница, за да изпробвате WikiHiero markup.\nВижте [$1 описателната страница] за това как да го използвате.",
 	"wikihiero-superposition": "Разделител",
 	"wikihiero-syntax": "Синтаксис",
 	"wikihiero-th-code": "Код",
