@@ -35,7 +35,7 @@
 	"wikihiero-category-Y": "Y: 저술, 게임, 음악",
 	"wikihiero-category-Z": "Z: 선, 기하학적 그림 등",
 	"wikihiero-comment": "주석",
-	"wikihiero-desc": "[[Special:Hieroglyphs|상형 문자]] 표현을 위해 <code>&lt;hiero&gt;</code> 태그를 추가합니다",
+	"wikihiero-desc": "[[Special:Hieroglyphs|상형 문자]] 표시를 위해 <code>&lt;hiero&gt;</code> 태그를 추가합니다",
 	"wikihiero-eol": "줄 끝",
 	"wikihiero-half-void": "반각 미반환 블록",
 	"wikihiero-help-link": "//ko.wikipedia.org/wiki/위키백과:위키상형_문법",
