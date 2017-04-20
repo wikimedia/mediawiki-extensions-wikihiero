@@ -1,5 +1,3 @@
-/*global ve, OO */
-
 /**
  * ContentEditable MediaWiki hieroglyphics node.
  *

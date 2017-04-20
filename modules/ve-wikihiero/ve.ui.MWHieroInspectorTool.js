@@ -1,5 +1,3 @@
-/*global ve, OO */
-
 /**
  * MediaWiki UserInterface hieroglyphics tool.
  *

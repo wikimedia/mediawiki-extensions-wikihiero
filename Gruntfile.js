@@ -1,35 +1,28 @@
-/*jshint node:true */
+/* eslint-env node */
 module.exports = function ( grunt ) {
 	var conf = grunt.file.readJSON( 'extension.json' );
 
 	grunt.loadNpmTasks( 'grunt-banana-checker' );
-	grunt.loadNpmTasks( 'grunt-contrib-jshint' );
 	grunt.loadNpmTasks( 'grunt-contrib-watch' );
-	grunt.loadNpmTasks( 'grunt-jscs' );
+	grunt.loadNpmTasks( 'grunt-eslint' );
 	grunt.loadNpmTasks( 'grunt-jsonlint' );
 	grunt.loadNpmTasks( 'grunt-stylelint' );
 
 	grunt.initConfig( {
-		jshint: {
-			options: {
-				jshintrc: true
-			},
+		eslint: {
 			all: [
 				'*.js',
 				'modules/*.js',
 				'modules/ve-wikihiero/**/*.js'
 			]
 		},
-		jscs: {
-			src: '<%= jshint.all %>'
-		},
 		stylelint: {
 			all: 'modules/**/*.css'
 		},
 		watch: {
 			files: [
-				'.{jscsrc,jshintignore,jshintrc,csslintrc}',
-				'<%= jshint.all %>',
+				'.eslintrc.json',
+				'<%= eslint.all %>',
 				'<%= stylelint.all %>'
 			],
 			tasks: 'lint'
@@ -43,7 +36,7 @@ module.exports = function ( grunt ) {
 		}
 	} );
 
-	grunt.registerTask( 'lint', [ 'jshint', 'jscs', 'stylelint', 'jsonlint', 'banana' ] );
+	grunt.registerTask( 'lint', [ 'eslint', 'stylelint', 'jsonlint', 'banana' ] );
 	grunt.registerTask( 'test', 'lint' );
 	grunt.registerTask( 'default', 'test' );
 };

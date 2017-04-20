@@ -1,5 +1,3 @@
-/*global ve, OO */
-
 /**
  * MediaWiki hieroglyphics inspector.
  *

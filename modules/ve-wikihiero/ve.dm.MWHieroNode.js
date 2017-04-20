@@ -1,5 +1,3 @@
-/*global ve, OO */
-
 /**
  * DataModel MediaWiki hieroglyphics node.
  *
