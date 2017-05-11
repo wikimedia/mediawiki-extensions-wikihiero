@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Ansumang",
-			"Naudefj"
+			"Naudefj",
+			"Fwolff"
 		]
 	},
 	"hieroglyphs": "Probeer hiëroglief-opmerkteks",
@@ -15,5 +16,6 @@
 	"wikihiero-result": "Resultaat",
 	"wikihiero-syntax": "Sintaks",
 	"wikihiero-th-code": "Kode",
-	"wikihiero-th-result": "Resultaat"
+	"wikihiero-th-result": "Resultaat",
+	"wikihiero-visualeditor-mwhieroinspector-title": "Hiërogliewe"
 }
