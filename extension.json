@@ -46,7 +46,6 @@
 		"ext.wikihiero.Special": {
 			"position": "top",
 			"scripts": "ext.wikihiero.Special.js",
-			"styles": "ext.wikihiero.Special.css",
 			"dependencies": [
 				"jquery.spinner"
 			],
