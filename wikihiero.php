@@ -27,7 +27,8 @@ if ( function_exists( 'wfLoadExtension' ) ) {
 	$wgMessagesDirs['wikihiero'] = __DIR__ . '/i18n';
 	$wgExtensionMessagesFiles['wikihiero'] = __DIR__ . '/wikihiero.alias.php';
 	/*wfWarn(
-		'Deprecated PHP entry point used for wikihiero extension. Please use wfLoadExtension instead, ' .
+		'Deprecated PHP entry point used for wikihiero extension. ' .
+		'Please use wfLoadExtension instead, ' .
 		'see https://www.mediawiki.org/wiki/Extension_registration for more details.'
 	);*/
 	return;

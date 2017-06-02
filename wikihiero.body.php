@@ -263,18 +263,23 @@ class WikiHiero {
 				} elseif ( strchr( $code[0], '<' ) ) { // start cartouche
 					$contentHtml .= '<td>' . $this->renderGlyph( $code[0] ) . '</td>';
 					$is_cartouche = true;
-					$contentHtml .= '<td>' . self::TABLE_START . "<tr><td class=\"mw-hiero-box\" style=\"height: "
-						. self::CARTOUCHE_WIDTH . "px;\"></td></tr><tr><td>" . self::TABLE_START . "<tr>";
+					$contentHtml .= '<td>' .
+						self::TABLE_START . "<tr><td class=\"mw-hiero-box\" style=\"height: " .
+						self::CARTOUCHE_WIDTH . "px;\"></td></tr><tr><td>" . self::TABLE_START .
+						"<tr>";
 
 				} elseif ( strchr( $code[0], '>' ) ) { // end cartouche
-					$contentHtml .= "</tr></table></td></tr><tr><td class=\"mw-hiero-box\" style=\"height: "
-						. self::CARTOUCHE_WIDTH
-						. 'px;"></td></tr></table></td>';
+					$contentHtml .= "</tr></table></td></tr><tr><td class=\"mw-hiero-box\" " .
+						"style=\"height: " . self::CARTOUCHE_WIDTH .
+						'px;"></td></tr></table></td>';
 					$is_cartouche = false;
 					$contentHtml .= '<td>' . $this->renderGlyph( $code[0] ) . '</td>';
 
 				} elseif ( $code[0] != "" ) { // assume it's a glyph or '..' or '.'
-					$contentHtml .= '<td>' . $this->renderGlyph( $code[0], $this->resizeGlyph( $code[0], $is_cartouche ) ) . '</td>';
+					$contentHtml .= '<td>' . $this->renderGlyph(
+						$code[0],
+						$this->resizeGlyph( $code[0], $is_cartouche )
+					) . '</td>';
 				}
 
 			// block contains more than 1 glyph
@@ -291,7 +296,10 @@ class WikiHiero {
 
 				// test if block exists in the prefabs list
 				if ( in_array( $temp, self::$prefabs ) ) {
-					$contentHtml .= '<td>' . $this->renderGlyph( $temp, $this->resizeGlyph( $temp, $is_cartouche ) ) . '</td>';
+					$contentHtml .= '<td>' . $this->renderGlyph(
+						$temp,
+						$this->resizeGlyph( $temp, $is_cartouche )
+					) . '</td>';
 
 				// block must be manually computed
 				} else {
@@ -342,7 +350,10 @@ class WikiHiero {
 
 						} else {
 							// resize the glyph according to the block total height
-							$temp .= $this->renderGlyph( $t, $this->resizeGlyph( $t, $is_cartouche, $total ) );
+							$temp .= $this->renderGlyph(
+								$t,
+								$this->resizeGlyph( $t, $is_cartouche, $total )
+							);
 						}
 					} // end foreach
 
@@ -364,8 +375,8 @@ class WikiHiero {
 		$style = null;
 		if ( $this->scale != 100 ) {
 			$ratio = floatval( $this->scale ) / 100;
-			$style = "-ms-transform: scale($ratio,$ratio); -webkit-transform: scale($ratio,$ratio); "
-				. "-o-transform: scale($ratio,$ratio); transform: scale($ratio,$ratio);";
+			$style = "-ms-transform: scale($ratio,$ratio); -webkit-transform: scale($ratio,$ratio);"
+				. " -o-transform: scale($ratio,$ratio); transform: scale($ratio,$ratio);";
 		}
 
 		return Html::rawElement(

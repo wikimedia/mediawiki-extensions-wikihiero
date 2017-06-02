@@ -51,7 +51,10 @@ class SpecialHieroglyphs extends SpecialPage {
 		$out = $this->getContext()->getOutput();
 		$out->addModules( 'ext.wikihiero.Special' );
 		$out->addModuleStyles( 'ext.wikihiero' ); // apply CSS during slow load
-		$out->addWikiMsg( 'wikihiero-special-page-text', wfMessage( 'wikihiero-help-link' )->text() );
+		$out->addWikiMsg(
+			'wikihiero-special-page-text',
+			wfMessage( 'wikihiero-help-link' )->text()
+		);
 
 		$out->addHTML( '<div id="hiero-result">' );
 
@@ -151,10 +154,18 @@ class SpecialHieroglyphs extends SpecialPage {
 				}
 			}
 			if ( $columns ) {
-				$html .= "<tr>$upperRow"
-					. ( $columns && $rows ? '<td colspan="' . ( self::HIEROGLYPHS_PER_ROW - $columns ) . '">&#160;</td>' : '' ) . "</tr>\n";
-				$html .= "<tr>$lowerRow"
-					. ( $columns && $rows ? '<th colspan="' . ( self::HIEROGLYPHS_PER_ROW - $columns ) . '">&#160;</th>' : '' ) . "</tr>\n";
+				$html .= "<tr>$upperRow" .
+					( $columns && $rows
+						? '<td colspan="' . ( self::HIEROGLYPHS_PER_ROW - $columns ) .
+							'">&#160;</td>'
+						: ''
+					) . "</tr>\n";
+				$html .= "<tr>$lowerRow" .
+					( $columns && $rows
+						? '<th colspan="' . ( self::HIEROGLYPHS_PER_ROW - $columns ) .
+							'">&#160;</th>'
+						: ''
+					) . "</tr>\n";
 			}
 			$html .= "</table>\n";
 		}
