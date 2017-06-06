@@ -50,7 +50,9 @@ class GenerateWikiHieroTables extends Maintenance {
 		if ( is_dir( $imgDir ) ) {
 			$dh = opendir( $imgDir );
 			if ( $dh ) {
+				// @codingStandardsIgnoreStart
 				while ( ( $file = readdir( $dh ) ) !== false ) {
+				// @codingStandardsIgnoreEnd
 					if ( stristr( $file, WikiHiero::IMAGE_EXT ) ) {
 						list( $width, $height, , ) = getimagesize( $imgDir . $file );
 						$wh_files .= "  \"" . WikiHiero::getCode( $file ) . "\" => [ $width, $height ],\n";
@@ -517,4 +519,4 @@ $wh_phonemes	=	[ // phoneme -> Gardiner code conversion table
 }
 
 $maintClass = "GenerateWikiHieroTables";
-require_once( RUN_MAINTENANCE_IF_MAIN );
+require_once RUN_MAINTENANCE_IF_MAIN;

@@ -67,7 +67,7 @@ class HieroTokenizer {
 
 		$text = preg_replace( '/\\<!--.*?--\\>/s', '', $this->text ); // remove HTML comments
 
-		for ( $i = 0; $i < strlen( $text ); $i++ ) {
+		for ( $i = 0, $len = strlen( $text ); $i < $len; $i++ ) {
 			$char = $text[$i];
 
 			if ( isset( self::$delimiters[$char] ) ) {

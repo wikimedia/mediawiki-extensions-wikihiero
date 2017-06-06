@@ -215,8 +215,9 @@ class SpecialHieroglyphs extends SpecialPage {
 	 */
 	private function getCategories() {
 		$res = [];
-		for ( $i = ord( 'A' ); $i <= ord( 'Z' ); $i++ ) {
-			if ( $i != ord( 'J' ) ) {
+		$ordJ = ord( 'J' );
+		for ( $i = ord( 'A' ), $ordZ = ord( 'Z' ); $i <= $ordZ; $i++ ) {
+			if ( $i != $ordJ ) {
 				$res[] = chr( $i );
 			}
 		}
