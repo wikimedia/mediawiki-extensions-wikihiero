@@ -28,6 +28,8 @@ ve.ce.MWHieroNode.static.tagName = 'div';
 
 ve.ce.MWHieroNode.static.primaryCommandName = 'hiero';
 
+ve.ce.MWHieroNode.static.iconWhenInvisible = 'hiero';
+
 /* Registration */
 
 ve.ce.nodeFactory.register( ve.ce.MWHieroNode );
