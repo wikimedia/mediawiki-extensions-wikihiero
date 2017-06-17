@@ -5,246 +5,245 @@
  * @file
  * @ingroup Extensions
  */
-// @codingStandardsIgnoreFile
 
-$specialPageAliases = array();
+$specialPageAliases = [];
 
 /** English (English) */
-$specialPageAliases['en'] = array(
-	'Hieroglyphs' => array( 'Hieroglyphs' ),
-);
+$specialPageAliases['en'] = [
+	'Hieroglyphs' => [ 'Hieroglyphs' ],
+];
 
 /** Arabic (العربية) */
-$specialPageAliases['ar'] = array(
-	'Hieroglyphs' => array( 'هيروغليفي' ),
-);
+$specialPageAliases['ar'] = [
+	'Hieroglyphs' => [ 'هيروغليفي' ],
+];
 
 /** Egyptian Arabic (مصرى) */
-$specialPageAliases['arz'] = array(
-	'Hieroglyphs' => array( 'هيروغليفى' ),
-);
+$specialPageAliases['arz'] = [
+	'Hieroglyphs' => [ 'هيروغليفى' ],
+];
 
 /** Asturian (asturianu) */
-$specialPageAliases['ast'] = array(
-	'Hieroglyphs' => array( 'Xeroglíficos' ),
-);
+$specialPageAliases['ast'] = [
+	'Hieroglyphs' => [ 'Xeroglíficos' ],
+];
 
 /** Avaric (авар) */
-$specialPageAliases['av'] = array(
-	'Hieroglyphs' => array( 'Иероглифы' ),
-);
+$specialPageAliases['av'] = [
+	'Hieroglyphs' => [ 'Иероглифы' ],
+];
 
 /** Bulgarian (български) */
-$specialPageAliases['bg'] = array(
-	'Hieroglyphs' => array( 'Йероглифи' ),
-);
+$specialPageAliases['bg'] = [
+	'Hieroglyphs' => [ 'Йероглифи' ],
+];
 
 /** Western Balochi (بلوچی رخشانی) */
-$specialPageAliases['bgn'] = array(
-	'Hieroglyphs' => array( 'هیروگیپ_ئان' ),
-);
+$specialPageAliases['bgn'] = [
+	'Hieroglyphs' => [ 'هیروگیپ_ئان' ],
+];
 
 /** буряад (буряад) */
-$specialPageAliases['bxr'] = array(
-	'Hieroglyphs' => array( 'Дүрсэ_үзэг' ),
-);
+$specialPageAliases['bxr'] = [
+	'Hieroglyphs' => [ 'Дүрсэ_үзэг' ],
+];
 
 /** Catalan (català) */
-$specialPageAliases['ca'] = array(
-	'Hieroglyphs' => array( 'Jeroglífics' ),
-);
+$specialPageAliases['ca'] = [
+	'Hieroglyphs' => [ 'Jeroglífics' ],
+];
 
 /** Chechen (нохчийн) */
-$specialPageAliases['ce'] = array(
-	'Hieroglyphs' => array( 'Иероглифаш' ),
-);
+$specialPageAliases['ce'] = [
+	'Hieroglyphs' => [ 'Иероглифаш' ],
+];
 
 /** Czech (čeština) */
-$specialPageAliases['cs'] = array(
-	'Hieroglyphs' => array( 'Hieroglyfy' ),
-);
+$specialPageAliases['cs'] = [
+	'Hieroglyphs' => [ 'Hieroglyfy' ],
+];
 
 /** Church Slavic (словѣньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ) */
-$specialPageAliases['cu'] = array(
-	'Hieroglyphs' => array( 'Їєроглѷфꙑ' ),
-);
+$specialPageAliases['cu'] = [
+	'Hieroglyphs' => [ 'Їєроглѷфꙑ' ],
+];
 
 /** Danish (dansk) */
-$specialPageAliases['da'] = array(
-	'Hieroglyphs' => array( 'Hieroglyffer' ),
-);
+$specialPageAliases['da'] = [
+	'Hieroglyphs' => [ 'Hieroglyffer' ],
+];
 
 /** German (Deutsch) */
-$specialPageAliases['de'] = array(
-	'Hieroglyphs' => array( 'Hieroglyphen' ),
-);
+$specialPageAliases['de'] = [
+	'Hieroglyphs' => [ 'Hieroglyphen' ],
+];
 
 /** Zazaki (Zazaki) */
-$specialPageAliases['diq'] = array(
-	'Hieroglyphs' => array( 'Hiyeroglifi' ),
-);
+$specialPageAliases['diq'] = [
+	'Hieroglyphs' => [ 'Hiyeroglifi' ],
+];
 
 /** Esperanto (Esperanto) */
-$specialPageAliases['eo'] = array(
-	'Hieroglyphs' => array( 'Hieroglifoj' ),
-);
+$specialPageAliases['eo'] = [
+	'Hieroglyphs' => [ 'Hieroglifoj' ],
+];
 
 /** Spanish (español) */
-$specialPageAliases['es'] = array(
-	'Hieroglyphs' => array( 'Jeroglíficos' ),
-);
+$specialPageAliases['es'] = [
+	'Hieroglyphs' => [ 'Jeroglíficos' ],
+];
 
 /** Estonian (eesti) */
-$specialPageAliases['et'] = array(
-	'Hieroglyphs' => array( 'Hieroglüüfid' ),
-);
+$specialPageAliases['et'] = [
+	'Hieroglyphs' => [ 'Hieroglüüfid' ],
+];
 
 /** Persian (فارسی) */
-$specialPageAliases['fa'] = array(
-	'Hieroglyphs' => array( 'هیروگلیف‌ها' ),
-);
+$specialPageAliases['fa'] = [
+	'Hieroglyphs' => [ 'هیروگلیف‌ها' ],
+];
 
 /** Finnish (suomi) */
-$specialPageAliases['fi'] = array(
-	'Hieroglyphs' => array( 'Hieroglyyfit' ),
-);
+$specialPageAliases['fi'] = [
+	'Hieroglyphs' => [ 'Hieroglyyfit' ],
+];
 
 /** Galician (galego) */
-$specialPageAliases['gl'] = array(
-	'Hieroglyphs' => array( 'Xeróglifos' ),
-);
+$specialPageAliases['gl'] = [
+	'Hieroglyphs' => [ 'Xeróglifos' ],
+];
 
 /** Swiss German (Alemannisch) */
-$specialPageAliases['gsw'] = array(
-	'Hieroglyphs' => array( 'Hieroglyphe' ),
-);
+$specialPageAliases['gsw'] = [
+	'Hieroglyphs' => [ 'Hieroglyphe' ],
+];
 
 /** Hebrew (עברית) */
-$specialPageAliases['he'] = array(
-	'Hieroglyphs' => array( 'סימון_היירוגליפים' ),
-);
+$specialPageAliases['he'] = [
+	'Hieroglyphs' => [ 'סימון_היירוגליפים' ],
+];
 
 /** Upper Sorbian (hornjoserbsce) */
-$specialPageAliases['hsb'] = array(
-	'Hieroglyphs' => array( 'Hieroglyfy' ),
-);
+$specialPageAliases['hsb'] = [
+	'Hieroglyphs' => [ 'Hieroglyfy' ],
+];
 
 /** Interlingua (interlingua) */
-$specialPageAliases['ia'] = array(
-	'Hieroglyphs' => array( 'Hieroglyphos' ),
-);
+$specialPageAliases['ia'] = [
+	'Hieroglyphs' => [ 'Hieroglyphos' ],
+];
 
 /** Italian (italiano) */
-$specialPageAliases['it'] = array(
-	'Hieroglyphs' => array( 'Geroglifici' ),
-);
+$specialPageAliases['it'] = [
+	'Hieroglyphs' => [ 'Geroglifici' ],
+];
 
 /** Japanese (日本語) */
-$specialPageAliases['ja'] = array(
-	'Hieroglyphs' => array( 'ヒエログリフ' ),
-);
+$specialPageAliases['ja'] = [
+	'Hieroglyphs' => [ 'ヒエログリフ' ],
+];
 
 /** Georgian (ქართული) */
-$specialPageAliases['ka'] = array(
-	'Hieroglyphs' => array( 'იეროგლიფები' ),
-);
+$specialPageAliases['ka'] = [
+	'Hieroglyphs' => [ 'იეროგლიფები' ],
+];
 
 /** Korean (한국어) */
-$specialPageAliases['ko'] = array(
-	'Hieroglyphs' => array( '상형문자', '히에로글리프' ),
-);
+$specialPageAliases['ko'] = [
+	'Hieroglyphs' => [ '상형문자', '히에로글리프' ],
+];
 
 /** Luxembourgish (Lëtzebuergesch) */
-$specialPageAliases['lb'] = array(
-	'Hieroglyphs' => array( 'Hieroglyphen' ),
-);
+$specialPageAliases['lb'] = [
+	'Hieroglyphs' => [ 'Hieroglyphen' ],
+];
 
 /** Northern Luri (لۊری شومالی) */
-$specialPageAliases['lrc'] = array(
-	'Hieroglyphs' => array( 'ھیروگئلیف' ),
-);
+$specialPageAliases['lrc'] = [
+	'Hieroglyphs' => [ 'ھیروگئلیف' ],
+];
 
 /** Minangkabau (Baso Minangkabau) */
-$specialPageAliases['min'] = array(
-	'Hieroglyphs' => array( 'Heroglip' ),
-);
+$specialPageAliases['min'] = [
+	'Hieroglyphs' => [ 'Heroglip' ],
+];
 
 /** Macedonian (македонски) */
-$specialPageAliases['mk'] = array(
-	'Hieroglyphs' => array( 'Хиероглифи' ),
-);
+$specialPageAliases['mk'] = [
+	'Hieroglyphs' => [ 'Хиероглифи' ],
+];
 
 /** Malayalam (മലയാളം) */
-$specialPageAliases['ml'] = array(
-	'Hieroglyphs' => array( 'ഹൈറോഗ്ലിഫ്സ്' ),
-);
+$specialPageAliases['ml'] = [
+	'Hieroglyphs' => [ 'ഹൈറോഗ്ലിഫ്സ്' ],
+];
 
 /** Norwegian Bokmål (norsk bokmål) */
-$specialPageAliases['nb'] = array(
-	'Hieroglyphs' => array( 'Hieroglyfer' ),
-);
+$specialPageAliases['nb'] = [
+	'Hieroglyphs' => [ 'Hieroglyfer' ],
+];
 
 /** Dutch (Nederlands) */
-$specialPageAliases['nl'] = array(
-	'Hieroglyphs' => array( 'Hierogliefen' ),
-);
+$specialPageAliases['nl'] = [
+	'Hieroglyphs' => [ 'Hierogliefen' ],
+];
 
 /** Norwegian Nynorsk (norsk nynorsk) */
-$specialPageAliases['nn'] = array(
-	'Hieroglyphs' => array( 'Hieroglyfar' ),
-);
+$specialPageAliases['nn'] = [
+	'Hieroglyphs' => [ 'Hieroglyfar' ],
+];
 
 /** Polish (polski) */
-$specialPageAliases['pl'] = array(
-	'Hieroglyphs' => array( 'Hieroglify', 'Hiertoglify' ),
-);
+$specialPageAliases['pl'] = [
+	'Hieroglyphs' => [ 'Hieroglify', 'Hiertoglify' ],
+];
 
 /** Russian (русский) */
-$specialPageAliases['ru'] = array(
-	'Hieroglyphs' => array( 'Иероглифы' ),
-);
+$specialPageAliases['ru'] = [
+	'Hieroglyphs' => [ 'Иероглифы' ],
+];
 
 /** Sicilian (sicilianu) */
-$specialPageAliases['scn'] = array(
-	'Hieroglyphs' => array( 'Geroglifici' ),
-);
+$specialPageAliases['scn'] = [
+	'Hieroglyphs' => [ 'Geroglifici' ],
+];
 
 /** Northern Sami (sámegiella) */
-$specialPageAliases['se'] = array(
-	'Hieroglyphs' => array( 'Hieroglyfat' ),
-);
+$specialPageAliases['se'] = [
+	'Hieroglyphs' => [ 'Hieroglyfat' ],
+];
 
 /** Swedish (svenska) */
-$specialPageAliases['sv'] = array(
-	'Hieroglyphs' => array( 'Hieroglyfer' ),
-);
+$specialPageAliases['sv'] = [
+	'Hieroglyphs' => [ 'Hieroglyfer' ],
+];
 
 /** Turkish (Türkçe) */
-$specialPageAliases['tr'] = array(
-	'Hieroglyphs' => array( 'Hiyeroglifler' ),
-);
+$specialPageAliases['tr'] = [
+	'Hieroglyphs' => [ 'Hiyeroglifler' ],
+];
 
 /** Tuvinian (тыва дыл) */
-$specialPageAliases['tyv'] = array(
-	'Hieroglyphs' => array( 'Иероглифтер' ),
-);
+$specialPageAliases['tyv'] = [
+	'Hieroglyphs' => [ 'Иероглифтер' ],
+];
 
 /** Ukrainian (українська) */
-$specialPageAliases['uk'] = array(
-	'Hieroglyphs' => array( 'Ієрогліфи' ),
-);
+$specialPageAliases['uk'] = [
+	'Hieroglyphs' => [ 'Ієрогліфи' ],
+];
 
 /** Vietnamese (Tiếng Việt) */
-$specialPageAliases['vi'] = array(
-	'Hieroglyphs' => array( 'Chữ_tượng_hình' ),
-);
+$specialPageAliases['vi'] = [
+	'Hieroglyphs' => [ 'Chữ_tượng_hình' ],
+];
 
 /** Simplified Chinese (中文（简体）‎) */
-$specialPageAliases['zh-hans'] = array(
-	'Hieroglyphs' => array( '象形文字' ),
-);
+$specialPageAliases['zh-hans'] = [
+	'Hieroglyphs' => [ '象形文字' ],
+];
 
 /** Traditional Chinese (中文（繁體）‎) */
-$specialPageAliases['zh-hant'] = array(
-	'Hieroglyphs' => array( '象形文字' ),
-);
+$specialPageAliases['zh-hant'] = [
+	'Hieroglyphs' => [ '象形文字' ],
+];
