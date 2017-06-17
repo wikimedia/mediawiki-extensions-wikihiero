@@ -37,11 +37,14 @@
 	"wikihiero-category-X": "X: Pães e bolos",
 	"wikihiero-category-Y": "Y: Escritos, jogos, música",
 	"wikihiero-category-Z": "Z: Traços e formas geométricas",
+	"wikihiero-comment": "Comentário",
 	"wikihiero-desc": "Adiciona o elemento <code>&lt;hiero&gt;</code> para apresentar [[Special:Hieroglyphs|hieróglifos]]",
 	"wikihiero-eol": "Fim de linha",
+	"wikihiero-half-void": "Bloco vazio de meia largura",
 	"wikihiero-input": "Texto de entrada",
 	"wikihiero-juxtaposition": "Justaposição",
 	"wikihiero-load-error": "Erro de carga!",
+	"wikihiero-mirror": "Refletir um hieróglifo",
 	"wikihiero-result": "Resultado",
 	"wikihiero-separator": "Separador",
 	"wikihiero-special-page-text": "Use esta página para experimentar a marcação WikiHiero.\nConsulte [$1 a sintaxe de marcação] para aprender a utilizá-la.",
@@ -52,5 +55,6 @@
 	"wikihiero-th-example": "Código de exemplo",
 	"wikihiero-th-meaning": "Significado",
 	"wikihiero-th-result": "Resultado",
-	"wikihiero-visualeditor-mwhieroinspector-title": "Hieróglifos"
+	"wikihiero-visualeditor-mwhieroinspector-title": "Hieróglifos",
+	"wikihiero-void": "Bloco vazio de largura completa"
 }
