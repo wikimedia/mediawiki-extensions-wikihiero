@@ -140,11 +140,11 @@ class WikiHiero {
 		$style = is_null( $margin ) ? null : "margin: {$margin}px;";
 		$attribs = [
 			'class' => $class,
-		    'style' => $style,
-		    'src' => $this->getImageUrl( $fileName ),
-		    'height' => $height,
-		    'title' => $title,
-		    'alt' => $glyph,
+			'style' => $style,
+			'src' => $this->getImageUrl( $fileName ),
+			'height' => $height,
+			'title' => $title,
+			'alt' => $glyph,
 		];
 		return Html::element( 'img', $attribs );
 	}
@@ -160,7 +160,7 @@ class WikiHiero {
 			'table',
 			[
 				'class' => 'mw-hiero-table',
-			    'style' => "width: {$width}px;",
+				'style' => "width: {$width}px;",
 			],
 			'<tr><td>&#160;</td></tr>'
 		);
@@ -250,10 +250,8 @@ class WikiHiero {
 		// ------------------------------------------------------------------------
 		// Loop into all blocks
 		foreach ( $blocks as $code ) {
-
 			// simplest case, the block contain only 1 code -> render
-			if ( count( $code ) == 1 )
-			{
+			if ( count( $code ) == 1 ) {
 				if ( $code[0] == '!' ) { // end of line
 					$tableHtml = '</tr></table>' . self::TABLE_START . "<tr>\n";
 					if ( $line ) {
@@ -341,7 +339,6 @@ class WikiHiero {
 					// render all glyph into the block
 					$temp = "";
 					foreach ( $code as $t ) {
-
 						if ( $t == ":" ) {
 							$temp .= "<br />";
 
@@ -384,7 +381,7 @@ class WikiHiero {
 			[
 				'class' => 'mw-hiero-table mw-hiero-outer',
 				'dir' => 'ltr',
-			    'style' => $style,
+				'style' => $style,
 			],
 			"<tr><td>\n$html\n</td></tr>"
 		);

@@ -26,7 +26,7 @@ $IP = getenv( 'MW_INSTALL_PATH' );
 if ( $IP === false ) {
 	$IP = __DIR__ . '/../..';
 }
-require_once ( "$IP/maintenance/Maintenance.php" );
+require_once "$IP/maintenance/Maintenance.php";
 
 class GenerateWikiHieroTables extends Maintenance {
 
@@ -81,7 +81,7 @@ class GenerateWikiHieroTables extends Maintenance {
 	}
 
 	private function serialize() {
-		require ( __DIR__ . '/data/tables.php' );
+		require __DIR__ . '/data/tables.php';
 		$result = [];
 		foreach ( [ 'wh_phonemes', 'wh_prefabs', 'wh_files' ] as $varName ) {
 			$result[$varName] = $$varName;

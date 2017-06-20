@@ -35,4 +35,3 @@ if ( function_exists( 'wfLoadExtension' ) ) {
 } else {
 	die( 'This version of the wikihiero extension requires MediaWiki 1.25+' );
 }
-
