@@ -7,7 +7,8 @@
 			"Luckas",
 			"MetalBrasil",
 			"Dianakc",
-			"Luan"
+			"Luan",
+			"Felipe L. Ewald"
 		]
 	},
 	"hieroglyphs": "Testar a marcação de hieróglifos",
@@ -41,6 +42,7 @@
 	"wikihiero-desc": "Adiciona a marca <code>&lt;hiero&gt;</code> para exibir [[Special:Hieroglyphs|hieróglifos]]",
 	"wikihiero-eol": "Fim da linha",
 	"wikihiero-half-void": "Bloco vazio com meia largura",
+	"wikihiero-help-link": "//en.wikipedia.org/wiki/Help:WikiHiero_syntax",
 	"wikihiero-input": "Texto de entrada",
 	"wikihiero-juxtaposition": "Justaposição",
 	"wikihiero-load-error": "Erro ao carregar!",
