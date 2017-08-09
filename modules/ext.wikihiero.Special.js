@@ -7,9 +7,9 @@ jQuery( function ( $ ) {
 
 	$textarea.keyup( function () {
 		if ( $textarea.val().length === 0 ) {
-			$submit.attr( 'disabled', 'disabled' );
+			$submit.prop( 'disabled', true );
 		} else {
-			$submit.removeAttr( 'disabled' );
+			$submit.prop( 'disabled', false );
 		}
 	} );
 	$textarea.keyup();
