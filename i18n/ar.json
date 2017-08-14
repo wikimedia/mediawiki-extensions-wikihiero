@@ -3,7 +3,8 @@
 		"authors": [
 			"Meno25",
 			"روخو",
-			"زكريا"
+			"زكريا",
+			"ديفيد"
 		]
 	},
 	"hieroglyphs": "جرب ترميز الهيرغليفية",
@@ -14,7 +15,7 @@
 	"wikihiero-load-error": "خطأ تحميل!",
 	"wikihiero-result": "نتيجة",
 	"wikihiero-separator": "فاصل",
-	"wikihiero-special-page-text": "استخدم هذه الصفحة لتجربة ترميز ويكي هييرو.\nانظر [//ar.wikipedia.org/wiki/مساعدة:نحو_ويكي_هييرو هنا] للاستعلام.",
+	"wikihiero-special-page-text": "استخدم هذه الصفحة لتجربة ترميز ويكي هييرو.\nانظر [$1 وصف العلامات] كيفية استخدامها.",
 	"wikihiero-syntax": "صياغة",
 	"wikihiero-th-code": "كود",
 	"wikihiero-th-example": "مثال كود",
