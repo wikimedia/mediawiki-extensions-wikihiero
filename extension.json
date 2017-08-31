@@ -9,6 +9,9 @@
 	"descriptionmsg": "wikihiero-desc",
 	"license-name": "GPL-2.0+",
 	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.25.0"
+	},
 	"Hooks": {
 		"ParserFirstCallInit": [
 			"WikiHieroHooks::onParserFirstCallInit"
@@ -23,10 +26,10 @@
 		"HieroglyphsAlias": "wikihiero.alias.php"
 	},
 	"AutoloadClasses": {
-		"WikiHiero": "wikihiero.body.php",
-		"SpecialHieroglyphs": "SpecialHieroglyphs.php",
-		"HieroTokenizer": "HieroTokenizer.php",
-		"WikiHieroHooks": "wikihiero.hooks.php"
+		"WikiHiero": "includes/WikiHiero.php",
+		"SpecialHieroglyphs": "includes/SpecialHieroglyphs.php",
+		"HieroTokenizer": "includes/HieroTokenizer.php",
+		"WikiHieroHooks": "includes/WikiHieroHooks.php"
 	},
 	"ParserTestFiles": [
 		"tests.txt"
