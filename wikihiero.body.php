@@ -229,7 +229,7 @@ class WikiHiero {
 	 * @param $hiero string: text to convert
 	 * @param $scale int: global scale in percentage (default = 100%)
 	 * @param $line bool: use line (default = false)
-	 * @return string: converted code
+	 * @return string converted code
 	*/
 	public function render( $hiero, $scale = self::DEFAULT_SCALE, $line = false ) {
 		if ( $scale != self::DEFAULT_SCALE ) {
@@ -390,14 +390,14 @@ class WikiHiero {
 	/**
 	 * Returns a list of image files used by this extension
 	 *
-	 * @return array: list of files in format 'file' => [ width, height ]
+	 * @return array list of files in format 'file' => [ width, height ]
 	 */
 	public function getFiles() {
 		return self::$files;
 	}
 
 	/**
-	 * @return string: URL of images directory
+	 * @return string URL of images directory
 	 */
 	public static function getImagePath() {
 		global $wgExtensionAssetsPath;
@@ -408,7 +408,7 @@ class WikiHiero {
 	 * Get glyph code from file name
 	 *
 	 * @param $file string: file name
-	 * @return string: converted code
+	 * @return string converted code
 	 */
 	public static function getCode( $file ) {
 		return substr( $file, strlen( self::IMAGE_PREFIX ), -( 1 + strlen( self::IMAGE_EXT ) ) );
