@@ -34,7 +34,7 @@ class HieroTokenizer {
 	/**
 	 * Constructor
 	 *
-	 * @param $text string:
+	 * @param $text string
 	 */
 	public function __construct( $text ) {
 		$this->text = $text;
@@ -102,7 +102,7 @@ class HieroTokenizer {
 	/**
 	 * Flushes current token, optionally adds another one
 	 *
-	 * @param $token Mixed: token to add or false
+	 * @param string|bool $token token to add or false
 	 */
 	private function newToken( $token = false ) {
 		if ( $this->token !== '' ) {
@@ -117,7 +117,7 @@ class HieroTokenizer {
 	/**
 	 * Adds a block consisting of one character
 	 *
-	 * @param $char string: block character
+	 * @param string $char block character
 	 */
 	private function singleCharBlock( $char ) {
 		$this->newBlock();
@@ -140,7 +140,7 @@ class HieroTokenizer {
 	/**
 	 * Adds a miscellaneous character to current token
 	 *
-	 * @param $char string: character to add
+	 * @param string $char character to add
 	 */
 	private function char( $char ) {
 		if ( $this->token == '.' ) {

@@ -52,12 +52,12 @@ class WikiHiero {
 			return;
 		}
 		if ( wfIsHHVM() ) {
-			require_once __DIR__ . '/data/tables.php';
+			require_once dirname( __DIR__ ) . '/data/tables.php';
 			self::$phonemes = $wh_phonemes;
 			self::$prefabs = $wh_prefabs;
 			self::$files = $wh_files;
 		} else {
-			$fileName = __DIR__ . '/data/tables.ser';
+			$fileName = dirname( __DIR__ ) . '/data/tables.ser';
 			$stream = file_get_contents( $fileName );
 			if ( !$stream ) {
 				throw new MWException( "Cannot open serialized hieroglyph data file $fileName!" );
@@ -90,9 +90,9 @@ class WikiHiero {
 	/**
 	 * Renders a glyph
 	 *
-	 * @param string $glyph: glyph's code to render
-	 * @param int|null $height: glyph size in pixels or null to omit
-	 * @return string: a string to add to the stream
+	 * @param string $glyph glyph's code to render
+	 * @param int|null $height glyph size in pixels or null to omit
+	 * @return string a string to add to the stream
 	 */
 	private function renderGlyph( $glyph, $height = null ) {
 		$imageClass = null;
@@ -122,7 +122,7 @@ class WikiHiero {
 	 * @param int|null $height: Image height, if null don't set explicitly
 	 * @param int|null $margin: Margin, if null don't set
 	 * @param string|null $class: Class for <img> tag
-	 * @return string: Rendered HTML
+	 * @return string Rendered HTML
 	 */
 	private function renderGlyphImage( $glyph, $height = null, $margin = null, $class = null ) {
 		if ( array_key_exists( $glyph, self::$phonemes ) ) {
@@ -177,6 +177,9 @@ class WikiHiero {
 
 	/**
 	 * Extracts hieroglyph code from glyph, e.g. A1\ --> A1
+	 *
+	 * @param string $glyph
+	 * @return string
 	 */
 	private function extractCode( $glyph ) {
 		return preg_replace( '/\\\\.*$/', '', $glyph );
@@ -185,9 +188,9 @@ class WikiHiero {
 	/**
 	 * Resize a glyph
 	 *
-	 * @param $item string: glyph code
-	 * @param $is_cartouche bool: true if glyph is inside a cartouche
-	 * @param $total int: total size of a group for multi-glyph block
+	 * @param string $item: glyph code
+	 * @param bool $is_cartouche: true if glyph is inside a cartouche
+	 * @param int $total: total size of a group for multi-glyph block
 	 * @return float size
 	 */
 	private function resizeGlyph( $item, $is_cartouche = false, $total = 0 ) {
@@ -226,9 +229,9 @@ class WikiHiero {
 	/**
 	 * Render hieroglyph text
 	 *
-	 * @param $hiero string: text to convert
-	 * @param $scale int: global scale in percentage (default = 100%)
-	 * @param $line bool: use line (default = false)
+	 * @param string $hiero text to convert
+	 * @param int $scale global scale in percentage (default = 100%)
+	 * @param bool $line use line (default = false)
 	 * @return string converted code
 	*/
 	public function render( $hiero, $scale = self::DEFAULT_SCALE, $line = false ) {
@@ -407,7 +410,7 @@ class WikiHiero {
 	/**
 	 * Get glyph code from file name
 	 *
-	 * @param $file string: file name
+	 * @param string $file file name
 	 * @return string converted code
 	 */
 	public static function getCode( $file ) {
