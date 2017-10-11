@@ -233,6 +233,11 @@ $specialPageAliases['uk'] = [
 	'Hieroglyphs' => [ 'Ієрогліфи' ],
 ];
 
+/** Urdu (اردو) */
+$specialPageAliases['ur'] = [
+	'Hieroglyphs' => [ 'منقوشی_ابجد' ],
+];
+
 /** Vietnamese (Tiếng Việt) */
 $specialPageAliases['vi'] = [
 	'Hieroglyphs' => [ 'Chữ_tượng_hình' ],
