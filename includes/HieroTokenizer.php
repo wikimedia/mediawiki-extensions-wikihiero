@@ -34,7 +34,7 @@ class HieroTokenizer {
 	/**
 	 * Constructor
 	 *
-	 * @param $text string
+	 * @param string $text
 	 */
 	public function __construct( $text ) {
 		$this->text = $text;

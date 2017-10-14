@@ -100,6 +100,7 @@ class SpecialHieroglyphs extends SpecialPage {
 
 	/**
 	 * Returns a HTML list of hieroglyphs
+	 * @return string
 	 */
 	private function listHieroglyphs() {
 		global $wgMemc;

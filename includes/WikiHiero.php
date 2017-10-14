@@ -71,6 +71,10 @@ class WikiHiero {
 
 	/**
 	 * Parser callback for <hiero> tag
+	 * @param string $input
+	 * @param array $args
+	 * @param Parser $parser
+	 * @return string
 	 */
 	public static function parserHook( $input, $args = [], $parser ) {
 		$hiero = new WikiHiero();
@@ -118,10 +122,10 @@ class WikiHiero {
 	/**
 	 * Renders a glyph into an <img> tag
 	 *
-	 * @param string $glyph: Glyph to render
-	 * @param int|null $height: Image height, if null don't set explicitly
-	 * @param int|null $margin: Margin, if null don't set
-	 * @param string|null $class: Class for <img> tag
+	 * @param string $glyph Glyph to render
+	 * @param int|null $height Image height, if null don't set explicitly
+	 * @param int|null $margin Margin, if null don't set
+	 * @param string|null $class Class for <img> tag
 	 * @return string Rendered HTML
 	 */
 	private function renderGlyphImage( $glyph, $height = null, $margin = null, $class = null ) {
@@ -188,9 +192,9 @@ class WikiHiero {
 	/**
 	 * Resize a glyph
 	 *
-	 * @param string $item: glyph code
-	 * @param bool $is_cartouche: true if glyph is inside a cartouche
-	 * @param int $total: total size of a group for multi-glyph block
+	 * @param string $item glyph code
+	 * @param bool $is_cartouche true if glyph is inside a cartouche
+	 * @param int $total total size of a group for multi-glyph block
 	 * @return float size
 	 */
 	private function resizeGlyph( $item, $is_cartouche = false, $total = 0 ) {
