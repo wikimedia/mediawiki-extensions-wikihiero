@@ -237,7 +237,7 @@ class WikiHiero {
 	 * @param int $scale global scale in percentage (default = 100%)
 	 * @param bool $line use line (default = false)
 	 * @return string converted code
-	*/
+	 */
 	public function render( $hiero, $scale = self::DEFAULT_SCALE, $line = false ) {
 		if ( $scale != self::DEFAULT_SCALE ) {
 			$this->setScale( $scale );
