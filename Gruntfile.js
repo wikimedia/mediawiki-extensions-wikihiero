@@ -22,6 +22,7 @@ module.exports = function ( grunt ) {
 		watch: {
 			files: [
 				'.eslintrc.json',
+				'.stylelintrc.json',
 				'<%= eslint.all %>',
 				'<%= stylelint.all %>'
 			],
@@ -31,7 +32,8 @@ module.exports = function ( grunt ) {
 		jsonlint: {
 			all: [
 				'**/*.json',
-				'!node_modules/**'
+				'!node_modules/**',
+				'!vendor/**'
 			]
 		}
 	} );
