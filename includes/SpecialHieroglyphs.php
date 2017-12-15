@@ -17,6 +17,11 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
+namespace WikiHiero;
+
+use Html;
+use SpecialPage;
+
 class SpecialHieroglyphs extends SpecialPage {
 	const HIEROGLYPHS_PER_ROW = 10;
 	const CACHE_EXPIRY = 86400; // 1 day

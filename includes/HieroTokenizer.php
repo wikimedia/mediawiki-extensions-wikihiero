@@ -18,6 +18,8 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
+namespace WikiHiero;
+
 /**
  * Hieroglyphs tokenizer
  */

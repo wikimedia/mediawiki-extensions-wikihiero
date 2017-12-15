@@ -10,11 +10,11 @@
 	"license-name": "GPL-2.0+",
 	"type": "parserhook",
 	"requires": {
-		"MediaWiki": ">= 1.25.0"
+		"MediaWiki": ">= 1.31.0"
 	},
 	"Hooks": {
 		"ParserFirstCallInit": [
-			"WikiHieroHooks::onParserFirstCallInit"
+			"WikiHiero\\Hooks::onParserFirstCallInit"
 		]
 	},
 	"MessagesDirs": {
@@ -25,17 +25,14 @@
 	"ExtensionMessagesFiles": {
 		"HieroglyphsAlias": "wikihiero.alias.php"
 	},
-	"AutoloadClasses": {
-		"WikiHiero": "includes/WikiHiero.php",
-		"SpecialHieroglyphs": "includes/SpecialHieroglyphs.php",
-		"HieroTokenizer": "includes/HieroTokenizer.php",
-		"WikiHieroHooks": "includes/WikiHieroHooks.php"
+	"AutoloadNamespaces": {
+		"WikiHiero\\": "includes/"
 	},
 	"ParserTestFiles": [
 		"tests.txt"
 	],
 	"SpecialPages": {
-		"Hieroglyphs": "SpecialHieroglyphs"
+		"Hieroglyphs": "WikiHiero\\SpecialHieroglyphs"
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "modules",

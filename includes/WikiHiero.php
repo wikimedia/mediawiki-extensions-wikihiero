@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WikiHiero - A PHP convert from text using "Manual for the encoding of
  * hieroglyphic texts for computer input" syntax to HTML entities (table and
@@ -22,6 +21,15 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  * http://www.gnu.org/copyleft/gpl.html
  */
+
+namespace WikiHiero;
+
+use Config;
+use Html;
+use MWException;
+use OutputPage;
+use Parser;
+use RequestContext;
 
 class WikiHiero {
 	const IMAGE_EXT = 'png';
