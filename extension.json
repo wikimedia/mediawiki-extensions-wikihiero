@@ -40,11 +40,9 @@
 	},
 	"ResourceModules": {
 		"ext.wikihiero": {
-			"position": "top",
 			"styles": "ext.wikihiero.css"
 		},
 		"ext.wikihiero.Special": {
-			"position": "top",
 			"scripts": "ext.wikihiero.Special.js",
 			"dependencies": [
 				"jquery.spinner"
