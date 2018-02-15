@@ -3,7 +3,8 @@
 		"authors": [
 			"Millosh",
 			"Rancher",
-			"Srdjan m"
+			"Srdjan m",
+			"Acamicamacaraca"
 		]
 	},
 	"hieroglyphs": "Испробајте писање хијероглифима",
@@ -26,5 +27,5 @@
 	"wikihiero-separator": "Раздвајач",
 	"wikihiero-superposition": "Усправно груписање",
 	"wikihiero-syntax": "Синтакса",
-	"wikihiero-visualeditor-mwhieroinspector-title": "Хијероглифи"
+	"wikihiero-visualeditor-mwhieroinspector-title": "Хијероглифе"
 }
