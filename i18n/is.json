@@ -1,4 +1,21 @@
 {
-	"@metadata": [],
+	"@metadata": {
+		"authors": [
+			"Sveinn í Felli"
+		]
+	},
+	"wikihiero-comment": "Athugasemd",
+	"wikihiero-eol": "Í enda línu",
+	"wikihiero-help-link": "//en.wikipedia.org/wiki/Help:WikiHiero_syntax",
+	"wikihiero-input": "Inntakstexti",
+	"wikihiero-load-error": "Villa við hleðslu!",
+	"wikihiero-result": "Útkoma",
+	"wikihiero-separator": "Aðgreinir",
+	"wikihiero-submit": "Senda",
+	"wikihiero-superposition": "Undirskipting",
+	"wikihiero-syntax": "Málskipun",
+	"wikihiero-th-code": "Kóði",
+	"wikihiero-th-meaning": "Merking",
+	"wikihiero-th-result": "Útkoma",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Helgirúnir"
 }
