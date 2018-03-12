@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Robby",
-			"Soued031"
+			"Soued031",
+			"Les Meloures"
 		]
 	},
 	"hieroglyphs": "Hieroglyphen-Markup testen",
@@ -25,7 +26,7 @@
 	"wikihiero-category-W": "W: Objeten aus Toun a Keramik",
 	"wikihiero-category-Y": "Y: Schrëften, Spiller, Musek",
 	"wikihiero-comment": "Bemierkung",
-	"wikihiero-desc": "Setzt den Tag <code>&lt;hiero&gt;</code> dobäi fir [[Special:Hieroglyphs|Hieroglyphen]] unzeweisen",
+	"wikihiero-desc": "Setzt den Tag <code>&lt;hiero&gt;</code> derbäi fir [[Special:Hieroglyphs|Hieroglyphen]] unzeweisen",
 	"wikihiero-input": "Text aginn",
 	"wikihiero-juxtaposition": "Géintiwwerstellung",
 	"wikihiero-load-error": "Feeler beim Lueden!",
