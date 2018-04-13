@@ -28,9 +28,6 @@
 	"AutoloadNamespaces": {
 		"WikiHiero\\": "includes/"
 	},
-	"ParserTestFiles": [
-		"tests.txt"
-	],
 	"SpecialPages": {
 		"Hieroglyphs": "WikiHiero\\SpecialHieroglyphs"
 	},
