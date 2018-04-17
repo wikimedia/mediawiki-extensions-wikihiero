@@ -1,26 +1,26 @@
 jQuery( function ( $ ) {
 	'use strict';
 
-	var $textarea = $( '#hiero-text' ),
-		$submit = $( '#hiero-submit' ),
+	var $textarea = OO.ui.infuse( $( '#hiero-text' ).closest( '.oo-ui-widget' ) ),
+		$submit = OO.ui.infuse( $( '#hiero-submit' ).closest( '.oo-ui-widget' ) ),
 		$result = $( '#hiero-result' );
 
-	$textarea.keyup( function () {
-		if ( $textarea.val().length === 0 ) {
-			$submit.prop( 'disabled', true );
+	$textarea.$input.keyup( function () {
+		if ( $textarea.getValue().length === 0 ) {
+			$submit.setDisabled( true );
 		} else {
-			$submit.prop( 'disabled', false );
+			$submit.setDisabled( false );
 		}
 	} );
-	$textarea.keyup();
+	$textarea.$input.keyup();
 
-	$submit.click( function ( e ) {
+	$submit.$input.click( function ( e ) {
 		var text, data;
 
 		e.preventDefault();
 		$result.hide();
 		$result.injectSpinner( 'hiero' );
-		text = $textarea.val();
+		text = $textarea.getValue();
 		data = {
 			format: 'json',
 			action: 'parse',

@@ -42,6 +42,7 @@
 		"ext.wikihiero.Special": {
 			"scripts": "ext.wikihiero.Special.js",
 			"dependencies": [
+				"oojs-ui-core",
 				"jquery.spinner"
 			],
 			"messages": [
