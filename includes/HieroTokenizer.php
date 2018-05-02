@@ -24,13 +24,21 @@ namespace WikiHiero;
  * Hieroglyphs tokenizer
  */
 class HieroTokenizer {
+
+	/** @var array|false */
 	private static $delimiters = false;
+	/** @var array */
 	private static $tokenDelimiters;
+	/** @var array */
 	private static $singleChars;
 
+	/** @var string */
 	private $text;
+	/** @var array|false */
 	private $blocks = false;
+	/** @var array */
 	private $currentBlock;
+	/** @var string */
 	private $token;
 
 	/**
