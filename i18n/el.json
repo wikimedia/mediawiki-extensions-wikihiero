@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Dead3y3",
-			"ZaDiak"
+			"ZaDiak",
+			"Nikosgranturismogt"
 		]
 	},
+	"hieroglyphs": "Δοκιμή επισήμανσης με ιερογλυφικά",
 	"wikihiero-desc": "Προσθέτει την ετικέτα <code>&lt;hiero&gt;</code> για την εμφάνιση [[Special:Hieroglyphs|ιερογλυφικών]]",
 	"wikihiero-input": "Κείμενο εισόδου",
 	"wikihiero-load-error": "Σφάλμα φόρτωσης!",
