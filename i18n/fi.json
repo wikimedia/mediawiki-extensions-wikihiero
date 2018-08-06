@@ -5,7 +5,8 @@
 			"Crt",
 			"Nedergard",
 			"Nike",
-			"Olli"
+			"Olli",
+			"01miki10"
 		]
 	},
 	"hieroglyphs": "Kokeile hieroglyfien merkintäkieltä",
@@ -45,7 +46,7 @@
 	"wikihiero-mirror": "Peilaa hieroglyfi",
 	"wikihiero-result": "Tulos",
 	"wikihiero-separator": "Erotin",
-	"wikihiero-special-page-text": "Käytä tätä sivua WikiHiero-merkintäkielen kokeilemiseen.\n[//en.wikipedia.org/wiki/Help:WikiHiero_syntax Merkintöjen selitykset].",
+	"wikihiero-special-page-text": "Käytä tätä sivua WikiHiero-merkintäkielen kokeilemiseen.\nKatso [$1 merkintöjen selitykset] käyttöohjeita varten.",
 	"wikihiero-submit": "Lähetä",
 	"wikihiero-superposition": "Jako osiin",
 	"wikihiero-syntax": "Syntaksi",
