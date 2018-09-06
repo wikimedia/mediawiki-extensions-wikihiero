@@ -3,7 +3,8 @@
 		"authors": [
 			"MetalBrasil",
 			"Toliño",
-			"Elisardojm"
+			"Elisardojm",
+			"Navhy"
 		]
 	},
 	"hieroglyphs": "Probar o formato dos xeróglifos",
@@ -34,7 +35,7 @@
 	"wikihiero-category-Y": "Y: Escritos, xogos, música",
 	"wikihiero-category-Z": "Z: Trazos, figuras xeométricas etc.",
 	"wikihiero-comment": "Comentario",
-	"wikihiero-desc": "Engade a etiqueta <code>&lt;hiero&gt;</code> para mostrar [[Special:Hieroglyphs|xeróglifos]]",
+	"wikihiero-desc": "Engade a etiqueta <code>&lt;hiero&gt;</code> para amosar [[Special:Hieroglyphs|xeróglifos]]",
 	"wikihiero-eol": "Fin da liña",
 	"wikihiero-half-void": "Bloque oco da metade do largo",
 	"wikihiero-input": "Texto de entrada",
