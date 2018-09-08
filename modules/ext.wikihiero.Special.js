@@ -15,12 +15,13 @@ jQuery( function ( $ ) {
 	$textarea.$input.keyup();
 
 	$submit.$input.click( function ( e ) {
-		var text, data;
+		var gettext, text, data;
 
 		e.preventDefault();
 		$result.hide();
 		$result.injectSpinner( 'hiero' );
-		text = $textarea.getValue();
+		gettext = $textarea.getValue();
+		text = gettext.replace( /<\/?hiero>/gm, '' );
 		data = {
 			format: 'json',
 			action: 'parse',
