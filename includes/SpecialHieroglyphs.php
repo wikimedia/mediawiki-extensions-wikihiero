@@ -20,6 +20,7 @@
 namespace WikiHiero;
 
 use Html;
+use HTMLForm;
 use SpecialPage;
 
 class SpecialHieroglyphs extends SpecialPage {
@@ -54,6 +55,7 @@ class SpecialHieroglyphs extends SpecialPage {
 	public function execute( $par ) {
 		$this->setHeaders();
 		$out = $this->getContext()->getOutput();
+		$out->enableOOUI();
 		$out->addModules( 'ext.wikihiero.Special' );
 		$out->addModuleStyles( 'ext.wikihiero' ); // apply CSS during slow load
 		$out->addWikiMsg(
@@ -76,22 +78,25 @@ class SpecialHieroglyphs extends SpecialPage {
 
 		$out->addHTML( '</div>' ); // id="hiero-result"
 
-		$out->addHTML(
-			Html::openElement( 'form',
-				[
-					'method' => 'get',
-					'action' => $this->getPageTitle()->getLinkUrl(),
-				]
-			)
-			. Html::element( 'textarea', [ 'id' => 'hiero-text', 'name' => 'text' ], $text )
-			. Html::element( 'input', [
-				'type' => 'submit',
-				'id' => 'hiero-submit',
-				'name' => 'submit',
-				'value' => $this->msg( 'wikihiero-submit' )->text(),
-			] )
-			. Html::closeElement( 'form' )
-		);
+		$formDescriptor = [
+			'textarea' => [
+				'type' => 'textarea',
+				'name' => 'text',
+				'id' => 'hiero-text',
+				'default' => $text,
+				'rows' => 3,
+				'required' => true,
+			]
+		];
+
+		$htmlForm = HTMLForm::factory( 'ooui', $formDescriptor, $this->getContext() );
+		$htmlForm
+			->setMethod( 'get' )
+			->setSubmitID( 'hiero-submit' )
+			->setSubmitName( 'submit' )
+			->setSubmitTextMsg( 'wikihiero-submit' )
+			->prepareForm()
+			->displayForm( false );
 
 		$this->hiero = new WikiHiero();
 
