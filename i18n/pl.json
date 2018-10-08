@@ -4,7 +4,8 @@
 			"BeginaFelicysym",
 			"Matma Rex",
 			"Sp5uhe",
-			"Woytecr"
+			"Woytecr",
+			"Railfail536"
 		]
 	},
 	"hieroglyphs": "Hieroglify",
@@ -44,7 +45,7 @@
 	"wikihiero-mirror": "Lustrzany hieroglif",
 	"wikihiero-result": "Wynik",
 	"wikihiero-separator": "Separator",
-	"wikihiero-special-page-text": "Użyj tej strony, by wypróbować znaczniki WikiHiero.\nOpisy znaczników znajdziesz [//en.wikipedia.org/wiki/Help:WikiHiero_syntax tutaj].",
+	"wikihiero-special-page-text": "Użyj tej strony, by wypróbować znaczniki WikiHiero.\nZobacz [$1 opisy znaczników], aby wiedzieć jak ich używać.",
 	"wikihiero-submit": "Wyślij",
 	"wikihiero-superposition": "Grupuj w pionie",
 	"wikihiero-syntax": "Składnia",
