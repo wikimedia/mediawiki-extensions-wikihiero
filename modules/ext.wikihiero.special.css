@@ -1,0 +1,46 @@
+.mw-hiero-form {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	background: #fff;
+	padding: 1em 0;
+	/* Position above mw-mirror */
+	z-index: 1;
+}
+
+.mw-hiero-code {
+	display: inline-block;
+	border: 1px solid #aaa;
+	margin: 0 1px 1px 0;
+	text-align: center;
+}
+
+.client-js .mw-hiero-code {
+	cursor: pointer;
+}
+
+.mw-hiero-glyph {
+	min-height: 46px;
+	min-width: 40px;
+	display: block;
+	vertical-align: top;
+	padding: 2px;
+}
+
+.mw-hiero-glyph .mw-hiero-table {
+	min-height: 40px;
+	margin: 0 auto;
+}
+
+.mw-hiero-syntax {
+	display: block;
+}
+
+.mw-hiero-toc {
+	margin-top: 1em;
+	text-align: center;
+}
+
+.mw-hiero-toc a {
+	margin-right: 0.5em;
+}

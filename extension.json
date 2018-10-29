@@ -39,8 +39,12 @@
 		"ext.wikihiero": {
 			"styles": "ext.wikihiero.css"
 		},
-		"ext.wikihiero.Special": {
-			"scripts": "ext.wikihiero.Special.js",
+		"ext.wikihiero.special.styles": {
+			"styles": "ext.wikihiero.special.css"
+		},
+		"ext.wikihiero.special": {
+			"scripts": "ext.wikihiero.special.js",
+			"styles": "ext.wikihiero.special.css",
 			"dependencies": [
 				"oojs-ui-core",
 				"jquery.spinner"

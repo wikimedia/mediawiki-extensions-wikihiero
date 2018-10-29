@@ -24,7 +24,6 @@ use HTMLForm;
 use SpecialPage;
 
 class SpecialHieroglyphs extends SpecialPage {
-	const HIEROGLYPHS_PER_ROW = 10;
 	/** 1 day */
 	const CACHE_EXPIRY = 86400;
 
@@ -61,13 +60,16 @@ class SpecialHieroglyphs extends SpecialPage {
 		$this->addHelpLink( 'Extension:WikiHiero/Syntax' );
 		$out = $this->getContext()->getOutput();
 		$out->enableOOUI();
-		$out->addModules( 'ext.wikihiero.Special' );
-		$out->addModuleStyles( 'ext.wikihiero' );
+		$out->addModules( 'ext.wikihiero.special' );
+		$out->addModuleStyles(
+			[ 'ext.wikihiero', 'ext.wikihiero.special.styles', 'mediawiki.editfont.styles' ]
+		);
 		$out->addWikiMsg(
 			'wikihiero-special-page-text',
 			wfMessage( 'wikihiero-help-link' )->text()
 		);
 
+		$out->addHTML( '<div class="mw-hiero-form">' );
 		$out->addHTML( '<div id="hiero-result">' );
 
 		$text = trim( $this->getContext()->getRequest()->getVal( 'text', '' ) );
@@ -89,6 +91,11 @@ class SpecialHieroglyphs extends SpecialPage {
 				'type' => 'textarea',
 				'name' => 'text',
 				'id' => 'hiero-text',
+				// The following classes can be used here:
+				// * mw-editfont-monospace
+				// * mw-editfont-sans-serif
+				// * mw-editfont-serif
+				'cssclass' => 'mw-editfont-' . $this->getUser()->getOption( 'editfont' ),
 				'default' => $text,
 				'rows' => 3,
 				'required' => true,
@@ -106,12 +113,10 @@ class SpecialHieroglyphs extends SpecialPage {
 
 		$this->hiero = new WikiHiero();
 
-		$out->addHTML( '<table><tr><td>' );
-		$out->addHTML( '<div class="mw-hiero-list">' );
-		$out->addHTML( $this->listHieroglyphs() );
-		$out->addHTML( '</div></td><td>' );
 		$out->addHTML( $this->getToc() );
-		$out->addHTML( '</td></tr></table>' );
+		// class="mw-hiero-form"
+		$out->addHTML( '</div>' );
+		$out->addHTML( $this->listHieroglyphs() );
 	}
 
 	/**
@@ -124,7 +129,7 @@ class SpecialHieroglyphs extends SpecialPage {
 		$key = $wgMemc->makeKey( 'hiero-list',
 			$this->getContext()->getLanguage()->getExtraHashOptions(),
 			WikiHiero::getImagePath(),
-			'1.1'
+			'1.2'
 		);
 		$html = $wgMemc->get( $key );
 		if ( $html ) {
@@ -149,10 +154,6 @@ class SpecialHieroglyphs extends SpecialPage {
 		foreach ( $this->getCategories() as $cat ) {
 			$alnum = strlen( $cat ) == 1;
 			$html .= $this->getHeading( "wikihiero-category-$cat", "cat-$cat" );
-			$html .= "<table class=\"wikitable\">\n";
-			$upperRow = $lowerRow = '';
-			$columns = 0;
-			$rows = 0;
 			foreach ( $files as $code ) {
 				if ( strpos( $code, '&' ) !== false ) {
 					// prefab
@@ -162,70 +163,42 @@ class SpecialHieroglyphs extends SpecialPage {
 					// wrong category
 					continue;
 				}
-				$upperRow .= '<td>' . $this->hiero->render( $code ) . '</td>';
-				$lowerRow .= '<th>' . htmlspecialchars( $code ) . '</th>';
-				$columns++;
-				if ( $columns == self::HIEROGLYPHS_PER_ROW ) {
-					$html .= "<tr>$upperRow</tr>\n<tr>$lowerRow</tr>\n";
-					$upperRow = $lowerRow = '';
-					$columns = 0;
-					$rows++;
-				}
+				$html .=
+					'<div class="mw-hiero-code">' .
+						'<span class="mw-hiero-glyph">' . $this->hiero->render( $code ) . '</span>' .
+						'<span class="mw-hiero-syntax">' . htmlspecialchars( $code ) . '</span>' .
+					'</div>';
 			}
-			if ( $columns ) {
-				$html .= "<tr>$upperRow" .
-					( $columns && $rows
-						? '<td colspan="' . ( self::HIEROGLYPHS_PER_ROW - $columns ) .
-							'">&#160;</td>'
-						: ''
-					) . "</tr>\n";
-				$html .= "<tr>$lowerRow" .
-					( $columns && $rows
-						? '<th colspan="' . ( self::HIEROGLYPHS_PER_ROW - $columns ) .
-							'">&#160;</th>'
-						: ''
-					) . "</tr>\n";
-			}
-			$html .= "</table>\n";
 		}
 		$wgMemc->set( $key, $html, self::CACHE_EXPIRY );
 		return $html;
 	}
 
 	private function getToc() {
-		$html = '<table class="toc mw-hiero-toc">';
+		$html = '<div class="toc mw-hiero-toc">';
 
 		$syntax = wfMessage( 'wikihiero-syntax' )->text();
-		$html .= '<tr><td colspan="5">'
-				. Html::element( 'a',
-					[ 'href' => "#syntax", 'title' => $syntax ],
-					$syntax
-				)
-				. '</td></tr>';
-		$count = 0;
+		$html .=
+			Html::element( 'a',
+				[ 'href' => "#syntax", 'title' => $syntax ],
+				$syntax
+			);
 		$cats = $this->getCategories();
 		$end = array_pop( $cats );
 		foreach ( $cats as $cat ) {
-			if ( $count % 5 == 0 ) {
-				$html .= '<tr>';
-			}
-			$html .= '<td>'
-				. Html::element( 'a',
+			$html .=
+				Html::element( 'a',
 					[ 'href' => "#cat-$cat", 'title' => wfMessage( "wikihiero-category-$cat" )->text() ],
 					$cat
-				)
-				. '</td>';
-			$count++;
-			if ( $count % 5 == 0 ) {
-				$html .= '</tr>';
-			}
+				);
 		}
-		$html .= '<tr><td colspan="5">'
-				. Html::element( 'a',
-					[ 'href' => "#cat-$end", 'title' => wfMessage( "wikihiero-category-$end" )->text() ],
-					$end
-				)
-				. '</td></tr></table>';
+		$html .=
+			Html::element( 'a',
+				[ 'href' => "#cat-$end", 'title' => wfMessage( "wikihiero-category-$end" )->text() ],
+				$end
+			);
+
+		$html .= '</div>';
 		return $html;
 	}
 

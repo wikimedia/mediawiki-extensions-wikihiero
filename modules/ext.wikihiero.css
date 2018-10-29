@@ -24,17 +24,3 @@
 	-ms-filter: 'FlipH';
 	/* stylelint-enable value-keyword-case */
 }
-
-.mw-hiero-list {
-	overflow: auto;
-	height: 400px;
-	margin-top: 1.5em;
-}
-
-.mw-hiero-list h2:first-child {
-	margin-top: 0;
-}
-
-.mw-hiero-toc {
-	text-align: center;
-}
