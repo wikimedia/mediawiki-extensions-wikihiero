@@ -1,4 +1,4 @@
-$( function () {
+( function () {
 	'use strict';
 
 	var $textarea = OO.ui.infuse( $( '#hiero-text' ).closest( '.oo-ui-widget' ) ),
@@ -48,4 +48,4 @@ $( function () {
 		} );
 	} );
 
-} );
+}() );
