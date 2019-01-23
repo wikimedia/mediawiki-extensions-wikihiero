@@ -58,9 +58,6 @@
 				"ve-wikihiero/ve.ui.MWHieroInspector.js",
 				"ve-wikihiero/ve.ui.MWHieroInspectorTool.js"
 			],
-			"styles": [
-				"ve-wikihiero/ve.ui.MWHieroIcons.css"
-			],
 			"dependencies": [
 				"ext.visualEditor.mwcore"
 			],

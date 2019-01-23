@@ -13,7 +13,7 @@ ve.ui.MWHieroInspectorTool = function VeUiMWHieroInspectorTool() {
 OO.inheritClass( ve.ui.MWHieroInspectorTool, ve.ui.FragmentInspectorTool );
 ve.ui.MWHieroInspectorTool.static.name = 'hiero';
 ve.ui.MWHieroInspectorTool.static.group = 'object';
-ve.ui.MWHieroInspectorTool.static.icon = 'hiero';
+ve.ui.MWHieroInspectorTool.static.icon = 'hieroglyph';
 ve.ui.MWHieroInspectorTool.static.title =
 	OO.ui.deferMsg( 'wikihiero-visualeditor-mwhieroinspector-title' );
 ve.ui.MWHieroInspectorTool.static.modelClasses = [ ve.dm.MWHieroNode ];
