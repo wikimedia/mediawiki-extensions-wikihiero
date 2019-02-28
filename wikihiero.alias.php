@@ -105,7 +105,7 @@ $specialPageAliases['fa'] = [
 
 /** Finnish (suomi) */
 $specialPageAliases['fi'] = [
-	'Hieroglyphs' => [ 'Hieroglyyfit' ],
+	'Hieroglyphs' => [ 'Hieroglyfit' ],
 ];
 
 /** Galician (galego) */
