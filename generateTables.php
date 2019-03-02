@@ -520,5 +520,5 @@ $wh_phonemes	=	[ // phoneme -> Gardiner code conversion table
 
 }
 
-$maintClass = "GenerateWikiHieroTables";
+$maintClass = GenerateWikiHieroTables::class;
 require_once RUN_MAINTENANCE_IF_MAIN;
