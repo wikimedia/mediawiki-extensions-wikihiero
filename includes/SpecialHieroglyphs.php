@@ -25,7 +25,8 @@ use SpecialPage;
 
 class SpecialHieroglyphs extends SpecialPage {
 	const HIEROGLYPHS_PER_ROW = 10;
-	const CACHE_EXPIRY = 86400; // 1 day
+	/** 1 day */
+	const CACHE_EXPIRY = 86400;
 
 	/**
 	 * @var WikiHiero $hiero
@@ -52,12 +53,15 @@ class SpecialHieroglyphs extends SpecialPage {
 		parent::__construct( 'Hieroglyphs' );
 	}
 
+	/**
+	 * @inheritDoc
+	 */
 	public function execute( $par ) {
 		$this->setHeaders();
 		$out = $this->getContext()->getOutput();
 		$out->enableOOUI();
 		$out->addModules( 'ext.wikihiero.Special' );
-		$out->addModuleStyles( 'ext.wikihiero' ); // apply CSS during slow load
+		$out->addModuleStyles( 'ext.wikihiero' );
 		$out->addWikiMsg(
 			'wikihiero-special-page-text',
 			wfMessage( 'wikihiero-help-link' )->text()
@@ -76,7 +80,8 @@ class SpecialHieroglyphs extends SpecialPage {
 			);
 		}
 
-		$out->addHTML( '</div>' ); // id="hiero-result"
+		// End of <div id="hiero-result">
+		$out->addHTML( '</div>' );
 
 		$formDescriptor = [
 			'textarea' => [
@@ -149,10 +154,12 @@ class SpecialHieroglyphs extends SpecialPage {
 			$rows = 0;
 			foreach ( $files as $code ) {
 				if ( strpos( $code, '&' ) !== false ) {
-					continue; // prefab
+					// prefab
+					continue;
 				}
 				if ( strpos( $code, $cat ) !== 0 || ( $alnum && !ctype_digit( $code[1] ) ) ) {
-					continue; // wrong category
+					// wrong category
+					continue;
 				}
 				$upperRow .= '<td>' . $this->hiero->render( $code ) . '</td>';
 				$lowerRow .= '<th>' . htmlspecialchars( $code ) . '</th>';
@@ -248,6 +255,9 @@ class SpecialHieroglyphs extends SpecialPage {
 			. "</td></tr>\n";
 	}
 
+	/**
+	 * @inheritDoc
+	 */
 	protected function getGroupName() {
 		return 'wiki';
 	}

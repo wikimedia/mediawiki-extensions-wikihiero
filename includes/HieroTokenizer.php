@@ -75,7 +75,8 @@ class HieroTokenizer {
 		$this->currentBlock = [];
 		$this->token = '';
 
-		$text = preg_replace( '/\\<!--.*?--\\>/s', '', $this->text ); // remove HTML comments
+		// remove HTML comments
+		$text = preg_replace( '/\\<!--.*?--\\>/s', '', $this->text );
 
 		for ( $i = 0, $len = strlen( $text ); $i < $len; $i++ ) {
 			$char = $text[$i];
@@ -93,7 +94,8 @@ class HieroTokenizer {
 			}
 		}
 
-		$this->newBlock(); // flush stuff being processed
+		// flush stuff being processed
+		$this->newBlock();
 
 		return $this->blocks;
 	}

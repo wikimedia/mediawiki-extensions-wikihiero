@@ -35,7 +35,8 @@ class WikiHiero {
 	const IMAGE_EXT = 'png';
 	const IMAGE_PREFIX = 'hiero_';
 
-	const DEFAULT_SCALE = -1; // use default scale
+	/** Use default scale */
+	const DEFAULT_SCALE = -1;
 	const CARTOUCHE_WIDTH = 2;
 	const IMAGE_MARGIN = 1;
 	const MAX_HEIGHT = 44;
@@ -47,6 +48,10 @@ class WikiHiero {
 
 	private static $phonemes, $prefabs, $files;
 
+	/**
+	 * @param Config|null $config
+	 * @throws MWException
+	 */
 	public function __construct( Config $config = null ) {
 		$this->config = $config ?: RequestContext::getMain()->getConfig();
 		self::loadData();
@@ -91,10 +96,18 @@ class WikiHiero {
 		return str_replace( "\n", " ", $hiero->render( $input ) );
 	}
 
+	/**
+	 * @return int Scale of overall hieroglyphic block in percents
+	 */
 	public function getScale() {
 		return $this->scale;
 	}
 
+	/**
+	 * Sets the scale of overall hieroglyphic block in percents
+	 *
+	 * @param int $scale
+	 */
 	public function setScale( $scale ) {
 		$this->scale = $scale;
 	}
@@ -113,14 +126,17 @@ class WikiHiero {
 		}
 		$glyph = $this->extractCode( $glyph );
 
-		if ( $glyph == '..' ) { // Render void block
+		if ( $glyph == '..' ) {
+			// Render void block
 			return $this->renderVoidBlock( self::MAX_HEIGHT );
 		}
-		if ( $glyph == '.' ) { // Render half-width void block
+		if ( $glyph == '.' ) {
+			// Render half-width void block
 			return $this->renderVoidBlock( self::MAX_HEIGHT / 2 );
 		}
 
-		if ( $glyph == '<' || $glyph == '>' ) { // Render cartouches
+		if ( $glyph == '<' || $glyph == '>' ) {
+			// Render cartouches
 			return $this->renderGlyphImage( $glyph, self::MAX_HEIGHT, null, $imageClass );
 		}
 
@@ -267,13 +283,15 @@ class WikiHiero {
 		foreach ( $blocks as $code ) {
 			// simplest case, the block contain only 1 code -> render
 			if ( count( $code ) == 1 ) {
-				if ( $code[0] == '!' ) { // end of line
+				if ( $code[0] == '!' ) {
+					// end of line
 					$tableHtml = '</tr></table>' . self::TABLE_START . "<tr>\n";
 					if ( $line ) {
 						$contentHtml .= "<hr />\n";
 					}
 
-				} elseif ( strchr( $code[0], '<' ) ) { // start cartouche
+				} elseif ( strchr( $code[0], '<' ) ) {
+					// start cartouche
 					$contentHtml .= '<td>' . $this->renderGlyph( $code[0] ) . '</td>';
 					$is_cartouche = true;
 					$contentHtml .= '<td>' .
@@ -281,14 +299,16 @@ class WikiHiero {
 						self::CARTOUCHE_WIDTH . "px;\"></td></tr><tr><td>" . self::TABLE_START .
 						"<tr>";
 
-				} elseif ( strchr( $code[0], '>' ) ) { // end cartouche
+				} elseif ( strchr( $code[0], '>' ) ) {
+					// end cartouche
 					$contentHtml .= "</tr></table></td></tr><tr><td class=\"mw-hiero-box\" " .
 						"style=\"height: " . self::CARTOUCHE_WIDTH .
 						'px;"></td></tr></table></td>';
 					$is_cartouche = false;
 					$contentHtml .= '<td>' . $this->renderGlyph( $code[0] ) . '</td>';
 
-				} elseif ( $code[0] != "" ) { // assume it's a glyph or '..' or '.'
+				} elseif ( $code[0] != "" ) {
+					// assume it's a glyph or '..' or '.'
 					$contentHtml .= '<td>' . $this->renderGlyph(
 						$code[0],
 						$this->resizeGlyph( $code[0], $is_cartouche )
@@ -343,7 +363,7 @@ class WikiHiero {
 								$height = 2 + self::$files[$glyph][1];
 							}
 						}
-					} // end foreach
+					}
 
 					if ( $height > $line_max ) {
 						$line_max = $height;
@@ -367,7 +387,7 @@ class WikiHiero {
 								$this->resizeGlyph( $t, $is_cartouche, $total )
 							);
 						}
-					} // end foreach
+					}
 
 					$contentHtml .= '<td>' . $temp . '</td>';
 				}
