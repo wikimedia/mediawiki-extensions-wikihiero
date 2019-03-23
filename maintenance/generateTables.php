@@ -26,11 +26,11 @@ use WikiHiero\WikiHiero;
 
 $IP = getenv( 'MW_INSTALL_PATH' );
 if ( $IP === false ) {
-	$IP = __DIR__ . '/../..';
+	$IP = __DIR__ . '/../../..';
 }
 require_once "$IP/maintenance/Maintenance.php";
 
-class GenerateWikiHieroTables extends Maintenance {
+class GenerateTables extends Maintenance {
 
 	public function __construct() {
 		parent::__construct();
@@ -41,13 +41,13 @@ class GenerateWikiHieroTables extends Maintenance {
 	}
 
 	public function execute() {
-		$repo = new GitInfo( __DIR__ );
+		$repo = new GitInfo( dirname( __DIR__ ) );
 		$gitVersion = $repo->getHeadSHA1() ?: '<unknown revision>';
 
 		$wh_prefabs = "\$wh_prefabs = [\n";
 		$wh_files   = "\$wh_files   = [\n";
 
-		$imgDir = __DIR__ . '/img/';
+		$imgDir = dirname( __DIR__ ) . '/img/';
 
 		if ( is_dir( $imgDir ) ) {
 			$dh = opendir( $imgDir );
@@ -72,7 +72,7 @@ class GenerateWikiHieroTables extends Maintenance {
 		$wh_prefabs .= "];";
 		$wh_files .= "];";
 
-		$file = fopen( __DIR__ . '/data/tables.php', 'w+' );
+		$file = fopen( dirname( __DIR__ ) . '/data/tables.php', 'w+' );
 		fwrite( $file, "<?php\n\n" );
 		fwrite( $file, "// File created by generateTables.php version $gitVersion\n" );
 		fwrite( $file, '// on ' . date( 'Y-m-d \a\t H:i' ) . "\n\n" );
@@ -83,12 +83,12 @@ class GenerateWikiHieroTables extends Maintenance {
 	}
 
 	private function serialize() {
-		require __DIR__ . '/data/tables.php';
+		require dirname( __DIR__ ) . '/data/tables.php';
 		$result = [];
 		foreach ( [ 'wh_phonemes', 'wh_prefabs', 'wh_files' ] as $varName ) {
 			$result[$varName] = $$varName;
 		}
-		file_put_contents( __DIR__ . '/data/tables.ser', serialize( $result ) );
+		file_put_contents( dirname( __DIR__ ) . '/data/tables.ser', serialize( $result ) );
 	}
 
 	private $moreTables = '
@@ -520,5 +520,5 @@ $wh_phonemes	=	[ // phoneme -> Gardiner code conversion table
 
 }
 
-$maintClass = GenerateWikiHieroTables::class;
+$maintClass = GenerateTables::class;
 require_once RUN_MAINTENANCE_IF_MAIN;
