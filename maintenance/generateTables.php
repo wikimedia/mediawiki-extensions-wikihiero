@@ -49,24 +49,13 @@ class GenerateTables extends Maintenance {
 
 		$imgDir = dirname( __DIR__ ) . '/img/';
 
-		if ( is_dir( $imgDir ) ) {
-			$dh = opendir( $imgDir );
-			if ( $dh ) {
-				// @codingStandardsIgnoreStart
-				while ( ( $file = readdir( $dh ) ) !== false ) {
-				// @codingStandardsIgnoreEnd
-					if ( stristr( $file, WikiHiero::IMAGE_EXT ) ) {
-						list( $width, $height, , ) = getimagesize( $imgDir . $file );
-						$wh_files .= "  \"" . WikiHiero::getCode( $file ) . "\" => [ $width, $height ],\n";
-						if ( strchr( $file, '&' ) ) {
-							$wh_prefabs .= "  \"" . WikiHiero::getCode( $file ) . "\",\n";
-						}
-					}
-				}
-				closedir( $dh );
+		$files = $this->listFiles( $imgDir );
+		foreach ( $files as $file ) {
+			list( $width, $height, , ) = getimagesize( $imgDir . $file );
+			$wh_files .= "\t\"" . WikiHiero::getCode( $file ) . "\" => [ $width, $height ],\n";
+			if ( strchr( $file, '&' ) ) {
+				$wh_prefabs .= "\t\"" . WikiHiero::getCode( $file ) . "\",\n";
 			}
-		} else {
-			$this->error( "Images directory $imgDir not found!\n", true );
 		}
 
 		$wh_prefabs .= "];";
@@ -80,6 +69,32 @@ class GenerateTables extends Maintenance {
 		fclose( $file );
 
 		$this->serialize();
+	}
+
+	/**
+	 * @param string $dir
+	 * @return string[] List of image files
+	 */
+	private function listFiles( $dir ) {
+		$files = [];
+		if ( is_dir( $dir ) ) {
+			$dh = opendir( $dir );
+			if ( $dh ) {
+				// @codingStandardsIgnoreStart
+				while ( ( $file = readdir( $dh ) ) !== false ) {
+					// @codingStandardsIgnoreEnd
+					if ( stristr( $file, WikiHiero::IMAGE_EXT ) ) {
+						$files[] = $file;
+					}
+				}
+				closedir( $dh );
+			}
+		} else {
+			$this->error( "Images directory $dir not found!\n", true );
+		}
+
+		natcasesort( $files );
+		return $files;
 	}
 
 	private function serialize() {
