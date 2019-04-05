@@ -59,6 +59,7 @@ class WikiHiero {
 
 	/**
 	 * Loads hieroglyph information
+	 * @suppress PhanUndeclaredVariable Vars definied in file passed to require_once
 	 */
 	private static function loadData() {
 		if ( self::$phonemes ) {
