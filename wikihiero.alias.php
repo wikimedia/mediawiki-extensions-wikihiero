@@ -213,6 +213,16 @@ $specialPageAliases['se'] = [
 	'Hieroglyphs' => [ 'Hieroglyfat' ],
 ];
 
+/** Serbian Cyrillic (српски (ћирилица)) */
+$specialPageAliases['sr-ec'] = [
+	'Hieroglyphs' => [ 'Хијероглифи' ],
+];
+
+/** Serbian Latin (srpski (latinica)) */
+$specialPageAliases['sr-el'] = [
+	'Hieroglyphs' => [ 'Hijeroglifi' ],
+];
+
 /** Swedish (svenska) */
 $specialPageAliases['sv'] = [
 	'Hieroglyphs' => [ 'Hieroglyfer' ],
