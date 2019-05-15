@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Yekrats"
+			"Yekrats",
+			"Mirin"
 		]
 	},
 	"hieroglyphs": "Provi hieroglifan marklingvon",
@@ -34,17 +35,21 @@
 	"wikihiero-comment": "Komento",
 	"wikihiero-desc": "Aldonas etikedon <code>&lt;hiero&gt;</code> por montri [[Special:Hieroglyphs|hieroglifon]]",
 	"wikihiero-eol": "Linifino",
+	"wikihiero-half-void": "Duonlarĝa malplena bloko",
 	"wikihiero-input": "Enmetu tekston",
 	"wikihiero-juxtaposition": "Apudmeto",
 	"wikihiero-load-error": "Eraro de ŝarĝado!",
+	"wikihiero-mirror": "Speguli hieroglifon",
 	"wikihiero-result": "Rezulto",
 	"wikihiero-separator": "Disigilo",
-	"wikihiero-special-page-text": "Uzu ĉi tiu paĝo por provi WikiHiero-marklingvo.\nVidu [//en.wikipedia.org/wiki/Help:WikiHiero_syntax ĉi tie] por priskribo de marklingvo (anglalingve).",
+	"wikihiero-special-page-text": "Uzu ĉi tiu paĝo por provi WikiHiero-marklingvo.\nVidu [$1 ĉi tie] por priskribo de marklingvo.",
+	"wikihiero-submit": "Sendi",
 	"wikihiero-superposition": "Subdivido",
 	"wikihiero-syntax": "Sintakso",
 	"wikihiero-th-code": "Kodo",
 	"wikihiero-th-example": "Ekzempla kodero",
 	"wikihiero-th-meaning": "Signifo",
 	"wikihiero-th-result": "Rezulto",
-	"wikihiero-visualeditor-mwhieroinspector-title": "Hieroglifoj"
+	"wikihiero-visualeditor-mwhieroinspector-title": "Hieroglifoj",
+	"wikihiero-void": "Plenlarĝa malplena bloko"
 }
