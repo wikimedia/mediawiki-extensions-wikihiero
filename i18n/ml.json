@@ -4,7 +4,7 @@
 			"Praveenp"
 		]
 	},
-	"hieroglyphs": "ഹൈറോഗ്ലിഫ് അടയാളപ്പെടുത്തലുകൾ പരീക്ഷിക്കുക",
+	"hieroglyphs": "ചിത്രാക്ഷര അടയാളപ്പെടുത്തലുകൾ പരീക്ഷിക്കുക",
 	"wikihiero-category-A": "ക: പുരുഷനും അവന്റെ തൊഴിലുകളും",
 	"wikihiero-category-Aa": "ഹ: വർഗ്ഗീകരിക്കപ്പെടാത്തവ",
 	"wikihiero-category-B": "ഖ: സ്ത്രീയും അവളുടെ തൊഴിലുകളും",
@@ -32,7 +32,7 @@
 	"wikihiero-category-Y": "ഷ: എഴുത്തുകൾ, കളികൾ, സംഗീതം",
 	"wikihiero-category-Z": "സ: വരകൾ, ജ്യാമിതീയ രൂപങ്ങൾ മുതലായവ.",
 	"wikihiero-comment": "കുറിപ്പ്",
-	"wikihiero-desc": "ചിത്രാക്ഷരങ്ങൾ പ്രദർശിപ്പിക്കാനായി <code>&lt;hiero&gt;</code> എന്ന റ്റാഗ് കൂട്ടിച്ചേർക്കുന്നു",
+	"wikihiero-desc": "[[Special:Hieroglyphs|ചിത്രാക്ഷരങ്ങൾ]] പ്രദർശിപ്പിക്കാനായി <code>&lt;hiero&gt;</code> എന്ന റ്റാഗ് കൂട്ടിച്ചേർക്കുന്നു",
 	"wikihiero-eol": "വരിയുടെ അവസാനം",
 	"wikihiero-half-void": "പാതി-വീതിയിൽ ശൂന്യമായ ഭാഗം",
 	"wikihiero-input": "ഇൻപുട്ട് ടെക്സ്റ്റ്",
@@ -41,7 +41,7 @@
 	"wikihiero-mirror": "ഹൈറോഗ്ലിഫിന്റെ പ്രതിബിംബം",
 	"wikihiero-result": "ഫലം",
 	"wikihiero-separator": "വിഭജനോപാധി",
-	"wikihiero-special-page-text": "വിക്കിഹൈറോ അടയാളപ്പെടുത്തലുകൾ പരീക്ഷിക്കാൻ ഈ താൾ ഉപയോഗിക്കുക.\nഅടയാളപ്പെടുത്തലുകളുടെ വിശദവിവരങ്ങൾ കാണാൻ [//en.wikipedia.org/wiki/Help:WikiHiero_syntax ഇവിടം] സന്ദർശിക്കുക.",
+	"wikihiero-special-page-text": "വിക്കിഹൈറോ അടയാളപ്പെടുത്തലുകൾ പരീക്ഷിക്കാൻ ഈ താൾ ഉപയോഗിക്കുക.\nഇത് എപ്രകാരം ഉപയോഗിക്കാം എന്നറിയാൻ [$1 അടയാളപ്പെടുത്തലുകളുടെ വിവരണം] കാണുക.",
 	"wikihiero-submit": "സമർപ്പിക്കുക",
 	"wikihiero-superposition": "ഉപവിഭാഗം",
 	"wikihiero-syntax": "എഴുത്ത് വ്യവസ്ഥ",
@@ -49,6 +49,6 @@
 	"wikihiero-th-example": "ഉദാഹരണ കോഡ്",
 	"wikihiero-th-meaning": "അർത്ഥം",
 	"wikihiero-th-result": "ഫലം",
-	"wikihiero-visualeditor-mwhieroinspector-title": "ഹെയ്റോഗ്ലിഫിക്സ്",
+	"wikihiero-visualeditor-mwhieroinspector-title": "ചിത്രാക്ഷരങ്ങൾ",
 	"wikihiero-void": "മുഴുവൻ-വീതിയിൽ ശൂന്യമായ ഭാഗം"
 }
