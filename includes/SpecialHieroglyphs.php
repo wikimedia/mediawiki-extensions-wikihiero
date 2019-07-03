@@ -58,6 +58,7 @@ class SpecialHieroglyphs extends SpecialPage {
 	 */
 	public function execute( $par ) {
 		$this->setHeaders();
+		$this->addHelpLink( 'Extension:WikiHiero/Syntax' );
 		$out = $this->getContext()->getOutput();
 		$out->enableOOUI();
 		$out->addModules( 'ext.wikihiero.Special' );
