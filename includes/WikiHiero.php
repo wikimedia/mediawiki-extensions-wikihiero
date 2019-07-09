@@ -319,20 +319,20 @@ class WikiHiero {
 			// block contains more than 1 glyph
 			} else {
 				// convert all codes into '&' to test prefabs glyph
-				$temp = "";
+				$prefabs = "";
 				foreach ( $code as $t ) {
 					if ( preg_match( "/[*:!()]/", $t[0] ) ) {
-						$temp .= "&";
+						$prefabs .= "&";
 					} else {
-						$temp .= $t;
+						$prefabs .= $t;
 					}
 				}
 
 				// test if block exists in the prefabs list
-				if ( in_array( $temp, self::$prefabs ) ) {
+				if ( in_array( $prefabs, self::$prefabs ) ) {
 					$contentHtml .= '<td>' . $this->renderGlyph(
-						$temp,
-						$this->resizeGlyph( $temp, $is_cartouche )
+						$prefabs,
+						$this->resizeGlyph( $prefabs, $is_cartouche )
 					) . '</td>';
 
 				// block must be manually computed
@@ -373,24 +373,24 @@ class WikiHiero {
 					$total += $line_max;
 
 					// render all glyph into the block
-					$temp = "";
+					$block = "";
 					foreach ( $code as $t ) {
 						if ( $t == ":" ) {
-							$temp .= "<br />";
+							$block .= "<br />";
 
 						} elseif ( $t == "*" ) {
-							$temp .= " ";
+							$block .= " ";
 
 						} else {
 							// resize the glyph according to the block total height
-							$temp .= $this->renderGlyph(
+							$block .= $this->renderGlyph(
 								$t,
 								$this->resizeGlyph( $t, $is_cartouche, $total )
 							);
 						}
 					}
 
-					$contentHtml .= '<td>' . $temp . '</td>';
+					$contentHtml .= '<td>' . $block . '</td>';
 				}
 				$contentHtml .= "\n";
 			}
