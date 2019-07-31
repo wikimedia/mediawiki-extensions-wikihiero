@@ -9,10 +9,12 @@ module.exports = function ( grunt ) {
 
 	grunt.initConfig( {
 		eslint: {
-			all: [
-				'*.{js,json}',
-				'modules/**/*.{js,json}'
-			]
+			options: {
+				reportUnusedDisableDirectives: true,
+				extensions: [ '.js', '.json' ],
+				cache: true
+			},
+			all: '.'
 		},
 		stylelint: {
 			all: 'modules/**/*.css'
