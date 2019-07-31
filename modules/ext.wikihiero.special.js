@@ -1,9 +1,11 @@
 $( function () {
 	'use strict';
 
+	/* eslint-disable no-jquery/no-global-selector */
 	var textarea = OO.ui.infuse( $( '#hiero-text' ) ),
 		submit = OO.ui.infuse( $( '#hiero-submit' ) ),
 		$result = $( '#hiero-result' );
+	/* eslint-enable no-jquery/no-global-selector */
 
 	function onChange() {
 		submit.setDisabled( !textarea.getValue() );
@@ -42,13 +44,16 @@ $( function () {
 	}
 	submit.on( 'click', onSubmit );
 
+	// eslint-disable-next-line no-jquery/no-global-selector
 	$( '.mw-hiero-toc a' ).on( 'click', function ( e ) {
 		if ( this.hash ) {
 			e.preventDefault();
+			// eslint-disable-next-line no-jquery/no-global-selector
 			$( window ).scrollTop( $( this.hash ).offset().top - $( '.mw-hiero-form' ).outerHeight() );
 		}
 	} );
 
+	// eslint-disable-next-line no-jquery/no-global-selector
 	$( '.mw-hiero-code' ).on( 'click', function () {
 		var val = textarea.getValue().trim();
 		textarea.setValue(
