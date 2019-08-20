@@ -37,15 +37,15 @@
 	},
 	"ResourceModules": {
 		"ext.wikihiero": {
-			"styles": "ext.wikihiero.css"
-		},
-		"ext.wikihiero.special.styles": {
-			"styles": "ext.wikihiero.special.css"
+			"styles": [
+				"ext.wikihiero/content.css",
+				"ext.wikihiero/special.css"
+			]
 		},
 		"ext.wikihiero.special": {
 			"scripts": "ext.wikihiero.special.js",
-			"styles": "ext.wikihiero.special.css",
 			"dependencies": [
+				"ext.wikihiero",
 				"oojs-ui-core",
 				"jquery.spinner"
 			],

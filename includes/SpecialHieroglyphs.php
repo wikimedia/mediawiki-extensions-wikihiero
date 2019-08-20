@@ -62,7 +62,7 @@ class SpecialHieroglyphs extends SpecialPage {
 		$out->enableOOUI();
 		$out->addModules( 'ext.wikihiero.special' );
 		$out->addModuleStyles(
-			[ 'ext.wikihiero', 'ext.wikihiero.special.styles', 'mediawiki.editfont.styles' ]
+			[ 'ext.wikihiero', 'mediawiki.editfont.styles' ]
 		);
 		$out->addWikiMsg(
 			'wikihiero-special-page-text',
