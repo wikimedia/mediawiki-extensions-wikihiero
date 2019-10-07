@@ -122,6 +122,7 @@ class SpecialHieroglyphs extends SpecialPage {
 	/**
 	 * Returns a HTML list of hieroglyphs
 	 * @return string
+	 * @return-taint none
 	 */
 	private function listHieroglyphs() {
 		global $wgMemc;
