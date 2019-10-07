@@ -67,8 +67,6 @@ class GenerateTables extends Maintenance {
 		fwrite( $file, '// on ' . date( 'Y-m-d \a\t H:i' ) . "\n\n" );
 		fwrite( $file, "$wh_prefabs\n\n$wh_files\n\n{$this->moreTables}\n" );
 		fclose( $file );
-
-		$this->serialize();
 	}
 
 	/**
@@ -95,15 +93,6 @@ class GenerateTables extends Maintenance {
 
 		natcasesort( $files );
 		return $files;
-	}
-
-	private function serialize() {
-		require dirname( __DIR__ ) . '/data/tables.php';
-		$result = [];
-		foreach ( [ 'wh_phonemes', 'wh_prefabs', 'wh_files' ] as $varName ) {
-			$result[$varName] = $$varName;
-		}
-		file_put_contents( dirname( __DIR__ ) . '/data/tables.ser', serialize( $result ) );
 	}
 
 	private $moreTables = '
