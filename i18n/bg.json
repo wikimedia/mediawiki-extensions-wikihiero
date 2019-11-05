@@ -37,8 +37,11 @@
 	"wikihiero-comment": "Коментар",
 	"wikihiero-desc": "Добавя етикет <code>&lt;hiero&gt;</code> за показване на [[Special:Hieroglyphs|йероглифи]]",
 	"wikihiero-eol": "Край на реда",
+	"wikihiero-half-void": "Празен блок с половин ширина",
+	"wikihiero-input": "Входящ текст",
 	"wikihiero-juxtaposition": "Хоризонтално групиране",
 	"wikihiero-load-error": "Грешка при зареждане!",
+	"wikihiero-mirror": "Създаване на огледален образ на йероглиф",
 	"wikihiero-result": "Резултат",
 	"wikihiero-separator": "Разделител",
 	"wikihiero-special-page-text": "Използвайте тази страница, за да изпробвате кода на WikiHiero.\nВижте [$1 описателната страница] за това как да го използвате.",
@@ -49,5 +52,6 @@
 	"wikihiero-th-example": "Примерен код",
 	"wikihiero-th-meaning": "Значение",
 	"wikihiero-th-result": "Резултат",
-	"wikihiero-visualeditor-mwhieroinspector-title": "Йероглифи"
+	"wikihiero-visualeditor-mwhieroinspector-title": "Йероглифи",
+	"wikihiero-void": "Празен блок с пълна ширина"
 }
