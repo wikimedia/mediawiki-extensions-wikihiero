@@ -34,9 +34,9 @@ class HieroTokenizer {
 
 	/** @var string */
 	private $text;
-	/** @var array|false */
+	/** @var string[][]|false */
 	private $blocks = false;
-	/** @var array */
+	/** @var string[] */
 	private $currentBlock;
 	/** @var string */
 	private $token;
@@ -64,7 +64,7 @@ class HieroTokenizer {
 	/**
 	 * Split text into blocks, then split blocks into items
 	 *
-	 * @return array tokenized text
+	 * @return string[][] tokenized text
 	 */
 	public function tokenize() {
 		if ( $this->blocks !== false ) {
