@@ -88,7 +88,7 @@ class GenerateTables extends Maintenance {
 				closedir( $dh );
 			}
 		} else {
-			$this->error( "Images directory $dir not found!\n", true );
+			$this->fatalError( "Images directory $dir not found!\n" );
 		}
 
 		natcasesort( $files );
