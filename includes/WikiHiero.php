@@ -208,7 +208,7 @@ class WikiHiero {
 	 * @param string $item glyph code
 	 * @param bool $is_cartouche true if glyph is inside a cartouche
 	 * @param int $total total size of a group for multi-glyph block
-	 * @return float size
+	 * @return int size
 	 */
 	private function resizeGlyph( $item, $is_cartouche = false, $total = 0 ) {
 		$item = $this->extractCode( $item );
