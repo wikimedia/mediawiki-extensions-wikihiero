@@ -205,6 +205,7 @@ class SpecialHieroglyphs extends SpecialPage {
 
 	/**
 	 * Returns an array with hieroglyph categories from Gardiner's list
+	 * @return string[]
 	 */
 	private function getCategories() {
 		$res = [];

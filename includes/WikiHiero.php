@@ -154,7 +154,7 @@ class WikiHiero {
 			return htmlspecialchars( $glyph );
 		}
 
-		$style = is_null( $margin ) ? null : "margin: {$margin}px;";
+		$style = $margin === null ? null : "margin: {$margin}px;";
 		$attribs = [
 			'class' => $class,
 			'style' => $style,
