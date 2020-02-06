@@ -21,6 +21,7 @@ namespace WikiHiero;
 
 use Html;
 use HTMLForm;
+use MediaWiki\MediaWikiServices;
 use SpecialPage;
 
 class SpecialHieroglyphs extends SpecialPage {
@@ -125,54 +126,55 @@ class SpecialHieroglyphs extends SpecialPage {
 	 * @return-taint none
 	 */
 	private function listHieroglyphs() {
-		global $wgMemc;
+		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
 
-		$key = $wgMemc->makeKey( 'hiero-list',
-			$this->getContext()->getLanguage()->getExtraHashOptions(),
-			WikiHiero::getImagePath(),
-			'1.2'
-		);
-		$html = $wgMemc->get( $key );
-		if ( $html ) {
-			return $html;
-		}
-		$html = '';
+		return $cache->getWithSetCallback(
+			$cache->makeKey( 'hiero-list',
+				$this->getContext()->getLanguage()->getExtraHashOptions(),
+				WikiHiero::getImagePath(),
+				'1.2'
+			),
+			self::CACHE_EXPIRY,
+			function () {
+				$html = '';
 
-		$html .= $this->getHeading( 'wikihiero-syntax', 'syntax' );
-		$html .= '<table class="wikitable"><tr>';
-		foreach ( $this->helpColumns as $col ) {
-			$html .= '<th>' . wfMessage( "wikihiero-th-$col" )->escaped() . '</th>';
-		}
-		$html .= '</tr>';
-		foreach ( $this->syntaxHelp as $e ) {
-			$html .= $this->getSyntaxHelp( $e['code'], $e['message'], $e['example'] );
-		}
-		$html .= "</table>\n";
-
-		$files = array_keys( $this->hiero->getFiles() );
-		natsort( $files );
-
-		foreach ( $this->getCategories() as $cat ) {
-			$alnum = strlen( $cat ) == 1;
-			$html .= $this->getHeading( "wikihiero-category-$cat", "cat-$cat" );
-			foreach ( $files as $code ) {
-				if ( strpos( $code, '&' ) !== false ) {
-					// prefab
-					continue;
+				$html .= $this->getHeading( 'wikihiero-syntax', 'syntax' );
+				$html .= '<table class="wikitable"><tr>';
+				foreach ( $this->helpColumns as $col ) {
+					$html .= '<th>' . wfMessage( "wikihiero-th-$col" )->escaped() . '</th>';
 				}
-				if ( strpos( $code, $cat ) !== 0 || ( $alnum && !ctype_digit( $code[1] ) ) ) {
-					// wrong category
-					continue;
+				$html .= '</tr>';
+				foreach ( $this->syntaxHelp as $e ) {
+					$html .= $this->getSyntaxHelp( $e['code'], $e['message'], $e['example'] );
 				}
-				$html .=
-					'<div class="mw-hiero-code">' .
-						'<span class="mw-hiero-glyph">' . $this->hiero->render( $code ) . '</span>' .
-						'<span class="mw-hiero-syntax">' . htmlspecialchars( $code ) . '</span>' .
-					'</div>';
+				$html .= "</table>\n";
+
+				$files = array_keys( $this->hiero->getFiles() );
+				natsort( $files );
+
+				foreach ( $this->getCategories() as $cat ) {
+					$alnum = strlen( $cat ) == 1;
+					$html .= $this->getHeading( "wikihiero-category-$cat", "cat-$cat" );
+					foreach ( $files as $code ) {
+						if ( strpos( $code, '&' ) !== false ) {
+							// prefab
+							continue;
+						}
+						if ( strpos( $code, $cat ) !== 0 || ( $alnum && !ctype_digit( $code[1] ) ) ) {
+							// wrong category
+							continue;
+						}
+						$html .=
+							'<div class="mw-hiero-code">' .
+							'<span class="mw-hiero-glyph">' . $this->hiero->render( $code ) . '</span>' .
+							'<span class="mw-hiero-syntax">' . htmlspecialchars( $code ) . '</span>' .
+							'</div>';
+					}
+				}
+
+				return $html;
 			}
-		}
-		$wgMemc->set( $key, $html, self::CACHE_EXPIRY );
-		return $html;
+		);
 	}
 
 	private function getToc() {
