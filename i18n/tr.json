@@ -5,7 +5,8 @@
 			"Emperyan",
 			"Joseph",
 			"Suelnur",
-			"1917 Ekim Devrimi"
+			"1917 Ekim Devrimi",
+			"BaRaN6161 TURK"
 		]
 	},
 	"hieroglyphs": "Hiyeroglif biçimlendirmeyi deneyin",
@@ -45,12 +46,12 @@
 	"wikihiero-mirror": "Hiyeroglifi yansıt",
 	"wikihiero-result": "Sonuç",
 	"wikihiero-separator": "Ayırıcı",
-	"wikihiero-special-page-text": "WikiHiero biçimlendirmesini denemek için bu sayfayı kullanın.\nBiçimlendirme açıklaması için [$1 Biçimlendirme tanımına ] bakınız.",
+	"wikihiero-special-page-text": "WikiHiero biçimlendirmesini denemek için bu sayfayı kullanın.\nBiçimlendirme açıklaması için [$1 Biçimlendirme tanımına] bakınız.",
 	"wikihiero-submit": "Gönder",
 	"wikihiero-superposition": "Alt bölüm",
 	"wikihiero-syntax": "Sözdizimi",
 	"wikihiero-th-code": "Kod",
-	"wikihiero-th-example": "Kod örneği",
+	"wikihiero-th-example": "Örnek kod",
 	"wikihiero-th-meaning": "Anlamı",
 	"wikihiero-th-result": "Sonuç",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Hiyeroglifler",
