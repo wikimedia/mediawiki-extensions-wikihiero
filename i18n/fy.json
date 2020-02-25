@@ -3,10 +3,12 @@
 		"authors": [
 			"SK-luuut",
 			"Robin0van0der0vliet",
-			"Robin van der Vliet"
+			"Robin van der Vliet",
+			"PiefPafPier"
 		]
 	},
 	"wikihiero-desc": "Foegt mark <code>&lt;hiero&gt;</code> ta foar [[Special:Hieroglyphs|hiëroglyfwerjefte]].",
 	"wikihiero-submit": "Ferstjoere",
-	"wikihiero-th-code": "Koade"
+	"wikihiero-th-code": "Koade",
+	"wikihiero-visualeditor-mwhieroinspector-title": "Hieroglifen"
 }
