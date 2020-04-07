@@ -1,5 +1,7 @@
 {
-	"@metadata": [],
+	"@metadata": {
+		"authors": []
+	},
 	"wikihiero-category-A": "A: Vir et negotia sua",
 	"wikihiero-category-Aa": "Aa: In classes non distributum",
 	"wikihiero-category-B": "B: Femina et negotia sua",
