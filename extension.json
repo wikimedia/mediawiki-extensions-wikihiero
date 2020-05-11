@@ -74,8 +74,12 @@
 			]
 		}
 	},
-	"VisualEditorPluginModules": [
-		"ext.wikihiero.visualEditor"
-	],
-	"manifest_version": 1
+	"attributes": {
+		"VisualEditor": {
+			"PluginModules": [
+				"ext.wikihiero.visualEditor"
+			]
+		}
+        },
+	"manifest_version": 2
 }
