@@ -32,16 +32,16 @@ use Parser;
 use RequestContext;
 
 class WikiHiero {
-	const IMAGE_EXT = 'png';
-	const IMAGE_PREFIX = 'hiero_';
+	public const IMAGE_EXT = 'png';
+	private const IMAGE_PREFIX = 'hiero_';
 
 	/** Use default scale */
-	const DEFAULT_SCALE = -1;
-	const CARTOUCHE_WIDTH = 2;
-	const IMAGE_MARGIN = 1;
-	const MAX_HEIGHT = 44;
+	private const DEFAULT_SCALE = -1;
+	private const CARTOUCHE_WIDTH = 2;
+	private const IMAGE_MARGIN = 1;
+	private const MAX_HEIGHT = 44;
 
-	const TABLE_START = '<table class="mw-hiero-table">';
+	private const TABLE_START = '<table class="mw-hiero-table">';
 
 	private $scale = 100;
 	private $config;

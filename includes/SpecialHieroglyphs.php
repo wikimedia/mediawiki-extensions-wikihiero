@@ -26,7 +26,7 @@ use SpecialPage;
 
 class SpecialHieroglyphs extends SpecialPage {
 	/** 1 day */
-	const CACHE_EXPIRY = 86400;
+	private const CACHE_EXPIRY = 86400;
 
 	/**
 	 * @var WikiHiero $hiero
