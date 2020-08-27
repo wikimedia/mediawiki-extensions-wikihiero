@@ -26,14 +26,14 @@ $( function () {
 		};
 		$.post( mw.util.wikiScript( 'api' ),
 			data,
-			function ( data ) {
+			function ( response ) {
 				var html = '<table class="wikitable">' +
 					'<tr><th>' + mw.msg( 'wikihiero-input' ) + '</th><th>' +
 					mw.msg( 'wikihiero-result' ) + '</th></tr>' +
 					'<tr><td><code>&lt;hiero&gt;' +
 					mw.html.escape( text ).replace( '\n', '<br/>' ) +
 					'&lt;/hiero&gt;</code></td>' +
-					'<td>' + data.parse.text[ '*' ] + '</td></tr></table>';
+					'<td>' + response.parse.text[ '*' ] + '</td></tr></table>';
 				$result.html( html );
 			}
 		).fail( function () {

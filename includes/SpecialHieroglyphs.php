@@ -92,7 +92,7 @@ class SpecialHieroglyphs extends SpecialPage {
 				'type' => 'textarea',
 				'name' => 'text',
 				'id' => 'hiero-text',
-				// The following classes can be used here:
+				// The following classes are used here:
 				// * mw-editfont-monospace
 				// * mw-editfont-sans-serif
 				// * mw-editfont-serif
