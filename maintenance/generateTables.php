@@ -53,7 +53,7 @@ class GenerateTables extends Maintenance {
 		foreach ( $files as $file ) {
 			list( $width, $height, , ) = getimagesize( $imgDir . $file );
 			$wh_files .= "\t\"" . WikiHiero::getCode( $file ) . "\" => [ $width, $height ],\n";
-			if ( strchr( $file, '&' ) ) {
+			if ( strstr( $file, '&' ) ) {
 				$wh_prefabs .= "\t\"" . WikiHiero::getCode( $file ) . "\",\n";
 			}
 		}

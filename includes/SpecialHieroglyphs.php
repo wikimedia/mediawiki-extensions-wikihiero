@@ -29,7 +29,7 @@ class SpecialHieroglyphs extends SpecialPage {
 	private const CACHE_EXPIRY = 86400;
 
 	/**
-	 * @var WikiHiero $hiero
+	 * @var WikiHiero
 	 */
 	private $hiero;
 	private $syntaxHelp = [
