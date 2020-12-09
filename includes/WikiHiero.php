@@ -46,7 +46,12 @@ class WikiHiero {
 	private $scale = 100;
 	private $config;
 
-	private static $phonemes, $prefabs, $files;
+	/** @var string[] */
+	private static $phonemes;
+	/** @var string[] */
+	private static $prefabs;
+	/** @var int[][] */
+	private static $files;
 
 	/**
 	 * @param Config|null $config
@@ -59,7 +64,7 @@ class WikiHiero {
 
 	/**
 	 * Loads hieroglyph information
-	 * @suppress PhanUndeclaredVariable Vars definied in file passed to require_once
+	 * @suppress PhanUndeclaredVariable,PhanTypeMismatchPropertyProbablyReal Phan doesn't understand require_once
 	 */
 	private static function loadData() {
 		if ( self::$phonemes ) {
