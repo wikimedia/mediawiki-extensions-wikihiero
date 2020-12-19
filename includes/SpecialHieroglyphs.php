@@ -67,7 +67,7 @@ class SpecialHieroglyphs extends SpecialPage {
 		);
 		$out->addWikiMsg(
 			'wikihiero-special-page-text',
-			wfMessage( 'wikihiero-help-link' )->text()
+			$this->msg( 'wikihiero-help-link' )->text()
 		);
 
 		$out->addHTML( '<div class="mw-hiero-form">' );
@@ -141,7 +141,7 @@ class SpecialHieroglyphs extends SpecialPage {
 				$html .= $this->getHeading( 'wikihiero-syntax', 'syntax' );
 				$html .= '<table class="wikitable"><tr>';
 				foreach ( $this->helpColumns as $col ) {
-					$html .= '<th>' . wfMessage( "wikihiero-th-$col" )->escaped() . '</th>';
+					$html .= '<th>' . $this->msg( "wikihiero-th-$col" )->escaped() . '</th>';
 				}
 				$html .= '</tr>';
 				foreach ( $this->syntaxHelp as $e ) {
@@ -180,7 +180,7 @@ class SpecialHieroglyphs extends SpecialPage {
 	private function getToc() {
 		$html = '<div class="toc mw-hiero-toc">';
 
-		$syntax = wfMessage( 'wikihiero-syntax' )->text();
+		$syntax = $this->msg( 'wikihiero-syntax' )->text();
 		$html .=
 			Html::element( 'a',
 				[ 'href' => "#syntax", 'title' => $syntax ],
@@ -191,13 +191,13 @@ class SpecialHieroglyphs extends SpecialPage {
 		foreach ( $cats as $cat ) {
 			$html .=
 				Html::element( 'a',
-					[ 'href' => "#cat-$cat", 'title' => wfMessage( "wikihiero-category-$cat" )->text() ],
+					[ 'href' => "#cat-$cat", 'title' => $this->msg( "wikihiero-category-$cat" )->text() ],
 					$cat
 				);
 		}
 		$html .=
 			Html::element( 'a',
-				[ 'href' => "#cat-$end", 'title' => wfMessage( "wikihiero-category-$end" )->text() ],
+				[ 'href' => "#cat-$end", 'title' => $this->msg( "wikihiero-category-$end" )->text() ],
 				$end
 			);
 
@@ -222,12 +222,12 @@ class SpecialHieroglyphs extends SpecialPage {
 	}
 
 	private function getHeading( $message, $anchor ) {
-		return "<h2 id=\"$anchor\">" . wfMessage( $message )->escaped() . "</h2>\n";
+		return "<h2 id=\"$anchor\">" . $this->msg( $message )->escaped() . "</h2>\n";
 	}
 
 	private function getSyntaxHelp( $code, $message, $example ) {
 		return '<tr><th>' . htmlspecialchars( $code ) . '</th><td>'
-			. wfMessage( $message )->escaped() . '</td><td dir="ltr">'
+			. $this->msg( $message )->escaped() . '</td><td dir="ltr">'
 			. '<code>' . htmlspecialchars( "<hiero>$example</hiero>" ) . '</code></td><td>'
 			. $this->hiero->render( $example )
 			. "</td></tr>\n";
