@@ -3,5 +3,8 @@
 	"extends": [
 		"wikimedia",
 		"wikimedia/mediawiki"
-	]
+	],
+	"rules": {
+		"compat/compat": "warn"
+	}
 }
