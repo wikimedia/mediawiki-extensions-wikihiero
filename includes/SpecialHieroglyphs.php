@@ -126,11 +126,14 @@ class SpecialHieroglyphs extends SpecialPage {
 	 * @return-taint none
 	 */
 	private function listHieroglyphs() {
-		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
+		$services = MediaWikiServices::getInstance();
+		$cache = $services->getMainWANObjectCache();
+		$langConv = $services->getLanguageConverterFactory()
+			->getLanguageConverter( $this->getContext()->getLanguage() );
 
 		return $cache->getWithSetCallback(
 			$cache->makeKey( 'hiero-list',
-				$this->getContext()->getLanguage()->getExtraHashOptions(),
+				$langConv->getExtraHashOptions(),
 				WikiHiero::getImagePath(),
 				'1.2'
 			),
