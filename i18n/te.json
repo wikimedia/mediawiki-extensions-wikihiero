@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Chaduvari",
 			"Veeven"
 		]
 	},
@@ -9,5 +10,6 @@
 	"wikihiero-comment": "వ్యాఖ్య",
 	"wikihiero-desc": "హీయెరోగ్లిఫ్&zwnj;ని చూపించడానికై <code>&lt;hiero&gt;</code> అనే టాగుని చేరుస్తుంది",
 	"wikihiero-result": "ఫలితం",
-	"wikihiero-th-result": "ఫలితం"
+	"wikihiero-th-result": "ఫలితం",
+	"wikihiero-visualeditor-mwhieroinspector-title": "హైరోగ్లిఫ్‌లు"
 }
