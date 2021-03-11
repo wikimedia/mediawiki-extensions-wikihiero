@@ -42,6 +42,7 @@
 	"wikihiero-desc": "Ajoute la balise <code>&lt;hiero&gt;</code> pour afficher des [[Special:Hieroglyphs|hiéroglyphes]]",
 	"wikihiero-eol": "Fin de ligne",
 	"wikihiero-half-void": "Bloc vide de demi-largeur",
+	"wikihiero-help-link": "//fr.wikipedia.org/wiki/Wikipédia:WikiHiero/Syntaxe",
 	"wikihiero-input": "Texte entré",
 	"wikihiero-juxtaposition": "Juxtaposition",
 	"wikihiero-load-error": "Erreur de chargement !",
