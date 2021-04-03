@@ -78,9 +78,8 @@ class GenerateTables extends Maintenance {
 		if ( is_dir( $dir ) ) {
 			$dh = opendir( $dir );
 			if ( $dh ) {
-				// @codingStandardsIgnoreStart
+				// phpcs:ignore MediaWiki.ControlStructures.AssignmentInControlStructures.AssignmentInControlStructures
 				while ( ( $file = readdir( $dh ) ) !== false ) {
-					// @codingStandardsIgnoreEnd
 					if ( stristr( $file, WikiHiero::IMAGE_EXT ) ) {
 						$files[] = $file;
 					}
