@@ -3,6 +3,7 @@
 		"authors": [
 			"Ahonc",
 			"Andriykopanytsia",
+			"DDPAT",
 			"Dim Grits",
 			"DixonD",
 			"Ата",
@@ -40,6 +41,7 @@
 	"wikihiero-desc": "Додає тег <code>&lt;hiero&gt;</code> для відображення [[Special:Hieroglyphs|ієрогліфів]]",
 	"wikihiero-eol": "Кінець рядка",
 	"wikihiero-half-void": "Порожній блок на півширини",
+	"wikihiero-help-link": "//en.wikipedia.org/wiki/Help:WikiHiero_syntax",
 	"wikihiero-input": "Вхідний текст",
 	"wikihiero-juxtaposition": "Горизонтальне групування",
 	"wikihiero-load-error": "Помилка при завантаженні!",
