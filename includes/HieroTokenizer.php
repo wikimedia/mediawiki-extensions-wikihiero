@@ -25,12 +25,9 @@ namespace WikiHiero;
  */
 class HieroTokenizer {
 
-	/** @var array|false */
-	private static $delimiters = false;
-	/** @var array */
-	private static $tokenDelimiters;
-	/** @var array */
-	private static $singleChars;
+	private const DELIMITERS = " -\t\n\r";
+	private const TOKEN_DELIMITERS = '*:()';
+	private const SINGLE_CHAR_DELIMITER = '!';
 
 	/** @var string */
 	private $text;
@@ -48,23 +45,14 @@ class HieroTokenizer {
 	 */
 	public function __construct( $text ) {
 		$this->text = $text;
-		self::initStatic();
-	}
-
-	private static function initStatic() {
-		if ( self::$delimiters ) {
-			return;
-		}
-
-		self::$delimiters = array_flip( [ ' ', '-', "\t", "\n", "\r" ] );
-		self::$tokenDelimiters = array_flip( [ '*', ':', '(', ')' ] );
-		self::$singleChars = array_flip( [ '!' ] );
 	}
 
 	/**
 	 * Split text into blocks, then split blocks into items
 	 *
 	 * @return string[][] tokenized text
+	 *
+	 * @suppress PhanParamSuspiciousOrder
 	 */
 	public function tokenize() {
 		if ( $this->blocks !== false ) {
@@ -81,13 +69,13 @@ class HieroTokenizer {
 		for ( $i = 0, $len = strlen( $text ); $i < $len; $i++ ) {
 			$char = $text[$i];
 
-			if ( isset( self::$delimiters[$char] ) ) {
+			if ( strpos( self::DELIMITERS, $char ) !== false ) {
 				$this->newBlock();
-			} elseif ( isset( self::$singleChars[$char] ) ) {
+			} elseif ( $char === self::SINGLE_CHAR_DELIMITER ) {
 				$this->singleCharBlock( $char );
 			} elseif ( $char == '.' ) {
 				$this->dot();
-			} elseif ( isset( self::$tokenDelimiters[$char] ) ) {
+			} elseif ( strpos( self::TOKEN_DELIMITERS, $char ) !== false ) {
 				$this->newToken( $char );
 			} else {
 				$this->char( $char );
