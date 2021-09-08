@@ -430,6 +430,7 @@ class WikiHiero {
 	 */
 	public static function getImagePath() {
 		global $wgExtensionAssetsPath;
+		// @phan-suppress-next-line PhanPossiblyUndeclaredVariable Caused by taint-check
 		return "$wgExtensionAssetsPath/wikihiero/img/";
 	}
 
