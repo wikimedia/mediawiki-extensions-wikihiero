@@ -19,12 +19,6 @@
 
 .mw-mirrored {
 	-webkit-transform: scaleX( -1 );
-	-moz-transform: scaleX( -1 );
 	-ms-transform: scaleX( -1 );
-	-o-transform: scaleX( -1 );
 	transform: scaleX( -1 );
-	/* stylelint-disable value-keyword-case */
-	filter: FlipH;
-	-ms-filter: 'FlipH';
-	/* stylelint-enable value-keyword-case */
 }
