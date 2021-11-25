@@ -22,6 +22,7 @@ namespace WikiHiero;
 use Html;
 use HTMLForm;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\User\UserOptionsLookup;
 use SpecialPage;
 
 class SpecialHieroglyphs extends SpecialPage {
@@ -49,8 +50,17 @@ class SpecialHieroglyphs extends SpecialPage {
 		'result',
 	];
 
-	public function __construct() {
+	/**
+	 * @var UserOptionsLookup
+	 */
+	private $userOptionsLookup;
+
+	/**
+	 * @param UserOptionsLookup $userOptionsLookup
+	 */
+	public function __construct( UserOptionsLookup $userOptionsLookup ) {
 		parent::__construct( 'Hieroglyphs' );
+		$this->userOptionsLookup = $userOptionsLookup;
 	}
 
 	/**
@@ -96,7 +106,7 @@ class SpecialHieroglyphs extends SpecialPage {
 				// * mw-editfont-monospace
 				// * mw-editfont-sans-serif
 				// * mw-editfont-serif
-				'cssclass' => 'mw-editfont-' . $this->getUser()->getOption( 'editfont' ),
+				'cssclass' => 'mw-editfont-' . $this->userOptionsLookup->getOption( $this->getUser(), 'editfont' ),
 				'default' => $text,
 				'rows' => 3,
 				'required' => true,
