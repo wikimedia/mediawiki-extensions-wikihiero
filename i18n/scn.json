@@ -3,7 +3,8 @@
 		"authors": [
 			"Aushulz",
 			"Santu",
-			"Sarvaturi"
+			"Sarvaturi",
+			"Ajeje Brazorf"
 		]
 	},
 	"hieroglyphs": "Prova lu markup pi geruglìfici",
@@ -12,6 +13,8 @@
 	"wikihiero-category-K": "K: Pisci e parti di pisci",
 	"wikihiero-category-M": "M: Àrvuli e rasti",
 	"wikihiero-category-N": "N: celu, terra, acqua",
-	"wikihiero-desc": "Juncìricci lu tag <code>&lt;hiero&gt;</code> pi la visualizzazzioni di li [[Special:Hieroglyphs|giruglìfici]]",
+	"wikihiero-comment": "Cummentu",
+	"wikihiero-desc": "Agghiunci lu tag <code>&lt;hiero&gt;</code> pâ visualizzazzioni dî [[Special:Hieroglyphs|giruglìfici]]",
+	"wikihiero-th-code": "Còdici",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Geruglifici"
 }
