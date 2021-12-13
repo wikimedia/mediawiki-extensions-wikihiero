@@ -6,7 +6,9 @@
 			"Cekli829",
 			"Emperyan",
 			"Joseph",
-			"Suelnur"
+			"Suelnur",
+			"MuratTheTurkish",
+			"Vito Genovese"
 		]
 	},
 	"hieroglyphs": "Hiyeroglif biçimlendirmeyi deneyin",
@@ -46,10 +48,10 @@
 	"wikihiero-mirror": "Hiyeroglifi yansıt",
 	"wikihiero-result": "Sonuç",
 	"wikihiero-separator": "Ayırıcı",
-	"wikihiero-special-page-text": "WikiHiero biçimlendirmesini denemek için bu sayfayı kullanın.\nBiçimlendirme açıklaması için [$1 Biçimlendirme tanımına] bakınız.",
+	"wikihiero-special-page-text": "WikiHiero biçimlendirmesini denemek için bu sayfayı kullanın.\nNasıl kullanılacağını öğrenmek için [$1 biçimlendirme açıklamasına] bakın.",
 	"wikihiero-submit": "Gönder",
 	"wikihiero-superposition": "Alt bölüm",
-	"wikihiero-syntax": "Sözdizimi",
+	"wikihiero-syntax": "Sözdizim",
 	"wikihiero-th-code": "Kod",
 	"wikihiero-th-example": "Örnek kod",
 	"wikihiero-th-meaning": "Anlamı",

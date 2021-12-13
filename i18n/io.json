@@ -1,11 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Joao Xavier"
+			"Joao Xavier",
+			"JSantos"
 		]
 	},
 	"hieroglyphs": "Probez markizar (per) hieroglifi",
+	"wikihiero-comment": "Komento",
 	"wikihiero-result": "Rezulto",
 	"wikihiero-separator": "Separilo",
+	"wikihiero-submit": "Sendez",
+	"wikihiero-th-code": "Kodexo",
 	"wikihiero-th-meaning": "Senco"
 }

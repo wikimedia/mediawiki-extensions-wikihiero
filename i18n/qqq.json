@@ -43,7 +43,7 @@
 	"wikihiero-desc": "{{desc|name=WikiHiero|url=https://www.mediawiki.org/wiki/Extension:WikiHiero}}\nWikihiero is a markup language to render hieroglyphics. See [//www.mediawiki.org/wiki/Extension:WikiHiero Extension:WikiHiero] for more information.",
 	"wikihiero-eol": "Help text that says that \"!\" inserts an end of a line of Egyptian text.",
 	"wikihiero-half-void": "Help text for half-width void block syntax",
-	"wikihiero-help-link": "A link to a help page about the format used by WikiHiero.\n\nUsed as <code>$1</code> in {{msg-mw|wikihiero-special-page-text}}.\n\nKeep the link external.",
+	"wikihiero-help-link": "{{optional}}\nA link to a help page about the format used by WikiHiero.\n\nUsed as <code>$1</code> in {{msg-mw|wikihiero-special-page-text}}.\n\nKeep the link external.",
 	"wikihiero-input": "Label for input text field in results table\n{{Identical|Input text}}",
 	"wikihiero-juxtaposition": "Help text for juxtaposition syntax",
 	"wikihiero-load-error": "Error message when loading failed",

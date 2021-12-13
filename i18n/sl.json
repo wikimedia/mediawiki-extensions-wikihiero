@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Dbc334"
+			"Dbc334",
+			"Eleassar"
 		]
 	},
 	"hieroglyphs": "Preizkusite označevanje hieroglifov",
@@ -32,7 +33,7 @@
 	"wikihiero-category-Y": "Y: Pisana dela, igre, glasba",
 	"wikihiero-category-Z": "Z: Poteze, geometrijski liki itn.",
 	"wikihiero-comment": "Pripomba",
-	"wikihiero-desc": "Doda etiketo <code>&lt;hiero&gt;</code> za prikaz [[Special:Hieroglyphs|hieroglifov]]",
+	"wikihiero-desc": "Doda značko <code>&lt;hiero&gt;</code> za prikaz [[Special:Hieroglyphs|hieroglifov]]",
 	"wikihiero-eol": "Konec vrstice",
 	"wikihiero-half-void": "Prazen blok polovične širine",
 	"wikihiero-input": "Vhodno besedilo",
@@ -49,6 +50,6 @@
 	"wikihiero-th-example": "Primer kode",
 	"wikihiero-th-meaning": "Pomen",
 	"wikihiero-th-result": "Rezultat",
-	"wikihiero-visualeditor-mwhieroinspector-title": "Hieroglifi",
+	"wikihiero-visualeditor-mwhieroinspector-title": "Hieroglif",
 	"wikihiero-void": "Prazen blok polne širine"
 }

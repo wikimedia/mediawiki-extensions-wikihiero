@@ -5,9 +5,9 @@
 		]
 	},
 	"hieroglyphs": "Иероглифин билгалоне хьажар",
-	"wikihiero-category-A": "A: Стаг а, цуна гуллакх а",
+	"wikihiero-category-A": "A: Стаг а, цуьна гӀуллакх а",
 	"wikihiero-category-Aa": "Aa: Билгал йина йоцурш",
-	"wikihiero-category-B": "B: Зуда а, цуна гуллакх а",
+	"wikihiero-category-B": "B: Зуда а, цуьна гӀуллакх а",
 	"wikihiero-category-C": "C: Антропоморфин делаш",
 	"wikihiero-category-D": "D: ДегӀан даккъаш",
 	"wikihiero-category-E": "E: Декха дийнаташ",
@@ -22,10 +22,10 @@
 	"wikihiero-category-O": "O: ГӀишло, гӀишлон даккъанаш а, кхин а.",
 	"wikihiero-category-P": "P: Кема а, кеман дакъош а",
 	"wikihiero-category-Q": "Q: ЦӀера мебель а, гробаш а",
-	"wikihiero-category-R": "R: ГӀишлон хӀумнаш а, сийлахь-еза билгалонаш а",
+	"wikihiero-category-R": "R: ГӀишлон хӀумнаш а, сийлахь-йеза билгалонаш а",
 	"wikihiero-category-S": "S: Тажаш, кечярш, хьокхий а, кхин а",
 	"wikihiero-category-T": "T: ТӀеман гӀуллакх, таллар, жижиган туька",
-	"wikihiero-category-U": "U: Юьртабахам, корматалла, говзаллаш",
+	"wikihiero-category-U": "U: Йуьртабахам, корматалла, говзаллаш",
 	"wikihiero-category-V": "V: Муш, оганаш, тускарш, тӀоьрмигаш, кхин а",
 	"wikihiero-category-W": "W: ТӀулгийн а, поппаран а пхьегӀаш",
 	"wikihiero-category-X": "X: Бепигаш а, даттар а",
@@ -34,7 +34,7 @@
 	"wikihiero-comment": "Билгалдаккхар",
 	"wikihiero-desc": "ТӀетуху тег <code>&lt;hiero&gt;</code> [[Special:Hieroglyphs|иероглифаш]] гайта",
 	"wikihiero-eol": "МогӀам гочбар",
-	"wikihiero-half-void": "Ах шораллин яьсса блок",
+	"wikihiero-half-void": "Ах шораллин йаьсса блок",
 	"wikihiero-input": "Чудолу йоза:",
 	"wikihiero-juxtaposition": "Ана дӀахӀоттам",
 	"wikihiero-mirror": "Иероглиф ана ерзор",
@@ -47,5 +47,5 @@
 	"wikihiero-th-meaning": "МаьӀна",
 	"wikihiero-th-result": "Хилам",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Иероглифаш",
-	"wikihiero-void": "Юъззина шораллин яьсса блок"
+	"wikihiero-void": "Йуьззина шораллин йаьсса блок"
 }
