@@ -85,7 +85,7 @@ class WikiHiero {
 	 */
 	public static function parserHook( $input, $args, $parser ) {
 		$hiero = new WikiHiero();
-		$parser->getOutput()->addModuleStyles( 'ext.wikihiero' );
+		$parser->getOutput()->addModuleStyles( [ 'ext.wikihiero' ] );
 		// Strip newlines to avoid breakage in the wiki parser block pass
 		return str_replace( "\n", " ", $hiero->render( $input ) );
 	}
