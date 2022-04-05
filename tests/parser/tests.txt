@@ -5,6 +5,8 @@ parsoid-compatible
 
 !! test
 WikiHiero - basics
+!! options
+parsoid={ "modes": ["wt2html","wt2wt"], "normalizePhp": true }
 !! wikitext
 <hiero>A1 - B2 D3</hiero>
 !! html
@@ -13,6 +15,8 @@ WikiHiero - basics
 
 !! test
 WikiHiero - XSS protection
+!! options
+parsoid={ "modes": ["wt2html","wt2wt"], "normalizePhp": true }
 !! wikitext
 <hiero><script>alert("FAIL")</script></hiero>
 !! html
@@ -21,6 +25,8 @@ WikiHiero - XSS protection
 
 !! test
 WikiHiero - prefabs
+!! options
+parsoid={ "modes": ["wt2html","wt2wt"], "normalizePhp": true }
 !! wikitext
 <hiero>a:A1</hiero>
 !! html
@@ -29,6 +35,8 @@ WikiHiero - prefabs
 
 !! test
 WikiHiero - Horus name
+!! options
+parsoid={ "modes": ["wt2html","wt2wt"], "normalizePhp": true }
 !! wikitext
 <hiero><h1 A h1></hiero>
 !! html
@@ -37,6 +45,8 @@ WikiHiero - Horus name
 
 !! test
 WikiHiero - cartouche
+!! options
+parsoid={ "modes": ["wt2html","wt2wt"], "normalizePhp": true }
 !! wikitext
 <hiero>< A ></hiero>
 !! html
@@ -45,6 +55,8 @@ WikiHiero - cartouche
 
 !! test
 WikiHiero - EOL
+!! options
+parsoid={ "modes": ["wt2html","wt2wt"], "normalizePhp": true }
 !! wikitext
 <hiero>A1!B1 ! C1</hiero>
 !! html
@@ -53,6 +65,8 @@ WikiHiero - EOL
 
 !! test
 WikiHiero - complex text with EOL
+!! options
+parsoid={ "modes": ["wt2html","wt2wt"], "normalizePhp": true }
 !! wikitext
 <hiero>M23-X1:R4-X8-Q2:D4-W17-R14-G4-R8-O29:V30-U23 !
 N26-D58-O49:Z1-F13:N31-V30:N16:N21*Z1-D45:N25</hiero>
@@ -62,6 +76,8 @@ N26-D58-O49:Z1-F13:N31-V30:N16:N21*Z1-D45:N25</hiero>
 
 !! test
 WikiHiero - image mirroring
+!! options
+parsoid={ "modes": ["wt2html","wt2wt"], "normalizePhp": true }
 !! wikitext
 <hiero>A1\-A1</hiero>
 !! html
@@ -70,6 +86,8 @@ WikiHiero - image mirroring
 
 !! test
 WikiHiero - void blocks
+!! options
+parsoid={ "modes": ["wt2html","wt2wt"], "normalizePhp": true }
 !! wikitext
 <hiero>A1..B1.C1</hiero>
 <hiero>A1 .. B1 . C1</hiero>
@@ -80,6 +98,8 @@ WikiHiero - void blocks
 
 !! test
 WikiHiero - HTML comments
+!! options
+parsoid={ "modes": ["wt2html","wt2wt"], "normalizePhp": true }
 !! wikitext
 <hiero>A1<!-- B1 --> C1 D<!--
 fooooo -->1</hiero>
