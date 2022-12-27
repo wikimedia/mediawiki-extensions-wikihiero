@@ -16,7 +16,7 @@ class Hooks extends ExtensionTagHandler implements ExtensionModule {
 	 * @return bool
 	 */
 	public static function onParserFirstCallInit( $parser ) {
-		$parser->setHook( 'hiero',  WikiHiero::class . '::parserHook' );
+		$parser->setHook( 'hiero',  [ WikiHiero::class, 'parserHook' ] );
 		return true;
 	}
 
