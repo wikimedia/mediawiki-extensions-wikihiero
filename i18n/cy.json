@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Lloffiwr"
+			"Lloffiwr",
+			"Afalau"
 		]
 	},
 	"hieroglyphs": "Rhoi cynnig ar gystrawen wici yr hieroglyffau",
@@ -20,18 +21,18 @@
 	"wikihiero-category-X": "X: Torthau a chacennau",
 	"wikihiero-comment": "Sylw",
 	"wikihiero-desc": "Yn ychwanegu'r tag <code>&lt;hiero&gt;</code> er mwyn cynhyrchu [[Special:Hieroglyphs|hieroglyffau]]",
-	"wikihiero-eol": "Diweddu llinell",
-	"wikihiero-input": "Gosod testun",
-	"wikihiero-juxtaposition": "Cyfosod",
+	"wikihiero-eol": "Diwedd y llinell",
+	"wikihiero-input": "Testun mewnbwn",
+	"wikihiero-juxtaposition": "Cyfosodiad",
 	"wikihiero-load-error": "Gwall wrth lwytho!",
 	"wikihiero-result": "Y canlyniad",
 	"wikihiero-separator": "Gwahanwr",
-	"wikihiero-submit": "Cyflwyner",
+	"wikihiero-submit": "Cyflwyno",
 	"wikihiero-superposition": "Israniad",
 	"wikihiero-syntax": "Cystrawen",
 	"wikihiero-th-code": "Cod",
 	"wikihiero-th-example": "Cod enghreifftiol",
 	"wikihiero-th-meaning": "Ystyr",
 	"wikihiero-th-result": "Y canlyniad",
-	"wikihiero-visualeditor-mwhieroinspector-title": "Hieroglyffigau"
+	"wikihiero-visualeditor-mwhieroinspector-title": "Hieroglyffau"
 }
