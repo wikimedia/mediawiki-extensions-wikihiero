@@ -7,7 +7,10 @@
 	border-spacing: 0;
 }
 
-.mw-hiero-table td {
+/* The CSS selector is intentionally overly-specific, mentioning the tag table
+as more generic table td rules may exist (particularly in MediaWiki:Common.css)
+More information: T43869 */
+table.mw-hiero-table td {
 	padding: 0;
 	text-align: center;
 	vertical-align: middle;
