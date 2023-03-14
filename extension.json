@@ -10,7 +10,7 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "parserhook",
 	"requires": {
-		"MediaWiki": ">= 1.35.0"
+		"MediaWiki": ">= 1.39.0"
 	},
 	"Hooks": {
 		"ParserFirstCallInit": [
@@ -86,6 +86,8 @@
 			]
 		}
 	},
-	"ParsoidModules": [ "WikiHiero\\Hooks" ],
+	"ParsoidModules": [
+		"WikiHiero\\Hooks"
+	],
 	"manifest_version": 2
 }
