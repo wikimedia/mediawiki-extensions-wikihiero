@@ -13,9 +13,9 @@
 		]
 	},
 	"hieroglyphs": "{{doc-special|Hieroglyphs}}\nWikiHiero is a markup language to render Hieroglyphics. See [[mw:Extension:WikiHiero|Extension:WikiHiero]] for more information.",
-	"wikihiero-category-A": "Label for category A",
+	"wikihiero-category-A": "Label for category A. Make sure to make it consistent with {{msg-mw|Wikihiero-category-B}}",
 	"wikihiero-category-Aa": "Label for category Aa",
-	"wikihiero-category-B": "Label for category B",
+	"wikihiero-category-B": "Label for category B. Make sure to make it consistent with {{msg-mw|Wikihiero-category-A}}",
 	"wikihiero-category-C": "Label for category C",
 	"wikihiero-category-D": "Label for category D",
 	"wikihiero-category-E": "Label for category E",
