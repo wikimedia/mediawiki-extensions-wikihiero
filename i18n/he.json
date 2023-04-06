@@ -4,11 +4,12 @@
 			"Amire80",
 			"Dan Elharrar",
 			"Guycn2",
-			"Rotem Liss"
+			"Rotem Liss",
+			"Dee"
 		]
 	},
 	"hieroglyphs": "ניסוי סימון היירוגליפים",
-	"wikihiero-category-A": "A: האדם ועיסוקיו",
+	"wikihiero-category-A": "A: האיש ועיסוקיו",
 	"wikihiero-category-Aa": "Aa: לא ממוין",
 	"wikihiero-category-B": "B: האישה ועיסוקיה",
 	"wikihiero-category-C": "C: אלים",
@@ -17,7 +18,7 @@
 	"wikihiero-category-F": "F: חלקי גוף של יונקים",
 	"wikihiero-category-G": "G: עופות",
 	"wikihiero-category-H": "H: חלקי גוף של עופות",
-	"wikihiero-category-I": "I: דו־חיים, זוחלים, וכו'",
+	"wikihiero-category-I": "I: דו־חיים, זוחלים וכו'",
 	"wikihiero-category-K": "K: דגים וחלקי גוף של דגים",
 	"wikihiero-category-L": "L: רמשים וחיות פחותות",
 	"wikihiero-category-M": "M: עצים וצמחים",
@@ -41,7 +42,7 @@
 	"wikihiero-input": "טקסט קלט",
 	"wikihiero-juxtaposition": "צימוד",
 	"wikihiero-load-error": "שגיאה בטעינה!",
-	"wikihiero-mirror": "יצירת תמונת ראי של היירוגליף",
+	"wikihiero-mirror": "יצירת תמונת ראי של הירוגליף",
 	"wikihiero-result": "תוצאה",
 	"wikihiero-separator": "מפריד",
 	"wikihiero-special-page-text": "בדף הזה אפשר לנסות את אפשרויות הסימון של ויקיהיירו.\nר׳ [$1 תיאור הסימון] להוראות השימוש.",
