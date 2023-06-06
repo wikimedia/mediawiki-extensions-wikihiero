@@ -322,7 +322,7 @@ class WikiHiero {
 				}
 
 				// test if block exists in the prefabs list
-				if ( in_array( $prefabs, self::$prefabs ) ) {
+				if ( in_array( $prefabs, self::$prefabs, true ) ) {
 					$contentHtml .= '<td>' . $this->renderGlyph(
 						$prefabs,
 						$this->resizeGlyph( $prefabs, $is_cartouche )
