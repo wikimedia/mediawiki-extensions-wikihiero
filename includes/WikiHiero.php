@@ -401,8 +401,7 @@ class WikiHiero {
 		$style = null;
 		if ( $this->scale != 100 ) {
 			$ratio = floatval( $this->scale ) / 100;
-			$style = "-ms-transform: scale($ratio,$ratio); -webkit-transform: scale($ratio,$ratio);"
-				. " -o-transform: scale($ratio,$ratio); transform: scale($ratio,$ratio);";
+			$style = "transform: scale($ratio,$ratio);";
 		}
 
 		return Html::rawElement(
