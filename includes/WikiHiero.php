@@ -26,7 +26,6 @@ namespace WikiHiero;
 
 use Config;
 use Html;
-use MWException;
 use OutputPage;
 use Parser;
 use RequestContext;
@@ -55,7 +54,6 @@ class WikiHiero {
 
 	/**
 	 * @param Config|null $config
-	 * @throws MWException
 	 */
 	public function __construct( Config $config = null ) {
 		$this->config = $config ?: RequestContext::getMain()->getConfig();
