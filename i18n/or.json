@@ -1,14 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ansumang"
+			"Ansumang",
+			"Psubhashish"
 		]
 	},
 	"wikihiero-category-G": "G: ପକ୍ଷୀ",
 	"wikihiero-comment": "ମତାମତ",
 	"wikihiero-load-error": "ଲୋଡ଼ ତ୍ରୁଟି!",
-	"wikihiero-result": "ପରିଣାମ",
+	"wikihiero-result": "ଫଳାଫଳ",
 	"wikihiero-th-code": "କୋଡ଼",
 	"wikihiero-th-meaning": "ମାନେ",
-	"wikihiero-th-result": "ପରିଣାମ"
+	"wikihiero-th-result": "ଫଳାଫଳ"
 }
