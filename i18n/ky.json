@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Growingup"
+			"Growingup",
+			"Bosogo"
 		]
 	},
 	"wikihiero-comment": "Эскертүү",
-	"wikihiero-load-error": "Жүктөө катасы!"
+	"wikihiero-load-error": "Жүктөө катасы!",
+	"wikihiero-result": "Натыйжа",
+	"wikihiero-th-result": "Натыйжа"
 }
