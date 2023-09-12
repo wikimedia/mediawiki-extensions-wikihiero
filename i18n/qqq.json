@@ -59,5 +59,7 @@
 	"wikihiero-th-meaning": "{{Identical|Meaning}}",
 	"wikihiero-th-result": "{{Identical|Result}}",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Used as title for the hieroglyphs inspector.",
-	"wikihiero-void": "Help syntax for full-width void syntax"
+	"wikihiero-void": "Help syntax for full-width void syntax",
+	"wikhiero-usage-tracking-category": "Name of tracking category being added to pages that use this extension",
+	"wikhiero-usage-tracking-category-desc": "Description of the tracking category being added to pages using this extension"
 }

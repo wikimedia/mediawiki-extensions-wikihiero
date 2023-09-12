@@ -89,5 +89,8 @@
 	"ParsoidModules": [
 		"WikiHiero\\Hooks"
 	],
+	"TrackingCategories": [
+		"wikhiero-usage-tracking-category"
+	],
 	"manifest_version": 2
 }
