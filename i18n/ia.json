@@ -50,5 +50,7 @@
 	"wikihiero-th-meaning": "Significato",
 	"wikihiero-th-result": "Resultato",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Hieroglyphicos",
-	"wikihiero-void": "Bloco vacue a plen latitude"
+	"wikihiero-void": "Bloco vacue a plen latitude",
+	"wikhiero-usage-tracking-category": "Paginas que usa WikiHiero",
+	"wikhiero-usage-tracking-category-desc": "Iste categoria es automaticamente addite al paginas que usa le extension WikiHiero"
 }

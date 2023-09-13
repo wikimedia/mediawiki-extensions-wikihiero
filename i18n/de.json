@@ -55,5 +55,7 @@
 	"wikihiero-th-meaning": "Bedeutung",
 	"wikihiero-th-result": "Ergebnis",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Hieroglyphen",
-	"wikihiero-void": "Leerer Block über die volle Breite"
+	"wikihiero-void": "Leerer Block über die volle Breite",
+	"wikhiero-usage-tracking-category": "Seiten, die WikiHiero verwenden",
+	"wikhiero-usage-tracking-category-desc": "Diese Kategorie wird automatisch zu Seiten hinzugefügt, die die WikiHiero-Erweiterung verwenden"
 }

@@ -51,5 +51,7 @@
 	"wikihiero-th-meaning": "Pomen",
 	"wikihiero-th-result": "Rezultat",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Hieroglif",
-	"wikihiero-void": "Prazen blok polne širine"
+	"wikihiero-void": "Prazen blok polne širine",
+	"wikhiero-usage-tracking-category": "Strani, ki uporabljajo WikiHiero",
+	"wikhiero-usage-tracking-category-desc": "Ta kategorija se samodejno doda stranem, ki uporabljajo razširitev WikiHiero"
 }
