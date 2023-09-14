@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Esbardu",
-			"Xuacu"
+			"Xuacu",
+			"YoaR"
 		]
 	},
 	"hieroglyphs": "Prueba'l formatu xeroglíficu",
@@ -51,5 +52,7 @@
 	"wikihiero-th-meaning": "Significáu",
 	"wikihiero-th-result": "Resultáu",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Xeroglíficos",
-	"wikihiero-void": "Bloque baleru d'anchu completu"
+	"wikihiero-void": "Bloque baleru d'anchu completu",
+	"wikhiero-usage-tracking-category": "Páxines qu'usen WikiHiero",
+	"wikhiero-usage-tracking-category-desc": "Esta categoría añádese automáticamente a les páxines qu'usen la estensión WikiHiero"
 }
