@@ -13,9 +13,12 @@
 		"MediaWiki": ">= 1.41"
 	},
 	"Hooks": {
-		"ParserFirstCallInit": [
-			"WikiHiero\\Hooks::onParserFirstCallInit"
-		]
+		"ParserFirstCallInit": "main"
+	},
+	"HookHandlers": {
+		"main": {
+			"class": "WikiHiero\\Hooks"
+		}
 	},
 	"MessagesDirs": {
 		"Wikihiero": [
