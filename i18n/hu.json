@@ -4,7 +4,8 @@
 			"Csega",
 			"Dani",
 			"Dj",
-			"Dorgan"
+			"Dorgan",
+			"Hanna Tardos"
 		]
 	},
 	"hieroglyphs": "Hieroglif jelölőnyelv",
@@ -52,5 +53,6 @@
 	"wikihiero-th-meaning": "Jelentés",
 	"wikihiero-th-result": "Eredmény",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Hieroglifák",
-	"wikihiero-void": "Teljes szélességű üres blokk"
+	"wikihiero-void": "Teljes szélességű üres blokk",
+	"wikhiero-usage-tracking-category": "WikiHierót használó oldalak"
 }
