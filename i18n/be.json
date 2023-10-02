@@ -51,5 +51,7 @@
 	"wikihiero-th-meaning": "Значэнне",
 	"wikihiero-th-result": "Вынік",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Іерогліфы",
-	"wikihiero-void": "Пусты блок поўнай шырыні"
+	"wikihiero-void": "Пусты блок поўнай шырыні",
+	"wikhiero-usage-tracking-category": "Старонкі, якія ўжываюць пашырэнне WikiHiero",
+	"wikhiero-usage-tracking-category-desc": "На гэтых старонках выкарыстоўваецца пашырэнне [[:mw:Extension:WikiHiero|WikiHiero]]."
 }
