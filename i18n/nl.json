@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Bdijkstra",
 			"Siebrand",
 			"Sjoerddebruin"
 		]
@@ -51,5 +52,6 @@
 	"wikihiero-th-meaning": "Betekenis",
 	"wikihiero-th-result": "Resultaat",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Hiërogliefen",
-	"wikihiero-void": "Volledige breedte"
+	"wikihiero-void": "Volledige breedte",
+	"wikhiero-usage-tracking-category": "Pagina's die WikiHiero gebruiken"
 }
