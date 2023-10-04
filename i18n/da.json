@@ -3,7 +3,8 @@
 		"authors": [
 			"Byrial",
 			"Jan Friberg",
-			"Peter Alberti"
+			"Peter Alberti",
+			"Steenth"
 		]
 	},
 	"hieroglyphs": "Afprøv hieroglyfkode",
@@ -52,5 +53,7 @@
 	"wikihiero-th-meaning": "Betydning",
 	"wikihiero-th-result": "Resultat",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Hieroglyffer",
-	"wikihiero-void": "Tom blok i fuld bredde"
+	"wikihiero-void": "Tom blok i fuld bredde",
+	"wikhiero-usage-tracking-category": "Sider, der bruger WikiHiero",
+	"wikhiero-usage-tracking-category-desc": "Denne kategori tilføjes automatisk til sider, der bruger WikiHiero-udvidelsen"
 }
