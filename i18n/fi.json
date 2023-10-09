@@ -6,7 +6,8 @@
 			"Crt",
 			"Nedergard",
 			"Nike",
-			"Olli"
+			"Olli",
+			"Silvonen"
 		]
 	},
 	"hieroglyphs": "Kokeile hieroglyfien merkintäkieltä",
@@ -55,5 +56,6 @@
 	"wikihiero-th-meaning": "Merkitys",
 	"wikihiero-th-result": "Tulos",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Hieroglyfit",
-	"wikihiero-void": "Koko leveyden laatikko"
+	"wikihiero-void": "Koko leveyden laatikko",
+	"wikhiero-usage-tracking-category": "WikiHieroa käyttävät sivut"
 }
