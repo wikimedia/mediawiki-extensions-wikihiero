@@ -7,7 +7,8 @@
 			"Liuxinyu970226",
 			"Shinjiman",
 			"Simon Shek",
-			"Kly"
+			"Kly",
+			"Ericliu1912"
 		]
 	},
 	"hieroglyphs": "試用象形文字標籤",
@@ -48,7 +49,7 @@
 	"wikihiero-mirror": "反映象形文字",
 	"wikihiero-result": "結果",
 	"wikihiero-separator": "分隔符號",
-	"wikihiero-special-page-text": "使用此頁面來試用 WikiHiero 標籤。\n請參考 [$1 標籤描述] 以了解如何使用。",
+	"wikihiero-special-page-text": "使用此頁面來試用WikiHiero標籤。\n請參考[$1 標籤描述]以了解如何使用。",
 	"wikihiero-submit": "送出",
 	"wikihiero-superposition": "細分",
 	"wikihiero-syntax": "語法",
