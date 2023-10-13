@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Anakmalaysia",
+			"Anarkiisto",
 			"Duolaimi",
 			"Liuxinyu970226",
 			"Shinjiman",
@@ -56,5 +57,6 @@
 	"wikihiero-th-meaning": "意思",
 	"wikihiero-th-result": "结果",
 	"wikihiero-visualeditor-mwhieroinspector-title": "象形文字",
-	"wikihiero-void": "全宽虚空块"
+	"wikihiero-void": "全宽虚空块",
+	"wikhiero-usage-tracking-category": "使用WikiHiero的页面"
 }
