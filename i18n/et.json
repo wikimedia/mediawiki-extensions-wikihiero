@@ -50,5 +50,7 @@
 	"wikihiero-th-meaning": "Tähendus",
 	"wikihiero-th-result": "Tulemus",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Hieroglüüfid",
-	"wikihiero-void": "Täislaiuses tühimik"
+	"wikihiero-void": "Täislaiuses tühimik",
+	"wikhiero-usage-tracking-category": "WikiHierot kasutavad leheküljed",
+	"wikhiero-usage-tracking-category-desc": "Selles kategoorias on leheküljed, mis kasutavad tarkvaralisa WikiHiero."
 }

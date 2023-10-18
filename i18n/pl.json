@@ -6,7 +6,8 @@
 			"Rail",
 			"Railfail536",
 			"Sp5uhe",
-			"Woytecr"
+			"Woytecr",
+			"Msz2001"
 		]
 	},
 	"hieroglyphs": "Hieroglify",
@@ -55,5 +56,6 @@
 	"wikihiero-th-meaning": "Znaczenie",
 	"wikihiero-th-result": "Wynik",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Hieroglify",
-	"wikihiero-void": "Pełnej szerokości pusty blok"
+	"wikihiero-void": "Pełnej szerokości pusty blok",
+	"wikhiero-usage-tracking-category": "Strony używające WikiHiero"
 }
