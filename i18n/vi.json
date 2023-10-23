@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Minh Nguyen",
+			"TheHighFighter2",
 			"Vinhtantran"
 		]
 	},
@@ -51,5 +52,6 @@
 	"wikihiero-th-meaning": "Ý nghĩa",
 	"wikihiero-th-result": "Kết quả",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Chữ tượng hình",
-	"wikihiero-void": "Khoảng cách rộng"
+	"wikihiero-void": "Khoảng cách rộng",
+	"wikhiero-usage-tracking-category": "Trang sử dụng WikiHiero"
 }
