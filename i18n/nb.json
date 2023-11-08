@@ -50,5 +50,7 @@
 	"wikihiero-th-meaning": "Betydning",
 	"wikihiero-th-result": "Resultat",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Hieroglyfer",
-	"wikihiero-void": "Tom blokk i full bredde"
+	"wikihiero-void": "Tom blokk i full bredde",
+	"wikhiero-usage-tracking-category": "Sider som bruker WikiHiero",
+	"wikhiero-usage-tracking-category-desc": "Denne kategorien legges automatisk til på sider som bruker WikiHiero-utvidelsen"
 }
