@@ -4,7 +4,8 @@
 			"DCLXVI",
 			"Spiritia",
 			"StanProg",
-			"Termininja"
+			"Termininja",
+			"Ted Masters"
 		]
 	},
 	"hieroglyphs": "Изпробване на възможностите за йероглифи",
@@ -53,5 +54,7 @@
 	"wikihiero-th-meaning": "Значение",
 	"wikihiero-th-result": "Резултат",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Йероглифи",
-	"wikihiero-void": "Празен блок с пълна ширина"
+	"wikihiero-void": "Празен блок с пълна ширина",
+	"wikhiero-usage-tracking-category": "Страници, използващи уикийероглифи",
+	"wikhiero-usage-tracking-category-desc": "Категорията се добавя автоматично към страници, използващи [[:mw:Extension:WikiHiero|разширението WikiHiero]]"
 }
