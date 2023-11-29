@@ -22,7 +22,7 @@ namespace WikiHiero;
 use Html;
 use HTMLForm;
 use MediaWiki\MediaWikiServices;
-use MediaWiki\User\UserOptionsLookup;
+use MediaWiki\User\Options\UserOptionsLookup;
 use SpecialPage;
 
 class SpecialHieroglyphs extends SpecialPage {
