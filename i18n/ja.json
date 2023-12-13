@@ -6,7 +6,8 @@
 			"JtFuruhata",
 			"Omotecho",
 			"Schu",
-			"Shirayuki"
+			"Shirayuki",
+			"Ant176"
 		]
 	},
 	"hieroglyphs": "象形文字マークアップを試用してみる",
@@ -56,5 +57,7 @@
 	"wikihiero-th-meaning": "意味",
 	"wikihiero-th-result": "結果",
 	"wikihiero-visualeditor-mwhieroinspector-title": "象形文字",
-	"wikihiero-void": "全角空白ブロック"
+	"wikihiero-void": "全角空白ブロック",
+	"wikhiero-usage-tracking-category": "WikiHieroを使用しているページ",
+	"wikhiero-usage-tracking-category-desc": "このカテゴリは、WikiHiero 拡張機能を使用するページに自動的に追加されます"
 }
