@@ -58,5 +58,7 @@
 	"wikihiero-th-meaning": "Значення",
 	"wikihiero-th-result": "Результат",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Ієрогліфи",
-	"wikihiero-void": "Порожній блок повної ширини"
+	"wikihiero-void": "Порожній блок повної ширини",
+	"wikhiero-usage-tracking-category": "Сторінки з використанням WikiHiero",
+	"wikhiero-usage-tracking-category-desc": "Ця категорія автоматично додається до сторінок, які використовують розширення WikiHiero"
 }
