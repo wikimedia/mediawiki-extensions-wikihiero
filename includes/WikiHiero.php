@@ -24,9 +24,9 @@
 
 namespace WikiHiero;
 
-use Config;
-use Html;
-use OutputPage;
+use MediaWiki\Config\Config;
+use MediaWiki\Html\Html;
+use MediaWiki\Output\OutputPage;
 use Parser;
 use RequestContext;
 

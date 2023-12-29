@@ -19,11 +19,11 @@
 
 namespace WikiHiero;
 
-use Html;
 use HTMLForm;
+use MediaWiki\Html\Html;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\User\Options\UserOptionsLookup;
-use SpecialPage;
 
 class SpecialHieroglyphs extends SpecialPage {
 	/** 1 day */

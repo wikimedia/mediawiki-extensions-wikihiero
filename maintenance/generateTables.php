@@ -22,6 +22,7 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
+use MediaWiki\Utils\GitInfo;
 use WikiHiero\WikiHiero;
 
 $IP = getenv( 'MW_INSTALL_PATH' );
