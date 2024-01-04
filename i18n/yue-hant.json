@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Winston Sung"
+			"Winston Sung",
+			"H78c67c"
 		]
 	},
-	"wikihiero-desc": "加 <code>&lt;hiero&gt;</code> 標籤去顯示象形文字"
+	"wikihiero-desc": "加 <code>&lt;hiero&gt;</code> 標籤去顯示象形文字",
+	"wikihiero-visualeditor-mwhieroinspector-title": "象形文字"
 }
