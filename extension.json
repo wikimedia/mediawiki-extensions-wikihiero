@@ -75,10 +75,6 @@
 			],
 			"messages": [
 				"wikihiero-visualeditor-mwhieroinspector-title"
-			],
-			"targets": [
-				"desktop",
-				"mobile"
 			]
 		}
 	},
