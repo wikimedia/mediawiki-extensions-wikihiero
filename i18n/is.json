@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sveinn í Felli"
+			"Sveinn í Felli",
+			"Stefán Örvar Sigmundsson"
 		]
 	},
 	"wikihiero-comment": "Athugasemd",
@@ -17,5 +18,6 @@
 	"wikihiero-th-code": "Kóði",
 	"wikihiero-th-meaning": "Merking",
 	"wikihiero-th-result": "Útkoma",
-	"wikihiero-visualeditor-mwhieroinspector-title": "Helgirúnir"
+	"wikihiero-visualeditor-mwhieroinspector-title": "Helgirúnir",
+	"wikhiero-usage-tracking-category": "Síður sem nota WikiHiero"
 }
