@@ -2,7 +2,7 @@ $( function () {
 	'use strict';
 
 	/* eslint-disable no-jquery/no-global-selector */
-	var textarea = OO.ui.infuse( $( '#hiero-text' ) ),
+	const textarea = OO.ui.infuse( $( '#hiero-text' ) ),
 		submit = OO.ui.infuse( $( '#hiero-submit' ) ),
 		$result = $( '#hiero-result' );
 	/* eslint-enable no-jquery/no-global-selector */
@@ -14,11 +14,9 @@ $( function () {
 	onChange();
 
 	function onSubmit() {
-		var text, data;
-
 		$result.css( 'opacity', 0.5 );
-		text = textarea.getValue();
-		data = {
+		const text = textarea.getValue();
+		const data = {
 			format: 'json',
 			action: 'parse',
 			text: '<hiero>' + text + '</hiero>',
@@ -27,7 +25,7 @@ $( function () {
 		$.post( mw.util.wikiScript( 'api' ),
 			data,
 			function ( response ) {
-				var html = '<table class="wikitable">' +
+				const html = '<table class="wikitable">' +
 					'<tr><th>' + mw.msg( 'wikihiero-input' ) + '</th><th>' +
 					mw.msg( 'wikihiero-result' ) + '</th></tr>' +
 					'<tr><td><code>&lt;hiero&gt;' +
@@ -55,7 +53,7 @@ $( function () {
 
 	// eslint-disable-next-line no-jquery/no-global-selector
 	$( '.mw-hiero-code' ).on( 'click', function () {
-		var val = textarea.getValue().trim();
+		const val = textarea.getValue().trim();
 		textarea.setValue(
 			val + ( val ? ' ' : '' ) + $( this ).find( '.mw-hiero-syntax' ).text()
 		);
