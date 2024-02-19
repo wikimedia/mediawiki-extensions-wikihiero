@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Cedric31"
+			"Cedric31",
+			"Lhanars"
 		]
 	},
 	"hieroglyphs": "Ensajar un balisatge per ieroglifes",
 	"wikihiero-desc": "Apond la balisa <code>&lt;hiero&gt;</code> per afichar los [[Special:Hieroglyphs|ieroglifes]]",
-	"wikihiero-visualeditor-mwhieroinspector-title": "Ieroglifes"
+	"wikihiero-visualeditor-mwhieroinspector-title": "Ieroglifs"
 }
