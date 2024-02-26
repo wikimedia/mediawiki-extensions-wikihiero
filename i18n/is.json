@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sveinn í Felli"
+			"Sveinn í Felli",
+			"Stefán Örvar Sigmundsson"
 		]
 	},
 	"wikihiero-comment": "Athugasemd",
@@ -13,7 +14,7 @@
 	"wikihiero-separator": "Aðgreinir",
 	"wikihiero-submit": "Senda",
 	"wikihiero-superposition": "Undirskipting",
-	"wikihiero-syntax": "Málskipun",
+	"wikihiero-syntax": "Málskipan",
 	"wikihiero-th-code": "Kóði",
 	"wikihiero-th-meaning": "Merking",
 	"wikihiero-th-result": "Útkoma",
