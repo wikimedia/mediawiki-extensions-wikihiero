@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Assele",
+			"Bashkorttan",
 			"Haqmar",
 			"З. ӘЙЛЕ"
 		]
@@ -17,5 +18,6 @@
 	"wikihiero-th-code": "Код",
 	"wikihiero-th-example": "Код үрнәге",
 	"wikihiero-th-meaning": "Мәғәнәһе",
-	"wikihiero-th-result": "Һөҙөмтә"
+	"wikihiero-th-result": "Һөҙөмтә",
+	"wikihiero-visualeditor-mwhieroinspector-title": "Иероглифтар"
 }
