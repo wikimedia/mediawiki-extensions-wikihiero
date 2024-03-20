@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Matthias"
+			"Matthias",
+			"Ooswesthoesbes"
 		]
 	},
-	"wikihiero-desc": "Voegt de tag <code>&lt;hiero&gt;</code> toe veur de weergave van [[Special:Hieroglyphs|hiërogliefe]]"
+	"wikihiero-desc": "Voegt de tag <code>&lt;hiero&gt;</code> toe veur de weergave van [[Special:Hieroglyphs|hiërogliefe]]",
+	"wikhiero-usage-tracking-category": "Pagina's die WikiHiero broeke"
 }
