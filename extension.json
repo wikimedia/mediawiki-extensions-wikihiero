@@ -89,7 +89,7 @@
 		"WikiHiero\\Hooks"
 	],
 	"TrackingCategories": [
-		"wikhiero-usage-tracking-category"
+		"wikihiero-usage-tracking-category"
 	],
 	"manifest_version": 2
 }
