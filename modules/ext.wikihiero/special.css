@@ -3,8 +3,8 @@
  */
 
 .mw-hiero-form {
-	position: -webkit-sticky;
-	position: sticky;
+	position: -webkit-sticky; /* stylelint-disable-line plugin/no-unsupported-browser-features */
+	position: sticky; /* stylelint-disable-line plugin/no-unsupported-browser-features */
 	top: 0;
 	background: #fff;
 	padding: 1em 0;
