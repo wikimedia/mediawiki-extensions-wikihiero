@@ -3,7 +3,7 @@
 namespace WikiHiero;
 
 use MediaWiki\Hook\ParserFirstCallInitHook;
-use Parser;
+use MediaWiki\Parser\Parser;
 use Wikimedia\Parsoid\Ext\ExtensionModule;
 use Wikimedia\Parsoid\Ext\ExtensionTagHandler;
 use Wikimedia\Parsoid\Ext\ParsoidExtensionAPI;

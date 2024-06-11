@@ -25,10 +25,10 @@
 namespace WikiHiero;
 
 use MediaWiki\Config\Config;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\Html\Html;
 use MediaWiki\Output\OutputPage;
-use Parser;
-use RequestContext;
+use MediaWiki\Parser\Parser;
 
 class WikiHiero {
 	public const IMAGE_EXT = 'png';

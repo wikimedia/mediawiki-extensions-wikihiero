@@ -19,8 +19,8 @@
 
 namespace WikiHiero;
 
-use HTMLForm;
 use MediaWiki\Html\Html;
+use MediaWiki\HTMLForm\HTMLForm;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\User\Options\UserOptionsLookup;
