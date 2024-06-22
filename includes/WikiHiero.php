@@ -113,9 +113,10 @@ class WikiHiero {
 	 * @return string a string to add to the stream
 	 */
 	private function renderGlyph( $glyph, $height = null ) {
-		$imageClass = null;
+		// Support skins with night theme.
+		$imageClass = 'skin-invert';
 		if ( $this->isMirrored( $glyph ) ) {
-			$imageClass = 'mw-mirrored';
+			$imageClass .= ' mw-mirrored';
 		}
 		$glyph = $this->extractCode( $glyph );
 
