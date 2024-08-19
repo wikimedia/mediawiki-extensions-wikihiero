@@ -95,6 +95,7 @@ class GenerateTables extends Maintenance {
 		return $files;
 	}
 
+	/** @var string */
 	private $moreTables = '
 $wh_phonemes	=	[ // phoneme -> Gardiner code conversion table
 	"mSa"	=>	"A12",

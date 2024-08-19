@@ -33,6 +33,7 @@ class SpecialHieroglyphs extends SpecialPage {
 	 * @var WikiHiero
 	 */
 	private $hiero;
+	/** @var string[][] */
 	private $syntaxHelp = [
 		[ 'code' => '-', 'message' => 'wikihiero-separator', 'example' => 'A1 - B1' ],
 		[ 'code' => ':', 'message' => 'wikihiero-superposition', 'example' => 'p:t' ],
@@ -43,6 +44,7 @@ class SpecialHieroglyphs extends SpecialPage {
 		[ 'code' => '.', 'message' => 'wikihiero-half-void', 'example' => 'A1 . B1' ],
 		[ 'code' => '<!-- -->', 'message' => 'wikihiero-comment', 'example' => 'A<!-- B1 -->1' ],
 	];
+	/** @var string[] */
 	private $helpColumns = [
 		'code',
 		'meaning',
