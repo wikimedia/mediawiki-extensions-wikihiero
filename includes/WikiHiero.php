@@ -42,7 +42,9 @@ class WikiHiero {
 
 	private const TABLE_START = '<table class="mw-hiero-table">';
 
+	/** @var int */
 	private $scale = 100;
+	/** @var Config */
 	private $config;
 
 	/** @var string[] */
