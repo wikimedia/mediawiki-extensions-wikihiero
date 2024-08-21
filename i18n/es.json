@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"-jem-",
 			"Armando-Martin",
 			"Dgstranz",
 			"Imre",
@@ -55,5 +56,6 @@
 	"wikihiero-th-meaning": "Significado",
 	"wikihiero-th-result": "Resultado",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Jeroglíficos",
-	"wikihiero-void": "Bloque vacío de anchura completa"
+	"wikihiero-void": "Bloque vacío de anchura completa",
+	"wikihiero-usage-tracking-category": "Páginas que usan la extensión WikiHiero"
 }

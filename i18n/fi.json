@@ -8,6 +8,7 @@
 			"Nedergard",
 			"Nike",
 			"Olli",
+			"Samoasambia",
 			"Silvonen"
 		]
 	},
@@ -58,6 +59,6 @@
 	"wikihiero-th-result": "Tulos",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Hieroglyfit",
 	"wikihiero-void": "Koko leveyden laatikko",
-	"wikihiero-usage-tracking-category": "WikiHieroa käyttävät sivut",
+	"wikihiero-usage-tracking-category": "WikiHiero-laajennusta käyttävät sivut",
 	"wikihiero-usage-tracking-category-desc": "Tämä luokka lisätään automaattisesti sivuihin, jotka käyttävät WikiHiero-laajennosta."
 }
