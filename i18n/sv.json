@@ -4,6 +4,7 @@
 			"Jopparn",
 			"Lejonel",
 			"Lokal Profil",
+			"Sabelöga",
 			"Thurs",
 			"WikiPhoenix"
 		]
@@ -54,5 +55,7 @@
 	"wikihiero-th-meaning": "Betydelse",
 	"wikihiero-th-result": "Resultat",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Hieroglyfer",
-	"wikihiero-void": "Tomt block i full bredd"
+	"wikihiero-void": "Tomt block i full bredd",
+	"wikihiero-usage-tracking-category": "Sidor som använder tillägget WikiHiero",
+	"wikihiero-usage-tracking-category-desc": "Den här kategorin läggs automatiskt till på sidor som använder tillägget WikiHiero"
 }

@@ -3,7 +3,8 @@
 		"authors": [
 			"Ansumang",
 			"Fwolff",
-			"Naudefj"
+			"Naudefj",
+			"Rooiratel"
 		]
 	},
 	"hieroglyphs": "Probeer hiëroglief-opmerkteks",
@@ -17,5 +18,6 @@
 	"wikihiero-syntax": "Sintaks",
 	"wikihiero-th-code": "Kode",
 	"wikihiero-th-result": "Resultaat",
-	"wikihiero-visualeditor-mwhieroinspector-title": "Hiërogliewe"
+	"wikihiero-visualeditor-mwhieroinspector-title": "Hiërogliewe",
+	"wikihiero-usage-tracking-category": "Bladsye wat die WikiHiero-uitbreiding gebruik"
 }
