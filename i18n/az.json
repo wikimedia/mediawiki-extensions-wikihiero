@@ -7,7 +7,7 @@
 			"Wertuose"
 		]
 	},
-	"hieroglyphs": "Heroqlif işarələməsini sınayın",
+	"hieroglyphs": "Heroqlif nişanlanmasını sınayın",
 	"wikihiero-category-A": "A: Kişilər və onların məşğuliyyətləri",
 	"wikihiero-category-Aa": "Aa: Təsnifatsız",
 	"wikihiero-category-B": "B: Qadınlar və onların məşğuliyyətləri",
@@ -41,5 +41,19 @@
 	"wikihiero-input": "Daxil edilən mətn",
 	"wikihiero-juxtaposition": "Yan yana",
 	"wikihiero-load-error": "Yükləmə xətası!",
-	"wikihiero-visualeditor-mwhieroinspector-title": "Heroqliflər"
+	"wikihiero-mirror": "Heroqlifi yansıt",
+	"wikihiero-result": "Nəticə",
+	"wikihiero-separator": "Ayırıcı",
+	"wikihiero-special-page-text": "WikiHiero nişanlamasını sınamaq üçün bu səhifədən istifadə edin.\nOnu necə istifadə etmək barədə ətraflı məlumat üçün [$1 nişanlama səhifəsinə] baxın.",
+	"wikihiero-submit": "Göndər",
+	"wikihiero-superposition": "Altbölmə",
+	"wikihiero-syntax": "Sintaksis",
+	"wikihiero-th-code": "Kod",
+	"wikihiero-th-example": "Nümunə kod",
+	"wikihiero-th-meaning": "Mənası",
+	"wikihiero-th-result": "Nəticə",
+	"wikihiero-visualeditor-mwhieroinspector-title": "Heroqliflər",
+	"wikihiero-void": "Tam enli boş blok",
+	"wikihiero-usage-tracking-category": "WikiHiero uzantısından istifadə edən səhifələr",
+	"wikihiero-usage-tracking-category-desc": "Bu kateqoriya avtomatik olaraq WikiHiero uzantısından istifadə edən səhifələrə əlavə olunur"
 }
