@@ -5,6 +5,7 @@
 			"Anarkiisto",
 			"Anterdc99",
 			"Duolaimi",
+			"GuoPC",
 			"Liuxinyu970226",
 			"Shinjiman",
 			"Shirayuki",
@@ -59,6 +60,6 @@
 	"wikihiero-th-result": "结果",
 	"wikihiero-visualeditor-mwhieroinspector-title": "象形文字",
 	"wikihiero-void": "全宽虚空块",
-	"wikihiero-usage-tracking-category": "使用WikiHiero的页面",
+	"wikihiero-usage-tracking-category": "使用WikiHiero扩展的页面",
 	"wikihiero-usage-tracking-category-desc": "此分类会自动添加到使用WikiHiero扩展的页面"
 }
