@@ -8,7 +8,8 @@
 			"Giro720",
 			"Luan",
 			"Luckas",
-			"MetalBrasil"
+			"MetalBrasil",
+			"NenhumaFênix"
 		]
 	},
 	"hieroglyphs": "Testar a marcação de hieróglifos",
@@ -58,5 +59,7 @@
 	"wikihiero-th-meaning": "Significado",
 	"wikihiero-th-result": "Resultado",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Hieróglifos",
-	"wikihiero-void": "Bloco vazio com largura total"
+	"wikihiero-void": "Bloco vazio com largura total",
+	"wikihiero-usage-tracking-category": "Páginas que utilizam a extensão WikiHiero",
+	"wikihiero-usage-tracking-category-desc": "Esta categoria é adicionada automaticamente a páginas que utilizem a extensão WikiHiero"
 }
