@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jonny84"
+			"Jonny84",
+			"Äberlausitzer"
 		]
 	},
-	"wikihiero-desc": "Fügt doas <code>&lt;hiero&gt;</code>-Tag zur Formatierung vo [[Special:Hieroglyphs|Hieroglyphen]] hinzu"
+	"wikihiero-desc": "Ergänzt doas Tag <code>&lt;hiero&gt;</code> zur Oazeige vu [[Special:Hieroglyphs|Hieroglyphen]]"
 }
