@@ -22,6 +22,7 @@
  * http://www.gnu.org/copyleft/gpl.html
  */
 
+use MediaWiki\Maintenance\Maintenance;
 use MediaWiki\Utils\GitInfo;
 use WikiHiero\WikiHiero;
 
