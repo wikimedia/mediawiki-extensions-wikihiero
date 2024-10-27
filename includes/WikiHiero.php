@@ -57,7 +57,7 @@ class WikiHiero {
 	/**
 	 * @param Config|null $config
 	 */
-	public function __construct( Config $config = null ) {
+	public function __construct( ?Config $config = null ) {
 		$this->config = $config ?: RequestContext::getMain()->getConfig();
 		self::loadData();
 	}
