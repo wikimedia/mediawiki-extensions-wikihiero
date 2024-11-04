@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Matthias"
+			"Matthias",
+			"Ooswesthoesbes"
 		]
 	},
 	"wikihiero-desc": "Voegt de tag <code>&lt;hiero&gt;</code> toe veur de weergave van [[Special:Hieroglyphs|hiërogliefe]]"
