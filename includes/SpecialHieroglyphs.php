@@ -192,7 +192,7 @@ class SpecialHieroglyphs extends SpecialPage {
 		);
 	}
 
-	private function getToc() {
+	private function getToc(): string {
 		$html = '<div class="toc mw-hiero-toc">';
 
 		$syntax = $this->msg( 'wikihiero-syntax' )->text();
@@ -236,11 +236,11 @@ class SpecialHieroglyphs extends SpecialPage {
 		return $res;
 	}
 
-	private function getHeading( $message, $anchor ) {
+	private function getHeading( string $message, string $anchor ): string {
 		return "<h2 id=\"$anchor\">" . $this->msg( $message )->escaped() . "</h2>\n";
 	}
 
-	private function getSyntaxHelp( $code, $message, $example ) {
+	private function getSyntaxHelp( string $code, string $message, string $example ): string {
 		return '<tr><th>' . htmlspecialchars( $code ) . '</th><td>'
 			. $this->msg( $message )->escaped() . '</td><td dir="ltr">'
 			. '<code>' . htmlspecialchars( "<hiero>$example</hiero>" ) . '</code></td><td>'

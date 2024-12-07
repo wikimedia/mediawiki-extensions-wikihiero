@@ -190,12 +190,12 @@ class WikiHiero {
 		);
 	}
 
-	private function getImageUrl( $fileName ) {
+	private function getImageUrl( string $fileName ): string {
 		$url = self::getImagePath() . self::IMAGE_PREFIX . $fileName . '.' . self::IMAGE_EXT;
 		return OutputPage::transformResourcePath( $this->config, $url );
 	}
 
-	private function isMirrored( $glyph ) {
+	private function isMirrored( string $glyph ): bool {
 		return substr( $glyph, -1 ) == '\\';
 	}
 
