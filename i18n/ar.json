@@ -53,5 +53,7 @@
 	"wikihiero-th-meaning": "المعنى",
 	"wikihiero-th-result": "النتيجة",
 	"wikihiero-visualeditor-mwhieroinspector-title": "هيرغليفية",
-	"wikihiero-void": "كتلة فراغ كاملة العرض"
+	"wikihiero-void": "كتلة فراغ كاملة العرض",
+	"wikihiero-usage-tracking-category": "الصفحات التي تستخدم امتداد WikiHiero",
+	"wikihiero-usage-tracking-category-desc": "تمت إضافة هذه الفئة تلقائيًا إلى الصفحات التي تستخدم امتداد WikiHiero"
 }
