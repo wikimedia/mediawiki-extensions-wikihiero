@@ -5,9 +5,13 @@
 			"Growingup"
 		]
 	},
+	"wikihiero-category-E": "E: Сүт эмүүчүлөр",
+	"wikihiero-category-G": "Г: Канаттуулар",
 	"wikihiero-comment": "Эскертүү",
 	"wikihiero-load-error": "Жүктөө катасы!",
 	"wikihiero-result": "Натыйжа",
+	"wikihiero-syntax": "Синтаксис",
+	"wikihiero-th-code": "Код",
 	"wikihiero-th-result": "Натыйжа",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Иероглифтер"
 }
