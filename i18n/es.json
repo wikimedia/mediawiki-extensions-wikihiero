@@ -57,5 +57,6 @@
 	"wikihiero-th-result": "Resultado",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Jeroglíficos",
 	"wikihiero-void": "Bloque vacío de anchura completa",
-	"wikihiero-usage-tracking-category": "Páginas que usan la extensión WikiHiero"
+	"wikihiero-usage-tracking-category": "Páginas que usan la extensión WikiHiero",
+	"wikihiero-usage-tracking-category-desc": "Esta categoría se añade automáticamente a las páginas que utilizan la extensión WikiHiero."
 }
