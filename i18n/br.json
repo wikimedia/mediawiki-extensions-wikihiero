@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Fulup",
+			"Huñvreüs",
 			"Y-M D"
 		]
 	},
@@ -42,7 +43,7 @@
 	"wikihiero-mirror": "Sevel skeud ur hieroglif",
 	"wikihiero-result": "Disoc'h",
 	"wikihiero-separator": "Dispartier",
-	"wikihiero-special-page-text": "Grit gant ar bajenn-mañ evit arnodiñ ar balizennañ WikiHiero.\nGwelet [//en.wikipedia.org/wiki/Help:WikiHiero_syntax amañ] evit deskrivadur ar balizennañ.",
+	"wikihiero-special-page-text": "Grit gant ar bajenn-mañ evit arnodiñ ar balizennañ WikiHiero.\nGwelet [$1 deskrivadur ar balizennañ] evit gouzout penaos ober gantañ.",
 	"wikihiero-submit": "Kas",
 	"wikihiero-superposition": "Isrann",
 	"wikihiero-syntax": "Ereadur",
