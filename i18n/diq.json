@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Aspar",
+			"GolyatGeri",
 			"Kumkumuk",
 			"Mirzali"
 		]
@@ -52,5 +53,7 @@
 	"wikihiero-th-meaning": "Maney cı",
 	"wikihiero-th-result": "Netice",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Hiyeroglifi",
-	"wikihiero-void": "Tan ebat veng blok"
+	"wikihiero-void": "Tan ebat veng blok",
+	"wikihiero-usage-tracking-category": "Perlê ke derganiya WikiHeroy gureynenê",
+	"wikihiero-usage-tracking-category-desc": "No kategori otomatikman debiyao perlê ke derganiya WikiHeroy gureyneyayo"
 }
