@@ -78,12 +78,17 @@ class WikiHiero {
 
 	/**
 	 * Parser callback for <hiero> tag
-	 * @param string $input
+	 * @param string|null $input
 	 * @param array $args
 	 * @param Parser $parser
 	 * @return string
 	 */
 	public static function parserHook( $input, $args, $parser ) {
+		// T388339 - self closed <heiro/> is a no-op, and $input is null
+		if ( $input === null ) {
+			return '';
+		}
+
 		$hiero = new WikiHiero();
 		$parser->getOutput()->addModuleStyles( [ 'ext.wikihiero' ] );
 		$parser->addTrackingCategory( 'wikihiero-usage-tracking-category' );
