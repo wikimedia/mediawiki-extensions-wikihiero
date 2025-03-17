@@ -52,5 +52,7 @@
 	"wikihiero-th-meaning": "Význam",
 	"wikihiero-th-result": "Výsledek",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Hieroglyfy",
-	"wikihiero-void": "Prázdný blok s plnou šířkou"
+	"wikihiero-void": "Prázdný blok s plnou šířkou",
+	"wikihiero-usage-tracking-category": "Stránky používající rozšíření WikiHiero",
+	"wikihiero-usage-tracking-category-desc": "Tato kategorie se automaticky přidává na stránky, které používají rozšíření WikiHiero"
 }
