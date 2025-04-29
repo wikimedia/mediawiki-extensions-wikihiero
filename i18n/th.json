@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Passawuth"
+			"Passawuth",
+			"Siam2019"
 		]
 	},
-	"wikihiero-desc": "เพิ่มแท็ก <code>&lt;hiero&gt;</code> เพื่อแสดงอักษรเฮียโรกลิฟิกส์"
+	"wikihiero-desc": "เพิ่มแท็ก <code>&lt;hiero&gt;</code> เพื่อแสดงอักษรเฮียโรกลิฟิกส์",
+	"wikihiero-usage-tracking-category": "หน้าที่ใช้ส่วนขยาย WikiHiero"
 }
