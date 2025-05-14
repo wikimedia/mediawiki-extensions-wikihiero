@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Anakmalaysia",
-			"Aviator"
+			"Aviator",
+			"Hakimi97"
 		]
 	},
 	"hieroglyphs": "Cuba penanda tulisan hieroglif",
@@ -51,5 +52,6 @@
 	"wikihiero-th-meaning": "Maksud",
 	"wikihiero-th-result": "Hasil",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Hieroglif",
-	"wikihiero-void": "Blok jarak sepenuh lebar"
+	"wikihiero-void": "Blok jarak sepenuh lebar",
+	"wikihiero-usage-tracking-category": "Laman yang menggunakan sambungan WikiHiero"
 }
