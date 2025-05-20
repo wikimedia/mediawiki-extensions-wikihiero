@@ -41,7 +41,7 @@
 	"wikihiero-mirror": "Иероглиф ана ерзор",
 	"wikihiero-result": "Хилам",
 	"wikihiero-separator": "ДӀасакъастораг",
-	"wikihiero-special-page-text": "Лела йаь хӀара агӀо, WikiHiero билгалонаш хьожуш. \nБилгалонах лаьцна хьажа [//ru.wikipedia.org/wiki/Википедия:Древнеегипетские_иероглифы кхузахь].",
+	"wikihiero-special-page-text": "ХӀара агӀо лела а йеш, WikiHiero билгалдаккхар хьажа.\nХьажа [$1 билгалйаккхаран хаамаш], муха лело деза иза хаархьама.",
 	"wikihiero-submit": "Хьажа",
 	"wikihiero-superposition": "Ирх дӀахӀоттам",
 	"wikihiero-syntax": "Синтаксис",
@@ -51,5 +51,6 @@
 	"wikihiero-th-result": "Хилам",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Иероглифаш",
 	"wikihiero-void": "Йуьззина шораллин йаьсса блок",
-	"wikihiero-usage-tracking-category": "WikiHiero лелош йолу агӀонаш"
+	"wikihiero-usage-tracking-category": "WikiHiero лелош йолу агӀонаш",
+	"wikihiero-usage-tracking-category-desc": "ХӀара категори авто тӀетоьхна йу WikiHiero шордарш лелош йолчу агӀонашна"
 }
