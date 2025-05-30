@@ -2,11 +2,13 @@
  * Styles for Special:Hieroglyphs
  */
 
+@import 'mediawiki.skin.variables.less';
+
 .mw-hiero-form {
 	position: -webkit-sticky; /* stylelint-disable-line plugin/no-unsupported-browser-features */
 	position: sticky; /* stylelint-disable-line plugin/no-unsupported-browser-features */
 	top: 0;
-	background: var( --background-color-base, #fff );
+	background: @background-color-base;
 	padding: 1em 0;
 	/* Position above mw-mirror */
 	z-index: 1;
@@ -14,7 +16,7 @@
 
 .mw-hiero-code {
 	display: inline-block;
-	border: 1px solid #aaa;
+	border: @border-base;
 	margin: 0 1px 1px 0;
 	text-align: center;
 }

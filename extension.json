@@ -46,8 +46,8 @@
 	"ResourceModules": {
 		"ext.wikihiero": {
 			"styles": [
-				"ext.wikihiero/content.css",
-				"ext.wikihiero/special.css"
+				"ext.wikihiero/content.less",
+				"ext.wikihiero/special.less"
 			]
 		},
 		"ext.wikihiero.special": {
