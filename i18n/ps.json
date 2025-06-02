@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel"
+			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"شاه زمان پټان"
 		]
 	},
 	"hieroglyphs": "هېروگليف نښې وآزمويئ",
@@ -26,5 +27,5 @@
 	"wikihiero-th-example": "کوډ بېلگه",
 	"wikihiero-th-meaning": "مانا",
 	"wikihiero-th-result": "پايله",
-	"wikihiero-visualeditor-mwhieroinspector-title": "هيروگلېفېکونه"
+	"wikihiero-visualeditor-mwhieroinspector-title": "هيروگلېپونه"
 }
