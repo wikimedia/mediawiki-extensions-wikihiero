@@ -16,6 +16,9 @@ module.exports = function ( grunt ) {
 			all: '.'
 		},
 		stylelint: {
+			options: {
+				cache: true
+			},
 			all: 'modules/**/*.css'
 		},
 		watch: {
