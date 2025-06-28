@@ -19,7 +19,7 @@ module.exports = function ( grunt ) {
 			options: {
 				cache: true
 			},
-			all: 'modules/**/*.css'
+			all: 'modules/**/*.{css,less}'
 		},
 		watch: {
 			files: [
