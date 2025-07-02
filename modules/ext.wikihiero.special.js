@@ -25,14 +25,21 @@ $( function () {
 		$.post( mw.util.wikiScript( 'api' ),
 			data,
 			function ( response ) {
-				const html = '<table class="wikitable">' +
-					'<tr><th>' + mw.msg( 'wikihiero-input' ) + '</th><th>' +
-					mw.msg( 'wikihiero-result' ) + '</th></tr>' +
-					'<tr><td><code>&lt;hiero&gt;' +
-					mw.html.escape( text ).replace( '\n', '<br/>' ) +
-					'&lt;/hiero&gt;</code></td>' +
-					'<td>' + response.parse.text[ '*' ] + '</td></tr></table>';
-				$result.html( html );
+				var $table = $( '<table>' ).addClass( 'wikitable' );
+
+				var $headerRow = $( '<tr>' )
+					.append( $( '<th>' ).text( mw.msg( 'wikihiero-input' ) ) )
+					.append( $( '<th>' ).text( mw.msg( 'wikihiero-result' ) ) );
+
+				var escapedText = mw.html.escape( text ).replace( '\n', '<br/>' );
+				var $code = $( '<code>' ).html( '&lt;hiero&gt;' + escapedText + '&lt;/hiero&gt;' );
+
+				var $dataRow = $( '<tr>' )
+					.append( $( '<td>' ).append( $code ) )
+					.append( $( '<td>' ).html( response.parse.text[ '*' ] ) );
+				$table.append( $headerRow, $dataRow );
+
+				$result.html( $table );
 			}
 		).fail( function () {
 			$result.text( mw.msg( 'wikihiero-load-error' ) );
