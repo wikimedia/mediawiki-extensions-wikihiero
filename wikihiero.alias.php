@@ -253,12 +253,17 @@ $specialPageAliases['vi'] = [
 	'Hieroglyphs' => [ 'Chữ_tượng_hình' ],
 ];
 
-/** Simplified Chinese (中文（简体）‎) */
+/** Chinese (中文) */
+$specialPageAliases['zh'] = [
+	'Hieroglyphs' => [ 'Hieroglyphs' ],
+];
+
+/** Simplified Chinese (中文（简体）) */
 $specialPageAliases['zh-hans'] = [
 	'Hieroglyphs' => [ '象形文字' ],
 ];
 
-/** Traditional Chinese (中文（繁體）‎) */
+/** Traditional Chinese (中文（繁體）) */
 $specialPageAliases['zh-hant'] = [
 	'Hieroglyphs' => [ '象形文字' ],
 ];
