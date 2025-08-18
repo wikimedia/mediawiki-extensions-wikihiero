@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Winston Sung",
-			"H78c67c"
+			"H78c67c",
+			"Yueman"
 		]
 	},
 	"wikihiero-desc": "加 <code>&lt;hiero&gt;</code> 標籤去顯示象形文字",
+	"wikihiero-submit": "遞交",
 	"wikihiero-visualeditor-mwhieroinspector-title": "象形文字"
 }
