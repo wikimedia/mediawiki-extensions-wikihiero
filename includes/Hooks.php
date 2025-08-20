@@ -4,6 +4,7 @@ namespace WikiHiero;
 
 use MediaWiki\Hook\ParserFirstCallInitHook;
 use MediaWiki\Parser\Parser;
+use Wikimedia\Parsoid\Core\ContentMetadataCollectorStringSets as CMCSS;
 use Wikimedia\Parsoid\Ext\ExtensionModule;
 use Wikimedia\Parsoid\Ext\ExtensionTagHandler;
 use Wikimedia\Parsoid\Ext\ParsoidExtensionAPI;
@@ -35,7 +36,9 @@ class Hooks extends ExtensionTagHandler implements ExtensionModule, ParserFirstC
 	/** @inheritDoc */
 	public function sourceToDom( ParsoidExtensionAPI $extApi, string $src, array $extArgs ) {
 		$hiero = new WikiHiero();
-		$extApi->addModuleStyles( [ 'ext.wikihiero' ] );
+		$extApi->getMetadata()->appendOutputStrings(
+			CMCSS::MODULE_STYLE, [ 'ext.wikihiero' ]
+		);
 		$html = str_replace( "\n", " ", $hiero->render( $src ) );
 		return $extApi->htmlToDom( $html );
 	}
