@@ -35,6 +35,8 @@
 		"Hieroglyphs": {
 			"class": "WikiHiero\\SpecialHieroglyphs",
 			"services": [
+				"LanguageConverterFactory",
+				"MainWANObjectCache",
 				"UserOptionsLookup"
 			]
 		}

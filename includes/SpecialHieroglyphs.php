@@ -21,9 +21,10 @@ namespace WikiHiero;
 
 use MediaWiki\Html\Html;
 use MediaWiki\HTMLForm\HTMLForm;
-use MediaWiki\MediaWikiServices;
+use MediaWiki\Languages\LanguageConverterFactory;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\User\Options\UserOptionsLookup;
+use Wikimedia\ObjectCache\WANObjectCache;
 
 class SpecialHieroglyphs extends SpecialPage {
 	/** 1 day */
@@ -52,7 +53,11 @@ class SpecialHieroglyphs extends SpecialPage {
 		'result',
 	];
 
-	public function __construct( private readonly UserOptionsLookup $userOptionsLookup ) {
+	public function __construct(
+		private readonly LanguageConverterFactory $languageConverterFactory,
+		private readonly WANObjectCache $wanObjectCache,
+		private readonly UserOptionsLookup $userOptionsLookup,
+	) {
 		parent::__construct( 'Hieroglyphs' );
 	}
 
@@ -129,13 +134,10 @@ class SpecialHieroglyphs extends SpecialPage {
 	 * @return-taint none
 	 */
 	private function listHieroglyphs() {
-		$services = MediaWikiServices::getInstance();
-		$cache = $services->getMainWANObjectCache();
-		$langConv = $services->getLanguageConverterFactory()
-			->getLanguageConverter( $this->getContext()->getLanguage() );
+		$langConv = $this->languageConverterFactory->getLanguageConverter( $this->getLanguage() );
 
-		return $cache->getWithSetCallback(
-			$cache->makeKey( 'hiero-list',
+		return $this->wanObjectCache->getWithSetCallback(
+			$this->wanObjectCache->makeKey( 'hiero-list',
 				$langConv->getExtraHashOptions(),
 				WikiHiero::getImagePath(),
 				'1.2'
