@@ -52,17 +52,8 @@ class SpecialHieroglyphs extends SpecialPage {
 		'result',
 	];
 
-	/**
-	 * @var UserOptionsLookup
-	 */
-	private $userOptionsLookup;
-
-	/**
-	 * @param UserOptionsLookup $userOptionsLookup
-	 */
-	public function __construct( UserOptionsLookup $userOptionsLookup ) {
+	public function __construct( private readonly UserOptionsLookup $userOptionsLookup ) {
 		parent::__construct( 'Hieroglyphs' );
-		$this->userOptionsLookup = $userOptionsLookup;
 	}
 
 	/**
