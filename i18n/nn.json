@@ -2,11 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Frokor",
-			"Njardarlogar"
+			"Njardarlogar",
+			"Ranveig"
 		]
 	},
 	"hieroglyphs": "Røyn ut hieroglyfmerking",
 	"wikihiero-category-A": "A: Mannen og gjeremåla hans",
+	"wikihiero-category-Aa": "Aa: Uklassifisert",
 	"wikihiero-category-B": "B: Kvinna og gjeremåla hennar",
 	"wikihiero-category-C": "C: Menneskeliknande guddomar",
 	"wikihiero-category-D": "D: Delar av menneskekroppen",
@@ -40,5 +42,6 @@
 	"wikihiero-th-example": "Dømekode",
 	"wikihiero-th-meaning": "Tyding",
 	"wikihiero-th-result": "Resultat",
-	"wikihiero-visualeditor-mwhieroinspector-title": "Hieroglyfar"
+	"wikihiero-visualeditor-mwhieroinspector-title": "Hieroglyfar",
+	"wikihiero-usage-tracking-category": "Sider som bruker WikiHiero-utvidinga"
 }
