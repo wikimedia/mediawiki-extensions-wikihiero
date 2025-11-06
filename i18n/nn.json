@@ -2,11 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Frokor",
-			"Njardarlogar"
+			"Njardarlogar",
+			"Ranveig"
 		]
 	},
 	"hieroglyphs": "Røyn ut hieroglyfmerking",
 	"wikihiero-category-A": "A: Mannen og gjeremåla hans",
+	"wikihiero-category-Aa": "Aa: Uklassifisert",
 	"wikihiero-category-B": "B: Kvinna og gjeremåla hennar",
 	"wikihiero-category-C": "C: Menneskeliknande guddomar",
 	"wikihiero-category-D": "D: Delar av menneskekroppen",
@@ -23,6 +25,9 @@
 	"wikihiero-category-P": "P: Skip og delar av skip",
 	"wikihiero-category-Q": "Q: Hushald og gravferdsmøblar",
 	"wikihiero-category-R": "R: Tempelmøblar og heilage emblem",
+	"wikihiero-category-S": "S: Kronar, klede, stavar osb.",
+	"wikihiero-category-T": "T: Krig, jakt, slakt",
+	"wikihiero-category-U": "U: Jordbruk, handverk og yrke",
 	"wikihiero-comment": "Merknad",
 	"wikihiero-desc": "Legg til taggen <code>&lt;hiero&gt;</code> for å vise [[Special:Hieroglyphs|hieroglyfar]]",
 	"wikihiero-eol": "Lineende",
@@ -40,5 +45,6 @@
 	"wikihiero-th-example": "Dømekode",
 	"wikihiero-th-meaning": "Tyding",
 	"wikihiero-th-result": "Resultat",
-	"wikihiero-visualeditor-mwhieroinspector-title": "Hieroglyfar"
+	"wikihiero-visualeditor-mwhieroinspector-title": "Hieroglyfar",
+	"wikihiero-usage-tracking-category": "Sider som bruker WikiHiero-utvidinga"
 }
