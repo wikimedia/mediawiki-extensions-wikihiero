@@ -6,7 +6,8 @@
 			"Kenrick95",
 			"Mahali syarifuddin",
 			"Rtnf",
-			"පසිඳු කාවින්ද"
+			"පසිඳු කාවින්ද",
+			"Penyuwangi"
 		]
 	},
 	"hieroglyphs": "Coba teks hiroglif",
@@ -37,7 +38,7 @@
 	"wikihiero-category-Y": "Y: Tulis-menulis, permainan, musik",
 	"wikihiero-category-Z": "Z: Garis, bentuk geometri, dll.",
 	"wikihiero-comment": "Komentar",
-	"wikihiero-desc": "Tambahkan tag <code>&lt;hiero&gt;</code> untuk menampilkan [[Special:Hieroglyphs|hieroglif]]",
+	"wikihiero-desc": "Tambahkan tanda <code>&lt;hiero&gt;</code> untuk menampilkan [[Special:Hieroglyphs|hieroglif]]",
 	"wikihiero-eol": "Akhir baris",
 	"wikihiero-half-void": "Blok spasi lebar-separuh",
 	"wikihiero-input": "Teks masukan",
