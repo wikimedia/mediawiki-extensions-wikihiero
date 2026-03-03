@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Yupik"
+			"Yupik",
+			"Seipinne"
 		]
 	},
 	"wikihiero-comment": "Komment",
+	"wikihiero-load-error": "Luođimfeilâ!",
 	"wikihiero-result": "Puáđus",
 	"wikihiero-th-result": "Puáđus"
 }
