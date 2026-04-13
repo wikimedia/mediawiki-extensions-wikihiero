@@ -83,7 +83,7 @@ class SpecialHieroglyphs extends SpecialPage {
 
 		$text = trim( $this->getContext()->getRequest()->getVal( 'text', '' ) );
 		if ( $text !== '' ) {
-			$hiero = new WikiHiero();
+			$hiero = new WikiHiero( $this->getConfig() );
 			$out->addHTML( '<table class="wikitable">'
 				. '<tr><th>' . $this->msg( 'wikihiero-input' )->escaped() . '</th><th>'
 				. $this->msg( 'wikihiero-result' )->escaped() . '</th></tr>'
@@ -120,7 +120,7 @@ class SpecialHieroglyphs extends SpecialPage {
 			->prepareForm()
 			->displayForm( false );
 
-		$this->hiero = new WikiHiero();
+		$this->hiero = new WikiHiero( $this->getConfig() );
 
 		$out->addHTML( $this->getToc() );
 		// class="mw-hiero-form"
