@@ -2,7 +2,7 @@
 
 namespace WikiHiero;
 
-use MediaWiki\Hook\ParserFirstCallInitHook;
+use MediaWiki\Parser\Hook\ParserFirstCallInitHook;
 use MediaWiki\Parser\Parser;
 use Wikimedia\Parsoid\Core\ContentMetadataCollectorStringSets as CMCSS;
 use Wikimedia\Parsoid\Ext\ExtensionModule;
