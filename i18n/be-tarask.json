@@ -9,7 +9,7 @@
 			"Wizardist"
 		]
 	},
-	"hieroglyphs": "Паспрабуйце герагліфічную разьметку",
+	"hieroglyphs": "Паспрабуйце гераґліфічную разьметку",
 	"wikihiero-category-A": "Мужчына і ягоныя прафэсіі",
 	"wikihiero-category-Aa": "Неклясыфікаванае",
 	"wikihiero-category-B": "Жанчына і ейныя прафэсіі",
@@ -37,13 +37,13 @@
 	"wikihiero-category-Y": "Пісьмо, гульні, музыка",
 	"wikihiero-category-Z": "Крэсьленьне, геамэтрычныя фігуры і да т. п.",
 	"wikihiero-comment": "Камэнтар",
-	"wikihiero-desc": "Дадае тэг <code>&lt;hiero&gt;</code> для адлюстраваньня [[Special:Hieroglyphs|гіерогліфаў]]",
+	"wikihiero-desc": "Дадае тэґ <code>&lt;hiero&gt;</code> для паказу [[Special:Hieroglyphs|героґліфаў]]",
 	"wikihiero-eol": "Канец радку",
 	"wikihiero-half-void": "Пусты блёк з паловай шырыні",
 	"wikihiero-input": "Уваходны тэкст",
 	"wikihiero-juxtaposition": "Гарызантальнае групаваньне",
 	"wikihiero-load-error": "Памылка загрузкі!",
-	"wikihiero-mirror": "Люстэркавы адбітак гіерогліфа",
+	"wikihiero-mirror": "Люстэркавы адбітак героґліфа",
 	"wikihiero-result": "Вынік",
 	"wikihiero-separator": "Разьдзяляльнік",
 	"wikihiero-special-page-text": "Выкарыстоўвайце гэтую старонку, каб паспрабаваць разьметку WikiHiero.\nГлядзіце [$1 апісаньне разьметкі], каб зразумець, як ужываць яе.",
@@ -54,7 +54,7 @@
 	"wikihiero-th-example": "Прыклад коду",
 	"wikihiero-th-meaning": "Значэньне",
 	"wikihiero-th-result": "Вынік",
-	"wikihiero-visualeditor-mwhieroinspector-title": "Герогліфы",
+	"wikihiero-visualeditor-mwhieroinspector-title": "Героґліфы",
 	"wikihiero-void": "Пусты блёк поўнай шырыні",
 	"wikihiero-usage-tracking-category": "Старонкі, якія выкарыстоўваюць пашырэньне WikiHiero",
 	"wikihiero-usage-tracking-category-desc": "Гэтая катэгорыя аўтаматычна дадаецца на старонкі, якія выкарыстоўваюць пашырэньне WikiHiero"
