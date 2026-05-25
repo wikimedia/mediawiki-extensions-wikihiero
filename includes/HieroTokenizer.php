@@ -25,26 +25,19 @@ namespace WikiHiero;
  */
 class HieroTokenizer {
 
-	private const DELIMITERS = " -\t\n\r";
-	private const TOKEN_DELIMITERS = '*:()';
-	private const SINGLE_CHAR_DELIMITER = '!';
+	private const string DELIMITERS = " -\t\n\r";
+	private const string TOKEN_DELIMITERS = '*:()';
+	private const string SINGLE_CHAR_DELIMITER = '!';
 
-	/** @var string */
-	private $text;
 	/** @var string[][]|false */
-	private $blocks = false;
+	private array|false $blocks = false;
 	/** @var string[] */
-	private $currentBlock;
-	/** @var string */
-	private $token;
+	private array $currentBlock = [];
+	private string $token = '';
 
-	/**
-	 * Constructor
-	 *
-	 * @param string $text
-	 */
-	public function __construct( $text ) {
-		$this->text = $text;
+	public function __construct(
+		private readonly string $text
+	) {
 	}
 
 	/**
@@ -54,7 +47,7 @@ class HieroTokenizer {
 	 *
 	 * @suppress PhanParamSuspiciousOrder
 	 */
-	public function tokenize() {
+	public function tokenize(): array {
 		if ( $this->blocks !== false ) {
 			return $this->blocks;
 		}
@@ -69,13 +62,13 @@ class HieroTokenizer {
 		for ( $i = 0, $len = strlen( $text ); $i < $len; $i++ ) {
 			$char = $text[$i];
 
-			if ( strpos( self::DELIMITERS, $char ) !== false ) {
+			if ( str_contains( self::DELIMITERS, $char ) ) {
 				$this->newBlock();
 			} elseif ( $char === self::SINGLE_CHAR_DELIMITER ) {
 				$this->singleCharBlock( $char );
 			} elseif ( $char == '.' ) {
 				$this->dot();
-			} elseif ( strpos( self::TOKEN_DELIMITERS, $char ) !== false ) {
+			} elseif ( str_contains( self::TOKEN_DELIMITERS, $char ) ) {
 				$this->newToken( $char );
 			} else {
 				$this->char( $char );
@@ -91,7 +84,7 @@ class HieroTokenizer {
 	/**
 	 * Handles a block delimiter
 	 */
-	private function newBlock() {
+	private function newBlock(): void {
 		$this->newToken();
 		if ( $this->currentBlock ) {
 			$this->blocks[] = $this->currentBlock;
@@ -102,9 +95,9 @@ class HieroTokenizer {
 	/**
 	 * Flushes current token, optionally adds another one
 	 *
-	 * @param string|bool $token token to add or false
+	 * @param string|false $token token to add or false
 	 */
-	private function newToken( $token = false ) {
+	private function newToken( string|false $token = false ): void {
 		if ( $this->token !== '' ) {
 			$this->currentBlock[] = $this->token;
 			$this->token = '';
@@ -119,7 +112,7 @@ class HieroTokenizer {
 	 *
 	 * @param string $char block character
 	 */
-	private function singleCharBlock( $char ) {
+	private function singleCharBlock( string $char ): void {
 		$this->newBlock();
 		$this->blocks[] = [ $char ];
 	}
@@ -127,7 +120,7 @@ class HieroTokenizer {
 	/**
 	 * Handles void blocks represented by dots
 	 */
-	private function dot() {
+	private function dot(): void {
 		if ( $this->token == '.' ) {
 			$this->token = '..';
 			$this->newBlock();
@@ -139,10 +132,8 @@ class HieroTokenizer {
 
 	/**
 	 * Adds a miscellaneous character to current token
-	 *
-	 * @param string $char character to add
 	 */
-	private function char( $char ) {
+	private function char( string $char ): void {
 		if ( $this->token == '.' ) {
 			$this->newBlock();
 			$this->token = $char;
