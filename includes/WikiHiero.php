@@ -34,16 +34,12 @@ class WikiHiero {
 	public const IMAGE_EXT = 'png';
 	private const IMAGE_PREFIX = 'hiero_';
 
-	/** Use default scale */
-	private const DEFAULT_SCALE = -1;
 	private const CARTOUCHE_WIDTH = 2;
 	private const IMAGE_MARGIN = 1;
 	private const MAX_HEIGHT = 44;
 
 	private const TABLE_START = '<table class="mw-hiero-table">';
 
-	/** @var int */
-	private $scale = 100;
 	/** @var Config */
 	private $config;
 
@@ -94,22 +90,6 @@ class WikiHiero {
 		$parser->addTrackingCategory( 'wikihiero-usage-tracking-category' );
 		// Strip newlines to avoid breakage in the wiki parser block pass
 		return str_replace( "\n", " ", $hiero->render( $input ) );
-	}
-
-	/**
-	 * @return int Scale of overall hieroglyphic block in percents
-	 */
-	public function getScale() {
-		return $this->scale;
-	}
-
-	/**
-	 * Sets the scale of overall hieroglyphic block in percents
-	 *
-	 * @param int $scale
-	 */
-	public function setScale( $scale ) {
-		$this->scale = $scale;
 	}
 
 	/**
@@ -259,20 +239,10 @@ class WikiHiero {
 	 * Render hieroglyph text
 	 *
 	 * @param string $hiero text to convert
-	 * @param int $scale global scale in percentage (default = 100%)
-	 * @param bool $line use line (default = false)
 	 * @return string converted code
 	 */
-	public function render( $hiero, $scale = self::DEFAULT_SCALE, $line = false ) {
-		if ( $scale != self::DEFAULT_SCALE ) {
-			$this->setScale( $scale );
-		}
-
+	public function render( $hiero ) {
 		$html = "";
-
-		if ( $line ) {
-			$html .= "<hr />\n";
-		}
 
 		$tokenizer = new HieroTokenizer( $hiero );
 		$blocks = $tokenizer->tokenize();
@@ -287,10 +257,6 @@ class WikiHiero {
 				if ( $code[0] == '!' ) {
 					// end of line
 					$tableHtml = '</tr></table>' . self::TABLE_START . "<tr>\n";
-					if ( $line ) {
-						$contentHtml .= "<hr />\n";
-					}
-
 				} elseif ( strstr( $code[0], '<' ) ) {
 					// start cartouche
 					$contentHtml .= '<td>' . $this->renderGlyph( $code[0] ) . '</td>';
@@ -405,18 +371,11 @@ class WikiHiero {
 			$html .= self::TABLE_START . "<tr>\n" . $tableContentHtml . '</tr></table>';
 		}
 
-		$style = null;
-		if ( $this->scale != 100 ) {
-			$ratio = floatval( $this->scale ) / 100;
-			$style = "transform: scale($ratio,$ratio);";
-		}
-
 		return Html::rawElement(
 			'table',
 			[
 				'class' => 'mw-hiero-table mw-hiero-outer',
 				'dir' => 'ltr',
-				'style' => $style,
 			],
 			"<tr><td>\n$html\n</td></tr>"
 		);
