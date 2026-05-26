@@ -31,28 +31,24 @@ use MediaWiki\Output\OutputPage;
 use MediaWiki\Parser\Parser;
 
 class WikiHiero {
-	public const IMAGE_EXT = 'png';
-	private const IMAGE_PREFIX = 'hiero_';
+	public const string IMAGE_EXT = 'png';
+	private const string IMAGE_PREFIX = 'hiero_';
 
-	private const CARTOUCHE_WIDTH = 2;
-	private const IMAGE_MARGIN = 1;
-	private const MAX_HEIGHT = 44;
+	private const int CARTOUCHE_WIDTH = 2;
+	private const int IMAGE_MARGIN = 1;
+	private const int MAX_HEIGHT = 44;
 
-	private const TABLE_START = '<table class="mw-hiero-table">';
+	private const string TABLE_START = '<table class="mw-hiero-table">';
 
-	/** @var Config */
-	private $config;
+	private Config $config;
 
 	/** @var string[] */
-	private static $phonemes;
+	private static array $phonemes;
 	/** @var string[] */
-	private static $prefabs;
-	/** @var int[][] */
-	private static $files;
+	private static array $prefabs;
+	/** @var array<string, array{0:int,1:int}> */
+	private static array $files;
 
-	/**
-	 * @param Config|null $config
-	 */
 	public function __construct( ?Config $config = null ) {
 		$this->config = $config ?: MediaWikiServices::getInstance()->getMainConfig();
 		self::loadData();
@@ -60,10 +56,11 @@ class WikiHiero {
 
 	/**
 	 * Loads hieroglyph information
-	 * @suppress PhanUndeclaredVariable,PhanTypeMismatchPropertyProbablyReal Phan doesn't understand require_once
+	 * @suppress PhanUndeclaredVariable,PhanTypeMismatchPropertyReal Phan doesn't understand require_once
 	 */
-	private static function loadData() {
-		if ( self::$phonemes ) {
+	private static function loadData(): void {
+		// @phan-suppress-next-line PhanRedundantCondition Property may not be initialized yet
+		if ( isset( self::$phonemes ) ) {
 			return;
 		}
 		require_once dirname( __DIR__ ) . '/data/tables.php';
@@ -74,13 +71,9 @@ class WikiHiero {
 
 	/**
 	 * Parser callback for <hiero> tag
-	 * @param string|null $input
-	 * @param array $args
-	 * @param Parser $parser
-	 * @return string
 	 */
-	public static function parserHook( $input, $args, $parser ) {
-		// T388339 - self closed <heiro/> is a no-op, and $input is null
+	public static function parserHook( ?string $input, array $args, Parser $parser ): string {
+		// T388339 - self closed <hiero/> is a no-op, and $input is null
 		if ( $input === null ) {
 			return '';
 		}
@@ -89,7 +82,7 @@ class WikiHiero {
 		$parser->getOutput()->addModuleStyles( [ 'ext.wikihiero' ] );
 		$parser->addTrackingCategory( 'wikihiero-usage-tracking-category' );
 		// Strip newlines to avoid breakage in the wiki parser block pass
-		return str_replace( "\n", " ", $hiero->render( $input ) );
+		return str_replace( "\n", ' ', $hiero->render( $input ) );
 	}
 
 	/**
@@ -99,7 +92,7 @@ class WikiHiero {
 	 * @param int|null $height glyph size in pixels or null to omit
 	 * @return string a string to add to the stream
 	 */
-	private function renderGlyph( $glyph, $height = null ) {
+	private function renderGlyph( string $glyph, $height = null ): string {
 		// Support skins with night theme.
 		$imageClass = 'skin-invert';
 		if ( $this->isMirrored( $glyph ) ) {
@@ -160,11 +153,8 @@ class WikiHiero {
 
 	/**
 	 * Returns HTML for a void block
-	 * @param int $width
-	 * @return string
 	 */
-	private function renderVoidBlock( $width ) {
-		$width = intval( $width );
+	private function renderVoidBlock( int $width ): string {
 		return Html::rawElement(
 			'table',
 			[
@@ -181,16 +171,13 @@ class WikiHiero {
 	}
 
 	private function isMirrored( string $glyph ): bool {
-		return substr( $glyph, -1 ) == '\\';
+		return str_ends_with( $glyph, '\\' );
 	}
 
 	/**
 	 * Extracts hieroglyph code from glyph, e.g. A1\ --> A1
-	 *
-	 * @param string $glyph
-	 * @return string
 	 */
-	private function extractCode( $glyph ) {
+	private function extractCode( string $glyph ): string {
 		return preg_replace( '/\\\\.*$/', '', $glyph );
 	}
 
@@ -241,12 +228,12 @@ class WikiHiero {
 	 * @param string $hiero text to convert
 	 * @return string converted code
 	 */
-	public function render( $hiero ) {
-		$html = "";
+	public function render( string $hiero ): string {
+		$html = '';
 
 		$tokenizer = new HieroTokenizer( $hiero );
 		$blocks = $tokenizer->tokenize();
-		$contentHtml = $tableHtml = $tableContentHtml = "";
+		$contentHtml = $tableHtml = $tableContentHtml = '';
 		$is_cartouche = false;
 
 		// ------------------------------------------------------------------------
@@ -257,7 +244,7 @@ class WikiHiero {
 				if ( $code[0] == '!' ) {
 					// end of line
 					$tableHtml = '</tr></table>' . self::TABLE_START . "<tr>\n";
-				} elseif ( strstr( $code[0], '<' ) ) {
+				} elseif ( str_contains( $code[0], '<' ) ) {
 					// start cartouche
 					$contentHtml .= '<td>' . $this->renderGlyph( $code[0] ) . '</td>';
 					$is_cartouche = true;
@@ -266,7 +253,7 @@ class WikiHiero {
 						self::CARTOUCHE_WIDTH . "px;\"></td></tr><tr><td>" . self::TABLE_START .
 						"<tr>";
 
-				} elseif ( strstr( $code[0], '>' ) ) {
+				} elseif ( str_contains( $code[0], '>' ) ) {
 					// end cartouche
 					$contentHtml .= "</tr></table></td></tr><tr><td class=\"mw-hiero-box\" " .
 						"style=\"height: " . self::CARTOUCHE_WIDTH .
@@ -274,7 +261,7 @@ class WikiHiero {
 					$is_cartouche = false;
 					$contentHtml .= '<td>' . $this->renderGlyph( $code[0] ) . '</td>';
 
-				} elseif ( $code[0] != "" ) {
+				} elseif ( $code[0] != '' ) {
 					// assume it's a glyph or '..' or '.'
 					$contentHtml .= '<td>' . $this->renderGlyph(
 						$code[0],
@@ -285,10 +272,10 @@ class WikiHiero {
 			// block contains more than 1 glyph
 			} else {
 				// convert all codes into '&' to test prefabs glyph
-				$prefabs = "";
+				$prefabs = '';
 				foreach ( $code as $t ) {
-					if ( preg_match( "/[*:!()]/", $t[0] ) ) {
-						$prefabs .= "&";
+					if ( preg_match( '/[*:!()]/', $t[0] ) ) {
+						$prefabs .= '&';
 					} else {
 						$prefabs .= $t;
 					}
@@ -309,14 +296,14 @@ class WikiHiero {
 					$height   = 0;
 
 					foreach ( $code as $t ) {
-						if ( $t == ":" ) {
+						if ( $t == ':' ) {
 							if ( $height > $line_max ) {
 								$line_max = $height;
 							}
 							$total += $line_max;
 							$line_max = 0;
 
-						} elseif ( $t == "*" ) {
+						} elseif ( $t == '*' ) {
 							if ( $height > $line_max ) {
 								$line_max = $height;
 							}
@@ -339,13 +326,13 @@ class WikiHiero {
 					$total += $line_max;
 
 					// render all glyph into the block
-					$block = "";
+					$block = '';
 					foreach ( $code as $t ) {
-						if ( $t == ":" ) {
-							$block .= "<br />";
+						if ( $t == ':' ) {
+							$block .= '<br />';
 
-						} elseif ( $t == "*" ) {
-							$block .= " ";
+						} elseif ( $t == '*' ) {
+							$block .= ' ';
 
 						} else {
 							// resize the glyph according to the block total height
@@ -363,7 +350,7 @@ class WikiHiero {
 
 			if ( strlen( $contentHtml ) > 0 ) {
 				$tableContentHtml .= $tableHtml . $contentHtml;
-				$contentHtml = $tableHtml = "";
+				$contentHtml = $tableHtml = '';
 			}
 		}
 
@@ -384,16 +371,16 @@ class WikiHiero {
 	/**
 	 * Returns a list of image files used by this extension
 	 *
-	 * @return array list of files in format 'file' => [ width, height ]
+	 * @return array<string, array{0:int,1:int}> list of files in format 'file' => [ width, height ]
 	 */
-	public function getFiles() {
+	public function getFiles(): array {
 		return self::$files;
 	}
 
 	/**
 	 * @return string URL of images directory
 	 */
-	public static function getImagePath() {
+	public static function getImagePath(): string {
 		global $wgExtensionAssetsPath;
 		return "$wgExtensionAssetsPath/wikihiero/img/";
 	}
@@ -401,10 +388,9 @@ class WikiHiero {
 	/**
 	 * Get glyph code from file name
 	 *
-	 * @param string $file file name
 	 * @return string converted code
 	 */
-	public static function getCode( $file ) {
+	public static function getCode( string $file ): string {
 		return substr( $file, strlen( self::IMAGE_PREFIX ), -( 1 + strlen( self::IMAGE_EXT ) ) );
 	}
 }
