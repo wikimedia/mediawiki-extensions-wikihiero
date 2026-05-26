@@ -52,5 +52,7 @@
 	"wikihiero-th-meaning": "Esanahia",
 	"wikihiero-th-result": "Emaitza",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Hieroglifoak",
-	"wikihiero-void": "Luzera-osoko bloke hutsa"
+	"wikihiero-void": "Luzera-osoko bloke hutsa",
+	"wikihiero-usage-tracking-category": "WikiHiero luzapena erabiltzen duten orrialdeak",
+	"wikihiero-usage-tracking-category-desc": "Kategoria hau automatikoki gehitzen da WikiHiero luzapena erabiltzen duten orrialdeetan."
 }
