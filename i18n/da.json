@@ -45,7 +45,7 @@
 	"wikihiero-result": "Resultat",
 	"wikihiero-separator": "Separator",
 	"wikihiero-special-page-text": "Brug denne side til at afprøve WikiHiero-kode.\nSe [$1 beskrivelsen af koden] for vejledning til at anvende den.",
-	"wikihiero-submit": "Gem",
+	"wikihiero-submit": "Send",
 	"wikihiero-superposition": "Underrubrik",
 	"wikihiero-syntax": "Syntaks",
 	"wikihiero-th-code": "Kode",
@@ -54,6 +54,6 @@
 	"wikihiero-th-result": "Resultat",
 	"wikihiero-visualeditor-mwhieroinspector-title": "Hieroglyffer",
 	"wikihiero-void": "Tom blok i fuld bredde",
-	"wikihiero-usage-tracking-category": "Sider, der bruger WikiHiero",
+	"wikihiero-usage-tracking-category": "Sider, der bruger WikiHiero-udvidelsen",
 	"wikihiero-usage-tracking-category-desc": "Denne kategori tilføjes automatisk til sider, der bruger WikiHiero-udvidelsen"
 }
