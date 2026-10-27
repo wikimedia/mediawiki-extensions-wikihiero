@@ -46,7 +46,7 @@
 	"wikihiero-mirror": "Eine Hieroglyphe spiegeln",
 	"wikihiero-result": "Ergebnis",
 	"wikihiero-separator": "Trennzeichen",
-	"wikihiero-special-page-text": "Verwende diese Seite, um das WikiHiero-Markup zu testen.\nBeachte dazu auch die [$1 Markup-Beschreibung].",
+	"wikihiero-special-page-text": "{{#FORMAL:Verwende|Verwenden Sie}} diese Seite, um das WikiHiero-Markup zu testen.\n{{#FORMAL:Beachte|Beachten Sie}} dazu auch die [$1 Markup-Beschreibung].",
 	"wikihiero-submit": "Speichern",
 	"wikihiero-superposition": "Untereinanderstellung",
 	"wikihiero-syntax": "Syntax",
