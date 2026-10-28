@@ -3,7 +3,8 @@
 		"authors": [
 			"Aftabuzzaman",
 			"Bellayet",
-			"আফতাবুজ্জামান"
+			"আফতাবুজ্জামান",
+			"Tausheef Hassan"
 		]
 	},
 	"hieroglyphs": "হায়ারোগ্লিফ মার্কআপ চেষ্টা করুন",
@@ -53,5 +54,6 @@
 	"wikihiero-th-result": "ফলাফল",
 	"wikihiero-visualeditor-mwhieroinspector-title": "হায়ারোগ্লিফ",
 	"wikihiero-void": "পূর্ণ-প্রস্থের শূন্য ব্লক",
-	"wikihiero-usage-tracking-category": "উইকিহাইরো এক্সটেনশন ব্যবহার করা পাতা"
+	"wikihiero-usage-tracking-category": "উইকিহাইরো এক্সটেনশন ব্যবহার করা পাতা",
+	"wikihiero-usage-tracking-category-desc": "WikiHiero এক্সটেনশন ব্যবহারকারী পাতাসমূহে এই বিষয়শ্রেণীটি স্বয়ংক্রিয়ভাবে যুক্ত হয়।"
 }
