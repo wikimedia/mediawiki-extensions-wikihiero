@@ -35,7 +35,7 @@ class SpecialHieroglyphs extends SpecialPage {
 	 */
 	private $hiero;
 	/** @var string[][] */
-	private $syntaxHelp = [
+	private const SYNTAX_HELP = [
 		[ 'code' => '-', 'message' => 'wikihiero-separator', 'example' => 'A1 - B1' ],
 		[ 'code' => ':', 'message' => 'wikihiero-superposition', 'example' => 'p:t' ],
 		[ 'code' => '*', 'message' => 'wikihiero-juxtaposition', 'example' => 'p*t' ],
@@ -46,7 +46,7 @@ class SpecialHieroglyphs extends SpecialPage {
 		[ 'code' => '<!-- -->', 'message' => 'wikihiero-comment', 'example' => 'A<!-- B1 -->1' ],
 	];
 	/** @var string[] */
-	private $helpColumns = [
+	private const HELP_COLUMNS = [
 		'code',
 		'meaning',
 		'example',
@@ -148,11 +148,11 @@ class SpecialHieroglyphs extends SpecialPage {
 
 				$html .= $this->getHeading( 'wikihiero-syntax', 'syntax' );
 				$html .= '<table class="wikitable"><tr>';
-				foreach ( $this->helpColumns as $col ) {
+				foreach ( self::HELP_COLUMNS as $col ) {
 					$html .= '<th>' . $this->msg( "wikihiero-th-$col" )->escaped() . '</th>';
 				}
 				$html .= '</tr>';
-				foreach ( $this->syntaxHelp as $e ) {
+				foreach ( self::SYNTAX_HELP as $e ) {
 					$html .= $this->getSyntaxHelp( $e['code'], $e['message'], $e['example'] );
 				}
 				$html .= "</table>\n";
