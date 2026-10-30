@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kandar"
+			"Kandar",
+			"Rafka Aditia"
 		]
 	},
-	"wikihiero-desc": "Nambahkeun tag <code>&lt;hiero&gt;</code> pikeun némbongkeun [[Special:Hieroglyphs|hiroglip]]"
+	"wikihiero-desc": "Nambahkeun tag <code>&lt;hiero&gt;</code> pikeun némbongkeun [[Special:Hieroglyphs|hiroglip]]",
+	"wikihiero-usage-tracking-category": "Kaca nu maké éksténsi WikiHiero"
 }
