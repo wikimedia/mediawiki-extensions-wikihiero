@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Helix84",
-			"Robert Važan"
+			"Robert Važan",
+			"Wizzard"
 		]
 	},
 	"hieroglyphs": "Pieskovisko hieroglyfov",
@@ -25,5 +26,6 @@
 	"wikihiero-separator": "Oddeľovač",
 	"wikihiero-superposition": "Podrozdelenie",
 	"wikihiero-syntax": "Syntax",
-	"wikihiero-visualeditor-mwhieroinspector-title": "Hieroglyfy"
+	"wikihiero-visualeditor-mwhieroinspector-title": "Hieroglyfy",
+	"wikihiero-usage-tracking-category": "Stránky používajúce rozšírenie WikiHiero"
 }
