@@ -1,4 +1,3 @@
-/* eslint-env node, es6 */
 module.exports = function ( grunt ) {
 	var conf = grunt.file.readJSON( 'extension.json' );
 
@@ -23,7 +22,7 @@ module.exports = function ( grunt ) {
 		},
 		watch: {
 			files: [
-				'.eslintrc.json',
+				'eslint.config.js',
 				'.stylelintrc.json',
 				'<%= eslint.all %>',
 				'<%= stylelint.all %>'
